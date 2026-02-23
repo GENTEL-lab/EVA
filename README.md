@@ -1,7 +1,7 @@
 # EVA: A Generative Foundation Model for Universal RNA Modeling and Design
 
 <p align="center">
-  <img src="fig/poster.svg" alt="RNAVerse" width="600">
+  <img src="fig/poster.pdf" alt="RNAVerse" width="600">
 </p>
 
 **EVA** (Evolutionary Versatile Architect) is a generative RNA foundation model trained on **RNAVerse v1**, a curated atlas of 114 million full-length RNA sequences spanning all domains of life. Built on a 1.4B-parameter decoder-only Transformer with a Mixture-of-Experts (MoE) backbone and an 8,192-token context window, EVA unifies RNA sequence scoring and controllable design within a single framework.
