@@ -1,0 +1,846 @@
+{
+  "pepper_620": [
+    {
+      "header": "pepper_C5A_A21G_C36U",
+      "sequence": "UCCCAAAUCGUAGCGUGUCGGCCUGCUUCGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.06954370730090886,
+      "fluorescence_intensity": 1.126085698
+    },
+    {
+      "header": "pepper_A7C_A21G_C36U",
+      "sequence": "UCCCCACUCGUAGCGUGUCGGCCUGCUUCGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.060465075118391186,
+      "fluorescence_intensity": 1.226066396
+    },
+    {
+      "header": "pepper_A6C_A21G_C36U",
+      "sequence": "UCCCCCAUCGUAGCGUGUCGGCCUGCUUCGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.06835247891508422,
+      "fluorescence_intensity": 1.123335263
+    },
+    {
+      "header": "pepper_C5A_A7C_A21G_C36U",
+      "sequence": "UCCCAACUCGUAGCGUGUCGGCCUGCUUCGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.06610608820023006,
+      "fluorescence_intensity": 1.345107122
+    },
+    {
+      "header": "pepper_C5A_A7C_A21G",
+      "sequence": "UCCCAACUCGUAGCGUGUCGGCCUGCUUCGGCAGGCACUGGCGCUGGGA",
+      "log_likelihood": -0.1325992873000582,
+      "fluorescence_intensity": 0.625747925
+    },
+    {
+      "header": "pepper_C5A_A6C_A21G_C36U",
+      "sequence": "UCCCACAUCGUAGCGUGUCGGCCUGCUUCGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.05713040569597589,
+      "fluorescence_intensity": 0.731712025
+    },
+    {
+      "header": "pepper_C5A_A7C_C36U",
+      "sequence": "UCCCAACUCGUAGCGUGUCGACCUGCUUCGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.1960785756765494,
+      "fluorescence_intensity": 0.5544779
+    },
+    {
+      "header": "pepper_C5A_A6C_A21G",
+      "sequence": "UCCCACAUCGUAGCGUGUCGGCCUGCUUCGGCAGGCACUGGCGCUGGGA",
+      "log_likelihood": -0.12811407186263193,
+      "fluorescence_intensity": 0.835456476
+    },
+    {
+      "header": "pepper_A6C_A7C_A21G",
+      "sequence": "UCCCCCCUCGUAGCGUGUCGGCCUGCUUCGGCAGGCACUGGCGCUGGGA",
+      "log_likelihood": -0.11975557589799532,
+      "fluorescence_intensity": 1.524705655
+    },
+    {
+      "header": "pepper_A6C_A7C_A21G_C36U",
+      "sequence": "UCCCCCCUCGUAGCGUGUCGGCCUGCUUCGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.061601129217650645,
+      "fluorescence_intensity": 1.242569002
+    },
+    {
+      "header": "pepper_C5A_A6C_C36U",
+      "sequence": "UCCCACAUCGUAGCGUGUCGACCUGCUUCGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.18742268093581294,
+      "fluorescence_intensity": 1.428150936
+    },
+    {
+      "header": "pepper_C5A_A6C_A7C_A21G_C36U",
+      "sequence": "UCCCACCUCGUAGCGUGUCGGCCUGCUUCGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.04844936551062903,
+      "fluorescence_intensity": 1.241603937
+    },
+    {
+      "header": "pepper_A12G_A21G_U45C",
+      "sequence": "UCCCCAAUCGUGGCGUGUCGGCCUGCUUCGGCAGGCACUGGCGCCGGGA",
+      "log_likelihood": -0.25531040378507674,
+      "fluorescence_intensity": 1.150791353
+    },
+    {
+      "header": "pepper_C19U_C5A_A6C_C36U",
+      "sequence": "UCCCACAUCGUGGCGUGUUGGCCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.12608078540966855,
+      "fluorescence_intensity": 1.207344142
+    },
+    {
+      "header": "pepper_C19U_C5A_G21A_C36A",
+      "sequence": "UCCCAAAUCGUGGCGUGUUGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.07414975513618592,
+      "fluorescence_intensity": 1.392250531
+    },
+    {
+      "header": "pepper_C19U_A6C_G21A_C36U",
+      "sequence": "UCCCCCAUCGUGGCGUGUUGACCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.13478728605028034,
+      "fluorescence_intensity": 1.493244547
+    },
+    {
+      "header": "pepper_C19U_C5A_A6C_A7C",
+      "sequence": "UCCCACCUCGUGGCGUGUUGGCCUGCUUCGGCAGGCACUGGCGCCGGGA",
+      "log_likelihood": -0.14832320655143716,
+      "fluorescence_intensity": 1.44060027
+    },
+    {
+      "header": "pepper_C19U_A6C_G21A_C36A",
+      "sequence": "UCCCCCAUCGUGGCGUGUUGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.07949736799031487,
+      "fluorescence_intensity": 1.480167921
+    },
+    {
+      "header": "pepper_C19U_C5A_A7C_C36A",
+      "sequence": "UCCCAACUCGUGGCGUGUUGGCCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.1094327767351963,
+      "fluorescence_intensity": 1.289036865
+    },
+    {
+      "header": "pepper_C19U_A7C_G21A_C36A",
+      "sequence": "UCCCCACUCGUGGCGUGUUGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.06727430430135205,
+      "fluorescence_intensity": 1.332561282
+    },
+    {
+      "header": "pepper_C9U_C5A_G10C_G21A",
+      "sequence": "UCCCAAAUUCUGGCGUGUCGACCUGCUUCGGCAGGCACUGGCGCCGGGA",
+      "log_likelihood": -0.5981520627107357,
+      "fluorescence_intensity": 0.294779
+    },
+    {
+      "header": "pepper_C9U_A7C_G10C_G21A",
+      "sequence": "UCCCCACUUCUGGCGUGUCGACCUGCUUCGGCAGGCACUGGCGCCGGGA",
+      "log_likelihood": -0.5907131214453887,
+      "fluorescence_intensity": 0.460770122
+    },
+    {
+      "header": "pepper_C19U_C5A_A6C_C36A",
+      "sequence": "UCCCACAUCGUGGCGUGUUGGCCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.09893340006074512,
+      "fluorescence_intensity": 1.373190504
+    },
+    {
+      "header": "pepper_C19U_C5A_A7C_G21A_C36A",
+      "sequence": "UCCCAACUCGUGGCGUGUUGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.060366332284780694,
+      "fluorescence_intensity": 1.517274657
+    },
+    {
+      "header": "pepper_C9U_A7C_G10C_G21A_C36A",
+      "sequence": "UCCCCACUUCUGGCGUGUCGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.5159986892767662,
+      "fluorescence_intensity": 0.311474619
+    },
+    {
+      "header": "pepper_C19U_C5A_A6C_G21A_C36A",
+      "sequence": "UCCCACAUCGUGGCGUGUUGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.05070019110250857,
+      "fluorescence_intensity": 1.295165026
+    },
+    {
+      "header": "pepper_C9U_C5A_A6C_G10C_C36A",
+      "sequence": "UCCCACAUUCUGGCGUGUCGGCCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.5756038124613673,
+      "fluorescence_intensity": 0.112285273
+    },
+    {
+      "header": "pepper_C19U_C5A_A7C_G21A_C36U",
+      "sequence": "UCCCAACUCGUGGCGUGUUGACCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.12125748807115347,
+      "fluorescence_intensity": 0.938091102
+    },
+    {
+      "header": "pepper_C9U_C5A_G10C_G21A_C36A",
+      "sequence": "UCCCAAAUUCUGGCGUGUCGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.5415590424191596,
+      "fluorescence_intensity": 0.159139162
+    },
+    {
+      "header": "pepper_C19U_C5A_A6C_G21A_C36U",
+      "sequence": "UCCCACAUCGUGGCGUGUUGACCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.10394294721244274,
+      "fluorescence_intensity": 1.58671106
+    },
+    {
+      "header": "pepper_C19U_A6C_A7C_G21A_C36A",
+      "sequence": "UCCCCCCUCGUGGCGUGUUGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.07531854444021853,
+      "fluorescence_intensity": 1.464196101
+    },
+    {
+      "header": "pepper_C9U_C5A_A6C_G10C_U16G",
+      "sequence": "UCCCACAUUCUGGCGGGUCGGCCUGCUUCGGCAGGCACUGGCGCCGGGA",
+      "log_likelihood": -0.9380116702113253,
+      "fluorescence_intensity": 0.024946921
+    },
+    {
+      "header": "pepper_C19U_C5A_A6C_A7C_C36A",
+      "sequence": "UCCCACCUCGUGGCGUGUUGGCCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.09813826486283594,
+      "fluorescence_intensity": 1.556987068
+    },
+    {
+      "header": "pepper_U16G_C5A_A6C_U16G_C36U",
+      "sequence": "UCCCACAUCGUGGCGGREDGUCGGCCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -1.642483105294769,
+      "fluorescence_intensity": 0.131876086
+    },
+    {
+      "header": "pepper_C9U_A6C_A7C_G10C_U16G_C36U",
+      "sequence": "UCCCCCCUUCUGGCGGGUCGGCCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.7104913602896125,
+      "fluorescence_intensity": 0.023113299
+    },
+    {
+      "header": "pepper_C9U_C5A_G10C_U16G_G21A_C36U",
+      "sequence": "UCCCAAAUUCUGGCGGGUCGACCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.8322701684418443,
+      "fluorescence_intensity": 0.026539278
+    },
+    {
+      "header": "pepper_C9U_C5A_A7C_G10C_G21A_C36A",
+      "sequence": "UCCCAACUUCUGGCGUGUCGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.4866823350624015,
+      "fluorescence_intensity": 0.15687126
+    },
+    {
+      "header": "pepper_C9U_C5A_A6C_A7C_G10C_G21A",
+      "sequence": "UCCCACCUUCUGGCGUGUCGACCUGCUUCGGCAGGCACUGGCGCCGGGA",
+      "log_likelihood": -0.6150989221707129,
+      "fluorescence_intensity": 0.343852538
+    },
+    {
+      "header": "pepper_C9U_A6C_A7C_G10C_G21A_C36A",
+      "sequence": "UCCCCCCUUCUGGCGUGUCGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.4770720298032274,
+      "fluorescence_intensity": 0.180370585
+    },
+    {
+      "header": "pepper_C9U_A7C_G10C_U16G_G21A_C36U",
+      "sequence": "UCCCCACUUCUGGCGGGUCGACCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.8584664274845748,
+      "fluorescence_intensity": 0.041353021
+    },
+    {
+      "header": "pepper_U16G_C5A_A6C_U16G_G21A_C36A",
+      "sequence": "UCCCACAUCGUGGCGGGUCGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.4323139237890338,
+      "fluorescence_intensity": 0.035707392
+    },
+    {
+      "header": "pepper_C9U_C5A_A6C_A7C_G10C_U16G",
+      "sequence": "UCCCACCUUCUGGCGGGUCGGCCUGCUUCGGCAGGCACUGGCGCCGGGA",
+      "log_likelihood": -0.8878265118124843,
+      "fluorescence_intensity": 0.030930322
+    },
+    {
+      "header": "pepper_C9U_C5A_A7C_G10C_U16G_C36U",
+      "sequence": "UCCCAACUUCUGGCGGGUCGGCCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.8442175921723271,
+      "fluorescence_intensity": 0.043765682
+    },
+    {
+      "header": "pepper_C19U_C5A_A6C_A7C_G21A_C36A",
+      "sequence": "UCCCACCUCGUGGCGUGUUGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.05147192333985301,
+      "fluorescence_intensity": 1.307180081
+    },
+    {
+      "header": "pepper_C9U_C5A_A7C_G10C_U16G_G21A_C36U",
+      "sequence": "UCCCAACUUCUGGCGGGUCGACCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.8847256451533342,
+      "fluorescence_intensity": 0.033294731
+    },
+    {
+      "header": "pepper_C9U_C5A_A7C_G10C_U16G_G21A_C36A",
+      "sequence": "UCCCAACUUCUGGCGGGUCGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.8580913219148916,
+      "fluorescence_intensity": 0.010856977
+    },
+    {
+      "header": "pepper_C9U_A6C_A7C_G10C_U16G_G21A_C36U",
+      "sequence": "UCCCCCCUUCUGGCGGGUCGACCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.7474509990436728,
+      "fluorescence_intensity": 0.008685582
+    },
+    {
+      "header": "pepper_C9U_C5A_A6C_G10C_U16G_G21A_C36U",
+      "sequence": "UCCCACAUUCUGGCGGGUCGACCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.9950862364408118,
+      "fluorescence_intensity": 0.03985717
+    },
+    {
+      "header": "pepper_C9U_C5A_A6C_A7C_G10C_G21A_C36A",
+      "sequence": "UCCCACCUUCUGGCGUGUCGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.5414287452581541,
+      "fluorescence_intensity": 0.177475391
+    },
+    {
+      "header": "pepper_C9U_C5A_A6C_A7C_G10C_U16G_C36U",
+      "sequence": "UCCCACCUUCUGGCGGGUCGGCCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.8812534643900795,
+      "fluorescence_intensity": 0.040339703
+    },
+    {
+      "header": "pepper_C19U_A7C_G21A_C36U_U28A_C29U",
+      "sequence": "UCCCCACUCGUGGCGUGUUGACCUGCUAUGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.17876747793640363,
+      "fluorescence_intensity": 1.398958
+    },
+    {
+      "header": "pepper_C19U_C5A_G21A_C36U_U28C_C29G",
+      "sequence": "UCCCAAAUCGUGGCGUGUUGACCUGCUCGGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.20920186616422143,
+      "fluorescence_intensity": 1.046181
+    },
+    {
+      "header": "pepper_C19U_C5A_G21A_C36U_U28A_C29U",
+      "sequence": "UCCCAAAUCGUGGCGUGUUGACCUGCUAUGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.1868452258186524,
+      "fluorescence_intensity": 1.124421
+    },
+    {
+      "header": "pepper_C19U_C5A_G21A_C36U_C26U_G31A_U28G",
+      "sequence": "UCCCAAAUCGUGGCGUGUUGACCUGUUGCGACAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.22262131584908015,
+      "fluorescence_intensity": 1.247454
+    },
+    {
+      "header": "pepper_C19U_A7C_C26U_G31A_G12A_C45U_C29A",
+      "sequence": "UCCCCACUCGUAGCGUGUUGGCCUGUUUAGACAGGCACUGGCGCUGGGA",
+      "log_likelihood": -0.2789829295710364,
+      "fluorescence_intensity": 1.467824
+    },
+    {
+      "header": "pepper_C19U_G20C_G21A_C36U_G12A_C45U_C29A",
+      "sequence": "UCCCCAAUCGUAGCGUGUUCACCUGCUUAGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.6206596121679022,
+      "fluorescence_intensity": 0.553241
+    },
+    {
+      "header": "pepper_C19U_A7C_C26U_G32A_G12A_C45U_U28C_C29G",
+      "sequence": "UCCCCACUCGUAGCGUGUUGGCCUGUUCGGACAGGCACUGGCGCUGGGA",
+      "log_likelihood": -0.4582300635060053,
+      "fluorescence_intensity": 0.953009
+    },
+    {
+      "header": "pepper_C19U_G20C_G21A_C36U_G12A_C45U_U28C_C29G",
+      "sequence": "UCCCCAAUCGUAGCGUGUUCACCUGCUCGGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.5226332452168988,
+      "fluorescence_intensity": 0.364468
+    },
+    {
+      "header": "pepper_C19U_A7C_G20C_G21A_C36U_G12A_C45U_U28A_C29U",
+      "sequence": "UCCCCACUCGUAGCGUGUUCACCUGCUAUGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.4871040778299936,
+      "fluorescence_intensity": 0.5
+    },
+    {
+      "header": "pepper_C19U_G20C_G21A_C36U_C26U_G31A_G12A_C45U_U28G",
+      "sequence": "UCCCCAAUCGUAGCGUGUUCACCUGUUGCGACAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.5047070400080197,
+      "fluorescence_intensity": 0.384606
+    },
+    {
+      "header": "pepper_C19U_A7C_G21A_C36U_C26U_G31A_G12A_C45U_U28G",
+      "sequence": "UCCCCACUCGUAGCGUGUUGACCUGUUGCGACAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.2847697497681092,
+      "fluorescence_intensity": 1.239815
+    },
+    {
+      "header": "pepper_C19U_A6C_G20C_G21A_C36U_C26U_G31A_G12A_C45U_C29A",
+      "sequence": "UCCCCCAUCGUAGCGUGUUCACCUGUUUAGACAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.3317768889198992,
+      "fluorescence_intensity": 0.503472
+    },
+    {
+      "header": "pepper_C19U_A7C_G20C_G21A_C36U_C26U_G31A_G12A_C45U_C29A",
+      "sequence": "UCCCCACUCGUAGCGUGUUCACCUGUUUAGACAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.30852139323334477,
+      "fluorescence_intensity": 0.882755
+    },
+    {
+      "header": "pepper_C19U_A6C_G20C_G21A_C36U_C26U_G31A_G12A_C45U_U28C_C29G",
+      "sequence": "UCCCCCAUCGUAGCGUGUUCACCUGUUCGGACAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.2725668152205038,
+      "fluorescence_intensity": 0.160185
+    },
+    {
+      "header": "pepper_C19U_C5A_A7C_G21A_C36U_C26U_G31A_G12A_C45U_U28C_C29G",
+      "sequence": "UCCCAACUCGUAGCGUGUUGACCUGUUCGGACAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.29915586959960283,
+      "fluorescence_intensity": 0.869213
+    },
+    {
+      "header": "pepper_C19U_A6C_A7C_G20C_G21A_C36U_C26U_G31A_G12A_C45U_U28A_C29U",
+      "sequence": "UCCCCCCUCGUAGCGUGUUCACCUGUUAUGACAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.46418206699130754,
+      "fluorescence_intensity": 0.642361
+    },
+    {
+      "header": "pepper_C19U_A6C_A7C_G20C_G21A_C36U_C26U_G31A_G12A_C45U_U28C_C29G",
+      "sequence": "UCCCCCCUCGUAGCGUGUUCACCUGUUCGGACAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.2448003749462315,
+      "fluorescence_intensity": 1.009838
+    },
+    {
+      "header": "pepper_C19U_C5A_A6C_A7C_G10C_G21A_C36U_C26U_G31A_G12A_C45U_U28C_C29G",
+      "sequence": "UCCCACCUCCUAGCGUGUUGACCUGUUCGGACAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.4365294207165455,
+      "fluorescence_intensity": 0.08669
+    },
+    {
+      "header": "pepper_C19U_C5A_A6C_A7C_G20C_G21A_C36U_C26G_G31C_G12A_C45U_U28A_C29U",
+      "sequence": "UCCCACCUCGUAGCGUGUUCACCUGGUAUGCCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.8189117426690598,
+      "fluorescence_intensity": 0.352431
+    },
+    {
+      "header": "pepper_C19U_C5A_A6C_A7C_G10C_G20C_G21A_C36U_C26G_G31C_G12A_C45U_U28A_C29U",
+      "sequence": "UCCCACCUCCUAGCGUGUUCACCUGGUAUGCCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -1.0024054979796198,
+      "fluorescence_intensity": 0.041898
+    }
+  ],
+  "pepper_530": [
+    {
+      "header": "pepper_C5A_A21G_C36U",
+      "sequence": "UCCCAAAUCGUAGCGUGUCGGCCUGCUUCGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.06954370730090886,
+      "fluorescence_intensity": 1.350735294
+    },
+    {
+      "header": "pepper_A7C_A21G_C36U",
+      "sequence": "UCCCCACUCGUAGCGUGUCGGCCUGCUUCGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.060465075118391186,
+      "fluorescence_intensity": 1.213970588
+    },
+    {
+      "header": "pepper_A6C_A21G_C36U",
+      "sequence": "UCCCCCAUCGUAGCGUGUCGGCCUGCUUCGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.06835247891508422,
+      "fluorescence_intensity": 1.2875
+    },
+    {
+      "header": "pepper_C5A_A7C_A21G_C36U",
+      "sequence": "UCCCAACUCGUAGCGUGUCGGCCUGCUUCGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.06610608820023006,
+      "fluorescence_intensity": 1.256372549
+    },
+    {
+      "header": "pepper_C5A_A7C_A21G",
+      "sequence": "UCCCAACUCGUAGCGUGUCGGCCUGCUUCGGCAGGCACUGGCGCUGGGA",
+      "log_likelihood": -0.1325992873000582,
+      "fluorescence_intensity": 0.357107843
+    },
+    {
+      "header": "pepper_C5A_A6C_A21G_C36U",
+      "sequence": "UCCCACAUCGUAGCGUGUCGGCCUGCUUCGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.05713040569597589,
+      "fluorescence_intensity": 0.652696078
+    },
+    {
+      "header": "pepper_C5A_A7C_C36U",
+      "sequence": "UCCCAACUCGUAGCGUGUCGACCUGCUUCGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.1960785756765494,
+      "fluorescence_intensity": 0.470098039
+    },
+    {
+      "header": "pepper_C5A_A6C_A21G",
+      "sequence": "UCCCACAUCGUAGCGUGUCGGCCUGCUUCGGCAGGCACUGGCGCUGGGA",
+      "log_likelihood": -0.12811407186263193,
+      "fluorescence_intensity": 0.441666667
+    },
+    {
+      "header": "pepper_A6C_A7C_A21G",
+      "sequence": "UCCCCCCUCGUAGCGUGUCGGCCUGCUUCGGCAGGCACUGGCGCUGGGA",
+      "log_likelihood": -0.11975557589799532,
+      "fluorescence_intensity": 1.07622549
+    },
+    {
+      "header": "pepper_A6C_A7C_A21G_C36U",
+      "sequence": "UCCCCCCUCGUAGCGUGUCGGCCUGCUUCGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.061601129217650645,
+      "fluorescence_intensity": 1.122794118
+    },
+    {
+      "header": "pepper_C5A_A6C_C36U",
+      "sequence": "UCCCACAUCGUAGCGUGUCGACCUGCUUCGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.18742268093581294,
+      "fluorescence_intensity": 0.890441176
+    },
+    {
+      "header": "pepper_C5A_A6C_A7C_A21G_C36U",
+      "sequence": "UCCCACCUCGUAGCGUGUCGGCCUGCUUCGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.04844936551062903,
+      "fluorescence_intensity": 1.133333333
+    },
+    {
+      "header": "pepper_A12G_A21G_U45C",
+      "sequence": "UCCCCAAUCGUGGCGUGUCGGCCUGCUUCGGCAGGCACUGGCGCCGGGA",
+      "log_likelihood": -0.25531040378507674,
+      "fluorescence_intensity": 1.180637255
+    },
+    {
+      "header": "pepper_C19U_C5A_A6C_C36U",
+      "sequence": "UCCCACAUCGUGGCGUGUUGGCCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.12608078540966855,
+      "fluorescence_intensity": 1.213480392
+    },
+    {
+      "header": "pepper_C19U_C5A_G21A_C36A",
+      "sequence": "UCCCAAAUCGUGGCGUGUUGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.07414975513618592,
+      "fluorescence_intensity": 1.170343137
+    },
+    {
+      "header": "pepper_C19U_A6C_G21A_C36U",
+      "sequence": "UCCCCCAUCGUGGCGUGUUGACCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.13478728605028034,
+      "fluorescence_intensity": 1.147794118
+    },
+    {
+      "header": "pepper_C19U_C5A_A6C_A7C",
+      "sequence": "UCCCACCUCGUGGCGUGUUGGCCUGCUUCGGCAGGCACUGGCGCCGGGA",
+      "log_likelihood": -0.14832320655143716,
+      "fluorescence_intensity": 1.137254902
+    },
+    {
+      "header": "pepper_C19U_A6C_G21A_C36A",
+      "sequence": "UCCCCCAUCGUGGCGUGUUGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.07949736799031487,
+      "fluorescence_intensity": 1.082843137
+    },
+    {
+      "header": "pepper_C19U_C5A_A7C_C36A",
+      "sequence": "UCCCAACUCGUGGCGUGUUGGCCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.1094327767351963,
+      "fluorescence_intensity": 1.046078431
+    },
+    {
+      "header": "pepper_C19U_A7C_G21A_C36A",
+      "sequence": "UCCCCACUCGUGGCGUGUUGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.06727430430135205,
+      "fluorescence_intensity": 1.121323529
+    },
+    {
+      "header": "pepper_C9U_C5A_G10C_G21A",
+      "sequence": "UCCCAAAUUCUGGCGUGUCGACCUGCUUCGGCAGGCACUGGCGCCGGGA",
+      "log_likelihood": -0.5981520627107357,
+      "fluorescence_intensity": 0.16004902
+    },
+    {
+      "header": "pepper_C9U_A7C_G10C_G21A",
+      "sequence": "UCCCCACUUCUGGCGUGUCGACCUGCUUCGGCAGGCACUGGCGCCGGGA",
+      "log_likelihood": -0.5907131214453887,
+      "fluorescence_intensity": 0.307352941
+    },
+    {
+      "header": "pepper_C19U_C5A_A6C_C36A",
+      "sequence": "UCCCACAUCGUGGCGUGUUGGCCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.09893340006074512,
+      "fluorescence_intensity": 0.984068627
+    },
+    {
+      "header": "pepper_C19U_C5A_A7C_G21A_C36A",
+      "sequence": "UCCCAACUCGUGGCGUGUUGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.060366332284780694,
+      "fluorescence_intensity": 1.035539216
+    },
+    {
+      "header": "pepper_C9U_A7C_G10C_G21A_C36A",
+      "sequence": "UCCCCACUUCUGGCGUGUCGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.5159986892767662,
+      "fluorescence_intensity": 0.103431373
+    },
+    {
+      "header": "pepper_C19U_C5A_A6C_G21A_C36A",
+      "sequence": "UCCCACAUCGUGGCGUGUUGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.05070019110250857,
+      "fluorescence_intensity": 0.96004902
+    },
+    {
+      "header": "pepper_C9U_C5A_A6C_G10C_C36A",
+      "sequence": "UCCCACAUUCUGGCGUGUCGGCCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.5756038124613673,
+      "fluorescence_intensity": 0.033333333
+    },
+    {
+      "header": "pepper_C19U_C5A_A7C_G21A_C36U",
+      "sequence": "UCCCAACUCGUGGCGUGUUGACCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.12125748807115347,
+      "fluorescence_intensity": 0.52622549
+    },
+    {
+      "header": "pepper_C9U_C5A_G10C_G21A_C36A",
+      "sequence": "UCCCAAAUUCUGGCGUGUCGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.5415590424191596,
+      "fluorescence_intensity": 0.049509804
+    },
+    {
+      "header": "pepper_C19U_C5A_A6C_G21A_C36U",
+      "sequence": "UCCCACAUCGUGGCGUGUUGACCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.10394294721244274,
+      "fluorescence_intensity": 1.027941176
+    },
+    {
+      "header": "pepper_C19U_A6C_A7C_G21A_C36A",
+      "sequence": "UCCCCCCUCGUGGCGUGUUGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.07531854444021853,
+      "fluorescence_intensity": 0.902941176
+    },
+    {
+      "header": "pepper_C9U_C5A_A6C_G10C_U16G",
+      "sequence": "UCCCACAUUCUGGCGGGUCGGCCUGCUUCGGCAGGCACUGGCGCCGGGA",
+      "log_likelihood": -0.9380116702113253,
+      "fluorescence_intensity": 0.005392157
+    },
+    {
+      "header": "pepper_C19U_C5A_A6C_A7C_C36A",
+      "sequence": "UCCCACCUCGUGGCGUGUUGGCCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.09813826486283594,
+      "fluorescence_intensity": 1.210784314
+    },
+    {
+      "header": "pepper_U16G_C5A_A6C_U16G_C36U",
+      "sequence": "UCCCACAUCGUGGCGGREDGUCGGCCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -1.642483105294769,
+      "fluorescence_intensity": 0.024754902
+    },
+    {
+      "header": "pepper_C9U_A6C_A7C_G10C_U16G_C36U",
+      "sequence": "UCCCCCCUUCUGGCGGGUCGGCCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.7104913602896125,
+      "fluorescence_intensity": 0.010294118
+    },
+    {
+      "header": "pepper_C9U_C5A_G10C_U16G_G21A_C36U",
+      "sequence": "UCCCAAAUUCUGGCGGGUCGACCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.8322701684418443,
+      "fluorescence_intensity": 0.005147059
+    },
+    {
+      "header": "pepper_C9U_C5A_A7C_G10C_G21A_C36A",
+      "sequence": "UCCCAACUUCUGGCGUGUCGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.4866823350624015,
+      "fluorescence_intensity": 0.074019608
+    },
+    {
+      "header": "pepper_C9U_C5A_A6C_A7C_G10C_G21A",
+      "sequence": "UCCCACCUUCUGGCGUGUCGACCUGCUUCGGCAGGCACUGGCGCCGGGA",
+      "log_likelihood": -0.6150989221707129,
+      "fluorescence_intensity": 0.164460784
+    },
+    {
+      "header": "pepper_C9U_A6C_A7C_G10C_G21A_C36A",
+      "sequence": "UCCCCCCUUCUGGCGUGUCGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.4770720298032274,
+      "fluorescence_intensity": 0.07377451
+    },
+    {
+      "header": "pepper_C9U_A7C_G10C_U16G_G21A_C36U",
+      "sequence": "UCCCCACUUCUGGCGGGUCGACCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.8584664274845748,
+      "fluorescence_intensity": 0.006372549
+    },
+    {
+      "header": "pepper_U16G_C5A_A6C_U16G_G21A_C36A",
+      "sequence": "UCCCACAUCGUGGCGGGUCGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.4323139237890338,
+      "fluorescence_intensity": 0.005147059
+    },
+    {
+      "header": "pepper_C9U_C5A_A6C_A7C_G10C_U16G",
+      "sequence": "UCCCACCUUCUGGCGGGUCGGCCUGCUUCGGCAGGCACUGGCGCCGGGA",
+      "log_likelihood": -0.8878265118124843,
+      "fluorescence_intensity": 0.004901961
+    },
+    {
+      "header": "pepper_C9U_C5A_A7C_G10C_U16G_C36U",
+      "sequence": "UCCCAACUUCUGGCGGGUCGGCCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.8442175921723271,
+      "fluorescence_intensity": 0.006862745
+    },
+    {
+      "header": "pepper_C19U_C5A_A6C_A7C_G21A_C36A",
+      "sequence": "UCCCACCUCGUGGCGUGUUGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.05147192333985301,
+      "fluorescence_intensity": 0.846323529
+    },
+    {
+      "header": "pepper_C9U_C5A_A7C_G10C_U16G_G21A_C36U",
+      "sequence": "UCCCAACUUCUGGCGGGUCGACCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.8847256451533342,
+      "fluorescence_intensity": 0.005637255
+    },
+    {
+      "header": "pepper_C9U_C5A_A7C_G10C_U16G_G21A_C36A",
+      "sequence": "UCCCAACUUCUGGCGGGUCGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.8580913219148916,
+      "fluorescence_intensity": 0.005637255
+    },
+    {
+      "header": "pepper_C9U_A6C_A7C_G10C_U16G_G21A_C36U",
+      "sequence": "UCCCCCCUUCUGGCGGGUCGACCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.7474509990436728,
+      "fluorescence_intensity": 0.006372549
+    },
+    {
+      "header": "pepper_C9U_C5A_A6C_G10C_U16G_G21A_C36U",
+      "sequence": "UCCCACAUUCUGGCGGGUCGACCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.9950862364408118,
+      "fluorescence_intensity": 0.005882353
+    },
+    {
+      "header": "pepper_C9U_C5A_A6C_A7C_G10C_G21A_C36A",
+      "sequence": "UCCCACCUUCUGGCGUGUCGACCUGCUUCGGCAGGAACUGGCGCCGGGA",
+      "log_likelihood": -0.5414287452581541,
+      "fluorescence_intensity": 0.072058824
+    },
+    {
+      "header": "pepper_C9U_C5A_A6C_A7C_G10C_U16G_C36U",
+      "sequence": "UCCCACCUUCUGGCGGGUCGGCCUGCUUCGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.8812534643900795,
+      "fluorescence_intensity": 0.008088235
+    },
+    {
+      "header": "pepper_C19U_A7C_G21A_C36U_U28A_C29U",
+      "sequence": "UCCCCACUCGUGGCGUGUUGACCUGCUAUGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.17876747793640363,
+      "fluorescence_intensity": 1.531497
+    },
+    {
+      "header": "pepper_C19U_C5A_G21A_C36U_U28C_C29G",
+      "sequence": "UCCCAAAUCGUGGCGUGUUGACCUGCUCGGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.20920186616422143,
+      "fluorescence_intensity": 0.735676
+    },
+    {
+      "header": "pepper_C19U_C5A_G21A_C36U_U28A_C29U",
+      "sequence": "UCCCAAAUCGUGGCGUGUUGACCUGCUAUGGCAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.1868452258186524,
+      "fluorescence_intensity": 0.538462
+    },
+    {
+      "header": "pepper_C19U_C5A_G21A_C36U_C26U_G31A_U28G",
+      "sequence": "UCCCAAAUCGUGGCGUGUUGACCUGUUGCGACAGGUACUGGCGCCGGGA",
+      "log_likelihood": -0.22262131584908015,
+      "fluorescence_intensity": 1.325419
+    },
+    {
+      "header": "pepper_C19U_A7C_C26U_G31A_G12A_C45U_C29A",
+      "sequence": "UCCCCACUCGUAGCGUGUUGGCCUGUUUAGACAGGCACUGGCGCUGGGA",
+      "log_likelihood": -0.2789829295710364,
+      "fluorescence_intensity": 1.092751
+    },
+    {
+      "header": "pepper_C19U_G20C_G21A_C36U_G12A_C45U_C29A",
+      "sequence": "UCCCCAAUCGUAGCGUGUUCACCUGCUUAGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.6206596121679022,
+      "fluorescence_intensity": 0.177904
+    },
+    {
+      "header": "pepper_C19U_A7C_C26U_G32A_G12A_C45U_U28C_C29G",
+      "sequence": "UCCCCACUCGUAGCGUGUUGGCCUGUUCGGACAGGCACUGGCGCUGGGA",
+      "log_likelihood": -0.4582300635060053,
+      "fluorescence_intensity": 0.140551
+    },
+    {
+      "header": "pepper_C19U_G20C_G21A_C36U_G12A_C45U_U28C_C29G",
+      "sequence": "UCCCCAAUCGUAGCGUGUUCACCUGCUCGGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.5226332452168988,
+      "fluorescence_intensity": 0.073441
+    },
+    {
+      "header": "pepper_C19U_A7C_G20C_G21A_C36U_G12A_C45U_U28A_C29U",
+      "sequence": "UCCCCACUCGUAGCGUGUUCACCUGCUAUGGCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.4871040778299936,
+      "fluorescence_intensity": 0.154163
+    },
+    {
+      "header": "pepper_C19U_G20C_G21A_C36U_C26U_G31A_G12A_C45U_U28G",
+      "sequence": "UCCCCAAUCGUAGCGUGUUCACCUGUUGCGACAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.5047070400080197,
+      "fluorescence_intensity": 0.137385
+    },
+    {
+      "header": "pepper_C19U_A7C_G21A_C36U_C26U_G31A_G12A_C45U_U28G",
+      "sequence": "UCCCCACUCGUAGCGUGUUGACCUGUUGCGACAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.2847697497681092,
+      "fluorescence_intensity": 0.666983
+    },
+    {
+      "header": "pepper_C19U_A6C_G20C_G21A_C36U_C26U_G31A_G12A_C45U_C29A",
+      "sequence": "UCCCCCAUCGUAGCGUGUUCACCUGUUUAGACAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.3317768889198992,
+      "fluorescence_intensity": 0.166825
+    },
+    {
+      "header": "pepper_C19U_A7C_G20C_G21A_C36U_C26U_G31A_G12A_C45U_C29A",
+      "sequence": "UCCCCACUCGUAGCGUGUUCACCUGUUUAGACAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.30852139323334477,
+      "fluorescence_intensity": 0.406774
+    },
+    {
+      "header": "pepper_C19U_A6C_G20C_G21A_C36U_C26U_G31A_G12A_C45U_U28C_C29G",
+      "sequence": "UCCCCCAUCGUAGCGUGUUCACCUGUUCGGACAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.2725668152205038,
+      "fluorescence_intensity": 0.041152
+    },
+    {
+      "header": "pepper_C19U_C5A_A7C_G21A_C36U_C26U_G31A_G12A_C45U_U28C_C29G",
+      "sequence": "UCCCAACUCGUAGCGUGUUGACCUGUUCGGACAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.29915586959960283,
+      "fluorescence_intensity": 0.18202
+    },
+    {
+      "header": "pepper_C19U_A6C_A7C_G20C_G21A_C36U_C26U_G31A_G12A_C45U_U28A_C29U",
+      "sequence": "UCCCCCCUCGUAGCGUGUUCACCUGUUAUGACAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.46418206699130754,
+      "fluorescence_intensity": 0.325736
+    },
+    {
+      "header": "pepper_C19U_A6C_A7C_G20C_G21A_C36U_C26U_G31A_G12A_C45U_U28C_C29G",
+      "sequence": "UCCCCCCUCGUAGCGUGUUCACCUGUUCGGACAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.2448003749462315,
+      "fluorescence_intensity": 0.269072
+    },
+    {
+      "header": "pepper_C19U_C5A_A6C_A7C_G10C_G21A_C36U_C26U_G31A_G12A_C45U_U28C_C29G",
+      "sequence": "UCCCACCUCCUAGCGUGUUGACCUGUUCGGACAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.4365294207165455,
+      "fluorescence_intensity": 0.014245
+    },
+    {
+      "header": "pepper_C19U_C5A_A6C_A7C_G20C_G21A_C36U_C26G_G31C_G12A_C45U_U28A_C29U",
+      "sequence": "UCCCACCUCGUAGCGUGUUCACCUGGUAUGCCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -0.8189117426690598,
+      "fluorescence_intensity": 0.078506
+    },
+    {
+      "header": "pepper_C19U_C5A_A6C_A7C_G10C_G20C_G21A_C36U_C26G_G31C_G12A_C45U_U28A_C29U",
+      "sequence": "UCCCACCUCCUAGCGUGUUCACCUGGUAUGCCAGGUACUGGCGCUGGGA",
+      "log_likelihood": -1.0024054979796198,
+      "fluorescence_intensity": 0.0
+    }
+  ]
+}

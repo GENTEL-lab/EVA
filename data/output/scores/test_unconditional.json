@@ -1,0 +1,33 @@
+{
+  "input_file": "/eva/data/test_data/test_rna.fa",
+  "checkpoint": "/eva/checkpoint/clm",
+  "mode": "scoring",
+  "normalize": false,
+  "exclude_special_tokens": false,
+  "length_normalize": false,
+  "num_sequences": 3,
+  "condition": null,
+  "scores": [
+    {
+      "index": 0,
+      "header": "test_sequence_1",
+      "sequence": "AUGGCCGUAGUCAGUAGUCAGUAGUCAGUAGUCAGUAGUCAGUAGUCAGUAGUCAGUAGUCAGUAGU",
+      "length": 67,
+      "log_likelihood": -56.246314130257474
+    },
+    {
+      "index": 1,
+      "header": "test_sequence_2",
+      "sequence": "AUGCGCUAUGCGCUAUGCGCUAUGCGCUAUGCGCUAUGCGCUAUGCGCUAUGCGCUAUGCGCU",
+      "length": 63,
+      "log_likelihood": -43.229757335968145
+    },
+    {
+      "index": 2,
+      "header": "test_sequence_3",
+      "sequence": "AUGAAAAUGCGGCCGCAUUACGUAAACGGCCGCAAAUGUUUCCGGCAAACUUACGCCGUUU",
+      "length": 61,
+      "log_likelihood": -103.12467731533934
+    }
+  ]
+}

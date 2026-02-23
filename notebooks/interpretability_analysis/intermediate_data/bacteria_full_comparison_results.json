@@ -1,0 +1,447 @@
+{
+  "n_species": 42,
+  "summary": {
+    "position_baseline": {
+      "mean": 0.4944496025884265,
+      "std": 0.07450276955953863
+    },
+    "evo2_1b": {
+      "mean": 0.5329237225762775,
+      "std": 0.041452541401279915
+    },
+    "evo2_7b": {
+      "mean": 0.6450422104543098,
+      "std": 0.04477644553877877
+    },
+    "rnagen_30m": {
+      "mean": 0.5491343942708272,
+      "std": 0.052919095412688626
+    },
+    "rnagen_1400m": {
+      "mean": 0.5734655291787659,
+      "std": 0.035041791078168245
+    }
+  },
+  "per_species": [
+    {
+      "organism": "Acinetobacter baylyi ADP1",
+      "position": 0.6083921082166697,
+      "rnagen_1400m": 0.6077476519581783,
+      "rnagen_30m": 0.6441041998936735,
+      "evo2_1b": 0.5648018193632229,
+      "evo2_7b": 0.665391340303621,
+      "n_genes": 3255,
+      "n_essential": 285
+    },
+    {
+      "organism": "Burkholderia pseudomallei K96243",
+      "position": 0.39218977273899547,
+      "rnagen_1400m": 0.5674458669032465,
+      "rnagen_30m": 0.5030009181220794,
+      "evo2_1b": 0.4819212478207496,
+      "evo2_7b": 0.7199170595335114,
+      "n_genes": 6409,
+      "n_essential": 155
+    },
+    {
+      "organism": "Streptococcus pyogenes MGAS5005",
+      "position": 0.5712558012558012,
+      "rnagen_1400m": 0.589079989079989,
+      "rnagen_30m": 0.5154354354354354,
+      "evo2_1b": 0.5649194649194649,
+      "evo2_7b": 0.6362216762216762,
+      "n_genes": 1761,
+      "n_essential": 111
+    },
+    {
+      "organism": "Streptococcus agalactiae A909",
+      "position": 0.4243170117620533,
+      "rnagen_1400m": 0.5180940212693999,
+      "rnagen_30m": 0.5651986020818459,
+      "evo2_1b": 0.521419713652249,
+      "evo2_7b": 0.6036977189883883,
+      "n_genes": 2073,
+      "n_essential": 26
+    },
+    {
+      "organism": "Synechococcus elongatus PCC 7942 = FACHB-805",
+      "position": 0.46913700904448885,
+      "rnagen_1400m": 0.531296151507254,
+      "rnagen_30m": 0.5248264944642322,
+      "evo2_1b": 0.5411273274838561,
+      "evo2_7b": 0.657944333439512,
+      "n_genes": 2720,
+      "n_essential": 162
+    },
+    {
+      "organism": "Burkholderia thailandensis E264",
+      "position": 0.6342492125225276,
+      "rnagen_1400m": 0.5783409649229855,
+      "rnagen_30m": 0.4873251941501168,
+      "evo2_1b": 0.5316640225817234,
+      "evo2_7b": 0.6987555998889308,
+      "n_genes": 5827,
+      "n_essential": 201
+    },
+    {
+      "organism": "Staphylococcus aureus subsp. aureus NCTC 8325",
+      "position": 0.39734821385987507,
+      "rnagen_1400m": 0.5682774307635264,
+      "rnagen_30m": 0.559249118203512,
+      "evo2_1b": 0.5493063280187863,
+      "evo2_7b": 0.6371437161898785,
+      "n_genes": 2766,
+      "n_essential": 348
+    },
+    {
+      "organism": "Pseudomonas aeruginosa UCBPP-PA14",
+      "position": 0.5839875438321034,
+      "rnagen_1400m": 0.5260386245878474,
+      "rnagen_30m": 0.4221719788559167,
+      "evo2_1b": 0.49757732768095464,
+      "evo2_7b": 0.6786811116344795,
+      "n_genes": 5955,
+      "n_essential": 165
+    },
+    {
+      "organism": "Francisella tularensis subsp. novicida U112",
+      "position": 0.5386437613019892,
+      "rnagen_1400m": 0.5712899336949969,
+      "rnagen_30m": 0.5997679324894515,
+      "evo2_1b": 0.5320855937311633,
+      "evo2_7b": 0.6560337552742616,
+      "n_genes": 1790,
+      "n_essential": 210
+    },
+    {
+      "organism": "Campylobacter jejuni subsp. jejuni 81-176",
+      "position": 0.5608367839889579,
+      "rnagen_1400m": 0.5190096618357487,
+      "rnagen_30m": 0.6181884057971014,
+      "evo2_1b": 0.5189768806073154,
+      "evo2_7b": 0.6647446514837819,
+      "n_genes": 1607,
+      "n_essential": 207
+    },
+    {
+      "organism": "Streptococcus sanguinis SK36",
+      "position": 0.5600623208612837,
+      "rnagen_1400m": 0.5557528636874639,
+      "rnagen_30m": 0.5465330222916926,
+      "evo2_1b": 0.5497064572649717,
+      "evo2_7b": 0.6041207390727493,
+      "n_genes": 2270,
+      "n_essential": 139
+    },
+    {
+      "organism": "Staphylococcus aureus subsp. aureus USA300_TCH1516",
+      "position": 0.3958911722010524,
+      "rnagen_1400m": 0.5827073126474324,
+      "rnagen_30m": 0.5738318816911631,
+      "evo2_1b": 0.5493966612230086,
+      "evo2_7b": 0.6880284884775903,
+      "n_genes": 2807,
+      "n_essential": 167
+    },
+    {
+      "organism": "Porphyromonas gingivalis ATCC 33277",
+      "position": 0.4471361711611322,
+      "rnagen_1400m": 0.5785850481638313,
+      "rnagen_30m": 0.49442091969393065,
+      "evo2_1b": 0.46576529727855775,
+      "evo2_7b": 0.708565485476562,
+      "n_genes": 2028,
+      "n_essential": 105
+    },
+    {
+      "organism": "Caulobacter vibrioides NA1000",
+      "position": 0.43214475784992024,
+      "rnagen_1400m": 0.5900612027674295,
+      "rnagen_30m": 0.5223877949263793,
+      "evo2_1b": 0.44897330140145475,
+      "evo2_7b": 0.6143272130565903,
+      "n_genes": 3878,
+      "n_essential": 120
+    },
+    {
+      "organism": "Bacillus thuringiensis BMB171",
+      "position": 0.4961702064370278,
+      "rnagen_1400m": 0.5441578916056875,
+      "rnagen_30m": 0.39362841334999105,
+      "evo2_1b": 0.6107293711702064,
+      "evo2_7b": 0.5656493545124636,
+      "n_genes": 5615,
+      "n_essential": 12
+    },
+    {
+      "organism": "Brevundimonas subvibrioides ATCC 15264",
+      "position": 0.37609417446423177,
+      "rnagen_1400m": 0.6197898087424196,
+      "rnagen_30m": 0.633674505391982,
+      "evo2_1b": 0.5167933485168619,
+      "evo2_7b": 0.6871690036495349,
+      "n_genes": 3335,
+      "n_essential": 22
+    },
+    {
+      "organism": "Bacteroides fragilis 638R",
+      "position": 0.5670413621438407,
+      "rnagen_1400m": 0.5636074417056305,
+      "rnagen_30m": 0.5402745623193669,
+      "evo2_1b": 0.5256744896878358,
+      "evo2_7b": 0.6716430614190385,
+      "n_genes": 4322,
+      "n_essential": 126
+    },
+    {
+      "organism": "Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344",
+      "position": 0.5114837184110275,
+      "rnagen_1400m": 0.5659397083200047,
+      "rnagen_30m": 0.5401823363480385,
+      "evo2_1b": 0.549835784598831,
+      "evo2_7b": 0.626695771657894,
+      "n_genes": 4635,
+      "n_essential": 251
+    },
+    {
+      "organism": "Salmonella enterica subsp. enterica serovar Typhimurium str. 14028S",
+      "position": 0.5659162459162459,
+      "rnagen_1400m": 0.5661597861597861,
+      "rnagen_30m": 0.4866290466290466,
+      "evo2_1b": 0.4433070983070983,
+      "evo2_7b": 0.5680576180576181,
+      "n_genes": 4624,
+      "n_essential": 74
+    },
+    {
+      "organism": "Acinetobacter baumannii ATCC 17978",
+      "position": 0.6449290505675955,
+      "rnagen_1400m": 0.6179231166150669,
+      "rnagen_30m": 0.590077399380805,
+      "evo2_1b": 0.5585668214654282,
+      "evo2_7b": 0.6017131062951495,
+      "n_genes": 3350,
+      "n_essential": 120
+    },
+    {
+      "organism": "Staphylococcus aureus subsp. aureus MW2",
+      "position": 0.3956531887718305,
+      "rnagen_1400m": 0.5800320490124341,
+      "rnagen_30m": 0.5919415879210366,
+      "evo2_1b": 0.5591110201919268,
+      "evo2_7b": 0.6865202692956298,
+      "n_genes": 2708,
+      "n_essential": 149
+    },
+    {
+      "organism": "Bacteroides thetaiotaomicron VPI-5482",
+      "position": 0.5896058617053092,
+      "rnagen_1400m": 0.5989044718326486,
+      "rnagen_30m": 0.552021847601958,
+      "evo2_1b": 0.542518612960602,
+      "evo2_7b": 0.6287206245769782,
+      "n_genes": 4760,
+      "n_essential": 54
+    },
+    {
+      "organism": "Vibrio cholerae O1 biovar El Tor str. N16961",
+      "position": 0.4443343011825908,
+      "rnagen_1400m": 0.5786082630130356,
+      "rnagen_30m": 0.574777697123673,
+      "evo2_1b": 0.5452117926382967,
+      "evo2_7b": 0.6351869915010737,
+      "n_genes": 4589,
+      "n_essential": 309
+    },
+    {
+      "organism": "Staphylococcus aureus subsp. aureus MRSA252",
+      "position": 0.40563428848068545,
+      "rnagen_1400m": 0.5767261616595266,
+      "rnagen_30m": 0.5836659755017036,
+      "evo2_1b": 0.5764098851813623,
+      "evo2_7b": 0.6873018990290198,
+      "n_genes": 2804,
+      "n_essential": 166
+    },
+    {
+      "organism": "Streptococcus pneumoniae R6",
+      "position": 0.39960939749323404,
+      "rnagen_1400m": 0.6022284496823356,
+      "rnagen_30m": 0.6182172402541316,
+      "evo2_1b": 0.6244217739304018,
+      "evo2_7b": 0.5645309890784852,
+      "n_genes": 2019,
+      "n_essential": 53
+    },
+    {
+      "organism": "Staphylococcus aureus subsp. aureus MSSA476",
+      "position": 0.36983339305312357,
+      "rnagen_1400m": 0.5834623506160151,
+      "rnagen_30m": 0.5720367152763223,
+      "evo2_1b": 0.5636905928935704,
+      "evo2_7b": 0.6838930091788191,
+      "n_genes": 2684,
+      "n_essential": 177
+    },
+    {
+      "organism": "Rhizorhabdus wittichii RW1",
+      "position": 0.4798147425768104,
+      "rnagen_1400m": 0.5984127718750758,
+      "rnagen_30m": 0.571657774045889,
+      "evo2_1b": 0.4669220953526965,
+      "evo2_7b": 0.6759879404161349,
+      "n_genes": 4972,
+      "n_essential": 93
+    },
+    {
+      "organism": "Salmonella enterica subsp. enterica serovar Typhimurium str. LT2",
+      "position": 0.4764367968789785,
+      "rnagen_1400m": 0.5666599711282497,
+      "rnagen_30m": 0.5055105752718314,
+      "evo2_1b": 0.5210556288876429,
+      "evo2_7b": 0.5509725453493967,
+      "n_genes": 4448,
+      "n_essential": 214
+    },
+    {
+      "organism": "Streptococcus pneumoniae TIGR4",
+      "position": 0.5397282730185539,
+      "rnagen_1400m": 0.6361491269466729,
+      "rnagen_30m": 0.5732346439482378,
+      "evo2_1b": 0.499801296540076,
+      "evo2_7b": 0.6784978018429746,
+      "n_genes": 2138,
+      "n_essential": 19
+    },
+    {
+      "organism": "Mycoplasmoides genitalium G37",
+      "position": 0.4691508009510752,
+      "rnagen_1400m": 0.6286641559207901,
+      "rnagen_30m": 0.5711136951352853,
+      "evo2_1b": 0.5373574688904701,
+      "evo2_7b": 0.6663600548430205,
+      "n_genes": 524,
+      "n_essential": 157
+    },
+    {
+      "organism": "Bacillus subtilis subsp. subtilis str. 168",
+      "position": 0.5588876071737447,
+      "rnagen_1400m": 0.524216464969828,
+      "rnagen_30m": 0.4726898851471777,
+      "evo2_1b": 0.5579420194475467,
+      "evo2_7b": 0.6533564694469963,
+      "n_genes": 4230,
+      "n_essential": 203
+    },
+    {
+      "organism": "Escherichia coli str. K-12 substr. MG1655",
+      "position": 0.48728075401498755,
+      "rnagen_1400m": 0.5416268331499837,
+      "rnagen_30m": 0.5633322895797367,
+      "evo2_1b": 0.5618449407046353,
+      "evo2_7b": 0.5642869084665042,
+      "n_genes": 4297,
+      "n_essential": 583
+    },
+    {
+      "organism": "Streptococcus pyogenes NZ131",
+      "position": 0.49579360143725815,
+      "rnagen_1400m": 0.5609107241569928,
+      "rnagen_30m": 0.5038407499539339,
+      "evo2_1b": 0.5733658098396903,
+      "evo2_7b": 0.622984613967201,
+      "n_genes": 1716,
+      "n_essential": 108
+    },
+    {
+      "organism": "Helicobacter pylori 26695",
+      "position": 0.5445225039981723,
+      "rnagen_1400m": 0.5944282613662326,
+      "rnagen_30m": 0.574294608179118,
+      "evo2_1b": 0.5473176547863834,
+      "evo2_7b": 0.6850154215215901,
+      "n_genes": 1555,
+      "n_essential": 96
+    },
+    {
+      "organism": "Mycoplasmopsis pulmonis UAB CTIP",
+      "position": 0.40651732637378574,
+      "rnagen_1400m": 0.6610361993137113,
+      "rnagen_30m": 0.6113890097143686,
+      "evo2_1b": 0.5212834082451308,
+      "evo2_7b": 0.7007575757575759,
+      "n_genes": 759,
+      "n_essential": 132
+    },
+    {
+      "organism": "Salmonella enterica subsp. enterica serovar Typhi str. Ty2",
+      "position": 0.5706528313945096,
+      "rnagen_1400m": 0.626153136338948,
+      "rnagen_30m": 0.5896757743961809,
+      "evo2_1b": 0.5694839472408577,
+      "evo2_7b": 0.6299693220054748,
+      "n_genes": 4604,
+      "n_essential": 277
+    },
+    {
+      "organism": "Campylobacter jejuni subsp. jejuni NCTC 11168 = ATCC 700819",
+      "position": 0.4974248564674097,
+      "rnagen_1400m": 0.4881493772533596,
+      "rnagen_30m": 0.5965803561673768,
+      "evo2_1b": 0.49732157489347756,
+      "evo2_7b": 0.627453089151098,
+      "n_genes": 1572,
+      "n_essential": 216
+    },
+    {
+      "organism": "Haemophilus influenzae Rd KW20",
+      "position": 0.5495578304856655,
+      "rnagen_1400m": 0.5597241246725784,
+      "rnagen_30m": 0.548927017999183,
+      "evo2_1b": 0.5495362026289862,
+      "evo2_7b": 0.5917429649388412,
+      "n_genes": 1721,
+      "n_essential": 291
+    },
+    {
+      "organism": "Shewanella oneidensis MR-1",
+      "position": 0.5287893179718693,
+      "rnagen_1400m": 0.5532183269548885,
+      "rnagen_30m": 0.5626517246353238,
+      "evo2_1b": 0.5419193492451747,
+      "evo2_7b": 0.6580740523636052,
+      "n_genes": 4324,
+      "n_essential": 326
+    },
+    {
+      "organism": "Mycobacterium tuberculosis H37Rv",
+      "position": 0.4800000939072947,
+      "rnagen_1400m": 0.524192840330155,
+      "rnagen_30m": 0.5235393099299211,
+      "evo2_1b": 0.46416901242852965,
+      "evo2_7b": 0.5790161008208067,
+      "n_genes": 3901,
+      "n_essential": 862
+    },
+    {
+      "organism": "Rhodopseudomonas palustris CGA009",
+      "position": 0.48063649707985884,
+      "rnagen_1400m": 0.5725038258533995,
+      "rnagen_30m": 0.4743902058152971,
+      "evo2_1b": 0.4529420031856085,
+      "evo2_7b": 0.6699108341921983,
+      "n_genes": 4952,
+      "n_essential": 26
+    },
+    {
+      "organism": "Staphylococcus aureus subsp. aureus N315",
+      "position": 0.41979264576034636,
+      "rnagen_1400m": 0.5682398625233797,
+      "rnagen_30m": 0.5672477142613005,
+      "evo2_1b": 0.5866219013168513,
+      "evo2_7b": 0.6967325567043587,
+      "n_genes": 2704,
+      "n_essential": 166
+    }
+  ]
+}

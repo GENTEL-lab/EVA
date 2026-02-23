@@ -1,0 +1,20 @@
+# Test config for predict task mode
+checkpoint: /eva/checkpoint/clm
+output_dir: /eva/data/output/scores
+
+defaults:
+  normalize: false
+  batch_size: 128
+
+tasks:
+  - name: test_unconditional
+    mode: scoring
+    input: /eva/data/test_data/test_rna.fa
+    output: /eva/data/output/scores/test_unconditional.json
+
+  - name: test_with_rna_type
+    mode: scoring
+    input: /eva/data/test_data/test_rna.fa
+    output: /eva/data/output/scores/test_with_rna_type.json
+    rna_type: mRNA
+    normalize: true

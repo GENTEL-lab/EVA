@@ -1,0 +1,105 @@
+# =============================================================================
+# Scoring 批量打分配置示例
+# =============================================================================
+#
+# 使用方法:
+#   docker exec eva /composer-python/python \
+#     /eva/tools/predict.py \
+#     --config /eva/config/tools_config/config_score_example.yaml
+#
+# 本配置演示 Scoring 的所有功能：
+#   1. 纯 RNA 序列打分
+#   2. 带条件前缀打分（RNA 类型）
+#   3. 带条件前缀打分（物种）
+#   4. 带条件前缀打分（RNA 类型 + 物种）
+#   5. 归一化选项
+# =============================================================================
+
+# 模型 checkpoint（容器内路径）
+checkpoint: /eva/checkpoint/clm
+
+# 输出目录
+output_dir: /eva/data/output/scores
+
+# 全局默认参数
+defaults:
+  normalize: false              # 是否做 token 级别 mean 归一化
+  exclude_special_tokens: false # 是否排除 5/3/<eos> token
+  length_normalize: false      # 是否除以序列长度
+  batch_size: 128              # 批量大小
+
+# =============================================================================
+# 任务列表
+# =============================================================================
+tasks:
+
+  # ---------------------------------------------------------------------------
+  # 1. 纯 RNA 序列打分（无条件）
+  # ---------------------------------------------------------------------------
+  - name: unconditional
+    mode: scoring
+    input: /eva/data/test_data/test_rna.fa
+    output: /eva/data/output/scores/unconditional.json
+
+  # ---------------------------------------------------------------------------
+  # 2. 带 RNA 类型条件打分
+  # ---------------------------------------------------------------------------
+  - name: score_lncrna
+    mode: scoring
+    input: /eva/data/test_data/test_rna.fa
+    output: /eva/data/output/scores/lncrna.json
+    rna_type: lncRNA
+    normalize: true
+
+  # ---------------------------------------------------------------------------
+  # 3. 带物种条件打分（通过 taxid）
+  # ---------------------------------------------------------------------------
+  - name: score_human
+    mode: scoring
+    input: /eva/data/test_data/test_rna.fa
+    output: /eva/data/output/scores/human.json
+    taxid: "9606"
+    lineage: "D__Eukaryota;P__Chordata;C__Mammalia;O__Primates;F__Hominidae;G__Homo;S__Homo sapiens"
+
+  # ---------------------------------------------------------------------------
+  # 4. 带物种条件打分（通过 species 名称）
+  # ---------------------------------------------------------------------------
+  - name: score_mouse
+    mode: scoring
+    input: /eva/data/test_data/test_rna.fa
+    output: /eva/data/output/scores/mouse.json
+    species: mus_musculus
+
+  # ---------------------------------------------------------------------------
+  # 5. 带 RNA 类型 + 物种条件打分
+  # ---------------------------------------------------------------------------
+  - name: score_human_mrna
+    mode: scoring
+    input: /eva/data/test_data/test_rna.fa
+    output: /eva/data/output/scores/human_mrna.json
+    rna_type: mRNA
+    taxid: "9606"
+    lineage: "D__Eukaryota;P__Chordata;C__Mammalia;O__Primates;F__Hominidae;G__Homo;S__Homo sapiens"
+
+  - name: score_mouse_trna
+    mode: scoring
+    input: /eva/data/test_data/test_rna.fa
+    output: /eva/data/output/scores/mouse_trna.json
+    rna_type: tRNA
+    taxid: "10090"
+    lineage: "D__Eukaryota;P__Chordata;C__Mammalia;O__Rodentia;F__Muridae;G__Mus;S__Mus musculus"
+    normalize: true
+    length_normalize: true
+
+  # ---------------------------------------------------------------------------
+  # 6. 任务级别覆盖默认参数
+  # ---------------------------------------------------------------------------
+  - name: score_custom_options
+    mode: scoring
+    input: /eva/data/test_data/test_rna.fa
+    output: /eva/data/output/scores/custom_options.json
+    rna_type: mRNA
+    normalize: true              # 覆盖默认的 false
+    exclude_special_tokens: true # 覆盖默认的 false
+    length_normalize: true      # 覆盖默认的 false
+    batch_size: 64              # 覆盖默认的 128

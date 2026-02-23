@@ -1,0 +1,172 @@
+# =============================================================================
+# CLM (Causal Language Model) 生成配置示例
+# =============================================================================
+#
+# 使用方法:
+#   docker exec eva /composer-python/python \
+#     /eva/tools/generate.py \
+#     --config /eva/config/tools_config/config_clm_example.yaml
+#
+# 或通过 Shell 脚本:
+#   ./generate.sh config/tools_config/config_clm_example.yaml
+#
+# 本配置演示 CLM 的所有生成模式：
+#   1. 无条件生成
+#   2. 条件生成（RNA 类型 / 物种 / 两者组合）
+#   3. Forward 续写（生成 3' 端）
+#   4. Reverse 续写（生成 5' 端）
+#   5. 采样参数调节
+# =============================================================================
+
+# 模型 checkpoint（容器内路径）
+checkpoint: /eva/checkpoint/clm
+
+# 输出目录
+output_dir: /eva/data/output/clm
+
+# 并行配置
+gpus: [0]
+instances_per_gpu: 1
+container_name: eva
+python_path: /composer-python/python
+
+# 全局默认参数（任务级参数可覆盖）
+defaults:
+  temperature: 1.0
+  top_k: 50
+  max_length: 200       # 测试用小值，正式生成建议 8192
+  batch_size: 1
+  min_length: 10
+
+# =============================================================================
+# 任务列表
+# =============================================================================
+tasks:
+
+  # ---------------------------------------------------------------------------
+  # 1. 无条件生成
+  # ---------------------------------------------------------------------------
+  - name: unconditional
+    format: clm
+    num_seqs: 10
+
+  # ---------------------------------------------------------------------------
+  # 2. 条件生成 — 仅指定 RNA 类型
+  # ---------------------------------------------------------------------------
+  - name: lncrna_only
+    format: clm
+    rna_type: lncRNA
+    num_seqs: 10
+
+  # ---------------------------------------------------------------------------
+  # 3. 条件生成 — 仅指定物种（通过 taxid + lineage）
+  # ---------------------------------------------------------------------------
+  - name: human_only
+    format: clm
+    taxid: "9606"
+    lineage: "D__Eukaryota;P__Chordata;C__Mammalia;O__Primates;F__Hominidae;G__Homo;S__Homo sapiens"
+    num_seqs: 10
+
+  # ---------------------------------------------------------------------------
+  # 4. 条件生成 — RNA 类型 + 物种
+  # ---------------------------------------------------------------------------
+  - name: human_mRNA
+    format: clm
+    rna_type: mRNA
+    taxid: "9606"
+    lineage: "D__Eukaryota;P__Chordata;C__Mammalia;O__Primates;F__Hominidae;G__Homo;S__Homo sapiens"
+    num_seqs: 10
+
+  - name: mouse_tRNA
+    format: clm
+    rna_type: tRNA
+    taxid: "10090"
+    lineage: "D__Eukaryota;P__Chordata;C__Mammalia;O__Rodentia;F__Muridae;G__Mus;S__Mus musculus"
+    num_seqs: 5
+
+  # ---------------------------------------------------------------------------
+  # 5. 条件生成 — 调节采样参数
+  # ---------------------------------------------------------------------------
+  - name: human_mRNA_low_temp
+    format: clm
+    rna_type: mRNA
+    taxid: "9606"
+    lineage: "D__Eukaryota;P__Chordata;C__Mammalia;O__Primates;F__Hominidae;G__Homo;S__Homo sapiens"
+    num_seqs: 5
+    temperature: 0.7      # 低温 → 更保守
+    top_k: 4              # 仅从 top-4 碱基采样
+
+  - name: human_mRNA_high_temp
+    format: clm
+    rna_type: mRNA
+    taxid: "9606"
+    lineage: "D__Eukaryota;P__Chordata;C__Mammalia;O__Primates;F__Hominidae;G__Homo;S__Homo sapiens"
+    num_seqs: 5
+    temperature: 1.5      # 高温 → 更多样
+    max_length: 500       # 覆盖默认 max_length
+
+  # ---------------------------------------------------------------------------
+  # 6. Forward 续写（保留 5' 端，生成 3' 端）
+  # ---------------------------------------------------------------------------
+
+  # 按比例分割：保留前 50% 作为 prompt
+  - name: forward_ratio_50
+    format: clm
+    input: /eva/data/test_data/test_rna.fa
+    direction: forward
+    split_ratio: 0.5
+    output_details: true
+
+  # 按固定位置分割：保留前 30 个碱基
+  - name: forward_pos_30
+    format: clm
+    input: /eva/data/test_data/test_rna.fa
+    direction: forward
+    split_pos: 30
+    output_details: true
+
+  # 带条件的 forward 续写
+  - name: forward_mRNA_condition
+    format: clm
+    input: /eva/data/test_data/test_rna.fa
+    direction: forward
+    split_ratio: 0.3
+    rna_type: mRNA
+    output_details: true
+
+  # 纯续写（整个序列作为 prompt，继续往后生成）
+  - name: forward_pure_continuation
+    format: clm
+    input: /eva/data/test_data/test_rna.fa
+    direction: forward
+    output_details: true
+
+  # ---------------------------------------------------------------------------
+  # 7. Reverse 续写（保留 3' 端，生成 5' 端）
+  # ---------------------------------------------------------------------------
+
+  # 按比例分割：保留后 50% 作为 prompt
+  - name: reverse_ratio_50
+    format: clm
+    input: /eva/data/test_data/test_rna.fa
+    direction: reverse
+    split_ratio: 0.5
+    output_details: true
+
+  # 按固定位置分割
+  - name: reverse_pos_60
+    format: clm
+    input: /eva/data/test_data/test_rna.fa
+    direction: reverse
+    split_pos: 60
+    output_details: true
+
+  # 带物种条件的 reverse 续写
+  - name: reverse_human_condition
+    format: clm
+    input: /eva/data/test_data/test_rna.fa
+    direction: reverse
+    split_ratio: 0.4
+    taxid: "9606"
+    lineage: "D__Eukaryota;P__Chordata;C__Mammalia;O__Primates;F__Hominidae;G__Homo;S__Homo sapiens"
+    output_details: true

@@ -1,0 +1,39 @@
+# Large model checkpoints (mount at runtime)
+checkpoint/
+
+# Output data
+data/output/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Backup files
+*.backup
+*.bak
+*_bak*
+
+# Docker files
+docker/
+Dockerfile
+Dockerfile_bak*
+
+# IDE / OS
+.git/
+.gitignore
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Notebooks
+notebooks/
+
+# Docs / reference
+docs/
+reference/
+
+# Finetune scripts
+finetune/

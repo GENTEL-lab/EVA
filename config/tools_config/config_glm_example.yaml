@@ -1,0 +1,156 @@
+# =============================================================================
+# GLM (Generative Language Model - Span Infilling) 生成配置示例
+# =============================================================================
+#
+# 使用方法:
+#   docker exec eva /composer-python/python \
+#     /eva/tools/generate.py \
+#     --config /eva/config/tools_config/config_glm_example.yaml
+#
+# 或通过 Shell 脚本:
+#   ./generate.sh config/tools_config/config_glm_example.yaml
+#
+# GLM 模式：给定一条 RNA 序列，挖掉一段 span，让模型填充。
+# 本配置演示 GLM 的所有生成模式：
+#   1. 按比例指定 span 长度（span_ratio）
+#   2. 按固定长度指定 span（span_length）
+#   3. 指定 span 位置（random / 固定位置）
+#   4. 条件生成（RNA 类型 / 物种）
+#   5. 采样参数调节
+#
+# 注意：GLM 任务必须提供 input（输入序列文件），以及 span_ratio 或 span_length。
+# =============================================================================
+
+# 模型 checkpoint（容器内路径）
+checkpoint: /eva/checkpoint/glm
+
+# 输出目录
+output_dir: /eva/data/output/glm
+
+# 并行配置
+gpus: [0]
+instances_per_gpu: 1
+container_name: eva
+python_path: /composer-python/python
+
+# 全局默认参数
+defaults:
+  temperature: 1.0
+  top_k: 50
+  max_length: 200       # span 生成的最大 token 数
+  batch_size: 1
+  min_length: 10
+
+# =============================================================================
+# 任务列表
+# =============================================================================
+tasks:
+
+  # ---------------------------------------------------------------------------
+  # 1. 按比例指定 span — 随机位置
+  # ---------------------------------------------------------------------------
+  - name: ratio_10_random
+    format: glm
+    input: /eva/data/test_data/test_rna.fa
+    span_ratio: 0.1          # 挖掉序列长度的 10%
+    span_position: random     # 随机选择挖掉的位置
+    span_id: random           # 随机 span ID (0-49)
+    num_seqs: 5               # 每条输入序列生成 5 条
+
+  - name: ratio_30_random
+    format: glm
+    input: /eva/data/test_data/test_rna.fa
+    span_ratio: 0.3           # 挖掉 30%
+    span_position: random
+    span_id: random
+    num_seqs: 5
+
+  # ---------------------------------------------------------------------------
+  # 2. 按固定长度指定 span — 随机位置
+  # ---------------------------------------------------------------------------
+  - name: fixed_20bp_random
+    format: glm
+    input: /eva/data/test_data/test_rna.fa
+    span_length: 20           # 固定挖掉 20 个碱基
+    span_position: random
+    span_id: random
+    num_seqs: 5
+
+  - name: fixed_50bp_random
+    format: glm
+    input: /eva/data/test_data/test_rna.fa
+    span_length: 50           # 固定挖掉 50 个碱基
+    span_position: random
+    span_id: random
+    num_seqs: 5
+
+  # ---------------------------------------------------------------------------
+  # 3. 指定 span 起始位置
+  # ---------------------------------------------------------------------------
+
+  # 从序列开头挖（重新设计 5' 端）
+  - name: fixed_from_start
+    format: glm
+    input: /eva/data/test_data/test_rna.fa
+    span_length: 30
+    span_position: 0          # 从位置 0 开始挖
+    span_id: 0                # 固定使用 <span_0>
+    num_seqs: 5
+
+  # 从中间位置挖
+  - name: fixed_from_middle
+    format: glm
+    input: /eva/data/test_data/test_rna.fa
+    span_length: 20
+    span_position: 50         # 从位置 50 开始挖
+    span_id: 0
+    num_seqs: 5
+
+  # ---------------------------------------------------------------------------
+  # 4. 条件生成 — RNA 类型
+  # ---------------------------------------------------------------------------
+  - name: mRNA_condition
+    format: glm
+    input: /eva/data/test_data/test_rna.fa
+    rna_type: mRNA
+    span_ratio: 0.15
+    span_position: random
+    span_id: random
+    num_seqs: 5
+
+  # ---------------------------------------------------------------------------
+  # 5. 条件生成 — RNA 类型 + 物种
+  # ---------------------------------------------------------------------------
+  - name: human_mRNA_condition
+    format: glm
+    input: /eva/data/test_data/test_rna.fa
+    rna_type: mRNA
+    taxid: "9606"
+    lineage: "D__Eukaryota;P__Chordata;C__Mammalia;O__Primates;F__Hominidae;G__Homo;S__Homo sapiens"
+    span_ratio: 0.2
+    span_position: random
+    span_id: random
+    num_seqs: 5
+
+  # ---------------------------------------------------------------------------
+  # 6. 采样参数调节
+  # ---------------------------------------------------------------------------
+  - name: low_temp_conservative
+    format: glm
+    input: /eva/data/test_data/test_rna.fa
+    span_ratio: 0.2
+    span_position: random
+    span_id: random
+    num_seqs: 5
+    temperature: 0.7          # 低温 → 更保守的填充
+    top_k: 4                  # 仅从 top-4 碱基采样
+
+  - name: high_diversity
+    format: glm
+    input: /eva/data/test_data/test_rna.fa
+    span_ratio: 0.2
+    span_position: random
+    span_id: random
+    num_seqs: 5
+    temperature: 1.5          # 高温 → 更多样的填充
+    max_length: 300           # 覆盖默认 max_length

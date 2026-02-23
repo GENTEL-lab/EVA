@@ -1,0 +1,38 @@
+{
+  "input_file": "/rnaverse/tools/test_data/test_rna.fa",
+  "checkpoint": "/rnaverse/checkpoint/clm",
+  "mode": "scoring",
+  "normalize": true,
+  "exclude_special_tokens": false,
+  "length_normalize": false,
+  "num_sequences": 3,
+  "condition": {
+    "rna_type": "mRNA",
+    "taxid": null,
+    "species": null,
+    "lineage": null
+  },
+  "scores": [
+    {
+      "index": 0,
+      "header": "test_sequence_1",
+      "sequence": "AUGGCCGUAGUCAGUAGUCAGUAGUCAGUAGUCAGUAGUCAGUAGUCAGUAGUCAGUAGUCAGUAGU",
+      "length": 67,
+      "log_likelihood": -1.486465075219122
+    },
+    {
+      "index": 1,
+      "header": "test_sequence_2",
+      "sequence": "AUGCGCUAUGCGCUAUGCGCUAUGCGCUAUGCGCUAUGCGCUAUGCGCUAUGCGCUAUGCGCU",
+      "length": 63,
+      "log_likelihood": -1.4156479477018518
+    },
+    {
+      "index": 2,
+      "header": "test_sequence_3",
+      "sequence": "AUGAAAAUGCGGCCGCAUUACGUAAACGGCCGCAAAUGUUUCCGGCAAACUUACGCCGUUU",
+      "length": 61,
+      "log_likelihood": -2.334273693832831
+    }
+  ]
+}

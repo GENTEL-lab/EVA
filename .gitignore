@@ -1,0 +1,8 @@
+docs/
+reference/
+checkpoint/*
+!checkpoint/.gitkeep
+eva_latest.tar
+notebooks/interpretability_analysis/intermediate_data/*.npz
+notebooks/tools/visualization/UMAP/taxid_phylum_mapping.json
+__pycache__/
