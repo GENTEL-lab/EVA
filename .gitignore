@@ -3,6 +3,7 @@ reference/
 checkpoint/*
 !checkpoint/.gitkeep
 eva_latest.tar
+eva_latest.tar.gz
 notebooks/interpretability_analysis/intermediate_data/*.npz
 notebooks/tools/visualization/UMAP/taxid_phylum_mapping.json
 __pycache__/
