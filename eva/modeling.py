@@ -677,7 +677,12 @@ class EvaForCausalLM(EvaPreTrainedModel, GenerationMixin):
         # Exception 2: some generation methods do special slicing of input_ids, so we don't need to do it here
         # Exception 3: with synced GPUs cache_position may go out of bounds, but we only want dummy token in that case
         if past_key_values is not None:
-            if cache_position[-1] >= input_ids.shape[1]:  # Exception 3
+            if cache_position is None:
+                # Older transformers (< 4.42.0): no cache_position, just use last token
+                input_ids = input_ids[:, -1:]
+                position_ids = position_ids[:, -1:]
+                sequence_ids = sequence_ids[:, -1:]
+            elif cache_position[-1] >= input_ids.shape[1]:  # Exception 3
                 input_ids = input_ids[:, -cache_position.shape[0] :]
                 position_ids = position_ids[:, cache_position]
                 sequence_ids = sequence_ids[:, cache_position]
@@ -716,11 +721,14 @@ class EvaForCausalLM(EvaPreTrainedModel, GenerationMixin):
         num_new_tokens: int = 1,
         **kwargs,
     ) -> dict[str, Any]:
-        # Change made in transformers>4.42.0 to return two values,
-        # cache_name and past_key_values, instead of a single past_key_values
-        cache_name, cache = self._extract_past_from_model_output(outputs)
-        assert cache_name == "past_key_values", "Only past_key_values is supported"
-        model_kwargs["past_key_values"] = cache
+        # transformers >= 4.42.0 returns (cache_name, cache),
+        # older versions return just past_key_values directly
+        extracted = self._extract_past_from_model_output(outputs)
+        if isinstance(extracted, tuple) and len(extracted) == 2 and isinstance(extracted[0], str):
+            cache_name, cache = extracted
+            model_kwargs[cache_name] = cache
+        else:
+            model_kwargs["past_key_values"] = extracted
 
         # update position_ids with one plus last value
         pos_ids = model_kwargs["position_ids"]
@@ -731,15 +739,17 @@ class EvaForCausalLM(EvaPreTrainedModel, GenerationMixin):
         seq_ids = model_kwargs["sequence_ids"]
         model_kwargs["sequence_ids"] = torch.cat([seq_ids, seq_ids[:, -1:].repeat(1, num_new_tokens)], dim=-1)
 
-        if model_kwargs.get("use_cache", True):
-            model_kwargs["cache_position"] = model_kwargs["cache_position"][-1:] + num_new_tokens
-        else:
-            past_positions = model_kwargs.pop("cache_position")
-            new_positions = torch.arange(
-                past_positions[-1] + 1,
-                past_positions[-1] + num_new_tokens + 1,
-                dtype=past_positions.dtype,
-            ).to(past_positions.device)
-            model_kwargs["cache_position"] = torch.cat((past_positions, new_positions))
+        # cache_position only exists in transformers >= 4.42.0
+        if "cache_position" in model_kwargs:
+            if model_kwargs.get("use_cache", True):
+                model_kwargs["cache_position"] = model_kwargs["cache_position"][-1:] + num_new_tokens
+            else:
+                past_positions = model_kwargs.pop("cache_position")
+                new_positions = torch.arange(
+                    past_positions[-1] + 1,
+                    past_positions[-1] + num_new_tokens + 1,
+                    dtype=past_positions.dtype,
+                ).to(past_positions.device)
+                model_kwargs["cache_position"] = torch.cat((past_positions, new_positions))
 
         return model_kwargs

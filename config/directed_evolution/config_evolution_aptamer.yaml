@@ -1,0 +1,32 @@
+# Directed Evolution Configuration for Aptamer Sequences
+# 对 9 条 aptamer 序列进行定向进化
+# 每条序列最终突变 8 个位点，产生 30 条进化序列
+
+# 模型配置
+checkpoint: /eva/checkpoint/clm
+device: cuda:0
+dtype: bfloat16
+
+# 输入输出
+input: /eva/data/test_data/aptamer.fasta
+output: /eva/data/output/evolution/aptamer_evolved_single_sequence.fasta
+
+# 进化参数
+iterations: 100              # 迭代次数（每次迭代突变1个位点，共8次）
+mutations_per_iter: 3      # 每次迭代突变的位点数
+beam_width: 10             # 束搜索宽度
+output_count: 200           # 每条序列输出30条进化序列
+
+# 模拟退火参数
+T_init: 2.0                # 初始温度
+T_min: 0.01                # 最小温度
+cooling_rate: 0.90         # 冷却率（每次迭代后温度 *= cooling_rate）
+
+# RNA 类型（可选）
+# rna_type: null
+# species: null
+# taxid: null
+
+# 其他参数
+seed: 42
+verbose: true

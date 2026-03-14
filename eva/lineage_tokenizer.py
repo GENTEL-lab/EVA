@@ -99,6 +99,10 @@ class LineageRNATokenizer:
 
     def __init__(self):
         self.tokenizer = self._create_tokenizer()
+        # Add token ID properties for compatibility
+        self.pad_token_id = self.token_to_id("<pad>")
+        self.bos_token_id = self.token_to_id("<bos>")
+        self.eos_token_id = self.token_to_id("<eos>")
 
     def _create_tokenizer(self) -> Tokenizer:
         """Create Lineage RNA tokenizer
@@ -378,6 +382,11 @@ class LineageRNATokenizer:
         # Create instance
         instance = cls.__new__(cls)
         instance.tokenizer = Tokenizer.from_file(tokenizer_path)
+
+        # Add token ID properties for compatibility
+        instance.pad_token_id = instance.token_to_id("<pad>")
+        instance.bos_token_id = instance.token_to_id("<bos>")
+        instance.eos_token_id = instance.token_to_id("<eos>")
 
         return instance
 

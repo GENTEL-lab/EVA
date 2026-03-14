@@ -1,8 +1,10 @@
 # RNAVerse Docker Image
-# Base: MosaicML PyTorch (CUDA 12.4 + Python 3.11 + PyTorch 2.5.1)
-FROM mosaicml/pytorch:2.5.1_cu124-python3.11-ubuntu22.04
+# Base: PyTorch Official Image (CUDA 12.4 + Python 3.11 + PyTorch 2.5.1)
+FROM pytorch/pytorch:2.5.1-cuda12.4-cudnn9-runtime-ubuntu22.04
 
 # Install flash-attn (requires special build flags)
+# Set TORCH_CUDA_ARCH_LIST to skip CUDA detection during pip install
+ENV TORCH_CUDA_ARCH_LIST=""
 RUN MAX_JOBS=4 pip install --no-cache-dir --no-build-isolation flash-attn==2.6.3
 
 # Install Python dependencies

@@ -275,7 +275,7 @@ def mb_setup_args(
         logger.info(f"Detected MoE config mismatch, device_manager.moe_world_size={device_manager.moe_world_size}, config.moe_world_size={config.moe_world_size}")
 
         # For evaluation scenarios, create a compatible device manager using adjusted parameters from config
-        from utils.device import DeviceManager, set_device_manager
+        from .device import DeviceManager, set_device_manager
         import torch.distributed as dist
 
         # Determine correct world_size: prefer distributed environment, otherwise single GPU evaluation
