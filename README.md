@@ -268,7 +268,7 @@ python /eva/tools/generate.py \
 EVA supports conditioning on **RNA type**, **species** (via TaxID, species name, or lineage string), or both. See [Condition Control](#condition-control) for the full list of supported RNA types and species.
 
 <div align="center">
-  <img src="fig/rnatype_generation.png" alt="RNA Type Generation" width="800">
+  <img src="fig/rna_generation.svg" alt="RNA Type Generation" width="800">
 </div>
 
 ```bash
@@ -301,7 +301,7 @@ python /eva/tools/generate.py \
 Species can also be specified via `--species homo_sapiens` or `--lineage "D__Eukaryota;P__Chordata;..."` in Greengenes format.
 
 <div align="center">
-  <img src="fig/species_generation.png" alt="Species Generation" width="800">
+  <img src="fig/species_condition_generation.svg" alt="Species Generation" width="800">
 </div>
 
 #### Continuation Mode
@@ -464,10 +464,10 @@ EVA supports in-silico directed evolution — an iterative optimization pipeline
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="fig/combined_circRNA_2x2_optimization.svg" alt="circRNA 2x2 Optimization" width="100%">
+      <img src="fig/circRNA_optimization.svg" alt="circRNA Optimization" width="100%">
     </td>
     <td align="center" width="50%">
-      <img src="fig/combined_mRNA_2x2_optimization.svg" alt="mRNA 2x2 Optimization" width="100%">
+      <img src="fig/mRNA_optimization.svg" alt="mRNA Optimization" width="100%">
     </td>
   </tr>
 </table>
