@@ -290,7 +290,7 @@ python /eva/tools/generate.py \
 Species can also be specified via `--species homo_sapiens` or `--lineage "D__Eukaryota;P__Chordata;..."` in Greengenes format.
 
 <div align="center">
-  <img src="fig/species_condition_generation.svg" alt="Species Generation" width="800">
+  <img src="fig/species_umap.svg" alt="Species Generation" width="800">
 </div>
 
 #### Continuation Mode
