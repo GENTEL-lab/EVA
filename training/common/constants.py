@@ -1,0 +1,44 @@
+"""
+训练常量定义 - 将魔法数字提取为命名常量
+"""
+
+# 分布式训练默认值
+DEFAULT_NCCL_TIMEOUT_MINUTES = 180
+DEFAULT_SEED = 42
+
+# Dropout 调度
+DEFAULT_DROPOUT_WARMUP_STEPS = 3000
+DEFAULT_DROPOUT_RAMP_STEPS = 6000
+DEFAULT_DROPOUT_SCHEDULE = "linear"
+
+# 优化器默认值
+DEFAULT_LEARNING_RATE = 2e-3
+DEFAULT_WEIGHT_DECAY = 1e-5
+DEFAULT_ADAM_BETA1 = 0.9
+DEFAULT_ADAM_BETA2 = 0.95
+DEFAULT_ADAM_EPSILON = 1e-8
+
+# 内存管理
+DEFAULT_CLEANUP_FREQUENCY = 100
+DEFAULT_GC_FREQUENCY = 50
+MEMORY_MONITOR_BATCH_INTERVAL = 100
+
+# 模型前向传播接受的 key 集合
+MODEL_INPUT_KEYS = frozenset([
+    'input_ids', 'position_ids', 'sequence_ids', 'attention_mask', 'labels',
+    'past_key_values', 'use_cache', 'output_attentions', 'output_hidden_states',
+])
+
+# 训练默认值
+DEFAULT_MAX_EPOCHS = 2
+DEFAULT_WARMUP_RATIO = 0.1
+DEFAULT_MIN_LR_RATIO = 0.1
+DEFAULT_LOGGING_STEPS = 20
+DEFAULT_NUM_CHECKPOINTS = 24
+DEFAULT_BATCH_SIZE = 2
+DEFAULT_MAX_SEQ_LENGTH = 1024
+DEFAULT_CACHE_SIZE = 10000
+DEFAULT_DATALOADER_NUM_WORKERS = 2
+
+# FLOPs 计算
+FLOPS_MULTIPLIER = 6  # Chinchilla/PaLM标准：前向(1×) + 反向(2×) + 训练开销

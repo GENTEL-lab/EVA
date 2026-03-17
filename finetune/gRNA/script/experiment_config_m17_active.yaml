@@ -1,0 +1,133 @@
+# ========================================================================
+# gRNA微调实验配置 - IscB.m17 Active序列
+# ========================================================================
+# 用途: 使用m17 active序列（mean_activity > 10）微调模型
+# 使用方法: 使用 run_gRNA_finetuning.sh 启动训练
+# ========================================================================
+
+data_config:
+  dataset: gRNA_iscb_m17_active
+
+  max_seq_length: 8192
+  max_samples: null
+
+  train_file: ./finetune/gRNA/data/iscb_m17/iscb_m17_active.fasta
+
+  lineage_file: null
+
+  use_direction_tokens: true
+
+  # 不使用物种前缀
+  use_lineage_prefix: false
+
+  # 使用RNA类型前缀
+  use_rna_type_prefix: true
+  rna_type_token: Y_RNA
+
+  pretrain_ratio: 0
+
+  enable_reverse_augmentation: true
+
+  use_chunked: true
+  cache_size: 10000
+  force_rebuild_index: false
+
+  mode: "mixed"
+  glm_probability: 0
+
+  span_config:
+    max_coverage_ratios: [0.15, 0.35, 0.55, 0.75]
+    coverage_probs: [0.2, 0.3, 0.3, 0.2]
+    span_distributions:
+      - [6, 3]
+      - [40, 15]
+      - [60, 15]
+      - [150, 50]
+      - [400, 100]
+      - [800, 200]
+    max_num_spans: 30
+    allow_overlap: false
+
+model_config:
+  vocab_size: 114
+
+  hidden_size: 1024
+  num_hidden_layers: 26
+  num_attention_heads: 16
+  num_key_value_heads: 16
+  intermediate_size: 3072
+  max_position_embeddings: 8192
+  rms_norm_eps: 1e-6
+  initializer_range: 0.02
+  use_cache: true
+  num_experts: 8
+  num_experts_per_tok: 2
+  expert_capacity_factor: 1.5
+  router_aux_loss_coef: 0.01
+  moe_implementation: megablocks
+  moe_world_size: 4
+
+  resid_dropout: 0
+  hidden_dropout: 0
+  dropout_warmup_steps: 0
+  dropout_ramp_steps: 0
+  dropout_schedule: "linear"
+
+  attention_dropout: 0.0
+  gradient_clip_norm: 1.0
+  label_smoothing: 0.0
+
+  eos_loss_weight: 1.0
+
+training_config:
+  run_name: gRNA_m17_active_finetuning_YRNA
+
+  output_dir: ./results/gRNA_finetuning/gRNA_m17_active_finetuning_YRNA
+
+  resume_from_pretrain: ./finetune/checkpoint/1400M_mid_25500_old
+
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 1
+
+  learning_rate: 5.0e-5
+
+  weight_decay: 1.0e-5
+  adam_beta1: 0.9
+  adam_beta2: 0.95
+  adam_epsilon: 1e-8
+
+  max_epochs: 20
+
+  min_lr_ratio: 0.1
+  bf16: true
+  fp16: false
+  gradient_checkpointing: false
+  dataloader_num_workers: 8
+  dataloader_pin_memory: true
+  dataloader_drop_last: true
+
+  logging_steps: 10
+  save_steps: 800
+
+  seed: 42
+
+  warmup_steps: 100
+
+  max_wall_time_hours: 48
+
+distributed_config:
+  backend: nccl
+  data_parallel_size: 4
+  expert_parallel_size: 4
+  weight_parallel_size: 1
+
+memory_config:
+  cleanup_frequency: 100
+  gc_frequency: 50
+  enable_monitoring: true
+
+logging_config:
+  enable_wandb: true
+  wandb_project: eva-gRNA-finetuning
+  wandb_run_name: gRNA_m17_active_finetuning
+  log_dir: ./results/gRNA_finetuning/gRNA_m17_active_finetuning_YRNA/logs

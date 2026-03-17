@@ -1,0 +1,73 @@
+# Lineage模型评估配置
+# 支持Stage 1 (generation)和Stage 2 (completion)评估
+
+# 兼容模式配置（用于评估旧模型）
+# legacy_tokenization:
+#   - false (默认): 使用新tokenization方式（带<bos>和方向标记5/3）
+#   - true: 使用旧tokenization方式（不带<bos>和方向标记，兼容旧模型）
+legacy_tokenization: false # 已关闭兼容旧模型
+
+# ============================================
+# 前缀配置（可选，覆盖训练配置）
+# ============================================
+# 如果设置了这些参数，将覆盖从训练配置读取的值
+# 如果不设置（注释掉），则使用训练配置中的值
+#
+use_lineage_prefix: false      # 是否使用谱系前缀（D__域;P__门;...）
+use_rna_type_prefix: true     # 是否使用RNA类型前缀（如<16S_rRNA>）
+use_direction_tokens: true   # 是否使用方向标记（5/3）
+
+# Stage 1: 条件序列生成评估
+stage1:
+  # 数据配置
+
+  data_file: "/rna-multiverse/data/training_datasets/val_new/validation_100k_new.fa"
+  lineage_file: "/rna-multiverse/data/training_data/lineage_greengenes.tsv"
+
+  # 模式配置
+  mode: "generation"  # 序列生成模式
+  max_seq_length: 8192
+  max_samples: 10000 # 先用5000个样本快速验证（训练集很大，全量评估会很慢）
+
+  # 评估指标
+  metrics:
+    - "perplexity"      # 困惑度（越低越好）
+    - "loss"            # 生成loss
+
+# Stage 2: 条件序列补全评估
+stage2:
+  # 数据配置
+  data_file: "/rna-multiverse/data/training_datasets/16types_50percent_split/16types_50percent_split_val.fa"
+  lineage_file: "/rna-multiverse/data/training_data/lineage_greengenes.tsv"
+
+  # 模式配置
+  mode: "completion"  # 序列补全模式 (span infilling)
+  max_seq_length: 8192
+  max_samples: null
+
+  # Span配置（补全任务专用）
+  span_config:
+    min_span_length: 50   # 最小span长度
+    max_span_length: 200  # 最大span长度
+
+  # 评估指标
+  metrics:
+    - "perplexity"      # 困惑度（越低越好）
+    - "loss"            # 补全loss
+
+# 通用评估配置
+evaluation:
+  batch_size: 128   
+  num_workers: 16        # 数据加载workers
+  device: "cuda"         # 评估设备
+
+  # 并行评估配置
+  parallel:
+    num_gpus: 8          # 并行GPU数量
+    checkpoints_per_gpu: 1  # 每个GPU同时评估的checkpoint数
+
+# 输出配置
+output:
+  save_results: true     # 是否保存评估结果
+  results_dir: null      # null表示保存到checkpoint目录
+  log_level: "INFO"      # 日志级别

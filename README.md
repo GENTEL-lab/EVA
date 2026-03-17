@@ -31,7 +31,7 @@ You should consider EVA for the reasons as follows:
   <tr>
     <td>🔓</td>
     <td><b>Fully Open-Sourced</b></td>
-    <td>All training data, model weights, and training details are publicly released — full transparency for the community to reproduce, build upon, and extend</td>
+    <td>All training data, model weights, finetuning & training & inference codes and details are publicly released — full transparency for the community to reproduce, build upon, and extend</td>
   </tr>
   <tr>
     <td>📏</td>
