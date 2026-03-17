@@ -1,4 +1,4 @@
-# EVA: A Generative Foundation Model for Universal RNA Modeling and Design
+# EVA: A Long-Context Generative Foundation Model Deciphers RNA Design Principles
 
 <div align="center">
   <img src="fig/github_logo.svg" alt="RNAVerse" width="800">
