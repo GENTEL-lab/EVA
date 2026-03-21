@@ -367,6 +367,10 @@ class LineageRNATokenizer:
         """Load tokenizer from file (backward compatible)"""
         instance = cls.__new__(cls)
         instance.tokenizer = Tokenizer.from_file(filepath)
+        # Fix: set token ID attributes that __init__ would normally set
+        instance.pad_token_id = instance.token_to_id("<pad>")
+        instance.bos_token_id = instance.token_to_id("<bos>")
+        instance.eos_token_id = instance.token_to_id("<eos>")
         return instance
 
     @classmethod
