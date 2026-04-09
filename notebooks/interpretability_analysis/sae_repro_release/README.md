@@ -112,6 +112,11 @@ bash notebooks/interpretability_analysis/sae_repro_release/scripts/run_all_full.
 - Deterministic flags are enabled by default in configs (`deterministic: true`).
 - Full configs and smoke configs are both versioned under `configs/`.
 
+## Validation status
+
+- Smoke validation was executed on April 9, 2026 in GPU Docker runtime (`eva:latest`).
+- Both modes (`Batch-TopK SAE`, `sae_L1_penalty`) completed smoke training and produced checkpoints.
+
 ## Common errors
 
 - `HF_DATA_FASTA not found`: wrong `HF_DATA_ROOT` or missing FASTA files.
