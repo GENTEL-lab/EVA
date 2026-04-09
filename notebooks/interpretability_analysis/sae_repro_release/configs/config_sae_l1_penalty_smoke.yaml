@@ -1,0 +1,36 @@
+paths:
+  base: ""
+  ckpt: ""
+  data: ""
+  output_root: ""
+
+layer: 13
+mode: sae_l1_penalty
+
+d_hidden: 1024
+l1_lr: 2.0e-4
+l1_penalty: 0.06
+l1_warmup_steps: 50
+resample_steps: 50
+resample_dead_after: 25
+
+n_seqs: 512
+seq_batch: 8
+max_len: 1024
+n_epochs: 1
+
+batch_size: 64
+grad_clip: 1.0
+
+lr_schedule: sae_l1_penalty
+warmup_steps: 20
+l1_lr_decay_start: 35
+
+max_steps: 50
+log_every: 10
+save_every: 25
+buffer_size: 200000
+
+device: cuda:0
+seed: 42
+deterministic: true

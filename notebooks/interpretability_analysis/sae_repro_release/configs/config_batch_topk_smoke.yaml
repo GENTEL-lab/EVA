@@ -1,0 +1,41 @@
+paths:
+  base: ""
+  ckpt: ""
+  data: ""
+  output_root: ""
+
+layer: 13
+mode: batch_topk
+
+d_hidden: 1024
+k: 16
+
+n_seqs: 512
+seq_batch: 8
+max_len: 1024
+n_epochs: 1
+
+batch_size: 64
+lr: 5.0e-5
+aux_coef: 0.03
+grad_clip: 1.0
+
+lr_schedule: trapezoid
+trapezoid_warmup_ratio: 0.1
+trapezoid_decay_ratio: 0.1
+
+normalize_decoder: true
+dead_feature_window: 200
+
+max_steps: 50
+warmup_steps: 20
+hold_lr_until: 30
+decay_start: 35
+decay_end: 50
+
+device: cuda:0
+seed: 42
+deterministic: true
+log_every: 10
+save_every: 25
+buffer_size: 200000

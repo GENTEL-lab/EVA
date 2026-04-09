@@ -30,6 +30,12 @@ Dockerfile_bak*
 
 # Notebooks
 notebooks/
+!notebooks/
+notebooks/*
+!notebooks/interpretability_analysis/
+notebooks/interpretability_analysis/*
+!notebooks/interpretability_analysis/sae_repro_release/
+!notebooks/interpretability_analysis/sae_repro_release/**
 
 # Docs / reference
 docs/
