@@ -115,6 +115,9 @@ class Sampler:
         Returns:
             Filtered logits
         """
+        # Clamp k to the vocabulary dimension to avoid torch.topk out-of-range errors.
+        k = min(k, logits.size(-1))
+
         # Get top-k values and indices
         top_k_values, _ = torch.topk(logits, k, dim=-1)
         # Get the k-th largest value as threshold
