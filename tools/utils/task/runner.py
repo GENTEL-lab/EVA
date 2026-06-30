@@ -36,7 +36,7 @@ class RunnerConfig:
     gpus: List[int] = field(default_factory=lambda: [0, 1, 2, 3, 4, 5, 6, 7])
     instances_per_gpu: int = 1
     container_name: str = "eva"
-    python_path: str = "/composer-python/python"
+    python_path: str = "python"
     script_path: str = ""  # Will be set during initialization
     log_dir: str = ""
     container_log_dir: str = ""
@@ -70,6 +70,7 @@ class ParallelRunner:
         gpus: List[int] = None,
         instances_per_gpu: int = 1,
         container_name: str = "eva",
+        python_path: str = "python",
         temperature: float = 1.0,
         top_k: int = 50,
         batch_size: int = 1,
@@ -84,6 +85,7 @@ class ParallelRunner:
             gpus: GPU list, default [0,1,2,3,4,5,6,7]
             instances_per_gpu: Number of instances per GPU
             container_name: Docker container name
+            python_path: Python interpreter path inside container
             temperature: Sampling temperature
             top_k: Top-K sampling
             batch_size: Batch size
@@ -94,6 +96,7 @@ class ParallelRunner:
         self.gpus = gpus or [0, 1, 2, 3, 4, 5, 6, 7]
         self.instances_per_gpu = instances_per_gpu
         self.container_name = container_name
+        self.python_path = python_path
         self.temperature = temperature
         self.top_k = top_k
         self.batch_size = batch_size
@@ -116,18 +119,15 @@ class ParallelRunner:
         self.host_tools_dir = str(tools_dir)
         self.host_log_dir = str(tools_dir / "logs")
 
-        # Container paths (assuming mount relationship)
-        # /storage9920/.../RNAVerse -> /eva (host path unchanged, container path is /eva)
-        host_base = "/storage9920/home/yanjie.huang/RNAVerse"
-        container_base = "/eva"
+        # Container paths (assuming repo root is mounted at /eva by default).
+        host_base = os.environ.get("EVA_HOST_BASE", str(tools_dir.parent))
+        container_base = os.environ.get("EVA_CONTAINER_BASE", "/eva")
 
-        if self.host_tools_dir.startswith(host_base):
-            self.container_tools_dir = self.host_tools_dir.replace(
-                host_base, container_base
-            )
-        else:
-            # If path doesn't match, use relative inference
-            self.container_tools_dir = "/eva/tools"
+        try:
+            relative_tools_dir = Path(self.host_tools_dir).relative_to(host_base)
+            self.container_tools_dir = str(Path(container_base) / relative_tools_dir)
+        except ValueError:
+            self.container_tools_dir = str(Path(container_base) / "tools")
 
         self.container_log_dir = self.container_tools_dir + "/logs"
         self.worker_script = self.container_tools_dir + "/utils/task/worker.py"

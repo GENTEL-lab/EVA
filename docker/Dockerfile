@@ -8,7 +8,7 @@ ENV TORCH_CUDA_ARCH_LIST=""
 RUN MAX_JOBS=4 pip install --no-cache-dir --no-build-isolation flash-attn==2.6.3
 
 # Install Python dependencies
-COPY requirements.txt /tmp/requirements.txt
+COPY docker/requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache-dir -r /tmp/requirements.txt && rm /tmp/requirements.txt
 
 # Copy project code
@@ -16,7 +16,8 @@ COPY eva/ /eva/eva/
 COPY tools/ /eva/tools/
 COPY config/ /eva/config/
 COPY data/test_data/ /eva/data/test_data/
-COPY USAGE.md /eva/
+COPY pyproject.toml README.md LICENSE CHANGELOG.md /eva/
+RUN pip install --no-cache-dir --no-deps -e /eva
 
 # Create output directory
 RUN mkdir -p /eva/data/output/scores

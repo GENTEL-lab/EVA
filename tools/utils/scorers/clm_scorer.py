@@ -51,7 +51,7 @@ class CLMScorer(BaseScorer):
 
     # Docker default configuration (can be overridden by parameters)
     DEFAULT_DOCKER_CONTAINER = "eva"
-    DEFAULT_DOCKER_PYTHON = "/composer-python/python"
+    DEFAULT_DOCKER_PYTHON = "python"
 
     def __init__(
         self,

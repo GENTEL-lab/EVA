@@ -16,12 +16,26 @@ Technical Features:
 - Efficient batching and data loading
 """
 
-from .config import EvaConfig
-from .lineage_tokenizer import LineageRNATokenizer, get_lineage_rna_tokenizer
+from ._version import __version__
 
-__version__ = "1.0.0"
 __all__ = [
+    "__version__",
     "EvaConfig",
     "LineageRNATokenizer",
     "get_lineage_rna_tokenizer",
 ]
+
+
+def __getattr__(name):
+    if name == "EvaConfig":
+        from .config import EvaConfig
+
+        return EvaConfig
+    if name in {"LineageRNATokenizer", "get_lineage_rna_tokenizer"}:
+        from .lineage_tokenizer import LineageRNATokenizer, get_lineage_rna_tokenizer
+
+        return {
+            "LineageRNATokenizer": LineageRNATokenizer,
+            "get_lineage_rna_tokenizer": get_lineage_rna_tokenizer,
+        }[name]
+    raise AttributeError(f"module 'eva' has no attribute {name!r}")

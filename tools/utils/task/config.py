@@ -191,7 +191,7 @@ class BatchConfig:
     gpus: List[int] = field(default_factory=lambda: [0])
     instances_per_gpu: int = 1
     container_name: str = "eva"
-    python_path: str = "/composer-python/python"
+    python_path: str = "python"
 
     @classmethod
     def from_yaml(cls, filepath: str) -> 'BatchConfig':
@@ -224,7 +224,7 @@ class BatchConfig:
             gpus = [int(g) for g in gpus.split(',')]
         instances_per_gpu = data.get('instances_per_gpu', 1)
         container_name = data.get('container_name', 'eva')
-        python_path = data.get('python_path', '/composer-python/python')
+        python_path = data.get('python_path', 'python')
 
         # Parse task list
         tasks = []

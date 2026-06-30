@@ -92,6 +92,9 @@ You should consider EVA for the reasons as follows:
 <br/>
 
 - [Quick Start](#quick-start)
+- [Installation](#installation)
+- [Release and Versioning](#release-and-versioning)
+- [Repository Paths](#repository-paths)
 - [Condition Control](#condition-control)
   - [RNA Types](#rna-types)
   - [Species/Lineage](#specieslineage)
@@ -133,50 +136,166 @@ You should consider EVA for the reasons as follows:
 
 ## Quick Start
 
-### 1. Pull Docker Image
-
-**From Zenodo** (link coming soon):
+EVA is distributed as source code plus separately downloaded model weights and datasets. The Python package provides importable modules and command-line entry points; large checkpoints remain outside the package.
 
 ```bash
-# Download all split archives (part000-part011), then:
-cat eva_latest.tar.gz.part* > eva_latest.tar.gz
-docker load -i eva_latest.tar.gz
+git clone https://github.com/GENTEL-Lab/EVA.git
+cd EVA
+python3 -m pip install -e .
+
+python3 -c "import eva; print(eva.__version__)"
+eva-generate --help
+eva-predict --help
+eva-evolve --help
 ```
 
-**Or build from Dockerfile:**
-
-```bash
-cd /data/yanjie_huang/eva/EVA1/docker
-docker build -t eva:latest .
-```
-
-### 2. Run Container
-
-```bash
-docker run --gpus all -it eva:latest bash
-```
-
-All model files and output data stay inside the container.
-
-### 3. Download Model
+Download a checkpoint before running model inference:
 
 ```bash
 huggingface-cli download GENTEL-Lab/EVA --local-dir ./checkpoint
 ```
 
-### 4. Generate Your First Sequences
+Generate a small batch of human mRNA sequences:
 
 ```bash
-python /eva/tools/generate.py \
+eva-generate \
     --checkpoint ./checkpoint \
     --format clm \
     --rna_type mRNA \
     --taxid 9606 \
     --num_seqs 10 \
-    --output ./output/demo.fa
+    --output ./data/output/demo.fa
 ```
 
-This generates 10 human mRNA sequences and saves them to `./output/demo.fa`.
+The legacy script entry points are still supported for source-tree workflows, for example `python tools/generate.py --help`.
+
+<br>
+
+## Installation
+
+Prerequisites:
+
+- Python 3.10 or 3.11 for local source installs.
+- CUDA-capable GPU runtime for full MoE inference.
+- Docker is recommended when reproducing the released GPU environment.
+
+### Option A: Local source install
+
+Use this path when you want to import EVA modules or run the command-line tools from a cloned repository:
+
+```bash
+git clone https://github.com/GENTEL-Lab/EVA.git
+cd EVA
+python3 -m pip install -e .
+```
+
+For documentation and release checks:
+
+```bash
+python3 -m pip install -e ".[dev]"
+```
+
+For notebook-only figure workflows:
+
+```bash
+python3 -m pip install -e ".[notebook]"
+```
+
+The default package dependencies keep installation lightweight enough for code reuse. Full 1.4B MoE inference requires the CUDA stack used by the released Docker image, including GPU-specific packages such as `flash-attn`, `megablocks`, and `grouped_gemm`.
+
+### Option B: Docker runtime
+
+Build the image from the repository root:
+
+```bash
+docker build -f docker/Dockerfile -t eva:latest .
+```
+
+Run an interactive GPU container with checkpoint and output folders mounted from the host:
+
+```bash
+mkdir -p checkpoint data/output
+docker run --gpus all --rm -it \
+    -v "$PWD/checkpoint":/eva/checkpoint \
+    -v "$PWD/data/output":/eva/data/output \
+    eva:latest bash
+```
+
+Inside the container, use either the installed entry points:
+
+```bash
+eva-generate --help
+eva-predict --help
+```
+
+or the source-tree scripts:
+
+```bash
+python /eva/tools/generate.py --help
+python /eva/tools/predict.py --help
+```
+
+### Model download
+
+For reproducible runs, prefer a fixed Hugging Face revision:
+
+```bash
+export HF_MODEL_REVISION=<MODEL_COMMIT_SHA>
+huggingface-cli download GENTEL-Lab/EVA \
+    --revision "$HF_MODEL_REVISION" \
+    --local-dir ./checkpoint
+```
+
+If no revision is specified, Hugging Face downloads the current default branch of the model repository.
+
+<br>
+
+## Release and Versioning
+
+Use versioned releases for reproducible downstream use. A release should bind together:
+
+- a Git tag for this repository, for example `v1.0.0`;
+- the Python package version from `eva.__version__`;
+- the matching `CHANGELOG.md` entry;
+- the Hugging Face model revision used for inference;
+- the dataset revision used for full reproduction;
+- the Docker image tag or the exact Docker build command.
+
+Recommended release workflow:
+
+```bash
+git checkout v1.0.0
+python3 -m pip install -e .
+python3 -c "import eva; print(eva.__version__)"
+eva-generate --help
+```
+
+You can also install directly from a release tag:
+
+```bash
+python3 -m pip install "git+https://github.com/GENTEL-Lab/EVA.git@v1.0.0"
+```
+
+The repository is package-ready through `pyproject.toml`, but release artifacts such as `dist/`, wheels, and source tarballs should be generated during release and not committed to the repository. PyPI or GitHub Packages publication is optional and should only be enabled when the supported dependency matrix is stable.
+
+<br>
+
+## Repository Paths
+
+The repository keeps code, examples, and large runtime assets separate:
+
+| Path | Purpose |
+|------|---------|
+| `eva/` | Importable model architecture and tokenizer code |
+| `tools/` | CLI entry points and reusable generation/scoring utilities |
+| `config/` | YAML examples for generation, scoring, and directed evolution |
+| `scripts/` | Docker-oriented shell wrappers |
+| `notebooks/` | Figure reproduction, design, prediction, and interpretability notebooks |
+| `data/test_data/` | Small bundled examples for smoke checks |
+| `data/output/` | Local output location for examples |
+| `checkpoint/` | Local model checkpoint directory; download separately |
+
+Large model checkpoints and datasets are intentionally not packaged in the Python wheel. Keep them in `checkpoint/` or another explicit path and pass that path with `--checkpoint`.
 
 <br>
 
@@ -245,7 +364,7 @@ CLM (Causal Language Model) generates RNA sequences autoregressively from left t
 Generate sequences without any biological constraints:
 
 ```bash
-python /eva/tools/generate.py \
+eva-generate \
     --checkpoint /path/to/model \
     --format clm \
     --num_seqs 1000 \
@@ -262,7 +381,7 @@ EVA supports conditioning on **RNA type**, **species** (via TaxID, species name,
 
 ```bash
 # RNA type only
-python /eva/tools/generate.py \
+eva-generate \
     --checkpoint /path/to/model \
     --format clm \
     --rna_type mRNA \
@@ -270,7 +389,7 @@ python /eva/tools/generate.py \
     --output /output/mrna.fa
 
 # Species only (via TaxID)
-python /eva/tools/generate.py \
+eva-generate \
     --checkpoint /path/to/model \
     --format clm \
     --taxid 9606 \
@@ -278,7 +397,7 @@ python /eva/tools/generate.py \
     --output /output/human.fa
 
 # Both RNA type and species
-python /eva/tools/generate.py \
+eva-generate \
     --checkpoint /path/to/model \
     --format clm \
     --rna_type mRNA \
@@ -300,7 +419,7 @@ Extend existing sequences in either direction. Use `--split_ratio` (fraction) or
 **Forward** (extend 3' end):
 
 ```bash
-python /eva/tools/generate.py \
+eva-generate \
     --checkpoint /path/to/model \
     --format clm \
     --input /input/partial_seq.fa \
@@ -313,7 +432,7 @@ python /eva/tools/generate.py \
 **Reverse** (extend 5' end):
 
 ```bash
-python /eva/tools/generate.py \
+eva-generate \
     --checkpoint /path/to/model \
     --format clm \
     --input /input/partial_seq.fa \
@@ -334,7 +453,7 @@ GLM (General Language Model) performs span infilling — it masks a region withi
 Fill in a masked region without any biological constraints:
 
 ```bash
-python /eva/tools/generate.py \
+eva-generate \
     --checkpoint /path/to/model \
     --format glm \
     --input /input/sequences.fa \
@@ -348,7 +467,7 @@ python /eva/tools/generate.py \
 Condition on RNA type and/or species to generate biologically consistent infills:
 
 ```bash
-python /eva/tools/generate.py \
+eva-generate \
     --checkpoint /path/to/model \
     --format glm \
     --input /input/sequences.fa \
@@ -379,7 +498,7 @@ python /eva/tools/generate.py \
 Example with all sampling parameters:
 
 ```bash
-python /eva/tools/generate.py \
+eva-generate \
     --checkpoint /path/to/model \
     --format clm \
     --temperature 0.8 \
@@ -413,7 +532,7 @@ Evaluate how well a given sequence fits the model's learned distribution by comp
 Score RNA sequences and compute per-sequence log-likelihood:
 
 ```bash
-python /eva/tools/predict.py \
+eva-predict \
     --checkpoint /path/to/model \
     --input /input/sequences.fa \
     --output /output/scores.json
@@ -426,7 +545,7 @@ Supports `--rna_type` and `--taxid` conditioning, same as generation.
 Score protein sequences by reverse-translating them to RNA first:
 
 ```bash
-python /eva/tools/predict.py \
+eva-predict \
     --checkpoint /path/to/model \
     --input /input/proteins.fa \
     --output /output/protein_scores.json \
@@ -464,7 +583,7 @@ EVA supports in-silico directed evolution — an iterative optimization pipeline
 ### Usage
 
 ```bash
-python /eva/tools/directed_evolution.py \
+eva-evolve \
     --checkpoint /path/to/model \
     --input /input/sequence.fa \
     --output /output/evolved.fa \
@@ -561,9 +680,9 @@ tasks:
 ### Running
 
 ```bash
-python /eva/tools/generate.py --config config.yaml              # Run all tasks
-python /eva/tools/generate.py --config config.yaml --task name   # Run specific task
-python /eva/tools/generate.py --config config.yaml --device cuda:1  # Override device
+eva-generate --config config.yaml              # Run all tasks
+eva-generate --config config.yaml --task name   # Run specific task
+eva-generate --config config.yaml --device cuda:1  # Override device
 ```
 
 <br>

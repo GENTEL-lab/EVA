@@ -5,6 +5,7 @@ Responsible for loading model weights, configuration, and tokenizer from checkpo
 """
 
 import json
+import os
 import shutil
 import sys
 from pathlib import Path
@@ -184,10 +185,16 @@ class ModelLoader:
         from eva.causal_lm import EvaForCausalLM
         from eva.lineage_tokenizer import LineageRNATokenizer
 
-        # Copy tokenizer.json to model code directory (compatibility handling)
+        # Keep source-tree compatibility when eva/ is writable, but do not
+        # require installed packages to be writable at runtime.
         tokenizer_src = self.checkpoint_path / 'tokenizer.json'
         tokenizer_dst = self.model_code_path / 'tokenizer.json'
-        shutil.copy(tokenizer_src, tokenizer_dst)
+        try:
+            if tokenizer_src.resolve() != tokenizer_dst.resolve() and self.model_code_path.exists():
+                if os.access(self.model_code_path, os.W_OK):
+                    shutil.copy(tokenizer_src, tokenizer_dst)
+        except OSError:
+            pass
 
         # Load tokenizer
         tokenizer = LineageRNATokenizer.from_pretrained(str(self.checkpoint_path))

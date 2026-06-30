@@ -3,12 +3,10 @@
 # =============================================================================
 #
 # 使用方法:
-#   docker exec eva /composer-python/python \
-#     /eva/tools/generate.py \
-#     --config /eva/config/tools_config/config_clm_example.yaml
+#   eva-generate --config config/tools_config/config_clm_example.yaml
 #
-# 或通过 Shell 脚本:
-#   ./generate.sh config/tools_config/config_clm_example.yaml
+# 或通过 Docker shell 脚本:
+#   ./scripts/generate.sh config/tools_config/config_clm_example.yaml
 #
 # 本配置演示 CLM 的所有生成模式：
 #   1. 无条件生成
@@ -28,7 +26,7 @@ output_dir: /eva/data/output/clm
 gpus: [0]
 instances_per_gpu: 1
 container_name: eva
-python_path: /composer-python/python
+python_path: python
 
 # 全局默认参数（任务级参数可覆盖）
 defaults:

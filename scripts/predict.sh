@@ -1,22 +1,25 @@
 #!/bin/bash
-# RNA sequence scoring launch script
-# Usage: ./predict.sh <config.yaml>
-# Example: ./predict.sh config_score_mRNA.yaml
+# RNA sequence scoring launch script for a running EVA Docker container.
+# Usage: ./scripts/predict.sh <config.yaml> [extra args...]
+# Example: ./scripts/predict.sh config/tools_config/config_score_example.yaml
 
 set -e
 
 # ===== Configuration =====
-CONTAINER_NAME="eva"
-PYTHON_PATH="/composer-python/python"
-HOST_BASE="/path/to/your/host/project"  # Your host machine project path
-CONTAINER_BASE="/eva"
-PREDICT_SCRIPT="${CONTAINER_BASE}/tools/predict.py"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+
+CONTAINER_NAME="${CONTAINER_NAME:-eva}"
+PYTHON_PATH="${PYTHON_PATH:-python}"
+HOST_BASE="${HOST_BASE:-${REPO_ROOT}}"
+CONTAINER_BASE="${CONTAINER_BASE:-/eva}"
+PREDICT_SCRIPT="${PREDICT_SCRIPT:-${CONTAINER_BASE}/tools/predict.py}"
 
 # ===== Argument Check =====
 if [ $# -lt 1 ]; then
     echo "Usage: $0 <config.yaml> [extra args...]"
-    echo "Example: $0 config_score_mRNA.yaml"
-    echo "      $0 config_score_mRNA.yaml --device cuda:1"
+    echo "Example: $0 config/tools_config/config_score_example.yaml"
+    echo "      $0 config/tools_config/config_score_example.yaml --device cuda:1"
     exit 1
 fi
 
@@ -34,8 +37,13 @@ if [ ! -f "$CONFIG_PATH" ]; then
     exit 1
 fi
 
-# Host path -> Container path
-CONTAINER_CONFIG="${CONFIG_PATH/${HOST_BASE}/${CONTAINER_BASE}}"
+# Host path -> container path. HOST_BASE must be mounted at CONTAINER_BASE.
+if [[ "$CONFIG_PATH" == "$HOST_BASE"/* ]]; then
+    RELATIVE_CONFIG="${CONFIG_PATH#${HOST_BASE}/}"
+    CONTAINER_CONFIG="${CONTAINER_BASE}/${RELATIVE_CONFIG}"
+else
+    CONTAINER_CONFIG="$CONFIG_PATH"
+fi
 
 echo "Config file: $CONFIG_PATH"
 echo "Container path: $CONTAINER_CONFIG"

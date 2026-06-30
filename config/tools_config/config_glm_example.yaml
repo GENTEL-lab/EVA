@@ -3,12 +3,10 @@
 # =============================================================================
 #
 # 使用方法:
-#   docker exec eva /composer-python/python \
-#     /eva/tools/generate.py \
-#     --config /eva/config/tools_config/config_glm_example.yaml
+#   eva-generate --config config/tools_config/config_glm_example.yaml
 #
-# 或通过 Shell 脚本:
-#   ./generate.sh config/tools_config/config_glm_example.yaml
+# 或通过 Docker shell 脚本:
+#   ./scripts/generate.sh config/tools_config/config_glm_example.yaml
 #
 # GLM 模式：给定一条 RNA 序列，挖掉一段 span，让模型填充。
 # 本配置演示 GLM 的所有生成模式：
@@ -31,7 +29,7 @@ output_dir: /eva/data/output/glm
 gpus: [0]
 instances_per_gpu: 1
 container_name: eva
-python_path: /composer-python/python
+python_path: python
 
 # 全局默认参数
 defaults:

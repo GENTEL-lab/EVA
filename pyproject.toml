@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eva-rna"
+dynamic = ["version"]
+description = "EVA: a long-context generative foundation model for RNA modeling and design"
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+license = { file = "LICENSE" }
+authors = [
+  { name = "GENTEL Lab" }
+]
+keywords = ["RNA", "foundation-model", "generation", "sequence-modeling", "bioinformatics"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+  "numpy>=1.26",
+  "PyYAML>=6.0",
+  "safetensors>=0.4",
+  "tokenizers>=0.21",
+  "torch>=2.5,<2.6",
+  "tqdm>=4.66",
+  "transformers>=4.55,<4.56",
+]
+
+[project.optional-dependencies]
+dev = [
+  "build>=1.2",
+]
+notebook = [
+  "ipython>=8.0",
+  "jupyter>=1.0",
+  "matplotlib>=3.8",
+  "pandas>=2.0",
+  "scipy>=1.11",
+  "seaborn>=0.13",
+]
+
+[project.urls]
+Homepage = "https://evabio.net/"
+Repository = "https://github.com/GENTEL-Lab/EVA"
+Model = "https://huggingface.co/GENTEL-Lab/EVA"
+Dataset = "https://huggingface.co/datasets/GENTEL-Lab/OpenRNA-v1-114M"
+
+[project.scripts]
+eva-generate = "tools.generate:main"
+eva-predict = "tools.predict:main"
+eva-evolve = "tools.directed_evolution:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "eva._version.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["eva", "eva.*", "tools", "tools.*"]
+
+[tool.setuptools.package-data]
+eva = ["tokenizer.json"]
+"tools.utils.data" = ["*.tsv"]

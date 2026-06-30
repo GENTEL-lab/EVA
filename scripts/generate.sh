@@ -1,22 +1,25 @@
 #!/bin/bash
-# RNA sequence generation launch script
-# Usage: ./generate.sh <config.yaml>
-# Example: ./generate.sh config_piRNA.yaml
+# RNA sequence generation launch script for a running EVA Docker container.
+# Usage: ./scripts/generate.sh <config.yaml> [extra args...]
+# Example: ./scripts/generate.sh config/tools_config/config_clm_example.yaml
 
 set -e
 
 # ===== Configuration =====
-CONTAINER_NAME="eva"
-PYTHON_PATH="/composer-python/python"
-HOST_BASE="/path/to/your/host/project"  # Your host machine project path
-CONTAINER_BASE="/eva"
-GENERATE_SCRIPT="${CONTAINER_BASE}/tools/generate.py"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+
+CONTAINER_NAME="${CONTAINER_NAME:-eva}"
+PYTHON_PATH="${PYTHON_PATH:-python}"
+HOST_BASE="${HOST_BASE:-${REPO_ROOT}}"
+CONTAINER_BASE="${CONTAINER_BASE:-/eva}"
+GENERATE_SCRIPT="${GENERATE_SCRIPT:-${CONTAINER_BASE}/tools/generate.py}"
 
 # ===== Argument Check =====
 if [ $# -lt 1 ]; then
     echo "Usage: $0 <config.yaml> [extra args...]"
-    echo "Example: $0 config_piRNA.yaml"
-    echo "      $0 config_piRNA.yaml --task h_sapiens_piRNA"
+    echo "Example: $0 config/tools_config/config_clm_example.yaml"
+    echo "      $0 config/tools_config/config_clm_example.yaml --task human_mRNA"
     exit 1
 fi
 
@@ -34,8 +37,13 @@ if [ ! -f "$CONFIG_PATH" ]; then
     exit 1
 fi
 
-# Host path -> Container path
-CONTAINER_CONFIG="${CONFIG_PATH/${HOST_BASE}/${CONTAINER_BASE}}"
+# Host path -> container path. HOST_BASE must be mounted at CONTAINER_BASE.
+if [[ "$CONFIG_PATH" == "$HOST_BASE"/* ]]; then
+    RELATIVE_CONFIG="${CONFIG_PATH#${HOST_BASE}/}"
+    CONTAINER_CONFIG="${CONTAINER_BASE}/${RELATIVE_CONFIG}"
+else
+    CONTAINER_CONFIG="$CONFIG_PATH"
+fi
 
 echo "Config file: $CONFIG_PATH"
 echo "Container path: $CONTAINER_CONFIG"

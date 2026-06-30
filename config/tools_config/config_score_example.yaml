@@ -3,9 +3,10 @@
 # =============================================================================
 #
 # 使用方法:
-#   docker exec eva /composer-python/python \
-#     /eva/tools/predict.py \
-#     --config /eva/config/tools_config/config_score_example.yaml
+#   eva-predict --config config/tools_config/config_score_example.yaml
+#
+# 或通过 Docker shell 脚本:
+#   ./scripts/predict.sh config/tools_config/config_score_example.yaml
 #
 # 本配置演示 Scoring 的所有功能：
 #   1. 纯 RNA 序列打分

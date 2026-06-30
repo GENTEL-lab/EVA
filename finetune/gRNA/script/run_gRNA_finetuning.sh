@@ -21,6 +21,7 @@ DEFAULT_GPU_ID=0  # 默认使用GPU 0
 
 # 容器配置
 DEFAULT_CONTAINER_NAME="eva"
+DEFAULT_PYTHON_PATH="python"
 
 # 实验配置
 EXPERIMENT_NAME=""
@@ -37,8 +38,9 @@ PROJECT_ROOT="$(cd "${SCRIPT_DIR}/../../.." && pwd)"
 DEFAULT_CONFIG_FILE="${SCRIPT_DIR}/experiment_config_m16_active.yaml"
 # DEFAULT_CONFIG_FILE=""  # 留空则需要通过命令行指定
 
-# 宿主机项目根目录
-HOST_PROJECT_DIR="${PROJECT_ROOT}"
+# 宿主机项目根目录和容器内项目根目录
+HOST_PROJECT_DIR="${HOST_PROJECT_DIR:-${PROJECT_ROOT}}"
+CONTAINER_PROJECT_ROOT="${CONTAINER_PROJECT_ROOT:-/eva}"
 
 # 颜色输出
 RED='\033[0;31m'
@@ -67,6 +69,7 @@ log_section() {
 # 参数初始化
 GPU_ID=${DEFAULT_GPU_ID}
 CONTAINER_NAME=${DEFAULT_CONTAINER_NAME}
+PYTHON_PATH=${DEFAULT_PYTHON_PATH}
 HOST_LOG_DIR=""  # 宿主机日志目录（可选）
 
 # 参数解析和显示帮助
@@ -92,6 +95,7 @@ gRNA微调训练启动脚本（单卡版本）
                                 支持宿主机路径��容器路径
     --gpu GPU_ID                指定使用的GPU编号 (默认: ${DEFAULT_GPU_ID})
     --container CONTAINER       容器名称 (默认: ${DEFAULT_CONTAINER_NAME})
+    --python PYTHON_PATH        容器内Python路径 (默认: ${DEFAULT_PYTHON_PATH})
     --log-dir LOG_DIR           日志保存目录（宿主机路径）
                                 默认: 项目根目录/results/logs/gRNA_finetuning
     --help                      显示此帮助信息
@@ -127,9 +131,14 @@ EOF
 # 转换宿主机路径到容器内路径
 host_to_container_path() {
     local host_path="$1"
-    # 将 /data/yanjie_huang/eva/EVA1 转换为 /eva
-    local container_path="${host_path/data\/yanjie_huang\/eva\/EVA1/eva}"
-    echo "$container_path"
+    if [[ "$host_path" == "$HOST_PROJECT_DIR" ]]; then
+        echo "$CONTAINER_PROJECT_ROOT"
+    elif [[ "$host_path" == "$HOST_PROJECT_DIR"/* ]]; then
+        local relative_path="${host_path#${HOST_PROJECT_DIR}/}"
+        echo "${CONTAINER_PROJECT_ROOT}/${relative_path}"
+    else
+        echo "$host_path"
+    fi
 }
 
 # 检查容器状态
@@ -142,8 +151,8 @@ check_container() {
 
 # 创建输出目录
 create_output_dirs() {
-    docker exec ${CONTAINER_NAME} mkdir -p ${PROJECT_ROOT}/results/gRNA_finetuning
-    docker exec ${CONTAINER_NAME} mkdir -p ${PROJECT_ROOT}/results/logs/gRNA_finetuning
+    docker exec ${CONTAINER_NAME} mkdir -p ${CONTAINER_PROJECT_ROOT}/results/gRNA_finetuning
+    docker exec ${CONTAINER_NAME} mkdir -p ${CONTAINER_PROJECT_ROOT}/results/logs/gRNA_finetuning
 }
 
 # 主函数
@@ -161,6 +170,10 @@ main() {
                 ;;
             --container)
                 CONTAINER_NAME="$2"
+                shift 2
+                ;;
+            --python)
+                PYTHON_PATH="$2"
                 shift 2
                 ;;
             --log-dir)
@@ -213,6 +226,7 @@ main() {
     log_info "单卡训练配置："
     log_info "  GPU编号: ${GPU_ID}"
     log_info "  容器名称: ${CONTAINER_NAME}"
+    log_info "  Python路径: ${PYTHON_PATH}"
     echo ""
 
     # 检查环境
@@ -265,8 +279,7 @@ main() {
     create_output_dirs
 
     # 训练命令（单卡模式，使用容器内路径）
-    CONTAINER_PROJECT_ROOT="/eva"
-    TRAIN_CMD="cd ${CONTAINER_PROJECT_ROOT} && CUDA_VISIBLE_DEVICES=${GPU_ID} /composer-python/python \
+    TRAIN_CMD="cd ${CONTAINER_PROJECT_ROOT} && CUDA_VISIBLE_DEVICES=${GPU_ID} ${PYTHON_PATH} \
         finetune/train_finetune.py \
         --config=$CONTAINER_CONFIG_FILE"
 
@@ -276,12 +289,12 @@ main() {
         LOG_DIR="$HOST_LOG_DIR"
         mkdir -p "$LOG_DIR"
         # 转换为容器内路径用于显示
-        CONTAINER_LOG_DIR="${LOG_DIR/data\/yanjie_huang\/eva\/EVA1/eva}"
+        CONTAINER_LOG_DIR="$(host_to_container_path "$LOG_DIR")"
     else
         # 使用默认日志目录
         LOG_DIR="${PROJECT_ROOT}/results/logs/gRNA_finetuning"
         mkdir -p "$LOG_DIR"
-        CONTAINER_LOG_DIR="$LOG_DIR"
+        CONTAINER_LOG_DIR="$(host_to_container_path "$LOG_DIR")"
     fi
     LOG_FILE="${LOG_DIR}/gRNA_finetuning_$(date +%Y%m%d_%H%M%S).log"
 
