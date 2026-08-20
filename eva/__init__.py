@@ -16,6 +16,14 @@ Technical Features:
 - Efficient batching and data loading
 """
 
+from . import _runtime_env as _runtime_env
+
+# Self-heal the Triton CUDA driver environment before anything can import
+# torch/megablocks/triton (see eva/_runtime_env.py for details). This also
+# covers `singularity exec/shell` sessions where container ENTRYPOINTs do
+# not run. Set EVA_SKIP_RUNTIME_ENV=1 to disable.
+_runtime_env.apply()
+
 from ._version import __version__
 
 __all__ = [

@@ -15,9 +15,17 @@ __pycache__/
 *_bak*
 
 # Docker files
-docker/
+# NOTE: docker/ must stay in the build context: docker/Dockerfile COPYs
+# docker/requirements.txt and docker/entrypoint.sh. Excluding it breaks the
+# documented `docker build -f docker/Dockerfile -t eva:latest .` command.
 Dockerfile
-Dockerfile_bak*
+docker/Dockerfile_bak*
+docker/EVA.def
+docker/smoke_test.sh
+.dockerignore
+
+# Figures are not part of the image (34 MB of build context)
+fig/
 
 # IDE / OS
 .git/

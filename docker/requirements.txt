@@ -1,13 +1,21 @@
-accelerate==1.10.0
+# EVA runtime environment, frozen to the released versions.
+#
+# torch, torchvision and the nvidia-* CUDA wheels come from the base image
+# (pytorch/pytorch:2.5.1-cuda12.4-cudnn9-devel); their +cu124 local versions
+# are not published on PyPI and must not be pinned here.
+#
+# flash-attn, grouped-gemm, stanford-stk and megablocks ship sdist-only and
+# build CUDA extensions against the base image's torch. docker/Dockerfile
+# installs them with --no-build-isolation before this file is processed; they
+# are listed here only to document the frozen versions.
+
 annotated-types==0.7.0
 asttokens==2.4.1
-blinker==1.9.0
 certifi==2024.8.30
 charset-normalizer==3.4.3
 click==8.2.1
 cmake==3.26.3
 contourpy==1.3.3
-cramjam==2.9.0
 cycler==0.12.1
 decorator==5.1.1
 einops==0.8.0
@@ -31,7 +39,6 @@ matplotlib==3.10.5
 matplotlib-inline==0.1.7
 megablocks==0.7.0
 mpmath==1.3.0
-netifaces==0.11.0
 networkx==3.4.2
 ninja==1.11.1
 numpy==2.0.2
@@ -47,27 +54,20 @@ nvidia-cusparse-cu12==12.3.1.170
 nvidia-nccl-cu12==2.21.5
 nvidia-nvjitlink-cu12==12.4.127
 nvidia-nvtx-cu12==12.4.127
-ovs==2.17.9
 packaging==22.0
-pandoc==2.3
 parso==0.8.4
 pexpect==4.9.0
 pillow==11.0.0
 platformdirs==4.3.8
-plumbum==1.9.0
-ply==3.11
 prompt_toolkit==3.0.48
 protobuf==6.31.1
-psutil==7.0.0
 ptyprocess==0.7.0
 pure_eval==0.2.3
 pydantic==2.11.7
 pydantic_core==2.33.2
 Pygments==2.18.0
 pyparsing==3.2.3
-python-apt==2.4.0+ubuntu4
 python-dateutil==2.9.0.post0
-python-snappy==0.7.3
 PyYAML==6.0.2
 regex==2025.7.34
 requests==2.32.4
@@ -75,13 +75,10 @@ safetensors==0.6.2
 sentry-sdk==2.34.1
 six==1.16.0
 smmap==5.0.2
-sortedcontainers==2.1.0
 stack-data==0.6.3
 stanford-stk==0.7.1
 sympy==1.13.1
 tokenizers==0.21.4
-torch==2.5.1+cu124
-torchvision==0.20.1+cu124
 tqdm==4.67.1
 traitlets==5.14.3
 transformers==4.55.0

@@ -211,6 +211,13 @@ Build the image from the repository root:
 docker build -f docker/Dockerfile -t eva:latest .
 ```
 
+The image is based on `pytorch/pytorch:2.5.1-cuda12.4-cudnn9-devel` and compiles
+`flash-attn`, `grouped-gemm`, `stanford-stk` and `megablocks` from source
+against the preinstalled PyTorch 2.5.1 (none of them publish usable prebuilt
+wheels). The first build takes roughly 30-60 minutes; subsequent builds reuse
+the Docker layer cache. `TORCH_CUDA_ARCH_LIST` is fixed to `7.5;8.0;9.0`
+(Tesla T4, Ampere/Ada via binary compatibility, Hopper).
+
 Run an interactive GPU container with checkpoint and output folders mounted from the host:
 
 ```bash
@@ -235,6 +242,79 @@ python /eva/tools/generate.py --help
 python /eva/tools/predict.py --help
 ```
 
+The image entrypoint (`docker/entrypoint.sh`, backed by `eva/_runtime_env.py`)
+verifies the Triton CUDA driver environment at container start. It only
+intervenes when Triton's default discovery is broken (e.g. Singularity/Apptainer
+images with driver-library placeholders) and then exports
+`TRITON_LIBCUDA_PATH` plus a writable `TRITON_CACHE_DIR`. The same check runs
+on every `import eva`, which covers launch paths where container entrypoints
+are not executed.
+
+### Option C: Singularity / Apptainer (HPC clusters)
+
+HPC users usually cannot run Docker. Convert the image with the definition
+file on any machine that has Docker:
+
+```bash
+docker build -f docker/Dockerfile -t eva:latest .
+singularity build eva_latest.sif docker/EVA.def
+```
+
+When starting from a released docker-archive tarball (for example
+`eva_latest.tar.gz` from Zenodo):
+
+```bash
+docker load -i eva_latest.tar.gz
+singularity build eva_latest.sif docker/EVA.def
+```
+
+Always launch with `--nv` so the host NVIDIA driver is available:
+
+```bash
+singularity shell --nv eva_latest.sif
+singularity exec --nv --bind /path/to/checkpoint:/eva/checkpoint \
+    eva_latest.sif python /eva/tools/generate.py --help
+```
+
+Verify the runtime before running notebooks or training:
+
+```bash
+singularity exec --cleanenv --nv eva_latest.sif \
+    python -c "from triton.runtime import driver; print(driver.active)"
+```
+
+### Troubleshooting: Triton `undefined symbol: cuModuleGetFunction`
+
+Triton 3.1.0 compiles `cuda_utils.so` on first use and links it against
+`-lcuda` at link time, resolving through the ldconfig cache rather than
+`LD_LIBRARY_PATH`. Images built via `docker commit` on GPU hosts contain
+0-byte `libcuda.so.*` placeholders: Docker `--gpus` mounts the real driver
+over them (masking the bug), while Singularity `--nv` leaves them visible,
+so the linker binds against an empty file and every Triton import fails
+with `undefined symbol: cuModuleGetFunction`.
+
+Images built from the current repository fix this at the source: the
+placeholders are removed at build time, and `eva/_runtime_env.py` points
+Triton at the injected driver via `TRITON_LIBCUDA_PATH` on every
+`import eva`. Users of images released before this fix must rebuild from
+the current repository.
+
+Verify after any launch method:
+
+```bash
+python -c "from triton.runtime import driver; print(driver.active)"
+```
+
+### Pre-release smoke test
+
+Both runtimes must pass before an image is published; Docker alone hides
+driver-placeholder bugs that only surface under Singularity `--nv`:
+
+```bash
+docker/smoke_test.sh docker eva:latest
+docker/smoke_test.sh singularity eva_latest.sif
+```
+
 ### Model download
 
 For reproducible runs, prefer a fixed Hugging Face revision:
@@ -254,7 +334,7 @@ If no revision is specified, Hugging Face downloads the current default branch o
 
 Use versioned releases for reproducible downstream use. A release should bind together:
 
-- a Git tag for this repository, for example `v1.0.0`;
+- a Git tag for this repository, for example `v1.1.0`;
 - the Python package version from `eva.__version__`;
 - the matching `CHANGELOG.md` entry;
 - the Hugging Face model revision used for inference;
@@ -264,7 +344,7 @@ Use versioned releases for reproducible downstream use. A release should bind to
 Recommended release workflow:
 
 ```bash
-git checkout v1.0.0
+git checkout v1.1.0
 python3 -m pip install -e .
 python3 -c "import eva; print(eva.__version__)"
 eva-generate --help
@@ -273,7 +353,7 @@ eva-generate --help
 You can also install directly from a release tag:
 
 ```bash
-python3 -m pip install "git+https://github.com/GENTEL-Lab/EVA.git@v1.0.0"
+python3 -m pip install "git+https://github.com/GENTEL-Lab/EVA.git@v1.1.0"
 ```
 
 The repository is package-ready through `pyproject.toml`, but release artifacts such as `dist/`, wheels, and source tarballs should be generated during release and not committed to the repository. PyPI or GitHub Packages publication is optional and should only be enabled when the supported dependency matrix is stable.

@@ -93,9 +93,6 @@ def _update_state_dict(
 ):
     # Make state dict interoperable between megablocks implementations
     key_sub = {}
-    if config.moe_implementation == "eager":
-        # TODO: add megablocks to eager substitutions here
-        key_sub = {}
 
     def update_key(key):
         for k, v in key_sub.items():

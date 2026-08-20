@@ -159,7 +159,7 @@ mkdir -p ./results/aptamer_finetuning/ribozyme_v1
     aptamer_v1 \
     --rna-type aptamer \
     --node-rank 0 \
-    --master-addr 10.1.18.27 \
+    --master-addr <master-node-ip> \
     --nnodes 2
 
 # 节点1（从节点）
@@ -167,7 +167,7 @@ mkdir -p ./results/aptamer_finetuning/ribozyme_v1
     aptamer_v1 \
     --rna-type aptamer \
     --node-rank 1 \
-    --master-addr 10.1.18.27 \
+    --master-addr <master-node-ip> \
     --nnodes 2
 ```
 

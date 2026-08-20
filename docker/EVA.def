@@ -1,0 +1,64 @@
+# Singularity/Apptainer definition file for EVA.
+#
+# Build from a locally built Docker image (no registry access required):
+#
+#   docker build -f docker/Dockerfile -t eva:latest .
+#   singularity build eva_latest.sif docker/EVA.def
+#
+# Or, when starting from a released docker-archive tarball (e.g. the
+# eva_latest.tar.gz from Zenodo) on a machine with Docker:
+#
+#   docker load -i eva_latest.tar.gz        # or: docker load < eva_latest.tar.gz
+#   singularity build eva_latest.sif docker/EVA.def
+#
+# The %post step removes driver-library placeholders that older images
+# inherited from `docker commit`-based builds (0-byte libcuda.so.* files).
+# They break Triton's cuda_utils.so link step under `--nv` because the
+# Singularity runtime leaves them visible at their original path. Removing
+# them is safe: `--nv` injects the real host driver via LD_LIBRARY_PATH, and
+# eva/_runtime_env.py (imported with `import eva`, plus the container
+# entrypoint) points Triton at it via TRITON_LIBCUDA_PATH.
+#
+# Usage on an HPC cluster (always pass --nv):
+#
+#   singularity shell --nv eva_latest.sif
+#   singularity exec --nv eva_latest.sif python /eva/tools/generate.py --help
+#   singularity run  --nv eva_latest.sif <command>
+
+Bootstrap: docker-daemon
+From: eva:latest
+
+%labels
+    org.opencontainers.image.title EVA
+    org.opencontainers.image.description A Long-Context Generative Foundation Model Deciphers RNA Design Principles
+    org.opencontainers.image.licenses Apache-2.0
+
+%post
+    # Remove driver-library placeholders accidentally baked into older image
+    # layers; the real driver is injected at runtime by --nv.
+    rm -f /usr/lib/x86_64-linux-gnu/libcuda.so* \
+          /usr/lib/x86_64-linux-gnu/libcudadebugger.so* \
+          /usr/lib64/libcuda.so* \
+          /usr/lib64/libcudadebugger.so* 2>/dev/null || true
+    ldconfig 2>/dev/null || true
+
+%environment
+    # Keep output reproducible; everything GPU-related is detected at runtime
+    # by /usr/local/bin/eva-entrypoint.sh and eva/_runtime_env.py.
+    export LC_ALL=C
+
+%runscript
+    exec /usr/local/bin/eva-entrypoint.sh "$@"
+
+%help
+    EVA runtime container.
+
+    Always launch with --nv so the host NVIDIA driver is available, e.g.:
+
+        singularity exec --nv eva_latest.sif python -c \
+            "from triton.runtime import driver; print(driver.active)"
+
+    Model checkpoints are not part of the image; bind-mount them, e.g.:
+
+        singularity exec --nv --bind /path/to/checkpoint:/eva/checkpoint \
+            eva_latest.sif python /eva/tools/generate.py --help

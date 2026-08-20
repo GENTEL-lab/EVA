@@ -4,12 +4,15 @@ Supports Greengenes lineage string encoding, streamlined vocabulary without spec
 """
 
 import json
+import logging
 import os
 import re
 from typing import List, Optional
 
 from tokenizers import Tokenizer
 from tokenizers.models import BPE
+
+logger = logging.getLogger(__name__)
 
 # RNA special tokens
 RNA_SPECIAL_TOKENS = [
@@ -133,7 +136,7 @@ class LineageRNATokenizer:
             pad_token="<pad>"
         )
 
-        print(f"Lineage RNA tokenizer created, vocabulary size: {len(LINEAGE_RNA_VOCAB)}")
+        logger.info("Lineage RNA tokenizer created, vocabulary size: %d", len(LINEAGE_RNA_VOCAB))
         return tokenizer
 
     def encode(self, sequence: str) -> List[int]:
@@ -360,7 +363,7 @@ class LineageRNATokenizer:
         with open(config_path, 'w', encoding='utf-8') as f:
             json.dump(tokenizer_config, f, ensure_ascii=False, indent=2)
 
-        print(f"LineageRNATokenizer saved to: {save_directory}")
+        logger.info("LineageRNATokenizer saved to: %s", save_directory)
 
     @classmethod
     def from_file(cls, filepath: str) -> 'LineageRNATokenizer':
@@ -405,12 +408,12 @@ def create_lineage_rna_tokenizer_json(output_path: str):
     # Save tokenizer
     tokenizer.save(output_path)
 
-    print(f"Lineage RNA tokenizer saved to: {output_path}")
-    print(f"Vocabulary size: {tokenizer.vocab_size}")
-    print(f"Special tokens: {RNA_SPECIAL_TOKENS[:8]}...")
-    print(f"RNA bases: {RNA_BASES}")
-    print(f"Lineage level tokens: {LINEAGE_LEVEL_TOKENS}")
-    print(f"Lineage special characters: {LINEAGE_SPECIAL_CHARS}")
+    logger.info("Lineage RNA tokenizer saved to: %s", output_path)
+    logger.info("Vocabulary size: %s", tokenizer.vocab_size)
+    logger.info("Special tokens: %s...", RNA_SPECIAL_TOKENS[:8])
+    logger.info("RNA bases: %s", RNA_BASES)
+    logger.info("Lineage level tokens: %s", LINEAGE_LEVEL_TOKENS)
+    logger.info("Lineage special characters: %s", LINEAGE_SPECIAL_CHARS)
 
     return tokenizer
 
@@ -435,12 +438,12 @@ def get_lineage_rna_tokenizer(use_direction_tokens: bool = True) -> LineageRNATo
 
     if os.path.exists(tokenizer_path):
         tokenizer = LineageRNATokenizer.from_file(tokenizer_path)
-        print(f"Loaded Lineage RNA tokenizer: {os.path.basename(tokenizer_path)} (vocab_size={tokenizer.vocab_size})")
+        logger.info("Loaded Lineage RNA tokenizer: %s (vocab_size=%s)", os.path.basename(tokenizer_path), tokenizer.vocab_size)
         return tokenizer
     else:
         if use_direction_tokens:
             # If new tokenizer file doesn't exist, create it
-            print(f"Creating new Lineage RNA tokenizer: {tokenizer_path}")
+            logger.info("Creating new Lineage RNA tokenizer: %s", tokenizer_path)
             return create_lineage_rna_tokenizer_json(tokenizer_path)
         else:
             # Missing legacy tokenizer file is a critical error
