@@ -834,7 +834,7 @@ Some large files are not included in this repository due to size constraints. Th
 | Resource | Description | Size | Source |
 |----------|-------------|------|--------|
 | Model Checkpoint | EVA 1.4B (MoE) pre-trained weights | <!-- TODO --> | [HuggingFace](https://huggingface.co/GENTEL-Lab/EVA) |
-| Docker Image (`eva_latest.tar.gz`) | Pre-built EVA runtime environment | <!-- TODO --> | [Zenodo](https://doi.org/10.5281/zenodo.18786990) |
+| Docker Image (`eva_latest.tar.gz`) | Pre-built EVA runtime environment | <!-- TODO --> | [Zenodo](https://doi.org/10.5281/zenodo.18786989) |
 | Training Data | OpenRNA v1 — 114M full-length RNA sequences | <!-- TODO --> | [HuggingFace](https://huggingface.co/datasets/GENTEL-Lab/OpenRNA-v1-114M) |
 
 ### Experiment & Benchmark Data
