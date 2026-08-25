@@ -18,8 +18,9 @@ set -euo pipefail
 mode="${1:-}"
 shift || true
 
-PROBE='import torch; from triton.runtime import driver; \
+PROBE='import torch; from triton.runtime import driver; import eva; \
 print("torch:", torch.__version__); \
+print("eva:", eva.__version__); \
 print("cuda available:", torch.cuda.is_available()); \
 print("triton driver:", driver.active); \
 assert torch.cuda.is_available(), "torch.cuda.is_available() is False"'
@@ -29,6 +30,7 @@ case "$mode" in
         image="${1:-eva:latest}"
         echo "== Docker smoke test: $image =="
         docker run --rm --gpus all "$image" python -c "$PROBE"
+        docker run --rm --gpus all "$image" eva-generate --help >/dev/null
         ;;
     singularity)
         sif="${1:-eva_latest.sif}"
@@ -39,6 +41,7 @@ case "$mode" in
         # --cleanenv keeps host environment variables from leaking in, which
         # mirrors how HPC users invoke the container.
         singularity exec --cleanenv --nv "$sif" python -c "$PROBE"
+        singularity exec --cleanenv --nv "$sif" eva-generate --help >/dev/null
         ;;
     *)
         echo "Usage: $0 {docker [image] | singularity [sif]}" >&2

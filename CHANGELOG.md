@@ -4,6 +4,30 @@ All notable changes to EVA are documented in this file.
 
 The project uses Git tags for code releases. A reproducible release should also record the corresponding Hugging Face model revision, dataset revision, and Docker image or build command.
 
+## v1.1.1
+
+### Fixed
+
+- `docker build -f docker/Dockerfile` from the v1.1.0 source tree still
+  failing on a clean machine. Two further blockers, both verified on a
+  fresh Docker installation:
+  - The `pytorch/pytorch:2.5.1-cuda12.4-cudnn9-devel` base image ships no
+    `git`, but `flash-attn==2.6.3`'s `setup.py` invokes `git` while
+    generating package metadata. `git` is now installed before the source
+    builds.
+  - `setuptools==75.8.0` breaks `flash-attn==2.6.3`'s metadata step with
+    `AttributeError: _DistInfoDistribution__dep_map` (pkg_resources change
+    in the 75.x line). Pinned back to the known-good `69.5.1`.
+
+### Added
+
+- Image provenance labels: `org.opencontainers.image.version` and
+  `.revision` are baked in via `--build-arg EVA_VERSION` /
+  `EVA_REVISION` (inspectable with `docker inspect` / `apptainer inspect`).
+- `docker/smoke_test.sh` now also verifies `import eva` (and the reported
+  package version) plus the `eva-generate` CLI entry point, in both the
+  Docker and the Singularity/Apptainer variant.
+
 ## v1.1.0
 
 ### Fixed

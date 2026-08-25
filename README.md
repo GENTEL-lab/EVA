@@ -334,7 +334,7 @@ If no revision is specified, Hugging Face downloads the current default branch o
 
 Use versioned releases for reproducible downstream use. A release should bind together:
 
-- a Git tag for this repository, for example `v1.1.0`;
+- a Git tag for this repository, for example `v1.1.1`;
 - the Python package version from `eva.__version__`;
 - the matching `CHANGELOG.md` entry;
 - the Hugging Face model revision used for inference;
@@ -344,7 +344,7 @@ Use versioned releases for reproducible downstream use. A release should bind to
 Recommended release workflow:
 
 ```bash
-git checkout v1.1.0
+git checkout v1.1.1
 python3 -m pip install -e .
 python3 -c "import eva; print(eva.__version__)"
 eva-generate --help
@@ -353,7 +353,7 @@ eva-generate --help
 You can also install directly from a release tag:
 
 ```bash
-python3 -m pip install "git+https://github.com/GENTEL-Lab/EVA.git@v1.1.0"
+python3 -m pip install "git+https://github.com/GENTEL-Lab/EVA.git@v1.1.1"
 ```
 
 The repository is package-ready through `pyproject.toml`, but release artifacts such as `dist/`, wheels, and source tarballs should be generated during release and not committed to the repository. PyPI or GitHub Packages publication is optional and should only be enabled when the supported dependency matrix is stable.

@@ -16,13 +16,21 @@ ENV LIBRARY_PATH=""
 ENV TORCH_CUDA_ARCH_LIST="7.5;8.0;9.0"
 
 # Build tooling, pinned for reproducible source builds below.
+# setuptools is held at 69.5.1: the 75.x line breaks flash-attn 2.6.3's
+# setup.py metadata step with "AttributeError:
+# _DistInfoDistribution__dep_map" (pkg_resources removal).
 RUN pip install --no-cache-dir \
-      setuptools==75.8.0 \
+      setuptools==69.5.1 \
       wheel==0.45.1 \
       packaging==22.0 \
       "numpy==2.0.2" \
       triton==3.1.0 \
       ninja==1.11.1
+
+# The base image ships no git, but flash-attn's setup.py invokes git while
+# generating package metadata; without it the build fails on a fresh machine.
+RUN apt-get update && apt-get install -y --no-install-recommends git \
+    && rm -rf /var/lib/apt/lists/*
 
 # CUDA-extension packages must build against the preinstalled torch: install
 # with --no-build-isolation so their setup.py can see it (with build
@@ -74,3 +82,12 @@ RUN mkdir -p /eva/data/output/scores
 WORKDIR /eva
 ENTRYPOINT ["/usr/local/bin/eva-entrypoint.sh"]
 CMD ["sleep", "infinity"]
+
+# Image provenance, overridable at build time:
+#   docker build --build-arg EVA_VERSION=1.1.1 \
+#                --build-arg EVA_REVISION=$(git rev-parse --short HEAD) ...
+ARG EVA_VERSION=dev
+ARG EVA_REVISION=unknown
+LABEL org.opencontainers.image.version=$EVA_VERSION \
+      org.opencontainers.image.revision=$EVA_REVISION \
+      org.opencontainers.image.source="https://github.com/GENTEL-Lab/EVA"
