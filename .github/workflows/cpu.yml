@@ -1,0 +1,73 @@
+name: CPU checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cpu:
+    name: Python ${{ matrix.python }} CPU
+    runs-on: ubuntu-22.04
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.11']
+    env:
+      MPLBACKEND: Agg
+      PYTHONDONTWRITEBYTECODE: '1'
+      TOKENIZERS_PARALLELISM: 'false'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - name: Install CPU runtime and development dependencies
+        run: |
+          python -m pip install 'torch==2.5.1' --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install -e '.[benchmark,design,dev,notebook]'
+          python -m pip check
+      - name: Regression tests
+        run: |
+          python -m pytest -q tests --junitxml="$RUNNER_TEMP/tests.xml"
+          python - <<'PYTEST'
+          import os, xml.etree.ElementTree as ET
+          report = ET.parse(os.path.join(os.environ['RUNNER_TEMP'], 'tests.xml'))
+          skipped = sum(int(s.get('skipped', 0)) for s in report.getroot().iter('testsuite'))
+          assert skipped == 0, f'{skipped} tests skipped; required CPU dependencies must be installed'
+          PYTEST
+      - name: Documentation, citation and frozen inputs
+        run: python scripts/check_repository.py
+      - name: Execute CPU example from a full source archive
+        run: |
+          mkdir -p "$RUNNER_TEMP/source-archive"
+          git archive --format=tar --prefix=EVA/ HEAD | tar -xf - -C "$RUNNER_TEMP/source-archive"
+          cd "$RUNNER_TEMP/source-archive/EVA"
+          python scripts/reproduce_historical_benchmark.py --artifact-only --output "$RUNNER_TEMP/cpu-example"
+      - name: Build wheel and verify installation outside the checkout
+        run: |
+          python -m build
+          python -m pip uninstall -y eva-rna
+          python -m pip install --no-deps dist/*.whl
+          python -m pip check
+          cd "$RUNNER_TEMP"
+          python -I "$GITHUB_WORKSPACE/scripts/check_installed_package.py" --source-root "$GITHUB_WORKSPACE"
+      - name: Save test and CPU example reports
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cpu-python-${{ matrix.python }}
+          path: |
+            ${{ runner.temp }}/tests.xml
+            ${{ runner.temp }}/cpu-example/report.json
+          if-no-files-found: ignore

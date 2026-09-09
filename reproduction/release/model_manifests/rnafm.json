@@ -1,0 +1,13 @@
+{
+  "source": "Recovered original benchmark cache",
+  "model": "multimolecule/rnafm",
+  "revision": "2a98c38e8219d666ad35d04a689218ab50a36293",
+  "files": {
+    "config.json": "028e14a0fb28c088661df8cd08fdff1dee8238e33d46029fb8af8c153dc6524f",
+    "model.safetensors": "1fccd0adf65340ebf246cb35c1ce7eb68e0830023092a7561cee26ee40261a19",
+    "special_tokens_map.json": "425c62f51fae9706f499386aec42b284e177da51d86e6ffd1ac744b3822278eb",
+    "tokenizer_config.json": "0f9810f042f4c3f206378d452e3a6e115a3c11940277a31b97a632e285fbf9e5",
+    "vocab.txt": "686c991af8379cbb812ada930086ad17f820327a99097eb7857ae38ef2da2572"
+  },
+  "public_availability": "The historical revision is unavailable; this manifest identifies files but does not download them."
+}

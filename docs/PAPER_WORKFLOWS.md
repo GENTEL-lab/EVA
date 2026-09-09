@@ -31,11 +31,11 @@ The entries below distinguish recovered version identifiers from missing ones.
 | RNABERT | `multimolecule/rnabert`, revision `7a9b5d5d5a96931ff056828c0968479098506cea` | Same bounded masked-LM entry; historical revision currently returns HTTP 404. |
 | RNA-MSM | `multimolecule/rnamsm`, revision `ad61a4915674596557b3c3c4fe4fd7162d36acc8` | Historical revision currently returns HTTP 404; sequence/MSA protocol correspondence is also unverified. |
 | GENA-LM | Local snapshot names `AIRI-Institute/gena-lm-bert-base-t2t-multi`, revision `4633e5a1ada905bb7afee6877d71cc12578a95a5` | Original model-name field differs from local snapshot name. Resolve that binding before downloading or running a replacement. |
-| ERNIE-RNA | `ERNIE-RNA_pretrain.pt` | Preserved ERNIE adapter and worker; exact release/checksum and fairseq environment still required. |
+| ERNIE-RNA | `ERNIE-RNA_pretrain.pt` | Preserved ERNIE adapter and worker; cached weight and environment-file hashes are now recorded; matching public release and runtime execution remain unverified. |
 | Evo2 1B, 7B, 40B | `evo2_1b_base`, `evo2_7b_base`, `evo2_40b_base` | Preserved Evo adapter; exact revisions and official compatible runtime still required. Do not replace the original scoring objective. |
-| CodonFM 600M and 1B | Original 600m/1b model selectors | Preserved `score_codonfm.py` and adapter; original container and immutable weight identities remain missing. |
-| AIDO.RNA | Original model-weight folder and ModelGenerator framework | Preserved AIDO worker/adapter; exact model snapshot and environment still required. |
-| GenerRNA | `model_updated.pt` and separate tokenizer | Preserved GenerRNA worker/adapter; checkpoint/tokenizer checksums and matching runtime still required. |
+| CodonFM 600M and 1B | Original 600m/1b model selectors | Preserved `score_codonfm.py` and adapter; cached weight/config identities are now recorded; original runtime and public version binding remain unresolved. |
+| AIDO.RNA | Original model-weight folder and ModelGenerator framework | Preserved AIDO worker/adapter; cached weight-shard/config hashes are now recorded; exact public snapshot and environment binding remain required. |
+| GenerRNA | `model_updated.pt` and separate tokenizer | Preserved GenerRNA worker/adapter; cached weight and tokenizer-config hashes are now recorded; complete tokenizer/runtime and public version binding remain required. |
 | CodonGPT | Original worker `compute_codongpt_ll.py` | Weight revision and original environment still required. |
 | ESM protein models | `upstream/protein/evaluate_dms_esm_domain.py` | Strict native entry `run_competitor.py protein-esm`; exact reference/DMS files and model ensemble must be supplied. |
 | ProGen3 and other unmatched protein rows | Existing summary-table entries | Missing producer/version must be recovered; a table row is not an inference implementation. |
@@ -66,3 +66,11 @@ The recovered Evo2 7B protein row remains a separate candidate table under
 into the current submission table. Four ncRNA model comparisons have recorded
 sample-count differences of one; their original inclusion/WT rules still need
 to be documented before those comparisons can be called complete.
+
+## Resource recovery update: September 9, 2026
+
+The [current resource index](OFFICIAL_MODEL_RESOURCES.md#recovered-comparison-model-files-september-9-2026)
+records recovered RNA-FM/RNABERT/RNA-MSM snapshots and additional cached
+CodonFM, ERNIE-RNA, AIDO.RNA and GenerRNA file hashes. Public download/runtime
+bindings remain incomplete. These new identities supplement the historical
+requirements above; they do not imply newly executed competitor benchmarks.

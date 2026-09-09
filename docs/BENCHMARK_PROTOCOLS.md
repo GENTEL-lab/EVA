@@ -96,3 +96,11 @@ The recovered 21M pretrain `checkpoint-31006` and midtrain `checkpoint_86006`, a
 Both recovered 21M stage configs set `use_lineage_prefix: true`. Therefore they do not substantiate a blanket statement that pretraining used RNA-type only and lineage began solely at midtraining. The final 1.4B mid config names a v31 pretraining checkpoint for which the matching pretraining config remains unresolved. Clarify the run-to-manuscript linkage rather than changing training objectives to match prose. The native `model_dense` implementation is still missing; neither an MoE alias nor a smoke test substitutes for it. Training data paths in historical YAMLs are provenance, not evidence that the original training datasets are publicly accessible.
 
 The separately recovered `RNAVerse/checkpoint/clm` metadata supplies a fifth concrete configuration (v4 midtraining from v24 pretrain step 15000): it also specifies mixed mode, GLM probability 0.333, EP=4, DP=4, lineage and RNA-type prefixes. It establishes another observed historical run, not a reason to conflate the v24 and v31 checkpoint families.
+
+## Resource recovery update: September 9, 2026
+
+The [current resource index](OFFICIAL_MODEL_RESOURCES.md#recovered-comparison-model-files-september-9-2026)
+records recovered RNA-FM/RNABERT/RNA-MSM snapshots and additional cached
+CodonFM, ERNIE-RNA, AIDO.RNA and GenerRNA file hashes. Public download/runtime
+bindings remain incomplete. These new identities supplement the historical
+requirements above; they do not imply newly executed competitor benchmarks.

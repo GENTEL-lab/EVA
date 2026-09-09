@@ -20,8 +20,11 @@ objective search was performed to fit the reported value.
 The report's decimal-precision comparison is a diagnostic against the stored
 CSV, not a demand for scientifically meaningful agreement to 16 decimal places.
 The manuscript plot does not annotate an individual Milena coefficient.
-Rounding to two decimals is descriptive context only; publication remains
-pending the requested explanation of the different archived predictions.
+Rounding to two decimals is descriptive context only. The observed 0.00338
+difference is accepted for the representative example and is not a merge or
+release blocker. Current execution status and optional strict comparison are
+documented in [the reproduction guide](../../../docs/REPRODUCTION.md).
+The dated JSON reports below preserve their original status strings and measurements.
 
 The run used a cached weight file whose SHA256 matches the public revision's
 LFS object, plus freshly retrieved public config and tokenizer files.

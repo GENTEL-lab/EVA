@@ -1,0 +1,114 @@
+{
+  "checked_date": "2026-09-09",
+  "model_repository": "GENTEL-Lab/EVA",
+  "model_revision": "514db6705637c1ec963b728768fc9b34728699ee",
+  "model_weights": [
+    {
+      "path": "EVA_1.4B_CLM/model_weights.pt",
+      "bytes": 3057231170,
+      "sha256": "323c13d571d0be87e450cb7b103bf8b28396e55e877519e2d2fb3c434875d420"
+    },
+    {
+      "path": "EVA_1.4B_GLM/model_weights.pt",
+      "bytes": 3057231170,
+      "sha256": "1ee172fe1bf68c6907590dae630b6e1d8493225dd0b5a34ecc0ead0cc51d4f0c"
+    },
+    {
+      "path": "EVA_145M/model_weights.pt",
+      "bytes": 361225818,
+      "sha256": "785f14ca3db031ab4a70692146cea3d5a192ceb6175271716ae52ab0c7cb5111"
+    },
+    {
+      "path": "EVA_21M/model_weights.pt",
+      "bytes": 44860956,
+      "sha256": "45d56a7399c4936429da149edf5003bbb5999490a64ec7d793bf5ac98116eb01"
+    },
+    {
+      "path": "EVA_437M/model_weights.pt",
+      "bytes": 1013942634,
+      "sha256": "1dec07cef32d888f9f3219cb9fb7c269cb62464e795b4f251ce800d6dde92b81"
+    }
+  ],
+  "zenodo_records": [
+    {
+      "record_id": 19027142,
+      "title": "EVA: Benchmark and Experiment Data for RNA Generation and Codon Optimization",
+      "doi": "10.5281/zenodo.19027142",
+      "files": [
+        {
+          "key": "mrna_codon_optimization.tar.gz",
+          "size": 25628,
+          "checksum": "md5:04d0ed6a704250f7916b6fa902264e82"
+        },
+        {
+          "key": "generated_rna_sequences.tar.gz",
+          "size": 162986756,
+          "checksum": "md5:dd722ed031762104b79c9483682e4dbc"
+        },
+        {
+          "key": "generrna_generation.tar.gz",
+          "size": 13487400,
+          "checksum": "md5:bcda4428e44ce22a9deee13dccbc6147"
+        },
+        {
+          "key": "mrna_6species.tar.gz",
+          "size": 39780876,
+          "checksum": "md5:ef70646d594692a55fda6f561ab1f72a"
+        }
+      ]
+    },
+    {
+      "record_id": 18786989,
+      "title": "EVA1 docker image : A Generative Foundation Model for Universal RNA Modeling and Design",
+      "doi": "10.5281/zenodo.22093406",
+      "files": [
+        {
+          "key": "eva_latest.tar.gz.part000",
+          "size": 1073741824,
+          "checksum": "md5:e996fdb48d55e2233518feac44c4e413"
+        },
+        {
+          "key": "eva_latest.tar.gz.part001",
+          "size": 1073741824,
+          "checksum": "md5:9658b41dd297c0cc14a34f38fce507fd"
+        },
+        {
+          "key": "eva_latest.tar.gz.part004",
+          "size": 1073741824,
+          "checksum": "md5:f3bc7bd3b5971b9367a76a122bd52475"
+        },
+        {
+          "key": "eva_latest.tar.gz.part002",
+          "size": 1073741824,
+          "checksum": "md5:5d2adef76627ea18cfd605811b1fb829"
+        },
+        {
+          "key": "eva_latest.tar.gz.part005",
+          "size": 1073741824,
+          "checksum": "md5:f198f8d4c31ecb066d55c88d4a17303f"
+        },
+        {
+          "key": "eva_latest.tar.gz.part003",
+          "size": 1073741824,
+          "checksum": "md5:7dfca078d01e815f98c5abfd35f171cd"
+        },
+        {
+          "key": "eva_latest.tar.gz.part007",
+          "size": 220584182,
+          "checksum": "md5:fb71db7fb4cb785f7657a44017a4ed29"
+        },
+        {
+          "key": "eva_latest.tar.gz.part006",
+          "size": 1073741824,
+          "checksum": "md5:f5c01e3a7c6901ebf1aad61b9842f006"
+        },
+        {
+          "key": "CHECKSUMS.sha256",
+          "size": 820,
+          "checksum": "md5:700095c327b1357a5cd11e38a124d86a"
+        }
+      ]
+    }
+  ],
+  "scope": "Public resource metadata, not a binding of every artifact to a paper experiment"
+}

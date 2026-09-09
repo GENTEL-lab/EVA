@@ -1,0 +1,121 @@
+{
+  "inventory": [
+    {
+      "root": "rna_benchmark/CodonFM/checkpoint",
+      "exists": true,
+      "files": [
+        {
+          "path": "CodonFM-1B/NV-CodonFM-Encodon-1B-v1.safetensors",
+          "bytes": 3645266844,
+          "sha256": "7880a89baa83156e72d2f3b695c6cd91523067fd86301028bbf7614b2b801607"
+        },
+        {
+          "path": "CodonFM-1B/config.json",
+          "bytes": 529,
+          "sha256": "0aac2cedb1f884882f6723b852dd74b99b4463bbb927cb45822d8a4190d56889"
+        },
+        {
+          "path": "CodonFM-600M/NV-CodonFM-Encodon-600M-v1.safetensors",
+          "bytes": 2436161020,
+          "sha256": "e81e4f63acd5e27be19848024a5912f5416f79192ecd32993fa09cbd2ae2976b"
+        },
+        {
+          "path": "CodonFM-600M/config.json",
+          "bytes": 560,
+          "sha256": "5371b73fc1ca264a7b3567ba8286bacedfaf43bba2ff99e827fd07e7cce6f981"
+        }
+      ]
+    },
+    {
+      "root": "rna_benchmark/biombenchmark/eva_fitness_benchmark/model/ERNIE-RNA",
+      "exists": true,
+      "files": [
+        {
+          "path": "environment.yml",
+          "bytes": 4433,
+          "sha256": "0c331f17799df6c9e515e6ed3241163f3f827e4c02fbe8f2b15a6e02b9796354"
+        },
+        {
+          "path": "checkpoint/ERNIE-RNA_checkpoint/ERNIE-RNA_pretrain.pt",
+          "bytes": 1035221383,
+          "sha256": "50ac42d4a2af361b8a7d9fb62546e3f380c32893b179554609440339a6676851"
+        }
+      ]
+    },
+    {
+      "root": "biollm_benchmark/model",
+      "exists": true,
+      "files": [
+        {
+          "path": "AIdo.RNA/model-weight/config.json",
+          "bytes": 742,
+          "sha256": "8ad42f1f4faa962346e40fe1f1203debec53543997de7366afdfaa895168cc4b"
+        },
+        {
+          "path": "AIdo.RNA/model-weight/pytorch_model-00001-of-00002.safetensors",
+          "bytes": 4978586096,
+          "sha256": "bc1b809d40e39d378dae16747b47628ce993f36a0bb83c5ef285c6e3c9b508cd"
+        },
+        {
+          "path": "AIdo.RNA/model-weight/pytorch_model-00002-of-00002.safetensors",
+          "bytes": 1467857000,
+          "sha256": "f62d1a1a5f681f3fd5e68b8b97b2768651e327c6de3b09c475c8825063dc0962"
+        },
+        {
+          "path": "ERNIE-RNA/environment.yml",
+          "bytes": 4433,
+          "sha256": "0c331f17799df6c9e515e6ed3241163f3f827e4c02fbe8f2b15a6e02b9796354"
+        },
+        {
+          "path": "ERNIE-RNA/checkpoint/ERNIE-RNA_checkpoint/ERNIE-RNA_pretrain.pt",
+          "bytes": 1035221383,
+          "sha256": "50ac42d4a2af361b8a7d9fb62546e3f380c32893b179554609440339a6676851"
+        },
+        {
+          "path": "GenerRNA/model_updated.pt",
+          "bytes": 3649845020,
+          "sha256": "4b8350368d27cfa05a5df9e9993aa75ef67f596d476cec1fcb910d16cb3d6859"
+        },
+        {
+          "path": "GenerRNA/tokenizer/tokenizer_config.json",
+          "bytes": 394,
+          "sha256": "2bde25884c7a306d26664cb35813f65c429e6529c5b57dd9be72ec92f7ef1a7b"
+        }
+      ]
+    }
+  ],
+  "configuration_metadata": [
+    {
+      "model": "rnafm",
+      "fields": {
+        "architectures": [
+          "RnaFmForPreTraining"
+        ],
+        "model_type": "rnafm",
+        "transformers_version": "4.50.0"
+      }
+    },
+    {
+      "model": "rnabert",
+      "fields": {
+        "architectures": [
+          "RnaBertForPreTraining"
+        ],
+        "model_type": "rnabert",
+        "transformers_version": "4.50.0"
+      }
+    },
+    {
+      "model": "rnamsm",
+      "fields": {
+        "architectures": [
+          "RnaMsmForPreTraining"
+        ],
+        "model_type": "rnamsm",
+        "transformers_version": "4.50.0"
+      }
+    }
+  ],
+  "checked_date": "2026-09-09",
+  "scope": "Read-only file hashes from the recovered historical benchmark mirror; public version binding and full method execution remain separate"
+}

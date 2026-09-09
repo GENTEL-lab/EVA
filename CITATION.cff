@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Cite the exact software version and commit used. This candidate has no archival DOI yet."
+message: "Cite the exact software version and commit used. The main-branch source has no archival code DOI yet."
 type: software
 title: "EVA: A Generative Foundation Model for Universal RNA Modeling and Design"
 authors:
