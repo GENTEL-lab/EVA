@@ -1,8 +1,8 @@
 # Observed reference run
 
 All 135 sequences were scored with the pinned public EVA-1.4B CLM artifact.
-The resulting Spearman correlation is **0.84**, rounded to two decimal places.
-The archived reference correlation also rounds to **0.84**.
+The end-to-end run achieved a Spearman correlation of **0.84**, matching the
+reference result to two decimal places.
 
 The directory contains saved predictions, environment records and execution
 reports. [The reproduction guide](../../../../docs/REPRODUCTION.md) describes
