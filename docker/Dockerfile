@@ -1,9 +1,13 @@
 # RNAVerse Docker Image
 # Base: official PyTorch image (CUDA 12.4, Python 3.11, PyTorch 2.5.1).
 # The 'devel' variant provides nvcc and CUDA headers, required to build
-# flash-attn / grouped-gemm / stanford-stk from source (none of them publish
-# prebuilt wheels on PyPI).
+# grouped-gemm / stanford-stk / MegaBlocks CUDA extensions from source.
+# EVA attention uses torch SDPA; the separate flash-attn package is not imported.
 FROM pytorch/pytorch:2.5.1-cuda12.4-cudnn9-devel
+
+# Optional package mirror; versions and algorithms remain pinned below.
+ARG PIP_INDEX_URL=https://pypi.org/simple
+ARG PIP_DEFAULT_TIMEOUT=60
 
 # CUDA stubs must not leak into compile-time -lcuda resolution (Triton links
 # its cuda_utils.so against libcuda); the real driver is injected at runtime
@@ -16,19 +20,16 @@ ENV LIBRARY_PATH=""
 ENV TORCH_CUDA_ARCH_LIST="7.5;8.0;9.0"
 
 # Build tooling, pinned for reproducible source builds below.
-# setuptools is held at 69.5.1: the 75.x line breaks flash-attn 2.6.3's
-# setup.py metadata step with "AttributeError:
-# _DistInfoDistribution__dep_map" (pkg_resources removal).
+# Keep the established build-tool versions for the compiled MoE packages.
 RUN pip install --no-cache-dir \
       setuptools==69.5.1 \
       wheel==0.45.1 \
-      packaging==22.0 \
+      packaging==23.2 \
       "numpy==2.0.2" \
       triton==3.1.0 \
       ninja==1.11.1
 
-# The base image ships no git, but flash-attn's setup.py invokes git while
-# generating package metadata; without it the build fails on a fresh machine.
+# Keep git available for source-package metadata and full-source workflows.
 RUN apt-get update && apt-get install -y --no-install-recommends git \
     && rm -rf /var/lib/apt/lists/*
 
@@ -38,10 +39,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends git \
 # Pre-pinning triton/numpy/packaging above keeps dependency resolution
 # deterministic (megablocks only constrains triton>=2.1.0 and would
 # otherwise pull a newer triton than the released environment uses).
-# This step compiles flash-attn for three architectures and takes roughly
-# 30-60 minutes depending on the build machine.
+# Build only the CUDA extensions used by the released model. No attention
+# backend or optimization objective is changed when flash-attn is absent.
 RUN MAX_JOBS=4 pip install --no-cache-dir --no-build-isolation \
-      flash-attn==2.6.3 \
       grouped-gemm==0.1.6 \
       stanford-stk==0.7.1 \
       megablocks==0.7.0
@@ -69,6 +69,14 @@ RUN chmod +x /usr/local/bin/eva-entrypoint.sh
 COPY eva/ /eva/eva/
 COPY tools/ /eva/tools/
 COPY config/ /eva/config/
+COPY training/ /eva/training/
+COPY finetune/ /eva/finetune/
+COPY notebooks/ /eva/notebooks/
+COPY scripts/ /eva/scripts/
+COPY tests/ /eva/tests/
+COPY docs/ /eva/docs/
+COPY docker/ /eva/docker/
+COPY reproduction/ /eva/reproduction/
 COPY data/test_data/ /eva/data/test_data/
 COPY pyproject.toml README.md LICENSE CHANGELOG.md /eva/
 RUN pip install --no-cache-dir --no-deps -e /eva

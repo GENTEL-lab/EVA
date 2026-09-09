@@ -6,7 +6,7 @@ This script performs directed evolution on RNA sequences using:
 - Point mutations (not codon replacement)
 - LLM-based scoring (compute_batch_likelihood)
 - Dynamic beam search with simulated annealing
-- MFE calculations via LinearFold
+- MFE calculations via ViennaRNA
 
 Supports all RNA types through tools.utils.conditions module.
 """
@@ -272,13 +272,14 @@ def format_sequence(sequence: str, condition: Optional[GenerationCondition] = No
 
     # Build the conditional prompt
     prompt = condition.build_clm_prompt(lineage_db)
-    # The prompt ends with '5' which is the 5' end marker
-    # We append the sequence after it
-    return prompt + sequence
+    # The scoring worker adds BOS and direction markers itself.
+    if not prompt.startswith('<bos>') or not prompt.endswith('5'):
+        raise ValueError('Unexpected CLM prompt format')
+    return prompt[len('<bos>'):-1] + sequence
 
 
 def calculate_mfe(sequence: str) -> float:
-    """Calculate Minimum Free Energy using LinearFold.
+    """Calculate Minimum Free Energy using ViennaRNA.
 
     Args:
         sequence: RNA sequence
@@ -288,12 +289,16 @@ def calculate_mfe(sequence: str) -> float:
     """
     try:
         import RNA
-        fc = RNA.fold_compound(sequence)
-        mfe, structure = fc.mfe()
-        return mfe
-    except ImportError:
-        # If RNAfold is not available, return 0
-        return 0.0
+    except ImportError as exc:
+        raise RuntimeError(
+            "ViennaRNA is required for the MFE optimization objective. "
+            "Install it with pip install '.[design]'."
+        ) from exc
+    structure, mfe = RNA.fold_compound(sequence).mfe()
+    mfe = float(mfe)
+    if not np.isfinite(mfe):
+        raise ValueError("ViennaRNA returned a non-finite MFE")
+    return mfe
 
 
 def calculate_mfe_batch(sequences: List[str]) -> List[float]:
@@ -677,6 +682,7 @@ def main():
     de = DirectedEvolution(args)
 
     try:
+        calculate_mfe("GCGCUUCGCG")  # Preflight before allocating GPU memory.
         de.load_model()
         de.load_sequence()
         de.setup_conditions()

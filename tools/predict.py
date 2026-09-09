@@ -44,7 +44,7 @@ from utils.conditions import (
 )
 from utils.io import read_fasta
 from utils.model import ModelLoader
-from utils.scorers.score_worker import compute_batch_likelihood, compute_sequence_likelihood
+from utils.scorers.score_worker import score_in_batches
 from utils.data.codon_tables import reverse_translate, get_codon_table
 from utils.task import TaskConfig, BatchConfig
 
@@ -299,10 +299,10 @@ def run_scoring(args):
 
     start_time = time.time()
 
-    scores = compute_batch_likelihood(
+    scores = score_in_batches(
         model, tokenizer, formatted_sequences,
         args.device, reduce_method=reduce_method,
-        exclude_special_tokens=exclude_special
+        exclude_special_tokens=exclude_special, batch_size=args.batch_size
     )
 
     # Length normalization: divide by original sequence length
@@ -523,10 +523,10 @@ def run_batch_scoring(args):
         # Calculate scores
         reduce_method = 'mean' if normalize else 'sum'
 
-        scores = compute_batch_likelihood(
+        scores = score_in_batches(
             model, tokenizer, formatted_sequences,
             device, reduce_method=reduce_method,
-            exclude_special_tokens=exclude_special
+            exclude_special_tokens=exclude_special, batch_size=batch_size
         )
 
         # Length normalization
@@ -583,6 +583,8 @@ def main():
     """Main function"""
     parser = create_parser()
     args = parser.parse_args()
+    if args.batch_size < 1:
+        parser.error('--batch_size must be positive')
 
     # If configuration file is specified
     if args.config:

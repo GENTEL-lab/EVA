@@ -33,8 +33,12 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+steering = ["matplotlib>=3.8"]
+design = ["ViennaRNA>=2.6,<3"]
+benchmark = ["scipy>=1.11", "huggingface-hub>=0.34,<1"]
 dev = [
   "build>=1.2",
+  "pytest>=8",
 ]
 notebook = [
   "ipython>=8.0",
@@ -43,6 +47,7 @@ notebook = [
   "pandas>=2.0",
   "scipy>=1.11",
   "seaborn>=0.13",
+  "scikit-learn>=1.5,<1.6",
 ]
 
 [project.urls]

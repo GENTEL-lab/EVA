@@ -206,7 +206,7 @@ class BaseTrainer(ABC):
         self.device = torch.device(f'cuda:{self.local_rank}')
 
     def _setup_logging(self):
-        from utils.logging import create_logger
+        from finetune.utils.logging import create_logger
         logging_config = self.config.get('logging_config', {})
         experiment_name = f"{self.stage_name}_{time.strftime('%Y%m%d_%H%M%S')}"
         log_dir = logging_config.get('log_dir', self.default_log_dir)
@@ -222,7 +222,11 @@ class BaseTrainer(ABC):
         )
 
     def _set_seed(self):
+        import random
+        import numpy as np
         seed = self.config.get('training_config', {}).get('seed', DEFAULT_SEED)
+        random.seed(seed)
+        np.random.seed(seed)
         torch.manual_seed(seed)
         if torch.cuda.is_available():
             torch.cuda.manual_seed_all(seed)
@@ -231,9 +235,8 @@ class BaseTrainer(ABC):
 
     def _setup_datasets(self):
         """设置数据集"""
-        from model.lineage_tokenizer import get_lineage_rna_tokenizer
-        from data.lineage_dataset import create_lineage_dataset
-        from data.rna_collator import create_rna_data_collator
+        from finetune.utils.lineage_dataset import create_lineage_dataset
+        from finetune.utils.rna_collator import create_rna_data_collator
 
         data_config = self.config.get('data_config', {})
         training_config = self.config.get('training_config', {})
@@ -251,7 +254,7 @@ class BaseTrainer(ABC):
 
         span_config = None
         if mode in ['mixed', 'completion']:
-            from data.lineage_dataset import SpanConfig
+            from finetune.utils.lineage_dataset import SpanConfig
             span_config_dict = data_config.get('span_config', {})
             span_config = SpanConfig(
                 max_coverage_ratios=span_config_dict.get('max_coverage_ratios', [0.15, 0.25, 0.5, 0.8]),
@@ -416,7 +419,7 @@ class BaseTrainer(ABC):
         self.current_dropout_values = {'resid': p_resid, 'hidden': p_hidden}
 
     def _setup_memory_manager(self):
-        from utils.memory import create_memory_manager
+        from finetune.utils.memory import create_memory_manager
         memory_config = self.config.get('memory_config', {})
         if memory_config.get('enable_monitoring', True):
             self.memory_manager = create_memory_manager(
@@ -792,6 +795,8 @@ class BaseTrainer(ABC):
             aux_loss = outputs.get('aux_loss', None) if isinstance(outputs, dict) else None
 
             loss_to_backprop = loss / grad_accum_steps
+            if not torch.isfinite(loss_to_backprop).all():
+                raise FloatingPointError('Non-finite training loss; refusing an invalid optimizer step')
             loss_to_backprop.backward()
 
             if (batch_idx + 1) % grad_accum_steps == 0:
@@ -912,7 +917,7 @@ class BaseTrainer(ABC):
         """通用的 CLI 入口"""
         import argparse
         parser = argparse.ArgumentParser(description=description)
-        parser.add_argument('--config', type=str, default=default_config, help='配置文件路径')
+        parser.add_argument('--config', type=str, default=default_config, required=default_config is None, help='配置文件路径')
         if supports_resume:
             parser.add_argument('--resume', type=str, default=None, help='从checkpoint恢复训练的路径')
         args = parser.parse_args()

@@ -1,0 +1,6402 @@
+[
+  {
+    "record_id": "A34G_fitness_0.01769",
+    "sequence_length": 54,
+    "mutation_pos0": 6,
+    "mutation_pos1": 7,
+    "mutation_from": "C",
+    "mutation_to": "G",
+    "wt_mfe": -16.3,
+    "mutant_mfe": -16.1,
+    "mfe_delta": 0.1999999999999993,
+    "bp_distance": 36,
+    "local_bp_distance": 36,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 18,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 18,
+    "diagnostic_wt_pairs_1": [
+      [
+        7,
+        29
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        7,
+        51
+      ],
+      [
+        6,
+        52
+      ],
+      [
+        8,
+        50
+      ],
+      [
+        5,
+        53
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        12,
+        43
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUGUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACAGUAUCCGACUGCGGUCGGUGGAGAUGUGUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "....((((((((((((((((((......))).)))))))...))))...)))).",
+    "wt_sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUGUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACAGUAUCCGACUGCGGUCGGUGGAGAUGUGUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "....((((((((((((((((((......))).)))))))...))))...))))."
+  },
+  {
+    "record_id": "G20U_fitness_0.04210",
+    "sequence_length": 54,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "A",
+    "mutation_to": "G",
+    "wt_mfe": -12.2,
+    "mutant_mfe": -13.4,
+    "mfe_delta": -1.200000000000001,
+    "bp_distance": 36,
+    "local_bp_distance": 36,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 18,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 18,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        33
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        10,
+        28
+      ],
+      [
+        11,
+        27
+      ],
+      [
+        12,
+        26
+      ],
+      [
+        14,
+        25
+      ],
+      [
+        15,
+        24
+      ],
+      [
+        16,
+        23
+      ],
+      [
+        17,
+        22
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        51
+      ],
+      [
+        3,
+        52
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        8,
+        47
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        12,
+        43
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCGUUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAGCACUAUCCGACUGCGUUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((...(((.((((....)))))))..))).((((((((...)))))))).",
+    "mutant_structure_window": "..(((..(((((((((((((((....)).))))..))))...)))))..)))..",
+    "wt_sequence": "GGAACACUAUCCGACUGCGUUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAGCACUAUCCGACUGCGUUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((...(((.((((....)))))))..))).((((((((...)))))))).",
+    "mutant_structure": "..(((..(((((((((((((((....)).))))..))))...)))))..))).."
+  },
+  {
+    "record_id": "A34G_fitness_0.01769",
+    "sequence_length": 54,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "A",
+    "mutation_to": "G",
+    "wt_mfe": -16.3,
+    "mutant_mfe": -17.9,
+    "mfe_delta": -1.5999999999999979,
+    "bp_distance": 36,
+    "local_bp_distance": 36,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 18,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 18,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        33
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        51
+      ],
+      [
+        3,
+        52
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        8,
+        47
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        12,
+        43
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUGUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAGCACUAUCCGACUGCGGUCGGUGGAGAUGUGUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "..(((..(((((((((((((((......))).)))))))...)))))..)))..",
+    "wt_sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUGUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAGCACUAUCCGACUGCGGUCGGUGGAGAUGUGUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "..(((..(((((((((((((((......))).)))))))...)))))..))).."
+  },
+  {
+    "record_id": "C18U_fitness_0.04324",
+    "sequence_length": 54,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "A",
+    "mutation_to": "G",
+    "wt_mfe": -14.2,
+    "mutant_mfe": -16.4,
+    "mfe_delta": -2.1999999999999993,
+    "bp_distance": 36,
+    "local_bp_distance": 36,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 18,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 18,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        33
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        51
+      ],
+      [
+        3,
+        52
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        8,
+        47
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        12,
+        43
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGUGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAGCACUAUCCGACUGUGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "..(((..(((((((((((((((......))).)))))))...)))))..)))..",
+    "wt_sequence": "GGAACACUAUCCGACUGUGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAGCACUAUCCGACUGUGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "..(((..(((((((((((((((......))).)))))))...)))))..))).."
+  },
+  {
+    "record_id": "G19C_fitness_0.04148",
+    "sequence_length": 54,
+    "mutation_pos0": 6,
+    "mutation_pos1": 7,
+    "mutation_from": "C",
+    "mutation_to": "G",
+    "wt_mfe": -14.6,
+    "mutant_mfe": -13.9,
+    "mfe_delta": 0.6999999999999993,
+    "bp_distance": 35,
+    "local_bp_distance": 35,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 17,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 17,
+    "diagnostic_wt_pairs_1": [
+      [
+        7,
+        29
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        7,
+        51
+      ],
+      [
+        6,
+        52
+      ],
+      [
+        8,
+        50
+      ],
+      [
+        5,
+        53
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        12,
+        43
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCCGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACAGUAUCCGACUGCCGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "....(((((((((((((.((((......))))..)))))...))))...)))).",
+    "wt_sequence": "GGAACACUAUCCGACUGCCGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACAGUAUCCGACUGCCGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "....(((((((((((((.((((......))))..)))))...))))...))))."
+  },
+  {
+    "record_id": "A4G_fitness_0.00578",
+    "sequence_length": 54,
+    "mutation_pos0": 5,
+    "mutation_pos1": 6,
+    "mutation_from": "A",
+    "mutation_to": "C",
+    "wt_mfe": -16.3,
+    "mutant_mfe": -17.4,
+    "mfe_delta": -1.0999999999999979,
+    "bp_distance": 35,
+    "local_bp_distance": 35,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 17,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 17,
+    "diagnostic_wt_pairs_1": [
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        6,
+        49
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        4,
+        51
+      ],
+      [
+        8,
+        47
+      ],
+      [
+        3,
+        52
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        12,
+        43
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAGCACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAGCCCUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "..((((.((((((((((..(((......)))...)))))...))))).))))..",
+    "wt_sequence": "GGAGCACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAGCCCUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "..((((.((((((((((..(((......)))...)))))...))))).)))).."
+  },
+  {
+    "record_id": "G19C_fitness_0.04148",
+    "sequence_length": 54,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "A",
+    "mutation_to": "G",
+    "wt_mfe": -14.6,
+    "mutant_mfe": -15.7,
+    "mfe_delta": -1.0999999999999996,
+    "bp_distance": 35,
+    "local_bp_distance": 35,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 17,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 17,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        33
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        51
+      ],
+      [
+        3,
+        52
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        8,
+        47
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        12,
+        43
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCCGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAGCACUAUCCGACUGCCGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "..(((..((((((((((.((((......))))..)))))...)))))..)))..",
+    "wt_sequence": "GGAACACUAUCCGACUGCCGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAGCACUAUCCGACUGCCGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "..(((..((((((((((.((((......))))..)))))...)))))..))).."
+  },
+  {
+    "record_id": "G20U_fitness_0.04210",
+    "sequence_length": 54,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "A",
+    "mutation_to": "C",
+    "wt_mfe": -12.2,
+    "mutant_mfe": -13.3,
+    "mfe_delta": -1.1000000000000014,
+    "bp_distance": 35,
+    "local_bp_distance": 35,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 17,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 17,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        33
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        10,
+        28
+      ],
+      [
+        11,
+        27
+      ],
+      [
+        12,
+        26
+      ],
+      [
+        14,
+        25
+      ],
+      [
+        15,
+        24
+      ],
+      [
+        16,
+        23
+      ],
+      [
+        17,
+        22
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        50
+      ],
+      [
+        2,
+        51
+      ],
+      [
+        1,
+        52
+      ],
+      [
+        5,
+        47
+      ],
+      [
+        6,
+        46
+      ],
+      [
+        7,
+        45
+      ],
+      [
+        8,
+        44
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ],
+      [
+        17,
+        33
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCGUUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGCACACUAUCCGACUGCGUUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((...(((.((((....)))))))..))).((((((((...)))))))).",
+    "mutant_structure_window": "(((.((((....((((((((((....)).))))..))))....))))..)))..",
+    "wt_sequence": "GGAACACUAUCCGACUGCGUUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGCACACUAUCCGACUGCGUUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((...(((.((((....)))))))..))).((((((((...)))))))).",
+    "mutant_structure": "(((.((((....((((((((((....)).))))..))))....))))..))).."
+  },
+  {
+    "record_id": "C18A_fitness_0.04075",
+    "sequence_length": 54,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "A",
+    "mutation_to": "G",
+    "wt_mfe": -14.2,
+    "mutant_mfe": -15.5,
+    "mfe_delta": -1.3000000000000007,
+    "bp_distance": 35,
+    "local_bp_distance": 35,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 17,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 17,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        33
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        51
+      ],
+      [
+        3,
+        52
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        8,
+        47
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        12,
+        43
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGAGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAGCACUAUCCGACUGAGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "..(((..(((((((((((.(((......))).).)))))...)))))..)))..",
+    "wt_sequence": "GGAACACUAUCCGACUGAGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAGCACUAUCCGACUGAGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "..(((..(((((((((((.(((......))).).)))))...)))))..))).."
+  },
+  {
+    "record_id": "C18U_fitness_0.04324",
+    "sequence_length": 54,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "A",
+    "mutation_to": "C",
+    "wt_mfe": -14.2,
+    "mutant_mfe": -16.3,
+    "mfe_delta": -2.1000000000000014,
+    "bp_distance": 35,
+    "local_bp_distance": 35,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 17,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 17,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        33
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        50
+      ],
+      [
+        2,
+        51
+      ],
+      [
+        1,
+        52
+      ],
+      [
+        5,
+        47
+      ],
+      [
+        6,
+        46
+      ],
+      [
+        7,
+        45
+      ],
+      [
+        8,
+        44
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ],
+      [
+        17,
+        35
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGUGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGCACACUAUCCGACUGUGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "(((.((((....((((((((((......))).)))))))....))))..)))..",
+    "wt_sequence": "GGAACACUAUCCGACUGUGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGCACACUAUCCGACUGUGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "(((.((((....((((((((((......))).)))))))....))))..))).."
+  },
+  {
+    "record_id": "C7U_fitness_0.00756",
+    "sequence_length": 54,
+    "mutation_pos0": 50,
+    "mutation_pos1": 51,
+    "mutation_from": "C",
+    "mutation_to": "U",
+    "wt_mfe": -17.1,
+    "mutant_mfe": -13.0,
+    "mfe_delta": 4.100000000000001,
+    "bp_distance": 35,
+    "local_bp_distance": 35,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 17,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 17,
+    "diagnostic_wt_pairs_1": [
+      [
+        37,
+        51
+      ],
+      [
+        36,
+        52
+      ],
+      [
+        38,
+        50
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        39,
+        49
+      ],
+      [
+        40,
+        48
+      ],
+      [
+        41,
+        47
+      ],
+      [
+        42,
+        46
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        7,
+        30
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        51
+      ],
+      [
+        3,
+        52
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        8,
+        47
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        12,
+        43
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACAUUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACAUUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGUUGG",
+    "wt_structure_window": "...(((((..(((((....)))))....))))).((((((((...)))))))).",
+    "mutant_structure_window": "..(((.(((((((((((..(((......)))...)))))...)))))).)))..",
+    "wt_sequence": "GGAACAUUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACAUUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGUUGG",
+    "wt_structure": "...(((((..(((((....)))))....))))).((((((((...)))))))).",
+    "mutant_structure": "..(((.(((((((((((..(((......)))...)))))...)))))).))).."
+  },
+  {
+    "record_id": "A30U_fitness_0.00135",
+    "sequence_length": 54,
+    "mutation_pos0": 4,
+    "mutation_pos1": 5,
+    "mutation_from": "C",
+    "mutation_to": "G",
+    "wt_mfe": -17.8,
+    "mutant_mfe": -16.7,
+    "mfe_delta": 1.1000000000000014,
+    "bp_distance": 35,
+    "local_bp_distance": 35,
+    "wt_pair_count": 20,
+    "mutant_pair_count": 15,
+    "wt_only_pair_count": 20,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        5,
+        29
+      ],
+      [
+        4,
+        30
+      ],
+      [
+        3,
+        31
+      ],
+      [
+        7,
+        27
+      ],
+      [
+        8,
+        26
+      ],
+      [
+        1,
+        33
+      ],
+      [
+        9,
+        25
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        5,
+        39
+      ],
+      [
+        4,
+        40
+      ],
+      [
+        6,
+        38
+      ],
+      [
+        3,
+        41
+      ],
+      [
+        7,
+        37
+      ],
+      [
+        8,
+        36
+      ],
+      [
+        9,
+        35
+      ],
+      [
+        10,
+        34
+      ],
+      [
+        12,
+        32
+      ],
+      [
+        13,
+        31
+      ],
+      [
+        14,
+        30
+      ],
+      [
+        15,
+        29
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 49,
+    "window_len": 49,
+    "wt_window": "GGAACACUAUCCGACUGCGGUCGGUGGAGUUGUAUAGUCUUAGGGUGAG",
+    "mutant_window": "GGAAGACUAUCCGACUGCGGUCGGUGGAGUUGUAUAGUCUUAGGGUGAG",
+    "wt_structure_window": "(.(((.(((.(((((....)))))))).))).).((((((((...))))",
+    "mutant_structure_window": "..((((((((.(((((.((.....)).))))).))))))))........",
+    "wt_sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGUUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAAGACUAUCCGACUGCGGUCGGUGGAGUUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "(.(((.(((.(((((....)))))))).))).).((((((((...)))))))).",
+    "mutant_structure": "..((((((((.(((((.((.....)).))))).))))))))............."
+  },
+  {
+    "record_id": "A9U_fitness_0.00140",
+    "sequence_length": 54,
+    "mutation_pos0": 11,
+    "mutation_pos1": 12,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -18.0,
+    "mutant_mfe": -13.9,
+    "mfe_delta": 4.1,
+    "bp_distance": 35,
+    "local_bp_distance": 35,
+    "wt_pair_count": 20,
+    "mutant_pair_count": 15,
+    "wt_only_pair_count": 20,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        12,
+        23
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        10,
+        26
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        9,
+        27
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        12,
+        40
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        10,
+        42
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        9,
+        43
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        8,
+        44
+      ],
+      [
+        16,
+        36
+      ],
+      [
+        7,
+        45
+      ],
+      [
+        17,
+        35
+      ],
+      [
+        6,
+        46
+      ],
+      [
+        5,
+        47
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUUUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACACUUUCAGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...((((((((((((....))))).)))).))).((((((((...)))))))).",
+    "mutant_structure_window": "....((((((.((((((..(((......)))...)))))).)))))).......",
+    "wt_sequence": "GGAACACUUUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACACUUUCAGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...((((((((((((....))))).)))).))).((((((((...)))))))).",
+    "mutant_structure": "....((((((.((((((..(((......)))...)))))).))))))......."
+  },
+  {
+    "record_id": "A9U_fitness_0.00140",
+    "sequence_length": 54,
+    "mutation_pos0": 11,
+    "mutation_pos1": 12,
+    "mutation_from": "C",
+    "mutation_to": "G",
+    "wt_mfe": -18.0,
+    "mutant_mfe": -13.9,
+    "mfe_delta": 4.1,
+    "bp_distance": 35,
+    "local_bp_distance": 35,
+    "wt_pair_count": 20,
+    "mutant_pair_count": 15,
+    "wt_only_pair_count": 20,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        12,
+        23
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        10,
+        26
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        9,
+        27
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        12,
+        40
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        10,
+        42
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        9,
+        43
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        8,
+        44
+      ],
+      [
+        16,
+        36
+      ],
+      [
+        7,
+        45
+      ],
+      [
+        17,
+        35
+      ],
+      [
+        6,
+        46
+      ],
+      [
+        5,
+        47
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUUUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACACUUUCGGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...((((((((((((....))))).)))).))).((((((((...)))))))).",
+    "mutant_structure_window": "....((((((.((((((..(((......)))...)))))).)))))).......",
+    "wt_sequence": "GGAACACUUUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACACUUUCGGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...((((((((((((....))))).)))).))).((((((((...)))))))).",
+    "mutant_structure": "....((((((.((((((..(((......)))...)))))).))))))......."
+  },
+  {
+    "record_id": "A9C_fitness_0.00178",
+    "sequence_length": 54,
+    "mutation_pos0": 11,
+    "mutation_pos1": 12,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -20.7,
+    "mutant_mfe": -16.4,
+    "mfe_delta": 4.300000000000001,
+    "bp_distance": 35,
+    "local_bp_distance": 35,
+    "wt_pair_count": 20,
+    "mutant_pair_count": 15,
+    "wt_only_pair_count": 20,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        12,
+        23
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        10,
+        26
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        9,
+        27
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        12,
+        40
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        10,
+        42
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        9,
+        43
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        8,
+        44
+      ],
+      [
+        16,
+        36
+      ],
+      [
+        7,
+        45
+      ],
+      [
+        17,
+        35
+      ],
+      [
+        6,
+        46
+      ],
+      [
+        5,
+        47
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUCUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACACUCUCAGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...((((((((((((....))))).)))).))).((((((((...)))))))).",
+    "mutant_structure_window": "....((((((.((((((..(((......)))...)))))).)))))).......",
+    "wt_sequence": "GGAACACUCUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACACUCUCAGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...((((((((((((....))))).)))).))).((((((((...)))))))).",
+    "mutant_structure": "....((((((.((((((..(((......)))...)))))).))))))......."
+  },
+  {
+    "record_id": "A9C_fitness_0.00178",
+    "sequence_length": 54,
+    "mutation_pos0": 11,
+    "mutation_pos1": 12,
+    "mutation_from": "C",
+    "mutation_to": "G",
+    "wt_mfe": -20.7,
+    "mutant_mfe": -16.4,
+    "mfe_delta": 4.300000000000001,
+    "bp_distance": 35,
+    "local_bp_distance": 35,
+    "wt_pair_count": 20,
+    "mutant_pair_count": 15,
+    "wt_only_pair_count": 20,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        12,
+        23
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        10,
+        26
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        9,
+        27
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        12,
+        40
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        10,
+        42
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        9,
+        43
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        8,
+        44
+      ],
+      [
+        16,
+        36
+      ],
+      [
+        7,
+        45
+      ],
+      [
+        17,
+        35
+      ],
+      [
+        6,
+        46
+      ],
+      [
+        5,
+        47
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUCUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACACUCUCGGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...((((((((((((....))))).)))).))).((((((((...)))))))).",
+    "mutant_structure_window": "....((((((.((((((..(((......)))...)))))).)))))).......",
+    "wt_sequence": "GGAACACUCUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACACUCUCGGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...((((((((((((....))))).)))).))).((((((((...)))))))).",
+    "mutant_structure": "....((((((.((((((..(((......)))...)))))).))))))......."
+  },
+  {
+    "record_id": "C7U_fitness_0.00756",
+    "sequence_length": 54,
+    "mutation_pos0": 5,
+    "mutation_pos1": 6,
+    "mutation_from": "A",
+    "mutation_to": "C",
+    "wt_mfe": -17.1,
+    "mutant_mfe": -16.9,
+    "mfe_delta": 0.20000000000000284,
+    "bp_distance": 34,
+    "local_bp_distance": 34,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        7,
+        30
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        8,
+        29
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        6,
+        49
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        8,
+        47
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        12,
+        43
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACAUUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACCUUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))....))))).((((((((...)))))))).",
+    "mutant_structure_window": "....(((((((((((((..(((......)))...)))))...))))))))....",
+    "wt_sequence": "GGAACAUUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACCUUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))....))))).((((((((...)))))))).",
+    "mutant_structure": "....(((((((((((((..(((......)))...)))))...))))))))...."
+  },
+  {
+    "record_id": "A30C_fitness_0.00183",
+    "sequence_length": 54,
+    "mutation_pos0": 5,
+    "mutation_pos1": 6,
+    "mutation_from": "A",
+    "mutation_to": "C",
+    "wt_mfe": -16.0,
+    "mutant_mfe": -16.3,
+    "mfe_delta": -0.3000000000000007,
+    "bp_distance": 34,
+    "local_bp_distance": 34,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        6,
+        44
+      ],
+      [
+        5,
+        45
+      ],
+      [
+        7,
+        43
+      ],
+      [
+        4,
+        46
+      ],
+      [
+        8,
+        42
+      ],
+      [
+        9,
+        41
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ],
+      [
+        17,
+        33
+      ],
+      [
+        18,
+        32
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCGGUCGGUGGAGCUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACCCUAUCCGACUGCGGUCGGUGGAGCUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "...((((((...((((((((((....)).))))..)))).))))))........",
+    "wt_sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGCUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACCCUAUCCGACUGCGGUCGGUGGAGCUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "...((((((...((((((((((....)).))))..)))).))))))........"
+  },
+  {
+    "record_id": "U16A_fitness_0.03706",
+    "sequence_length": 54,
+    "mutation_pos0": 6,
+    "mutation_pos1": 7,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -14.6,
+    "mutant_mfe": -13.9,
+    "mfe_delta": 0.6999999999999993,
+    "bp_distance": 34,
+    "local_bp_distance": 34,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        7,
+        29
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        10
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        15,
+        53
+      ],
+      [
+        16,
+        52
+      ],
+      [
+        17,
+        51
+      ],
+      [
+        18,
+        50
+      ],
+      [
+        21,
+        48
+      ],
+      [
+        22,
+        47
+      ],
+      [
+        23,
+        46
+      ],
+      [
+        25,
+        44
+      ],
+      [
+        27,
+        41
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACAGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACAAUAUCCGACAGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "(((......)))..((((..(((.(.(((((.....)))))..).))).)))).",
+    "wt_sequence": "GGAACACUAUCCGACAGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACAAUAUCCGACAGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "(((......)))..((((..(((.(.(((((.....)))))..).))).))))."
+  },
+  {
+    "record_id": "U16A_fitness_0.03706",
+    "sequence_length": 54,
+    "mutation_pos0": 6,
+    "mutation_pos1": 7,
+    "mutation_from": "C",
+    "mutation_to": "G",
+    "wt_mfe": -14.6,
+    "mutant_mfe": -13.9,
+    "mfe_delta": 0.6999999999999993,
+    "bp_distance": 34,
+    "local_bp_distance": 34,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        7,
+        29
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        10
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        15,
+        53
+      ],
+      [
+        16,
+        52
+      ],
+      [
+        17,
+        51
+      ],
+      [
+        18,
+        50
+      ],
+      [
+        21,
+        48
+      ],
+      [
+        22,
+        47
+      ],
+      [
+        23,
+        46
+      ],
+      [
+        25,
+        44
+      ],
+      [
+        27,
+        41
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACAGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACAGUAUCCGACAGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "(((......)))..((((..(((.(.(((((.....)))))..).))).)))).",
+    "wt_sequence": "GGAACACUAUCCGACAGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACAGUAUCCGACAGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "(((......)))..((((..(((.(.(((((.....)))))..).))).))))."
+  },
+  {
+    "record_id": "U16A_fitness_0.03706",
+    "sequence_length": 54,
+    "mutation_pos0": 7,
+    "mutation_pos1": 8,
+    "mutation_from": "U",
+    "mutation_to": "A",
+    "wt_mfe": -14.6,
+    "mutant_mfe": -13.9,
+    "mfe_delta": 0.6999999999999993,
+    "bp_distance": 34,
+    "local_bp_distance": 34,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        8,
+        28
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        10
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        15,
+        53
+      ],
+      [
+        16,
+        52
+      ],
+      [
+        17,
+        51
+      ],
+      [
+        18,
+        50
+      ],
+      [
+        21,
+        48
+      ],
+      [
+        22,
+        47
+      ],
+      [
+        23,
+        46
+      ],
+      [
+        25,
+        44
+      ],
+      [
+        27,
+        41
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACAGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACACAAUCCGACAGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "(((......)))..((((..(((.(.(((((.....)))))..).))).)))).",
+    "wt_sequence": "GGAACACUAUCCGACAGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACACAAUCCGACAGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "(((......)))..((((..(((.(.(((((.....)))))..).))).))))."
+  },
+  {
+    "record_id": "C18G_fitness_0.04151",
+    "sequence_length": 54,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "A",
+    "mutation_to": "G",
+    "wt_mfe": -14.2,
+    "mutant_mfe": -15.1,
+    "mfe_delta": -0.9000000000000004,
+    "bp_distance": 34,
+    "local_bp_distance": 34,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        33
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        51
+      ],
+      [
+        3,
+        52
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        8,
+        47
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        12,
+        43
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGGGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAGCACUAUCCGACUGGGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "..(((..((((((((((..(((......)))...)))))...)))))..)))..",
+    "wt_sequence": "GGAACACUAUCCGACUGGGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAGCACUAUCCGACUGGGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "..(((..((((((((((..(((......)))...)))))...)))))..))).."
+  },
+  {
+    "record_id": "G20U_fitness_0.04210",
+    "sequence_length": 54,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "G",
+    "mutation_to": "C",
+    "wt_mfe": -12.2,
+    "mutant_mfe": -13.3,
+    "mfe_delta": -1.1000000000000014,
+    "bp_distance": 34,
+    "local_bp_distance": 34,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        33
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        10,
+        28
+      ],
+      [
+        11,
+        27
+      ],
+      [
+        12,
+        26
+      ],
+      [
+        14,
+        25
+      ],
+      [
+        15,
+        24
+      ],
+      [
+        16,
+        23
+      ],
+      [
+        17,
+        22
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        2,
+        50
+      ],
+      [
+        1,
+        51
+      ],
+      [
+        5,
+        47
+      ],
+      [
+        6,
+        46
+      ],
+      [
+        7,
+        45
+      ],
+      [
+        8,
+        44
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ],
+      [
+        17,
+        33
+      ],
+      [
+        18,
+        32
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCGUUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GCAACACUAUCCGACUGCGUUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((...(((.((((....)))))))..))).((((((((...)))))))).",
+    "mutant_structure_window": "((..((((....((((((((((....)).))))..))))....))))..))...",
+    "wt_sequence": "GGAACACUAUCCGACUGCGUUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GCAACACUAUCCGACUGCGUUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((...(((.((((....)))))))..))).((((((((...)))))))).",
+    "mutant_structure": "((..((((....((((((((((....)).))))..))))....))))..))..."
+  },
+  {
+    "record_id": "A34G_fitness_0.01769",
+    "sequence_length": 54,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "G",
+    "mutation_to": "C",
+    "wt_mfe": -16.3,
+    "mutant_mfe": -17.8,
+    "mfe_delta": -1.5,
+    "bp_distance": 34,
+    "local_bp_distance": 34,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        33
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        2,
+        50
+      ],
+      [
+        1,
+        51
+      ],
+      [
+        5,
+        47
+      ],
+      [
+        6,
+        46
+      ],
+      [
+        7,
+        45
+      ],
+      [
+        8,
+        44
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ],
+      [
+        17,
+        35
+      ],
+      [
+        18,
+        34
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUGUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GCAACACUAUCCGACUGCGGUCGGUGGAGAUGUGUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "((..((((....((((((((((......))).)))))))....))))..))...",
+    "wt_sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUGUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GCAACACUAUCCGACUGCGGUCGGUGGAGAUGUGUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "((..((((....((((((((((......))).)))))))....))))..))..."
+  },
+  {
+    "record_id": "G20A_fitness_0.03777",
+    "sequence_length": 54,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "A",
+    "mutation_to": "G",
+    "wt_mfe": -12.2,
+    "mutant_mfe": -13.7,
+    "mfe_delta": -1.5,
+    "bp_distance": 34,
+    "local_bp_distance": 34,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        33
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        10,
+        28
+      ],
+      [
+        11,
+        27
+      ],
+      [
+        12,
+        26
+      ],
+      [
+        14,
+        25
+      ],
+      [
+        15,
+        24
+      ],
+      [
+        16,
+        23
+      ],
+      [
+        17,
+        22
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        51
+      ],
+      [
+        3,
+        52
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        8,
+        47
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        12,
+        43
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCGAUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAGCACUAUCCGACUGCGAUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((...(((.((((....)))))))..))).((((((((...)))))))).",
+    "mutant_structure_window": "..(((..((((((((((..(((......)))...)))))...)))))..)))..",
+    "wt_sequence": "GGAACACUAUCCGACUGCGAUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAGCACUAUCCGACUGCGAUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((...(((.((((....)))))))..))).((((((((...)))))))).",
+    "mutant_structure": "..(((..((((((((((..(((......)))...)))))...)))))..))).."
+  },
+  {
+    "record_id": "C18U_fitness_0.04324",
+    "sequence_length": 54,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "G",
+    "mutation_to": "C",
+    "wt_mfe": -14.2,
+    "mutant_mfe": -16.3,
+    "mfe_delta": -2.1000000000000014,
+    "bp_distance": 34,
+    "local_bp_distance": 34,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        33
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        2,
+        50
+      ],
+      [
+        1,
+        51
+      ],
+      [
+        5,
+        47
+      ],
+      [
+        6,
+        46
+      ],
+      [
+        7,
+        45
+      ],
+      [
+        8,
+        44
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ],
+      [
+        17,
+        35
+      ],
+      [
+        18,
+        34
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGUGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GCAACACUAUCCGACUGUGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "((..((((....((((((((((......))).)))))))....))))..))...",
+    "wt_sequence": "GGAACACUAUCCGACUGUGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GCAACACUAUCCGACUGUGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "((..((((....((((((((((......))).)))))))....))))..))..."
+  },
+  {
+    "record_id": "G44C_fitness_0.00355",
+    "sequence_length": 54,
+    "mutation_pos0": 10,
+    "mutation_pos1": 11,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -16.0,
+    "mutant_mfe": -13.8,
+    "mfe_delta": 2.1999999999999993,
+    "bp_distance": 34,
+    "local_bp_distance": 34,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        11,
+        33
+      ],
+      [
+        10,
+        34
+      ],
+      [
+        12,
+        32
+      ],
+      [
+        9,
+        35
+      ],
+      [
+        13,
+        31
+      ],
+      [
+        8,
+        36
+      ],
+      [
+        7,
+        37
+      ],
+      [
+        15,
+        29
+      ],
+      [
+        6,
+        38
+      ],
+      [
+        16,
+        28
+      ],
+      [
+        18,
+        26
+      ],
+      [
+        19,
+        25
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGCGUGAGGCUGG",
+    "mutant_window": "GGAACACUAUACGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGCGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": ".....((((((((.((.((.....)).)).))))))))..((((.....)))).",
+    "wt_sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGCGUGAGGCUGG",
+    "mutant_sequence": "GGAACACUAUACGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGCGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": ".....((((((((.((.((.....)).)).))))))))..((((.....))))."
+  },
+  {
+    "record_id": "G44C_fitness_0.00355",
+    "sequence_length": 54,
+    "mutation_pos0": 10,
+    "mutation_pos1": 11,
+    "mutation_from": "C",
+    "mutation_to": "G",
+    "wt_mfe": -16.0,
+    "mutant_mfe": -13.8,
+    "mfe_delta": 2.1999999999999993,
+    "bp_distance": 34,
+    "local_bp_distance": 34,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        11,
+        33
+      ],
+      [
+        10,
+        34
+      ],
+      [
+        12,
+        32
+      ],
+      [
+        9,
+        35
+      ],
+      [
+        13,
+        31
+      ],
+      [
+        8,
+        36
+      ],
+      [
+        7,
+        37
+      ],
+      [
+        15,
+        29
+      ],
+      [
+        6,
+        38
+      ],
+      [
+        16,
+        28
+      ],
+      [
+        18,
+        26
+      ],
+      [
+        19,
+        25
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGCGUGAGGCUGG",
+    "mutant_window": "GGAACACUAUGCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGCGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": ".....((((((((.((.((.....)).)).))))))))..((((.....)))).",
+    "wt_sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGCGUGAGGCUGG",
+    "mutant_sequence": "GGAACACUAUGCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGCGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": ".....((((((((.((.((.....)).)).))))))))..((((.....))))."
+  },
+  {
+    "record_id": "U16G_fitness_0.00727",
+    "sequence_length": 54,
+    "mutation_pos0": 12,
+    "mutation_pos1": 13,
+    "mutation_from": "G",
+    "mutation_to": "A",
+    "wt_mfe": -15.6,
+    "mutant_mfe": -13.2,
+    "mfe_delta": 2.4000000000000004,
+    "bp_distance": 34,
+    "local_bp_distance": 34,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        13,
+        22
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        1,
+        12
+      ],
+      [
+        15,
+        53
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        16,
+        52
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        17,
+        51
+      ],
+      [
+        18,
+        50
+      ],
+      [
+        21,
+        48
+      ],
+      [
+        22,
+        47
+      ],
+      [
+        23,
+        46
+      ],
+      [
+        25,
+        44
+      ],
+      [
+        27,
+        41
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACGGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACACUAUCCAACGGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "(((......)))..((((..(((.(.(((((.....)))))..).))).)))).",
+    "wt_sequence": "GGAACACUAUCCGACGGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACACUAUCCAACGGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "(((......)))..((((..(((.(.(((((.....)))))..).))).))))."
+  },
+  {
+    "record_id": "C7U_fitness_0.00756",
+    "sequence_length": 54,
+    "mutation_pos0": 48,
+    "mutation_pos1": 49,
+    "mutation_from": "G",
+    "mutation_to": "U",
+    "wt_mfe": -17.1,
+    "mutant_mfe": -14.7,
+    "mfe_delta": 2.400000000000002,
+    "bp_distance": 34,
+    "local_bp_distance": 34,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        39,
+        49
+      ],
+      [
+        38,
+        50
+      ],
+      [
+        40,
+        48
+      ],
+      [
+        37,
+        51
+      ],
+      [
+        41,
+        47
+      ],
+      [
+        36,
+        52
+      ],
+      [
+        42,
+        46
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        7,
+        30
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        6,
+        49
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        8,
+        47
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        12,
+        43
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACAUUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACAUUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAUGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))....))))).((((((((...)))))))).",
+    "mutant_structure_window": "....(((((((((((((..(((......)))...)))))...))))))))....",
+    "wt_sequence": "GGAACAUUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACAUUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAUGCUGG",
+    "wt_structure": "...(((((..(((((....)))))....))))).((((((((...)))))))).",
+    "mutant_structure": "....(((((((((((((..(((......)))...)))))...))))))))...."
+  },
+  {
+    "record_id": "A34G_fitness_0.01769",
+    "sequence_length": 54,
+    "mutation_pos0": 5,
+    "mutation_pos1": 6,
+    "mutation_from": "A",
+    "mutation_to": "C",
+    "wt_mfe": -16.3,
+    "mutant_mfe": -18.8,
+    "mfe_delta": -2.5,
+    "bp_distance": 34,
+    "local_bp_distance": 34,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        6,
+        44
+      ],
+      [
+        5,
+        45
+      ],
+      [
+        7,
+        43
+      ],
+      [
+        4,
+        46
+      ],
+      [
+        8,
+        42
+      ],
+      [
+        9,
+        41
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ],
+      [
+        17,
+        35
+      ],
+      [
+        18,
+        34
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUGUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACCCUAUCCGACUGCGGUCGGUGGAGAUGUGUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "...((((((...((((((((((......))).))))))).))))))........",
+    "wt_sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUGUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACCCUAUCCGACUGCGGUCGGUGGAGAUGUGUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "...((((((...((((((((((......))).))))))).))))))........"
+  },
+  {
+    "record_id": "U16G_fitness_0.00727",
+    "sequence_length": 54,
+    "mutation_pos0": 12,
+    "mutation_pos1": 13,
+    "mutation_from": "G",
+    "mutation_to": "U",
+    "wt_mfe": -15.6,
+    "mutant_mfe": -12.7,
+    "mfe_delta": 2.9000000000000004,
+    "bp_distance": 34,
+    "local_bp_distance": 34,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        13,
+        22
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        1,
+        12
+      ],
+      [
+        15,
+        53
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        16,
+        52
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        17,
+        51
+      ],
+      [
+        18,
+        50
+      ],
+      [
+        21,
+        48
+      ],
+      [
+        22,
+        47
+      ],
+      [
+        23,
+        46
+      ],
+      [
+        25,
+        44
+      ],
+      [
+        27,
+        41
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACGGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACACUAUCCUACGGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "(((......)))..((((..(((.(.(((((.....)))))..).))).)))).",
+    "wt_sequence": "GGAACACUAUCCGACGGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACACUAUCCUACGGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "(((......)))..((((..(((.(.(((((.....)))))..).))).))))."
+  },
+  {
+    "record_id": "C18U_fitness_0.04324",
+    "sequence_length": 54,
+    "mutation_pos0": 5,
+    "mutation_pos1": 6,
+    "mutation_from": "A",
+    "mutation_to": "C",
+    "wt_mfe": -14.2,
+    "mutant_mfe": -17.3,
+    "mfe_delta": -3.1000000000000014,
+    "bp_distance": 34,
+    "local_bp_distance": 34,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        6,
+        44
+      ],
+      [
+        5,
+        45
+      ],
+      [
+        7,
+        43
+      ],
+      [
+        4,
+        46
+      ],
+      [
+        8,
+        42
+      ],
+      [
+        9,
+        41
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ],
+      [
+        17,
+        35
+      ],
+      [
+        18,
+        34
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGUGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACCCUAUCCGACUGUGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "...((((((...((((((((((......))).))))))).))))))........",
+    "wt_sequence": "GGAACACUAUCCGACUGUGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACCCUAUCCGACUGUGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "...((((((...((((((((((......))).))))))).))))))........"
+  },
+  {
+    "record_id": "A4C_fitness_0.00138",
+    "sequence_length": 54,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "A",
+    "mutation_to": "C",
+    "wt_mfe": -16.8,
+    "mutant_mfe": -20.1,
+    "mfe_delta": -3.3000000000000007,
+    "bp_distance": 34,
+    "local_bp_distance": 34,
+    "wt_pair_count": 16,
+    "mutant_pair_count": 18,
+    "wt_only_pair_count": 16,
+    "mutant_only_pair_count": 18,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        27
+      ],
+      [
+        5,
+        26
+      ],
+      [
+        6,
+        25
+      ],
+      [
+        7,
+        24
+      ],
+      [
+        8,
+        23
+      ],
+      [
+        11,
+        20
+      ],
+      [
+        12,
+        19
+      ],
+      [
+        13,
+        18
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ],
+      [
+        37,
+        51
+      ],
+      [
+        38,
+        50
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        50
+      ],
+      [
+        2,
+        51
+      ],
+      [
+        4,
+        49
+      ],
+      [
+        1,
+        52
+      ],
+      [
+        5,
+        47
+      ],
+      [
+        6,
+        46
+      ],
+      [
+        7,
+        45
+      ],
+      [
+        8,
+        44
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGACCACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGCCCACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((....)))..))))).......((((((((...)))))))).",
+    "mutant_structure_window": "((((((((..(((((....)))))..(((((.....)))))..)))).))))..",
+    "wt_sequence": "GGACCACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGCCCACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((....)))..))))).......((((((((...)))))))).",
+    "mutant_structure": "((((((((..(((((....)))))..(((((.....)))))..)))).)))).."
+  },
+  {
+    "record_id": "U38A_fitness_0.00145",
+    "sequence_length": 54,
+    "mutation_pos0": 6,
+    "mutation_pos1": 7,
+    "mutation_from": "C",
+    "mutation_to": "G",
+    "wt_mfe": -11.5,
+    "mutant_mfe": -11.2,
+    "mfe_delta": 0.3000000000000007,
+    "bp_distance": 33,
+    "local_bp_distance": 33,
+    "wt_pair_count": 17,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 17,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        7,
+        29
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        7,
+        51
+      ],
+      [
+        6,
+        52
+      ],
+      [
+        8,
+        50
+      ],
+      [
+        5,
+        53
+      ],
+      [
+        10,
+        48
+      ],
+      [
+        11,
+        47
+      ],
+      [
+        15,
+        43
+      ],
+      [
+        16,
+        42
+      ],
+      [
+        17,
+        41
+      ],
+      [
+        19,
+        40
+      ],
+      [
+        20,
+        39
+      ],
+      [
+        21,
+        38
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGACUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACAGUAUCCGACUGCGGUCGGUGGAGAUGUAUAGACUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).(((.((((...)))).))).",
+    "mutant_structure_window": "....((((.((...(((.((((.(((......))).)))))))...)).)))).",
+    "wt_sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGACUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACAGUAUCCGACUGCGGUCGGUGGAGAUGUAUAGACUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).(((.((((...)))).))).",
+    "mutant_structure": "....((((.((...(((.((((.(((......))).)))))))...)).))))."
+  },
+  {
+    "record_id": "G24U_fitness_0.00976",
+    "sequence_length": 54,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "A",
+    "mutation_to": "G",
+    "wt_mfe": -13.6,
+    "mutant_mfe": -14.0,
+    "mfe_delta": -0.40000000000000036,
+    "bp_distance": 33,
+    "local_bp_distance": 33,
+    "wt_pair_count": 17,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 17,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        33
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        10,
+        28
+      ],
+      [
+        11,
+        27
+      ],
+      [
+        12,
+        26
+      ],
+      [
+        13,
+        25
+      ],
+      [
+        14,
+        24
+      ],
+      [
+        15,
+        23
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ],
+      [
+        37,
+        51
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        51
+      ],
+      [
+        3,
+        52
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        8,
+        47
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        12,
+        43
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCGGUCGUUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAGCACUAUCCGACUGCGGUCGUUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((...((((((.......))))))..))).((((((((...)))))))).",
+    "mutant_structure_window": "..(((..((((((((((..(((......)))...)))))...)))))..)))..",
+    "wt_sequence": "GGAACACUAUCCGACUGCGGUCGUUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAGCACUAUCCGACUGCGGUCGUUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((...((((((.......))))))..))).((((((((...)))))))).",
+    "mutant_structure": "..(((..((((((((((..(((......)))...)))))...)))))..))).."
+  },
+  {
+    "record_id": "C5G_fitness_0.00138",
+    "sequence_length": 54,
+    "mutation_pos0": 5,
+    "mutation_pos1": 6,
+    "mutation_from": "A",
+    "mutation_to": "C",
+    "wt_mfe": -15.8,
+    "mutant_mfe": -17.1,
+    "mfe_delta": -1.3000000000000007,
+    "bp_distance": 33,
+    "local_bp_distance": 33,
+    "wt_pair_count": 16,
+    "mutant_pair_count": 17,
+    "wt_only_pair_count": 16,
+    "mutant_only_pair_count": 17,
+    "diagnostic_wt_pairs_1": [
+      [
+        7,
+        27
+      ],
+      [
+        8,
+        26
+      ],
+      [
+        9,
+        25
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ],
+      [
+        37,
+        51
+      ],
+      [
+        38,
+        50
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        6,
+        50
+      ],
+      [
+        5,
+        51
+      ],
+      [
+        7,
+        49
+      ],
+      [
+        4,
+        52
+      ],
+      [
+        8,
+        48
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        12,
+        43
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAAGACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAAGCCUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "......(((.(((((....)))))))).......((((((((...)))))))).",
+    "mutant_structure_window": "...((((((((((((((..(((......)))...)))))...)))).)))))..",
+    "wt_sequence": "GGAAGACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAAGCCUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "......(((.(((((....)))))))).......((((((((...)))))))).",
+    "mutant_structure": "...((((((((((((((..(((......)))...)))))...)))).))))).."
+  },
+  {
+    "record_id": "U33G_fitness_0.01215",
+    "sequence_length": 54,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "A",
+    "mutation_to": "G",
+    "wt_mfe": -15.8,
+    "mutant_mfe": -17.4,
+    "mfe_delta": -1.5999999999999979,
+    "bp_distance": 33,
+    "local_bp_distance": 33,
+    "wt_pair_count": 16,
+    "mutant_pair_count": 17,
+    "wt_only_pair_count": 16,
+    "mutant_only_pair_count": 17,
+    "diagnostic_wt_pairs_1": [
+      [
+        7,
+        27
+      ],
+      [
+        8,
+        26
+      ],
+      [
+        9,
+        25
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ],
+      [
+        37,
+        51
+      ],
+      [
+        38,
+        50
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        51
+      ],
+      [
+        3,
+        52
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        8,
+        47
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        12,
+        43
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGGAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAGCACUAUCCGACUGCGGUCGGUGGAGAUGGAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "......(((.(((((....)))))))).......((((((((...)))))))).",
+    "mutant_structure_window": "..(((..(((((((((((.(((......))).).)))))...)))))..)))..",
+    "wt_sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGGAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAGCACUAUCCGACUGCGGUCGGUGGAGAUGGAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "......(((.(((((....)))))))).......((((((((...)))))))).",
+    "mutant_structure": "..(((..(((((((((((.(((......))).).)))))...)))))..))).."
+  },
+  {
+    "record_id": "G27C_fitness_0.00134",
+    "sequence_length": 54,
+    "mutation_pos0": 4,
+    "mutation_pos1": 5,
+    "mutation_from": "C",
+    "mutation_to": "G",
+    "wt_mfe": -15.5,
+    "mutant_mfe": -15.4,
+    "mfe_delta": 0.09999999999999964,
+    "bp_distance": 33,
+    "local_bp_distance": 33,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 15,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        5,
+        39
+      ],
+      [
+        4,
+        40
+      ],
+      [
+        6,
+        38
+      ],
+      [
+        3,
+        41
+      ],
+      [
+        7,
+        37
+      ],
+      [
+        8,
+        36
+      ],
+      [
+        9,
+        35
+      ],
+      [
+        10,
+        34
+      ],
+      [
+        12,
+        32
+      ],
+      [
+        13,
+        31
+      ],
+      [
+        15,
+        29
+      ],
+      [
+        16,
+        28
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCGGUCGGUGCAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAAGACUAUCCGACUGCGGUCGGUGCAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "..((((((((.((.(((((.....))))).)).)))))))).............",
+    "wt_sequence": "GGAACACUAUCCGACUGCGGUCGGUGCAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAAGACUAUCCGACUGCGGUCGGUGCAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "..((((((((.((.(((((.....))))).)).))))))))............."
+  },
+  {
+    "record_id": "G13C_fitness_0.00846",
+    "sequence_length": 54,
+    "mutation_pos0": 9,
+    "mutation_pos1": 10,
+    "mutation_from": "U",
+    "mutation_to": "G",
+    "wt_mfe": -16.0,
+    "mutant_mfe": -15.4,
+    "mfe_delta": 0.5999999999999996,
+    "bp_distance": 33,
+    "local_bp_distance": 33,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 15,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        10,
+        30
+      ],
+      [
+        9,
+        31
+      ],
+      [
+        11,
+        29
+      ],
+      [
+        8,
+        32
+      ],
+      [
+        12,
+        27
+      ],
+      [
+        13,
+        26
+      ],
+      [
+        14,
+        25
+      ],
+      [
+        15,
+        24
+      ],
+      [
+        16,
+        23
+      ],
+      [
+        17,
+        22
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        10,
+        51
+      ],
+      [
+        9,
+        52
+      ],
+      [
+        11,
+        50
+      ],
+      [
+        8,
+        53
+      ],
+      [
+        12,
+        49
+      ],
+      [
+        7,
+        54
+      ],
+      [
+        13,
+        47
+      ],
+      [
+        14,
+        46
+      ],
+      [
+        15,
+        45
+      ],
+      [
+        16,
+        44
+      ],
+      [
+        27,
+        41
+      ],
+      [
+        28,
+        40
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCCACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACACUAGCCCACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": ".......((((((((((....)))))).))))..((((((((...)))))))).",
+    "mutant_structure_window": "......((((((((((..........(((((.....)))))..)))).))))))",
+    "wt_sequence": "GGAACACUAUCCCACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACACUAGCCCACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": ".......((((((((((....)))))).))))..((((((((...)))))))).",
+    "mutant_structure": "......((((((((((..........(((((.....)))))..)))).))))))"
+  },
+  {
+    "record_id": "G43U_fitness_0.00148",
+    "sequence_length": 54,
+    "mutation_pos0": 10,
+    "mutation_pos1": 11,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -16.0,
+    "mutant_mfe": -14.8,
+    "mfe_delta": 1.1999999999999993,
+    "bp_distance": 33,
+    "local_bp_distance": 33,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 15,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        11,
+        41
+      ],
+      [
+        10,
+        42
+      ],
+      [
+        9,
+        43
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        8,
+        44
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        7,
+        45
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        6,
+        46
+      ],
+      [
+        16,
+        36
+      ],
+      [
+        5,
+        47
+      ],
+      [
+        17,
+        35
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAUGGUGAGGCUGG",
+    "mutant_window": "GGAACACUAUACGACUGCGGUCGGUGGAGAUGUAUAGUCUUAUGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "....(((((((.(((((..(((......)))...))))).))))))).......",
+    "wt_sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAUGGUGAGGCUGG",
+    "mutant_sequence": "GGAACACUAUACGACUGCGGUCGGUGGAGAUGUAUAGUCUUAUGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "....(((((((.(((((..(((......)))...))))).)))))))......."
+  },
+  {
+    "record_id": "G20A_fitness_0.03777",
+    "sequence_length": 54,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "A",
+    "mutation_to": "C",
+    "wt_mfe": -12.2,
+    "mutant_mfe": -13.6,
+    "mfe_delta": -1.4000000000000004,
+    "bp_distance": 33,
+    "local_bp_distance": 33,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 15,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        33
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        10,
+        28
+      ],
+      [
+        11,
+        27
+      ],
+      [
+        12,
+        26
+      ],
+      [
+        14,
+        25
+      ],
+      [
+        15,
+        24
+      ],
+      [
+        16,
+        23
+      ],
+      [
+        17,
+        22
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        50
+      ],
+      [
+        2,
+        51
+      ],
+      [
+        1,
+        52
+      ],
+      [
+        5,
+        47
+      ],
+      [
+        6,
+        46
+      ],
+      [
+        7,
+        45
+      ],
+      [
+        8,
+        44
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ],
+      [
+        17,
+        35
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCGAUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGCACACUAUCCGACUGCGAUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((...(((.((((....)))))))..))).((((((((...)))))))).",
+    "mutant_structure_window": "(((.((((....(((((..(((......)))...)))))....))))..)))..",
+    "wt_sequence": "GGAACACUAUCCGACUGCGAUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGCACACUAUCCGACUGCGAUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((...(((.((((....)))))))..))).((((((((...)))))))).",
+    "mutant_structure": "(((.((((....(((((..(((......)))...)))))....))))..))).."
+  },
+  {
+    "record_id": "G19C_fitness_0.04148",
+    "sequence_length": 54,
+    "mutation_pos0": 5,
+    "mutation_pos1": 6,
+    "mutation_from": "A",
+    "mutation_to": "C",
+    "wt_mfe": -14.6,
+    "mutant_mfe": -16.6,
+    "mfe_delta": -2.0000000000000018,
+    "bp_distance": 33,
+    "local_bp_distance": 33,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 15,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        6,
+        44
+      ],
+      [
+        5,
+        45
+      ],
+      [
+        7,
+        43
+      ],
+      [
+        4,
+        46
+      ],
+      [
+        8,
+        42
+      ],
+      [
+        9,
+        41
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ],
+      [
+        17,
+        35
+      ],
+      [
+        19,
+        32
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCCGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACCCUAUCCGACUGCCGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "...((((((...(((((.((((......))))..))))).))))))........",
+    "wt_sequence": "GGAACACUAUCCGACUGCCGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACCCUAUCCGACUGCCGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "...((((((...(((((.((((......))))..))))).))))))........"
+  },
+  {
+    "record_id": "G44U_fitness_0.00156",
+    "sequence_length": 54,
+    "mutation_pos0": 11,
+    "mutation_pos1": 12,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -16.0,
+    "mutant_mfe": -13.9,
+    "mfe_delta": 2.0999999999999996,
+    "bp_distance": 33,
+    "local_bp_distance": 33,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 15,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        12,
+        23
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        12,
+        40
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        9,
+        41
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        8,
+        42
+      ],
+      [
+        16,
+        36
+      ],
+      [
+        7,
+        43
+      ],
+      [
+        17,
+        35
+      ],
+      [
+        6,
+        44
+      ],
+      [
+        5,
+        45
+      ],
+      [
+        4,
+        46
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGUGUGAGGCUGG",
+    "mutant_window": "GGAACACUAUCAGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGUGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "...((((((..((((((..(((......)))...))))))))))))........",
+    "wt_sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGUGUGAGGCUGG",
+    "mutant_sequence": "GGAACACUAUCAGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGUGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "...((((((..((((((..(((......)))...))))))))))))........"
+  },
+  {
+    "record_id": "G44U_fitness_0.00156",
+    "sequence_length": 54,
+    "mutation_pos0": 11,
+    "mutation_pos1": 12,
+    "mutation_from": "C",
+    "mutation_to": "G",
+    "wt_mfe": -16.0,
+    "mutant_mfe": -13.9,
+    "mfe_delta": 2.0999999999999996,
+    "bp_distance": 33,
+    "local_bp_distance": 33,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 15,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        12,
+        23
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        12,
+        40
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        9,
+        41
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        8,
+        42
+      ],
+      [
+        16,
+        36
+      ],
+      [
+        7,
+        43
+      ],
+      [
+        17,
+        35
+      ],
+      [
+        6,
+        44
+      ],
+      [
+        5,
+        45
+      ],
+      [
+        4,
+        46
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGUGUGAGGCUGG",
+    "mutant_window": "GGAACACUAUCGGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGUGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "...((((((..((((((..(((......)))...))))))))))))........",
+    "wt_sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGUGUGAGGCUGG",
+    "mutant_sequence": "GGAACACUAUCGGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGUGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "...((((((..((((((..(((......)))...))))))))))))........"
+  },
+  {
+    "record_id": "G19C_fitness_0.04148",
+    "sequence_length": 54,
+    "mutation_pos0": 10,
+    "mutation_pos1": 11,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -14.6,
+    "mutant_mfe": -12.5,
+    "mfe_delta": 2.0999999999999996,
+    "bp_distance": 33,
+    "local_bp_distance": 33,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 15,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        11,
+        41
+      ],
+      [
+        10,
+        42
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        8,
+        44
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        7,
+        45
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        6,
+        46
+      ],
+      [
+        16,
+        36
+      ],
+      [
+        5,
+        47
+      ],
+      [
+        17,
+        35
+      ],
+      [
+        19,
+        32
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCCGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACACUAUACGACUGCCGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "....((((.((.(((((.((((......))))..))))).)).)))).......",
+    "wt_sequence": "GGAACACUAUCCGACUGCCGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACACUAUACGACUGCCGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "....((((.((.(((((.((((......))))..))))).)).))))......."
+  },
+  {
+    "record_id": "C18A_fitness_0.04075",
+    "sequence_length": 54,
+    "mutation_pos0": 5,
+    "mutation_pos1": 6,
+    "mutation_from": "A",
+    "mutation_to": "C",
+    "wt_mfe": -14.2,
+    "mutant_mfe": -16.4,
+    "mfe_delta": -2.1999999999999993,
+    "bp_distance": 33,
+    "local_bp_distance": 33,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 15,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        6,
+        44
+      ],
+      [
+        5,
+        45
+      ],
+      [
+        7,
+        43
+      ],
+      [
+        4,
+        46
+      ],
+      [
+        8,
+        42
+      ],
+      [
+        9,
+        41
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        16,
+        36
+      ],
+      [
+        17,
+        35
+      ],
+      [
+        18,
+        33
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGAGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACCCUAUCCGACUGAGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "...((((((...((((((.(((......))).).))))).))))))........",
+    "wt_sequence": "GGAACACUAUCCGACUGAGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACCCUAUCCGACUGAGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "...((((((...((((((.(((......))).).))))).))))))........"
+  },
+  {
+    "record_id": "A30C_fitness_0.00183",
+    "sequence_length": 54,
+    "mutation_pos0": 11,
+    "mutation_pos1": 12,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -16.0,
+    "mutant_mfe": -13.5,
+    "mfe_delta": 2.5,
+    "bp_distance": 33,
+    "local_bp_distance": 33,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 15,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        12,
+        23
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        12,
+        40
+      ],
+      [
+        13,
+        39
+      ],
+      [
+        14,
+        38
+      ],
+      [
+        15,
+        37
+      ],
+      [
+        8,
+        44
+      ],
+      [
+        16,
+        36
+      ],
+      [
+        7,
+        45
+      ],
+      [
+        17,
+        33
+      ],
+      [
+        6,
+        46
+      ],
+      [
+        18,
+        32
+      ],
+      [
+        5,
+        47
+      ],
+      [
+        19,
+        31
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCGGUCGGUGGAGCUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAACACUAUCAGACUGCGGUCGGUGGAGCUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "....((((...(((((((((((....)).))))..)))))...)))).......",
+    "wt_sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGCUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAACACUAUCAGACUGCGGUCGGUGGAGCUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "....((((...(((((((((((....)).))))..)))))...))))......."
+  },
+  {
+    "record_id": "A4G_fitness_0.00578",
+    "sequence_length": 54,
+    "mutation_pos0": 13,
+    "mutation_pos1": 14,
+    "mutation_from": "A",
+    "mutation_to": "U",
+    "wt_mfe": -16.3,
+    "mutant_mfe": -13.6,
+    "mfe_delta": 2.700000000000001,
+    "bp_distance": 33,
+    "local_bp_distance": 33,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 15,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        14,
+        21
+      ],
+      [
+        13,
+        22
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        14,
+        30
+      ],
+      [
+        13,
+        31
+      ],
+      [
+        15,
+        29
+      ],
+      [
+        12,
+        32
+      ],
+      [
+        16,
+        28
+      ],
+      [
+        10,
+        34
+      ],
+      [
+        18,
+        26
+      ],
+      [
+        9,
+        35
+      ],
+      [
+        19,
+        25
+      ],
+      [
+        8,
+        36
+      ],
+      [
+        7,
+        37
+      ],
+      [
+        6,
+        38
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAGCACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_window": "GGAGCACUAUCCGUCUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": ".(((.(((((.(((((.((.....)).))))).)))))))).............",
+    "wt_sequence": "GGAGCACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "mutant_sequence": "GGAGCACUAUCCGUCUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": ".(((.(((((.(((((.((.....)).))))).))))))))............."
+  },
+  {
+    "record_id": "G45C_fitness_0.00090",
+    "sequence_length": 54,
+    "mutation_pos0": 12,
+    "mutation_pos1": 13,
+    "mutation_from": "G",
+    "mutation_to": "A",
+    "wt_mfe": -16.0,
+    "mutant_mfe": -13.2,
+    "mfe_delta": 2.8000000000000007,
+    "bp_distance": 33,
+    "local_bp_distance": 33,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 15,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        13,
+        22
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        14,
+        21
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        8,
+        28
+      ],
+      [
+        7,
+        29
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        36,
+        52
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        17,
+        51
+      ],
+      [
+        18,
+        50
+      ],
+      [
+        21,
+        48
+      ],
+      [
+        22,
+        47
+      ],
+      [
+        23,
+        46
+      ],
+      [
+        24,
+        45
+      ],
+      [
+        25,
+        44
+      ],
+      [
+        27,
+        41
+      ],
+      [
+        28,
+        40
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 54,
+    "window_len": 54,
+    "wt_window": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGCUGAGGCUGG",
+    "mutant_window": "GGAACACUAUCCAACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGCUGAGGCUGG",
+    "wt_structure_window": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure_window": "(((......)))....((..(((((.(((((.....)))))..))))).))...",
+    "wt_sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGCUGAGGCUGG",
+    "mutant_sequence": "GGAACACUAUCCAACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGCUGAGGCUGG",
+    "wt_structure": "...(((((..(((((....)))))...)).))).((((((((...)))))))).",
+    "mutant_structure": "(((......)))....((..(((((.(((((.....)))))..))))).))..."
+  }
+]

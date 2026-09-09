@@ -1,0 +1,41 @@
+paths:
+  base: ""
+  ckpt: ""
+  data: ""
+  output_root: ""
+
+# EVA 1400M: hidden_size=1024, num_layers=26
+# Layer 13 is middle-early position (consistent with 244M's layer 13/16)
+layer: 13
+mode: sae_l1_penalty
+
+# 8x expansion (consistent with EVA conventions and InterPLM 650M)
+d_hidden: 8192
+l1_lr: 0.0001
+l1_penalty: 0.08
+l1_warmup_steps: 10000
+resample_steps: 10000
+resample_dead_after: 5000
+
+n_seqs: 30000000
+fasta_workers: 60
+seq_batch: 32
+max_len: 8192
+n_epochs: 1
+
+# 200K steps, matching EVA 1400M batch_topk SAE
+batch_size: 8192
+grad_clip: 1.0
+
+lr_schedule: sae_l1_penalty
+warmup_steps: 1000
+l1_lr_decay_start: 160000
+
+max_steps: 200000
+log_every: 1000
+save_every: 10000
+buffer_size: 10000000
+
+device: cuda:7
+seed: 42
+deterministic: true

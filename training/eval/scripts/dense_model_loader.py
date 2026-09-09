@@ -4,6 +4,8 @@ Dense模型加载器
 支持从DCP和PyTorch格式的checkpoint加载Dense模型
 """
 
+from __future__ import annotations
+
 import os
 import sys
 import json
@@ -25,9 +27,7 @@ from training.eval.scripts.common.model_loader_base import (
     load_model_weights_from_dcp,
     load_model_weights_from_pytorch,
 )
-from model_dense.causal_lm import RNAGenDenseForCausalLM
-from model_dense.config import RNAGenDenseConfig
-from model.lineage_tokenizer import get_lineage_rna_tokenizer
+from eva.lineage_tokenizer import get_lineage_rna_tokenizer
 
 logger = logging.getLogger(__name__)
 
@@ -38,6 +38,11 @@ _MOE_KEYS = ['num_experts', 'num_experts_per_tok', 'router_aux_loss_coef',
 
 def _create_dense_model(checkpoint_path: Path, device: str = 'cuda:0'):
     """创建 Dense 模型实例"""
+    try:
+        from model_dense.causal_lm import RNAGenDenseForCausalLM
+        from model_dense.config import RNAGenDenseConfig
+    except ModuleNotFoundError as exc:
+        raise RuntimeError('Historical model_dense architecture is missing from this release; dense evaluation is unsupported, not substituted by MoE') from exc
     config_file = checkpoint_path / "config.json"
     with open(config_file, 'r') as f:
         config_dict = json.load(f)

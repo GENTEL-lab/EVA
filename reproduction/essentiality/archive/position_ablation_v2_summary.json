@@ -1,0 +1,301 @@
+{
+  "description": "Position ablation AUROC results (lineage-fixed v2)",
+  "scoring_condition": "lineage_prefixed",
+  "mutation": "UAAUAAUAAUAGUGA",
+  "n_genes": 95538,
+  "n_species": 5,
+  "results": {
+    "EVA 1.4B": {
+      "5%": {
+        "mean_species_auroc": 0.5903675410788181,
+        "std_species_auroc": 0.0372276063113899,
+        "per_species": [
+          {
+            "organism": "Arabidopsis thaliana",
+            "auroc": 0.5842395825045388,
+            "n_genes": 48134,
+            "n_essential": 46
+          },
+          {
+            "organism": "Aspergillus fumigatus Af293",
+            "auroc": 0.6250573569899052,
+            "n_genes": 9823,
+            "n_essential": 16
+          },
+          {
+            "organism": "Caenorhabditis elegans",
+            "auroc": 0.6406630118114773,
+            "n_genes": 26418,
+            "n_essential": 237
+          },
+          {
+            "organism": "Saccharomyces cerevisiae S288C",
+            "auroc": 0.5559220829799467,
+            "n_genes": 6008,
+            "n_essential": 1105
+          },
+          {
+            "organism": "Schizosaccharomyces pombe",
+            "auroc": 0.5459556711082223,
+            "n_genes": 5155,
+            "n_essential": 905
+          }
+        ]
+      },
+      "25%": {
+        "mean_species_auroc": 0.5676008323345917,
+        "std_species_auroc": 0.04465461700785503,
+        "per_species": [
+          {
+            "organism": "Arabidopsis thaliana",
+            "auroc": 0.5530530983052808,
+            "n_genes": 48134,
+            "n_essential": 46
+          },
+          {
+            "organism": "Aspergillus fumigatus Af293",
+            "auroc": 0.6040328336902212,
+            "n_genes": 9823,
+            "n_essential": 16
+          },
+          {
+            "organism": "Caenorhabditis elegans",
+            "auroc": 0.6339128594721234,
+            "n_genes": 26418,
+            "n_essential": 237
+          },
+          {
+            "organism": "Saccharomyces cerevisiae S288C",
+            "auroc": 0.5320076451484593,
+            "n_genes": 6008,
+            "n_essential": 1105
+          },
+          {
+            "organism": "Schizosaccharomyces pombe",
+            "auroc": 0.5149977250568736,
+            "n_genes": 5155,
+            "n_essential": 905
+          }
+        ]
+      },
+      "75%": {
+        "mean_species_auroc": 0.5639547957219234,
+        "std_species_auroc": 0.022469656803498286,
+        "per_species": [
+          {
+            "organism": "Arabidopsis thaliana",
+            "auroc": 0.5595696838404953,
+            "n_genes": 48134,
+            "n_essential": 46
+          },
+          {
+            "organism": "Aspergillus fumigatus Af293",
+            "auroc": 0.5959454981135923,
+            "n_genes": 9823,
+            "n_essential": 16
+          },
+          {
+            "organism": "Caenorhabditis elegans",
+            "auroc": 0.5813108581818521,
+            "n_genes": 26418,
+            "n_essential": 237
+          },
+          {
+            "organism": "Saccharomyces cerevisiae S288C",
+            "auroc": 0.550687684980015,
+            "n_genes": 6008,
+            "n_essential": 1105
+          },
+          {
+            "organism": "Schizosaccharomyces pombe",
+            "auroc": 0.5322602534936627,
+            "n_genes": 5155,
+            "n_essential": 905
+          }
+        ]
+      },
+      "95%": {
+        "mean_species_auroc": 0.5841763810237246,
+        "std_species_auroc": 0.07133458846317728,
+        "per_species": [
+          {
+            "organism": "Arabidopsis thaliana",
+            "auroc": 0.5286042617520054,
+            "n_genes": 48134,
+            "n_essential": 46
+          },
+          {
+            "organism": "Aspergillus fumigatus Af293",
+            "auroc": 0.698104670133578,
+            "n_genes": 9823,
+            "n_essential": 16
+          },
+          {
+            "organism": "Caenorhabditis elegans",
+            "auroc": 0.6386541146452552,
+            "n_genes": 26418,
+            "n_essential": 237
+          },
+          {
+            "organism": "Saccharomyces cerevisiae S288C",
+            "auroc": 0.5323219785097867,
+            "n_genes": 6008,
+            "n_essential": 1105
+          },
+          {
+            "organism": "Schizosaccharomyces pombe",
+            "auroc": 0.5231968800779981,
+            "n_genes": 5155,
+            "n_essential": 905
+          }
+        ]
+      }
+    },
+    "EVA 30M": {
+      "5%": {
+        "mean_species_auroc": 0.5502150668825372,
+        "std_species_auroc": 0.05502198922646518,
+        "per_species": [
+          {
+            "organism": "Arabidopsis thaliana",
+            "auroc": 0.5775756222288124,
+            "n_genes": 48134,
+            "n_essential": 46
+          },
+          {
+            "organism": "Aspergillus fumigatus Af293",
+            "auroc": 0.5831995003568878,
+            "n_genes": 9823,
+            "n_essential": 16
+          },
+          {
+            "organism": "Caenorhabditis elegans",
+            "auroc": 0.6178453888920316,
+            "n_genes": 26418,
+            "n_essential": 237
+          },
+          {
+            "organism": "Saccharomyces cerevisiae S288C",
+            "auroc": 0.4698288885833127,
+            "n_genes": 6008,
+            "n_essential": 1105
+          },
+          {
+            "organism": "Schizosaccharomyces pombe",
+            "auroc": 0.5026259343516412,
+            "n_genes": 5155,
+            "n_essential": 905
+          }
+        ]
+      },
+      "25%": {
+        "mean_species_auroc": 0.5503912804009221,
+        "std_species_auroc": 0.05772180777244402,
+        "per_species": [
+          {
+            "organism": "Arabidopsis thaliana",
+            "auroc": 0.5288438587227764,
+            "n_genes": 48134,
+            "n_essential": 46
+          },
+          {
+            "organism": "Aspergillus fumigatus Af293",
+            "auroc": 0.627154073620883,
+            "n_genes": 9823,
+            "n_essential": 16
+          },
+          {
+            "organism": "Caenorhabditis elegans",
+            "auroc": 0.606362764764669,
+            "n_genes": 26418,
+            "n_essential": 237
+          },
+          {
+            "organism": "Saccharomyces cerevisiae S288C",
+            "auroc": 0.47257003053814134,
+            "n_genes": 6008,
+            "n_essential": 1105
+          },
+          {
+            "organism": "Schizosaccharomyces pombe",
+            "auroc": 0.5170256743581411,
+            "n_genes": 5155,
+            "n_essential": 905
+          }
+        ]
+      },
+      "75%": {
+        "mean_species_auroc": 0.5598797367272551,
+        "std_species_auroc": 0.06683421144484183,
+        "per_species": [
+          {
+            "organism": "Arabidopsis thaliana",
+            "auroc": 0.5747872559727456,
+            "n_genes": 48134,
+            "n_essential": 46
+          },
+          {
+            "organism": "Aspergillus fumigatus Af293",
+            "auroc": 0.5988515856021208,
+            "n_genes": 9823,
+            "n_essential": 16
+          },
+          {
+            "organism": "Caenorhabditis elegans",
+            "auroc": 0.6550842020423546,
+            "n_genes": 26418,
+            "n_essential": 237
+          },
+          {
+            "organism": "Saccharomyces cerevisiae S288C",
+            "auroc": 0.47091327407820305,
+            "n_genes": 6008,
+            "n_essential": 1105
+          },
+          {
+            "organism": "Schizosaccharomyces pombe",
+            "auroc": 0.4997623659408515,
+            "n_genes": 5155,
+            "n_essential": 905
+          }
+        ]
+      },
+      "95%": {
+        "mean_species_auroc": 0.6177058433560246,
+        "std_species_auroc": 0.10380864814460358,
+        "per_species": [
+          {
+            "organism": "Arabidopsis thaliana",
+            "auroc": 0.6623866209051521,
+            "n_genes": 48134,
+            "n_essential": 46
+          },
+          {
+            "organism": "Aspergillus fumigatus Af293",
+            "auroc": 0.7281852248394004,
+            "n_genes": 9823,
+            "n_essential": 16
+          },
+          {
+            "organism": "Caenorhabditis elegans",
+            "auroc": 0.7104532113909385,
+            "n_genes": 26418,
+            "n_essential": 237
+          },
+          {
+            "organism": "Saccharomyces cerevisiae S288C",
+            "auroc": 0.4805618132032932,
+            "n_genes": 6008,
+            "n_essential": 1105
+          },
+          {
+            "organism": "Schizosaccharomyces pombe",
+            "auroc": 0.506942346441339,
+            "n_genes": 5155,
+            "n_essential": 905
+          }
+        ]
+      }
+    }
+  }
+}

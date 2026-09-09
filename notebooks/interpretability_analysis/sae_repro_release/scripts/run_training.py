@@ -306,8 +306,7 @@ def train_batch_topk(cfg: dict, device: torch.device, log: logging.Logger) -> Pa
             try:
                 h_cpu = batch_extract_hidden(model, tok, batch_seqs, cfg["layer"], device, cfg["max_len"])
             except Exception as exc:
-                log.error("Hidden extraction failed on batch %d: %s", bi, exc)
-                continue
+                raise RuntimeError(f'Hidden extraction failed on batch {bi}; no batches were silently skipped') from exc
 
             if h_cpu.shape[0] == 0:
                 continue
@@ -357,6 +356,8 @@ def train_batch_topk(cfg: dict, device: torch.device, log: logging.Logger) -> Pa
                 if step % cfg["save_every"] == 0:
                     save_checkpoint(out_dir, step, sae, cfg)
 
+    if step == 0:
+        raise RuntimeError('SAE completed zero optimizer steps; check sequence and token batch sizes')
     save_checkpoint(out_dir, step, sae, cfg)
     log.info("Batch-TopK training done. step=%d output=%s", step, out_dir)
     return out_dir
@@ -454,6 +455,8 @@ def train_sae_l1_penalty(cfg: dict, device: torch.device, log: logging.Logger) -
                 if step % cfg["save_every"] == 0:
                     save_checkpoint(out_dir, step, sae, cfg)
 
+    if step == 0:
+        raise RuntimeError('SAE completed zero optimizer steps; check sequence and token batch sizes')
     save_checkpoint(out_dir, step, sae, cfg)
     log.info("sae_L1_penalty training done. step=%d output=%s", step, out_dir)
     return out_dir

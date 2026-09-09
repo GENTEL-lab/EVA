@@ -401,7 +401,8 @@ class LineageRNASequenceProcessor:
         elif lineage_file and os.path.exists(lineage_file):
             self.lineage_mapper = LineageMapper(lineage_file)
         else:
-            logger.warning(f"谱系文件不存在: {lineage_file}，将无法进行谱系映射")
+            if use_lineage_prefix:
+                raise FileNotFoundError(f'Lineage conditioning requested but no lineage_file/fixed_lineage is available: {lineage_file}')
             self.lineage_mapper = None
 
         # RNA类型映射（与MultiTaskRNASequenceProcessor保持一致）
@@ -1673,14 +1674,12 @@ class LineageRNADataset(Dataset):
                 # Mixed模式：根据概率随机选择CLM或GLM
                 if random.random() < self.glm_probability:
                     # GLM模式（多span补全）
-                    sample = self.processor.process_completion_sample(
+                    sample = self.processor._process_completion_sample_multi_span(
                         sequence, lineage, rna_type, self.span_config, reverse_sequence=reverse_sequence
                     )
-                    # GLM失败时回退到CLM
+                    # Never silently change a sampled GLM objective into CLM.
                     if sample is None:
-                        sample = self.processor.process_generation_sample(
-                            sequence, lineage, rna_type, reverse_sequence=reverse_sequence
-                        )
+                        raise ValueError(f'GLM sample construction failed at row {idx}; adjust explicit span configuration')
                 else:
                     # CLM模式（标准生成）
                     sample = self.processor.process_generation_sample(
@@ -1701,7 +1700,7 @@ class LineageRNADataset(Dataset):
             if sample is not None:
                 return sample
 
-            attempts += 1
+            raise ValueError(f'Sample construction failed at row {idx}; no replacement row was used')
 
         # 如果尝试多次仍被过滤，返回一个默认样本
         logger.warning(f"索引 {idx} 附近的样本均被过滤，返回默认样本")
@@ -2253,11 +2252,9 @@ class ChunkedLineageRNADataset(Dataset):
                 sample = self.processor._process_completion_sample_multi_span(
                     normalized_seq, lineage, actual_rna_type, self.span_config, reverse_sequence=reverse_sequence
                 )
-                # GLM失败时回退到CLM
+                # Never silently change a sampled GLM objective into CLM.
                 if sample is None:
-                    sample = self.processor.process_generation_sample(
-                        normalized_seq, lineage, actual_rna_type, reverse_sequence=reverse_sequence
-                    )
+                    raise ValueError(f'GLM sample construction failed at row {idx}; adjust explicit span configuration')
             else:
                 # CLM模式（标准生成）
                 sample = self.processor.process_generation_sample(
@@ -2276,8 +2273,7 @@ class ChunkedLineageRNADataset(Dataset):
 
         # 如果处理失败，返回fallback
         if sample is None:
-            logger.warning(f"索引 {idx} 处理失败，返回fallback样本")
-            return self._get_fallback_sample()
+            raise ValueError(f'Sample construction failed at row {idx}; no padding fallback was used')
 
         # 添加到缓存
         self._cache[idx] = sample

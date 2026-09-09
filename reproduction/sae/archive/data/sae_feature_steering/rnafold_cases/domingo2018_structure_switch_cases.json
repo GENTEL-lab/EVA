@@ -1,0 +1,3766 @@
+[
+  {
+    "record_id": "Domingo_2018_tRNA_9",
+    "sequence_length": 72,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "U",
+    "mutation_to": "A",
+    "wt_mfe": -26.6,
+    "mutant_mfe": -22.2,
+    "mfe_delta": 4.400000000000002,
+    "bp_distance": 32,
+    "local_bp_distance": 32,
+    "wt_pair_count": 24,
+    "mutant_pair_count": 24,
+    "wt_only_pair_count": 16,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        69
+      ],
+      [
+        2,
+        70
+      ],
+      [
+        4,
+        68
+      ],
+      [
+        1,
+        71
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        48,
+        64
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        19
+      ],
+      [
+        2,
+        20
+      ],
+      [
+        4,
+        18
+      ],
+      [
+        5,
+        17
+      ],
+      [
+        6,
+        16
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        22,
+        50
+      ],
+      [
+        23,
+        49
+      ],
+      [
+        24,
+        48
+      ],
+      [
+        52,
+        71
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "GUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUAUGGAACG",
+    "mutant_window": "GUACCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUAUGGAACG",
+    "wt_structure_window": "(((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))).",
+    "mutant_structure_window": ".((((((((...)))))))).(((((((..((((...)))).)))).))).((((.(........).)))).",
+    "wt_sequence": "GUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUAUGGAACG",
+    "mutant_sequence": "GUACCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUAUGGAACG",
+    "wt_structure": "(((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))).",
+    "mutant_structure": ".((((((((...)))))))).(((((((..((((...)))).)))).))).((((.(........).))))."
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_9",
+    "sequence_length": 72,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "U",
+    "mutation_to": "G",
+    "wt_mfe": -26.6,
+    "mutant_mfe": -22.2,
+    "mfe_delta": 4.400000000000002,
+    "bp_distance": 32,
+    "local_bp_distance": 32,
+    "wt_pair_count": 24,
+    "mutant_pair_count": 24,
+    "wt_only_pair_count": 16,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        69
+      ],
+      [
+        2,
+        70
+      ],
+      [
+        4,
+        68
+      ],
+      [
+        1,
+        71
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        48,
+        64
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        19
+      ],
+      [
+        2,
+        20
+      ],
+      [
+        4,
+        18
+      ],
+      [
+        5,
+        17
+      ],
+      [
+        6,
+        16
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        22,
+        50
+      ],
+      [
+        23,
+        49
+      ],
+      [
+        24,
+        48
+      ],
+      [
+        52,
+        71
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "GUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUAUGGAACG",
+    "mutant_window": "GUGCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUAUGGAACG",
+    "wt_structure_window": "(((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))).",
+    "mutant_structure_window": ".((((((((...)))))))).(((((((..((((...)))).)))).))).((((.(........).)))).",
+    "wt_sequence": "GUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUAUGGAACG",
+    "mutant_sequence": "GUGCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUAUGGAACG",
+    "wt_structure": "(((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))).",
+    "mutant_structure": ".((((((((...)))))))).(((((((..((((...)))).)))).))).((((.(........).))))."
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_12",
+    "sequence_length": 72,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "U",
+    "mutation_to": "A",
+    "wt_mfe": -24.5,
+    "mutant_mfe": -22.4,
+    "mfe_delta": 2.1000000000000014,
+    "bp_distance": 32,
+    "local_bp_distance": 32,
+    "wt_pair_count": 23,
+    "mutant_pair_count": 25,
+    "wt_only_pair_count": 15,
+    "mutant_only_pair_count": 17,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        69
+      ],
+      [
+        4,
+        68
+      ],
+      [
+        1,
+        71
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        48,
+        64
+      ],
+      [
+        49,
+        63
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        19
+      ],
+      [
+        2,
+        20
+      ],
+      [
+        4,
+        18
+      ],
+      [
+        5,
+        17
+      ],
+      [
+        6,
+        16
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        22,
+        50
+      ],
+      [
+        23,
+        49
+      ],
+      [
+        24,
+        48
+      ],
+      [
+        51,
+        71
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "GUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAUCG",
+    "mutant_window": "GUACCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAUCG",
+    "wt_structure_window": "(.(((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))).).",
+    "mutant_structure_window": ".((((((((...)))))))).(((((((..((((...)))).)))).)))((((((.........)))))).",
+    "wt_sequence": "GUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAUCG",
+    "mutant_sequence": "GUACCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAUCG",
+    "wt_structure": "(.(((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))).).",
+    "mutant_structure": ".((((((((...)))))))).(((((((..((((...)))).)))).)))((((((.........))))))."
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_18",
+    "sequence_length": 72,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -22.6,
+    "mutant_mfe": -19.1,
+    "mfe_delta": 3.5,
+    "bp_distance": 32,
+    "local_bp_distance": 32,
+    "wt_pair_count": 20,
+    "mutant_pair_count": 22,
+    "wt_only_pair_count": 15,
+    "mutant_only_pair_count": 17,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        68
+      ],
+      [
+        3,
+        69
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        2,
+        70
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        26,
+        42
+      ],
+      [
+        27,
+        41
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        5,
+        23
+      ],
+      [
+        6,
+        22
+      ],
+      [
+        7,
+        21
+      ],
+      [
+        8,
+        20
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        24,
+        72
+      ],
+      [
+        25,
+        71
+      ],
+      [
+        26,
+        70
+      ],
+      [
+        28,
+        69
+      ],
+      [
+        29,
+        68
+      ],
+      [
+        30,
+        67
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "AUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGAUUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_window": "AUUACGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGAUUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure_window": ".((((((..((((.......)))).(((((.......))))).....(((((.......)))))))))))..",
+    "mutant_structure_window": "....(((((.(.....).)))))(((.(((((((...)))).....((((((.......)))))).))))))",
+    "wt_sequence": "AUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGAUUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_sequence": "AUUACGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGAUUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure": ".((((((..((((.......)))).(((((.......))))).....(((((.......)))))))))))..",
+    "mutant_structure": "....(((((.(.....).)))))(((.(((((((...)))).....((((((.......)))))).))))))"
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_5",
+    "sequence_length": 72,
+    "mutation_pos0": 7,
+    "mutation_pos1": 8,
+    "mutation_from": "U",
+    "mutation_to": "C",
+    "wt_mfe": -26.4,
+    "mutant_mfe": -27.3,
+    "mfe_delta": -0.9000000000000021,
+    "bp_distance": 32,
+    "local_bp_distance": 32,
+    "wt_pair_count": 21,
+    "mutant_pair_count": 25,
+    "wt_only_pair_count": 14,
+    "mutant_only_pair_count": 18,
+    "diagnostic_wt_pairs_1": [
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        26,
+        42
+      ],
+      [
+        27,
+        41
+      ],
+      [
+        28,
+        40
+      ],
+      [
+        29,
+        39
+      ],
+      [
+        30,
+        38
+      ],
+      [
+        48,
+        64
+      ],
+      [
+        49,
+        63
+      ],
+      [
+        50,
+        62
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        8,
+        63
+      ],
+      [
+        9,
+        62
+      ],
+      [
+        10,
+        61
+      ],
+      [
+        12,
+        60
+      ],
+      [
+        16,
+        56
+      ],
+      [
+        17,
+        55
+      ],
+      [
+        18,
+        54
+      ],
+      [
+        22,
+        50
+      ],
+      [
+        23,
+        49
+      ],
+      [
+        24,
+        48
+      ],
+      [
+        25,
+        47
+      ],
+      [
+        26,
+        45
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "GUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGAUUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_window": "GUUCCGUCGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGAUUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure_window": "(((((((..((((.......)))).(((((.......))))).....(((((.......)))))))))))).",
+    "mutant_structure_window": "((((((((((.(...(((...(((((((..((((...)))).))).))))...)))...)))).))))))).",
+    "wt_sequence": "GUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGAUUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_sequence": "GUUCCGUCGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGAUUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure": "(((((((..((((.......)))).(((((.......))))).....(((((.......)))))))))))).",
+    "mutant_structure": "((((((((((.(...(((...(((((((..((((...)))).))).))))...)))...)))).)))))))."
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_22",
+    "sequence_length": 72,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "U",
+    "mutation_to": "A",
+    "wt_mfe": -22.8,
+    "mutant_mfe": -22.2,
+    "mfe_delta": 0.6000000000000014,
+    "bp_distance": 31,
+    "local_bp_distance": 31,
+    "wt_pair_count": 23,
+    "mutant_pair_count": 24,
+    "wt_only_pair_count": 15,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        69
+      ],
+      [
+        2,
+        70
+      ],
+      [
+        4,
+        68
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        48,
+        64
+      ],
+      [
+        49,
+        63
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        19
+      ],
+      [
+        2,
+        20
+      ],
+      [
+        4,
+        18
+      ],
+      [
+        5,
+        17
+      ],
+      [
+        6,
+        16
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        22,
+        50
+      ],
+      [
+        23,
+        49
+      ],
+      [
+        24,
+        48
+      ],
+      [
+        52,
+        71
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "AUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUAUGGAACG",
+    "mutant_window": "AUACCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUAUGGAACG",
+    "wt_structure_window": ".((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))..",
+    "mutant_structure_window": ".((((((((...)))))))).(((((((..((((...)))).)))).))).((((.(........).)))).",
+    "wt_sequence": "AUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUAUGGAACG",
+    "mutant_sequence": "AUACCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUAUGGAACG",
+    "wt_structure": ".((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))..",
+    "mutant_structure": ".((((((((...)))))))).(((((((..((((...)))).)))).))).((((.(........).))))."
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_22",
+    "sequence_length": 72,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "U",
+    "mutation_to": "G",
+    "wt_mfe": -22.8,
+    "mutant_mfe": -22.2,
+    "mfe_delta": 0.6000000000000014,
+    "bp_distance": 31,
+    "local_bp_distance": 31,
+    "wt_pair_count": 23,
+    "mutant_pair_count": 24,
+    "wt_only_pair_count": 15,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        69
+      ],
+      [
+        2,
+        70
+      ],
+      [
+        4,
+        68
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        48,
+        64
+      ],
+      [
+        49,
+        63
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        19
+      ],
+      [
+        2,
+        20
+      ],
+      [
+        4,
+        18
+      ],
+      [
+        5,
+        17
+      ],
+      [
+        6,
+        16
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        22,
+        50
+      ],
+      [
+        23,
+        49
+      ],
+      [
+        24,
+        48
+      ],
+      [
+        52,
+        71
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "AUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUAUGGAACG",
+    "mutant_window": "AUGCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUAUGGAACG",
+    "wt_structure_window": ".((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))..",
+    "mutant_structure_window": ".((((((((...)))))))).(((((((..((((...)))).)))).))).((((.(........).)))).",
+    "wt_sequence": "AUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUAUGGAACG",
+    "mutant_sequence": "AUGCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUAUGGAACG",
+    "wt_structure": ".((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))..",
+    "mutant_structure": ".((((((((...)))))))).(((((((..((((...)))).)))).))).((((.(........).))))."
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_25",
+    "sequence_length": 72,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "U",
+    "mutation_to": "A",
+    "wt_mfe": -23.9,
+    "mutant_mfe": -22.4,
+    "mfe_delta": 1.5,
+    "bp_distance": 31,
+    "local_bp_distance": 31,
+    "wt_pair_count": 22,
+    "mutant_pair_count": 25,
+    "wt_only_pair_count": 14,
+    "mutant_only_pair_count": 17,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        69
+      ],
+      [
+        4,
+        68
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        48,
+        64
+      ],
+      [
+        49,
+        63
+      ],
+      [
+        50,
+        62
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        19
+      ],
+      [
+        2,
+        20
+      ],
+      [
+        4,
+        18
+      ],
+      [
+        5,
+        17
+      ],
+      [
+        6,
+        16
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        22,
+        50
+      ],
+      [
+        23,
+        49
+      ],
+      [
+        24,
+        48
+      ],
+      [
+        51,
+        71
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "AUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAUCG",
+    "mutant_window": "AUACCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAUCG",
+    "wt_structure_window": "..(((((..((((.......))))((((..((((...)))).)))).(((((.......))))))))))...",
+    "mutant_structure_window": ".((((((((...)))))))).(((((((..((((...)))).)))).)))((((((.........)))))).",
+    "wt_sequence": "AUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAUCG",
+    "mutant_sequence": "AUACCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAUCG",
+    "wt_structure": "..(((((..((((.......))))((((..((((...)))).)))).(((((.......))))))))))...",
+    "mutant_structure": ".((((((((...)))))))).(((((((..((((...)))).)))).)))((((((.........))))))."
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_16",
+    "sequence_length": 72,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "U",
+    "mutation_to": "A",
+    "wt_mfe": -22.0,
+    "mutant_mfe": -21.1,
+    "mfe_delta": 0.8999999999999986,
+    "bp_distance": 29,
+    "local_bp_distance": 29,
+    "wt_pair_count": 23,
+    "mutant_pair_count": 24,
+    "wt_only_pair_count": 14,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        69
+      ],
+      [
+        2,
+        70
+      ],
+      [
+        4,
+        68
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        25,
+        46
+      ],
+      [
+        26,
+        45
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        19
+      ],
+      [
+        2,
+        20
+      ],
+      [
+        4,
+        18
+      ],
+      [
+        5,
+        17
+      ],
+      [
+        6,
+        16
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        24,
+        72
+      ],
+      [
+        25,
+        71
+      ],
+      [
+        26,
+        70
+      ],
+      [
+        27,
+        69
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "AUUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_window": "AUACCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure_window": ".((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))..",
+    "mutant_structure_window": ".((((((((...))))))))...((((((.((((...)))).....((((((.......)))))).))))))",
+    "wt_sequence": "AUUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_sequence": "AUACCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure": ".((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))..",
+    "mutant_structure": ".((((((((...))))))))...((((((.((((...)))).....((((((.......)))))).))))))"
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_16",
+    "sequence_length": 72,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "U",
+    "mutation_to": "G",
+    "wt_mfe": -22.0,
+    "mutant_mfe": -21.1,
+    "mfe_delta": 0.8999999999999986,
+    "bp_distance": 29,
+    "local_bp_distance": 29,
+    "wt_pair_count": 23,
+    "mutant_pair_count": 24,
+    "wt_only_pair_count": 14,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        69
+      ],
+      [
+        2,
+        70
+      ],
+      [
+        4,
+        68
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        25,
+        46
+      ],
+      [
+        26,
+        45
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        19
+      ],
+      [
+        2,
+        20
+      ],
+      [
+        4,
+        18
+      ],
+      [
+        5,
+        17
+      ],
+      [
+        6,
+        16
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        24,
+        72
+      ],
+      [
+        25,
+        71
+      ],
+      [
+        26,
+        70
+      ],
+      [
+        27,
+        69
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "AUUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_window": "AUGCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure_window": ".((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))..",
+    "mutant_structure_window": ".((((((((...))))))))...((((((.((((...)))).....((((((.......)))))).))))))",
+    "wt_sequence": "AUUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_sequence": "AUGCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure": ".((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))..",
+    "mutant_structure": ".((((((((...))))))))...((((((.((((...)))).....((((((.......)))))).))))))"
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_27",
+    "sequence_length": 72,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "U",
+    "mutation_to": "A",
+    "wt_mfe": -21.5,
+    "mutant_mfe": -19.8,
+    "mfe_delta": 1.6999999999999993,
+    "bp_distance": 28,
+    "local_bp_distance": 28,
+    "wt_pair_count": 22,
+    "mutant_pair_count": 24,
+    "wt_only_pair_count": 13,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        69
+      ],
+      [
+        4,
+        68
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        25,
+        46
+      ],
+      [
+        26,
+        45
+      ],
+      [
+        27,
+        44
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        19
+      ],
+      [
+        2,
+        23
+      ],
+      [
+        4,
+        18
+      ],
+      [
+        1,
+        24
+      ],
+      [
+        5,
+        17
+      ],
+      [
+        6,
+        16
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        25,
+        71
+      ],
+      [
+        26,
+        70
+      ],
+      [
+        27,
+        69
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "GCUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_window": "GCACCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure_window": "..(((((..((((.......))))((((..((((...)))).)))).(((((.......))))))))))...",
+    "mutant_structure_window": "(((((((((...)))))))...))(((((.((((...)))).....((((((.......)))))).))))).",
+    "wt_sequence": "GCUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_sequence": "GCACCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure": "..(((((..((((.......))))((((..((((...)))).)))).(((((.......))))))))))...",
+    "mutant_structure": "(((((((((...)))))))...))(((((.((((...)))).....((((((.......)))))).)))))."
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_3",
+    "sequence_length": 72,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "C",
+    "mutation_to": "G",
+    "wt_mfe": -25.8,
+    "mutant_mfe": -22.7,
+    "mfe_delta": 3.1000000000000014,
+    "bp_distance": 28,
+    "local_bp_distance": 28,
+    "wt_pair_count": 24,
+    "mutant_pair_count": 22,
+    "wt_only_pair_count": 15,
+    "mutant_only_pair_count": 13,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        68
+      ],
+      [
+        3,
+        69
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        2,
+        70
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        1,
+        71
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        25,
+        46
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        24
+      ],
+      [
+        5,
+        23
+      ],
+      [
+        6,
+        22
+      ],
+      [
+        7,
+        21
+      ],
+      [
+        8,
+        20
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        25,
+        71
+      ],
+      [
+        26,
+        70
+      ],
+      [
+        27,
+        69
+      ],
+      [
+        28,
+        68
+      ],
+      [
+        29,
+        67
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "GUUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_window": "GUUGCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure_window": "(((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))).",
+    "mutant_structure_window": "...((((((.(.....).))))))(((((.((((...)))).....((((((.......)))))).))))).",
+    "wt_sequence": "GUUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_sequence": "GUUGCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure": "(((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))).",
+    "mutant_structure": "...((((((.(.....).))))))(((((.((((...)))).....((((((.......)))))).)))))."
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_3",
+    "sequence_length": 72,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -25.8,
+    "mutant_mfe": -20.0,
+    "mfe_delta": 5.800000000000001,
+    "bp_distance": 28,
+    "local_bp_distance": 28,
+    "wt_pair_count": 24,
+    "mutant_pair_count": 22,
+    "wt_only_pair_count": 15,
+    "mutant_only_pair_count": 13,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        68
+      ],
+      [
+        3,
+        69
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        2,
+        70
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        1,
+        71
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        25,
+        46
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        5,
+        23
+      ],
+      [
+        6,
+        22
+      ],
+      [
+        7,
+        21
+      ],
+      [
+        8,
+        20
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        24,
+        72
+      ],
+      [
+        25,
+        71
+      ],
+      [
+        26,
+        70
+      ],
+      [
+        27,
+        69
+      ],
+      [
+        28,
+        68
+      ],
+      [
+        29,
+        67
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "GUUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_window": "GUUACGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure_window": "(((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))).",
+    "mutant_structure_window": "....(((((.(.....).)))))((((((.((((...)))).....((((((.......)))))).))))))",
+    "wt_sequence": "GUUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_sequence": "GUUACGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure": "(((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))).",
+    "mutant_structure": "....(((((.(.....).)))))((((((.((((...)))).....((((((.......)))))).))))))"
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_20",
+    "sequence_length": 72,
+    "mutation_pos0": 10,
+    "mutation_pos1": 11,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -22.3,
+    "mutant_mfe": -19.8,
+    "mfe_delta": 2.5,
+    "bp_distance": 28,
+    "local_bp_distance": 28,
+    "wt_pair_count": 22,
+    "mutant_pair_count": 18,
+    "wt_only_pair_count": 16,
+    "mutant_only_pair_count": 12,
+    "diagnostic_wt_pairs_1": [
+      [
+        11,
+        23
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        4,
+        68
+      ],
+      [
+        3,
+        69
+      ],
+      [
+        2,
+        70
+      ],
+      [
+        25,
+        46
+      ],
+      [
+        26,
+        45
+      ],
+      [
+        27,
+        44
+      ],
+      [
+        28,
+        43
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        11,
+        32
+      ],
+      [
+        10,
+        33
+      ],
+      [
+        12,
+        31
+      ],
+      [
+        9,
+        34
+      ],
+      [
+        7,
+        36
+      ],
+      [
+        15,
+        26
+      ],
+      [
+        6,
+        37
+      ],
+      [
+        16,
+        25
+      ],
+      [
+        5,
+        38
+      ],
+      [
+        17,
+        24
+      ],
+      [
+        4,
+        39
+      ],
+      [
+        3,
+        40
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "AUUCCUUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_window": "AUUCCUUUGGAGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure_window": ".((((....((((.......))))((((..((((...)))).))))((((((.......)))))).))))..",
+    "mutant_structure_window": "..(((((.((((..(((......)))....)))).)))))......((((((.......)))))).......",
+    "wt_sequence": "AUUCCUUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_sequence": "AUUCCUUUGGAGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure": ".((((....((((.......))))((((..((((...)))).))))((((((.......)))))).))))..",
+    "mutant_structure": "..(((((.((((..(((......)))....)))).)))))......((((((.......))))))......."
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_3",
+    "sequence_length": 72,
+    "mutation_pos0": 7,
+    "mutation_pos1": 8,
+    "mutation_from": "U",
+    "mutation_to": "C",
+    "wt_mfe": -25.8,
+    "mutant_mfe": -26.7,
+    "mfe_delta": -0.8999999999999986,
+    "bp_distance": 27,
+    "local_bp_distance": 27,
+    "wt_pair_count": 24,
+    "mutant_pair_count": 25,
+    "wt_only_pair_count": 13,
+    "mutant_only_pair_count": 14,
+    "diagnostic_wt_pairs_1": [
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        25,
+        46
+      ],
+      [
+        26,
+        45
+      ],
+      [
+        27,
+        44
+      ],
+      [
+        28,
+        43
+      ],
+      [
+        48,
+        64
+      ],
+      [
+        49,
+        63
+      ],
+      [
+        50,
+        62
+      ],
+      [
+        51,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        8,
+        63
+      ],
+      [
+        9,
+        62
+      ],
+      [
+        10,
+        61
+      ],
+      [
+        12,
+        60
+      ],
+      [
+        16,
+        57
+      ],
+      [
+        18,
+        55
+      ],
+      [
+        20,
+        54
+      ],
+      [
+        21,
+        53
+      ],
+      [
+        22,
+        52
+      ],
+      [
+        24,
+        50
+      ],
+      [
+        25,
+        49
+      ],
+      [
+        26,
+        48
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "GUUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_window": "GUUCCGUCGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure_window": "(((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))).",
+    "mutant_structure_window": "((((((((((.(...(.(.(((.(((.((.((((...))))..))..))).)))).)..)))).))))))).",
+    "wt_sequence": "GUUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_sequence": "GUUCCGUCGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure": "(((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))).",
+    "mutant_structure": "((((((((((.(...(.(.(((.(((.((.((((...))))..))..))).)))).)..)))).)))))))."
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_28",
+    "sequence_length": 72,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "C",
+    "mutation_to": "G",
+    "wt_mfe": -21.5,
+    "mutant_mfe": -22.7,
+    "mfe_delta": -1.1999999999999993,
+    "bp_distance": 27,
+    "local_bp_distance": 27,
+    "wt_pair_count": 23,
+    "mutant_pair_count": 22,
+    "wt_only_pair_count": 14,
+    "mutant_only_pair_count": 13,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        68
+      ],
+      [
+        3,
+        69
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        1,
+        71
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        25,
+        46
+      ],
+      [
+        26,
+        45
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        24
+      ],
+      [
+        5,
+        23
+      ],
+      [
+        6,
+        22
+      ],
+      [
+        7,
+        21
+      ],
+      [
+        8,
+        20
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        25,
+        71
+      ],
+      [
+        26,
+        70
+      ],
+      [
+        27,
+        69
+      ],
+      [
+        28,
+        68
+      ],
+      [
+        29,
+        67
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "GGUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_window": "GGUGCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure_window": "(.(((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))).).",
+    "mutant_structure_window": "...((((((.(.....).))))))(((((.((((...)))).....((((((.......)))))).))))).",
+    "wt_sequence": "GGUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_sequence": "GGUGCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure": "(.(((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))).).",
+    "mutant_structure": "...((((((.(.....).))))))(((((.((((...)))).....((((((.......)))))).)))))."
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_28",
+    "sequence_length": 72,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -21.5,
+    "mutant_mfe": -20.0,
+    "mfe_delta": 1.5,
+    "bp_distance": 27,
+    "local_bp_distance": 27,
+    "wt_pair_count": 23,
+    "mutant_pair_count": 22,
+    "wt_only_pair_count": 14,
+    "mutant_only_pair_count": 13,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        68
+      ],
+      [
+        3,
+        69
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        1,
+        71
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        25,
+        46
+      ],
+      [
+        26,
+        45
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        5,
+        23
+      ],
+      [
+        6,
+        22
+      ],
+      [
+        7,
+        21
+      ],
+      [
+        8,
+        20
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        24,
+        72
+      ],
+      [
+        25,
+        71
+      ],
+      [
+        26,
+        70
+      ],
+      [
+        27,
+        69
+      ],
+      [
+        28,
+        68
+      ],
+      [
+        29,
+        67
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "GGUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_window": "GGUACGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure_window": "(.(((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))).).",
+    "mutant_structure_window": "....(((((.(.....).)))))((((((.((((...)))).....((((((.......)))))).))))))",
+    "wt_sequence": "GGUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_sequence": "GGUACGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure": "(.(((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))).).",
+    "mutant_structure": "....(((((.(.....).)))))((((((.((((...)))).....((((((.......)))))).))))))"
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_16",
+    "sequence_length": 72,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -22.0,
+    "mutant_mfe": -20.0,
+    "mfe_delta": 2.0,
+    "bp_distance": 27,
+    "local_bp_distance": 27,
+    "wt_pair_count": 23,
+    "mutant_pair_count": 22,
+    "wt_only_pair_count": 14,
+    "mutant_only_pair_count": 13,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        68
+      ],
+      [
+        3,
+        69
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        2,
+        70
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        25,
+        46
+      ],
+      [
+        26,
+        45
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        5,
+        23
+      ],
+      [
+        6,
+        22
+      ],
+      [
+        7,
+        21
+      ],
+      [
+        8,
+        20
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        24,
+        72
+      ],
+      [
+        25,
+        71
+      ],
+      [
+        26,
+        70
+      ],
+      [
+        27,
+        69
+      ],
+      [
+        28,
+        68
+      ],
+      [
+        29,
+        67
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "AUUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_window": "AUUACGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure_window": ".((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))..",
+    "mutant_structure_window": "....(((((.(.....).)))))((((((.((((...)))).....((((((.......)))))).))))))",
+    "wt_sequence": "AUUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_sequence": "AUUACGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure": ".((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))..",
+    "mutant_structure": "....(((((.(.....).)))))((((((.((((...)))).....((((((.......)))))).))))))"
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_24",
+    "sequence_length": 72,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -24.3,
+    "mutant_mfe": -21.5,
+    "mfe_delta": 2.8000000000000007,
+    "bp_distance": 27,
+    "local_bp_distance": 27,
+    "wt_pair_count": 23,
+    "mutant_pair_count": 22,
+    "wt_only_pair_count": 14,
+    "mutant_only_pair_count": 13,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        68
+      ],
+      [
+        3,
+        69
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        2,
+        70
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        25,
+        46
+      ],
+      [
+        26,
+        45
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        5,
+        23
+      ],
+      [
+        6,
+        22
+      ],
+      [
+        7,
+        21
+      ],
+      [
+        8,
+        20
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        24,
+        72
+      ],
+      [
+        25,
+        71
+      ],
+      [
+        27,
+        70
+      ],
+      [
+        28,
+        69
+      ],
+      [
+        29,
+        68
+      ],
+      [
+        30,
+        67
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "AUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAGCG",
+    "mutant_window": "AUUACGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAGCG",
+    "wt_structure_window": ".((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))..",
+    "mutant_structure_window": "....(((((.(.....).)))))((.((((((((...)))).....((((((.......)))))).))))))",
+    "wt_sequence": "AUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAGCG",
+    "mutant_sequence": "AUUACGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAGCG",
+    "wt_structure": ".((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))..",
+    "mutant_structure": "....(((((.(.....).)))))((.((((((((...)))).....((((((.......)))))).))))))"
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_27",
+    "sequence_length": 72,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -21.5,
+    "mutant_mfe": -20.0,
+    "mfe_delta": 1.5,
+    "bp_distance": 26,
+    "local_bp_distance": 26,
+    "wt_pair_count": 22,
+    "mutant_pair_count": 22,
+    "wt_only_pair_count": 13,
+    "mutant_only_pair_count": 13,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        68
+      ],
+      [
+        3,
+        69
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        25,
+        46
+      ],
+      [
+        26,
+        45
+      ],
+      [
+        27,
+        44
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        5,
+        23
+      ],
+      [
+        6,
+        22
+      ],
+      [
+        7,
+        21
+      ],
+      [
+        8,
+        20
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        24,
+        72
+      ],
+      [
+        25,
+        71
+      ],
+      [
+        26,
+        70
+      ],
+      [
+        27,
+        69
+      ],
+      [
+        28,
+        68
+      ],
+      [
+        29,
+        67
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "GCUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_window": "GCUACGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure_window": "..(((((..((((.......))))((((..((((...)))).)))).(((((.......))))))))))...",
+    "mutant_structure_window": "....(((((.(.....).)))))((((((.((((...)))).....((((((.......)))))).))))))",
+    "wt_sequence": "GCUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_sequence": "GCUACGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure": "..(((((..((((.......))))((((..((((...)))).)))).(((((.......))))))))))...",
+    "mutant_structure": "....(((((.(.....).)))))((((((.((((...)))).....((((((.......)))))).))))))"
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_27",
+    "sequence_length": 72,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "U",
+    "mutation_to": "G",
+    "wt_mfe": -21.5,
+    "mutant_mfe": -21.6,
+    "mfe_delta": -0.10000000000000142,
+    "bp_distance": 25,
+    "local_bp_distance": 25,
+    "wt_pair_count": 22,
+    "mutant_pair_count": 21,
+    "wt_only_pair_count": 13,
+    "mutant_only_pair_count": 12,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        69
+      ],
+      [
+        4,
+        68
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        25,
+        46
+      ],
+      [
+        26,
+        45
+      ],
+      [
+        27,
+        44
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        1,
+        13
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        24,
+        72
+      ],
+      [
+        25,
+        71
+      ],
+      [
+        26,
+        70
+      ],
+      [
+        27,
+        69
+      ],
+      [
+        28,
+        68
+      ],
+      [
+        29,
+        67
+      ],
+      [
+        47,
+        65
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "GCUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_window": "GCGCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure_window": "..(((((..((((.......))))((((..((((...)))).)))).(((((.......))))))))))...",
+    "mutant_structure_window": "(((((...)))))..........((((((.((((...)))).....((((((.......)))))).))))))",
+    "wt_sequence": "GCUCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_sequence": "GCGCCGUUGGCGUAAUGGUAACGCGUUUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure": "..(((((..((((.......))))((((..((((...)))).)))).(((((.......))))))))))...",
+    "mutant_structure": "(((((...)))))..........((((((.((((...)))).....((((((.......)))))).))))))"
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_10",
+    "sequence_length": 72,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "U",
+    "mutation_to": "A",
+    "wt_mfe": -27.9,
+    "mutant_mfe": -25.5,
+    "mfe_delta": 2.3999999999999986,
+    "bp_distance": 24,
+    "local_bp_distance": 24,
+    "wt_pair_count": 24,
+    "mutant_pair_count": 24,
+    "wt_only_pair_count": 12,
+    "mutant_only_pair_count": 12,
+    "diagnostic_wt_pairs_1": [
+      [
+        2,
+        70
+      ],
+      [
+        1,
+        71
+      ],
+      [
+        3,
+        69
+      ],
+      [
+        4,
+        68
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        48,
+        64
+      ],
+      [
+        49,
+        63
+      ],
+      [
+        50,
+        62
+      ],
+      [
+        51,
+        61
+      ],
+      [
+        52,
+        60
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        2,
+        53
+      ],
+      [
+        1,
+        54
+      ],
+      [
+        3,
+        52
+      ],
+      [
+        4,
+        51
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        6,
+        49
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        58,
+        71
+      ],
+      [
+        59,
+        70
+      ],
+      [
+        60,
+        69
+      ],
+      [
+        61,
+        68
+      ],
+      [
+        62,
+        67
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "GUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGGACG",
+    "mutant_window": "GAUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGGACG",
+    "wt_structure_window": "(((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))).",
+    "mutant_structure_window": "(((((((..((((.......))))((((..((((...)))).)))).)))))))...(((((....))))).",
+    "wt_sequence": "GUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGGACG",
+    "mutant_sequence": "GAUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGGACG",
+    "wt_structure": "(((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))).",
+    "mutant_structure": "(((((((..((((.......))))((((..((((...)))).)))).)))))))...(((((....)))))."
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_23",
+    "sequence_length": 72,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "U",
+    "mutation_to": "A",
+    "wt_mfe": -24.1,
+    "mutant_mfe": -25.1,
+    "mfe_delta": -1.0,
+    "bp_distance": 23,
+    "local_bp_distance": 23,
+    "wt_pair_count": 23,
+    "mutant_pair_count": 24,
+    "wt_only_pair_count": 11,
+    "mutant_only_pair_count": 12,
+    "diagnostic_wt_pairs_1": [
+      [
+        2,
+        70
+      ],
+      [
+        3,
+        69
+      ],
+      [
+        4,
+        68
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        48,
+        64
+      ],
+      [
+        49,
+        63
+      ],
+      [
+        50,
+        62
+      ],
+      [
+        51,
+        61
+      ],
+      [
+        52,
+        60
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        2,
+        53
+      ],
+      [
+        1,
+        54
+      ],
+      [
+        3,
+        52
+      ],
+      [
+        4,
+        51
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        6,
+        49
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        58,
+        71
+      ],
+      [
+        59,
+        70
+      ],
+      [
+        60,
+        69
+      ],
+      [
+        61,
+        68
+      ],
+      [
+        62,
+        67
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "AUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGGACG",
+    "mutant_window": "AAUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGGACG",
+    "wt_structure_window": ".((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))..",
+    "mutant_structure_window": "(((((((..((((.......))))((((..((((...)))).)))).)))))))...(((((....))))).",
+    "wt_sequence": "AUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGGACG",
+    "mutant_sequence": "AAUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGGACG",
+    "wt_structure": ".((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))..",
+    "mutant_structure": "(((((((..((((.......))))((((..((((...)))).)))).)))))))...(((((....)))))."
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_24",
+    "sequence_length": 72,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "U",
+    "mutation_to": "A",
+    "wt_mfe": -24.3,
+    "mutant_mfe": -22.8,
+    "mfe_delta": 1.5,
+    "bp_distance": 22,
+    "local_bp_distance": 22,
+    "wt_pair_count": 23,
+    "mutant_pair_count": 25,
+    "wt_only_pair_count": 10,
+    "mutant_only_pair_count": 12,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        69
+      ],
+      [
+        2,
+        70
+      ],
+      [
+        4,
+        68
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        19
+      ],
+      [
+        2,
+        20
+      ],
+      [
+        4,
+        18
+      ],
+      [
+        5,
+        17
+      ],
+      [
+        6,
+        16
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        22,
+        72
+      ],
+      [
+        23,
+        71
+      ],
+      [
+        24,
+        70
+      ],
+      [
+        47,
+        65
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "AUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAGCG",
+    "mutant_window": "AUACCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAGCG",
+    "wt_structure_window": ".((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))..",
+    "mutant_structure_window": ".((((((((...)))))))).(((((((..((((...)))).))))((((((.......))))))....)))",
+    "wt_sequence": "AUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAGCG",
+    "mutant_sequence": "AUACCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAGCG",
+    "wt_structure": ".((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))..",
+    "mutant_structure": ".((((((((...)))))))).(((((((..((((...)))).))))((((((.......))))))....)))"
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_24",
+    "sequence_length": 72,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "U",
+    "mutation_to": "G",
+    "wt_mfe": -24.3,
+    "mutant_mfe": -22.8,
+    "mfe_delta": 1.5,
+    "bp_distance": 22,
+    "local_bp_distance": 22,
+    "wt_pair_count": 23,
+    "mutant_pair_count": 25,
+    "wt_only_pair_count": 10,
+    "mutant_only_pair_count": 12,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        69
+      ],
+      [
+        2,
+        70
+      ],
+      [
+        4,
+        68
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        19
+      ],
+      [
+        2,
+        20
+      ],
+      [
+        4,
+        18
+      ],
+      [
+        5,
+        17
+      ],
+      [
+        6,
+        16
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        22,
+        72
+      ],
+      [
+        23,
+        71
+      ],
+      [
+        24,
+        70
+      ],
+      [
+        47,
+        65
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "AUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAGCG",
+    "mutant_window": "AUGCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAGCG",
+    "wt_structure_window": ".((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))..",
+    "mutant_structure_window": ".((((((((...)))))))).(((((((..((((...)))).))))((((((.......))))))....)))",
+    "wt_sequence": "AUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAGCG",
+    "mutant_sequence": "AUGCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGAGCG",
+    "wt_structure": ".((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))..",
+    "mutant_structure": ".((((((((...)))))))).(((((((..((((...)))).))))((((((.......))))))....)))"
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_10",
+    "sequence_length": 72,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "U",
+    "mutation_to": "C",
+    "wt_mfe": -27.9,
+    "mutant_mfe": -23.5,
+    "mfe_delta": 4.399999999999999,
+    "bp_distance": 22,
+    "local_bp_distance": 22,
+    "wt_pair_count": 24,
+    "mutant_pair_count": 22,
+    "wt_only_pair_count": 12,
+    "mutant_only_pair_count": 10,
+    "diagnostic_wt_pairs_1": [
+      [
+        2,
+        70
+      ],
+      [
+        1,
+        71
+      ],
+      [
+        3,
+        69
+      ],
+      [
+        4,
+        68
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        48,
+        64
+      ],
+      [
+        49,
+        63
+      ],
+      [
+        50,
+        62
+      ],
+      [
+        51,
+        61
+      ],
+      [
+        52,
+        60
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        52
+      ],
+      [
+        4,
+        51
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        6,
+        49
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        58,
+        71
+      ],
+      [
+        59,
+        70
+      ],
+      [
+        60,
+        69
+      ],
+      [
+        61,
+        68
+      ],
+      [
+        62,
+        67
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "GUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGGACG",
+    "mutant_window": "GCUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGGACG",
+    "wt_structure_window": "(((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))).",
+    "mutant_structure_window": "..(((((..((((.......))))((((..((((...)))).)))).))))).....(((((....))))).",
+    "wt_sequence": "GUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGGACG",
+    "mutant_sequence": "GCUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGGACG",
+    "wt_structure": "(((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))).",
+    "mutant_structure": "..(((((..((((.......))))((((..((((...)))).)))).))))).....(((((....)))))."
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_23",
+    "sequence_length": 72,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "U",
+    "mutation_to": "C",
+    "wt_mfe": -24.1,
+    "mutant_mfe": -23.5,
+    "mfe_delta": 0.6000000000000014,
+    "bp_distance": 21,
+    "local_bp_distance": 21,
+    "wt_pair_count": 23,
+    "mutant_pair_count": 22,
+    "wt_only_pair_count": 11,
+    "mutant_only_pair_count": 10,
+    "diagnostic_wt_pairs_1": [
+      [
+        2,
+        70
+      ],
+      [
+        3,
+        69
+      ],
+      [
+        4,
+        68
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        48,
+        64
+      ],
+      [
+        49,
+        63
+      ],
+      [
+        50,
+        62
+      ],
+      [
+        51,
+        61
+      ],
+      [
+        52,
+        60
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        52
+      ],
+      [
+        4,
+        51
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        6,
+        49
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        58,
+        71
+      ],
+      [
+        59,
+        70
+      ],
+      [
+        60,
+        69
+      ],
+      [
+        61,
+        68
+      ],
+      [
+        62,
+        67
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "AUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGGACG",
+    "mutant_window": "ACUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGGACG",
+    "wt_structure_window": ".((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))..",
+    "mutant_structure_window": "..(((((..((((.......))))((((..((((...)))).)))).))))).....(((((....))))).",
+    "wt_sequence": "AUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGGACG",
+    "mutant_sequence": "ACUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGAAGACUGCGGGUUCGAGUCCCGUACGGGACG",
+    "wt_structure": ".((((((..((((.......))))((((..((((...)))).)))).(((((.......)))))))))))..",
+    "mutant_structure": "..(((((..((((.......))))((((..((((...)))).)))).))))).....(((((....)))))."
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_17",
+    "sequence_length": 72,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "U",
+    "mutation_to": "C",
+    "wt_mfe": -26.0,
+    "mutant_mfe": -25.2,
+    "mfe_delta": 0.8000000000000007,
+    "bp_distance": 21,
+    "local_bp_distance": 21,
+    "wt_pair_count": 21,
+    "mutant_pair_count": 22,
+    "wt_only_pair_count": 10,
+    "mutant_only_pair_count": 11,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        69
+      ],
+      [
+        2,
+        70
+      ],
+      [
+        4,
+        68
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        68
+      ],
+      [
+        2,
+        69
+      ],
+      [
+        4,
+        67
+      ],
+      [
+        5,
+        23
+      ],
+      [
+        6,
+        22
+      ],
+      [
+        7,
+        21
+      ],
+      [
+        8,
+        20
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        24,
+        44
+      ],
+      [
+        47,
+        65
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "AUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGACGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_window": "AUCCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGACGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure_window": ".((((((..((((.......))))((((((.......))))))....(((((.......)))))))))))..",
+    "mutant_structure_window": ".((((((((.(.....).)))))(((((((.......)))))))..((((((.......)))))).)))...",
+    "wt_sequence": "AUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGACGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_sequence": "AUCCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGACGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure": ".((((((..((((.......))))((((((.......))))))....(((((.......)))))))))))..",
+    "mutant_structure": ".((((((((.(.....).)))))(((((((.......)))))))..((((((.......)))))).)))..."
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_4",
+    "sequence_length": 72,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "U",
+    "mutation_to": "A",
+    "wt_mfe": -29.8,
+    "mutant_mfe": -25.3,
+    "mfe_delta": 4.5,
+    "bp_distance": 21,
+    "local_bp_distance": 21,
+    "wt_pair_count": 22,
+    "mutant_pair_count": 21,
+    "wt_only_pair_count": 11,
+    "mutant_only_pair_count": 10,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        69
+      ],
+      [
+        2,
+        70
+      ],
+      [
+        4,
+        68
+      ],
+      [
+        1,
+        71
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        19
+      ],
+      [
+        2,
+        20
+      ],
+      [
+        4,
+        18
+      ],
+      [
+        5,
+        17
+      ],
+      [
+        6,
+        16
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        24,
+        44
+      ],
+      [
+        47,
+        65
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "GUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGACGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_window": "GUACCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGACGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure_window": "(((((((..((((.......))))((((((.......))))))....(((((.......)))))))))))).",
+    "mutant_structure_window": ".((((((((...))))))))...(((((((.......)))))))..((((((.......)))))).......",
+    "wt_sequence": "GUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGACGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_sequence": "GUACCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGACGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure": "(((((((..((((.......))))((((((.......))))))....(((((.......)))))))))))).",
+    "mutant_structure": ".((((((((...))))))))...(((((((.......)))))))..((((((.......))))))......."
+  },
+  {
+    "record_id": "Domingo_2018_tRNA_4",
+    "sequence_length": 72,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "U",
+    "mutation_to": "G",
+    "wt_mfe": -29.8,
+    "mutant_mfe": -25.3,
+    "mfe_delta": 4.5,
+    "bp_distance": 21,
+    "local_bp_distance": 21,
+    "wt_pair_count": 22,
+    "mutant_pair_count": 21,
+    "wt_only_pair_count": 11,
+    "mutant_only_pair_count": 10,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        69
+      ],
+      [
+        2,
+        70
+      ],
+      [
+        4,
+        68
+      ],
+      [
+        1,
+        71
+      ],
+      [
+        5,
+        67
+      ],
+      [
+        6,
+        66
+      ],
+      [
+        7,
+        65
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        12,
+        22
+      ],
+      [
+        13,
+        21
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        19
+      ],
+      [
+        2,
+        20
+      ],
+      [
+        4,
+        18
+      ],
+      [
+        5,
+        17
+      ],
+      [
+        6,
+        16
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        24,
+        44
+      ],
+      [
+        47,
+        65
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 72,
+    "window_len": 72,
+    "wt_window": "GUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGACGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_window": "GUGCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGACGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure_window": "(((((((..((((.......))))((((((.......))))))....(((((.......)))))))))))).",
+    "mutant_structure_window": ".((((((((...))))))))...(((((((.......)))))))..((((((.......)))))).......",
+    "wt_sequence": "GUUCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGACGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "mutant_sequence": "GUGCCGUUGGCGUAAUGGUAACGCGUCUCCCUCCUAAGGAGACGACUGCGGGUUCGAGUCCCGUACGGAACG",
+    "wt_structure": "(((((((..((((.......))))((((((.......))))))....(((((.......)))))))))))).",
+    "mutant_structure": ".((((((((...))))))))...(((((((.......)))))))..((((((.......))))))......."
+  }
+]

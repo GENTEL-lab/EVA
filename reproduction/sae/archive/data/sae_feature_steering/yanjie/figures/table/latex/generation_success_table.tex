@@ -1,0 +1,28 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{caption}
+\begin{document}
+\begin{table}[ht]
+\centering
+\caption{Case-level success rates for SAE-guided generation on structure-switch variants across nine DMS benchmarks (\#Cases: top variants per benchmark by RNAfold WT--mutant base-pair distance). Each generated sequence is folded with RNAfold and scored as target minus opposite diagnostic base-pair hits (pairs unique to the desired vs.\ competing reference structure). A case succeeds if any steered sample outperforms its seed-matched unsteered baseline for at least one steering setting. Overall, 213/225 (95\%).}
+\label{tab:generation-success}
+\begin{tabular}{lrr}
+\toprule
+Dataset & \#Cases & Success rate \\
+\midrule
+Andreasson 2020 glmS & 39 & 35/39 (89\%) \\
+Chen 2019 pepper & 13 & 13/13 (100\%) \\
+Chen 2024 myo & 16 & 14/16 (88\%) \\
+Domingo 2018 tRNA & 16 & 16/16 (100\%) \\
+Janzen 2022 fam1b1 & 15 & 10/15 (67\%) \\
+Janzen 2022 fam21 & 38 & 38/38 (100\%) \\
+Janzen 2022 fam31 & 28 & 28/28 (100\%) \\
+Milena 2021 & 26 & 25/26 (96\%) \\
+Zuo 2023 okra & 34 & 34/34 (100\%) \\
+\midrule
+\textbf{Total} & 225 & 213/225 (95\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{document}

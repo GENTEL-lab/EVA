@@ -5,6 +5,11 @@ This bundle reproduces two SAE training modes used in EVA interpretability analy
 - `Batch-TopK SAE`
 - `sae_L1_penalty`
 
+Engineering smoke tests do not establish the provenance of the paper's SAE
+features. See [current validation and limitations](../../../docs/REPRODUCTION.md).
+Set `HF_DATA_FASTA` explicitly to the intended training split; automatic largest-file
+selection and fallback checkpoint substitution have been removed.
+
 All scripts are under `notebooks/interpretability_analysis/sae_repro_release/`.
 
 ## 1) Environment
@@ -14,12 +19,13 @@ All scripts are under `notebooks/interpretability_analysis/sae_repro_release/`.
 ```bash
 cd /path/to/EVA1
 pip install -r notebooks/interpretability_analysis/sae_repro_release/requirements-sae-training.txt
+export EVA_SAE_LOCAL=1
 ```
 
 ### Option B: Docker (recommended)
 
-For this workspace, the `.sh` scripts default to running inside the existing `eva1`
-container mounted at `/eva`, so you can execute them directly from the host:
+The `.sh` scripts default to a running `eva-repro` container with source mounted
+at `/eva`. Start it with the main reproduction guide, then run from the host:
 
 ```bash
 bash notebooks/interpretability_analysis/sae_repro_release/scripts/run_all_smoke.sh
@@ -28,7 +34,7 @@ bash notebooks/interpretability_analysis/sae_repro_release/scripts/run_all_smoke
 Override the container name only if needed:
 
 ```bash
-CONTAINER_NAME=eva1 bash notebooks/interpretability_analysis/sae_repro_release/scripts/run_all_smoke.sh
+CONTAINER_NAME=eva-repro bash notebooks/interpretability_analysis/sae_repro_release/scripts/run_all_smoke.sh
 ```
 
 If you need a dedicated image instead, build from repo root:
@@ -44,9 +50,9 @@ docker build \
 Run container:
 
 ```bash
-docker run --gpus all --rm -it \
-  -v /path/to/EVA1:/workspace/EVA1 \
-  -w /workspace/EVA1 \
+docker run --gpus device=0 --name eva-repro --rm -it \
+  -v "$PWD":/eva \
+  -w /eva \
   eva-sae:latest
 ```
 
@@ -55,8 +61,9 @@ docker run --gpus all --rm -it \
 Use fixed commit hashes from Hugging Face to avoid drift.
 
 ```bash
-export HF_MODEL_REVISION=<MODEL_COMMIT_SHA>
-export HF_DATA_REVISION=<DATASET_COMMIT_SHA>
+export HF_MODEL_REVISION=514db6705637c1ec963b728768fc9b34728699ee
+# Set HF_DATA_REVISION from the manifest for the exact intended split.
+: "${HF_DATA_REVISION:?Set the verified dataset revision before downloading}"
 
 huggingface-cli download GENTEL-Lab/EVA \
   --revision "$HF_MODEL_REVISION" \
@@ -85,8 +92,8 @@ Notes:
 
 - `Batch-TopK SAE` checkpoint default: `${HF_MODEL_ROOT}/EVA_1.4B_CLM`
 - `sae_L1_penalty` checkpoint default: `${HF_MODEL_ROOT}/EVA_145M`
-- FASTA is auto-detected as the largest `.fa/.fasta` file under `HF_DATA_ROOT`
-- Optional explicit override: `export HF_DATA_FASTA=/path/to/train.fa`
+- Required explicit input: `export HF_DATA_FASTA=/path/to/train.fa`
+- Record its SHA256 and training/validation split provenance before running.
 - Optional checkpoint override: `export SAE_CKPT_DIR=/path/to/checkpoint_dir`
 
 ## 4) Validate environment and paths
@@ -125,7 +132,7 @@ bash notebooks/interpretability_analysis/sae_repro_release/scripts/run_all_full.
 - Deterministic flags are enabled by default in configs (`deterministic: true`).
 - Full configs and smoke configs are both versioned under `configs/`.
 
-## Validation status
+## Historical validation claim (not independently verified here)
 
 - Smoke validation was executed on April 9, 2026 in GPU Docker runtime (`eva:latest`).
 - Both modes (`Batch-TopK SAE`, `sae_L1_penalty`) completed smoke training and produced checkpoints.

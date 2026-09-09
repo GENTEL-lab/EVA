@@ -177,8 +177,8 @@ class BaseEvaluator(ABC):
         if str(project_root) not in sys.path:
             sys.path.insert(0, str(project_root))
 
-        from data.lineage_dataset import create_lineage_dataset, SpanConfig
-        from data.rna_collator import create_rna_data_collator
+        from finetune.utils.lineage_dataset import create_lineage_dataset, SpanConfig
+        from finetune.utils.rna_collator import create_rna_data_collator
 
         stage_config = self.eval_config.get(self.stage, {})
 

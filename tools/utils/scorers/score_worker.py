@@ -21,6 +21,7 @@ Output:
 
 import sys
 import json
+import math
 import os
 from pathlib import Path
 from typing import Dict, List
@@ -29,9 +30,6 @@ from typing import Dict, List
 SCRIPT_DIR = Path(__file__).parent.absolute()
 TOOLS_DIR = SCRIPT_DIR.parent.parent  # tools/
 sys.path.insert(0, str(TOOLS_DIR))
-
-# Fix nan/memory errors caused by CUDA asynchronous execution
-os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 
 import torch
 import torch.nn.functional as F
@@ -97,82 +95,11 @@ def prepare_input_with_direction_tokens(
     }
 
 
-def compute_sequence_likelihood(
-    model,
-    tokenizer,
-    sequence: str,
-    device: str = 'cpu',
-    reduce_method: str = 'mean'
-) -> float:
-    """
-    Calculate log-likelihood for a single sequence
-
-    Args:
-        model: Model instance
-        tokenizer: Tokenizer instance
-        sequence: Input RNA sequence
-        device: Device
-        reduce_method: Reduction method ('mean' or 'sum')
-
-    Returns:
-        log-likelihood score
-    """
-    # Prepare input (add 5'/3' tokens)
-    inputs = prepare_input_with_direction_tokens(tokenizer, sequence, device)
-
-    # Forward pass
-    with torch.no_grad():
-        # Get model data type
-        model_dtype = next(model.parameters()).dtype
-
-        # Select autocast based on model data type
-        if model_dtype == torch.bfloat16:
-            with torch.autocast(device_type='cuda', dtype=torch.bfloat16):
-                outputs = model(
-                    input_ids=inputs['input_ids'],
-                    position_ids=inputs['position_ids'],
-                    sequence_ids=inputs['sequence_ids']
-                )
-        else:
-            outputs = model(
-                input_ids=inputs['input_ids'],
-                position_ids=inputs['position_ids'],
-                sequence_ids=inputs['sequence_ids']
-            )
-
-    logits = outputs.logits  # [batch_size, seq_len, vocab_size]
-
-    # Check if logits contain nan/inf
-    if torch.isnan(logits).any() or torch.isinf(logits).any():
-        print(f"[WARNING] logits contain nan or inf values", file=sys.stderr)
-        return float('nan')
-
-    # Calculate log-likelihood
-    log_probs = F.log_softmax(logits, dim=-1)
-
-    # Check if log_probs contain nan/inf
-    if torch.isnan(log_probs).any() or torch.isinf(log_probs).any():
-        print(f"[WARNING] log_probs contain nan or inf values", file=sys.stderr)
-        return float('nan')
-
-    # Get log probabilities of actual tokens
-    # Note: token at prediction position i is input_ids[i+1]
-    input_ids = inputs['input_ids'][0]  # [seq_len]
-    token_log_probs = []
-
-    for i in range(len(input_ids) - 1):
-        # Token at prediction position i is input_ids[i+1]
-        predicted_token = input_ids[i + 1]
-        log_prob = log_probs[0, i, predicted_token].item()
-        token_log_probs.append(log_prob)
-
-    # Reduce
-    if reduce_method == 'mean':
-        result = sum(token_log_probs) / len(token_log_probs) if token_log_probs else 0.0
-    else:  # sum
-        result = sum(token_log_probs) if token_log_probs else 0.0
-
-    return result
+def compute_sequence_likelihood(model, tokenizer, sequence: str, device: str = 'cpu',
+                                reduce_method: str = 'mean') -> float:
+    """Score one sequence using the same strict implementation as batched scoring."""
+    return compute_batch_likelihood(model, tokenizer, [sequence], device,
+                                    reduce_method=reduce_method)[0]
 
 
 def compute_batch_likelihood(
@@ -197,6 +124,10 @@ def compute_batch_likelihood(
     Returns:
         List of log-likelihood scores
     """
+    if reduce_method not in ('mean', 'sum'):
+        raise ValueError('reduce_method must be mean or sum')
+    if any(not isinstance(s, str) or not s for s in sequences):
+        raise ValueError('Sequences must be nonempty strings')
     if not sequences:
         return []
 
@@ -310,9 +241,7 @@ def compute_batch_likelihood(
 
         # Check for nan/inf
         if torch.isnan(logits[i]).any() or torch.isinf(logits[i]).any():
-            print(f"[WARNING] Sequence {i} logits contain nan or inf values", file=sys.stderr)
-            results.append(float('nan'))
-            continue
+            raise ValueError(f"Sequence {i} logits contain nan or inf values")
 
         # Get log probabilities of actual tokens
         token_log_probs = []
@@ -330,9 +259,34 @@ def compute_batch_likelihood(
         else:
             result = sum(token_log_probs) if token_log_probs else 0.0
 
+        if not token_log_probs or not math.isfinite(result):
+            raise ValueError(f'Sequence {i} has no finite scored targets')
         results.append(result)
 
     return results
+
+
+def score_in_batches(model, tokenizer, sequences, device='cpu', *, batch_size=1,
+                     reduce_method='mean', exclude_special_tokens=False):
+    """Bound memory usage and fail on incomplete/non-finite predictions.
+
+    Errors propagate without switching scoring implementations or dropping rows.
+    """
+    if batch_size < 1:
+        raise ValueError('batch_size must be positive')
+    if reduce_method not in ('mean', 'sum'):
+        raise ValueError('reduce_method must be mean or sum')
+    scores = []
+    for start in range(0, len(sequences), batch_size):
+        batch = sequences[start:start + batch_size]
+        values = compute_batch_likelihood(
+            model, tokenizer, batch, device, reduce_method=reduce_method,
+            exclude_special_tokens=exclude_special_tokens,
+        )
+        if len(values) != len(batch) or not all(math.isfinite(x) for x in values):
+            raise ValueError(f'Invalid predictions for batch starting at row {start}')
+        scores.extend(values)
+    return scores
 
 
 def main():
@@ -352,6 +306,11 @@ def main():
     batch_size_arg = sys.argv[6] if len(sys.argv) > 6 else '128'
 
     try:
+        batch_size = int(batch_size_arg)
+        if batch_size < 1:
+            raise ValueError('batch_size must be positive')
+        if reduce_method not in ('mean', 'sum'):
+            raise ValueError('reduce_method must be mean or sum')
         # 1. Read sequences
         with open(sequences_json, 'r') as f:
             data = json.load(f)
@@ -387,24 +346,11 @@ def main():
 
             print(f"[PROGRESS] Processing sequences {start_idx+1}-{end_idx}/{num_sequences}", file=sys.stderr, flush=True)
 
-            try:
-                # Batch calculation
-                batch_lls = compute_batch_likelihood(model, tokenizer, batch_sequences, device, reduce_method)
-                log_likelihoods.extend(batch_lls)
-            except Exception as e:
-                import traceback
-                print(f"[WARNING] Batch {batch_idx} calculation failed, falling back to sequential processing: {e}", file=sys.stderr)
-                traceback.print_exc(file=sys.stderr)
-
-                # Fall back to sequential processing
-                for i, seq in enumerate(batch_sequences):
-                    try:
-                        ll = compute_sequence_likelihood(model, tokenizer, seq, device, reduce_method)
-                        log_likelihoods.append(ll)
-                    except Exception as e2:
-                        seq_idx = start_idx + i
-                        print(f"[WARNING] Sequence {seq_idx} calculation failed: {e2}", file=sys.stderr)
-                        log_likelihoods.append(float('nan'))
+            batch_lls = score_in_batches(
+                model, tokenizer, batch_sequences, device, batch_size=batch_size,
+                reduce_method=reduce_method,
+            )
+            log_likelihoods.extend(batch_lls)
 
         print(f"[INFO] Calculation completed", file=sys.stderr)
 

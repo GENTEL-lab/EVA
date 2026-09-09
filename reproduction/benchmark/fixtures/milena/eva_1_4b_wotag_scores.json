@@ -1,0 +1,957 @@
+{
+  "input_file": "/data/yanjie_huang/rna_benchmark/z_rnagym_70/original_data_fasta_classified/ribozyme/cata.fasta",
+  "checkpoint": "/data/yanjie_huang/rna_benchmark/z_rnagym_70/RNAVerse/checkpoint/clm",
+  "mode": "rna",
+  "normalize": false,
+  "exclude_special_tokens": true,
+  "length_normalize": false,
+  "num_sequences": 135,
+  "condition": null,
+  "scores": [
+    {
+      "index": 0,
+      "header": "G2U_fitness_0.03584",
+      "sequence": "GUAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.66646993160248
+    },
+    {
+      "index": 1,
+      "header": "G2C_fitness_0.00599",
+      "sequence": "GCAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.3405898809433
+    },
+    {
+      "index": 2,
+      "header": "G2A_fitness_0.03043",
+      "sequence": "GAAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.55436021089554
+    },
+    {
+      "index": 3,
+      "header": "A3U_fitness_0.00134",
+      "sequence": "GGUACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.90576577186584
+    },
+    {
+      "index": 4,
+      "header": "A3C_fitness_0.00108",
+      "sequence": "GGCACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.42060035467148
+    },
+    {
+      "index": 5,
+      "header": "A3G_fitness_0.00147",
+      "sequence": "GGGACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.25543260574341
+    },
+    {
+      "index": 6,
+      "header": "A4U_fitness_0.00108",
+      "sequence": "GGAUCACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.50934493541718
+    },
+    {
+      "index": 7,
+      "header": "A4C_fitness_0.00138",
+      "sequence": "GGACCACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.51220643520355
+    },
+    {
+      "index": 8,
+      "header": "A4G_fitness_0.00578",
+      "sequence": "GGAGCACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.35644054412842
+    },
+    {
+      "index": 9,
+      "header": "C5U_fitness_0.00258",
+      "sequence": "GGAAUACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.93179738521576
+    },
+    {
+      "index": 10,
+      "header": "C5G_fitness_0.00138",
+      "sequence": "GGAAGACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.8388940691948
+    },
+    {
+      "index": 11,
+      "header": "C5A_fitness_0.00137",
+      "sequence": "GGAAAACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.00647521018982
+    },
+    {
+      "index": 12,
+      "header": "A6U_fitness_0.00125",
+      "sequence": "GGAACUCUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.17620742321014
+    },
+    {
+      "index": 13,
+      "header": "A6C_fitness_0.00142",
+      "sequence": "GGAACCCUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.26540732383728
+    },
+    {
+      "index": 14,
+      "header": "A6G_fitness_0.00184",
+      "sequence": "GGAACGCUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.56009316444397
+    },
+    {
+      "index": 15,
+      "header": "C7U_fitness_0.00756",
+      "sequence": "GGAACAUUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.29856789112091
+    },
+    {
+      "index": 16,
+      "header": "C7G_fitness_0.00872",
+      "sequence": "GGAACAGUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.902488052845
+    },
+    {
+      "index": 17,
+      "header": "C7A_fitness_0.01106",
+      "sequence": "GGAACAAUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.05634951591492
+    },
+    {
+      "index": 18,
+      "header": "U8C_fitness_0.01258",
+      "sequence": "GGAACACCAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.25985950231552
+    },
+    {
+      "index": 19,
+      "header": "U8G_fitness_0.01555",
+      "sequence": "GGAACACGAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.06375920772552
+    },
+    {
+      "index": 20,
+      "header": "U8A_fitness_0.02618",
+      "sequence": "GGAACACAAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.84956061840057
+    },
+    {
+      "index": 21,
+      "header": "A9U_fitness_0.00140",
+      "sequence": "GGAACACUUUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.63864600658417
+    },
+    {
+      "index": 22,
+      "header": "A9C_fitness_0.00178",
+      "sequence": "GGAACACUCUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.02618169784546
+    },
+    {
+      "index": 23,
+      "header": "A9G_fitness_0.00161",
+      "sequence": "GGAACACUGUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.79901945590973
+    },
+    {
+      "index": 24,
+      "header": "U10C_fitness_0.00886",
+      "sequence": "GGAACACUACCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.67135900259018
+    },
+    {
+      "index": 25,
+      "header": "U10G_fitness_0.03398",
+      "sequence": "GGAACACUAGCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.89752933382988
+    },
+    {
+      "index": 26,
+      "header": "U10A_fitness_0.02341",
+      "sequence": "GGAACACUAACCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.15877914428711
+    },
+    {
+      "index": 27,
+      "header": "C11U_fitness_0.02251",
+      "sequence": "GGAACACUAUUCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.91711759567261
+    },
+    {
+      "index": 28,
+      "header": "C11G_fitness_0.00332",
+      "sequence": "GGAACACUAUGCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.60556709766388
+    },
+    {
+      "index": 29,
+      "header": "C11A_fitness_0.00224",
+      "sequence": "GGAACACUAUACGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -78.13003671169281
+    },
+    {
+      "index": 30,
+      "header": "C12U_fitness_0.04278",
+      "sequence": "GGAACACUAUCUGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.77402257919312
+    },
+    {
+      "index": 31,
+      "header": "C12G_fitness_0.01673",
+      "sequence": "GGAACACUAUCGGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.33511996269226
+    },
+    {
+      "index": 32,
+      "header": "C12A_fitness_0.01113",
+      "sequence": "GGAACACUAUCAGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.99830341339111
+    },
+    {
+      "index": 33,
+      "header": "G13U_fitness_0.02565",
+      "sequence": "GGAACACUAUCCUACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.3323609828949
+    },
+    {
+      "index": 34,
+      "header": "G13C_fitness_0.00846",
+      "sequence": "GGAACACUAUCCCACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.01313716173172
+    },
+    {
+      "index": 35,
+      "header": "G13A_fitness_0.01188",
+      "sequence": "GGAACACUAUCCAACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.61067736148834
+    },
+    {
+      "index": 36,
+      "header": "A14U_fitness_0.00724",
+      "sequence": "GGAACACUAUCCGUCUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.33890414237976
+    },
+    {
+      "index": 37,
+      "header": "A14C_fitness_0.01238",
+      "sequence": "GGAACACUAUCCGCCUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.59542489051819
+    },
+    {
+      "index": 38,
+      "header": "A14G_fitness_0.05450",
+      "sequence": "GGAACACUAUCCGGCUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.9565846323967
+    },
+    {
+      "index": 39,
+      "header": "C15U_fitness_0.04637",
+      "sequence": "GGAACACUAUCCGAUUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.98892998695374
+    },
+    {
+      "index": 40,
+      "header": "C15G_fitness_0.03147",
+      "sequence": "GGAACACUAUCCGAGUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.52945005893707
+    },
+    {
+      "index": 41,
+      "header": "C15A_fitness_0.00675",
+      "sequence": "GGAACACUAUCCGAAUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.76415121555328
+    },
+    {
+      "index": 42,
+      "header": "U16C_fitness_0.04830",
+      "sequence": "GGAACACUAUCCGACCGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -78.31931138038635
+    },
+    {
+      "index": 43,
+      "header": "U16G_fitness_0.00727",
+      "sequence": "GGAACACUAUCCGACGGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.64994704723358
+    },
+    {
+      "index": 44,
+      "header": "U16A_fitness_0.03706",
+      "sequence": "GGAACACUAUCCGACAGCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.40660631656647
+    },
+    {
+      "index": 45,
+      "header": "G17U_fitness_0.04434",
+      "sequence": "GGAACACUAUCCGACUUCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.91379606723785
+    },
+    {
+      "index": 46,
+      "header": "G17C_fitness_0.04127",
+      "sequence": "GGAACACUAUCCGACUCCGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.65740776062012
+    },
+    {
+      "index": 47,
+      "header": "G17A_fitness_0.03988",
+      "sequence": "GGAACACUAUCCGACUACGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -78.57998895645142
+    },
+    {
+      "index": 48,
+      "header": "U46A_fitness_0.00119",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGAGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.90281248092651
+    },
+    {
+      "index": 49,
+      "header": "U46G_fitness_0.00160",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGGGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.36507230997086
+    },
+    {
+      "index": 50,
+      "header": "U46C_fitness_0.00106",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGGCGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.81661176681519
+    },
+    {
+      "index": 51,
+      "header": "G45A_fitness_0.00127",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGAUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.54605746269226
+    },
+    {
+      "index": 52,
+      "header": "G45C_fitness_0.00090",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGCUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.9556792974472
+    },
+    {
+      "index": 53,
+      "header": "G45U_fitness_0.00130",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGGUUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.4996770620346
+    },
+    {
+      "index": 54,
+      "header": "G44A_fitness_0.04846",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGAGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.52283000946045
+    },
+    {
+      "index": 55,
+      "header": "G44C_fitness_0.00355",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGCGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.82555735111237
+    },
+    {
+      "index": 56,
+      "header": "G44U_fitness_0.00156",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAGUGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.52119815349579
+    },
+    {
+      "index": 57,
+      "header": "G43A_fitness_0.10681",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAAGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.59123301506042
+    },
+    {
+      "index": 58,
+      "header": "G43C_fitness_0.00198",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUACGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.63670015335083
+    },
+    {
+      "index": 59,
+      "header": "G43U_fitness_0.00148",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUAUGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.40699219703674
+    },
+    {
+      "index": 60,
+      "header": "A42G_fitness_0.01082",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUGGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.7867237329483
+    },
+    {
+      "index": 61,
+      "header": "A42C_fitness_0.00284",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUCGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.01990056037903
+    },
+    {
+      "index": 62,
+      "header": "A42U_fitness_0.02211",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUUUGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.6662432551384
+    },
+    {
+      "index": 63,
+      "header": "U41A_fitness_0.00138",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUAAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.51230990886688
+    },
+    {
+      "index": 64,
+      "header": "U41G_fitness_0.00110",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUGAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.12924921512604
+    },
+    {
+      "index": 65,
+      "header": "U41C_fitness_0.00142",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCUCAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.89768052101135
+    },
+    {
+      "index": 66,
+      "header": "U40A_fitness_0.00612",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCAUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.2408504486084
+    },
+    {
+      "index": 67,
+      "header": "U40G_fitness_0.00162",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCGUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.31815630197525
+    },
+    {
+      "index": 68,
+      "header": "U40C_fitness_0.00072",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUCCUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.49831235408783
+    },
+    {
+      "index": 69,
+      "header": "C39A_fitness_0.00450",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUAUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.23090434074402
+    },
+    {
+      "index": 70,
+      "header": "C39G_fitness_0.00135",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUGUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.69778716564178
+    },
+    {
+      "index": 71,
+      "header": "C39U_fitness_0.01175",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGUUUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.97878456115723
+    },
+    {
+      "index": 72,
+      "header": "U38A_fitness_0.00145",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGACUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.53540933132172
+    },
+    {
+      "index": 73,
+      "header": "U38G_fitness_0.00116",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGGCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.64911103248596
+    },
+    {
+      "index": 74,
+      "header": "U38C_fitness_0.00116",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAGCCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.39200520515442
+    },
+    {
+      "index": 75,
+      "header": "G37A_fitness_0.01286",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAAUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.8608283996582
+    },
+    {
+      "index": 76,
+      "header": "G37C_fitness_0.00124",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUACUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.83405846357346
+    },
+    {
+      "index": 77,
+      "header": "G37U_fitness_0.00425",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUAUUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.36891400814056
+    },
+    {
+      "index": 78,
+      "header": "A36G_fitness_0.00361",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUGGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.97688037157059
+    },
+    {
+      "index": 79,
+      "header": "A36C_fitness_0.00177",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUCGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.97351276874542
+    },
+    {
+      "index": 80,
+      "header": "A36U_fitness_0.00167",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAUUGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.2859799861908
+    },
+    {
+      "index": 81,
+      "header": "U35A_fitness_0.00283",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAAAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.94833207130432
+    },
+    {
+      "index": 82,
+      "header": "U35G_fitness_0.00120",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUAGAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.58702635765076
+    },
+    {
+      "index": 83,
+      "header": "U35C_fitness_0.00131",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUACAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.05736422538757
+    },
+    {
+      "index": 84,
+      "header": "A34G_fitness_0.01769",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUGUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.97225362062454
+    },
+    {
+      "index": 85,
+      "header": "A34C_fitness_0.00197",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUCUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.02046704292297
+    },
+    {
+      "index": 86,
+      "header": "A34U_fitness_0.00270",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGUUUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.87047004699707
+    },
+    {
+      "index": 87,
+      "header": "U33A_fitness_0.06597",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGAAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.48956048488617
+    },
+    {
+      "index": 88,
+      "header": "U33G_fitness_0.01215",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGGAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.84706342220306
+    },
+    {
+      "index": 89,
+      "header": "U33C_fitness_0.03071",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUGCAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.27894520759583
+    },
+    {
+      "index": 90,
+      "header": "G32A_fitness_0.04775",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUAUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.50258696079254
+    },
+    {
+      "index": 91,
+      "header": "G32C_fitness_0.00178",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUCUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.79591965675354
+    },
+    {
+      "index": 92,
+      "header": "G32U_fitness_0.00470",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAUUUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.35310816764832
+    },
+    {
+      "index": 93,
+      "header": "U31A_fitness_0.00126",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAAGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.46543860435486
+    },
+    {
+      "index": 94,
+      "header": "U31G_fitness_0.00134",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGAGGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.25234425067902
+    },
+    {
+      "index": 95,
+      "header": "U31C_fitness_0.04853",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGACGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.8328766822815
+    },
+    {
+      "index": 96,
+      "header": "A30G_fitness_0.00138",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGGUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.33106988668442
+    },
+    {
+      "index": 97,
+      "header": "A30C_fitness_0.00183",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGCUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.2712858915329
+    },
+    {
+      "index": 98,
+      "header": "A30U_fitness_0.00135",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAGUUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.48777747154236
+    },
+    {
+      "index": 99,
+      "header": "G29A_fitness_0.00125",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAAAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.55573987960815
+    },
+    {
+      "index": 100,
+      "header": "G29C_fitness_0.00122",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGACAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -78.09802675247192
+    },
+    {
+      "index": 101,
+      "header": "G29U_fitness_0.00162",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGAUAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.99826729297638
+    },
+    {
+      "index": 102,
+      "header": "A28G_fitness_0.01986",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGGGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.59135746955872
+    },
+    {
+      "index": 103,
+      "header": "A28C_fitness_0.00227",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGCGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -78.11424005031586
+    },
+    {
+      "index": 104,
+      "header": "A28U_fitness_0.00149",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGGUGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.55217170715332
+    },
+    {
+      "index": 105,
+      "header": "G27A_fitness_0.00300",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGAAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -78.04129552841187
+    },
+    {
+      "index": 106,
+      "header": "G27C_fitness_0.00134",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGCAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.62534356117249
+    },
+    {
+      "index": 107,
+      "header": "G27U_fitness_0.00176",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUGUAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.91214227676392
+    },
+    {
+      "index": 108,
+      "header": "G26A_fitness_0.00307",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUAGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -78.08672404289246
+    },
+    {
+      "index": 109,
+      "header": "G26C_fitness_0.00140",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUCGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -78.37810826301575
+    },
+    {
+      "index": 110,
+      "header": "G26U_fitness_0.00144",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGUUGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -78.05134356021881
+    },
+    {
+      "index": 111,
+      "header": "U25A_fitness_0.01474",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGAGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.27322828769684
+    },
+    {
+      "index": 112,
+      "header": "U25G_fitness_0.00636",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGGGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.40984582901001
+    },
+    {
+      "index": 113,
+      "header": "U25C_fitness_0.00732",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGGCGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.69707989692688
+    },
+    {
+      "index": 114,
+      "header": "G24A_fitness_0.00569",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGAUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -78.18050467967987
+    },
+    {
+      "index": 115,
+      "header": "G24C_fitness_0.00316",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGCUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.73417174816132
+    },
+    {
+      "index": 116,
+      "header": "G24U_fitness_0.00976",
+      "sequence": "GGAACACUAUCCGACUGCGGUCGUUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -78.0770081281662
+    },
+    {
+      "index": 117,
+      "header": "G23A_fitness_0.00669",
+      "sequence": "GGAACACUAUCCGACUGCGGUCAGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.44481694698334
+    },
+    {
+      "index": 118,
+      "header": "G23C_fitness_0.00230",
+      "sequence": "GGAACACUAUCCGACUGCGGUCCGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -78.08211481571198
+    },
+    {
+      "index": 119,
+      "header": "G23U_fitness_0.00753",
+      "sequence": "GGAACACUAUCCGACUGCGGUCUGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.90292412042618
+    },
+    {
+      "index": 120,
+      "header": "C22A_fitness_0.01124",
+      "sequence": "GGAACACUAUCCGACUGCGGUAGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.58913171291351
+    },
+    {
+      "index": 121,
+      "header": "C22G_fitness_0.01740",
+      "sequence": "GGAACACUAUCCGACUGCGGUGGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.8363333940506
+    },
+    {
+      "index": 122,
+      "header": "C22U_fitness_0.02841",
+      "sequence": "GGAACACUAUCCGACUGCGGUUGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.0573673248291
+    },
+    {
+      "index": 123,
+      "header": "U21A_fitness_0.00333",
+      "sequence": "GGAACACUAUCCGACUGCGGACGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -78.00482404232025
+    },
+    {
+      "index": 124,
+      "header": "U21G_fitness_0.02294",
+      "sequence": "GGAACACUAUCCGACUGCGGGCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.33335489034653
+    },
+    {
+      "index": 125,
+      "header": "U21C_fitness_0.02066",
+      "sequence": "GGAACACUAUCCGACUGCGGCCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.59463459253311
+    },
+    {
+      "index": 126,
+      "header": "G20A_fitness_0.03777",
+      "sequence": "GGAACACUAUCCGACUGCGAUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -78.04786932468414
+    },
+    {
+      "index": 127,
+      "header": "G20C_fitness_0.00639",
+      "sequence": "GGAACACUAUCCGACUGCGCUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.93533051013947
+    },
+    {
+      "index": 128,
+      "header": "G20U_fitness_0.04210",
+      "sequence": "GGAACACUAUCCGACUGCGUUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -78.03382503986359
+    },
+    {
+      "index": 129,
+      "header": "G19A_fitness_0.04277",
+      "sequence": "GGAACACUAUCCGACUGCAGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.20670115947723
+    },
+    {
+      "index": 130,
+      "header": "G19C_fitness_0.04148",
+      "sequence": "GGAACACUAUCCGACUGCCGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -78.1629102230072
+    },
+    {
+      "index": 131,
+      "header": "G19U_fitness_0.04375",
+      "sequence": "GGAACACUAUCCGACUGCUGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.26406902074814
+    },
+    {
+      "index": 132,
+      "header": "C18A_fitness_0.04075",
+      "sequence": "GGAACACUAUCCGACUGAGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.32124549150467
+    },
+    {
+      "index": 133,
+      "header": "C18G_fitness_0.04151",
+      "sequence": "GGAACACUAUCCGACUGGGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -77.0635312795639
+    },
+    {
+      "index": 134,
+      "header": "C18U_fitness_0.04324",
+      "sequence": "GGAACACUAUCCGACUGUGGUCGGUGGAGAUGUAUAGUCUUAGGGUGAGGCUGG",
+      "length": 54,
+      "log_likelihood": -76.95321464538574
+    }
+  ]
+}

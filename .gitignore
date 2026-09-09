@@ -1,5 +1,7 @@
-docs/
+# Reproduction guides are source deliverables, not generated documentation.
 reference/
+!reproduction/benchmark_release/reference/
+!reproduction/benchmark_release/reference/**
 checkpoint/*
 !checkpoint/.gitkeep
 data/output/**

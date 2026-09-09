@@ -1,0 +1,566 @@
+2026-06-01 18:24:37,656 | INFO | ========================================================================
+2026-06-01 18:24:37,656 | INFO | EVA SAE training
+2026-06-01 18:24:37,656 | INFO | repo_root: /data/yanjie_huang/eva/EVA1
+2026-06-01 18:24:37,656 | INFO | mode: sae_l1_penalty
+2026-06-01 18:24:37,656 | INFO | config: /data/yanjie_huang/eva/EVA1/notebooks/interpretability_analysis/sae_repro_release/scripts/../configs/config_sae_l1_penalty_full_1400M.yaml
+2026-06-01 18:24:37,656 | INFO | checkpoint: /data/yanjie_huang/eva/EVA_checkpoint/1400M_1129/checkpoint_13500
+2026-06-01 18:24:37,656 | INFO | fasta: /data/yanjie_huang/rna_benchmark/interpretability/DSSR_sequences/train_30M_sqrt_s42_50only.fa
+2026-06-01 18:24:37,656 | INFO | output: /data/yanjie_huang/eva/EVA1/notebooks/interpretability_analysis/sae_repro_release/outputs/sae_l1_penalty_1400M/checkpoints
+2026-06-01 18:24:37,656 | INFO | seed: 42 deterministic: True
+2026-06-01 18:24:37,656 | INFO | device: cuda:7
+2026-06-01 18:24:37,656 | INFO | ========================================================================
+2026-06-01 18:24:41,520 | INFO | MegaBlocks initialization: device=cuda:7, dtype=torch.float32
+2026-06-01 18:24:41,520 | INFO | Detected single GPU environment, forcing moe_world_size=1 (original config: 1)
+2026-06-01 18:24:41,521 | INFO | Single GPU environment, skipping distributed initialization
+2026-06-01 18:24:41,521 | INFO | Single GPU environment, creating non-distributed device mesh
+2026-06-01 18:24:41,521 | INFO | Using Mock device mesh object
+2026-06-01 18:24:41,521 | INFO | Mock device mesh creation complete
+2026-06-01 18:24:41,521 | INFO | Device manager initialization complete:
+2026-06-01 18:24:41,521 | INFO |   - World size: 1
+2026-06-01 18:24:41,521 | INFO |   - Expert parallel size: 1
+2026-06-01 18:24:41,521 | INFO |   - Weight parallel size: 1
+2026-06-01 18:24:41,521 | INFO |   - Device mesh shape: (1,)
+2026-06-01 18:24:41,521 | INFO |   - Device mesh names: ['data_parallel']
+2026-06-01 18:24:41,580 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:41,580 | INFO | FSDP environment: No
+2026-06-01 18:24:41,580 | INFO |   - Number of experts: 8
+2026-06-01 18:24:41,580 | INFO |   - Experts per token: 2
+2026-06-01 18:24:41,580 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:41,580 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:41,580 | INFO | EvaLayer 0 initialization completed
+2026-06-01 18:24:41,612 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:41,612 | INFO | FSDP environment: No
+2026-06-01 18:24:41,612 | INFO |   - Number of experts: 8
+2026-06-01 18:24:41,613 | INFO |   - Experts per token: 2
+2026-06-01 18:24:41,613 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:41,613 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:41,613 | INFO | EvaLayer 1 initialization completed
+2026-06-01 18:24:41,644 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:41,644 | INFO | FSDP environment: No
+2026-06-01 18:24:41,644 | INFO |   - Number of experts: 8
+2026-06-01 18:24:41,644 | INFO |   - Experts per token: 2
+2026-06-01 18:24:41,644 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:41,644 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:41,644 | INFO | EvaLayer 2 initialization completed
+2026-06-01 18:24:41,675 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:41,675 | INFO | FSDP environment: No
+2026-06-01 18:24:41,675 | INFO |   - Number of experts: 8
+2026-06-01 18:24:41,675 | INFO |   - Experts per token: 2
+2026-06-01 18:24:41,675 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:41,676 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:41,676 | INFO | EvaLayer 3 initialization completed
+2026-06-01 18:24:41,708 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:41,708 | INFO | FSDP environment: No
+2026-06-01 18:24:41,708 | INFO |   - Number of experts: 8
+2026-06-01 18:24:41,708 | INFO |   - Experts per token: 2
+2026-06-01 18:24:41,708 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:41,708 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:41,708 | INFO | EvaLayer 4 initialization completed
+2026-06-01 18:24:41,739 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:41,739 | INFO | FSDP environment: No
+2026-06-01 18:24:41,739 | INFO |   - Number of experts: 8
+2026-06-01 18:24:41,739 | INFO |   - Experts per token: 2
+2026-06-01 18:24:41,739 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:41,739 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:41,739 | INFO | EvaLayer 5 initialization completed
+2026-06-01 18:24:41,770 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:41,770 | INFO | FSDP environment: No
+2026-06-01 18:24:41,770 | INFO |   - Number of experts: 8
+2026-06-01 18:24:41,770 | INFO |   - Experts per token: 2
+2026-06-01 18:24:41,770 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:41,770 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:41,770 | INFO | EvaLayer 6 initialization completed
+2026-06-01 18:24:41,801 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:41,801 | INFO | FSDP environment: No
+2026-06-01 18:24:41,802 | INFO |   - Number of experts: 8
+2026-06-01 18:24:41,802 | INFO |   - Experts per token: 2
+2026-06-01 18:24:41,802 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:41,802 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:41,802 | INFO | EvaLayer 7 initialization completed
+2026-06-01 18:24:41,833 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:41,833 | INFO | FSDP environment: No
+2026-06-01 18:24:41,833 | INFO |   - Number of experts: 8
+2026-06-01 18:24:41,833 | INFO |   - Experts per token: 2
+2026-06-01 18:24:41,833 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:41,833 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:41,833 | INFO | EvaLayer 8 initialization completed
+2026-06-01 18:24:41,864 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:41,864 | INFO | FSDP environment: No
+2026-06-01 18:24:41,864 | INFO |   - Number of experts: 8
+2026-06-01 18:24:41,864 | INFO |   - Experts per token: 2
+2026-06-01 18:24:41,864 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:41,864 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:41,864 | INFO | EvaLayer 9 initialization completed
+2026-06-01 18:24:41,895 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:41,895 | INFO | FSDP environment: No
+2026-06-01 18:24:41,895 | INFO |   - Number of experts: 8
+2026-06-01 18:24:41,895 | INFO |   - Experts per token: 2
+2026-06-01 18:24:41,895 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:41,895 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:41,895 | INFO | EvaLayer 10 initialization completed
+2026-06-01 18:24:41,926 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:41,926 | INFO | FSDP environment: No
+2026-06-01 18:24:41,926 | INFO |   - Number of experts: 8
+2026-06-01 18:24:41,926 | INFO |   - Experts per token: 2
+2026-06-01 18:24:41,926 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:41,926 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:41,926 | INFO | EvaLayer 11 initialization completed
+2026-06-01 18:24:41,957 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:41,957 | INFO | FSDP environment: No
+2026-06-01 18:24:41,958 | INFO |   - Number of experts: 8
+2026-06-01 18:24:41,958 | INFO |   - Experts per token: 2
+2026-06-01 18:24:41,958 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:41,958 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:41,958 | INFO | EvaLayer 12 initialization completed
+2026-06-01 18:24:41,989 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:41,989 | INFO | FSDP environment: No
+2026-06-01 18:24:41,989 | INFO |   - Number of experts: 8
+2026-06-01 18:24:41,989 | INFO |   - Experts per token: 2
+2026-06-01 18:24:41,989 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:41,989 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:41,989 | INFO | EvaLayer 13 initialization completed
+2026-06-01 18:24:42,020 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:42,020 | INFO | FSDP environment: No
+2026-06-01 18:24:42,020 | INFO |   - Number of experts: 8
+2026-06-01 18:24:42,020 | INFO |   - Experts per token: 2
+2026-06-01 18:24:42,020 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:42,020 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:42,020 | INFO | EvaLayer 14 initialization completed
+2026-06-01 18:24:42,051 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:42,051 | INFO | FSDP environment: No
+2026-06-01 18:24:42,051 | INFO |   - Number of experts: 8
+2026-06-01 18:24:42,051 | INFO |   - Experts per token: 2
+2026-06-01 18:24:42,051 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:42,051 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:42,051 | INFO | EvaLayer 15 initialization completed
+2026-06-01 18:24:42,082 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:42,082 | INFO | FSDP environment: No
+2026-06-01 18:24:42,082 | INFO |   - Number of experts: 8
+2026-06-01 18:24:42,082 | INFO |   - Experts per token: 2
+2026-06-01 18:24:42,082 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:42,082 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:42,082 | INFO | EvaLayer 16 initialization completed
+2026-06-01 18:24:42,113 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:42,113 | INFO | FSDP environment: No
+2026-06-01 18:24:42,113 | INFO |   - Number of experts: 8
+2026-06-01 18:24:42,113 | INFO |   - Experts per token: 2
+2026-06-01 18:24:42,114 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:42,114 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:42,114 | INFO | EvaLayer 17 initialization completed
+2026-06-01 18:24:42,145 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:42,145 | INFO | FSDP environment: No
+2026-06-01 18:24:42,145 | INFO |   - Number of experts: 8
+2026-06-01 18:24:42,145 | INFO |   - Experts per token: 2
+2026-06-01 18:24:42,145 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:42,145 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:42,145 | INFO | EvaLayer 18 initialization completed
+2026-06-01 18:24:42,176 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:42,176 | INFO | FSDP environment: No
+2026-06-01 18:24:42,176 | INFO |   - Number of experts: 8
+2026-06-01 18:24:42,176 | INFO |   - Experts per token: 2
+2026-06-01 18:24:42,176 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:42,176 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:42,176 | INFO | EvaLayer 19 initialization completed
+2026-06-01 18:24:42,207 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:42,207 | INFO | FSDP environment: No
+2026-06-01 18:24:42,207 | INFO |   - Number of experts: 8
+2026-06-01 18:24:42,207 | INFO |   - Experts per token: 2
+2026-06-01 18:24:42,207 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:42,208 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:42,208 | INFO | EvaLayer 20 initialization completed
+2026-06-01 18:24:42,239 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:42,239 | INFO | FSDP environment: No
+2026-06-01 18:24:42,239 | INFO |   - Number of experts: 8
+2026-06-01 18:24:42,239 | INFO |   - Experts per token: 2
+2026-06-01 18:24:42,239 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:42,239 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:42,239 | INFO | EvaLayer 21 initialization completed
+2026-06-01 18:24:42,270 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:42,270 | INFO | FSDP environment: No
+2026-06-01 18:24:42,270 | INFO |   - Number of experts: 8
+2026-06-01 18:24:42,270 | INFO |   - Experts per token: 2
+2026-06-01 18:24:42,270 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:42,270 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:42,270 | INFO | EvaLayer 22 initialization completed
+2026-06-01 18:24:42,302 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:42,302 | INFO | FSDP environment: No
+2026-06-01 18:24:42,302 | INFO |   - Number of experts: 8
+2026-06-01 18:24:42,302 | INFO |   - Experts per token: 2
+2026-06-01 18:24:42,302 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:42,302 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:42,302 | INFO | EvaLayer 23 initialization completed
+2026-06-01 18:24:42,334 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:42,334 | INFO | FSDP environment: No
+2026-06-01 18:24:42,334 | INFO |   - Number of experts: 8
+2026-06-01 18:24:42,334 | INFO |   - Experts per token: 2
+2026-06-01 18:24:42,334 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:42,334 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:42,334 | INFO | EvaLayer 24 initialization completed
+2026-06-01 18:24:42,365 | INFO | RNAMoEWrapper initialization complete:
+2026-06-01 18:24:42,366 | INFO | FSDP environment: No
+2026-06-01 18:24:42,366 | INFO |   - Number of experts: 8
+2026-06-01 18:24:42,366 | INFO |   - Experts per token: 2
+2026-06-01 18:24:42,366 | INFO |   - Expert parallelism: False
+2026-06-01 18:24:42,366 | INFO |   - Weight parallelism: False
+2026-06-01 18:24:42,366 | INFO | EvaLayer 25 initialization completed
+2026-06-01 18:24:42,921 | INFO | EvaBaseModel initialization completed:
+2026-06-01 18:24:42,921 | INFO |   - Vocabulary size: 114
+2026-06-01 18:24:42,921 | INFO |   - Hidden layer size: 1024
+2026-06-01 18:24:42,921 | INFO |   - Number of layers: 26
+2026-06-01 18:24:42,921 | INFO |   - Number of experts: 8
+2026-06-01 18:24:42,921 | INFO |   - MoE world size: 1
+2026-06-01 18:24:42,921 | INFO |   - MoE implementation: megablocks
+2026-06-01 18:24:42,925 | INFO | EvaForCausalLM initialization completed
+2026-06-01 18:24:43,672 | INFO | Preparing FASTA with workers=60
+2026-06-01 18:24:44,086 | INFO | FASTA worker pool started: workers=60 start_method=fork
+2026-06-01 18:24:47,071 | INFO | FASTA progress: records_seen=200000 normalized=200000 kept=200000/30000000
+2026-06-01 18:24:50,388 | INFO | FASTA progress: records_seen=400000 normalized=400000 kept=400000/30000000
+2026-06-01 18:24:54,005 | INFO | FASTA progress: records_seen=600000 normalized=600000 kept=600000/30000000
+2026-06-01 18:24:57,605 | INFO | FASTA progress: records_seen=800000 normalized=800000 kept=800000/30000000
+2026-06-01 18:25:00,843 | INFO | FASTA progress: records_seen=1000000 normalized=1000000 kept=1000000/30000000
+2026-06-01 18:25:04,339 | INFO | FASTA progress: records_seen=1200000 normalized=1200000 kept=1200000/30000000
+2026-06-01 18:25:08,041 | INFO | FASTA progress: records_seen=1400000 normalized=1400000 kept=1400000/30000000
+2026-06-01 18:25:11,249 | INFO | FASTA progress: records_seen=1600000 normalized=1600000 kept=1600000/30000000
+2026-06-01 18:25:14,742 | INFO | FASTA progress: records_seen=1800000 normalized=1800000 kept=1800000/30000000
+2026-06-01 18:25:18,108 | INFO | FASTA progress: records_seen=2000000 normalized=2000000 kept=2000000/30000000
+2026-06-01 18:25:21,472 | INFO | FASTA progress: records_seen=2200000 normalized=2200000 kept=2200000/30000000
+2026-06-01 18:25:24,787 | INFO | FASTA progress: records_seen=2400000 normalized=2400000 kept=2400000/30000000
+2026-06-01 18:25:28,421 | INFO | FASTA progress: records_seen=2600000 normalized=2600000 kept=2600000/30000000
+2026-06-01 18:25:32,213 | INFO | FASTA progress: records_seen=2800000 normalized=2800000 kept=2800000/30000000
+2026-06-01 18:25:35,582 | INFO | FASTA progress: records_seen=3000000 normalized=3000000 kept=3000000/30000000
+2026-06-01 18:25:39,300 | INFO | FASTA progress: records_seen=3200000 normalized=3200000 kept=3200000/30000000
+2026-06-01 18:25:42,836 | INFO | FASTA progress: records_seen=3400000 normalized=3400000 kept=3400000/30000000
+2026-06-01 18:25:46,422 | INFO | FASTA progress: records_seen=3600000 normalized=3600000 kept=3600000/30000000
+2026-06-01 18:25:49,924 | INFO | FASTA progress: records_seen=3800000 normalized=3800000 kept=3800000/30000000
+2026-06-01 18:25:52,896 | INFO | FASTA progress: records_seen=4000000 normalized=4000000 kept=4000000/30000000
+2026-06-01 18:25:56,197 | INFO | FASTA progress: records_seen=4200000 normalized=4200000 kept=4200000/30000000
+2026-06-01 18:25:59,666 | INFO | FASTA progress: records_seen=4400000 normalized=4400000 kept=4400000/30000000
+2026-06-01 18:26:03,231 | INFO | FASTA progress: records_seen=4600000 normalized=4600000 kept=4600000/30000000
+2026-06-01 18:26:06,577 | INFO | FASTA progress: records_seen=4800000 normalized=4800000 kept=4800000/30000000
+2026-06-01 18:26:10,277 | INFO | FASTA progress: records_seen=5000000 normalized=5000000 kept=5000000/30000000
+2026-06-01 18:26:14,330 | INFO | FASTA progress: records_seen=5200000 normalized=5200000 kept=5200000/30000000
+2026-06-01 18:26:17,871 | INFO | FASTA progress: records_seen=5400000 normalized=5400000 kept=5400000/30000000
+2026-06-01 18:26:21,463 | INFO | FASTA progress: records_seen=5600000 normalized=5600000 kept=5600000/30000000
+2026-06-01 18:26:25,183 | INFO | FASTA progress: records_seen=5800000 normalized=5800000 kept=5800000/30000000
+2026-06-01 18:26:28,281 | INFO | FASTA progress: records_seen=6000000 normalized=6000000 kept=6000000/30000000
+2026-06-01 18:26:31,542 | INFO | FASTA progress: records_seen=6200000 normalized=6200000 kept=6200000/30000000
+2026-06-01 18:26:35,087 | INFO | FASTA progress: records_seen=6400000 normalized=6400000 kept=6400000/30000000
+2026-06-01 18:26:38,647 | INFO | FASTA progress: records_seen=6600000 normalized=6600000 kept=6600000/30000000
+2026-06-01 18:26:41,889 | INFO | FASTA progress: records_seen=6800000 normalized=6800000 kept=6800000/30000000
+2026-06-01 18:26:45,348 | INFO | FASTA progress: records_seen=7000000 normalized=7000000 kept=7000000/30000000
+2026-06-01 18:26:48,994 | INFO | FASTA progress: records_seen=7200000 normalized=7200000 kept=7200000/30000000
+2026-06-01 18:26:52,564 | INFO | FASTA progress: records_seen=7400000 normalized=7400000 kept=7400000/30000000
+2026-06-01 18:26:56,034 | INFO | FASTA progress: records_seen=7600000 normalized=7600000 kept=7600000/30000000
+2026-06-01 18:26:59,764 | INFO | FASTA progress: records_seen=7800000 normalized=7800000 kept=7800000/30000000
+2026-06-01 18:27:03,059 | INFO | FASTA progress: records_seen=8000000 normalized=8000000 kept=8000000/30000000
+2026-06-01 18:27:06,318 | INFO | FASTA progress: records_seen=8200000 normalized=8200000 kept=8200000/30000000
+2026-06-01 18:27:09,911 | INFO | FASTA progress: records_seen=8400000 normalized=8400000 kept=8400000/30000000
+2026-06-01 18:27:13,296 | INFO | FASTA progress: records_seen=8600000 normalized=8600000 kept=8600000/30000000
+2026-06-01 18:27:16,793 | INFO | FASTA progress: records_seen=8800000 normalized=8800000 kept=8800000/30000000
+2026-06-01 18:27:20,031 | INFO | FASTA progress: records_seen=9000000 normalized=9000000 kept=9000000/30000000
+2026-06-01 18:27:23,357 | INFO | FASTA progress: records_seen=9200000 normalized=9200000 kept=9200000/30000000
+2026-06-01 18:27:26,922 | INFO | FASTA progress: records_seen=9400000 normalized=9400000 kept=9400000/30000000
+2026-06-01 18:27:30,367 | INFO | FASTA progress: records_seen=9600000 normalized=9600000 kept=9600000/30000000
+2026-06-01 18:27:33,759 | INFO | FASTA progress: records_seen=9800000 normalized=9800000 kept=9800000/30000000
+2026-06-01 18:27:37,302 | INFO | FASTA progress: records_seen=10000000 normalized=10000000 kept=10000000/30000000
+2026-06-01 18:27:40,743 | INFO | FASTA progress: records_seen=10200000 normalized=10200000 kept=10200000/30000000
+2026-06-01 18:27:44,231 | INFO | FASTA progress: records_seen=10400000 normalized=10400000 kept=10400000/30000000
+2026-06-01 18:27:47,863 | INFO | FASTA progress: records_seen=10600000 normalized=10600000 kept=10600000/30000000
+2026-06-01 18:27:51,446 | INFO | FASTA progress: records_seen=10800000 normalized=10800000 kept=10800000/30000000
+2026-06-01 18:27:54,815 | INFO | FASTA progress: records_seen=11000000 normalized=11000000 kept=11000000/30000000
+2026-06-01 18:27:57,961 | INFO | FASTA progress: records_seen=11200000 normalized=11200000 kept=11200000/30000000
+2026-06-01 18:28:01,442 | INFO | FASTA progress: records_seen=11400000 normalized=11400000 kept=11400000/30000000
+2026-06-01 18:28:04,909 | INFO | FASTA progress: records_seen=11600000 normalized=11600000 kept=11600000/30000000
+2026-06-01 18:28:08,257 | INFO | FASTA progress: records_seen=11800000 normalized=11800000 kept=11800000/30000000
+2026-06-01 18:28:11,433 | INFO | FASTA progress: records_seen=12000000 normalized=12000000 kept=12000000/30000000
+2026-06-01 18:28:15,011 | INFO | FASTA progress: records_seen=12200000 normalized=12200000 kept=12200000/30000000
+2026-06-01 18:28:18,604 | INFO | FASTA progress: records_seen=12400000 normalized=12400000 kept=12400000/30000000
+2026-06-01 18:28:22,288 | INFO | FASTA progress: records_seen=12600000 normalized=12600000 kept=12600000/30000000
+2026-06-01 18:28:25,820 | INFO | FASTA progress: records_seen=12800000 normalized=12800000 kept=12800000/30000000
+2026-06-01 18:28:29,437 | INFO | FASTA progress: records_seen=13000000 normalized=13000000 kept=13000000/30000000
+2026-06-01 18:28:32,802 | INFO | FASTA progress: records_seen=13200000 normalized=13200000 kept=13200000/30000000
+2026-06-01 18:28:36,000 | INFO | FASTA progress: records_seen=13400000 normalized=13400000 kept=13400000/30000000
+2026-06-01 18:28:39,308 | INFO | FASTA progress: records_seen=13600000 normalized=13600000 kept=13600000/30000000
+2026-06-01 18:28:42,853 | INFO | FASTA progress: records_seen=13800000 normalized=13800000 kept=13800000/30000000
+2026-06-01 18:28:46,652 | INFO | FASTA progress: records_seen=14000000 normalized=14000000 kept=14000000/30000000
+2026-06-01 18:28:50,125 | INFO | FASTA progress: records_seen=14200000 normalized=14200000 kept=14200000/30000000
+2026-06-01 18:28:53,411 | INFO | FASTA progress: records_seen=14400000 normalized=14400000 kept=14400000/30000000
+2026-06-01 18:28:56,998 | INFO | FASTA progress: records_seen=14600000 normalized=14600000 kept=14600000/30000000
+2026-06-01 18:29:00,349 | INFO | FASTA progress: records_seen=14800000 normalized=14800000 kept=14800000/30000000
+2026-06-01 18:29:03,784 | INFO | FASTA progress: records_seen=15000000 normalized=15000000 kept=15000000/30000000
+2026-06-01 18:29:07,118 | INFO | FASTA progress: records_seen=15200000 normalized=15200000 kept=15200000/30000000
+2026-06-01 18:29:10,474 | INFO | FASTA progress: records_seen=15400000 normalized=15400000 kept=15400000/30000000
+2026-06-01 18:29:13,922 | INFO | FASTA progress: records_seen=15600000 normalized=15600000 kept=15600000/30000000
+2026-06-01 18:29:17,245 | INFO | FASTA progress: records_seen=15800000 normalized=15800000 kept=15800000/30000000
+2026-06-01 18:29:20,682 | INFO | FASTA progress: records_seen=16000000 normalized=16000000 kept=16000000/30000000
+2026-06-01 18:29:23,772 | INFO | FASTA progress: records_seen=16200000 normalized=16200000 kept=16200000/30000000
+2026-06-01 18:29:26,963 | INFO | FASTA progress: records_seen=16400000 normalized=16400000 kept=16400000/30000000
+2026-06-01 18:29:30,545 | INFO | FASTA progress: records_seen=16600000 normalized=16600000 kept=16600000/30000000
+2026-06-01 18:29:34,106 | INFO | FASTA progress: records_seen=16800000 normalized=16800000 kept=16800000/30000000
+2026-06-01 18:29:37,627 | INFO | FASTA progress: records_seen=17000000 normalized=17000000 kept=17000000/30000000
+2026-06-01 18:29:41,130 | INFO | FASTA progress: records_seen=17200000 normalized=17200000 kept=17200000/30000000
+2026-06-01 18:29:44,559 | INFO | FASTA progress: records_seen=17400000 normalized=17400000 kept=17400000/30000000
+2026-06-01 18:29:48,145 | INFO | FASTA progress: records_seen=17600000 normalized=17600000 kept=17600000/30000000
+2026-06-01 18:29:51,504 | INFO | FASTA progress: records_seen=17800000 normalized=17800000 kept=17800000/30000000
+2026-06-01 18:29:55,046 | INFO | FASTA progress: records_seen=18000000 normalized=18000000 kept=18000000/30000000
+2026-06-01 18:29:58,137 | INFO | FASTA progress: records_seen=18200000 normalized=18200000 kept=18200000/30000000
+2026-06-01 18:30:01,679 | INFO | FASTA progress: records_seen=18400000 normalized=18400000 kept=18400000/30000000
+2026-06-01 18:30:04,960 | INFO | FASTA progress: records_seen=18600000 normalized=18600000 kept=18600000/30000000
+2026-06-01 18:30:08,182 | INFO | FASTA progress: records_seen=18800000 normalized=18800000 kept=18800000/30000000
+2026-06-01 18:30:11,624 | INFO | FASTA progress: records_seen=19000000 normalized=19000000 kept=19000000/30000000
+2026-06-01 18:30:15,094 | INFO | FASTA progress: records_seen=19200000 normalized=19200000 kept=19200000/30000000
+2026-06-01 18:30:18,599 | INFO | FASTA progress: records_seen=19400000 normalized=19400000 kept=19400000/30000000
+2026-06-01 18:30:22,220 | INFO | FASTA progress: records_seen=19600000 normalized=19600000 kept=19600000/30000000
+2026-06-01 18:30:25,565 | INFO | FASTA progress: records_seen=19800000 normalized=19800000 kept=19800000/30000000
+2026-06-01 18:30:28,929 | INFO | FASTA progress: records_seen=20000000 normalized=20000000 kept=20000000/30000000
+2026-06-01 18:30:32,571 | INFO | FASTA progress: records_seen=20200000 normalized=20200000 kept=20200000/30000000
+2026-06-01 18:30:36,166 | INFO | FASTA progress: records_seen=20400000 normalized=20400000 kept=20400000/30000000
+2026-06-01 18:30:39,566 | INFO | FASTA progress: records_seen=20600000 normalized=20600000 kept=20600000/30000000
+2026-06-01 18:30:43,091 | INFO | FASTA progress: records_seen=20800000 normalized=20800000 kept=20800000/30000000
+2026-06-01 18:30:46,834 | INFO | FASTA progress: records_seen=21000000 normalized=21000000 kept=21000000/30000000
+2026-06-01 18:30:49,802 | INFO | FASTA progress: records_seen=21200000 normalized=21200000 kept=21200000/30000000
+2026-06-01 18:30:53,028 | INFO | FASTA progress: records_seen=21400000 normalized=21400000 kept=21400000/30000000
+2026-06-01 18:30:56,608 | INFO | FASTA progress: records_seen=21600000 normalized=21600000 kept=21600000/30000000
+2026-06-01 18:30:59,653 | INFO | FASTA progress: records_seen=21800000 normalized=21800000 kept=21800000/30000000
+2026-06-01 18:31:02,854 | INFO | FASTA progress: records_seen=22000000 normalized=22000000 kept=22000000/30000000
+2026-06-01 18:31:06,094 | INFO | FASTA progress: records_seen=22200000 normalized=22200000 kept=22200000/30000000
+2026-06-01 18:31:09,260 | INFO | FASTA progress: records_seen=22400000 normalized=22400000 kept=22400000/30000000
+2026-06-01 18:31:12,713 | INFO | FASTA progress: records_seen=22600000 normalized=22600000 kept=22600000/30000000
+2026-06-01 18:31:15,900 | INFO | FASTA progress: records_seen=22800000 normalized=22800000 kept=22800000/30000000
+2026-06-01 18:31:19,192 | INFO | FASTA progress: records_seen=23000000 normalized=23000000 kept=23000000/30000000
+2026-06-01 18:31:22,766 | INFO | FASTA progress: records_seen=23200000 normalized=23200000 kept=23200000/30000000
+2026-06-01 18:31:26,353 | INFO | FASTA progress: records_seen=23400000 normalized=23400000 kept=23400000/30000000
+2026-06-01 18:31:29,867 | INFO | FASTA progress: records_seen=23600000 normalized=23600000 kept=23600000/30000000
+2026-06-01 18:31:33,209 | INFO | FASTA progress: records_seen=23800000 normalized=23800000 kept=23800000/30000000
+2026-06-01 18:31:36,577 | INFO | FASTA progress: records_seen=24000000 normalized=24000000 kept=24000000/30000000
+2026-06-01 18:31:39,956 | INFO | FASTA progress: records_seen=24200000 normalized=24200000 kept=24200000/30000000
+2026-06-01 18:31:43,339 | INFO | FASTA progress: records_seen=24400000 normalized=24400000 kept=24400000/30000000
+2026-06-01 18:31:46,907 | INFO | FASTA progress: records_seen=24600000 normalized=24600000 kept=24600000/30000000
+2026-06-01 18:31:50,395 | INFO | FASTA progress: records_seen=24800000 normalized=24800000 kept=24800000/30000000
+2026-06-01 18:31:54,007 | INFO | FASTA progress: records_seen=25000000 normalized=25000000 kept=25000000/30000000
+2026-06-01 18:31:57,230 | INFO | FASTA progress: records_seen=25200000 normalized=25200000 kept=25200000/30000000
+2026-06-01 18:32:00,944 | INFO | FASTA progress: records_seen=25400000 normalized=25400000 kept=25400000/30000000
+2026-06-01 18:32:04,546 | INFO | FASTA progress: records_seen=25600000 normalized=25600000 kept=25600000/30000000
+2026-06-01 18:32:08,072 | INFO | FASTA progress: records_seen=25800000 normalized=25800000 kept=25800000/30000000
+2026-06-01 18:32:11,428 | INFO | FASTA progress: records_seen=26000000 normalized=26000000 kept=26000000/30000000
+2026-06-01 18:32:14,561 | INFO | FASTA progress: records_seen=26200000 normalized=26200000 kept=26200000/30000000
+2026-06-01 18:32:17,649 | INFO | FASTA progress: records_seen=26400000 normalized=26400000 kept=26400000/30000000
+2026-06-01 18:32:20,866 | INFO | FASTA progress: records_seen=26600000 normalized=26600000 kept=26600000/30000000
+2026-06-01 18:32:24,245 | INFO | FASTA progress: records_seen=26800000 normalized=26800000 kept=26800000/30000000
+2026-06-01 18:32:27,435 | INFO | FASTA progress: records_seen=27000000 normalized=27000000 kept=27000000/30000000
+2026-06-01 18:32:30,570 | INFO | FASTA progress: records_seen=27200000 normalized=27200000 kept=27200000/30000000
+2026-06-01 18:32:34,238 | INFO | FASTA progress: records_seen=27400000 normalized=27400000 kept=27400000/30000000
+2026-06-01 18:32:37,629 | INFO | FASTA progress: records_seen=27600000 normalized=27600000 kept=27600000/30000000
+2026-06-01 18:32:40,880 | INFO | FASTA progress: records_seen=27800000 normalized=27800000 kept=27800000/30000000
+2026-06-01 18:32:44,247 | INFO | FASTA progress: records_seen=28000000 normalized=28000000 kept=28000000/30000000
+2026-06-01 18:32:47,318 | INFO | FASTA progress: records_seen=28200000 normalized=28200000 kept=28200000/30000000
+2026-06-01 18:32:50,571 | INFO | FASTA progress: records_seen=28400000 normalized=28400000 kept=28400000/30000000
+2026-06-01 18:32:53,905 | INFO | FASTA progress: records_seen=28600000 normalized=28600000 kept=28600000/30000000
+2026-06-01 18:32:56,984 | INFO | FASTA progress: records_seen=28800000 normalized=28800000 kept=28800000/30000000
+2026-06-01 18:33:00,276 | INFO | FASTA progress: records_seen=29000000 normalized=29000000 kept=29000000/30000000
+2026-06-01 18:33:03,469 | INFO | FASTA progress: records_seen=29200000 normalized=29200000 kept=29200000/30000000
+2026-06-01 18:33:06,542 | INFO | FASTA progress: records_seen=29400000 normalized=29400000 kept=29400000/30000000
+2026-06-01 18:33:09,848 | INFO | FASTA progress: records_seen=29600000 normalized=29600000 kept=29600000/30000000
+2026-06-01 18:33:13,177 | INFO | FASTA progress: records_seen=29800000 normalized=29800000 kept=29800000/30000000
+2026-06-01 18:33:16,625 | INFO | FASTA finished: records_seen=30000000 normalized=30000000 kept=30000000/30000000
+2026-06-01 18:33:37,352 | INFO | Loaded 30000000 sequences from /data/yanjie_huang/rna_benchmark/interpretability/DSSR_sequences/train_30M_sqrt_s42_50only.fa
+2026-06-01 18:35:00,834 | INFO | Step 1000 | loss=0.0586 mse=0.0521 l1=0.8157 lr=1.00e-04
+2026-06-01 18:35:56,818 | INFO | Step 2000 | loss=0.0159 mse=0.0035 l1=0.7773 lr=1.00e-04
+2026-06-01 18:36:52,755 | INFO | Step 3000 | loss=0.0184 mse=0.0024 l1=0.6669 lr=1.00e-04
+2026-06-01 18:37:49,179 | INFO | Step 4000 | loss=0.0209 mse=0.0022 l1=0.5840 lr=1.00e-04
+2026-06-01 18:38:45,620 | INFO | Step 5000 | loss=0.0232 mse=0.0025 l1=0.5173 lr=1.00e-04
+2026-06-01 18:39:42,123 | INFO | Step 6000 | loss=0.0253 mse=0.0031 l1=0.4632 lr=1.00e-04
+2026-06-01 18:40:38,509 | INFO | Step 7000 | loss=0.0267 mse=0.0032 l1=0.4196 lr=1.00e-04
+2026-06-01 18:41:34,909 | INFO | Step 8000 | loss=0.0281 mse=0.0036 l1=0.3833 lr=1.00e-04
+2026-06-01 18:42:31,318 | INFO | Step 9000 | loss=0.0293 mse=0.0038 l1=0.3546 lr=1.00e-04
+2026-06-01 18:43:27,670 | INFO | Step 10000 | loss=0.0301 mse=0.0038 l1=0.3287 lr=1.00e-04
+2026-06-01 18:44:24,381 | INFO | Step 11000 | loss=0.0285 mse=0.0036 l1=0.3113 lr=1.00e-04
+2026-06-01 18:45:21,520 | INFO | Step 12000 | loss=0.0273 mse=0.0035 l1=0.2985 lr=1.00e-04
+2026-06-01 18:46:21,530 | INFO | Step 13000 | loss=0.0263 mse=0.0033 l1=0.2870 lr=1.00e-04
+2026-06-01 18:47:19,853 | INFO | Step 14000 | loss=0.0255 mse=0.0034 l1=0.2759 lr=1.00e-04
+2026-06-01 18:48:18,257 | INFO | Step 15000 | loss=0.0245 mse=0.0031 l1=0.2678 lr=1.00e-04
+2026-06-01 18:49:16,227 | INFO | Step 16000 | loss=0.0240 mse=0.0032 l1=0.2606 lr=1.00e-04
+2026-06-01 18:50:14,592 | INFO | Step 17000 | loss=0.0234 mse=0.0031 l1=0.2531 lr=1.00e-04
+2026-06-01 18:51:12,696 | INFO | Step 18000 | loss=0.0226 mse=0.0029 l1=0.2463 lr=1.00e-04
+2026-06-01 18:52:10,902 | INFO | Step 19000 | loss=0.0221 mse=0.0028 l1=0.2407 lr=1.00e-04
+2026-06-01 18:53:07,210 | INFO | Step 20000 | loss=0.0216 mse=0.0028 l1=0.2349 lr=1.00e-04
+2026-06-01 18:54:03,590 | INFO | Step 21000 | loss=0.0212 mse=0.0028 l1=0.2310 lr=1.00e-04
+2026-06-01 18:55:00,007 | INFO | Step 22000 | loss=0.0209 mse=0.0028 l1=0.2268 lr=1.00e-04
+2026-06-01 18:55:56,274 | INFO | Step 23000 | loss=0.0205 mse=0.0027 l1=0.2227 lr=1.00e-04
+2026-06-01 18:56:52,549 | INFO | Step 24000 | loss=0.0202 mse=0.0025 l1=0.2209 lr=1.00e-04
+2026-06-01 18:57:48,766 | INFO | Step 25000 | loss=0.0201 mse=0.0027 l1=0.2171 lr=1.00e-04
+2026-06-01 18:58:45,015 | INFO | Step 26000 | loss=0.0197 mse=0.0025 l1=0.2151 lr=1.00e-04
+2026-06-01 18:59:41,419 | INFO | Step 27000 | loss=0.0197 mse=0.0027 l1=0.2130 lr=1.00e-04
+2026-06-01 19:00:37,809 | INFO | Step 28000 | loss=0.0194 mse=0.0025 l1=0.2102 lr=1.00e-04
+2026-06-01 19:01:34,152 | INFO | Step 29000 | loss=0.0191 mse=0.0024 l1=0.2085 lr=1.00e-04
+2026-06-01 19:02:30,670 | INFO | Step 30000 | loss=0.0190 mse=0.0025 l1=0.2069 lr=1.00e-04
+2026-06-01 19:03:27,154 | INFO | Step 31000 | loss=0.0188 mse=0.0023 l1=0.2064 lr=1.00e-04
+2026-06-01 19:04:23,602 | INFO | Step 32000 | loss=0.0187 mse=0.0023 l1=0.2049 lr=1.00e-04
+2026-06-01 19:05:19,939 | INFO | Step 33000 | loss=0.0187 mse=0.0024 l1=0.2031 lr=1.00e-04
+2026-06-01 19:06:16,401 | INFO | Step 34000 | loss=0.0185 mse=0.0024 l1=0.2010 lr=1.00e-04
+2026-06-01 19:07:12,911 | INFO | Step 35000 | loss=0.0182 mse=0.0023 l1=0.1998 lr=1.00e-04
+2026-06-01 19:08:09,363 | INFO | Step 36000 | loss=0.0182 mse=0.0023 l1=0.1989 lr=1.00e-04
+2026-06-01 19:09:05,781 | INFO | Step 37000 | loss=0.0181 mse=0.0022 l1=0.1981 lr=1.00e-04
+2026-06-01 19:10:02,276 | INFO | Step 38000 | loss=0.0180 mse=0.0022 l1=0.1969 lr=1.00e-04
+2026-06-01 19:10:58,662 | INFO | Step 39000 | loss=0.0178 mse=0.0021 l1=0.1955 lr=1.00e-04
+2026-06-01 19:11:55,119 | INFO | Step 40000 | loss=0.0178 mse=0.0023 l1=0.1946 lr=1.00e-04
+2026-06-01 19:12:51,690 | INFO | Step 41000 | loss=0.0179 mse=0.0024 l1=0.1935 lr=1.00e-04
+2026-06-01 19:13:49,106 | INFO | Step 42000 | loss=0.0176 mse=0.0022 l1=0.1927 lr=1.00e-04
+2026-06-01 19:14:47,181 | INFO | Step 43000 | loss=0.0178 mse=0.0024 l1=0.1917 lr=1.00e-04
+2026-06-01 19:15:45,311 | INFO | Step 44000 | loss=0.0175 mse=0.0022 l1=0.1908 lr=1.00e-04
+2026-06-01 19:16:43,625 | INFO | Step 45000 | loss=0.0176 mse=0.0024 l1=0.1901 lr=1.00e-04
+2026-06-01 19:17:41,591 | INFO | Step 46000 | loss=0.0172 mse=0.0021 l1=0.1887 lr=1.00e-04
+2026-06-01 19:18:39,915 | INFO | Step 47000 | loss=0.0171 mse=0.0021 l1=0.1881 lr=1.00e-04
+2026-06-01 19:19:37,999 | INFO | Step 48000 | loss=0.0171 mse=0.0021 l1=0.1880 lr=1.00e-04
+2026-06-01 19:20:35,135 | INFO | Step 49000 | loss=0.0171 mse=0.0022 l1=0.1867 lr=1.00e-04
+2026-06-01 19:21:31,618 | INFO | Step 50000 | loss=0.0170 mse=0.0022 l1=0.1859 lr=1.00e-04
+2026-06-01 19:22:28,142 | INFO | Step 51000 | loss=0.0169 mse=0.0020 l1=0.1856 lr=1.00e-04
+2026-06-01 19:23:24,635 | INFO | Step 52000 | loss=0.0168 mse=0.0020 l1=0.1851 lr=1.00e-04
+2026-06-01 19:24:21,062 | INFO | Step 53000 | loss=0.0168 mse=0.0020 l1=0.1843 lr=1.00e-04
+2026-06-01 19:25:17,537 | INFO | Step 54000 | loss=0.0167 mse=0.0020 l1=0.1834 lr=1.00e-04
+2026-06-01 19:26:13,876 | INFO | Step 55000 | loss=0.0166 mse=0.0020 l1=0.1825 lr=1.00e-04
+2026-06-01 19:27:10,394 | INFO | Step 56000 | loss=0.0165 mse=0.0020 l1=0.1820 lr=1.00e-04
+2026-06-01 19:28:06,899 | INFO | Step 57000 | loss=0.0165 mse=0.0020 l1=0.1817 lr=1.00e-04
+2026-06-01 19:29:03,448 | INFO | Step 58000 | loss=0.0164 mse=0.0020 l1=0.1809 lr=1.00e-04
+2026-06-01 19:29:59,854 | INFO | Step 59000 | loss=0.0164 mse=0.0020 l1=0.1800 lr=1.00e-04
+2026-06-01 19:30:56,295 | INFO | Step 60000 | loss=0.0163 mse=0.0019 l1=0.1799 lr=1.00e-04
+2026-06-01 19:31:52,676 | INFO | Step 61000 | loss=0.0163 mse=0.0019 l1=0.1795 lr=1.00e-04
+2026-06-01 19:32:48,963 | INFO | Step 62000 | loss=0.0162 mse=0.0019 l1=0.1786 lr=1.00e-04
+2026-06-01 19:33:45,306 | INFO | Step 63000 | loss=0.0163 mse=0.0020 l1=0.1783 lr=1.00e-04
+2026-06-01 19:34:41,853 | INFO | Step 64000 | loss=0.0162 mse=0.0019 l1=0.1781 lr=1.00e-04
+2026-06-01 19:35:38,237 | INFO | Step 65000 | loss=0.0162 mse=0.0020 l1=0.1777 lr=1.00e-04
+2026-06-01 19:36:34,596 | INFO | Step 66000 | loss=0.0161 mse=0.0019 l1=0.1774 lr=1.00e-04
+2026-06-01 19:37:30,904 | INFO | Step 67000 | loss=0.0162 mse=0.0021 l1=0.1763 lr=1.00e-04
+2026-06-01 19:38:27,197 | INFO | Step 68000 | loss=0.0160 mse=0.0019 l1=0.1764 lr=1.00e-04
+2026-06-01 19:39:23,591 | INFO | Step 69000 | loss=0.0160 mse=0.0019 l1=0.1755 lr=1.00e-04
+2026-06-01 19:40:19,976 | INFO | Step 70000 | loss=0.0159 mse=0.0019 l1=0.1753 lr=1.00e-04
+2026-06-01 19:41:16,238 | INFO | Step 71000 | loss=0.0159 mse=0.0019 l1=0.1751 lr=1.00e-04
+2026-06-01 19:42:12,470 | INFO | Step 72000 | loss=0.0158 mse=0.0019 l1=0.1745 lr=1.00e-04
+2026-06-01 19:43:08,892 | INFO | Step 73000 | loss=0.0158 mse=0.0019 l1=0.1745 lr=1.00e-04
+2026-06-01 19:44:11,024 | INFO | Step 74000 | loss=0.0158 mse=0.0019 l1=0.1738 lr=1.00e-04
+2026-06-01 19:45:08,306 | INFO | Step 75000 | loss=0.0157 mse=0.0019 l1=0.1731 lr=1.00e-04
+2026-06-01 19:46:09,109 | INFO | Step 76000 | loss=0.0157 mse=0.0018 l1=0.1730 lr=1.00e-04
+2026-06-01 19:47:31,709 | INFO | Step 77000 | loss=0.0157 mse=0.0019 l1=0.1728 lr=1.00e-04
+2026-06-01 19:49:24,637 | INFO | Step 78000 | loss=0.0157 mse=0.0019 l1=0.1727 lr=1.00e-04
+2026-06-01 19:51:56,745 | INFO | Step 79000 | loss=0.0156 mse=0.0019 l1=0.1723 lr=1.00e-04
+2026-06-01 19:54:52,764 | INFO | Step 80000 | loss=0.0156 mse=0.0018 l1=0.1716 lr=1.00e-04
+2026-06-01 19:57:35,962 | INFO | Step 81000 | loss=0.0156 mse=0.0018 l1=0.1714 lr=1.00e-04
+2026-06-01 19:59:55,086 | INFO | Step 82000 | loss=0.0155 mse=0.0018 l1=0.1714 lr=1.00e-04
+2026-06-01 20:01:30,546 | INFO | Step 83000 | loss=0.0156 mse=0.0019 l1=0.1709 lr=1.00e-04
+2026-06-01 20:02:48,728 | INFO | Step 84000 | loss=0.0155 mse=0.0018 l1=0.1706 lr=1.00e-04
+2026-06-01 20:04:08,273 | INFO | Step 85000 | loss=0.0155 mse=0.0018 l1=0.1704 lr=1.00e-04
+2026-06-01 20:06:29,338 | INFO | Step 86000 | loss=0.0156 mse=0.0019 l1=0.1707 lr=1.00e-04
+2026-06-01 20:08:17,574 | INFO | Step 87000 | loss=0.0155 mse=0.0019 l1=0.1701 lr=1.00e-04
+2026-06-01 20:09:27,544 | INFO | Step 88000 | loss=0.0154 mse=0.0018 l1=0.1697 lr=1.00e-04
+2026-06-01 20:10:35,849 | INFO | Step 89000 | loss=0.0155 mse=0.0019 l1=0.1697 lr=1.00e-04
+2026-06-01 20:11:43,159 | INFO | Step 90000 | loss=0.0154 mse=0.0018 l1=0.1698 lr=1.00e-04
+2026-06-01 20:12:49,396 | INFO | Step 91000 | loss=0.0153 mse=0.0018 l1=0.1687 lr=1.00e-04
+2026-06-01 20:13:56,188 | INFO | Step 92000 | loss=0.0152 mse=0.0018 l1=0.1686 lr=1.00e-04
+2026-06-01 20:15:00,428 | INFO | Step 93000 | loss=0.0153 mse=0.0018 l1=0.1685 lr=1.00e-04
+2026-06-01 20:16:07,462 | INFO | Step 94000 | loss=0.0153 mse=0.0018 l1=0.1682 lr=1.00e-04
+2026-06-01 20:17:17,700 | INFO | Step 95000 | loss=0.0153 mse=0.0018 l1=0.1683 lr=1.00e-04
+2026-06-01 20:18:26,551 | INFO | Step 96000 | loss=0.0152 mse=0.0018 l1=0.1677 lr=1.00e-04
+2026-06-01 20:19:37,681 | INFO | Step 97000 | loss=0.0152 mse=0.0018 l1=0.1676 lr=1.00e-04
+2026-06-01 20:20:47,867 | INFO | Step 98000 | loss=0.0152 mse=0.0018 l1=0.1677 lr=1.00e-04
+2026-06-01 20:21:56,798 | INFO | Step 99000 | loss=0.0152 mse=0.0018 l1=0.1671 lr=1.00e-04
+2026-06-01 20:23:07,084 | INFO | Step 100000 | loss=0.0152 mse=0.0018 l1=0.1671 lr=1.00e-04
+2026-06-01 20:24:18,613 | INFO | Step 101000 | loss=0.0152 mse=0.0018 l1=0.1674 lr=1.00e-04
+2026-06-01 20:25:30,192 | INFO | Step 102000 | loss=0.0151 mse=0.0017 l1=0.1675 lr=1.00e-04
+2026-06-01 20:26:40,822 | INFO | Step 103000 | loss=0.0151 mse=0.0017 l1=0.1665 lr=1.00e-04
+2026-06-01 20:27:47,559 | INFO | Step 104000 | loss=0.0151 mse=0.0018 l1=0.1668 lr=1.00e-04
+2026-06-01 20:28:50,660 | INFO | Step 105000 | loss=0.0150 mse=0.0017 l1=0.1661 lr=1.00e-04
+2026-06-01 20:29:52,174 | INFO | Step 106000 | loss=0.0150 mse=0.0018 l1=0.1658 lr=1.00e-04
+2026-06-01 20:30:55,572 | INFO | Step 107000 | loss=0.0151 mse=0.0018 l1=0.1661 lr=1.00e-04
+2026-06-01 20:31:56,478 | INFO | Step 108000 | loss=0.0150 mse=0.0017 l1=0.1656 lr=1.00e-04
+2026-06-01 20:32:57,890 | INFO | Step 109000 | loss=0.0150 mse=0.0017 l1=0.1656 lr=1.00e-04
+2026-06-01 20:33:56,675 | INFO | Step 110000 | loss=0.0150 mse=0.0017 l1=0.1656 lr=1.00e-04
+2026-06-01 20:34:52,603 | INFO | Step 111000 | loss=0.0150 mse=0.0018 l1=0.1653 lr=1.00e-04
+2026-06-01 20:35:48,438 | INFO | Step 112000 | loss=0.0149 mse=0.0017 l1=0.1652 lr=1.00e-04
+2026-06-01 20:36:44,613 | INFO | Step 113000 | loss=0.0149 mse=0.0018 l1=0.1646 lr=1.00e-04
+2026-06-01 20:37:40,591 | INFO | Step 114000 | loss=0.0149 mse=0.0017 l1=0.1648 lr=1.00e-04
+2026-06-01 20:38:36,534 | INFO | Step 115000 | loss=0.0149 mse=0.0017 l1=0.1647 lr=1.00e-04
+2026-06-01 20:39:32,527 | INFO | Step 116000 | loss=0.0149 mse=0.0018 l1=0.1643 lr=1.00e-04
+2026-06-01 20:40:28,401 | INFO | Step 117000 | loss=0.0149 mse=0.0017 l1=0.1643 lr=1.00e-04
+2026-06-01 20:41:24,198 | INFO | Step 118000 | loss=0.0149 mse=0.0017 l1=0.1641 lr=1.00e-04
+2026-06-01 20:42:20,287 | INFO | Step 119000 | loss=0.0148 mse=0.0017 l1=0.1639 lr=1.00e-04
+2026-06-01 20:43:16,168 | INFO | Step 120000 | loss=0.0148 mse=0.0017 l1=0.1639 lr=1.00e-04
+2026-06-01 20:44:12,262 | INFO | Step 121000 | loss=0.0148 mse=0.0017 l1=0.1639 lr=1.00e-04
+2026-06-01 20:45:08,275 | INFO | Step 122000 | loss=0.0149 mse=0.0017 l1=0.1638 lr=1.00e-04
+2026-06-01 20:46:04,428 | INFO | Step 123000 | loss=0.0148 mse=0.0018 l1=0.1633 lr=1.00e-04
+2026-06-01 20:47:00,509 | INFO | Step 124000 | loss=0.0148 mse=0.0017 l1=0.1636 lr=1.00e-04
+2026-06-01 20:47:56,729 | INFO | Step 125000 | loss=0.0148 mse=0.0018 l1=0.1634 lr=1.00e-04
+2026-06-01 20:48:53,135 | INFO | Step 126000 | loss=0.0148 mse=0.0017 l1=0.1632 lr=1.00e-04
+2026-06-01 20:49:49,547 | INFO | Step 127000 | loss=0.0148 mse=0.0017 l1=0.1633 lr=1.00e-04
+2026-06-01 20:50:46,056 | INFO | Step 128000 | loss=0.0148 mse=0.0017 l1=0.1632 lr=1.00e-04
+2026-06-01 20:51:42,504 | INFO | Step 129000 | loss=0.0148 mse=0.0017 l1=0.1632 lr=1.00e-04
+2026-06-01 20:52:38,915 | INFO | Step 130000 | loss=0.0147 mse=0.0017 l1=0.1628 lr=1.00e-04
+2026-06-01 20:53:35,293 | INFO | Step 131000 | loss=0.0148 mse=0.0016 l1=0.1642 lr=1.00e-04
+2026-06-01 20:54:31,787 | INFO | Step 132000 | loss=0.0147 mse=0.0017 l1=0.1624 lr=1.00e-04
+2026-06-01 20:55:28,265 | INFO | Step 133000 | loss=0.0147 mse=0.0017 l1=0.1625 lr=1.00e-04
+2026-06-01 20:56:24,553 | INFO | Step 134000 | loss=0.0147 mse=0.0017 l1=0.1625 lr=1.00e-04
+2026-06-01 20:57:21,050 | INFO | Step 135000 | loss=0.0147 mse=0.0017 l1=0.1620 lr=1.00e-04
+2026-06-01 20:58:17,410 | INFO | Step 136000 | loss=0.0147 mse=0.0017 l1=0.1623 lr=1.00e-04
+2026-06-01 20:59:13,933 | INFO | Step 137000 | loss=0.0146 mse=0.0017 l1=0.1618 lr=1.00e-04
+2026-06-01 21:00:10,416 | INFO | Step 138000 | loss=0.0146 mse=0.0017 l1=0.1619 lr=1.00e-04
+2026-06-01 21:01:06,837 | INFO | Step 139000 | loss=0.0146 mse=0.0017 l1=0.1615 lr=1.00e-04
+2026-06-01 21:02:03,294 | INFO | Step 140000 | loss=0.0147 mse=0.0017 l1=0.1620 lr=1.00e-04
+2026-06-01 21:02:59,855 | INFO | Step 141000 | loss=0.0146 mse=0.0016 l1=0.1617 lr=1.00e-04
+2026-06-01 21:03:56,397 | INFO | Step 142000 | loss=0.0145 mse=0.0017 l1=0.1609 lr=1.00e-04
+2026-06-01 21:04:52,905 | INFO | Step 143000 | loss=0.0146 mse=0.0017 l1=0.1614 lr=1.00e-04
+2026-06-01 21:05:49,287 | INFO | Step 144000 | loss=0.0146 mse=0.0017 l1=0.1613 lr=1.00e-04
+2026-06-01 21:06:45,675 | INFO | Step 145000 | loss=0.0146 mse=0.0017 l1=0.1610 lr=1.00e-04
+2026-06-01 21:07:42,089 | INFO | Step 146000 | loss=0.0146 mse=0.0017 l1=0.1607 lr=1.00e-04
+2026-06-01 21:08:38,403 | INFO | Step 147000 | loss=0.0145 mse=0.0017 l1=0.1604 lr=1.00e-04
+2026-06-01 21:09:34,736 | INFO | Step 148000 | loss=0.0145 mse=0.0017 l1=0.1604 lr=1.00e-04
+2026-06-01 21:10:30,732 | INFO | Step 149000 | loss=0.0145 mse=0.0017 l1=0.1604 lr=1.00e-04
+2026-06-01 21:11:26,758 | INFO | Step 150000 | loss=0.0145 mse=0.0017 l1=0.1602 lr=1.00e-04
+2026-06-01 21:12:22,795 | INFO | Step 151000 | loss=0.0145 mse=0.0016 l1=0.1605 lr=1.00e-04
+2026-06-01 21:13:18,771 | INFO | Step 152000 | loss=0.0145 mse=0.0017 l1=0.1609 lr=1.00e-04
+2026-06-01 21:14:15,062 | INFO | Step 153000 | loss=0.0144 mse=0.0017 l1=0.1598 lr=1.00e-04
+2026-06-01 21:15:11,362 | INFO | Step 154000 | loss=0.0145 mse=0.0016 l1=0.1601 lr=1.00e-04
+2026-06-01 21:16:07,726 | INFO | Step 155000 | loss=0.0145 mse=0.0016 l1=0.1603 lr=1.00e-04
+2026-06-01 21:17:05,491 | INFO | Step 156000 | loss=0.0145 mse=0.0017 l1=0.1597 lr=1.00e-04
+2026-06-01 21:18:06,188 | INFO | Step 157000 | loss=0.0144 mse=0.0016 l1=0.1593 lr=1.00e-04
+2026-06-01 21:19:07,761 | INFO | Step 158000 | loss=0.0144 mse=0.0017 l1=0.1593 lr=1.00e-04
+2026-06-01 21:20:08,587 | INFO | Step 159000 | loss=0.0145 mse=0.0017 l1=0.1597 lr=1.00e-04
+2026-06-01 21:21:09,567 | INFO | Step 160000 | loss=0.0144 mse=0.0017 l1=0.1597 lr=1.00e-04
+2026-06-01 21:22:10,519 | INFO | Step 161000 | loss=0.0144 mse=0.0017 l1=0.1592 lr=9.75e-05
+2026-06-01 21:23:11,312 | INFO | Step 162000 | loss=0.0144 mse=0.0016 l1=0.1589 lr=9.50e-05
+2026-06-01 21:24:11,853 | INFO | Step 163000 | loss=0.0143 mse=0.0016 l1=0.1587 lr=9.25e-05
+2026-06-01 21:25:12,405 | INFO | Step 164000 | loss=0.0144 mse=0.0017 l1=0.1587 lr=9.00e-05
+2026-06-01 21:26:13,180 | INFO | Step 165000 | loss=0.0143 mse=0.0016 l1=0.1582 lr=8.75e-05
+2026-06-01 21:27:14,290 | INFO | Step 166000 | loss=0.0143 mse=0.0016 l1=0.1586 lr=8.50e-05
+2026-06-01 21:28:14,985 | INFO | Step 167000 | loss=0.0143 mse=0.0016 l1=0.1586 lr=8.25e-05
+2026-06-01 21:29:15,631 | INFO | Step 168000 | loss=0.0143 mse=0.0016 l1=0.1586 lr=8.00e-05
+2026-06-01 21:30:16,379 | INFO | Step 169000 | loss=0.0143 mse=0.0016 l1=0.1584 lr=7.75e-05
+2026-06-01 21:31:16,848 | INFO | Step 170000 | loss=0.0143 mse=0.0016 l1=0.1586 lr=7.50e-05
+2026-06-01 21:32:16,722 | INFO | Step 171000 | loss=0.0147 mse=0.0017 l1=0.1632 lr=7.25e-05
+2026-06-01 21:33:16,765 | INFO | Step 172000 | loss=0.0145 mse=0.0016 l1=0.1608 lr=7.00e-05
+2026-06-01 21:34:17,095 | INFO | Step 173000 | loss=0.0143 mse=0.0016 l1=0.1592 lr=6.75e-05
+2026-06-01 21:35:17,682 | INFO | Step 174000 | loss=0.0142 mse=0.0016 l1=0.1582 lr=6.50e-05
+2026-06-01 21:36:17,291 | INFO | Step 175000 | loss=0.0142 mse=0.0016 l1=0.1579 lr=6.25e-05
+2026-06-01 21:37:16,996 | INFO | Step 176000 | loss=0.0142 mse=0.0016 l1=0.1577 lr=6.00e-05
+2026-06-01 21:38:16,281 | INFO | Step 177000 | loss=0.0142 mse=0.0016 l1=0.1576 lr=5.75e-05
+2026-06-01 21:39:15,659 | INFO | Step 178000 | loss=0.0141 mse=0.0016 l1=0.1571 lr=5.50e-05
+2026-06-01 21:40:14,922 | INFO | Step 179000 | loss=0.0142 mse=0.0016 l1=0.1576 lr=5.25e-05
+2026-06-01 21:41:14,291 | INFO | Step 180000 | loss=0.0141 mse=0.0016 l1=0.1566 lr=5.00e-05
+2026-06-01 21:42:13,762 | INFO | Step 181000 | loss=0.0159 mse=0.0021 l1=0.1721 lr=4.75e-05
+2026-06-01 21:43:13,404 | INFO | Step 182000 | loss=0.0150 mse=0.0017 l1=0.1657 lr=4.50e-05
+2026-06-01 21:44:13,366 | INFO | Step 183000 | loss=0.0146 mse=0.0016 l1=0.1624 lr=4.25e-05
+2026-06-01 21:45:14,386 | INFO | Step 184000 | loss=0.0143 mse=0.0016 l1=0.1594 lr=4.00e-05
+2026-06-01 21:46:15,670 | INFO | Step 185000 | loss=0.0141 mse=0.0015 l1=0.1574 lr=3.75e-05
+2026-06-01 21:47:18,370 | INFO | Step 186000 | loss=0.0141 mse=0.0015 l1=0.1574 lr=3.50e-05
+2026-06-01 21:48:22,372 | INFO | Step 187000 | loss=0.0140 mse=0.0015 l1=0.1560 lr=3.25e-05
+2026-06-01 21:49:24,666 | INFO | Step 188000 | loss=0.0140 mse=0.0015 l1=0.1559 lr=3.00e-05
+2026-06-01 21:50:25,903 | INFO | Step 189000 | loss=0.0140 mse=0.0015 l1=0.1557 lr=2.75e-05
+2026-06-01 21:51:26,610 | INFO | Step 190000 | loss=0.0139 mse=0.0015 l1=0.1553 lr=2.50e-05
+2026-06-01 21:52:27,502 | INFO | Step 191000 | loss=0.0143 mse=0.0016 l1=0.1582 lr=2.25e-05
+2026-06-01 21:53:28,443 | INFO | Step 192000 | loss=0.0141 mse=0.0016 l1=0.1572 lr=2.00e-05
+2026-06-01 21:54:29,288 | INFO | Step 193000 | loss=0.0141 mse=0.0015 l1=0.1570 lr=1.75e-05
+2026-06-01 21:55:30,142 | INFO | Step 194000 | loss=0.0141 mse=0.0015 l1=0.1569 lr=1.50e-05
+2026-06-01 21:56:30,554 | INFO | Step 195000 | loss=0.0140 mse=0.0015 l1=0.1563 lr=1.25e-05
+2026-06-01 21:57:30,863 | INFO | Step 196000 | loss=0.0140 mse=0.0015 l1=0.1559 lr=1.00e-05
+2026-06-01 21:58:30,920 | INFO | Step 197000 | loss=0.0139 mse=0.0015 l1=0.1551 lr=7.50e-06
+2026-06-01 21:59:30,781 | INFO | Step 198000 | loss=0.0139 mse=0.0015 l1=0.1554 lr=5.00e-06
+2026-06-01 22:00:31,475 | INFO | Step 199000 | loss=0.0139 mse=0.0015 l1=0.1553 lr=2.50e-06
+2026-06-01 22:01:32,107 | INFO | Step 200000 | loss=0.0139 mse=0.0015 l1=0.1553 lr=2.50e-09

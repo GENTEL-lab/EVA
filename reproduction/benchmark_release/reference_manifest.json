@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "baseline_public_commit": "07f4cb523ed5053f1ac11d79e4c524167b00bbdd",
+  "expected_scope_note": "Scope transcribed from inspected plotter; not all paper panels.",
+  "groups": [
+    {
+      "id": "ncRNA",
+      "layout": "long",
+      "models": [
+        "rnafm_score",
+        "rnabert_score",
+        "rnamsm_score",
+        "gena_score",
+        "aido_score",
+        "generrna_score",
+        "codongpt_score",
+        "ERNIE-RNA_checkpoint_score",
+        "codonfm_600m_score",
+        "codonfm_1b_score",
+        "eva_21m_score",
+        "eva_1.4b_score",
+        "evo2_1b_score",
+        "evo2_7b_score",
+        "evo2_40b_score"
+      ],
+      "datasets": [
+        "Milena_2021_cata",
+        "Zuo_2023_okra",
+        "Li_2023_clivia",
+        "Chen_2024_myo",
+        "Michael_2014_tRNA",
+        "Andreasson_2020_glms",
+        "Janzen_2022_fam31_ribozyme",
+        "Janzen_2022_fam21_ribozyme",
+        "Chen_2019_pepper",
+        "Li_2016_tRNA",
+        "Kobori_2015_ribozyme_j12",
+        "Janzen_2022_fam1b1_ribozyme",
+        "Domingo_2018_tRNA"
+      ],
+      "table": {
+        "path": "ncRNA_13datasets_spearman.csv",
+        "sha256": "8acfc40534b60e725aac309ba4b8990d0660b266f6ae8183f42e8e63e1334d14"
+      },
+      "model_scope_source": "existing plotter model declarations",
+      "paper_scope_independently_verified": false
+    },
+    {
+      "id": "mRNA",
+      "layout": "long",
+      "models": [
+        "rnafm_score",
+        "rnabert_score",
+        "rnamsm_score",
+        "gena_score",
+        "aido_score",
+        "generrna_score",
+        "codongpt_score",
+        "ernie_rna_score",
+        "codonfm_600m_score",
+        "codonfm_1b_score",
+        "eva_21m_mRNA_score",
+        "eva_14b_score",
+        "evo2_1b_score",
+        "evo2_7b_score",
+        "evo2_40b_score"
+      ],
+      "datasets": [
+        "F7YBW8_MESOW_Ding_2023",
+        "GFP_AEQVI_Sarkisyan_2016",
+        "Julien_2016_mRNA",
+        "Ke_2017_mRNA",
+        "Rouskin_2024_mRNA"
+      ],
+      "table": {
+        "path": "mRNA_5datasets_spearman.csv",
+        "sha256": "41e8c0b3db3ead5c7c0fd461fb108bd6d5d2b6392a2d47dfbdcaf8e8145206db"
+      },
+      "model_scope_source": "existing plotter model declarations",
+      "paper_scope_independently_verified": false
+    },
+    {
+      "id": "protein",
+      "layout": "wide",
+      "models": [
+        "EVA 1.4B",
+        "EVA 21M",
+        "Evo2 1B",
+        "Evo2 7B",
+        "Evo2 40B",
+        "GENA",
+        "ProGen2 Large",
+        "ProGen2 XLarge",
+        "ProGen3 1B",
+        "ProGen3 3B",
+        "ESMC 300M",
+        "ESM1v"
+      ],
+      "datasets": [
+        "ERBB2_HUMAN_Elazar_2016_Standard",
+        "NPC1_HUMAN_Erwood_2022_RPE1_Standard",
+        "LYAM1_HUMAN_Elazar_2016_Standard",
+        "GLPA_HUMAN_Elazar_2016_Standard",
+        "PITX2_HUMAN_Tsuboyama_2023_2L7M_Standard",
+        "RBP1_HUMAN_Tsuboyama_2023_2KWH_Standard",
+        "RASH_HUMAN_Bandaru_2017_Standard",
+        "CBPA2_HUMAN_Tsuboyama_2023_1O6X_Standard",
+        "PIN1_HUMAN_Tsuboyama_2023_1I6C_Standard",
+        "DNJA1_HUMAN_Tsuboyama_2023_2LO1_Standard",
+        "Q9HC78_PF00096_635_DomainOne",
+        "Q9UJQ4_PF00096_383_DomainOne",
+        "Q8N1W1_PF00130_651_DomainOne",
+        "Q9NU63_PF00096_176_DomainOne",
+        "Q7Z5Q1_PF16366_513_DomainOne",
+        "Q9ULZ3_PF00619_114_DomainOne",
+        "Q13263_PF00628_620_DomainOne",
+        "Q9UL15_PF02179_280_DomainOne",
+        "O15151_PF00641_299_DomainOne",
+        "Q9UJQ4_PF00096_627_DomainOne"
+      ],
+      "table": {
+        "path": "protein_20datasets_spearman.csv",
+        "sha256": "635f88e843fa7306d83533ade598f3e2638310d8289beb3f3f9a6cc801b9f806"
+      },
+      "model_scope_source": "existing plotter model declarations",
+      "paper_scope_independently_verified": false
+    }
+  ]
+}

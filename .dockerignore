@@ -19,6 +19,8 @@ __pycache__/
 # docker/requirements.txt and docker/entrypoint.sh. Excluding it breaks the
 # documented `docker build -f docker/Dockerfile -t eva:latest .` command.
 Dockerfile
+# Keep the published recipe available to COPY docker/ and image-internal QA.
+!docker/Dockerfile
 docker/Dockerfile_bak*
 docker/EVA.def
 docker/smoke_test.sh
@@ -36,18 +38,11 @@ fig/
 *.swo
 .DS_Store
 
-# Notebooks
-notebooks/
-!notebooks/
-notebooks/*
-!notebooks/interpretability_analysis/
-notebooks/interpretability_analysis/*
-!notebooks/interpretability_analysis/sae_repro_release/
-!notebooks/interpretability_analysis/sae_repro_release/**
-
-# Docs / reference
-docs/
-reference/
-
-# Finetune scripts
-finetune/
+# Benchmark reference tables are source deliverables and stay in the image.
+# Generated artifacts (source, configs and benchmark data remain included)
+results/
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+notebooks/interpretability_analysis/sae_repro_release/outputs/

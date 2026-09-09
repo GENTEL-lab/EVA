@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "models": [
+    "MODEL_ID"
+  ],
+  "datasets": [
+    {
+      "id": "DATASET_ID",
+      "sequence_policy": "exact",
+      "source_status": "unresolved",
+      "source_evidence": null,
+      "labels": {
+        "path": "labels/DATASET_ID.csv",
+        "sha256": null
+      }
+    }
+  ],
+  "predictions": [
+    {
+      "dataset": "DATASET_ID",
+      "model": "MODEL_ID",
+      "file": {
+        "path": "predictions/DATASET_ID/MODEL_ID.csv",
+        "sha256": null
+      },
+      "published_spearman": null,
+      "inference_provenance": {
+        "checkpoint_revision": null,
+        "checkpoint_sha256": null,
+        "code_commit": null,
+        "command": null,
+        "environment": null,
+        "scoring_protocol": null,
+        "run_log": null
+      }
+    }
+  ]
+}

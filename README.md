@@ -1,4 +1,8 @@
-# EVA: A Long-Context Generative Foundation Model Deciphers RNA Design Principles
+# EVA: A Long-Context Generative Foundation Model for Versatile RNA Design
+
+For the reproducible environment, full-assay scoring command, workflow coverage,
+and known missing historical artifacts, start with [Reproduction](docs/REPRODUCTION.md).
+Running released code and matching a paper result are separate validation steps.
 
 <div align="center">
   <img src="fig/github_logo.svg" alt="OpenRNA" width="800">
@@ -17,6 +21,16 @@
 
 <br>
 
+## Reproducing the paper
+
+Start with **[the reproduction guide](docs/REPRODUCTION.md)** for installation,
+a pinned EVA-1.4B checkpoint, the complete 135-sequence Milena workflow, and
+separate commands for recalculating stored predictions and plotting summaries.
+See [paper workflow coverage](docs/PAPER_WORKFLOWS.md) for model resources and
+components that still require paper-specific artifacts. This revision is a
+release candidate; current validation and release status are in
+[release status](docs/RELEASE_STATUS.md).
+
 **EVA** (Evolutionary Versatile Architect) is a generative RNA foundation model trained on **OpenRNA v1**, a curated atlas of 114 million full-length RNA sequences spanning all domains of life. Built on a 1.4B-parameter decoder-only Transformer with a Mixture-of-Experts (MoE) backbone and an 8,192-token context window, EVA unifies RNA sequence scoring and controllable design within a single framework.
 
 
@@ -27,13 +41,13 @@ You should consider EVA for the reasons as follows:
 <table>
   <tr>
     <td>🔓</td>
-    <td><b>Fully Open-Sourced</b></td>
-    <td>All training data, model weights, finetuning & training & inference codes and details are publicly released — full transparency for the community to reproduce, build upon, and extend</td>
+    <td><b>Released Code and Assets</b></td>
+    <td>Public source, checkpoints and datasets support inference and selected reproduction workflows. Historical configurations, dense-model code and per-experiment checkpoint linkage are not all established; see the reproduction guide.</td>
   </tr>
   <tr>
     <td>📏</td>
     <td><b>8x Larger Context Window</b></td>
-    <td>8,192-token context window vs. ~1,024 in prior RNA models — enabling full-length RNA processing without truncation or information loss</td>
+    <td>An 8,192-token context window supports longer RNA inputs. Sequences and conditioning tokens must fit within this limit; overlength inputs require an explicitly documented processing protocol.</td>
   </tr>
   <tr>
     <td>🗄️</td>
@@ -47,8 +61,8 @@ You should consider EVA for the reasons as follows:
   </tr>
   <tr>
     <td>🎯</td>
-    <td><b>10x+ RNA Generation Accuracy</b></td>
-    <td>Over 10x improvement in RNA generation accuracy at both sequence and structure level compared to prior methods</td>
+    <td><b>Conditional RNA Generation</b></td>
+    <td>CLM generation and GLM span infilling support RNA design. Performance claims depend on the specific assays, metrics and controls reported in the manuscript.</td>
   </tr>
   <tr>
     <td>🧬</td>
@@ -138,10 +152,14 @@ You should consider EVA for the reasons as follows:
 
 EVA is distributed as source code plus separately downloaded model weights and datasets. The Python package provides importable modules and command-line entry points; large checkpoints remain outside the package.
 
+Run this quick start inside the compatible GPU environment in
+[Installation](#installation). On a clean machine, first build/start Option B's
+Docker container; the Python install alone does not supply CUDA extensions.
+
 ```bash
 git clone https://github.com/GENTEL-Lab/EVA.git
 cd EVA
-python3 -m pip install -e .
+python3 -m pip install -e '.[benchmark,design]'
 
 python3 -c "import eva; print(eva.__version__)"
 eva-generate --help
@@ -149,17 +167,22 @@ eva-predict --help
 eva-evolve --help
 ```
 
-Download a checkpoint before running model inference:
+The commands above install Python entry points, not the compiled GPU extensions.
+Use the Docker environment below for GPU inference, or install the exact compiled
+dependencies from `docker/Dockerfile` into a matching PyTorch/CUDA environment.
+`--help` alone is not an inference test.
+
+Download a pinned checkpoint before running model inference:
 
 ```bash
-huggingface-cli download GENTEL-Lab/EVA --local-dir ./checkpoint
+python scripts/download_reproduction_checkpoint.py --model EVA_21M --destination ./checkpoint
 ```
 
 Generate a small batch of human mRNA sequences:
 
 ```bash
 eva-generate \
-    --checkpoint ./checkpoint \
+    --checkpoint ./checkpoint/EVA_21M \
     --format clm \
     --rna_type mRNA \
     --taxid 9606 \
@@ -201,7 +224,7 @@ For notebook-only figure workflows:
 python3 -m pip install -e ".[notebook]"
 ```
 
-The default package dependencies keep installation lightweight enough for code reuse. Full 1.4B MoE inference requires the CUDA stack used by the released Docker image, including GPU-specific packages such as `flash-attn`, `megablocks`, and `grouped_gemm`.
+The default package dependencies keep installation lightweight enough for code reuse. Full 1.4B MoE inference requires the CUDA stack used by the released Docker image, including GPU-specific packages such as `megablocks` and `grouped_gemm`.
 
 ### Option B: Docker runtime
 
@@ -212,7 +235,7 @@ docker build -f docker/Dockerfile -t eva:latest .
 ```
 
 The image is based on `pytorch/pytorch:2.5.1-cuda12.4-cudnn9-devel` and compiles
-`flash-attn`, `grouped-gemm`, `stanford-stk` and `megablocks` from source
+`grouped-gemm`, `stanford-stk` and `megablocks` from source
 against the preinstalled PyTorch 2.5.1 (none of them publish usable prebuilt
 wheels). The first build takes roughly 30-60 minutes; subsequent builds reuse
 the Docker layer cache. `TORCH_CUDA_ARCH_LIST` is fixed to `7.5;8.0;9.0`
@@ -222,7 +245,8 @@ Run an interactive GPU container with checkpoint and output folders mounted from
 
 ```bash
 mkdir -p checkpoint data/output
-docker run --gpus all --rm -it \
+docker run --gpus device=0 --name eva-repro --rm -it \
+    -v "$PWD":/eva \
     -v "$PWD/checkpoint":/eva/checkpoint \
     -v "$PWD/data/output":/eva/data/output \
     eva:latest bash
@@ -320,7 +344,7 @@ docker/smoke_test.sh singularity eva_latest.sif
 For reproducible runs, prefer a fixed Hugging Face revision:
 
 ```bash
-export HF_MODEL_REVISION=<MODEL_COMMIT_SHA>
+export HF_MODEL_REVISION=514db6705637c1ec963b728768fc9b34728699ee
 huggingface-cli download GENTEL-Lab/EVA \
     --revision "$HF_MODEL_REVISION" \
     --local-dir ./checkpoint

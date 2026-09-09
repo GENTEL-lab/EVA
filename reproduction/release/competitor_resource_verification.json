@@ -1,0 +1,60 @@
+[
+  {
+    "repo": "multimolecule/rnafm",
+    "requested_revision": "2a98c38e8219d666ad35d04a689218ab50a36293",
+    "status": "ACCESS_FAILED",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "repo": "multimolecule/rnabert",
+    "requested_revision": "7a9b5d5d5a96931ff056828c0968479098506cea",
+    "status": "ACCESS_FAILED",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "repo": "multimolecule/rnamsm",
+    "requested_revision": "ad61a4915674596557b3c3c4fe4fd7162d36acc8",
+    "status": "ACCESS_FAILED",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "repo": "AIRI-Institute/gena-lm-bert-base-t2t-multi",
+    "requested_revision": "4633e5a1ada905bb7afee6877d71cc12578a95a5",
+    "resolved_revision": "4633e5a1ada905bb7afee6877d71cc12578a95a5",
+    "files": [
+      {
+        "path": ".gitattributes",
+        "sha256": null
+      },
+      {
+        "path": "README.md",
+        "sha256": null
+      },
+      {
+        "path": "config.json",
+        "sha256": null
+      },
+      {
+        "path": "modeling_bert.py",
+        "sha256": null
+      },
+      {
+        "path": "pytorch_model.bin",
+        "sha256": "2f2400ba33d01df2bd58be5f8556f5b09bb69b70edb6f82eec31dc2247d90c1c"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "sha256": null
+      },
+      {
+        "path": "tokenizer.json",
+        "sha256": null
+      },
+      {
+        "path": "tokenizer_config.json",
+        "sha256": null
+      }
+    ],
+    "status": "API_VERIFIED"
+  }
+]

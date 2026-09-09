@@ -1,0 +1,36 @@
+# ncRNA Benchmark 运行配置
+# 用于在 ncRNA 数据集上评估模型
+
+# 要运行的模型列表
+# 运行 ncRNA_13datasets_spearman.csv 中出现的所有模型
+models_to_run:
+  - rnabert
+  - rnamsm
+  - rnafm
+  - ernie_rna
+  - gena
+  - evo2_1b
+  - evo2_7b
+  - evo2_40b
+  - codonfm_600m
+  - codonfm_1b
+  - aido
+  - generrna
+  - codongpt
+  - eva_21m
+  - eva_1.4b
+
+# 要运行的数据集列表
+# 只跑 pepper 两个数据集
+datasets_to_run:
+  - pepper_530
+  - pepper_620
+
+# GPU 配置
+gpus: "0,1,2,3,4,5,6,7"
+
+# 输出目录
+output_dir: ../data/ncRNA/score
+
+# 其他选项
+skip_existing: true  # 跳过已有结果的任务

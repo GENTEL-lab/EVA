@@ -13,7 +13,11 @@ sae_require_eva_container() {
   local script_ref="$1"
   shift || true
 
-  export CONTAINER_NAME="${CONTAINER_NAME:-eva1}"
+  if [[ "${EVA_SAE_LOCAL:-0}" == "1" ]]; then
+    return 0
+  fi
+
+  export CONTAINER_NAME="${CONTAINER_NAME:-eva-repro}"
   export CONTAINER_WORKDIR="${CONTAINER_WORKDIR:-/eva}"
 
   if sae_in_eva_container; then
@@ -68,6 +72,7 @@ sae_require_eva_container() {
     PYTHON_BIN
     MASTER_PORT
     SAE_OUTPUT_TAG
+    SAE_OUTPUT_ROOT
     CUDA_VISIBLE_DEVICES
   )
   local var_name

@@ -1,0 +1,26 @@
+{
+  "existing_public_metric_cells": 220,
+  "existing_public_cell_disagreements": [],
+  "public_source_sha256": "635f88e843fa7306d83533ade598f3e2638310d8289beb3f3f9a6cc801b9f806",
+  "recovered_model": "Evo2 7B",
+  "recovered_assays": 20,
+  "recomputed_mean_absolute_spearman": 0.5418927586400086,
+  "saved_mean_absolute_spearman": 0.5418927586400086,
+  "candidate_sha256": "265302004311d73da7f9dc1b466ae5534a74ac67ef515a11c85c2d96388f06f1",
+  "new_inference": false,
+  "paper_artifact_binding_verified": false,
+  "archived_sources": [
+    {
+      "filename": "aggregate_results_styled_0127_eukaryotic_merged.csv",
+      "sha256": "092fdfa6d973e0bf058924e3e0dba46ffc5bfb94a36cb430ccd6b4de493c7838",
+      "size_bytes": 5341,
+      "remote_sha256_verified": true
+    },
+    {
+      "filename": "summary_merged_eukaryotic.csv",
+      "sha256": "f4e8d0a89442cca5480c4cdb8e6e2c6f8cf5afdd00ca9043fd4dbe64be22359b",
+      "size_bytes": 483,
+      "remote_sha256_verified": true
+    }
+  ]
+}

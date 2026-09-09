@@ -130,7 +130,8 @@ def init_single_process_distributed():
 
 def load_model_weights_from_dcp(model: torch.nn.Module, checkpoint_path: Path, device: str = 'cuda:0'):
     """从 DCP 格式加载权重到模型"""
-    init_single_process_distributed()
+    # PyTorch 2.5 supports single-process DCP without creating a global process
+    # group or reserving a fixed port on a shared server.
 
     logger.info(f"从DCP加载权重: {checkpoint_path}")
     state_dict = {'model': model.state_dict()}

@@ -1,0 +1,6402 @@
+[
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_23",
+    "sequence_length": 230,
+    "mutation_pos0": 27,
+    "mutation_pos1": 28,
+    "mutation_from": "G",
+    "mutation_to": "A",
+    "wt_mfe": -83.2,
+    "mutant_mfe": -82.8,
+    "mfe_delta": 0.4000000000000057,
+    "bp_distance": 82,
+    "local_bp_distance": 78,
+    "wt_pair_count": 69,
+    "mutant_pair_count": 79,
+    "wt_only_pair_count": 36,
+    "mutant_only_pair_count": 46,
+    "diagnostic_wt_pairs_1": [
+      [
+        28,
+        117
+      ],
+      [
+        27,
+        118
+      ],
+      [
+        29,
+        116
+      ],
+      [
+        26,
+        119
+      ],
+      [
+        30,
+        115
+      ],
+      [
+        25,
+        120
+      ],
+      [
+        31,
+        114
+      ],
+      [
+        24,
+        121
+      ],
+      [
+        32,
+        113
+      ],
+      [
+        23,
+        122
+      ],
+      [
+        40,
+        112
+      ],
+      [
+        41,
+        111
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        28,
+        43
+      ],
+      [
+        27,
+        44
+      ],
+      [
+        29,
+        42
+      ],
+      [
+        26,
+        45
+      ],
+      [
+        25,
+        46
+      ],
+      [
+        31,
+        40
+      ],
+      [
+        24,
+        51
+      ],
+      [
+        32,
+        39
+      ],
+      [
+        23,
+        52
+      ],
+      [
+        33,
+        38
+      ],
+      [
+        22,
+        53
+      ],
+      [
+        20,
+        54
+      ]
+    ],
+    "window_start0": 11,
+    "window_end0": 130,
+    "window_len": 119,
+    "wt_window": "CUAGAAGUGAUGCUCUGCACGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "mutant_window": "CUAGAAGUGAUGCUCUACACGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "wt_structure_window": "((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..(((",
+    "mutant_structure_window": ".((((((((.((((((((.(((....))).)))))....))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCACGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUACACGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "...((.(...(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))...).))....",
+    "mutant_structure": "(((((.((....((((((((.((((((((.(((....))).)))))....))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_55",
+    "sequence_length": 230,
+    "mutation_pos0": 27,
+    "mutation_pos1": 28,
+    "mutation_from": "G",
+    "mutation_to": "A",
+    "wt_mfe": -81.4,
+    "mutant_mfe": -80.9,
+    "mfe_delta": 0.5,
+    "bp_distance": 82,
+    "local_bp_distance": 78,
+    "wt_pair_count": 69,
+    "mutant_pair_count": 79,
+    "wt_only_pair_count": 36,
+    "mutant_only_pair_count": 46,
+    "diagnostic_wt_pairs_1": [
+      [
+        28,
+        117
+      ],
+      [
+        27,
+        118
+      ],
+      [
+        29,
+        116
+      ],
+      [
+        26,
+        119
+      ],
+      [
+        30,
+        115
+      ],
+      [
+        25,
+        120
+      ],
+      [
+        31,
+        114
+      ],
+      [
+        24,
+        121
+      ],
+      [
+        32,
+        113
+      ],
+      [
+        23,
+        122
+      ],
+      [
+        40,
+        112
+      ],
+      [
+        41,
+        111
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        28,
+        43
+      ],
+      [
+        27,
+        44
+      ],
+      [
+        29,
+        42
+      ],
+      [
+        26,
+        45
+      ],
+      [
+        25,
+        46
+      ],
+      [
+        31,
+        40
+      ],
+      [
+        24,
+        51
+      ],
+      [
+        32,
+        39
+      ],
+      [
+        23,
+        52
+      ],
+      [
+        33,
+        38
+      ],
+      [
+        22,
+        53
+      ],
+      [
+        20,
+        54
+      ]
+    ],
+    "window_start0": 11,
+    "window_end0": 130,
+    "window_len": 119,
+    "wt_window": "CUAGAAGUGAUGCUCUGCAUGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "mutant_window": "CUAGAAGUGAUGCUCUACAUGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "wt_structure_window": "((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..(((",
+    "mutant_structure_window": ".((((((((.((((((((.(((....))).)))))....))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCAUGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUACAUGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "...((.(...(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))...).))....",
+    "mutant_structure": "(((((.((....((((((((.((((((((.(((....))).)))))....))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_26",
+    "sequence_length": 230,
+    "mutation_pos0": 27,
+    "mutation_pos1": 28,
+    "mutation_from": "G",
+    "mutation_to": "U",
+    "wt_mfe": -83.2,
+    "mutant_mfe": -84.6,
+    "mfe_delta": -1.3999999999999915,
+    "bp_distance": 82,
+    "local_bp_distance": 78,
+    "wt_pair_count": 69,
+    "mutant_pair_count": 79,
+    "wt_only_pair_count": 36,
+    "mutant_only_pair_count": 46,
+    "diagnostic_wt_pairs_1": [
+      [
+        28,
+        117
+      ],
+      [
+        27,
+        118
+      ],
+      [
+        29,
+        116
+      ],
+      [
+        26,
+        119
+      ],
+      [
+        30,
+        115
+      ],
+      [
+        25,
+        120
+      ],
+      [
+        31,
+        114
+      ],
+      [
+        24,
+        121
+      ],
+      [
+        32,
+        113
+      ],
+      [
+        23,
+        122
+      ],
+      [
+        40,
+        112
+      ],
+      [
+        41,
+        111
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        28,
+        45
+      ],
+      [
+        27,
+        46
+      ],
+      [
+        29,
+        44
+      ],
+      [
+        30,
+        43
+      ],
+      [
+        25,
+        50
+      ],
+      [
+        31,
+        42
+      ],
+      [
+        24,
+        51
+      ],
+      [
+        32,
+        41
+      ],
+      [
+        23,
+        52
+      ],
+      [
+        33,
+        40
+      ],
+      [
+        22,
+        53
+      ],
+      [
+        20,
+        54
+      ]
+    ],
+    "window_start0": 11,
+    "window_end0": 130,
+    "window_len": 119,
+    "wt_window": "CUAGAAGUGAUGCUCUGCACGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "mutant_window": "CUAGAAGUGAUGCUCUUCACGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "wt_structure_window": "((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..(((",
+    "mutant_structure_window": ".((((((((.((((.(((((((......)))))))...)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCACGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUUCACGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "...((.(...(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))...).))....",
+    "mutant_structure": "(((((.((....((((((((.((((.(((((((......)))))))...)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_58",
+    "sequence_length": 230,
+    "mutation_pos0": 27,
+    "mutation_pos1": 28,
+    "mutation_from": "G",
+    "mutation_to": "U",
+    "wt_mfe": -81.4,
+    "mutant_mfe": -82.8,
+    "mfe_delta": -1.3999999999999915,
+    "bp_distance": 82,
+    "local_bp_distance": 78,
+    "wt_pair_count": 69,
+    "mutant_pair_count": 79,
+    "wt_only_pair_count": 36,
+    "mutant_only_pair_count": 46,
+    "diagnostic_wt_pairs_1": [
+      [
+        28,
+        117
+      ],
+      [
+        27,
+        118
+      ],
+      [
+        29,
+        116
+      ],
+      [
+        26,
+        119
+      ],
+      [
+        30,
+        115
+      ],
+      [
+        25,
+        120
+      ],
+      [
+        31,
+        114
+      ],
+      [
+        24,
+        121
+      ],
+      [
+        32,
+        113
+      ],
+      [
+        23,
+        122
+      ],
+      [
+        40,
+        112
+      ],
+      [
+        41,
+        111
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        28,
+        45
+      ],
+      [
+        27,
+        46
+      ],
+      [
+        29,
+        44
+      ],
+      [
+        30,
+        43
+      ],
+      [
+        25,
+        50
+      ],
+      [
+        31,
+        42
+      ],
+      [
+        24,
+        51
+      ],
+      [
+        32,
+        41
+      ],
+      [
+        23,
+        52
+      ],
+      [
+        33,
+        40
+      ],
+      [
+        22,
+        53
+      ],
+      [
+        20,
+        54
+      ]
+    ],
+    "window_start0": 11,
+    "window_end0": 130,
+    "window_len": 119,
+    "wt_window": "CUAGAAGUGAUGCUCUGCAUGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "mutant_window": "CUAGAAGUGAUGCUCUUCAUGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "wt_structure_window": "((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..(((",
+    "mutant_structure_window": ".((((((((.((((.(((((((......)))))))...)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCAUGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUUCAUGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "...((.(...(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))...).))....",
+    "mutant_structure": "(((((.((....((((((((.((((.(((((((......)))))))...)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_26",
+    "sequence_length": 230,
+    "mutation_pos0": 27,
+    "mutation_pos1": 28,
+    "mutation_from": "G",
+    "mutation_to": "C",
+    "wt_mfe": -83.2,
+    "mutant_mfe": -87.5,
+    "mfe_delta": -4.299999999999997,
+    "bp_distance": 82,
+    "local_bp_distance": 78,
+    "wt_pair_count": 69,
+    "mutant_pair_count": 79,
+    "wt_only_pair_count": 36,
+    "mutant_only_pair_count": 46,
+    "diagnostic_wt_pairs_1": [
+      [
+        28,
+        117
+      ],
+      [
+        27,
+        118
+      ],
+      [
+        29,
+        116
+      ],
+      [
+        26,
+        119
+      ],
+      [
+        30,
+        115
+      ],
+      [
+        25,
+        120
+      ],
+      [
+        31,
+        114
+      ],
+      [
+        24,
+        121
+      ],
+      [
+        32,
+        113
+      ],
+      [
+        23,
+        122
+      ],
+      [
+        40,
+        112
+      ],
+      [
+        41,
+        111
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        28,
+        45
+      ],
+      [
+        27,
+        46
+      ],
+      [
+        29,
+        44
+      ],
+      [
+        30,
+        43
+      ],
+      [
+        25,
+        50
+      ],
+      [
+        31,
+        42
+      ],
+      [
+        24,
+        51
+      ],
+      [
+        32,
+        41
+      ],
+      [
+        23,
+        52
+      ],
+      [
+        33,
+        40
+      ],
+      [
+        22,
+        53
+      ],
+      [
+        20,
+        54
+      ]
+    ],
+    "window_start0": 11,
+    "window_end0": 130,
+    "window_len": 119,
+    "wt_window": "CUAGAAGUGAUGCUCUGCACGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "mutant_window": "CUAGAAGUGAUGCUCUCCACGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "wt_structure_window": "((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..(((",
+    "mutant_structure_window": ".((((((((.((((.(((((((......)))))))...)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCACGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUCCACGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "...((.(...(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))...).))....",
+    "mutant_structure": "(((((.((....((((((((.((((.(((((((......)))))))...)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_58",
+    "sequence_length": 230,
+    "mutation_pos0": 27,
+    "mutation_pos1": 28,
+    "mutation_from": "G",
+    "mutation_to": "C",
+    "wt_mfe": -81.4,
+    "mutant_mfe": -85.7,
+    "mfe_delta": -4.299999999999997,
+    "bp_distance": 82,
+    "local_bp_distance": 78,
+    "wt_pair_count": 69,
+    "mutant_pair_count": 79,
+    "wt_only_pair_count": 36,
+    "mutant_only_pair_count": 46,
+    "diagnostic_wt_pairs_1": [
+      [
+        28,
+        117
+      ],
+      [
+        27,
+        118
+      ],
+      [
+        29,
+        116
+      ],
+      [
+        26,
+        119
+      ],
+      [
+        30,
+        115
+      ],
+      [
+        25,
+        120
+      ],
+      [
+        31,
+        114
+      ],
+      [
+        24,
+        121
+      ],
+      [
+        32,
+        113
+      ],
+      [
+        23,
+        122
+      ],
+      [
+        40,
+        112
+      ],
+      [
+        41,
+        111
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        28,
+        45
+      ],
+      [
+        27,
+        46
+      ],
+      [
+        29,
+        44
+      ],
+      [
+        30,
+        43
+      ],
+      [
+        25,
+        50
+      ],
+      [
+        31,
+        42
+      ],
+      [
+        24,
+        51
+      ],
+      [
+        32,
+        41
+      ],
+      [
+        23,
+        52
+      ],
+      [
+        33,
+        40
+      ],
+      [
+        22,
+        53
+      ],
+      [
+        20,
+        54
+      ]
+    ],
+    "window_start0": 11,
+    "window_end0": 130,
+    "window_len": 119,
+    "wt_window": "CUAGAAGUGAUGCUCUGCAUGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "mutant_window": "CUAGAAGUGAUGCUCUCCAUGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "wt_structure_window": "((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..(((",
+    "mutant_structure_window": ".((((((((.((((.(((((((......)))))))...)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCAUGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUCCAUGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "...((.(...(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))...).))....",
+    "mutant_structure": "(((((.((....((((((((.((((.(((((((......)))))))...)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_23",
+    "sequence_length": 230,
+    "mutation_pos0": 27,
+    "mutation_pos1": 28,
+    "mutation_from": "G",
+    "mutation_to": "U",
+    "wt_mfe": -83.2,
+    "mutant_mfe": -83.0,
+    "mfe_delta": 0.20000000000000284,
+    "bp_distance": 81,
+    "local_bp_distance": 78,
+    "wt_pair_count": 69,
+    "mutant_pair_count": 78,
+    "wt_only_pair_count": 36,
+    "mutant_only_pair_count": 45,
+    "diagnostic_wt_pairs_1": [
+      [
+        28,
+        117
+      ],
+      [
+        27,
+        118
+      ],
+      [
+        29,
+        116
+      ],
+      [
+        26,
+        119
+      ],
+      [
+        30,
+        115
+      ],
+      [
+        25,
+        120
+      ],
+      [
+        31,
+        114
+      ],
+      [
+        24,
+        121
+      ],
+      [
+        32,
+        113
+      ],
+      [
+        23,
+        122
+      ],
+      [
+        40,
+        112
+      ],
+      [
+        41,
+        111
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        28,
+        45
+      ],
+      [
+        27,
+        46
+      ],
+      [
+        29,
+        44
+      ],
+      [
+        30,
+        43
+      ],
+      [
+        25,
+        50
+      ],
+      [
+        31,
+        42
+      ],
+      [
+        24,
+        51
+      ],
+      [
+        32,
+        41
+      ],
+      [
+        23,
+        52
+      ],
+      [
+        22,
+        53
+      ],
+      [
+        20,
+        54
+      ],
+      [
+        19,
+        55
+      ]
+    ],
+    "window_start0": 10,
+    "window_end0": 130,
+    "window_len": 120,
+    "wt_window": "UCUAGAAGUGAUGCUCUGCACGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "mutant_window": "UCUAGAAGUGAUGCUCUUCACGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "wt_structure_window": "(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..(((",
+    "mutant_structure_window": "..((((((((.((((.((((((........))))))...)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCACGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUUCACGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "...((.(...(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))...).))....",
+    "mutant_structure": "(((((.((....((((((((.((((.((((((........))))))...)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_55",
+    "sequence_length": 230,
+    "mutation_pos0": 27,
+    "mutation_pos1": 28,
+    "mutation_from": "G",
+    "mutation_to": "U",
+    "wt_mfe": -81.4,
+    "mutant_mfe": -81.2,
+    "mfe_delta": 0.20000000000000284,
+    "bp_distance": 81,
+    "local_bp_distance": 78,
+    "wt_pair_count": 69,
+    "mutant_pair_count": 78,
+    "wt_only_pair_count": 36,
+    "mutant_only_pair_count": 45,
+    "diagnostic_wt_pairs_1": [
+      [
+        28,
+        117
+      ],
+      [
+        27,
+        118
+      ],
+      [
+        29,
+        116
+      ],
+      [
+        26,
+        119
+      ],
+      [
+        30,
+        115
+      ],
+      [
+        25,
+        120
+      ],
+      [
+        31,
+        114
+      ],
+      [
+        24,
+        121
+      ],
+      [
+        32,
+        113
+      ],
+      [
+        23,
+        122
+      ],
+      [
+        40,
+        112
+      ],
+      [
+        41,
+        111
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        28,
+        45
+      ],
+      [
+        27,
+        46
+      ],
+      [
+        29,
+        44
+      ],
+      [
+        30,
+        43
+      ],
+      [
+        25,
+        50
+      ],
+      [
+        31,
+        42
+      ],
+      [
+        24,
+        51
+      ],
+      [
+        32,
+        41
+      ],
+      [
+        23,
+        52
+      ],
+      [
+        22,
+        53
+      ],
+      [
+        20,
+        54
+      ],
+      [
+        19,
+        55
+      ]
+    ],
+    "window_start0": 10,
+    "window_end0": 130,
+    "window_len": 120,
+    "wt_window": "UCUAGAAGUGAUGCUCUGCAUGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "mutant_window": "UCUAGAAGUGAUGCUCUUCAUGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "wt_structure_window": "(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..(((",
+    "mutant_structure_window": "..((((((((.((((.((((((........))))))...)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCAUGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUUCAUGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "...((.(...(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))...).))....",
+    "mutant_structure": "(((((.((....((((((((.((((.((((((........))))))...)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_25",
+    "sequence_length": 230,
+    "mutation_pos0": 27,
+    "mutation_pos1": 28,
+    "mutation_from": "G",
+    "mutation_to": "U",
+    "wt_mfe": -83.2,
+    "mutant_mfe": -83.9,
+    "mfe_delta": -0.7000000000000028,
+    "bp_distance": 81,
+    "local_bp_distance": 78,
+    "wt_pair_count": 69,
+    "mutant_pair_count": 78,
+    "wt_only_pair_count": 36,
+    "mutant_only_pair_count": 45,
+    "diagnostic_wt_pairs_1": [
+      [
+        28,
+        117
+      ],
+      [
+        27,
+        118
+      ],
+      [
+        29,
+        116
+      ],
+      [
+        26,
+        119
+      ],
+      [
+        30,
+        115
+      ],
+      [
+        25,
+        120
+      ],
+      [
+        31,
+        114
+      ],
+      [
+        24,
+        121
+      ],
+      [
+        32,
+        113
+      ],
+      [
+        23,
+        122
+      ],
+      [
+        40,
+        112
+      ],
+      [
+        41,
+        111
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        28,
+        45
+      ],
+      [
+        27,
+        46
+      ],
+      [
+        29,
+        44
+      ],
+      [
+        30,
+        43
+      ],
+      [
+        25,
+        50
+      ],
+      [
+        31,
+        42
+      ],
+      [
+        24,
+        51
+      ],
+      [
+        32,
+        41
+      ],
+      [
+        23,
+        52
+      ],
+      [
+        22,
+        53
+      ],
+      [
+        20,
+        54
+      ],
+      [
+        19,
+        55
+      ]
+    ],
+    "window_start0": 10,
+    "window_end0": 130,
+    "window_len": 120,
+    "wt_window": "UCUAGAAGUGAUGCUCUGCACGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "mutant_window": "UCUAGAAGUGAUGCUCUUCACGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "wt_structure_window": "(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..(((",
+    "mutant_structure_window": "..((((((((.((((.((((((........))))))...)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCACGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUUCACGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "...((.(...(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))...).))....",
+    "mutant_structure": "(((((.((....((((((((.((((.((((((........))))))...)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_25",
+    "sequence_length": 230,
+    "mutation_pos0": 27,
+    "mutation_pos1": 28,
+    "mutation_from": "G",
+    "mutation_to": "A",
+    "wt_mfe": -83.2,
+    "mutant_mfe": -81.8,
+    "mfe_delta": 1.4000000000000057,
+    "bp_distance": 81,
+    "local_bp_distance": 78,
+    "wt_pair_count": 69,
+    "mutant_pair_count": 78,
+    "wt_only_pair_count": 36,
+    "mutant_only_pair_count": 45,
+    "diagnostic_wt_pairs_1": [
+      [
+        28,
+        117
+      ],
+      [
+        27,
+        118
+      ],
+      [
+        29,
+        116
+      ],
+      [
+        26,
+        119
+      ],
+      [
+        30,
+        115
+      ],
+      [
+        25,
+        120
+      ],
+      [
+        31,
+        114
+      ],
+      [
+        24,
+        121
+      ],
+      [
+        32,
+        113
+      ],
+      [
+        23,
+        122
+      ],
+      [
+        40,
+        112
+      ],
+      [
+        41,
+        111
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        28,
+        43
+      ],
+      [
+        27,
+        44
+      ],
+      [
+        29,
+        42
+      ],
+      [
+        26,
+        45
+      ],
+      [
+        25,
+        46
+      ],
+      [
+        31,
+        40
+      ],
+      [
+        24,
+        51
+      ],
+      [
+        32,
+        39
+      ],
+      [
+        23,
+        52
+      ],
+      [
+        22,
+        53
+      ],
+      [
+        20,
+        54
+      ],
+      [
+        19,
+        55
+      ]
+    ],
+    "window_start0": 10,
+    "window_end0": 130,
+    "window_len": 120,
+    "wt_window": "UCUAGAAGUGAUGCUCUGCACGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "mutant_window": "UCUAGAAGUGAUGCUCUACACGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "wt_structure_window": "(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..(((",
+    "mutant_structure_window": "..((((((((.((((((((.((......)).)))))....))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCACGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUACACGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "...((.(...(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))...).))....",
+    "mutant_structure": "(((((.((....((((((((.((((((((.((......)).)))))....))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_55",
+    "sequence_length": 230,
+    "mutation_pos0": 27,
+    "mutation_pos1": 28,
+    "mutation_from": "G",
+    "mutation_to": "C",
+    "wt_mfe": -81.4,
+    "mutant_mfe": -84.1,
+    "mfe_delta": -2.6999999999999886,
+    "bp_distance": 81,
+    "local_bp_distance": 78,
+    "wt_pair_count": 69,
+    "mutant_pair_count": 78,
+    "wt_only_pair_count": 36,
+    "mutant_only_pair_count": 45,
+    "diagnostic_wt_pairs_1": [
+      [
+        28,
+        117
+      ],
+      [
+        27,
+        118
+      ],
+      [
+        29,
+        116
+      ],
+      [
+        26,
+        119
+      ],
+      [
+        30,
+        115
+      ],
+      [
+        25,
+        120
+      ],
+      [
+        31,
+        114
+      ],
+      [
+        24,
+        121
+      ],
+      [
+        32,
+        113
+      ],
+      [
+        23,
+        122
+      ],
+      [
+        40,
+        112
+      ],
+      [
+        41,
+        111
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        28,
+        45
+      ],
+      [
+        27,
+        46
+      ],
+      [
+        29,
+        44
+      ],
+      [
+        30,
+        43
+      ],
+      [
+        25,
+        50
+      ],
+      [
+        31,
+        42
+      ],
+      [
+        24,
+        51
+      ],
+      [
+        32,
+        41
+      ],
+      [
+        23,
+        52
+      ],
+      [
+        22,
+        53
+      ],
+      [
+        20,
+        54
+      ],
+      [
+        19,
+        55
+      ]
+    ],
+    "window_start0": 10,
+    "window_end0": 130,
+    "window_len": 120,
+    "wt_window": "UCUAGAAGUGAUGCUCUGCAUGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "mutant_window": "UCUAGAAGUGAUGCUCUCCAUGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "wt_structure_window": "(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..(((",
+    "mutant_structure_window": "..((((((((.((((.((((((........))))))...)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCAUGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUCCAUGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "...((.(...(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))...).))....",
+    "mutant_structure": "(((((.((....((((((((.((((.((((((........))))))...)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_23",
+    "sequence_length": 230,
+    "mutation_pos0": 27,
+    "mutation_pos1": 28,
+    "mutation_from": "G",
+    "mutation_to": "C",
+    "wt_mfe": -83.2,
+    "mutant_mfe": -85.9,
+    "mfe_delta": -2.700000000000003,
+    "bp_distance": 81,
+    "local_bp_distance": 78,
+    "wt_pair_count": 69,
+    "mutant_pair_count": 78,
+    "wt_only_pair_count": 36,
+    "mutant_only_pair_count": 45,
+    "diagnostic_wt_pairs_1": [
+      [
+        28,
+        117
+      ],
+      [
+        27,
+        118
+      ],
+      [
+        29,
+        116
+      ],
+      [
+        26,
+        119
+      ],
+      [
+        30,
+        115
+      ],
+      [
+        25,
+        120
+      ],
+      [
+        31,
+        114
+      ],
+      [
+        24,
+        121
+      ],
+      [
+        32,
+        113
+      ],
+      [
+        23,
+        122
+      ],
+      [
+        40,
+        112
+      ],
+      [
+        41,
+        111
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        28,
+        45
+      ],
+      [
+        27,
+        46
+      ],
+      [
+        29,
+        44
+      ],
+      [
+        30,
+        43
+      ],
+      [
+        25,
+        50
+      ],
+      [
+        31,
+        42
+      ],
+      [
+        24,
+        51
+      ],
+      [
+        32,
+        41
+      ],
+      [
+        23,
+        52
+      ],
+      [
+        22,
+        53
+      ],
+      [
+        20,
+        54
+      ],
+      [
+        19,
+        55
+      ]
+    ],
+    "window_start0": 10,
+    "window_end0": 130,
+    "window_len": 120,
+    "wt_window": "UCUAGAAGUGAUGCUCUGCACGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "mutant_window": "UCUAGAAGUGAUGCUCUCCACGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "wt_structure_window": "(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..(((",
+    "mutant_structure_window": "..((((((((.((((.((((((........))))))...)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCACGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUCCACGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "...((.(...(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))...).))....",
+    "mutant_structure": "(((((.((....((((((((.((((.((((((........))))))...)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_25",
+    "sequence_length": 230,
+    "mutation_pos0": 27,
+    "mutation_pos1": 28,
+    "mutation_from": "G",
+    "mutation_to": "C",
+    "wt_mfe": -83.2,
+    "mutant_mfe": -86.8,
+    "mfe_delta": -3.5999999999999943,
+    "bp_distance": 81,
+    "local_bp_distance": 78,
+    "wt_pair_count": 69,
+    "mutant_pair_count": 78,
+    "wt_only_pair_count": 36,
+    "mutant_only_pair_count": 45,
+    "diagnostic_wt_pairs_1": [
+      [
+        28,
+        117
+      ],
+      [
+        27,
+        118
+      ],
+      [
+        29,
+        116
+      ],
+      [
+        26,
+        119
+      ],
+      [
+        30,
+        115
+      ],
+      [
+        25,
+        120
+      ],
+      [
+        31,
+        114
+      ],
+      [
+        24,
+        121
+      ],
+      [
+        32,
+        113
+      ],
+      [
+        23,
+        122
+      ],
+      [
+        40,
+        112
+      ],
+      [
+        41,
+        111
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        28,
+        45
+      ],
+      [
+        27,
+        46
+      ],
+      [
+        29,
+        44
+      ],
+      [
+        30,
+        43
+      ],
+      [
+        25,
+        50
+      ],
+      [
+        31,
+        42
+      ],
+      [
+        24,
+        51
+      ],
+      [
+        32,
+        41
+      ],
+      [
+        23,
+        52
+      ],
+      [
+        22,
+        53
+      ],
+      [
+        20,
+        54
+      ],
+      [
+        19,
+        55
+      ]
+    ],
+    "window_start0": 10,
+    "window_end0": 130,
+    "window_len": 120,
+    "wt_window": "UCUAGAAGUGAUGCUCUGCACGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "mutant_window": "UCUAGAAGUGAUGCUCUCCACGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "wt_structure_window": "(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..(((",
+    "mutant_structure_window": "..((((((((.((((.((((((........))))))...)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCACGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUCCACGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "...((.(...(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))...).))....",
+    "mutant_structure": "(((((.((....((((((((.((((.((((((........))))))...)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_26",
+    "sequence_length": 230,
+    "mutation_pos0": 27,
+    "mutation_pos1": 28,
+    "mutation_from": "G",
+    "mutation_to": "A",
+    "wt_mfe": -83.2,
+    "mutant_mfe": -82.3,
+    "mfe_delta": 0.9000000000000057,
+    "bp_distance": 80,
+    "local_bp_distance": 77,
+    "wt_pair_count": 69,
+    "mutant_pair_count": 77,
+    "wt_only_pair_count": 36,
+    "mutant_only_pair_count": 44,
+    "diagnostic_wt_pairs_1": [
+      [
+        28,
+        117
+      ],
+      [
+        27,
+        118
+      ],
+      [
+        29,
+        116
+      ],
+      [
+        26,
+        119
+      ],
+      [
+        30,
+        115
+      ],
+      [
+        25,
+        120
+      ],
+      [
+        31,
+        114
+      ],
+      [
+        24,
+        121
+      ],
+      [
+        32,
+        113
+      ],
+      [
+        23,
+        122
+      ],
+      [
+        40,
+        112
+      ],
+      [
+        41,
+        111
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        29,
+        44
+      ],
+      [
+        30,
+        43
+      ],
+      [
+        25,
+        50
+      ],
+      [
+        31,
+        42
+      ],
+      [
+        24,
+        51
+      ],
+      [
+        32,
+        41
+      ],
+      [
+        23,
+        52
+      ],
+      [
+        33,
+        40
+      ],
+      [
+        22,
+        53
+      ],
+      [
+        20,
+        54
+      ],
+      [
+        19,
+        55
+      ],
+      [
+        18,
+        56
+      ]
+    ],
+    "window_start0": 9,
+    "window_end0": 130,
+    "window_len": 121,
+    "wt_window": "CUCUAGAAGUGAUGCUCUGCACGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "mutant_window": "CUCUAGAAGUGAUGCUCUACACGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "wt_structure_window": ".(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..(((",
+    "mutant_structure_window": "...((((((((.((((...(((((......))))).....)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCACGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUACACGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "...((.(...(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))...).))....",
+    "mutant_structure": "(((((.((....((((((((.((((...(((((......))))).....)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_231",
+    "sequence_length": 230,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -83.0,
+    "mutant_mfe": -82.0,
+    "mfe_delta": 1.0,
+    "bp_distance": 77,
+    "local_bp_distance": 73,
+    "wt_pair_count": 74,
+    "mutant_pair_count": 79,
+    "wt_only_pair_count": 36,
+    "mutant_only_pair_count": 41,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        124
+      ],
+      [
+        3,
+        125
+      ],
+      [
+        5,
+        123
+      ],
+      [
+        6,
+        122
+      ],
+      [
+        7,
+        121
+      ],
+      [
+        10,
+        119
+      ],
+      [
+        11,
+        118
+      ],
+      [
+        12,
+        116
+      ],
+      [
+        15,
+        113
+      ],
+      [
+        16,
+        112
+      ],
+      [
+        18,
+        110
+      ],
+      [
+        19,
+        109
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        82
+      ],
+      [
+        3,
+        83
+      ],
+      [
+        5,
+        81
+      ],
+      [
+        2,
+        84
+      ],
+      [
+        6,
+        76
+      ],
+      [
+        7,
+        75
+      ],
+      [
+        8,
+        74
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        10,
+        18
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        22,
+        72
+      ],
+      [
+        23,
+        71
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 133,
+    "window_len": 133,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCUGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "mutant_window": "GGGACGCGACUCUAGAAGUGAUGCUCUGCUGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "wt_structure_window": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((",
+    "mutant_structure_window": ".((((((((((.....)))..(((.(((.(((((.....(((((.......)))))....))))).)))))).)))....))))..((.(((((.((((((((((....)))(((.....)))....((((((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCUGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGACGCGACUCUAGAAGUGAUGCUCUGCUGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).((...((.....))...))..",
+    "mutant_structure": ".((((((((((.....)))..(((.(((.(((((.....(((((.......)))))....))))).)))))).)))....))))..((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_105",
+    "sequence_length": 230,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -84.7,
+    "mutant_mfe": -81.9,
+    "mfe_delta": 2.799999999999997,
+    "bp_distance": 76,
+    "local_bp_distance": 72,
+    "wt_pair_count": 74,
+    "mutant_pair_count": 78,
+    "wt_only_pair_count": 36,
+    "mutant_only_pair_count": 40,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        124
+      ],
+      [
+        3,
+        125
+      ],
+      [
+        5,
+        123
+      ],
+      [
+        6,
+        122
+      ],
+      [
+        7,
+        121
+      ],
+      [
+        10,
+        119
+      ],
+      [
+        11,
+        118
+      ],
+      [
+        12,
+        116
+      ],
+      [
+        15,
+        113
+      ],
+      [
+        16,
+        112
+      ],
+      [
+        18,
+        110
+      ],
+      [
+        19,
+        109
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        82
+      ],
+      [
+        3,
+        83
+      ],
+      [
+        5,
+        81
+      ],
+      [
+        2,
+        84
+      ],
+      [
+        6,
+        80
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        10,
+        18
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        22,
+        77
+      ],
+      [
+        23,
+        76
+      ],
+      [
+        24,
+        75
+      ],
+      [
+        27,
+        72
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 133,
+    "window_len": 133,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "mutant_window": "GGGACGCGACUCUAGAAGUGAUGCUCUGCCGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "wt_structure_window": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((",
+    "mutant_structure_window": ".(((((..(((.....)))..(((..((((.((..(((.(((((.......)))))..)))....)).))))..)))..)))))..((.(((((.((((((((((....)))(((.....)))....((((((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGACGCGACUCUAGAAGUGAUGCUCUGCCGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).((...((.....))...))..",
+    "mutant_structure": ".(((((..(((.....)))..(((..((((.((..(((.(((((.......)))))..)))....)).))))..)))..)))))..((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_231",
+    "sequence_length": 230,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "G",
+    "mutation_to": "U",
+    "wt_mfe": -83.0,
+    "mutant_mfe": -82.2,
+    "mfe_delta": 0.7999999999999972,
+    "bp_distance": 75,
+    "local_bp_distance": 71,
+    "wt_pair_count": 74,
+    "mutant_pair_count": 77,
+    "wt_only_pair_count": 36,
+    "mutant_only_pair_count": 39,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        125
+      ],
+      [
+        4,
+        124
+      ],
+      [
+        5,
+        123
+      ],
+      [
+        6,
+        122
+      ],
+      [
+        7,
+        121
+      ],
+      [
+        10,
+        119
+      ],
+      [
+        11,
+        118
+      ],
+      [
+        12,
+        116
+      ],
+      [
+        15,
+        113
+      ],
+      [
+        16,
+        112
+      ],
+      [
+        18,
+        110
+      ],
+      [
+        19,
+        109
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        86
+      ],
+      [
+        2,
+        87
+      ],
+      [
+        4,
+        85
+      ],
+      [
+        1,
+        88
+      ],
+      [
+        6,
+        84
+      ],
+      [
+        8,
+        83
+      ],
+      [
+        9,
+        82
+      ],
+      [
+        10,
+        81
+      ],
+      [
+        18,
+        74
+      ],
+      [
+        20,
+        73
+      ],
+      [
+        22,
+        72
+      ],
+      [
+        23,
+        71
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 133,
+    "window_len": 133,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCUGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "mutant_window": "GGUCCGCGACUCUAGAAGUGAUGCUCUGCUGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "wt_structure_window": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((",
+    "mutant_structure_window": "((((.(.(((.......(.(.(((.(((.(((((.....(((((.......)))))....))))).))))))))......)))))))).(((((.((((((((((....)))(((.....)))....((((((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCUGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGUCCGCGACUCUAGAAGUGAUGCUCUGCUGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).((...((.....))...))..",
+    "mutant_structure": "((((.(.(((.......(.(.(((.(((.(((((.....(((((.......)))))....))))).))))))))......)))))))).(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))...."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_105",
+    "sequence_length": 230,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "C",
+    "mutation_to": "U",
+    "wt_mfe": -84.7,
+    "mutant_mfe": -84.8,
+    "mfe_delta": -0.09999999999999432,
+    "bp_distance": 74,
+    "local_bp_distance": 70,
+    "wt_pair_count": 74,
+    "mutant_pair_count": 76,
+    "wt_only_pair_count": 36,
+    "mutant_only_pair_count": 38,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        124
+      ],
+      [
+        3,
+        125
+      ],
+      [
+        5,
+        123
+      ],
+      [
+        6,
+        122
+      ],
+      [
+        7,
+        121
+      ],
+      [
+        10,
+        119
+      ],
+      [
+        11,
+        118
+      ],
+      [
+        12,
+        116
+      ],
+      [
+        15,
+        113
+      ],
+      [
+        16,
+        112
+      ],
+      [
+        18,
+        110
+      ],
+      [
+        19,
+        109
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        86
+      ],
+      [
+        3,
+        87
+      ],
+      [
+        5,
+        85
+      ],
+      [
+        2,
+        88
+      ],
+      [
+        6,
+        84
+      ],
+      [
+        8,
+        83
+      ],
+      [
+        9,
+        82
+      ],
+      [
+        10,
+        81
+      ],
+      [
+        22,
+        77
+      ],
+      [
+        23,
+        76
+      ],
+      [
+        24,
+        75
+      ],
+      [
+        27,
+        72
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 133,
+    "window_len": 133,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "mutant_window": "GGGUCGCGACUCUAGAAGUGAUGCUCUGCCGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "wt_structure_window": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((",
+    "mutant_structure_window": ".(((((.(((...........(((..((((.((..(((.(((((.......)))))..)))....)).))))..)))...)))))))).(((((.((((((((((....)))(((.....)))....((((((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGUCGCGACUCUAGAAGUGAUGCUCUGCCGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).((...((.....))...))..",
+    "mutant_structure": ".(((((.(((...........(((..((((.((..(((.(((((.......)))))..)))....)).))))..)))...)))))))).(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))...."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_233",
+    "sequence_length": 230,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "G",
+    "mutation_to": "C",
+    "wt_mfe": -82.5,
+    "mutant_mfe": -82.4,
+    "mfe_delta": 0.09999999999999432,
+    "bp_distance": 73,
+    "local_bp_distance": 69,
+    "wt_pair_count": 74,
+    "mutant_pair_count": 77,
+    "wt_only_pair_count": 35,
+    "mutant_only_pair_count": 38,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        125
+      ],
+      [
+        4,
+        124
+      ],
+      [
+        5,
+        123
+      ],
+      [
+        6,
+        122
+      ],
+      [
+        7,
+        121
+      ],
+      [
+        10,
+        119
+      ],
+      [
+        11,
+        118
+      ],
+      [
+        12,
+        116
+      ],
+      [
+        15,
+        113
+      ],
+      [
+        16,
+        112
+      ],
+      [
+        18,
+        110
+      ],
+      [
+        19,
+        109
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        2,
+        55
+      ],
+      [
+        1,
+        56
+      ],
+      [
+        3,
+        54
+      ],
+      [
+        6,
+        52
+      ],
+      [
+        7,
+        51
+      ],
+      [
+        9,
+        49
+      ],
+      [
+        11,
+        46
+      ],
+      [
+        12,
+        45
+      ],
+      [
+        13,
+        44
+      ],
+      [
+        14,
+        43
+      ],
+      [
+        18,
+        41
+      ],
+      [
+        19,
+        40
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 133,
+    "window_len": 133,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCUGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "mutant_window": "GCGCCGCGACUCUAGAAGUGAUGCUCUGCUGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "wt_structure_window": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((",
+    "mutant_structure_window": "(((..((.(.((((...(((((..(((....)))..))))).))))..).)).)))..........((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCUGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GCGCCGCGACUCUAGAAGUGAUGCUCUGCUGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).((...((.....))...))..",
+    "mutant_structure": "(((..((.(.((((...(((((..(((....)))..))))).))))..).)).)))..........((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_233",
+    "sequence_length": 230,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "G",
+    "mutation_to": "U",
+    "wt_mfe": -82.5,
+    "mutant_mfe": -85.0,
+    "mfe_delta": -2.5,
+    "bp_distance": 73,
+    "local_bp_distance": 69,
+    "wt_pair_count": 74,
+    "mutant_pair_count": 77,
+    "wt_only_pair_count": 35,
+    "mutant_only_pair_count": 38,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        125
+      ],
+      [
+        4,
+        124
+      ],
+      [
+        5,
+        123
+      ],
+      [
+        6,
+        122
+      ],
+      [
+        7,
+        121
+      ],
+      [
+        10,
+        119
+      ],
+      [
+        11,
+        118
+      ],
+      [
+        12,
+        116
+      ],
+      [
+        15,
+        113
+      ],
+      [
+        16,
+        112
+      ],
+      [
+        18,
+        110
+      ],
+      [
+        19,
+        109
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        2,
+        53
+      ],
+      [
+        1,
+        54
+      ],
+      [
+        3,
+        52
+      ],
+      [
+        4,
+        51
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        6,
+        49
+      ],
+      [
+        11,
+        46
+      ],
+      [
+        12,
+        45
+      ],
+      [
+        13,
+        44
+      ],
+      [
+        14,
+        43
+      ],
+      [
+        18,
+        41
+      ],
+      [
+        19,
+        40
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 133,
+    "window_len": 133,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCUGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "mutant_window": "GUGCCGCGACUCUAGAAGUGAUGCUCUGCUGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "wt_structure_window": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((",
+    "mutant_structure_window": "((((((....((((...(((((..(((....)))..))))).))))..))))))............((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCUGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GUGCCGCGACUCUAGAAGUGAUGCUCUGCUGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).((...((.....))...))..",
+    "mutant_structure": "((((((....((((...(((((..(((....)))..))))).))))..))))))............((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_103",
+    "sequence_length": 230,
+    "mutation_pos0": 4,
+    "mutation_pos1": 5,
+    "mutation_from": "C",
+    "mutation_to": "G",
+    "wt_mfe": -85.2,
+    "mutant_mfe": -85.8,
+    "mfe_delta": -0.5999999999999943,
+    "bp_distance": 63,
+    "local_bp_distance": 59,
+    "wt_pair_count": 74,
+    "mutant_pair_count": 77,
+    "wt_only_pair_count": 30,
+    "mutant_only_pair_count": 33,
+    "diagnostic_wt_pairs_1": [
+      [
+        5,
+        123
+      ],
+      [
+        4,
+        124
+      ],
+      [
+        6,
+        122
+      ],
+      [
+        3,
+        125
+      ],
+      [
+        7,
+        121
+      ],
+      [
+        10,
+        119
+      ],
+      [
+        11,
+        118
+      ],
+      [
+        12,
+        116
+      ],
+      [
+        15,
+        113
+      ],
+      [
+        16,
+        112
+      ],
+      [
+        18,
+        110
+      ],
+      [
+        19,
+        109
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        5,
+        27
+      ],
+      [
+        4,
+        28
+      ],
+      [
+        6,
+        26
+      ],
+      [
+        3,
+        29
+      ],
+      [
+        2,
+        30
+      ],
+      [
+        8,
+        24
+      ],
+      [
+        11,
+        21
+      ],
+      [
+        12,
+        20
+      ],
+      [
+        31,
+        63
+      ],
+      [
+        32,
+        62
+      ],
+      [
+        33,
+        61
+      ],
+      [
+        34,
+        60
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 133,
+    "window_len": 133,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "mutant_window": "GGGCGGCGACUCUAGAAGUGAUGCUCUGCCGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "wt_structure_window": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((",
+    "mutant_structure_window": ".(((((.(..((.......))..).)))))(((((....(((((.......)))))..)))))...((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGCGGCGACUCUAGAAGUGAUGCUCUGCCGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).((...((.....))...))..",
+    "mutant_structure": ".(((((.(..((.......))..).)))))(((((....(((((.......)))))..)))))...((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_103",
+    "sequence_length": 230,
+    "mutation_pos0": 6,
+    "mutation_pos1": 7,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -85.2,
+    "mutant_mfe": -86.3,
+    "mfe_delta": -1.0999999999999943,
+    "bp_distance": 63,
+    "local_bp_distance": 59,
+    "wt_pair_count": 74,
+    "mutant_pair_count": 77,
+    "wt_only_pair_count": 30,
+    "mutant_only_pair_count": 33,
+    "diagnostic_wt_pairs_1": [
+      [
+        7,
+        121
+      ],
+      [
+        6,
+        122
+      ],
+      [
+        5,
+        123
+      ],
+      [
+        4,
+        124
+      ],
+      [
+        10,
+        119
+      ],
+      [
+        3,
+        125
+      ],
+      [
+        11,
+        118
+      ],
+      [
+        12,
+        116
+      ],
+      [
+        15,
+        113
+      ],
+      [
+        16,
+        112
+      ],
+      [
+        18,
+        110
+      ],
+      [
+        19,
+        109
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        7,
+        25
+      ],
+      [
+        6,
+        26
+      ],
+      [
+        8,
+        24
+      ],
+      [
+        4,
+        28
+      ],
+      [
+        3,
+        29
+      ],
+      [
+        11,
+        21
+      ],
+      [
+        2,
+        30
+      ],
+      [
+        12,
+        20
+      ],
+      [
+        31,
+        63
+      ],
+      [
+        32,
+        62
+      ],
+      [
+        33,
+        61
+      ],
+      [
+        34,
+        60
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 133,
+    "window_len": 133,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "mutant_window": "GGGCCGAGACUCUAGAAGUGAUGCUCUGCCGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "wt_structure_window": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((",
+    "mutant_structure_window": ".(((.(((..((.......))..))).)))(((((....(((((.......)))))..)))))...((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGCCGAGACUCUAGAAGUGAUGCUCUGCCGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).((...((.....))...))..",
+    "mutant_structure": ".(((.(((..((.......))..))).)))(((((....(((((.......)))))..)))))...((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_103",
+    "sequence_length": 230,
+    "mutation_pos0": 4,
+    "mutation_pos1": 5,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -85.2,
+    "mutant_mfe": -86.5,
+    "mfe_delta": -1.2999999999999972,
+    "bp_distance": 63,
+    "local_bp_distance": 59,
+    "wt_pair_count": 74,
+    "mutant_pair_count": 77,
+    "wt_only_pair_count": 30,
+    "mutant_only_pair_count": 33,
+    "diagnostic_wt_pairs_1": [
+      [
+        5,
+        123
+      ],
+      [
+        4,
+        124
+      ],
+      [
+        6,
+        122
+      ],
+      [
+        3,
+        125
+      ],
+      [
+        7,
+        121
+      ],
+      [
+        10,
+        119
+      ],
+      [
+        11,
+        118
+      ],
+      [
+        12,
+        116
+      ],
+      [
+        15,
+        113
+      ],
+      [
+        16,
+        112
+      ],
+      [
+        18,
+        110
+      ],
+      [
+        19,
+        109
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        5,
+        27
+      ],
+      [
+        4,
+        28
+      ],
+      [
+        6,
+        26
+      ],
+      [
+        3,
+        29
+      ],
+      [
+        2,
+        30
+      ],
+      [
+        8,
+        24
+      ],
+      [
+        11,
+        21
+      ],
+      [
+        12,
+        20
+      ],
+      [
+        31,
+        63
+      ],
+      [
+        32,
+        62
+      ],
+      [
+        33,
+        61
+      ],
+      [
+        34,
+        60
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 133,
+    "window_len": 133,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "mutant_window": "GGGCAGCGACUCUAGAAGUGAUGCUCUGCCGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "wt_structure_window": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((",
+    "mutant_structure_window": ".(((((.(..((.......))..).)))))(((((....(((((.......)))))..)))))...((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGCAGCGACUCUAGAAGUGAUGCUCUGCCGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).((...((.....))...))..",
+    "mutant_structure": ".(((((.(..((.......))..).)))))(((((....(((((.......)))))..)))))...((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_105",
+    "sequence_length": 230,
+    "mutation_pos0": 8,
+    "mutation_pos1": 9,
+    "mutation_from": "A",
+    "mutation_to": "U",
+    "wt_mfe": -84.7,
+    "mutant_mfe": -87.4,
+    "mfe_delta": -2.700000000000003,
+    "bp_distance": 63,
+    "local_bp_distance": 59,
+    "wt_pair_count": 74,
+    "mutant_pair_count": 77,
+    "wt_only_pair_count": 30,
+    "mutant_only_pair_count": 33,
+    "diagnostic_wt_pairs_1": [
+      [
+        10,
+        119
+      ],
+      [
+        7,
+        121
+      ],
+      [
+        11,
+        118
+      ],
+      [
+        6,
+        122
+      ],
+      [
+        12,
+        116
+      ],
+      [
+        5,
+        123
+      ],
+      [
+        4,
+        124
+      ],
+      [
+        3,
+        125
+      ],
+      [
+        15,
+        113
+      ],
+      [
+        16,
+        112
+      ],
+      [
+        18,
+        110
+      ],
+      [
+        19,
+        109
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        9,
+        21
+      ],
+      [
+        8,
+        22
+      ],
+      [
+        10,
+        20
+      ],
+      [
+        7,
+        23
+      ],
+      [
+        6,
+        24
+      ],
+      [
+        12,
+        18
+      ],
+      [
+        13,
+        17
+      ],
+      [
+        4,
+        28
+      ],
+      [
+        3,
+        29
+      ],
+      [
+        2,
+        30
+      ],
+      [
+        32,
+        64
+      ],
+      [
+        33,
+        63
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 133,
+    "window_len": 133,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "mutant_window": "GGGCCGCGUCUCUAGAAGUGAUGCUCUGCCGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "wt_structure_window": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((",
+    "mutant_structure_window": ".(((.(((((.((...)).)))))...))).(((.....(((((.......))))).....)))..((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGCCGCGUCUCUAGAAGUGAUGCUCUGCCGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).((...((.....))...))..",
+    "mutant_structure": ".(((.(((((.((...)).)))))...))).(((.....(((((.......))))).....)))..((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_58",
+    "sequence_length": 230,
+    "mutation_pos0": 27,
+    "mutation_pos1": 28,
+    "mutation_from": "G",
+    "mutation_to": "A",
+    "wt_mfe": -81.4,
+    "mutant_mfe": -80.6,
+    "mfe_delta": 0.8000000000000114,
+    "bp_distance": 62,
+    "local_bp_distance": 62,
+    "wt_pair_count": 69,
+    "mutant_pair_count": 71,
+    "wt_only_pair_count": 30,
+    "mutant_only_pair_count": 32,
+    "diagnostic_wt_pairs_1": [
+      [
+        28,
+        117
+      ],
+      [
+        27,
+        118
+      ],
+      [
+        29,
+        116
+      ],
+      [
+        26,
+        119
+      ],
+      [
+        30,
+        115
+      ],
+      [
+        25,
+        120
+      ],
+      [
+        31,
+        114
+      ],
+      [
+        24,
+        121
+      ],
+      [
+        32,
+        113
+      ],
+      [
+        23,
+        122
+      ],
+      [
+        40,
+        112
+      ],
+      [
+        41,
+        111
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        1,
+        26
+      ],
+      [
+        2,
+        25
+      ],
+      [
+        3,
+        24
+      ],
+      [
+        4,
+        23
+      ],
+      [
+        5,
+        20
+      ],
+      [
+        6,
+        19
+      ],
+      [
+        7,
+        18
+      ],
+      [
+        40,
+        56
+      ],
+      [
+        41,
+        55
+      ],
+      [
+        42,
+        54
+      ],
+      [
+        43,
+        53
+      ],
+      [
+        44,
+        52
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 130,
+    "window_len": 130,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCAUGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "mutant_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUACAUGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAU",
+    "wt_structure_window": "...((.(...(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..(((",
+    "mutant_structure_window": "(((((((..........)))..)))).............(((((.......)))))..........((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCAUGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUACAUGUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "...((.(...(((.........((((((((((.......((((((((.((.(..............((((((.......))))))..............).)).))))))))))))))))))(((..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))...).))....",
+    "mutant_structure": "(((((((..........)))..)))).............(((((.......)))))..........((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_231",
+    "sequence_length": 230,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "G",
+    "mutation_to": "A",
+    "wt_mfe": -83.0,
+    "mutant_mfe": -83.5,
+    "mfe_delta": -0.5,
+    "bp_distance": 62,
+    "local_bp_distance": 58,
+    "wt_pair_count": 74,
+    "mutant_pair_count": 76,
+    "wt_only_pair_count": 30,
+    "mutant_only_pair_count": 32,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        125
+      ],
+      [
+        4,
+        124
+      ],
+      [
+        5,
+        123
+      ],
+      [
+        6,
+        122
+      ],
+      [
+        7,
+        121
+      ],
+      [
+        10,
+        119
+      ],
+      [
+        11,
+        118
+      ],
+      [
+        12,
+        116
+      ],
+      [
+        15,
+        113
+      ],
+      [
+        16,
+        112
+      ],
+      [
+        18,
+        110
+      ],
+      [
+        19,
+        109
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        2,
+        25
+      ],
+      [
+        1,
+        26
+      ],
+      [
+        3,
+        24
+      ],
+      [
+        4,
+        23
+      ],
+      [
+        5,
+        20
+      ],
+      [
+        6,
+        19
+      ],
+      [
+        7,
+        18
+      ],
+      [
+        30,
+        65
+      ],
+      [
+        31,
+        64
+      ],
+      [
+        32,
+        63
+      ],
+      [
+        33,
+        62
+      ],
+      [
+        34,
+        61
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 133,
+    "window_len": 133,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCUGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "mutant_window": "GAGCCGCGACUCUAGAAGUGAUGCUCUGCUGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "wt_structure_window": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((",
+    "mutant_structure_window": "(((((((..........)))..))))...(((((.....(((((.......)))))....))))).((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCUGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GAGCCGCGACUCUAGAAGUGAUGCUCUGCUGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).((...((.....))...))..",
+    "mutant_structure": "(((((((..........)))..))))...(((((.....(((((.......)))))....))))).((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_233",
+    "sequence_length": 230,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "G",
+    "mutation_to": "A",
+    "wt_mfe": -82.5,
+    "mutant_mfe": -83.0,
+    "mfe_delta": -0.5,
+    "bp_distance": 62,
+    "local_bp_distance": 58,
+    "wt_pair_count": 74,
+    "mutant_pair_count": 76,
+    "wt_only_pair_count": 30,
+    "mutant_only_pair_count": 32,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        125
+      ],
+      [
+        4,
+        124
+      ],
+      [
+        5,
+        123
+      ],
+      [
+        6,
+        122
+      ],
+      [
+        7,
+        121
+      ],
+      [
+        10,
+        119
+      ],
+      [
+        11,
+        118
+      ],
+      [
+        12,
+        116
+      ],
+      [
+        15,
+        113
+      ],
+      [
+        16,
+        112
+      ],
+      [
+        18,
+        110
+      ],
+      [
+        19,
+        109
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        2,
+        25
+      ],
+      [
+        1,
+        26
+      ],
+      [
+        3,
+        24
+      ],
+      [
+        4,
+        23
+      ],
+      [
+        5,
+        20
+      ],
+      [
+        6,
+        19
+      ],
+      [
+        7,
+        18
+      ],
+      [
+        30,
+        65
+      ],
+      [
+        31,
+        64
+      ],
+      [
+        32,
+        63
+      ],
+      [
+        33,
+        62
+      ],
+      [
+        34,
+        61
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 133,
+    "window_len": 133,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCUGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "mutant_window": "GAGCCGCGACUCUAGAAGUGAUGCUCUGCUGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCG",
+    "wt_structure_window": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((",
+    "mutant_structure_window": "(((((((..........)))..))))...(((((.....(((((.......)))))....))))).((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCUGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GAGCCGCGACUCUAGAAGUGAUGCUCUGCUGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "..(((((..(((..((.((((((...((((((((((...(((((.......)))))..........((((((.......))))))........))))))))))))).))).))..).)).)))))..((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).((...((.....))...))..",
+    "mutant_structure": "(((((((..........)))..))))...(((((.....(((((.......)))))....))))).((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_167",
+    "sequence_length": 230,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "C",
+    "mutation_to": "U",
+    "wt_mfe": -83.6,
+    "mutant_mfe": -86.5,
+    "mfe_delta": -2.9000000000000057,
+    "bp_distance": 55,
+    "local_bp_distance": 55,
+    "wt_pair_count": 79,
+    "mutant_pair_count": 78,
+    "wt_only_pair_count": 28,
+    "mutant_only_pair_count": 27,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        70
+      ],
+      [
+        3,
+        71
+      ],
+      [
+        5,
+        69
+      ],
+      [
+        2,
+        73
+      ],
+      [
+        1,
+        74
+      ],
+      [
+        7,
+        68
+      ],
+      [
+        8,
+        67
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ],
+      [
+        15,
+        63
+      ],
+      [
+        16,
+        62
+      ],
+      [
+        17,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        86
+      ],
+      [
+        3,
+        87
+      ],
+      [
+        5,
+        85
+      ],
+      [
+        2,
+        88
+      ],
+      [
+        6,
+        84
+      ],
+      [
+        8,
+        83
+      ],
+      [
+        9,
+        82
+      ],
+      [
+        10,
+        81
+      ],
+      [
+        18,
+        74
+      ],
+      [
+        20,
+        73
+      ],
+      [
+        22,
+        72
+      ],
+      [
+        23,
+        71
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 96,
+    "window_len": 96,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAU",
+    "mutant_window": "GGGUCGCGACUCUAGAAGUGAUGCUCUGCGGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAU",
+    "wt_structure_window": "(((((.((....((((((((.(((((((((.((....)).))))))....))))))....))))).))))).))............((.(((((.(",
+    "mutant_structure_window": ".(((((.(((.......(.(.(((((.(.((((((....(((((.......)))))..)))))).).)))))))......)))))))).(((((.(",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGUCGCGACUCUAGAAGUGAUGCUCUGCGGGAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "(((((.((....((((((((.(((((((((.((....)).))))))....))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": ".(((((.(((.......(.(.(((((.(.((((((....(((((.......)))))..)))))).).)))))))......)))))))).(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))...."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_133",
+    "sequence_length": 230,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "C",
+    "mutation_to": "G",
+    "wt_mfe": -82.8,
+    "mutant_mfe": -83.8,
+    "mfe_delta": -1.0,
+    "bp_distance": 54,
+    "local_bp_distance": 54,
+    "wt_pair_count": 80,
+    "mutant_pair_count": 80,
+    "wt_only_pair_count": 27,
+    "mutant_only_pair_count": 27,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        70
+      ],
+      [
+        3,
+        71
+      ],
+      [
+        5,
+        69
+      ],
+      [
+        2,
+        73
+      ],
+      [
+        1,
+        74
+      ],
+      [
+        7,
+        68
+      ],
+      [
+        8,
+        67
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ],
+      [
+        15,
+        63
+      ],
+      [
+        16,
+        62
+      ],
+      [
+        17,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        24
+      ],
+      [
+        3,
+        25
+      ],
+      [
+        5,
+        23
+      ],
+      [
+        2,
+        26
+      ],
+      [
+        6,
+        22
+      ],
+      [
+        1,
+        27
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        10,
+        18
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        28,
+        41
+      ],
+      [
+        29,
+        40
+      ],
+      [
+        30,
+        39
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 82,
+    "window_len": 82,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGACGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGU",
+    "mutant_window": "GGGGCGCGACUCUAGAAGUGAUGCUCUGCGACGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGU",
+    "wt_structure_window": "(((((.((....((((((((.(((((((((.(((...)))))))))....))))))....))))).))))).))........",
+    "mutant_structure_window": "((((((..(((.....)))..))))))((((......))))(((((...(((......))))))))((((((.......)))",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGACGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGGCGCGACUCUAGAAGUGAUGCUCUGCGACGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "(((((.((....((((((((.(((((((((.(((...)))))))))....))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": "((((((..(((.....)))..))))))((((......))))(((((...(((......))))))))((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_97",
+    "sequence_length": 230,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "G",
+    "mutation_to": "A",
+    "wt_mfe": -83.0,
+    "mutant_mfe": -81.1,
+    "mfe_delta": 1.9000000000000057,
+    "bp_distance": 54,
+    "local_bp_distance": 54,
+    "wt_pair_count": 78,
+    "mutant_pair_count": 82,
+    "wt_only_pair_count": 25,
+    "mutant_only_pair_count": 29,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        29
+      ],
+      [
+        2,
+        30
+      ],
+      [
+        4,
+        28
+      ],
+      [
+        6,
+        24
+      ],
+      [
+        7,
+        23
+      ],
+      [
+        8,
+        22
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        10,
+        18
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        31,
+        63
+      ],
+      [
+        32,
+        62
+      ],
+      [
+        33,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        82
+      ],
+      [
+        2,
+        83
+      ],
+      [
+        4,
+        81
+      ],
+      [
+        1,
+        84
+      ],
+      [
+        6,
+        76
+      ],
+      [
+        7,
+        75
+      ],
+      [
+        8,
+        74
+      ],
+      [
+        10,
+        70
+      ],
+      [
+        11,
+        69
+      ],
+      [
+        12,
+        68
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 92,
+    "window_len": 92,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCGAGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUC",
+    "mutant_window": "GGACCGCGACUCUAGAAGUGAUGCUCUGCCGAGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUC",
+    "wt_structure_window": ".(((.((((((.....)))..)))...)))(((((....(((((.......)))))..)))))...((((((.......)))))).((.(((",
+    "mutant_structure_window": "((((.(((.(((((((((((.(((((((((((.....))).)))))....))))))....)))))..)))...)))....))))..((.(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCGAGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGACCGCGACUCUAGAAGUGAUGCUCUGCCGAGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": ".(((.((((((.....)))..)))...)))(((((....(((((.......)))))..)))))...((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": "((((.(((.(((((((((((.(((((((((((.....))).)))))....))))))....)))))..)))...)))....))))..((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_95",
+    "sequence_length": 230,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -82.9,
+    "mutant_mfe": -80.5,
+    "mfe_delta": 2.4000000000000057,
+    "bp_distance": 54,
+    "local_bp_distance": 54,
+    "wt_pair_count": 78,
+    "mutant_pair_count": 82,
+    "wt_only_pair_count": 25,
+    "mutant_only_pair_count": 29,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        28
+      ],
+      [
+        3,
+        29
+      ],
+      [
+        2,
+        30
+      ],
+      [
+        6,
+        24
+      ],
+      [
+        7,
+        23
+      ],
+      [
+        8,
+        22
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        10,
+        18
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        31,
+        63
+      ],
+      [
+        32,
+        62
+      ],
+      [
+        33,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        82
+      ],
+      [
+        3,
+        83
+      ],
+      [
+        5,
+        81
+      ],
+      [
+        2,
+        84
+      ],
+      [
+        6,
+        76
+      ],
+      [
+        7,
+        75
+      ],
+      [
+        8,
+        74
+      ],
+      [
+        10,
+        70
+      ],
+      [
+        11,
+        69
+      ],
+      [
+        12,
+        68
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 92,
+    "window_len": 92,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCGAAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUC",
+    "mutant_window": "GGGACGCGACUCUAGAAGUGAUGCUCUGCCGAAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUC",
+    "wt_structure_window": ".(((.((((((.....)))..)))...)))(((((....(((((.......)))))..)))))...((((((.......)))))).((.(((",
+    "mutant_structure_window": ".(((((((.(((((((((((.(((((((((((.....))).)))))....))))))....)))))..)))...)))....))))..((.(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCGAAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGACGCGACUCUAGAAGUGAUGCUCUGCCGAAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": ".(((.((((((.....)))..)))...)))(((((....(((((.......)))))..)))))...((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": ".(((((((.(((((((((((.(((((((((((.....))).)))))....))))))....)))))..)))...)))....))))..((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_107",
+    "sequence_length": 230,
+    "mutation_pos0": 0,
+    "mutation_pos1": 1,
+    "mutation_from": "G",
+    "mutation_to": "U",
+    "wt_mfe": -82.2,
+    "mutant_mfe": -81.8,
+    "mfe_delta": 0.4000000000000057,
+    "bp_distance": 52,
+    "local_bp_distance": 52,
+    "wt_pair_count": 79,
+    "mutant_pair_count": 79,
+    "wt_only_pair_count": 26,
+    "mutant_only_pair_count": 26,
+    "diagnostic_wt_pairs_1": [
+      [
+        1,
+        74
+      ],
+      [
+        2,
+        73
+      ],
+      [
+        3,
+        71
+      ],
+      [
+        4,
+        70
+      ],
+      [
+        5,
+        69
+      ],
+      [
+        7,
+        68
+      ],
+      [
+        8,
+        67
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ],
+      [
+        15,
+        63
+      ],
+      [
+        16,
+        62
+      ],
+      [
+        17,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        2,
+        30
+      ],
+      [
+        3,
+        29
+      ],
+      [
+        4,
+        28
+      ],
+      [
+        6,
+        24
+      ],
+      [
+        7,
+        23
+      ],
+      [
+        8,
+        22
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        10,
+        18
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        31,
+        66
+      ],
+      [
+        32,
+        65
+      ],
+      [
+        33,
+        64
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 82,
+    "window_len": 82,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCGUAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGU",
+    "mutant_window": "UGGCCGCGACUCUAGAAGUGAUGCUCUGCCGUAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGU",
+    "wt_structure_window": "(((((.((....(((((((..(((..(((((((....((.....))))))))).))).))))))).))))).))........",
+    "mutant_structure_window": ".(((.((((((.....)))..)))...)))(((..(((.(((((.......)))))..)))..)))((((((.......)))",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCGUAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "UGGCCGCGACUCUAGAAGUGAUGCUCUGCCGUAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "(((((.((....(((((((..(((..(((((((....((.....))))))))).))).))))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": ".(((.((((((.....)))..)))...)))(((..(((.(((((.......)))))..)))..)))((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_107",
+    "sequence_length": 230,
+    "mutation_pos0": 0,
+    "mutation_pos1": 1,
+    "mutation_from": "G",
+    "mutation_to": "A",
+    "wt_mfe": -82.2,
+    "mutant_mfe": -81.7,
+    "mfe_delta": 0.5,
+    "bp_distance": 52,
+    "local_bp_distance": 52,
+    "wt_pair_count": 79,
+    "mutant_pair_count": 79,
+    "wt_only_pair_count": 26,
+    "mutant_only_pair_count": 26,
+    "diagnostic_wt_pairs_1": [
+      [
+        1,
+        74
+      ],
+      [
+        2,
+        73
+      ],
+      [
+        3,
+        71
+      ],
+      [
+        4,
+        70
+      ],
+      [
+        5,
+        69
+      ],
+      [
+        7,
+        68
+      ],
+      [
+        8,
+        67
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ],
+      [
+        15,
+        63
+      ],
+      [
+        16,
+        62
+      ],
+      [
+        17,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        2,
+        30
+      ],
+      [
+        3,
+        29
+      ],
+      [
+        4,
+        28
+      ],
+      [
+        6,
+        24
+      ],
+      [
+        7,
+        23
+      ],
+      [
+        8,
+        22
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        10,
+        18
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        31,
+        66
+      ],
+      [
+        32,
+        65
+      ],
+      [
+        33,
+        64
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 82,
+    "window_len": 82,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCGUAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGU",
+    "mutant_window": "AGGCCGCGACUCUAGAAGUGAUGCUCUGCCGUAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGU",
+    "wt_structure_window": "(((((.((....(((((((..(((..(((((((....((.....))))))))).))).))))))).))))).))........",
+    "mutant_structure_window": ".(((.((((((.....)))..)))...)))(((..(((.(((((.......)))))..)))..)))((((((.......)))",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCGUAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "AGGCCGCGACUCUAGAAGUGAUGCUCUGCCGUAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "(((((.((....(((((((..(((..(((((((....((.....))))))))).))).))))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": ".(((.((((((.....)))..)))...)))(((..(((.(((((.......)))))..)))..)))((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_145",
+    "sequence_length": 230,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "C",
+    "mutation_to": "U",
+    "wt_mfe": -83.7,
+    "mutant_mfe": -84.5,
+    "mfe_delta": -0.7999999999999972,
+    "bp_distance": 52,
+    "local_bp_distance": 52,
+    "wt_pair_count": 78,
+    "mutant_pair_count": 76,
+    "wt_only_pair_count": 27,
+    "mutant_only_pair_count": 25,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        70
+      ],
+      [
+        3,
+        71
+      ],
+      [
+        5,
+        69
+      ],
+      [
+        2,
+        73
+      ],
+      [
+        1,
+        74
+      ],
+      [
+        7,
+        68
+      ],
+      [
+        8,
+        67
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ],
+      [
+        15,
+        63
+      ],
+      [
+        16,
+        62
+      ],
+      [
+        17,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        86
+      ],
+      [
+        3,
+        87
+      ],
+      [
+        5,
+        85
+      ],
+      [
+        2,
+        88
+      ],
+      [
+        6,
+        84
+      ],
+      [
+        8,
+        83
+      ],
+      [
+        9,
+        82
+      ],
+      [
+        10,
+        81
+      ],
+      [
+        18,
+        74
+      ],
+      [
+        20,
+        73
+      ],
+      [
+        22,
+        72
+      ],
+      [
+        23,
+        71
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 96,
+    "window_len": 96,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGCAGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAU",
+    "mutant_window": "GGGUCGCGACUCUAGAAGUGAUGCUCUGCGCAGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAU",
+    "wt_structure_window": "(((((.((....((((((((.((((((((((........)))))))....))))))....))))).))))).))............((.(((((.(",
+    "mutant_structure_window": ".(((((.(((.......(.(.(((.(((.(.(((.....(((((.......))))).....))).)))))))))......)))))))).(((((.(",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGCAGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGUCGCGACUCUAGAAGUGAUGCUCUGCGCAGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "(((((.((....((((((((.((((((((((........)))))))....))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": ".(((((.(((.......(.(.(((.(((.(.(((.....(((((.......))))).....))).)))))))))......)))))))).(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))...."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_176",
+    "sequence_length": 230,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "G",
+    "mutation_to": "A",
+    "wt_mfe": -82.4,
+    "mutant_mfe": -81.0,
+    "mfe_delta": 1.4000000000000057,
+    "bp_distance": 52,
+    "local_bp_distance": 52,
+    "wt_pair_count": 77,
+    "mutant_pair_count": 81,
+    "wt_only_pair_count": 24,
+    "mutant_only_pair_count": 28,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        24
+      ],
+      [
+        2,
+        25
+      ],
+      [
+        4,
+        23
+      ],
+      [
+        1,
+        26
+      ],
+      [
+        5,
+        20
+      ],
+      [
+        6,
+        19
+      ],
+      [
+        7,
+        18
+      ],
+      [
+        27,
+        57
+      ],
+      [
+        28,
+        56
+      ],
+      [
+        29,
+        55
+      ],
+      [
+        30,
+        54
+      ],
+      [
+        31,
+        53
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        82
+      ],
+      [
+        2,
+        83
+      ],
+      [
+        4,
+        81
+      ],
+      [
+        1,
+        84
+      ],
+      [
+        6,
+        76
+      ],
+      [
+        7,
+        75
+      ],
+      [
+        8,
+        74
+      ],
+      [
+        10,
+        70
+      ],
+      [
+        11,
+        69
+      ],
+      [
+        12,
+        68
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 92,
+    "window_len": 92,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGUACAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUC",
+    "mutant_window": "GGACCGCGACUCUAGAAGUGAUGCUCUGCGUACAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUC",
+    "wt_structure_window": "(((((((..........)))..))))(((((.((((.((.....))))))..))))).........((((((.......)))))).((.(((",
+    "mutant_structure_window": "((((.(((.(((((((((((.((((((((((........)))))))....))))))....)))))..)))...)))....))))..((.(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGUACAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGACCGCGACUCUAGAAGUGAUGCUCUGCGUACAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "(((((((..........)))..))))(((((.((((.((.....))))))..))))).........((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": "((((.(((.(((((((((((.((((((((((........)))))))....))))))....)))))..)))...)))....))))..((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_166",
+    "sequence_length": 230,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "G",
+    "mutation_to": "A",
+    "wt_mfe": -86.9,
+    "mutant_mfe": -84.4,
+    "mfe_delta": 2.5,
+    "bp_distance": 52,
+    "local_bp_distance": 52,
+    "wt_pair_count": 75,
+    "mutant_pair_count": 83,
+    "wt_only_pair_count": 22,
+    "mutant_only_pair_count": 30,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        32
+      ],
+      [
+        2,
+        33
+      ],
+      [
+        4,
+        31
+      ],
+      [
+        5,
+        30
+      ],
+      [
+        6,
+        29
+      ],
+      [
+        7,
+        28
+      ],
+      [
+        8,
+        26
+      ],
+      [
+        9,
+        25
+      ],
+      [
+        10,
+        23
+      ],
+      [
+        11,
+        21
+      ],
+      [
+        12,
+        20
+      ],
+      [
+        40,
+        56
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        82
+      ],
+      [
+        2,
+        83
+      ],
+      [
+        4,
+        81
+      ],
+      [
+        1,
+        84
+      ],
+      [
+        6,
+        76
+      ],
+      [
+        7,
+        75
+      ],
+      [
+        8,
+        74
+      ],
+      [
+        10,
+        70
+      ],
+      [
+        11,
+        69
+      ],
+      [
+        12,
+        68
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 92,
+    "window_len": 92,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGGCUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUC",
+    "mutant_window": "GGACCGCGACUCUAGAAGUGAUGCUCUGCGGCUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUC",
+    "wt_structure_window": ".(((((((((((.......)).).)).))))))......(((((.......)))))..........((((((.......)))))).((.(((",
+    "mutant_structure_window": "((((.(((.((((((((.....(((.((((((((((.((.....)))))))).))))))))))))..)))...)))....))))..((.(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGGCUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGACCGCGACUCUAGAAGUGAUGCUCUGCGGCUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": ".(((((((((((.......)).).)).))))))......(((((.......)))))..........((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": "((((.(((.((((((((.....(((.((((((((((.((.....)))))))).))))))))))))..)))...)))....))))..((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_229",
+    "sequence_length": 230,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "G",
+    "mutation_to": "A",
+    "wt_mfe": -82.8,
+    "mutant_mfe": -83.7,
+    "mfe_delta": -0.9000000000000057,
+    "bp_distance": 51,
+    "local_bp_distance": 51,
+    "wt_pair_count": 80,
+    "mutant_pair_count": 77,
+    "wt_only_pair_count": 27,
+    "mutant_only_pair_count": 24,
+    "diagnostic_wt_pairs_1": [
+      [
+        2,
+        73
+      ],
+      [
+        1,
+        74
+      ],
+      [
+        3,
+        71
+      ],
+      [
+        4,
+        70
+      ],
+      [
+        5,
+        69
+      ],
+      [
+        7,
+        68
+      ],
+      [
+        8,
+        67
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ],
+      [
+        15,
+        63
+      ],
+      [
+        16,
+        62
+      ],
+      [
+        17,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        2,
+        25
+      ],
+      [
+        1,
+        26
+      ],
+      [
+        3,
+        24
+      ],
+      [
+        4,
+        23
+      ],
+      [
+        5,
+        20
+      ],
+      [
+        6,
+        19
+      ],
+      [
+        7,
+        18
+      ],
+      [
+        27,
+        57
+      ],
+      [
+        28,
+        56
+      ],
+      [
+        29,
+        55
+      ],
+      [
+        30,
+        53
+      ],
+      [
+        31,
+        52
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 82,
+    "window_len": 82,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCUGCGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGU",
+    "mutant_window": "GAGCCGCGACUCUAGAAGUGAUGCUCUGCUGCGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGU",
+    "wt_structure_window": "(((((.((....((((((((.((((((((.((((...)))))))))....))))))....))))).))))).))........",
+    "mutant_structure_window": "(((((((..........)))..))))((((((.(((.((.....))))).))).))).........((((((.......)))",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCUGCGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GAGCCGCGACUCUAGAAGUGAUGCUCUGCUGCGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "(((((.((....((((((((.((((((((.((((...)))))))))....))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": "(((((((..........)))..))))((((((.(((.((.....))))).))).))).........((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_175",
+    "sequence_length": 230,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "C",
+    "mutation_to": "U",
+    "wt_mfe": -81.6,
+    "mutant_mfe": -83.7,
+    "mfe_delta": -2.1000000000000085,
+    "bp_distance": 51,
+    "local_bp_distance": 51,
+    "wt_pair_count": 78,
+    "mutant_pair_count": 75,
+    "wt_only_pair_count": 27,
+    "mutant_only_pair_count": 24,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        70
+      ],
+      [
+        3,
+        71
+      ],
+      [
+        5,
+        69
+      ],
+      [
+        2,
+        73
+      ],
+      [
+        1,
+        74
+      ],
+      [
+        7,
+        68
+      ],
+      [
+        8,
+        67
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ],
+      [
+        15,
+        63
+      ],
+      [
+        16,
+        62
+      ],
+      [
+        17,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        86
+      ],
+      [
+        3,
+        87
+      ],
+      [
+        5,
+        85
+      ],
+      [
+        2,
+        88
+      ],
+      [
+        6,
+        84
+      ],
+      [
+        8,
+        83
+      ],
+      [
+        9,
+        82
+      ],
+      [
+        10,
+        81
+      ],
+      [
+        18,
+        74
+      ],
+      [
+        20,
+        73
+      ],
+      [
+        22,
+        72
+      ],
+      [
+        23,
+        71
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 96,
+    "window_len": 96,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGUAAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAU",
+    "mutant_window": "GGGUCGCGACUCUAGAAGUGAUGCUCUGCGUAAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAU",
+    "wt_structure_window": "(((((.((....((((((((.((((((((((........)))))))....))))))....))))).))))).))............((.(((((.(",
+    "mutant_structure_window": ".(((((.(((.......(.(.(((.(((.(((.......(((((.......))))).......)))))))))))......)))))))).(((((.(",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGUAAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGUCGCGACUCUAGAAGUGAUGCUCUGCGUAAAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "(((((.((....((((((((.((((((((((........)))))))....))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": ".(((((.(((.......(.(.(((.(((.(((.......(((((.......))))).......)))))))))))......)))))))).(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))...."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_178",
+    "sequence_length": 230,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "C",
+    "mutation_to": "U",
+    "wt_mfe": -81.6,
+    "mutant_mfe": -83.7,
+    "mfe_delta": -2.1000000000000085,
+    "bp_distance": 51,
+    "local_bp_distance": 51,
+    "wt_pair_count": 78,
+    "mutant_pair_count": 75,
+    "wt_only_pair_count": 27,
+    "mutant_only_pair_count": 24,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        70
+      ],
+      [
+        3,
+        71
+      ],
+      [
+        5,
+        69
+      ],
+      [
+        2,
+        73
+      ],
+      [
+        1,
+        74
+      ],
+      [
+        7,
+        68
+      ],
+      [
+        8,
+        67
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ],
+      [
+        15,
+        63
+      ],
+      [
+        16,
+        62
+      ],
+      [
+        17,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        86
+      ],
+      [
+        3,
+        87
+      ],
+      [
+        5,
+        85
+      ],
+      [
+        2,
+        88
+      ],
+      [
+        6,
+        84
+      ],
+      [
+        8,
+        83
+      ],
+      [
+        9,
+        82
+      ],
+      [
+        10,
+        81
+      ],
+      [
+        18,
+        74
+      ],
+      [
+        20,
+        73
+      ],
+      [
+        22,
+        72
+      ],
+      [
+        23,
+        71
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 96,
+    "window_len": 96,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGUAUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAU",
+    "mutant_window": "GGGUCGCGACUCUAGAAGUGAUGCUCUGCGUAUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAU",
+    "wt_structure_window": "(((((.((....((((((((.((((((((((........)))))))....))))))....))))).))))).))............((.(((((.(",
+    "mutant_structure_window": ".(((((.(((.......(.(.(((.(((.(((.......(((((.......))))).......)))))))))))......)))))))).(((((.(",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGUAUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGUCGCGACUCUAGAAGUGAUGCUCUGCGUAUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "(((((.((....((((((((.((((((((((........)))))))....))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": ".(((((.(((.......(.(.(((.(((.(((.......(((((.......))))).......)))))))))))......)))))))).(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))...."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_169",
+    "sequence_length": 230,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -83.2,
+    "mutant_mfe": -82.3,
+    "mfe_delta": 0.9000000000000057,
+    "bp_distance": 51,
+    "local_bp_distance": 51,
+    "wt_pair_count": 76,
+    "mutant_pair_count": 81,
+    "wt_only_pair_count": 23,
+    "mutant_only_pair_count": 28,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        31
+      ],
+      [
+        5,
+        30
+      ],
+      [
+        6,
+        29
+      ],
+      [
+        7,
+        28
+      ],
+      [
+        8,
+        26
+      ],
+      [
+        9,
+        25
+      ],
+      [
+        10,
+        23
+      ],
+      [
+        11,
+        21
+      ],
+      [
+        12,
+        20
+      ],
+      [
+        32,
+        64
+      ],
+      [
+        33,
+        63
+      ],
+      [
+        34,
+        62
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        82
+      ],
+      [
+        3,
+        83
+      ],
+      [
+        5,
+        81
+      ],
+      [
+        2,
+        84
+      ],
+      [
+        6,
+        76
+      ],
+      [
+        7,
+        75
+      ],
+      [
+        8,
+        74
+      ],
+      [
+        10,
+        70
+      ],
+      [
+        11,
+        69
+      ],
+      [
+        12,
+        68
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 92,
+    "window_len": 92,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUC",
+    "mutant_window": "GGGACGCGACUCUAGAAGUGAUGCUCUGCGGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUC",
+    "wt_structure_window": "...(((((((((.......)).).)).))))(((.....(((((.......))))).....)))..((((((.......)))))).((.(((",
+    "mutant_structure_window": ".(((((((.(((((((((((.(((((((((.(......).))))))....))))))....)))))..)))...)))....))))..((.(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGACGCGACUCUAGAAGUGAUGCUCUGCGGGGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "...(((((((((.......)).).)).))))(((.....(((((.......))))).....)))..((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": ".(((((((.(((((((((((.(((((((((.(......).))))))....))))))....)))))..)))...)))....))))..((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_190",
+    "sequence_length": 230,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "G",
+    "mutation_to": "A",
+    "wt_mfe": -81.4,
+    "mutant_mfe": -82.1,
+    "mfe_delta": -0.6999999999999886,
+    "bp_distance": 50,
+    "local_bp_distance": 50,
+    "wt_pair_count": 78,
+    "mutant_pair_count": 78,
+    "wt_only_pair_count": 25,
+    "mutant_only_pair_count": 25,
+    "diagnostic_wt_pairs_1": [
+      [
+        2,
+        73
+      ],
+      [
+        1,
+        74
+      ],
+      [
+        3,
+        71
+      ],
+      [
+        4,
+        70
+      ],
+      [
+        5,
+        69
+      ],
+      [
+        7,
+        68
+      ],
+      [
+        8,
+        67
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ],
+      [
+        15,
+        63
+      ],
+      [
+        16,
+        62
+      ],
+      [
+        17,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        2,
+        25
+      ],
+      [
+        1,
+        26
+      ],
+      [
+        3,
+        24
+      ],
+      [
+        4,
+        23
+      ],
+      [
+        5,
+        20
+      ],
+      [
+        6,
+        19
+      ],
+      [
+        7,
+        18
+      ],
+      [
+        27,
+        57
+      ],
+      [
+        28,
+        56
+      ],
+      [
+        29,
+        55
+      ],
+      [
+        30,
+        54
+      ],
+      [
+        31,
+        53
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 82,
+    "window_len": 82,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGUUUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGU",
+    "mutant_window": "GAGCCGCGACUCUAGAAGUGAUGCUCUGCGUUUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGU",
+    "wt_structure_window": "(((((.((....((((((((.((((((((((........)))))))....))))))....))))).))))).))........",
+    "mutant_structure_window": "(((((((..........)))..))))((((((((((.((.....))))))).))))).........((((((.......)))",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGUUUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GAGCCGCGACUCUAGAAGUGAUGCUCUGCGUUUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "(((((.((....((((((((.((((((((((........)))))))....))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": "(((((((..........)))..))))((((((((((.((.....))))))).))))).........((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_72",
+    "sequence_length": 230,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "G",
+    "mutation_to": "U",
+    "wt_mfe": -82.4,
+    "mutant_mfe": -83.8,
+    "mfe_delta": -1.3999999999999915,
+    "bp_distance": 50,
+    "local_bp_distance": 50,
+    "wt_pair_count": 79,
+    "mutant_pair_count": 77,
+    "wt_only_pair_count": 26,
+    "mutant_only_pair_count": 24,
+    "diagnostic_wt_pairs_1": [
+      [
+        2,
+        73
+      ],
+      [
+        1,
+        74
+      ],
+      [
+        3,
+        71
+      ],
+      [
+        4,
+        70
+      ],
+      [
+        5,
+        69
+      ],
+      [
+        7,
+        68
+      ],
+      [
+        8,
+        67
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ],
+      [
+        15,
+        63
+      ],
+      [
+        16,
+        62
+      ],
+      [
+        17,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        2,
+        53
+      ],
+      [
+        1,
+        54
+      ],
+      [
+        3,
+        52
+      ],
+      [
+        4,
+        51
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        6,
+        49
+      ],
+      [
+        11,
+        46
+      ],
+      [
+        12,
+        45
+      ],
+      [
+        13,
+        44
+      ],
+      [
+        14,
+        43
+      ],
+      [
+        18,
+        41
+      ],
+      [
+        19,
+        40
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 82,
+    "window_len": 82,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCAGCAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGU",
+    "mutant_window": "GUGCCGCGACUCUAGAAGUGAUGCUCUGCCAGCAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGU",
+    "wt_structure_window": "(((((.((....((((((((.((((.(((((((......)).))).)).)))))))....))))).))))).))........",
+    "mutant_structure_window": "((((((....((((...((((((((.....))))...)))).))))..))))))............((((((.......)))",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCAGCAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GUGCCGCGACUCUAGAAGUGAUGCUCUGCCAGCAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "(((((.((....((((((((.((((.(((((((......)).))).)).)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": "((((((....((((...((((((((.....))))...)))).))))..))))))............((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_45",
+    "sequence_length": 230,
+    "mutation_pos0": 0,
+    "mutation_pos1": 1,
+    "mutation_from": "G",
+    "mutation_to": "C",
+    "wt_mfe": -80.9,
+    "mutant_mfe": -80.4,
+    "mfe_delta": 0.5,
+    "bp_distance": 50,
+    "local_bp_distance": 50,
+    "wt_pair_count": 80,
+    "mutant_pair_count": 76,
+    "wt_only_pair_count": 27,
+    "mutant_only_pair_count": 23,
+    "diagnostic_wt_pairs_1": [
+      [
+        1,
+        74
+      ],
+      [
+        2,
+        73
+      ],
+      [
+        3,
+        71
+      ],
+      [
+        4,
+        70
+      ],
+      [
+        5,
+        69
+      ],
+      [
+        7,
+        68
+      ],
+      [
+        8,
+        67
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ],
+      [
+        15,
+        63
+      ],
+      [
+        16,
+        62
+      ],
+      [
+        17,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        1,
+        55
+      ],
+      [
+        2,
+        54
+      ],
+      [
+        3,
+        52
+      ],
+      [
+        4,
+        51
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        6,
+        49
+      ],
+      [
+        11,
+        46
+      ],
+      [
+        12,
+        45
+      ],
+      [
+        13,
+        44
+      ],
+      [
+        14,
+        43
+      ],
+      [
+        18,
+        41
+      ],
+      [
+        19,
+        40
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 82,
+    "window_len": 82,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCAGUGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGU",
+    "mutant_window": "CGGCCGCGACUCUAGAAGUGAUGCUCUGCAGUGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGU",
+    "wt_structure_window": "(((((.((....((((((((.((((((((.((((...)))))))))....))))))....))))).))))).))........",
+    "mutant_structure_window": "((((((....((((...(((((..((......))..))))).))))..)))).))...........((((((.......)))",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCAGUGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "CGGCCGCGACUCUAGAAGUGAUGCUCUGCAGUGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "(((((.((....((((((((.((((((((.((((...)))))))))....))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": "((((((....((((...(((((..((......))..))))).))))..)))).))...........((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_229",
+    "sequence_length": 230,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "G",
+    "mutation_to": "C",
+    "wt_mfe": -82.8,
+    "mutant_mfe": -82.2,
+    "mfe_delta": 0.5999999999999943,
+    "bp_distance": 50,
+    "local_bp_distance": 50,
+    "wt_pair_count": 80,
+    "mutant_pair_count": 76,
+    "wt_only_pair_count": 27,
+    "mutant_only_pair_count": 23,
+    "diagnostic_wt_pairs_1": [
+      [
+        2,
+        73
+      ],
+      [
+        1,
+        74
+      ],
+      [
+        3,
+        71
+      ],
+      [
+        4,
+        70
+      ],
+      [
+        5,
+        69
+      ],
+      [
+        7,
+        68
+      ],
+      [
+        8,
+        67
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ],
+      [
+        15,
+        63
+      ],
+      [
+        16,
+        62
+      ],
+      [
+        17,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        2,
+        23
+      ],
+      [
+        1,
+        24
+      ],
+      [
+        3,
+        22
+      ],
+      [
+        5,
+        20
+      ],
+      [
+        6,
+        19
+      ],
+      [
+        7,
+        18
+      ],
+      [
+        27,
+        57
+      ],
+      [
+        28,
+        56
+      ],
+      [
+        29,
+        55
+      ],
+      [
+        30,
+        53
+      ],
+      [
+        31,
+        52
+      ],
+      [
+        32,
+        51
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 82,
+    "window_len": 82,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCUGCGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGU",
+    "mutant_window": "GCGCCGCGACUCUAGAAGUGAUGCUCUGCUGCGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGU",
+    "wt_structure_window": "(((((.((....((((((((.((((((((.((((...)))))))))....))))))....))))).))))).))........",
+    "mutant_structure_window": "(((.(((..........))).)))..((((((.(((.((.....))))).))).))).........((((((.......)))",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCUGCGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GCGCCGCGACUCUAGAAGUGAUGCUCUGCUGCGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "(((((.((....((((((((.((((((((.((((...)))))))))....))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": "(((.(((..........))).)))..((((((.(((.((.....))))).))).))).........((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_45",
+    "sequence_length": 230,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "G",
+    "mutation_to": "U",
+    "wt_mfe": -80.9,
+    "mutant_mfe": -84.1,
+    "mfe_delta": -3.1999999999999886,
+    "bp_distance": 50,
+    "local_bp_distance": 50,
+    "wt_pair_count": 80,
+    "mutant_pair_count": 76,
+    "wt_only_pair_count": 27,
+    "mutant_only_pair_count": 23,
+    "diagnostic_wt_pairs_1": [
+      [
+        2,
+        73
+      ],
+      [
+        1,
+        74
+      ],
+      [
+        3,
+        71
+      ],
+      [
+        4,
+        70
+      ],
+      [
+        5,
+        69
+      ],
+      [
+        7,
+        68
+      ],
+      [
+        8,
+        67
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ],
+      [
+        15,
+        63
+      ],
+      [
+        16,
+        62
+      ],
+      [
+        17,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        2,
+        53
+      ],
+      [
+        1,
+        54
+      ],
+      [
+        3,
+        52
+      ],
+      [
+        4,
+        51
+      ],
+      [
+        5,
+        50
+      ],
+      [
+        6,
+        49
+      ],
+      [
+        11,
+        46
+      ],
+      [
+        12,
+        45
+      ],
+      [
+        13,
+        44
+      ],
+      [
+        14,
+        43
+      ],
+      [
+        18,
+        41
+      ],
+      [
+        19,
+        40
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 82,
+    "window_len": 82,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCAGUGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGU",
+    "mutant_window": "GUGCCGCGACUCUAGAAGUGAUGCUCUGCAGUGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGU",
+    "wt_structure_window": "(((((.((....((((((((.((((((((.((((...)))))))))....))))))....))))).))))).))........",
+    "mutant_structure_window": "((((((....((((...(((((..((......))..))))).))))..))))))............((((((.......)))",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCAGUGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GUGCCGCGACUCUAGAAGUGAUGCUCUGCAGUGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "(((((.((....((((((((.((((((((.((((...)))))))))....))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": "((((((....((((...(((((..((......))..))))).))))..))))))............((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_124",
+    "sequence_length": 230,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "G",
+    "mutation_to": "A",
+    "wt_mfe": -81.4,
+    "mutant_mfe": -80.5,
+    "mfe_delta": 0.9000000000000057,
+    "bp_distance": 50,
+    "local_bp_distance": 50,
+    "wt_pair_count": 74,
+    "mutant_pair_count": 82,
+    "wt_only_pair_count": 21,
+    "mutant_only_pair_count": 29,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        29
+      ],
+      [
+        2,
+        30
+      ],
+      [
+        4,
+        28
+      ],
+      [
+        1,
+        31
+      ],
+      [
+        6,
+        24
+      ],
+      [
+        7,
+        23
+      ],
+      [
+        8,
+        22
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        10,
+        18
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        40,
+        56
+      ],
+      [
+        41,
+        55
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        82
+      ],
+      [
+        2,
+        83
+      ],
+      [
+        4,
+        81
+      ],
+      [
+        1,
+        84
+      ],
+      [
+        6,
+        76
+      ],
+      [
+        7,
+        75
+      ],
+      [
+        8,
+        74
+      ],
+      [
+        10,
+        70
+      ],
+      [
+        11,
+        69
+      ],
+      [
+        12,
+        68
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 92,
+    "window_len": 92,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCUUCAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUC",
+    "mutant_window": "GGACCGCGACUCUAGAAGUGAUGCUCUGCCUUCAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUC",
+    "wt_structure_window": "((((.((((((.....)))..)))...))))........(((((.......)))))..........((((((.......)))))).((.(((",
+    "mutant_structure_window": "((((.(((.((((((((((..(((..(((((((((......)))))...)))).))).)))))))..)))...)))....))))..((.(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCUUCAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGACCGCGACUCUAGAAGUGAUGCUCUGCCUUCAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "((((.((((((.....)))..)))...))))........(((((.......)))))..........((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": "((((.(((.((((((((((..(((..(((((((((......)))))...)))).))).)))))))..)))...)))....))))..((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_126",
+    "sequence_length": 230,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -81.4,
+    "mutant_mfe": -78.7,
+    "mfe_delta": 2.700000000000003,
+    "bp_distance": 50,
+    "local_bp_distance": 50,
+    "wt_pair_count": 74,
+    "mutant_pair_count": 82,
+    "wt_only_pair_count": 21,
+    "mutant_only_pair_count": 29,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        28
+      ],
+      [
+        3,
+        29
+      ],
+      [
+        2,
+        30
+      ],
+      [
+        6,
+        24
+      ],
+      [
+        1,
+        31
+      ],
+      [
+        7,
+        23
+      ],
+      [
+        8,
+        22
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        10,
+        18
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        40,
+        56
+      ],
+      [
+        41,
+        55
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        82
+      ],
+      [
+        3,
+        83
+      ],
+      [
+        5,
+        81
+      ],
+      [
+        2,
+        84
+      ],
+      [
+        6,
+        76
+      ],
+      [
+        7,
+        75
+      ],
+      [
+        8,
+        74
+      ],
+      [
+        10,
+        70
+      ],
+      [
+        11,
+        69
+      ],
+      [
+        12,
+        68
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 92,
+    "window_len": 92,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCUUUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUC",
+    "mutant_window": "GGGACGCGACUCUAGAAGUGAUGCUCUGCCUUUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUC",
+    "wt_structure_window": "((((.((((((.....)))..)))...))))........(((((.......)))))..........((((((.......)))))).((.(((",
+    "mutant_structure_window": ".(((((((.((((((((((..(((..(((((((((......)))))...)))).))).)))))))..)))...)))....))))..((.(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCCUUUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGACGCGACUCUAGAAGUGAUGCUCUGCCUUUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "((((.((((((.....)))..)))...))))........(((((.......)))))..........((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": ".(((((((.((((((((((..(((..(((((((((......)))))...)))).))).)))))))..)))...)))....))))..((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_165",
+    "sequence_length": 230,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "G",
+    "mutation_to": "A",
+    "wt_mfe": -85.8,
+    "mutant_mfe": -82.7,
+    "mfe_delta": 3.0999999999999943,
+    "bp_distance": 50,
+    "local_bp_distance": 50,
+    "wt_pair_count": 74,
+    "mutant_pair_count": 82,
+    "wt_only_pair_count": 21,
+    "mutant_only_pair_count": 29,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        32
+      ],
+      [
+        4,
+        31
+      ],
+      [
+        5,
+        30
+      ],
+      [
+        6,
+        29
+      ],
+      [
+        7,
+        28
+      ],
+      [
+        8,
+        26
+      ],
+      [
+        9,
+        25
+      ],
+      [
+        10,
+        23
+      ],
+      [
+        11,
+        21
+      ],
+      [
+        12,
+        20
+      ],
+      [
+        40,
+        56
+      ],
+      [
+        41,
+        55
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        82
+      ],
+      [
+        2,
+        83
+      ],
+      [
+        4,
+        81
+      ],
+      [
+        1,
+        84
+      ],
+      [
+        6,
+        76
+      ],
+      [
+        7,
+        75
+      ],
+      [
+        8,
+        74
+      ],
+      [
+        10,
+        70
+      ],
+      [
+        11,
+        69
+      ],
+      [
+        12,
+        68
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 92,
+    "window_len": 92,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGGCGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUC",
+    "mutant_window": "GGACCGCGACUCUAGAAGUGAUGCUCUGCGGCGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUC",
+    "wt_structure_window": "..((((((((((.......)).).)).))))).......(((((.......)))))..........((((((.......)))))).((.(((",
+    "mutant_structure_window": "((((.(((.((((((((.....(((.((((((.(((.((.....))))).)).))))))))))))..)))...)))....))))..((.(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGGCGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGACCGCGACUCUAGAAGUGAUGCUCUGCGGCGAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "..((((((((((.......)).).)).))))).......(((((.......)))))..........((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": "((((.(((.((((((((.....(((.((((((.(((.((.....))))).)).))))))))))))..)))...)))....))))..((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_162",
+    "sequence_length": 230,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -82.1,
+    "mutant_mfe": -81.1,
+    "mfe_delta": 1.0,
+    "bp_distance": 50,
+    "local_bp_distance": 50,
+    "wt_pair_count": 73,
+    "mutant_pair_count": 83,
+    "wt_only_pair_count": 20,
+    "mutant_only_pair_count": 30,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        31
+      ],
+      [
+        5,
+        30
+      ],
+      [
+        6,
+        29
+      ],
+      [
+        7,
+        28
+      ],
+      [
+        8,
+        26
+      ],
+      [
+        9,
+        25
+      ],
+      [
+        10,
+        23
+      ],
+      [
+        11,
+        21
+      ],
+      [
+        12,
+        20
+      ],
+      [
+        40,
+        56
+      ],
+      [
+        41,
+        55
+      ],
+      [
+        42,
+        54
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        82
+      ],
+      [
+        3,
+        83
+      ],
+      [
+        5,
+        81
+      ],
+      [
+        2,
+        84
+      ],
+      [
+        6,
+        76
+      ],
+      [
+        7,
+        75
+      ],
+      [
+        8,
+        74
+      ],
+      [
+        10,
+        70
+      ],
+      [
+        11,
+        69
+      ],
+      [
+        12,
+        68
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 92,
+    "window_len": 92,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGGAUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUC",
+    "mutant_window": "GGGACGCGACUCUAGAAGUGAUGCUCUGCGGAUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUC",
+    "wt_structure_window": "...(((((((((.......)).).)).))))........(((((.......)))))..........((((((.......)))))).((.(((",
+    "mutant_structure_window": ".(((((((.(((((((((((.((((((((((((...))).))))))....))))))....)))))..)))...)))....))))..((.(((",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCGGAUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGACGCGACUCUAGAAGUGAUGCUCUGCGGAUAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "...(((((((((.......)).).)).))))........(((((.......)))))..........((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": ".(((((((.(((((((((((.((((((((((((...))).))))))....))))))....)))))..)))...)))....))))..((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  },
+  {
+    "record_id": "Kobori_2015_ribozyme_j12_52",
+    "sequence_length": 230,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "C",
+    "mutation_to": "A",
+    "wt_mfe": -82.0,
+    "mutant_mfe": -81.8,
+    "mfe_delta": 0.20000000000000284,
+    "bp_distance": 49,
+    "local_bp_distance": 49,
+    "wt_pair_count": 78,
+    "mutant_pair_count": 77,
+    "wt_only_pair_count": 25,
+    "mutant_only_pair_count": 24,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        70
+      ],
+      [
+        3,
+        71
+      ],
+      [
+        5,
+        69
+      ],
+      [
+        2,
+        73
+      ],
+      [
+        1,
+        74
+      ],
+      [
+        7,
+        68
+      ],
+      [
+        8,
+        67
+      ],
+      [
+        13,
+        65
+      ],
+      [
+        14,
+        64
+      ],
+      [
+        15,
+        63
+      ],
+      [
+        16,
+        62
+      ],
+      [
+        17,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        60
+      ],
+      [
+        3,
+        61
+      ],
+      [
+        5,
+        59
+      ],
+      [
+        2,
+        62
+      ],
+      [
+        1,
+        63
+      ],
+      [
+        9,
+        19
+      ],
+      [
+        10,
+        18
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        20,
+        32
+      ],
+      [
+        21,
+        31
+      ],
+      [
+        22,
+        30
+      ],
+      [
+        23,
+        29
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 82,
+    "window_len": 82,
+    "wt_window": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCAUCCAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGU",
+    "mutant_window": "GGGACGCGACUCUAGAAGUGAUGCUCUGCAUCCAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGU",
+    "wt_structure_window": "(((((.((....((((((((.((((....((((((......))))))..)))))))....))))).))))).))........",
+    "mutant_structure_window": "(((((...(((.....)))(((((...))))).......(((((.......)))))..)))))...((((((.......)))",
+    "wt_sequence": "GGGCCGCGACUCUAGAAGUGAUGCUCUGCAUCCAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "mutant_sequence": "GGGACGCGACUCUAGAAGUGAUGCUCUGCAUCCAUAAUCGCGUGGAUAUGGCACGCAAGUUUCUACCGGGCACCGUAAAUGUCCGACUACUCCUAUUCCGGCACGUCCACGUCGUGCAGAGCGGUAACAUGCGUUACUAGGGGUGCAAGAGCUCUUUUUGAGGAGGAGCUCUUUUUGCUGCACUAGUUGCAUCAGAUGGUAACGCAUGGCUAAGCCGGAAAGGGGGAGAC",
+    "wt_structure": "(((((.((....((((((((.((((....((((((......))))))..)))))))....))))).))))).))............((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).)))))))..",
+    "mutant_structure": "(((((...(((.....)))(((((...))))).......(((((.......)))))..)))))...((((((.......)))))).((.(((((.((((((((((....)))(((.....)))....((((((((((((..(((((((((((((((((...)))))))))))....((((...))))))))))...)))))))))))).....))))))).))))))).."
+  }
+]

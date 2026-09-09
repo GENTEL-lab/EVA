@@ -1,0 +1,15 @@
+{
+  "n": 135,
+  "same_ids": true,
+  "exact_fresh_vector_equal": true,
+  "max_absolute_difference": 0.0,
+  "older_environment": {
+    "torch": "2.7.0",
+    "megablocks": "0.10.0"
+  },
+  "current_environment": {
+    "torch": "2.5.1+cu124",
+    "megablocks": "0.7.0"
+  },
+  "interpretation": "This comparison does not support attributing the archive mismatch to these runtime version differences."
+}

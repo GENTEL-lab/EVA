@@ -56,9 +56,12 @@ class DenseTrainer(BaseTrainer):
 
     def _setup_model(self):
         """设置Dense模型"""
-        from model_dense.causal_lm import create_dense_model
-        from model_dense.config import RNAGenDenseConfig
-        from model.lineage_tokenizer import get_lineage_rna_tokenizer
+        try:
+            from model_dense.causal_lm import create_dense_model
+            from model_dense.config import RNAGenDenseConfig
+        except ModuleNotFoundError as exc:
+            raise RuntimeError('Historical model_dense architecture is not included in this release. Dense training cannot be reproduced; do not substitute the MoE model.') from exc
+        from eva.lineage_tokenizer import get_lineage_rna_tokenizer
 
         model_config_dict = self.config.get('model_config', {})
         data_config = self.config.get('data_config', {})
@@ -112,7 +115,7 @@ class DenseTrainer(BaseTrainer):
 def main():
     DenseTrainer.main(
         description='Dense模型训练',
-        default_config='configs/dense_training/base_dense.yaml',
+        default_config=None,
     )
 
 

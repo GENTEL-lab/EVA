@@ -1,0 +1,5 @@
+case_index,record_id,direction,target_state,feature_id,condition,scale,sample_idx,span_start0,span_end0,span_len,anchor_pos1,anchor_one_x,generated_span,full_sequence,mfe,structure,target_hits,opposite_hits,net_target_score,target_hit_fraction,opposite_hit_fraction
+0,pepper_C5A_A6C_A7C_A21G_C36U,wt_state,wt,2008,no_steer,,0,5,12,7,13,6.976480007171631,GGCCGGG,UCCCAGGCCGGGGCGUGUCGGCCUGCUUCGGCAGGUACUGGCGCUGGGA,-29.9,(((((((((((.((.((((((......)))))).)).))))).)))))),0,5,-5,0.0,0.4166666666666667
+0,pepper_C5A_A6C_A7C_A21G_C36U,wt_state,wt,2008,0x,0,0,5,12,7,13,6.976480007171631,GGCCGGG,UCCCAGGCCGGGGCGUGUCGGCCUGCUUCGGCAGGUACUGGCGCUGGGA,-29.9,(((((((((((.((.((((((......)))))).)).))))).)))))),0,5,-5,0.0,0.4166666666666667
+0,pepper_C5A_A6C_A7C_A21G_C36U,wt_state,wt,2008,1x,1,0,5,12,7,13,6.976480007171631,GGCCGGG,UCCCAGGCCGGGGCGUGUCGGCCUGCUUCGGCAGGUACUGGCGCUGGGA,-29.9,(((((((((((.((.((((((......)))))).)).))))).)))))),0,5,-5,0.0,0.4166666666666667
+0,pepper_C5A_A6C_A7C_A21G_C36U,wt_state,wt,2008,2x,2,0,5,12,7,13,6.976480007171631,GGCCGGG,UCCCAGGCCGGGGCGUGUCGGCCUGCUUCGGCAGGUACUGGCGCUGGGA,-29.9,(((((((((((.((.((((((......)))))).)).))))).)))))),0,5,-5,0.0,0.4166666666666667

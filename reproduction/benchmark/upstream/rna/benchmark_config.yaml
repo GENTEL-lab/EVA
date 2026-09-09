@@ -1,0 +1,36 @@
+# Benchmark 运行配置
+# 在这里选择要运行的模型和数据集
+
+# 要运行的模型列表
+# 注释掉不想运行的模型
+models_to_run:
+  - rnabert
+  - rnamsm
+  # - rnafm
+  # - rinalmo
+  - gena
+  #- grover
+  - ernie_rna
+  - evo2_1b
+  # - evo2_7b
+  - evo2_40b
+  - aido
+  - generrna
+  - codongpt
+
+# 要运行的数据集列表
+# 注释掉不想运行的数据集
+datasets_to_run:
+  - DOCK1_MOUSE_Tsuboyama_2023_2M0Y
+  - GFP_AEQVI_Sarkisyan_2016
+  - PSAE_PICP2_Tsuboyama_2023_1PSE
+  - R1AB_SARS2_Flynn_2022
+  - BLAT_ECOLX_Firnberg_2014
+  - CCDB_ECOLI_Adkar_2012
+  - Ke_2017_mRNA
+
+# GPU 配置
+gpus: "0,1,2,3,4,5,6,7"
+
+# 其他选项
+skip_existing: true  # 跳过已有结果的任务

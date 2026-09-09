@@ -1,0 +1,47 @@
+{
+  "dataset": "Milena_2021_cata",
+  "model": "eva_1.4b_score",
+  "n": 135,
+  "fasta": "notebooks/prediction/data/ncRNA/fasta/Milena_2021_cata.fasta",
+  "labels": "notebooks/prediction/data/ncRNA/label/Milena_2021_cata_intensities.json",
+  "reference_table": "notebooks/prediction/data/ncRNA_13datasets_spearman.csv",
+  "archive": "reproduction/benchmark/fixtures/milena/eva_1_4b_wotag_scores.json",
+  "label_basis": "Current local submission data, confirmed by the author on 2026-09-09; positional pairing frozen by FASTA and label hashes; historical header metadata is not used as ground truth.",
+  "input_sha256": {
+    "notebooks/prediction/data/ncRNA/fasta/Milena_2021_cata.fasta": "587195ca555dff13de482e88df5509065d55788dc886a285ca07a8b27f37a227",
+    "notebooks/prediction/data/ncRNA/label/Milena_2021_cata_intensities.json": "86a724affa00904e54f5d2532607fdc8d3fb1560ba385e53e8f242ab78efe9a2",
+    "notebooks/prediction/data/ncRNA_13datasets_spearman.csv": "8acfc40534b60e725aac309ba4b8990d0660b266f6ae8183f42e8e63e1334d14",
+    "reproduction/benchmark/fixtures/milena/eva_1_4b_wotag_scores.json": "8d5b47937e431acbe3684884291d5b9372a67b3d3461f5ba5c4eb9085af478c1"
+  },
+  "checkpoint": {
+    "repo": "GENTEL-Lab/EVA",
+    "revision": "514db6705637c1ec963b728768fc9b34728699ee",
+    "subdirectory": "EVA_1.4B_CLM",
+    "sha256": {
+      "model_weights.pt": "323c13d571d0be87e450cb7b103bf8b28396e55e877519e2d2fb3c434875d420",
+      "config.json": "a8571fcd6b88c3d4667d764d657e590cc589fc1316821bdb850d901380b15c47",
+      "tokenizer.json": "9315168d44e3d6df4cdd0c48f3ab6d5111beb13ac8b163a380c59a6fac5a021d"
+    }
+  },
+  "protocol": {
+    "source": "reproduction/benchmark/historical_14b",
+    "prompt": "<bos>5{RNA}3<eos>",
+    "conditioning": null,
+    "reduce": "sum",
+    "excluded_targets": [
+      "5",
+      "3",
+      "<eos>"
+    ],
+    "dtype": "bfloat16",
+    "batch_size": 1,
+    "moe_world_size": 1
+  },
+  "public_historical_config_difference": {
+    "moe_world_size": [
+      4,
+      1
+    ]
+  },
+  "validation": "Complete fresh inference; see expected/report.json for numerical difference and expected/README.md for scope."
+}

@@ -273,9 +273,9 @@ def main():
 
     # 加载模型
     print("加载模型...", flush=True)
-    from model.config import RNAGenConfig
-    from model.causal_lm import RNAGenForCausalLM
-    from model.lineage_tokenizer import LineageRNATokenizer
+    from eva.config import EvaConfig as RNAGenConfig
+    from eva.causal_lm import EvaForCausalLM as RNAGenForCausalLM
+    from eva.lineage_tokenizer import LineageRNATokenizer
 
     shutil.copy(Path(checkpoint_path) / 'tokenizer.json', Path(MODEL_CODE_PATH) / 'tokenizer.json')
     tokenizer = LineageRNATokenizer.from_pretrained(str(checkpoint_path))

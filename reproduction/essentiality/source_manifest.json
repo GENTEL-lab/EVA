@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "observed_date": "2026-09-05",
+  "historical_host": "EVA_a100",
+  "historical_eva_root": "/data/yanjie_huang/enzyme1_server/eva/EVA1",
+  "historical_benchmark_root": "/data/yanjie_huang/enzyme1_server/rna_benchmark",
+  "original_records": {
+    "path": "data/position_ablation_eukaryote/delta_ll_results_all_data.json",
+    "sha256": "3afea0519cdc49165c882ce110e46361b39892b38002e85bcd465dada7855f5f",
+    "n_records": 95538,
+    "n_species": 5
+  },
+  "position_results": "data/position_ablation_eukaryote/output_lineage_fixed_v2/lineage_fixed_v2_2gpu/{model}_shard{shard}of2/{model}_lineage_fixed_v2_{position}.jsonl",
+  "models": ["eva1400M", "eva30M"],
+  "shards": [0, 1],
+  "positions": ["p05", "p25", "p50", "p75", "p95"],
+  "archived_files": [
+    {"path": "archive/eva_position_ablation_eukaryote.py", "source_relative_to_eva_root": "scripts/position_ablation_eukaryote/eva_position_ablation_eukaryote.py", "sha256": "6cbf9d94753681e6ba311e382133693733101bdca2ca2c989fb4d43c54b8d737"},
+    {"path": "archive/eva_position_ablation_eukaryote_lineage_fixed.py", "source_relative_to_eva_root": "scripts/position_ablation_eukaryote/eva_position_ablation_eukaryote_lineage_fixed.py", "sha256": "ca2733f7922e42679cf2ae0712da985a550a9205d7342750bba74de034c0d11d"},
+    {"path": "archive/merge_position_ablation_shards.py", "source_relative_to_eva_root": "scripts/position_ablation_eukaryote/merge_position_ablation_shards.py", "sha256": "fd60e55c75d09eeb3a17164e62b818edd3ee3c6719c58b92f64c5cef0374ed6f"},
+    {"path": "archive/run_lineage_fixed_2gpu.sh", "source_relative_to_eva_root": "scripts/position_ablation_eukaryote/run_lineage_fixed_2gpu.sh", "sha256": "594537ba5850799e466a89fa4568916639dca3f28472d8024a1a1f79afd03138"},
+    {"path": "archive/position_ablation_v2_summary.json", "source_relative_to_eva_root": "data/position_ablation_eukaryote/output_lineage_fixed_v2/lineage_fixed_v2_2gpu/position_ablation_v2_summary.json", "sha256": "c8c52317c65e327ca3a18f3f3f41e13bfeb9dcb4f5fbeb958fb2c2354d829106"},
+    {"path": "archive/plot_eukaryote_gc_baseline.py", "source_relative_to_benchmark_root": "interpretability/zeroshot_essentiality/plot_eukaryote_gc_baseline.py", "sha256": "4418a8488bf5354a9c7bcf8822d098bcf583b34635865fd6b5b8390dec668a15"}
+  ],
+  "observed_checkpoints": [
+    {
+      "path": "checkpoint/clm/model_weights.pt",
+      "sha256": "323c13d571d0be87e450cb7b103bf8b28396e55e877519e2d2fb3c434875d420",
+      "identity": "Matches publicly released EVA-1.4B CLM weight bytes; archived predictions lack embedded checkpoint hashes."
+    },
+    {
+      "path": "checkpoint/30M_1124/checkpoint-56844/model_weights.pt",
+      "sha256": "3ed38c8ce208c74a0aec50e8101b0ac443e2784c4d317a2fa4ec985432ae1879",
+      "identity": "Historical small-model weights; differs from public EVA-21M. Do not identify them by model size alone."
+    }
+  ],
+  "source_limitations": [
+    "No DOI or public download location has been established for these historical essentiality record files.",
+    "DEG source CSV and GenBank sequence.gb are present under the benchmark root; the original dataset-building and base EVA inference entrypoints remain unlocated.",
+    "Main-experiment archived scores, position ablation, and GC recomputation are distinct analyses.",
+    "Original position_ablation_v2_summary.json overwrites or misassigns 50-percent results under 5-percent keys; reconstruct from original JSONL.",
+    "Historical GC plotting used a colliding organism/gene sequence lookup; preserve old and corrected estimates separately."
+  ]
+}

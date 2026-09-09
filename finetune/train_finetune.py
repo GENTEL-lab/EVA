@@ -40,7 +40,7 @@ sys.path.insert(0, str(project_root))
 
 from eva.causal_lm import create_eva_model
 from eva.config import EvaConfig
-from eva.lineage_tokenizer import get_lineage_rna_tokenizer
+from eva.lineage_tokenizer import LineageRNATokenizer
 
 # 使用本地 utils 模块
 from finetune.utils.lineage_dataset import create_lineage_dataset, SpanConfig
@@ -159,13 +159,19 @@ class FinetuneTrainer:
         pretrain_checkpoint = self.training_config.get('resume_from_pretrain', None)
 
         if not pretrain_checkpoint:
-            logger.warning("⚠️  未指定预训练checkpoint (resume_from_pretrain)")
-            logger.warning("   将从随机初始化开始训练")
-            return
+            raise ValueError('Finetuning requires training_config.resume_from_pretrain; use pretrain for random initialization')
 
         checkpoint_path = Path(pretrain_checkpoint)
         if not checkpoint_path.exists():
             raise FileNotFoundError(f"Pretrained checkpoint not found: {checkpoint_path}")
+
+        if checkpoint_path.is_dir() and (checkpoint_path / '.metadata').is_file():
+            import torch.distributed.checkpoint as dcp
+            state = {'model': self.model.state_dict()}
+            dcp.load(state, checkpoint_id=str(checkpoint_path))
+            self.model.load_state_dict(state['model'], strict=True)
+            logger.info('Loaded DCP model weights; optimizer/scheduler remain freshly initialized')
+            return
 
         # If directory, auto-find .pt file
         if checkpoint_path.is_dir():
@@ -176,8 +182,10 @@ class FinetuneTrainer:
             model_weights_pt = checkpoint_path / 'model_weights.pt'
             if model_weights_pt.exists():
                 checkpoint_path = model_weights_pt
-            else:
+            elif len(pt_files) == 1:
                 checkpoint_path = pt_files[0]
+            else:
+                raise ValueError(f'Ambiguous checkpoint directory: {checkpoint_path}; specify a .pt file')
             logger.info(f"Found checkpoint file in directory: {checkpoint_path}")
 
         logger.info(f"Loading model weights from pretrained checkpoint: {checkpoint_path}")
@@ -213,28 +221,8 @@ class FinetuneTrainer:
                     new_state_dict[k] = v
             model_state_dict = new_state_dict
 
-            # Load model weights
-            load_result = self.model.load_state_dict(model_state_dict, strict=False)
-            if load_result.missing_keys:
-                logger.warning(f"Missing keys ({len(load_result.missing_keys)}): {load_result.missing_keys[:5]}...")
-            if load_result.unexpected_keys:
-                logger.warning(f"Unexpected keys ({len(load_result.unexpected_keys)}): {load_result.unexpected_keys[:5]}...")
-
-            # Fix: detect shape mismatches that strict=False silently ignores
-            shape_mismatches = []
-            current_state = self.model.state_dict()
-            for k, v in model_state_dict.items():
-                if k in current_state and current_state[k].shape != v.shape:
-                    shape_mismatches.append(
-                        f"{k}: checkpoint={v.shape}, model={current_state[k].shape}"
-                    )
-            if shape_mismatches:
-                logger.warning(f"Shape mismatches detected ({len(shape_mismatches)} keys) — "
-                               f"these were silently skipped by strict=False:")
-                for m in shape_mismatches[:5]:
-                    logger.warning(f"  {m}")
-                if len(shape_mismatches) > 5:
-                    logger.warning(f"  ... and {len(shape_mismatches) - 5} more")
+            # Missing/unexpected keys and incompatible tensor shapes are fatal.
+            self.model.load_state_dict(model_state_dict, strict=True)
 
             pretrain_step = metadata.get('global_step', 0)
 
@@ -324,7 +312,11 @@ class FinetuneTrainer:
 
     def _set_seed(self):
         """设置随机种子"""
+        import random
+        import numpy as np
         seed = self.training_config.get('seed', 42)
+        random.seed(seed)
+        np.random.seed(seed)
         torch.manual_seed(seed)
         if torch.cuda.is_available():
             torch.cuda.manual_seed_all(seed)
@@ -338,7 +330,11 @@ class FinetuneTrainer:
         use_direction_tokens = data_config.get('use_direction_tokens', True)
 
         # 加载tokenizer（根据配置选择新/旧版本）
-        self.tokenizer = get_lineage_rna_tokenizer(use_direction_tokens=use_direction_tokens)
+        checkpoint = self.training_config.get('resume_from_pretrain')
+        if not checkpoint:
+            raise ValueError('Finetuning requires training_config.resume_from_pretrain')
+        tokenizer_dir = Path(checkpoint) if Path(checkpoint).is_dir() else Path(checkpoint).parent
+        self.tokenizer = LineageRNATokenizer.from_pretrained(str(tokenizer_dir))
 
         # 自动从tokenizer设置vocab_size，确保一致性
         model_config_dict['vocab_size'] = self.tokenizer.vocab_size
@@ -986,7 +982,7 @@ class FinetuneTrainer:
 
             epoch += 1
 
-        # 不保存final checkpoint，只依赖中间checkpoint
+        self.save_checkpoint(self.current_epoch + 1, is_final=True)
         self._cleanup_and_exit(training_config)
 
     def train_epoch(self, epoch: int, target_flops: Optional[float] = None,
@@ -1022,6 +1018,8 @@ class FinetuneTrainer:
             self._update_task_stats(task_types, ar_loss, clm_stats, glm_stats)
 
             loss_to_backprop = loss / grad_accum_steps
+            if not torch.isfinite(loss_to_backprop).all():
+                raise FloatingPointError('Non-finite finetuning loss; refusing an invalid optimizer step')
             loss_to_backprop.backward()
 
             if (batch_idx + 1) % grad_accum_steps == 0:
@@ -1184,7 +1182,7 @@ class FinetuneTrainer:
 def main():
     parser = argparse.ArgumentParser(description='Finetune: 从预训练checkpoint继续训练')
     parser.add_argument('--config', type=str,
-                       default='configs/finetune/base_finetune.yaml',
+                       required=True,
                        help='配置文件路径')
     args = parser.parse_args()
 

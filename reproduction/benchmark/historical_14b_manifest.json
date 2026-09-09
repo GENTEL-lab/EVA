@@ -1,0 +1,262 @@
+{
+  "source_host": "EVA_a100",
+  "capture_date": "2026-09-05",
+  "files": [
+    {
+      "path": "checkpoint_metadata/config.json",
+      "bytes": 691,
+      "sha256": "0c76adfee2743f1ad3cc0eed3903344c80f8017b2eb9793105e174e760640e67",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/checkpoint/clm/config.json"
+    },
+    {
+      "path": "checkpoint_metadata/eval_results_stage1.json",
+      "bytes": 349,
+      "sha256": "435996c7aef481d9bdce39df036ea54812e30f805d1fd7256758d921ce1f7ca2",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/checkpoint/clm/eval_results_stage1.json"
+    },
+    {
+      "path": "checkpoint_metadata/special_tokens_map.json",
+      "bytes": 98,
+      "sha256": "6e27ef064a69f6c716327c005234ac3732810d203a059a7a1f06028025f228bf",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/checkpoint/clm/special_tokens_map.json"
+    },
+    {
+      "path": "checkpoint_metadata/tokenizer.json",
+      "bytes": 23358,
+      "sha256": "9315168d44e3d6df4cdd0c48f3ab6d5111beb13ac8b163a380c59a6fac5a021d",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/checkpoint/clm/tokenizer.json"
+    },
+    {
+      "path": "checkpoint_metadata/tokenizer_config.json",
+      "bytes": 1913,
+      "sha256": "ee5cee548eeea89a7b5e65608cf854790ea0b6053a5a2a9a770bcc65c87534ac",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/checkpoint/clm/tokenizer_config.json"
+    },
+    {
+      "path": "checkpoint_metadata/training_config.yaml",
+      "bytes": 2658,
+      "sha256": "d960d478e2b4fa051c55d8e93c05278af393cccc4e37f6e91a452bd2502448c1",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/checkpoint/clm/training_config.yaml"
+    },
+    {
+      "path": "checkpoint_metadata/vocab.json",
+      "bytes": 1859,
+      "sha256": "de9ca625853213bdce38047929f7c832d9957253b9a28547e7f116663917674d",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/checkpoint/clm/vocab.json"
+    },
+    {
+      "path": "eva/__init__.py",
+      "bytes": 750,
+      "sha256": "63f992335cfe88ed8e1f8c9cb46859d5257682ccb27eba3df4abffe971687f7e",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/eva/__init__.py"
+    },
+    {
+      "path": "eva/attention.py",
+      "bytes": 12540,
+      "sha256": "e8661ecc40f49f875eea622b9916eb796caa14caadfb6ef8a1b3e64856eb6387",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/eva/attention.py"
+    },
+    {
+      "path": "eva/causal_lm.py",
+      "bytes": 36117,
+      "sha256": "93799c4d60d93c89b891b1259f4ccff2e8b696b4effaa33d8c4a41f43f4dc93c",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/eva/causal_lm.py"
+    },
+    {
+      "path": "eva/config.py",
+      "bytes": 7915,
+      "sha256": "ca3882431bd53fd869b6fdadada892bd0564485915c44d183da9ca5c9d77d6d0",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/eva/config.py"
+    },
+    {
+      "path": "eva/device.py",
+      "bytes": 14491,
+      "sha256": "62ddb373a30e2888bcddfaaa9e8c6b4c5b20ac9c37640f00acd8b91e2a521adf",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/eva/device.py"
+    },
+    {
+      "path": "eva/lineage_tokenizer.py",
+      "bytes": 17679,
+      "sha256": "c46b2a42b76dd46ef83858cfa129ca0fcca9721499a1578a31b1c63c19072ca2",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/eva/lineage_tokenizer.py"
+    },
+    {
+      "path": "eva/mb_wrapper.py",
+      "bytes": 14170,
+      "sha256": "29bda2e96d378443696c9b838b8b29a781b0352e4ea98f5d1feffcbc615d0024",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/eva/mb_wrapper.py"
+    },
+    {
+      "path": "eva/modeling.py",
+      "bytes": 32680,
+      "sha256": "afed1dc833562740ce34c513b2a6c59d4cc7792de0a6109f8167d3443bbfaecb",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/eva/modeling.py"
+    },
+    {
+      "path": "eva/moe.py",
+      "bytes": 6194,
+      "sha256": "f8a2f50748e145c6fe5c4d402ab5e098a65dc4a3021f5f84d502e1cf700cac57",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/eva/moe.py"
+    },
+    {
+      "path": "eva/tokenizer.json",
+      "bytes": 23358,
+      "sha256": "9315168d44e3d6df4cdd0c48f3ab6d5111beb13ac8b163a380c59a6fac5a021d",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/eva/tokenizer.json"
+    },
+    {
+      "path": "tools/generate.py",
+      "bytes": 36440,
+      "sha256": "760b8cc02b6df9c39e50b14e460618ebe6ef65f020270c6bd0bbe0af42ac5247",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/generate.py"
+    },
+    {
+      "path": "tools/predict.py",
+      "bytes": 23122,
+      "sha256": "a75a338b968ef4739a2011c7fca94277f478254ced1f1a5184b9babf0c9e7bf1",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/predict.py"
+    },
+    {
+      "path": "tools/utils/__init__.py",
+      "bytes": 711,
+      "sha256": "3fafa9d0178a8a80b55e931c9a5743fc9dc36c14b251517987b6980ded39829a",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/__init__.py"
+    },
+    {
+      "path": "tools/utils/conditions/__init__.py",
+      "bytes": 687,
+      "sha256": "9fa4f11fcf1bdbba478c64193a26a92a13aacc4f9982bca4497a38a29ea17bb1",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/conditions/__init__.py"
+    },
+    {
+      "path": "tools/utils/conditions/condition.py",
+      "bytes": 7417,
+      "sha256": "7ab3c56cde100758e1bd2d60a97f708ddcfdd9007fbb770603fa066011487f61",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/conditions/condition.py"
+    },
+    {
+      "path": "tools/utils/conditions/lineage.py",
+      "bytes": 7787,
+      "sha256": "4aec3ecd14172e8cfa6301a37efd1abe6c78d8ad14d9b4f0c3197ec94237e67e",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/conditions/lineage.py"
+    },
+    {
+      "path": "tools/utils/conditions/rna_types.py",
+      "bytes": 2231,
+      "sha256": "acf46f5ccfb08ae7b97fb63a5eedb2e4f927f09cc72496da04eca374e89fcf8a",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/conditions/rna_types.py"
+    },
+    {
+      "path": "tools/utils/data/codon_tables.py",
+      "bytes": 5006,
+      "sha256": "7052ce8f20e7634e86ebb73d7f197130420124b452ceb87158695c822478b772",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/data/codon_tables.py"
+    },
+    {
+      "path": "tools/utils/generators/__init__.py",
+      "bytes": 336,
+      "sha256": "d045e96124c8b8efee0b0cdd6e2fecdf1d556baccd90dd977051ae8e0a333010",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/generators/__init__.py"
+    },
+    {
+      "path": "tools/utils/generators/base.py",
+      "bytes": 4662,
+      "sha256": "a0c09b0503d024f12162fa27c462fe1cf9485e7450ef2d9a8dce71f39928d6de",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/generators/base.py"
+    },
+    {
+      "path": "tools/utils/generators/clm.py",
+      "bytes": 14730,
+      "sha256": "f2c227b937353f4df6689e174dce7a7d96f86bb2aa278ad83c6d4209d1834f97",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/generators/clm.py"
+    },
+    {
+      "path": "tools/utils/generators/glm.py",
+      "bytes": 11167,
+      "sha256": "acb94944f99b27ef14f60fb10fbfae191ff8febb22ee213c4c22eb63be622056",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/generators/glm.py"
+    },
+    {
+      "path": "tools/utils/io/__init__.py",
+      "bytes": 296,
+      "sha256": "f1b1429ac3e411b73b241e557c810937afeefe9a81fb6d7249509354d31e0737",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/io/__init__.py"
+    },
+    {
+      "path": "tools/utils/io/fasta.py",
+      "bytes": 5866,
+      "sha256": "91c3d11343affee90970125c5f85e7743bd88249c25b13ed496afe770291fed3",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/io/fasta.py"
+    },
+    {
+      "path": "tools/utils/model/__init__.py",
+      "bytes": 209,
+      "sha256": "2b61b925c90a17bb06f0de40c19ab7bcc607787918a72aeb644fa1278edb5b6e",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/model/__init__.py"
+    },
+    {
+      "path": "tools/utils/model/loader.py",
+      "bytes": 8655,
+      "sha256": "c2f67df23b88ac3570a1e1cf0a0e032304602bee8a09fd1f6e6ca7ce3557a5c0",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/model/loader.py"
+    },
+    {
+      "path": "tools/utils/model/sampler.py",
+      "bytes": 6676,
+      "sha256": "ca9fd2b8bbf9eb6b46808ad69c9ad9ea84589ce2f56b4aa6377e953c84627610",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/model/sampler.py"
+    },
+    {
+      "path": "tools/utils/scorers/__init__.py",
+      "bytes": 223,
+      "sha256": "f1546f07b956368e0453de06bc1576d902e69b0521fedb7ddaf91f0b9153a23c",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/scorers/__init__.py"
+    },
+    {
+      "path": "tools/utils/scorers/base.py",
+      "bytes": 1270,
+      "sha256": "e0ea90833126793a6ce9561bc13319a5a6e4b70beab4f5ee4524bebe2c3e58fc",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/scorers/base.py"
+    },
+    {
+      "path": "tools/utils/scorers/clm_scorer.py",
+      "bytes": 11010,
+      "sha256": "447c1c28baa5e250eb36bfbffb06aca3aea1db3d9ff64f3fe2f8067436dbf516",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/scorers/clm_scorer.py"
+    },
+    {
+      "path": "tools/utils/scorers/score_worker.py",
+      "bytes": 18428,
+      "sha256": "f9c2e8d7f572fd113f175a7178a1e08b6888271668267fd2840bcbf986350bbd",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/scorers/score_worker.py"
+    },
+    {
+      "path": "tools/utils/task/__init__.py",
+      "bytes": 352,
+      "sha256": "c7249215b126a38fe284fcad92b2bd91acf93408ed5575d95cdd75602def5f5a",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/task/__init__.py"
+    },
+    {
+      "path": "tools/utils/task/config.py",
+      "bytes": 12208,
+      "sha256": "1d7d6b26cd6a01464ea73710c6c7bebce4731d9b70d4b78ba1ac9a4f19254d3b",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/task/config.py"
+    },
+    {
+      "path": "tools/utils/task/runner.py",
+      "bytes": 16863,
+      "sha256": "5ceb71cea8f5b1a142c000efe9bebef8cee0895da4ece42e46c60568f3290a98",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/task/runner.py"
+    },
+    {
+      "path": "tools/utils/task/worker.py",
+      "bytes": 9598,
+      "sha256": "6a57b11a608eea8a685c2ec58642c44002ed99c073261ad930454fafe10c6ab8",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/tools/utils/task/worker.py"
+    }
+  ],
+  "weights_source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/RNAVerse/checkpoint/clm/model_weights.pt",
+  "weights_bytes": 3057231170,
+  "weights_sha256": "323c13d571d0be87e450cb7b103bf8b28396e55e877519e2d2fb3c434875d420",
+  "original_archive_weights_binding": "Path-based only: archive contains no hash or immutable revision. This snapshot records current file identity, not proven historic byte identity."
+}

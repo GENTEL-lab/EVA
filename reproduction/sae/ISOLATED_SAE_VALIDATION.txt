@@ -1,0 +1,2 @@
+This marker identifies a new, isolated copy of the historical EVA code for the
+single-case SAE validation. Do not place it in the original checkout.

@@ -25,9 +25,9 @@ from training.eval.scripts.common.model_loader_base import (
     load_model_weights_from_dcp,
     load_model_weights_from_pytorch,
 )
-from model.causal_lm import create_rnagen_model
-from model.lineage_tokenizer import get_lineage_rna_tokenizer
-from model.config import RNAGenConfig
+from eva.causal_lm import create_eva_model as create_rnagen_model
+from eva.lineage_tokenizer import LineageRNATokenizer
+from eva.config import EvaConfig as RNAGenConfig
 
 logger = logging.getLogger(__name__)
 
@@ -48,7 +48,7 @@ def _create_lineage_model(checkpoint_path: Path, device: str = 'cuda:0'):
     if not use_direction_tokens:
         use_direction_tokens = config_dict.get('use_direction_tokens', False)
 
-    tokenizer = get_lineage_rna_tokenizer(use_direction_tokens=use_direction_tokens)
+    tokenizer = LineageRNATokenizer.from_pretrained(str(checkpoint_path))
     config = RNAGenConfig(tokenizer=tokenizer, **config_dict)
     model = create_rnagen_model(config)
 

@@ -1,0 +1,313 @@
+# Dataset Configuration
+
+# GPU Configuration (used by solo scripts)
+gpus: "2,3,4,5,6,7"
+
+datasets:
+  - name: DOCK1_MOUSE_Tsuboyama_2023_2M0Y
+    fasta: data/mRNA/fasta/DOCK1_MOUSE_Tsuboyama_2023_2M0Y.fasta
+    ground_truth: data/mRNA/ground_truth/DOCK1_MOUSE_Tsuboyama_2023_2M0Y.json
+  - name: GFP_AEQVI_Sarkisyan_2016
+    fasta: data/mRNA/fasta/GFP_AEQVI_Sarkisyan_2016.fasta
+    ground_truth: data/mRNA/ground_truth/GFP_AEQVI_Sarkisyan_2016.json
+  - name: PSAE_PICP2_Tsuboyama_2023_1PSE
+    fasta: data/mRNA/fasta/PSAE_PICP2_Tsuboyama_2023_1PSE.fasta
+    ground_truth: data/mRNA/ground_truth/PSAE_PICP2_Tsuboyama_2023_1PSE.json
+  - name: R1AB_SARS2_Flynn_2022
+    fasta: data/mRNA/fasta/R1AB_SARS2_Flynn_2022.fasta
+    ground_truth: data/mRNA/ground_truth/R1AB_SARS2_Flynn_2022.json
+  - name: BLAT_ECOLX_Firnberg_2014
+    fasta: data/mRNA/fasta/BLAT_ECOLX_Firnberg_2014.fasta
+    ground_truth: data/mRNA/ground_truth/BLAT_ECOLX_Firnberg_2014.json
+  - name: CCDB_ECOLI_Adkar_2012
+    fasta: data/mRNA/fasta/CCDB_ECOLI_Adkar_2012.fasta
+    ground_truth: data/mRNA/ground_truth/CCDB_ECOLI_Adkar_2012.json
+
+  # mRNA datasets (new)
+  - name: BCHB_CHLTE_Tsuboyama_2023_2KRU
+    fasta: data/mRNA/fasta/BCHB_CHLTE_Tsuboyama_2023_2KRU.fasta
+    ground_truth: data/mRNA/ground_truth/BCHB_CHLTE_Tsuboyama_2023_2KRU_intensities.json
+  - name: BRCA1_HUMAN_Findlay_2018
+    fasta: data/mRNA/fasta/BRCA1_HUMAN_Findlay_2018.fasta
+    ground_truth: data/mRNA/ground_truth/BRCA1_HUMAN_Findlay_2018_intensities.json
+  - name: DLG4_RAT_McLaughlin_2012
+    fasta: data/mRNA/fasta/DLG4_RAT_McLaughlin_2012.fasta
+    ground_truth: data/mRNA/ground_truth/DLG4_RAT_McLaughlin_2012_intensities.json
+  - name: F7YBW8_MESOW_Ding_2023
+    fasta: data/mRNA/fasta/F7YBW8_MESOW_Ding_2023.fasta
+    ground_truth: data/mRNA/ground_truth/F7YBW8_MESOW_Ding_2023_intensities.json
+  - name: HECD1_HUMAN_Tsuboyama_2023_3DKM
+    fasta: data/mRNA/fasta/HECD1_HUMAN_Tsuboyama_2023_3DKM.fasta
+    ground_truth: data/mRNA/ground_truth/HECD1_HUMAN_Tsuboyama_2023_3DKM_intensities.json
+  - name: Julien_2016_mRNA_nabench
+    fasta: data/mRNA/fasta/Julien_2016_mRNA_nabench.fasta
+    ground_truth: data/mRNA/ground_truth/Julien_2016_mRNA_nabench_intensities.json
+  - name: Julien_2016_mRNA_rnagym
+    fasta: data/mRNA/fasta/Julien_2016_mRNA_rnagym.fasta
+    ground_truth: data/mRNA/ground_truth/Julien_2016_mRNA_rnagym_intensities.json
+  - name: Ke_2017_mRNA_nabench
+    fasta: data/mRNA/fasta/Ke_2017_mRNA_nabench.fasta
+    ground_truth: data/mRNA/ground_truth/Ke_2017_mRNA_nabench_intensities.json
+  - name: Ke_2017_mRNA_rnagym
+    fasta: data/mRNA/fasta/Ke_2017_mRNA_rnagym.fasta
+    ground_truth: data/mRNA/ground_truth/Ke_2017_mRNA_rnagym_intensities.json
+  - name: mRNA_Stability
+    fasta: data/mRNA/fasta/mRNA_Stability.fasta
+    ground_truth: data/mRNA/ground_truth/mRNA_Stability_intensities.json
+  - name: newdataset
+    fasta: data/mRNA/fasta/newdataset.fasta
+    ground_truth: data/mRNA/ground_truth/newdataset_intensities.json
+  - name: PKN1_HUMAN_Tsuboyama_2023_1URF
+    fasta: data/mRNA/fasta/PKN1_HUMAN_Tsuboyama_2023_1URF.fasta
+    ground_truth: data/mRNA/ground_truth/PKN1_HUMAN_Tsuboyama_2023_1URF_intensities.json
+  - name: Q837P4_ENTFA_Meier_2023
+    fasta: data/mRNA/fasta/Q837P4_ENTFA_Meier_2023.fasta
+    ground_truth: data/mRNA/ground_truth/Q837P4_ENTFA_Meier_2023_intensities.json
+  - name: RCRO_LAMBD_Tsuboyama_2023_1ORC
+    fasta: data/mRNA/fasta/RCRO_LAMBD_Tsuboyama_2023_1ORC.fasta
+    ground_truth: data/mRNA/ground_truth/RCRO_LAMBD_Tsuboyama_2023_1ORC_intensities.json
+
+  # ncRNA datasets - tRNA
+  - name: Domingo_2018_tRNA
+    fasta: data/ncRNA/fasta/Domingo_2018_tRNA.fasta
+    ground_truth: data/ncRNA/ground_truth/Domingo_2018_tRNA.json
+  - name: Guy_2014_tRNA
+    fasta: data/ncRNA/fasta/Guy_2014_tRNA.fasta
+    ground_truth: data/ncRNA/ground_truth/Guy_2014_tRNA.json
+  - name: Li_2016_tRNA
+    fasta: data/ncRNA/fasta/Li_2016_tRNA.fasta
+    ground_truth: data/ncRNA/ground_truth/Li_2016_tRNA.json
+
+  # ncRNA datasets - ribozyme (new)
+  - name: Roberts_2023_HDV_ribozyme
+    fasta: data/ncRNA/fasta/Roberts_2023_HDV_ribozyme.fasta
+  - name: Kobori_2015_ribozyme_j12
+    fasta: data/ncRNA/fasta/Kobori_2015_ribozyme_j12.fasta
+  - name: Janzen_2022_fam1b1_ribozyme
+    fasta: data/ncRNA/fasta/Janzen_2022_fam1b1_ribozyme.fasta
+  - name: Rachapun_2022_L3_R1_R2_ribozyme
+    fasta: data/ncRNA/fasta/Rachapun_2022_L3_R1_R2_ribozyme.fasta
+  - name: Rachapun_2022_L4B_R1_R2_ribozyme
+    fasta: data/ncRNA/fasta/Rachapun_2022_L4B_R1_R2_ribozyme.fasta
+  - name: Rachapun_2022_L2_R1_R2_ribozyme
+    fasta: data/ncRNA/fasta/Rachapun_2022_L2_R1_R2_ribozyme.fasta
+  - name: McRae_2024_t1_ribozyme
+    fasta: data/ncRNA/fasta/McRae_2024_t1_ribozyme.fasta
+
+  # ncRNA datasets - pepper
+  - name: pepper_530
+    fasta: data/ncRNA/fasta/pepper_530.fasta
+    ground_truth: data/ncRNA/ground_truth/pepper_530_intensities.json
+  - name: pepper_620
+    fasta: data/ncRNA/fasta/pepper_620.fasta
+    ground_truth: data/ncRNA/ground_truth/pepper_620_intensities.json
+
+
+# Model Configuration
+models:
+  # HuggingFace Models (6 models)
+  rnafm:
+    type: huggingface
+    model_name: multimolecule/rnafm
+    tokenizer_name: multimolecule/rnafm
+    model_class: MaskedLM
+    sequence_type: rna
+    likelihood_method: pseudo_likelihood
+    conda_env: hf_model
+    trust_remote_code: true
+    local_path: /data/yanjie_huang/rna_benchmark/biombenchmark/eva_fitness_benchmark/huggingface_cache/hub/models--multimolecule--rnafm/snapshots/2a98c38e8219d666ad35d04a689218ab50a36293
+    batch_size: 4
+    full_mask_max_length: 256
+    mask_chunk_size: 256
+
+  rnabert:
+    type: huggingface
+    model_name: multimolecule/rnabert
+    tokenizer_name: multimolecule/rnabert
+    model_class: MaskedLM
+    sequence_type: rna
+    likelihood_method: pseudo_likelihood
+    conda_env: hf_model
+    trust_remote_code: true
+    local_path: /data/yanjie_huang/rna_benchmark/biombenchmark/eva_fitness_benchmark/huggingface_cache/hub/models--multimolecule--rnabert/snapshots/7a9b5d5d5a96931ff056828c0968479098506cea
+    batch_size: 4
+
+  rnamsm:
+    type: huggingface
+    model_name: multimolecule/rnamsm
+    tokenizer_name: multimolecule/rnamsm
+    model_class: MaskedLM
+    sequence_type: rna
+    likelihood_method: pseudo_likelihood
+    conda_env: hf_model
+    trust_remote_code: true
+    local_path: /data/yanjie_huang/rna_benchmark/biombenchmark/eva_fitness_benchmark/huggingface_cache/hub/models--multimolecule--rnamsm/snapshots/ad61a4915674596557b3c3c4fe4fd7162d36acc8
+    batch_size: 1
+    full_mask_max_length: 256
+    mask_chunk_size: 256
+
+  rinalmo:
+    type: huggingface
+    model_name: multimolecule/rinalmo
+    tokenizer_name: multimolecule/rinalmo
+    model_class: MaskedLM
+    sequence_type: rna
+    likelihood_method: pseudo_likelihood
+    conda_env: hf_model
+    trust_remote_code: true
+    local_path: /data/yanjie_huang/rna_benchmark/biombenchmark/eva_fitness_benchmark/huggingface_cache/hub/models--multimolecule--rinalmo-giga/snapshots/8df4cd32d1527aa4556dca121f17ad9df8256084
+    batch_size: 4
+    full_mask_max_length: 512
+    mask_chunk_size: 128
+
+  gena:
+    type: huggingface
+    model_name: AIRI-Institute/gena-lm-bert-base
+    tokenizer_name: AIRI-Institute/gena-lm-bert-base
+    model_class: MaskedLM
+    sequence_type: dna
+    likelihood_method: pseudo_likelihood
+    conda_env: hf_model
+    trust_remote_code: true
+    local_path: /data/yanjie_huang/biollm_benchmark/huggingface_cache/hub/models--AIRI-Institute--gena-lm-bert-base-t2t-multi/snapshots/4633e5a1ada905bb7afee6877d71cc12578a95a5
+    batch_size: 2
+
+  grover:
+    type: huggingface
+    model_name: PoetschLab/GROVER
+    tokenizer_name: PoetschLab/GROVER
+    model_class: MaskedLM
+    sequence_type: dna
+    likelihood_method: pseudo_likelihood
+    conda_env: hf_model
+    trust_remote_code: true
+    local_path: /data/yanjie_huang/biollm_benchmark/huggingface_cache/hub/models--PoetschLab--GROVER/snapshots/6b223110f0d6963e849f55bc2a2f3cff0e38c7a4
+    batch_size: 4
+
+  # Special Models (4 models)
+  ernie_rna:
+    type: custom
+    adapter: ernie_rna_adapter
+    model_path: /data/yanjie_huang/rna_benchmark/biombenchmark/eva_fitness_benchmark/model/ERNIE-RNA
+    checkpoint: checkpoint/ERNIE-RNA_checkpoint/ERNIE-RNA_pretrain.pt
+    max_seq_length: 1022
+    python_path: /home/huangyanjie/miniconda3/envs/hf_model/bin/python
+
+  evo2_1b:
+    type: custom
+    adapter: evo_adapter
+    model_name: evo2_1b_base
+    python_path: /usr/bin/python3
+
+  evo2_7b:
+    type: custom
+    adapter: evo_adapter
+    model_name: evo2_7b_base
+    python_path: /usr/bin/python3
+
+  evo2_40b:
+    type: custom
+    adapter: evo_adapter
+    model_name: evo2_40b_base
+    checkpoint_name: evo2_40b_base
+    python_path: /usr/bin/python3
+    gpu_requirement: 2
+
+  codonfm_600m:
+    type: docker
+    adapter: codonfm_adapter
+    container_name: codon-fm-dev-container
+    model_size: 600m
+
+  codonfm_1b:
+    type: docker
+    adapter: codonfm_adapter
+    container_name: codon-fm-dev-container
+    model_size: 1b
+
+  aido:
+    type: custom
+    adapter: aido_adapter
+    model_path: /data/yanjie_huang/biollm_benchmark/model/AIdo.RNA/model-weight
+    project_root: /data/yanjie_huang/biollm_benchmark/model/AIdo.RNA/ModelGenerator-main
+    python_path: /home/huangyanjie/miniconda3/envs/AIDO/bin/python
+    batch_size: 8
+
+  generrna:
+    type: custom
+    adapter: generrna_adapter
+    ckpt_path: /data/yanjie_huang/biollm_benchmark/model/GenerRNA/model_updated.pt
+    tokenizer_path: /data/yanjie_huang/biollm_benchmark/model/GenerRNA/tokenizer
+    python_path: /usr/bin/python3
+
+  codongpt:
+    type: custom
+    adapter: codongpt_adapter
+    python_path: /home/huangyanjie/miniconda3/envs/hf_model/bin/python
+
+  gc_content:
+    type: custom
+    adapter: simple_baseline_adapter
+    baseline: gc_content
+    likelihood_method: gc_content
+    sequence_type: rna
+    batch_size: 1024
+
+  cai:
+    type: custom
+    adapter: simple_baseline_adapter
+    baseline: cai
+    likelihood_method: cai
+    sequence_type: coding_rna
+    species: homo_sapiens
+    codon_usage_table: /data/yanjie_huang/rna_benchmark/biombenchmark/eva_fitness_benchmark/references/codon_usage_tables.json
+    codon_usage_source: "Codon Usage Database (Kazusa) and literature; copied from benchmark_protein_dms/dna_rna_tools/codon_usage_tables.json"
+    batch_size: 1024
+
+  # EVA RNA Models (Docker-based, independent container per task)
+  # Uses score_worker.py which automatically adds 5'/3' direction tokens
+  # and excludes them from log-likelihood calculation
+  # NOTE: EVA models are commented out - requires rnagen-with-web Docker image not available on this server
+  eva_1.4b:
+    type: docker
+    adapter: eva_rna_adapter
+    checkpoint: /data/yanjie_huang/rna_benchmark/EVA_checkpoint/1400M_1204_mid/checkpoint-25500
+    python_path: /composer-python/python3
+    batch_size: 128
+
+  # eva_1.4b_mRNA:
+  #   type: docker
+  #   adapter: eva_rna_adapter
+  #   checkpoint: /data4/huangyanjie/rna_benchmark/rnagen/1.4B_mid_0104/checkpoint-25500
+  #   python_path: /composer-python/python3
+  #   rna_type: mRNA
+  #   batch_size: 128
+
+  eva_21m:
+    type: custom
+    adapter: eva_rna_adapter
+    checkpoint: /data/yanjie_huang/eva/EVA_checkpoint/30M_1130_midtrain/checkpoint_86006
+    batch_size: 512
+
+  eva_21m_mRNA:
+    type: custom
+    adapter: eva_rna_adapter
+    checkpoint: /data/yanjie_huang/eva/EVA_checkpoint/30M_1130_midtrain/checkpoint_86006
+    rna_type: mRNA
+    batch_size: 512
+
+  # eva_1.4b_tRNA:
+  #   type: docker
+  #   adapter: eva_rna_adapter
+  #   checkpoint: /data4/huangyanjie/rna_benchmark/rnagen/1.4B_mid_0104/checkpoint-25500
+  #   python_path: /composer-python/python3
+  #   rna_type: tRNA
+  #   batch_size: 128
+
+  # eva_21m_tRNA:
+  #   type: docker
+  #   adapter: eva_rna_adapter
+  #   checkpoint: /data4/huangyanjie/rna_benchmark/rnagen/30M_1130_midtrain/checkpoint_86006
+  #   python_path: /composer-python/python3
+  #   rna_type: tRNA
+  #   batch_size: 512

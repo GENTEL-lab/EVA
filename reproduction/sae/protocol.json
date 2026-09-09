@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "likelihood": {
+    "summary_rule": "Per (case_index, record_id, direction, feature_id), select the first maximum delta_margin over all archived conditions, including no_steer and 0x. Then retain only groups whose selected best_condition is neither no_steer nor 0x.",
+    "wilcoxon_alternative": "greater",
+    "cohen_d_ddof": 0,
+    "expected": {
+      "n": 401,
+      "positive_n": 401,
+      "W": 80601,
+      "p_display": "9.4e-68",
+      "cohen_d_display": "1.70"
+    },
+    "datasets": [
+      {
+        "name": "Milena",
+        "prefix": "milena2021_cata_structure_switch_span_likelihood",
+        "expected_selected_n": 15
+      },
+      {
+        "name": "glmS",
+        "prefix": "andreasson2020_glms_structure_switch_span_likelihood",
+        "expected_selected_n": 16
+      },
+      {
+        "name": "Fam21",
+        "prefix": "janzen_fam21_structure_switch_span_likelihood_top5_bidir_top5",
+        "expected_selected_n": 42
+      },
+      {
+        "name": "Fam31",
+        "prefix": "janzen_fam31_span_likelihood_v2",
+        "expected_selected_n": 42
+      },
+      {
+        "name": "Fam1b1",
+        "prefix": "janzen_fam1b1_structure_switch_span_likelihood_top10_bidir_top5",
+        "expected_selected_n": 87
+      },
+      {
+        "name": "Domingo",
+        "prefix": "domingo2018_structure_switch_span_likelihood_top10_bidir_top5",
+        "expected_selected_n": 85
+      },
+      {
+        "name": "Pepper",
+        "prefix": "chen2019_pepper_structure_switch_span_likelihood_top10_bidir_top5",
+        "expected_selected_n": 84
+      },
+      {
+        "name": "Okra",
+        "prefix": "zuo2023_okra_span_likelihood_v2",
+        "expected_selected_n": 30
+      }
+    ]
+  },
+  "examples": {
+    "selection": "Eight author-selected illustrative cases preserved from the original Figure 3 v3 source; not a random or unfiltered performance sample.",
+    "display_metric": "WT-specific diagnostic pair recovery, steered minus seed-matched no_steer. This differs from the direction-dependent net_target_score used by the archived S30 description.",
+    "cases": [
+      {
+        "name": "milena_cata",
+        "rna_type": "Catalytic",
+        "rna_name": "Milena Catalytic RNA",
+        "record_id": "U33G_fitness_0.01215",
+        "dataset": "milena2021_cata",
+        "case_index": 37,
+        "generation_csv": "milena2021_cata_generation_v2_rows.csv",
+        "feature_id": 252,
+        "condition": "0x",
+        "sample_idx": 6,
+        "sample_seed": 48,
+        "target_state": "mutant"
+      },
+      {
+        "name": "andreasson_glms",
+        "rna_type": "Riboswitch",
+        "rna_name": "Andreasson glmS Riboswitch",
+        "record_id": "11393_2_T54C,C71T_0.035997417",
+        "dataset": "andreasson2020_glms",
+        "case_index": 23,
+        "generation_csv": "andreasson2020_glms_generation_v2_rows.csv",
+        "feature_id": 8147,
+        "condition": "5x",
+        "sample_idx": 1,
+        "sample_seed": 43,
+        "target_state": "mutant"
+      },
+      {
+        "name": "janzen_fam21",
+        "rna_type": "Ribozyme",
+        "rna_name": "Janzen Fam21 Ribozyme",
+        "record_id": "Janzen_2022_fam21_ribozyme_291",
+        "dataset": "janzen_fam21",
+        "case_index": 0,
+        "generation_csv": "janzen_fam21_structure_switch_generation_case0_mutstate_paired_f7081_893_5929_7373_5397_147_n60_rows.csv",
+        "feature_id": 5929,
+        "condition": "0x",
+        "sample_idx": 56,
+        "sample_seed": 98,
+        "target_state": "mutant"
+      },
+      {
+        "name": "janzen_fam31",
+        "rna_type": "Ribozyme",
+        "rna_name": "Janzen Fam31 Ribozyme",
+        "record_id": "Janzen_2022_fam31_ribozyme_490",
+        "dataset": "janzen_fam31",
+        "case_index": 4,
+        "generation_csv": "janzen_fam31_generation_v2_rows.csv",
+        "feature_id": 677,
+        "condition": "2x",
+        "sample_idx": 7,
+        "sample_seed": 49,
+        "target_state": "mutant"
+      },
+      {
+        "name": "janzen_fam1b1",
+        "rna_type": "Ribozyme",
+        "rna_name": "Janzen Fam1b1 Ribozyme",
+        "record_id": "Janzen_2022_fam1b1_ribozyme_2",
+        "dataset": "janzen_fam1b1",
+        "case_index": 0,
+        "generation_csv": "janzen_fam1b1_structure_switch_generation_case0_mutstate_paired_f677_1709_7081_5929_n20_rows.csv",
+        "feature_id": 677,
+        "condition": "1x",
+        "sample_idx": 9,
+        "sample_seed": 51,
+        "target_state": "mutant"
+      },
+      {
+        "name": "domingo_trna",
+        "rna_type": "tRNA",
+        "rna_name": "Domingo tRNA 9",
+        "record_id": "Domingo_2018_tRNA_9",
+        "dataset": "domingo2018",
+        "case_index": 0,
+        "generation_csv": "domingo2018_structure_switch_generation_case0_wtstate_paired_f6227_147_4139_7609_6803_5929_n20_rows.csv",
+        "feature_id": 6803,
+        "condition": "10x",
+        "sample_idx": 12,
+        "sample_seed": 54,
+        "target_state": "wt"
+      },
+      {
+        "name": "pepper",
+        "rna_type": "Aptamer",
+        "rna_name": "Pepper Aptamer",
+        "record_id": "pepper_C5A_A6C_A7C_A21G_C36U",
+        "dataset": "chen2019_pepper",
+        "case_index": 0,
+        "generation_csv": "chen2019_pepper_structure_switch_generation_case0_wtstate_paired_f893_2008_5397_5929_863_n20_rows.csv",
+        "feature_id": 2008,
+        "condition": "0x",
+        "sample_idx": 18,
+        "sample_seed": 60,
+        "target_state": "wt"
+      },
+      {
+        "name": "zuo_okra",
+        "rna_type": "Aptamer",
+        "rna_name": "Zuo Okra Aptamer",
+        "record_id": "Sequence_16",
+        "dataset": "zuo2023_okra",
+        "case_index": 1,
+        "generation_csv": "zuo2023_okra_generation_v2_rows.csv",
+        "feature_id": 6297,
+        "condition": "5x",
+        "sample_idx": 13,
+        "sample_seed": 55,
+        "target_state": "mutant"
+      }
+    ]
+  },
+  "table_s30": {
+    "status": "Archived aggregate table reconstruction only. Complete upstream aggregation is not recovered; do not label 213/225 as raw-record reproduced.",
+    "datasets": [
+      {
+        "dataset": "andreasson2020_glms",
+        "n": 39
+      },
+      {
+        "dataset": "chen2019_pepper",
+        "n": 13
+      },
+      {
+        "dataset": "chen2024_myo",
+        "n": 16
+      },
+      {
+        "dataset": "domingo2018",
+        "n": 16
+      },
+      {
+        "dataset": "janzen_fam1b1",
+        "n": 15
+      },
+      {
+        "dataset": "janzen_fam21",
+        "n": 38
+      },
+      {
+        "dataset": "janzen_fam31",
+        "n": 28
+      },
+      {
+        "dataset": "milena2021_cata",
+        "n": 26
+      },
+      {
+        "dataset": "zuo2023_okra",
+        "n": 34
+      }
+    ],
+    "cohort_rule": "Preserve the saved cohort CSV; verify against stable descending bp_distance sort and top-N source-array cases. The source array index, not record_id alone, identifies a constructed mutation case."
+  },
+  "checkpoint_provenance": {
+    "historical_model": {
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/1400M_1129/checkpoint_13500/model_weights.pt",
+      "sha256": "3919f152be00e70146fede58be12cfee887af0120ff47998a28e7c1f9d8bdbe6",
+      "included": false
+    },
+    "sae": {
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA1/notebooks/interpretability_analysis/sae_repro_release/outputs/sae_l1_penalty_1400M/checkpoints/checkpoint_step200000.pt",
+      "sha256": "4f2bfbacffeec31b643607a10a16daf389c75dfc193cff201c385483f67c7f7b",
+      "layer": 13,
+      "mode": "sae_l1_penalty",
+      "hidden_size": 1024,
+      "width": 8192,
+      "step": 200000,
+      "included": false
+    },
+    "note": "These file hashes identify historical artifacts. A different published model-file hash does not by itself prove different tensor values."
+  }
+}

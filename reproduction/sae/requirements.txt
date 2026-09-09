@@ -1,0 +1,5 @@
+# CPU-only archival reproduction; use Python 3.10 or 3.11.
+# Validated versions are recorded in each run_report.json.
+numpy==2.0.2
+scipy==1.14.1
+matplotlib==3.10.5

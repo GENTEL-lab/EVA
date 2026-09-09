@@ -1,0 +1,11 @@
+dataset,dataset_label,n_cohort,n_success,rate_pct
+andreasson2020_glms,Andreasson 2020 glmS,39,35,89%
+chen2019_pepper,Chen 2019 pepper,13,13,100%
+chen2024_myo,Chen 2024 myo,16,14,88%
+domingo2018,Domingo 2018 tRNA,16,16,100%
+janzen_fam1b1,Janzen 2022 fam1b1,15,10,67%
+janzen_fam21,Janzen 2022 fam21,38,38,100%
+janzen_fam31,Janzen 2022 fam31,28,28,100%
+milena2021_cata,Milena 2021,26,25,96%
+zuo2023_okra,Zuo 2023 okra,34,34,100%
+TOTAL,Total,225,213,95%

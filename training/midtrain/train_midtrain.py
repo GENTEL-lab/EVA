@@ -99,10 +99,7 @@ class MidTrainingTrainer(BaseTrainer):
         pretrain_checkpoint = training_config.get('resume_from_pretrain', None)
 
         if not pretrain_checkpoint:
-            if self.global_rank == 0:
-                logger.warning("未指定预训练checkpoint (resume_from_pretrain)")
-                logger.warning("   将从随机初始化开始训练")
-            return
+            raise ValueError('Mid-training requires training_config.resume_from_pretrain; use pretrain for random initialization')
 
         checkpoint_dir = Path(pretrain_checkpoint)
         if not checkpoint_dir.exists():
@@ -177,9 +174,9 @@ class MidTrainingTrainer(BaseTrainer):
 
     def _setup_model(self):
         """设置MoE模型（与Stage1相同，但增加EOS loss权重日志）"""
-        from model.causal_lm import create_rnagen_model
-        from model.lineage_tokenizer import get_lineage_rna_tokenizer
-        from utils.device import create_device_manager, set_device_manager
+        from eva.causal_lm import create_eva_model as create_rnagen_model
+        from eva.lineage_tokenizer import get_lineage_rna_tokenizer
+        from eva.device import create_device_manager, set_device_manager
 
         model_config_dict = self.config.get('model_config', {})
         distributed_config = self.config.get('distributed_config', {})
@@ -202,7 +199,7 @@ class MidTrainingTrainer(BaseTrainer):
                 set_device_manager(device_manager)
                 self.device_manager = device_manager
 
-        from model.config import RNAGenConfig
+        from eva.config import EvaConfig as RNAGenConfig
         model_config = RNAGenConfig(tokenizer=self.tokenizer, **model_config_dict)
         self.model = create_rnagen_model(model_config)
 
@@ -229,6 +226,14 @@ class MidTrainingTrainer(BaseTrainer):
                 logger.info(f"   - Expert Parallel组: {model_config_dict.get('moe_world_size', 1)} GPUs")
                 logger.info(f"   - Data Parallel组: {self.world_size // model_config_dict.get('moe_world_size', 1)} GPUs")
 
+        mask_policy = training_config.get('output_token_mask', 'legacy_generation')
+        if mask_policy not in ('none', 'legacy_generation'):
+            raise ValueError('output_token_mask must be none or legacy_generation')
+        if mask_policy == 'none':
+            self.model.output_token_mask = None
+            return
+        if data_config.get('mode', 'generation') != 'generation':
+            raise ValueError('legacy_generation output mask excludes GLM targets; explicitly set output_token_mask: none')
         model_to_set = self.model
         if model_config_dict.get('moe_implementation') == "megablocks" and model_config_dict.get('moe_world_size', 1) > 1:
             model_to_set.output_token_mask = None
@@ -272,7 +277,7 @@ class MidTrainingTrainer(BaseTrainer):
 def main():
     MidTrainingTrainer.main(
         description='Mid-Training: 从预训练checkpoint继续训练',
-        default_config='configs/mid_training/base_mid_training.yaml',
+        default_config=None,
     )
 
 

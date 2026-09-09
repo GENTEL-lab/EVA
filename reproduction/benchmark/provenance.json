@@ -1,0 +1,685 @@
+{
+  "schema_version": 1,
+  "captured_date": "2026-09-05",
+  "snapshot_policy": "Original bytes copied read-only; upstream code is historical evidence, not silently patched or claimed clean-install ready. Some external framework/weights dependencies remain.",
+  "checkpoint_identity": {
+    "HF_repository": "GENTEL-Lab/EVA",
+    "HF_revision": "514db6705637c1ec963b728768fc9b34728699ee",
+    "HF_model_subdirectory": "EVA_21M",
+    "historical_checkpoint": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/30M_1130_midtrain/checkpoint_86006",
+    "all_three_files_equal_to_first_round_HF_run": true,
+    "verified_file_sha256": {
+      "config.json": "5432d6feca2adf7dc2a859099938b5073ea78d9c544dd389db761077011fc669",
+      "tokenizer.json": "9315168d44e3d6df4cdd0c48f3ab6d5111beb13ac8b163a380c59a6fac5a021d",
+      "model_weights.pt": "45d56a7399c4936429da149edf5003bbb5999490a64ec7d793bf5ac98116eb01"
+    },
+    "weights_not_copied_to_this_bundle": true
+  },
+  "files": [
+    {
+      "path": "checkpoint_metadata/21m_mid_86006/config.json",
+      "sha256": "5432d6feca2adf7dc2a859099938b5073ea78d9c544dd389db761077011fc669",
+      "size_bytes": 687,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/30M_1130_midtrain/checkpoint_86006/config.json"
+    },
+    {
+      "path": "checkpoint_metadata/21m_mid_86006/tokenizer.json",
+      "sha256": "9315168d44e3d6df4cdd0c48f3ab6d5111beb13ac8b163a380c59a6fac5a021d",
+      "size_bytes": 23358,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/30M_1130_midtrain/checkpoint_86006/tokenizer.json"
+    },
+    {
+      "path": "checkpoint_metadata/21m_mid_86006/training_config.yaml",
+      "sha256": "d82fb639684b9960a262337eb2fdd84c1f348b92a0947d3fa3d49b2805424f59",
+      "size_bytes": 2557,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/30M_1130_midtrain/checkpoint_86006/training_config.yaml"
+    },
+    {
+      "path": "fixtures/milena/Milena_2021_cata.fasta",
+      "sha256": "587195ca555dff13de482e88df5509065d55788dc886a285ca07a8b27f37a227",
+      "size_bytes": 10371,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA1/notebooks/prediction/data/ncRNA/fasta/Milena_2021_cata.fasta"
+    },
+    {
+      "path": "fixtures/milena/Milena_2021_cata_intensities.json",
+      "sha256": "86a724affa00904e54f5d2532607fdc8d3fb1560ba385e53e8f242ab78efe9a2",
+      "size_bytes": 1907,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA1/notebooks/prediction/data/ncRNA/label/Milena_2021_cata_intensities.json"
+    },
+    {
+      "path": "fixtures/milena/UPDATE_LOG.md",
+      "sha256": "7d3c4598068d4fbf54faf702e45762b6d2c2cf62f475abd9ecabf5c86455d6d3",
+      "size_bytes": 1450,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/biombenchmark/eva_fitness_benchmark/data/github_result/UPDATE_LOG.md"
+    },
+    {
+      "path": "fixtures/milena/early_filtered_scores.json",
+      "sha256": "44195e074d3ef389300faaea420e82d66f5c4dee71e773193e0139450ff3283d",
+      "size_bytes": 49277,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_rnagen/results_paint/filtered_scores/cata_scores.json"
+    },
+    {
+      "path": "fixtures/milena/eva_1_4b_wotag_scores.json",
+      "sha256": "8d5b47937e431acbe3684884291d5b9372a67b3d3461f5ba5c4eb9085af478c1",
+      "size_bytes": 28836,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/z_rnagym_70/scores_original_data_wotag/ribozyme/cata.json"
+    },
+    {
+      "path": "fixtures/milena/first_round_21m_report.json",
+      "sha256": "c69b393d920237996756ebf627a3b949f31affa407024f4ac32f766f8475fcc1",
+      "size_bytes": 7869,
+      "source_host": "local",
+      "source_path": "/Users/hyj/Desktop/EVA/EVA_NMI_\u6295\u7a3f/rebuttal2/code_revision/validation_20260905/milena_21m_final/report.json"
+    },
+    {
+      "path": "fixtures/milena/ncRNA_13datasets_spearman.csv",
+      "sha256": "8acfc40534b60e725aac309ba4b8990d0660b266f6ae8183f42e8e63e1334d14",
+      "size_bytes": 11366,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/biombenchmark/eva_fitness_benchmark/data/github_result/ncRNA_13datasets_spearman.csv"
+    },
+    {
+      "path": "training_metadata/1400m_midtrain_25500.yaml",
+      "sha256": "3793dbb9cce4088f18f9932c4b9207e75d78774944aa76705dd194991cebaedf",
+      "size_bytes": 2641,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/1.4B_mid_0104/checkpoint-25500/training_config.yaml"
+    },
+    {
+      "path": "training_metadata/1400m_pretrain_14500.yaml",
+      "sha256": "f07d61a3555619a93a323628ca0b7aa577ebf1d41aaf1df126103bd20fe2338a",
+      "size_bytes": 3743,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/1400M_1129/checkpoint_14500/training_config.yaml"
+    },
+    {
+      "path": "training_metadata/21m_pretrain_31006.yaml",
+      "sha256": "9f11014c825fac53dc016923cb817837f8d6d25d7bbd7fc02f5afc87c0af0b97",
+      "size_bytes": 3632,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/30M_1124/checkpoint-31006/training_config.yaml"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model/__init__.py",
+      "sha256": "6da0a0577c76b3827fd2f707270ce99cb42169ac3c632a7e5c23572a66208a7a",
+      "size_bytes": 637,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model/__init__.py"
+    },
+    {
+      "path": "checkpoint_metadata/legacy_tokenizer_cache.json",
+      "sha256": "0618478e236772c86c9aa3cc7090bd015e9376602d5c0717e7c02e00fe7987aa",
+      "size_bytes": 23358,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model/__pycache__/lineage_tokenizer_old.json"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model/attention.py",
+      "sha256": "efff74bc7334bdec4fe28d9668f3fe29a802a700650293db5ed349766996a9cf",
+      "size_bytes": 12672,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model/attention.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model/batch_preparer.py",
+      "sha256": "5fc4aa10935fac631ab07aab29440b5e39a95689aa433e9fa9973989b660c711",
+      "size_bytes": 18121,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model/batch_preparer.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model/causal_lm.py",
+      "sha256": "a27ad547b1906dfc0db4ee24fac5c73d929eb737c4a25e32d5d190ec33ef5373",
+      "size_bytes": 35951,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model/causal_lm.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model/config.py",
+      "sha256": "2e30cb53ba9bd80abe7fce0da14d47039660089abc847a1b625c18a8395cbc53",
+      "size_bytes": 9849,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model/config.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model/lineage_tokenizer.json",
+      "sha256": "9315168d44e3d6df4cdd0c48f3ab6d5111beb13ac8b163a380c59a6fac5a021d",
+      "size_bytes": 23358,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model/lineage_tokenizer.json"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model/lineage_tokenizer.py",
+      "sha256": "27dbadcded9b1c452120dfb6b9926c4392bbb30acc5526f8eef61e456efbe4d5",
+      "size_bytes": 16996,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model/lineage_tokenizer.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model/mb_wrapper.py",
+      "sha256": "69f4e7ef430e9f11a8646e30ac7442dcd076da0046d5c99ae425cfeeebad33da",
+      "size_bytes": 13750,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model/mb_wrapper.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model/modeling.py",
+      "sha256": "b82464c7f5127f01365fea25a17cdcac7ec20a0c4bc1df9eddf50903a9ace334",
+      "size_bytes": 32705,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model/modeling.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model/moe.py",
+      "sha256": "66b397170482d4ad8c3e204f56393dde6598e07bafa14a83bd757d6066360f80",
+      "size_bytes": 6211,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model/moe.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model/tokenizer.json",
+      "sha256": "394c0583b5200e7b665899eadf5a0c470f123b34a4268640452077259e66aefc",
+      "size_bytes": 578656,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model/tokenizer.json"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model/tokenizer.py",
+      "sha256": "db4496ef7d6290d4fe3ea89ea722a2f3259931a515ece1c254cbd2da6ec4c386",
+      "size_bytes": 10916,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model/tokenizer.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model1018/__init__.py",
+      "sha256": "c84eef2b6006648d93d49d2fdb4dac577d53659f45b39567540a881553cc5f0e",
+      "size_bytes": 1068,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model1018/__init__.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model1018/attention.py",
+      "sha256": "18c42786ba93fff6047f699d7b953695c83e31df81b5d87bc2aeb86e27792db2",
+      "size_bytes": 12334,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model1018/attention.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model1018/batch_preparer.py",
+      "sha256": "1998d2fda13946e5f96d8ee90f7cd38b519548325f43139cd5815840b33921e2",
+      "size_bytes": 18529,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model1018/batch_preparer.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model1018/causal_lm.py",
+      "sha256": "fc8dfb12b93667e984239ee9b1afd60c5119b6b78b1c00ccdb29429c18d7e854",
+      "size_bytes": 35850,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model1018/causal_lm.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model1018/config.py",
+      "sha256": "d29e43e98f02405aee9416da4a4388a238b03a6c040fe21abac779c42660021f",
+      "size_bytes": 7869,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model1018/config.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model1018/lineage_tokenizer.json",
+      "sha256": "a90caacf96831e0e6fe29a67198be565b1abdcba439b61579ec10998460543b7",
+      "size_bytes": 22976,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model1018/lineage_tokenizer.json"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model1018/lineage_tokenizer.py",
+      "sha256": "a7a3008a3fb6c165672fb3a7d76eb34dd6ac9020be98afe62603dd65a82d8790",
+      "size_bytes": 16084,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model1018/lineage_tokenizer.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model1018/mb_wrapper.py",
+      "sha256": "e1786c0e4bdd1b101b0532ecf433d8bed9d1eb5997095d9a8bad8058a0229998",
+      "size_bytes": 13969,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model1018/mb_wrapper.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model1018/modeling.py",
+      "sha256": "b82464c7f5127f01365fea25a17cdcac7ec20a0c4bc1df9eddf50903a9ace334",
+      "size_bytes": 32705,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model1018/modeling.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model1018/moe.py",
+      "sha256": "c460bedf1e5ba2f79b890c0749c9ce73884d07d5190de019bc2428f45d221528",
+      "size_bytes": 6215,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model1018/moe.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/model1018/token_config.py",
+      "sha256": "cd412ba34d7ce9b28f3ffe2406022500a0c7c0348df8318dd898dc4c9f809d71",
+      "size_bytes": 1287,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/model1018/token_config.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/usage/1_likelihood_scoring.py",
+      "sha256": "badffd61525ce4088b41e12c1febcde4564d00695e3f6f6813d7e6e134e90a75",
+      "size_bytes": 11786,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/usage/1_likelihood_scoring.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/usage/2_autoregressive_generation.py",
+      "sha256": "e009ca5acbec0c7c35da1a408fa48874b4494a921946518f9b6bff71287f60fe",
+      "size_bytes": 17558,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/usage/2_autoregressive_generation.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/usage/3_infilling_generation.py",
+      "sha256": "7d92101bce34868f7e2486f42b67a08ea031a072db7d90e9597d750c2b11c55a",
+      "size_bytes": 25167,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/usage/3_infilling_generation.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/usage/position_ablation.py",
+      "sha256": "3c9290c3696788a508746aabb0000853cfab7fb792cd62dc568fdfd9d7662f65",
+      "size_bytes": 13172,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/usage/position_ablation.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/usage/usage_helpers.py",
+      "sha256": "c1ff9316915fd402af65852f08316dba1985cb6a7b6e20cebdd8709b1bb41b26",
+      "size_bytes": 9902,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/usage/usage_helpers.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/usage/utils.py",
+      "sha256": "04dafc55a457454d81ea5f40d8fbcfd95e81e239dff656a35dcd9e606414e218",
+      "size_bytes": 8652,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/usage/utils.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/utils/__init__.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/utils/device.py",
+      "sha256": "3dbd54110911381cf595a8b00d4334531b17636ef533924cb0cf1057cacb4142",
+      "size_bytes": 13305,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/utils/device.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/utils/distributed.py",
+      "sha256": "6a3b7a6ad8505a44346af1c85a450cd7f505a8d139077eb693cebca74cc0d818",
+      "size_bytes": 8854,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/utils/distributed.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/utils/logging.py",
+      "sha256": "ef9f195c9c5cfe3206b3ccf75ccc4b75fb69ad0193ca4e9022d58e5acd614591",
+      "size_bytes": 23686,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/utils/logging.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/utils/memory.py",
+      "sha256": "d991515d7dc2c51ca37e285eb95e2dc27a18bad2d493b33099f88c66fbd8abd5",
+      "size_bytes": 12872,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/utils/memory.py"
+    },
+    {
+      "path": "upstream/eva_checkpoint_model/utils/progress_tracker.py",
+      "sha256": "43f604a639292f8e0fe7f3d83ba4b5d73e555c2223d407e4c1ba79bdcf7db9d7",
+      "size_bytes": 17722,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/utils/progress_tracker.py"
+    },
+    {
+      "path": "upstream/protein/dna_rna_tools/__init__.py",
+      "sha256": "7118b35bde63a57b537700df7aea91197fde210393b8365d6b7afaf7370c9384",
+      "size_bytes": 1278,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_protein_dms/dna_rna_tools/__init__.py"
+    },
+    {
+      "path": "upstream/protein/dna_rna_tools/codon_frequency_manager.py",
+      "sha256": "997c02269068ccccbc0c1ffc2cfef79166e3420d9283ca534635993ffd7b54ca",
+      "size_bytes": 11594,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_protein_dms/dna_rna_tools/codon_frequency_manager.py"
+    },
+    {
+      "path": "upstream/protein/dna_rna_tools/dna_rna_converter.py",
+      "sha256": "ccc1071c71e82c77dd1072cb365020735bcda0ade12854fb35c81121a591c332",
+      "size_bytes": 22711,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_protein_dms/dna_rna_tools/dna_rna_converter.py"
+    },
+    {
+      "path": "upstream/protein/dna_rna_tools/example_codon_frequency.py",
+      "sha256": "78981e8c0effae2f61c1777d2bfe3386738d7d44859a6ddb1a3d384bee866dbe",
+      "size_bytes": 7837,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_protein_dms/dna_rna_tools/example_codon_frequency.py"
+    },
+    {
+      "path": "upstream/protein/dna_rna_tools/protein_to_rna_likelihood_pipeline.py",
+      "sha256": "0241310e2077a3380c4801771116fc942347283ebb09ced81a83b69ca82aa55b",
+      "size_bytes": 14041,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_protein_dms/dna_rna_tools/protein_to_rna_likelihood_pipeline.py"
+    },
+    {
+      "path": "upstream/protein/dna_rna_tools/quick_start.py",
+      "sha256": "3262bf5996c7c223aeef03ca18fb41125d4c331cd2d152c09c33c162d2a5ef29",
+      "size_bytes": 5628,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_protein_dms/dna_rna_tools/quick_start.py"
+    },
+    {
+      "path": "upstream/protein/dna_rna_tools/test_codon_frequency.py",
+      "sha256": "1469be2a9d66a79d3933c3ab98c98c095f3c18650d4da7b979e29e54aff7d5b6",
+      "size_bytes": 9254,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_protein_dms/dna_rna_tools/test_codon_frequency.py"
+    },
+    {
+      "path": "upstream/protein/dna_rna_tools/test_dna_rna_converter.py",
+      "sha256": "5e5b6aca9aa6861fb204a922841e90f3f2b776c8cedbbe4966e5ebae5024603e",
+      "size_bytes": 13843,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_protein_dms/dna_rna_tools/test_dna_rna_converter.py"
+    },
+    {
+      "path": "upstream/protein/dna_rna_tools/test_reverse_translation.py",
+      "sha256": "1a901e3b2bb0ec98aacfe9fba6d51db6b86c2d64f7e1c18bded5778159566415",
+      "size_bytes": 13739,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_protein_dms/dna_rna_tools/test_reverse_translation.py"
+    },
+    {
+      "path": "upstream/protein/dna_rna_tools/view_results.py",
+      "sha256": "ac0a93ea0e57ac01866cd0cc1bf694993e8a6f96ddc795c3276ca06184f9bc31",
+      "size_bytes": 5735,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_protein_dms/dna_rna_tools/view_results.py"
+    },
+    {
+      "path": "upstream/protein/evaluate_dms_esm_docker.py",
+      "sha256": "cb45d80dab48edbaa9ba8a3d9d06f11b65acf828c58f628c36693eb877a76b42",
+      "size_bytes": 13479,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_protein_dms/evaluate_dms_esm_docker.py"
+    },
+    {
+      "path": "upstream/protein/evaluate_dms_esm_domain.py",
+      "sha256": "3f6645ff3dd8e1785ac1a31df62291cfaaef62b302ca9d3e2f933626a4a56b57",
+      "size_bytes": 7413,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_protein_dms/evaluate_dms_esm_domain.py"
+    },
+    {
+      "path": "upstream/protein/evaluate_dms_esmc_domain.py",
+      "sha256": "6ca8839300d7e0b7ad2365aa740425d1edb9f41a28efac7de4b54c0accf8516f",
+      "size_bytes": 8249,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_protein_dms/evaluate_dms_esmc_domain.py"
+    },
+    {
+      "path": "upstream/protein/evaluate_dms_rnagen.py",
+      "sha256": "ad643304fb44994ac820866f080c442beddfd01cf35b5968b898f45afaaefbf0",
+      "size_bytes": 10457,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_protein_dms/evaluate_dms_rnagen.py"
+    },
+    {
+      "path": "upstream/protein/scripts/calculate_progen3_spearman.py",
+      "sha256": "fcbd80704bcea52ef7f3b2a21249944da478d6bfc269a77445204c7be0188317",
+      "size_bytes": 8245,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_protein_dms/scripts/calculate_progen3_spearman.py"
+    },
+    {
+      "path": "upstream/protein/scripts/compute_batch_dms_in_docker.py",
+      "sha256": "d1e94cdef7ae976bcf2d80d7eee9c064e34825254c78d4dee5ee7d3899f065c6",
+      "size_bytes": 9175,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_protein_dms/scripts/compute_batch_dms_in_docker.py"
+    },
+    {
+      "path": "upstream/protein/scripts/compute_batch_dms_scores.py",
+      "sha256": "a192e5d07736b186f83e9468de400197360aa9d1b86336dd50b625b2c9e281c6",
+      "size_bytes": 11564,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_protein_dms/scripts/compute_batch_dms_scores.py"
+    },
+    {
+      "path": "upstream/protein/scripts/compute_dms_ll_in_docker.py",
+      "sha256": "f391eb6e410c6c0b49756bd20518338be5697f7dd87500c6b007196da1411668",
+      "size_bytes": 18386,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_protein_dms/scripts/compute_dms_ll_in_docker.py"
+    },
+    {
+      "path": "upstream/protein/scripts/compute_dms_scores_docker.py",
+      "sha256": "f963269d8135f1df316d7ca0f24402837e1f1065bcbeefd7b6c96e3c47ec39b1",
+      "size_bytes": 26223,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_protein_dms/scripts/compute_dms_scores_docker.py"
+    },
+    {
+      "path": "upstream/protein/scripts/prepare_fasta_full.py",
+      "sha256": "d5e7d90004ae07cbebe5ccbb93cfddbaebf443b91cf0e163604df9a50908e3b1",
+      "size_bytes": 1283,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_protein_dms/scripts/prepare_fasta_full.py"
+    },
+    {
+      "path": "upstream/rna/benchmark_config.yaml",
+      "sha256": "5bacfa0e5e920c216a59c04817c8d26195c3b89d52d863b2f34408dead6ac6d9",
+      "size_bytes": 694,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/biombenchmark/eva_fitness_benchmark/script/benchmark_config.yaml"
+    },
+    {
+      "path": "upstream/rna/config.yaml",
+      "sha256": "b1aeee6b574def2aea1b1e8a9f23fc3d746f14eb3d48645ed24eb105ae08759b",
+      "size_bytes": 11957,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/biombenchmark/eva_fitness_benchmark/script/config.yaml"
+    },
+    {
+      "path": "upstream/rna/external_scripts/compute_aido_ll.py",
+      "sha256": "1a19af08559642691c9f49e1d51f943ce425409a6da9fca9c7e9599cc2956ac1",
+      "size_bytes": 10570,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_rnagen/scripts/huggingface/compute_aido_ll.py"
+    },
+    {
+      "path": "upstream/rna/external_scripts/compute_codongpt_ll.py",
+      "sha256": "e8120c83037758e04e9ec246a952d7bb492fcd36b29f28e8beab744dbdfd8d80",
+      "size_bytes": 6842,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_rnagen/scripts/codongpt/compute_codongpt_ll.py"
+    },
+    {
+      "path": "upstream/rna/external_scripts/compute_ernie_rna_scores_v2.py",
+      "sha256": "89e56c6400dae3174a6b7b74703739d43740dd5d96c3be0548bf1f99e07c6c50",
+      "size_bytes": 24350,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/biombenchmark/eva_fitness_benchmark/external_scripts/ERNIE-RNA/compute_ernie_rna_scores_v2.py"
+    },
+    {
+      "path": "upstream/rna/external_scripts/compute_generrna_scores_conda.py",
+      "sha256": "7dbb9df5ba1e0cbaab2976e18286a155730fa3dd225a1c830bfe09619f69ce45",
+      "size_bytes": 6990,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_rnagen/scripts/generrna/compute_generrna_scores_conda.py"
+    },
+    {
+      "path": "upstream/rna/external_scripts/score_codonfm.py",
+      "sha256": "5b4b5b4d95f64a805390ad42f0dd5b6bc881c21e81f3362ad225f1f2d6292027",
+      "size_bytes": 11956,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/CodonFM/mrna_codon_optimization/scoring/score_codonfm.py"
+    },
+    {
+      "path": "upstream/rna/external_scripts/score_fasta.py",
+      "sha256": "aa02b453f28bd57e7ab9800665187494966ca4940f8875ef20175b969a2ef91d",
+      "size_bytes": 8414,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/evo2_test/score_fasta.py"
+    },
+    {
+      "path": "upstream/rna/legacy_workers/compute_ll_for_new_models.py",
+      "sha256": "6f75fd8689a3b8754eedc57ad2d023fbf0dd59a22c02dc51aa061f741f5db5a9",
+      "size_bytes": 8787,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_rnagen/scripts/new_model/compute_ll_for_new_models.py"
+    },
+    {
+      "path": "upstream/rna/legacy_workers/compute_new_model_scores_docker.py",
+      "sha256": "422ecbbe73738260e38ef1bb7ee402791b889542106308680dc91cb8b481e51c",
+      "size_bytes": 7412,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/benchmark_rnagen/scripts/new_model/compute_new_model_scores_docker.py"
+    },
+    {
+      "path": "upstream/rna/model_adapters/__init__.py",
+      "sha256": "718c804e702881e1eaf319579a33ebc553a684c346d95782644d3549a3118b3f",
+      "size_bytes": 190,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/biombenchmark/eva_fitness_benchmark/script/model_adapters/__init__.py"
+    },
+    {
+      "path": "upstream/rna/model_adapters/aido_adapter.py",
+      "sha256": "a788fff77e285041982b03cf7cf527028d6b243631296410473dc2b9a1e9135f",
+      "size_bytes": 4664,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/biombenchmark/eva_fitness_benchmark/script/model_adapters/aido_adapter.py"
+    },
+    {
+      "path": "upstream/rna/model_adapters/base_adapter.py",
+      "sha256": "e7cc46fca37d1fd29b12776a1b1d243f62923ba3e64a977e8fa673515368e1fa",
+      "size_bytes": 1415,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/biombenchmark/eva_fitness_benchmark/script/model_adapters/base_adapter.py"
+    },
+    {
+      "path": "upstream/rna/model_adapters/codonfm_adapter.py",
+      "sha256": "6dc41355179f65649f16aa75be3e0828b5ae237b23df33c8588eb3d78a5f18e3",
+      "size_bytes": 6406,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/biombenchmark/eva_fitness_benchmark/script/model_adapters/codonfm_adapter.py"
+    },
+    {
+      "path": "upstream/rna/model_adapters/codongpt_adapter.py",
+      "sha256": "1a24901e3e1078eb799c765a1df7153016d7e1ee5f20be3f54760d757b2e9512",
+      "size_bytes": 2840,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/biombenchmark/eva_fitness_benchmark/script/model_adapters/codongpt_adapter.py"
+    },
+    {
+      "path": "upstream/rna/model_adapters/ernie_rna_adapter.py",
+      "sha256": "13a342bb86acac0074c5922f8eebfd63055b9e643ad727648784ba68d7057080",
+      "size_bytes": 4669,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/biombenchmark/eva_fitness_benchmark/script/model_adapters/ernie_rna_adapter.py"
+    },
+    {
+      "path": "upstream/rna/model_adapters/eva_rna_adapter.py",
+      "sha256": "f23ab3263fc5be643568e412189efe862ea34b4bb0fc4f9ecaec31af4357ba62",
+      "size_bytes": 3998,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/biombenchmark/eva_fitness_benchmark/script/model_adapters/eva_rna_adapter.py"
+    },
+    {
+      "path": "upstream/rna/model_adapters/evo_adapter.py",
+      "sha256": "bfe390433d9ee06d96f1e58d07b011f3366b2de9a74ccf06611c774648dae8ba",
+      "size_bytes": 5938,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/biombenchmark/eva_fitness_benchmark/script/model_adapters/evo_adapter.py"
+    },
+    {
+      "path": "upstream/rna/model_adapters/generrna_adapter.py",
+      "sha256": "2202af6f2f6ef1f067b45e55981a11f096865f21514a8f9f301acd34f8063a11",
+      "size_bytes": 3502,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/biombenchmark/eva_fitness_benchmark/script/model_adapters/generrna_adapter.py"
+    },
+    {
+      "path": "upstream/rna/model_adapters/huggingface_adapter.py",
+      "sha256": "e4ff2e97b656847748ede86fcbb80ddd4fc44f632bb8bfb040277e6ded27416f",
+      "size_bytes": 11609,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/biombenchmark/eva_fitness_benchmark/script/model_adapters/huggingface_adapter.py"
+    },
+    {
+      "path": "upstream/rna/model_adapters/simple_baseline_adapter.py",
+      "sha256": "b245719ff143d3df3e23e14d2b50375bbe0c17efb1cd50c876d361ea412006fc",
+      "size_bytes": 4285,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/biombenchmark/eva_fitness_benchmark/script/model_adapters/simple_baseline_adapter.py"
+    },
+    {
+      "path": "upstream/rna/ncRNA_config.yaml",
+      "sha256": "eaff67f25c170f2cca2fb6066acec912de413eefaaf1417b9737c4557576042f",
+      "size_bytes": 629,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/biombenchmark/eva_fitness_benchmark/script/ncRNA_config.yaml"
+    },
+    {
+      "path": "upstream/rna/parallel_executor.py",
+      "sha256": "1c19942bd2b817a27a7603937ccca5d94b627e2f01356e4c9043cc47587777d7",
+      "size_bytes": 32210,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/biombenchmark/eva_fitness_benchmark/script/parallel_executor.py"
+    },
+    {
+      "path": "upstream/rna/run_benchmark.py",
+      "sha256": "01ab1a0d662ba62c85379cde503f8bf67c053e84c52908f5457a9dd570c948e8",
+      "size_bytes": 9179,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/biombenchmark/eva_fitness_benchmark/script/run_benchmark.py"
+    },
+    {
+      "path": "upstream/rna/utils/score_worker_exclude_direction.py",
+      "sha256": "5cb4e308cbd1a20b1aa956a022385fc2125151acf615b5b75494915f001c8fcb",
+      "size_bytes": 13932,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/biombenchmark/eva_fitness_benchmark/script/utils/score_worker_exclude_direction.py"
+    },
+    {
+      "path": "upstream/rna/utils.py",
+      "sha256": "4ad6d5970b561a670c2c23643696b0a76c9e349f120ecdcd581c448275ddc393",
+      "size_bytes": 3594,
+      "source_host": "EVA_a100 (110.157.241.4:18003)",
+      "source_path": "/data/yanjie_huang/enzyme1_server/rna_benchmark/biombenchmark/eva_fitness_benchmark/script/utils.py"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "loss": 1.2702110850016999,
+  "perplexity": 3.5616042613983154,
+  "total_tokens": 19854467,
+  "total_samples": 10112,
+  "eval_time": 791.5355548858643,
+  "eval_mode": "generation",
+  "stage": "stage1",
+  "eval_dataset": "/rna-multiverse/data/cluster/sampling/training/train_30M_sqrt_s42_50only_new.fa",
+  "batch_size": 128,
+  "num_batches": 79
+}

@@ -1,0 +1,3842 @@
+[
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_2",
+    "sequence_length": 71,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "G",
+    "mutation_to": "U",
+    "wt_mfe": -8.0,
+    "mutant_mfe": -11.5,
+    "mfe_delta": -3.5,
+    "bp_distance": 37,
+    "local_bp_distance": 37,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 19,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 19,
+    "diagnostic_wt_pairs_1": [
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        21,
+        35
+      ],
+      [
+        22,
+        34
+      ],
+      [
+        23,
+        33
+      ],
+      [
+        24,
+        32
+      ],
+      [
+        25,
+        31
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ],
+      [
+        39,
+        68
+      ],
+      [
+        42,
+        66
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        2,
+        27
+      ],
+      [
+        1,
+        28
+      ],
+      [
+        3,
+        26
+      ],
+      [
+        4,
+        25
+      ],
+      [
+        5,
+        24
+      ],
+      [
+        6,
+        23
+      ],
+      [
+        7,
+        18
+      ],
+      [
+        8,
+        17
+      ],
+      [
+        9,
+        16
+      ],
+      [
+        10,
+        15
+      ],
+      [
+        34,
+        63
+      ],
+      [
+        35,
+        62
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACAAUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GUGAAUGGAUCCACAUCUACGAAUUCACACAAUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....)))........(((((.....))))).(((..(((((((.......))))....))).))).",
+    "mutant_structure_window": "((((((((((....))))....)))))).....(((((....((((....))))....)))))........",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACAAUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GUGAAUGGAUCCACAUCUACGAAUUCACACAAUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....)))........(((((.....))))).(((..(((((((.......))))....))).))).",
+    "mutant_structure": "((((((((((....))))....)))))).....(((((....((((....))))....)))))........"
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_8",
+    "sequence_length": 71,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "G",
+    "mutation_to": "U",
+    "wt_mfe": -7.0,
+    "mutant_mfe": -11.0,
+    "mfe_delta": -4.0,
+    "bp_distance": 37,
+    "local_bp_distance": 37,
+    "wt_pair_count": 17,
+    "mutant_pair_count": 20,
+    "wt_only_pair_count": 17,
+    "mutant_only_pair_count": 20,
+    "diagnostic_wt_pairs_1": [
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        14,
+        71
+      ],
+      [
+        15,
+        70
+      ],
+      [
+        17,
+        68
+      ],
+      [
+        18,
+        67
+      ],
+      [
+        20,
+        65
+      ],
+      [
+        21,
+        64
+      ],
+      [
+        25,
+        63
+      ],
+      [
+        26,
+        62
+      ],
+      [
+        27,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        2,
+        27
+      ],
+      [
+        1,
+        28
+      ],
+      [
+        3,
+        26
+      ],
+      [
+        4,
+        25
+      ],
+      [
+        5,
+        24
+      ],
+      [
+        6,
+        23
+      ],
+      [
+        7,
+        18
+      ],
+      [
+        8,
+        17
+      ],
+      [
+        9,
+        16
+      ],
+      [
+        10,
+        15
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUGCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GUGAAUGGAUCCACAUCUACGAAUUCACACACUGCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....))).((.((.((...(((....(((((................)))))...))))).)).))",
+    "mutant_structure_window": "((((((((((....))))....))))))........(((..(((((((.......))))....))).))).",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUGCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GUGAAUGGAUCCACAUCUACGAAUUCACACACUGCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....))).((.((.((...(((....(((((................)))))...))))).)).))",
+    "mutant_structure": "((((((((((....))))....))))))........(((..(((((((.......))))....))).)))."
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_2",
+    "sequence_length": 71,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "G",
+    "mutation_to": "C",
+    "wt_mfe": -8.0,
+    "mutant_mfe": -7.6,
+    "mfe_delta": 0.40000000000000036,
+    "bp_distance": 36,
+    "local_bp_distance": 36,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 18,
+    "wt_only_pair_count": 18,
+    "mutant_only_pair_count": 18,
+    "diagnostic_wt_pairs_1": [
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        21,
+        35
+      ],
+      [
+        22,
+        34
+      ],
+      [
+        23,
+        33
+      ],
+      [
+        24,
+        32
+      ],
+      [
+        25,
+        31
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ],
+      [
+        39,
+        68
+      ],
+      [
+        42,
+        66
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        1,
+        28
+      ],
+      [
+        3,
+        26
+      ],
+      [
+        4,
+        25
+      ],
+      [
+        5,
+        24
+      ],
+      [
+        6,
+        23
+      ],
+      [
+        7,
+        18
+      ],
+      [
+        8,
+        17
+      ],
+      [
+        9,
+        16
+      ],
+      [
+        10,
+        15
+      ],
+      [
+        34,
+        63
+      ],
+      [
+        35,
+        62
+      ],
+      [
+        36,
+        61
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACAAUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GCGAAUGGAUCCACAUCUACGAAUUCACACAAUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....)))........(((((.....))))).(((..(((((((.......))))....))).))).",
+    "mutant_structure_window": "(.((((((((....))))....)))).).....(((((....((((....))))....)))))........",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACAAUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GCGAAUGGAUCCACAUCUACGAAUUCACACAAUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....)))........(((((.....))))).(((..(((((((.......))))....))).))).",
+    "mutant_structure": "(.((((((((....))))....)))).).....(((((....((((....))))....)))))........"
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_8",
+    "sequence_length": 71,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "G",
+    "mutation_to": "C",
+    "wt_mfe": -7.0,
+    "mutant_mfe": -7.1,
+    "mfe_delta": -0.09999999999999964,
+    "bp_distance": 36,
+    "local_bp_distance": 36,
+    "wt_pair_count": 17,
+    "mutant_pair_count": 19,
+    "wt_only_pair_count": 17,
+    "mutant_only_pair_count": 19,
+    "diagnostic_wt_pairs_1": [
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        14,
+        71
+      ],
+      [
+        15,
+        70
+      ],
+      [
+        17,
+        68
+      ],
+      [
+        18,
+        67
+      ],
+      [
+        20,
+        65
+      ],
+      [
+        21,
+        64
+      ],
+      [
+        25,
+        63
+      ],
+      [
+        26,
+        62
+      ],
+      [
+        27,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        1,
+        28
+      ],
+      [
+        3,
+        26
+      ],
+      [
+        4,
+        25
+      ],
+      [
+        5,
+        24
+      ],
+      [
+        6,
+        23
+      ],
+      [
+        7,
+        18
+      ],
+      [
+        8,
+        17
+      ],
+      [
+        9,
+        16
+      ],
+      [
+        10,
+        15
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ],
+      [
+        39,
+        68
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUGCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GCGAAUGGAUCCACAUCUACGAAUUCACACACUGCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....))).((.((.((...(((....(((((................)))))...))))).)).))",
+    "mutant_structure_window": "(.((((((((....))))....)))).)........(((..(((((((.......))))....))).))).",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUGCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GCGAAUGGAUCCACAUCUACGAAUUCACACACUGCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....))).((.((.((...(((....(((((................)))))...))))).)).))",
+    "mutant_structure": "(.((((((((....))))....)))).)........(((..(((((((.......))))....))).)))."
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_8",
+    "sequence_length": 71,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "G",
+    "mutation_to": "U",
+    "wt_mfe": -7.0,
+    "mutant_mfe": -7.6,
+    "mfe_delta": -0.5999999999999996,
+    "bp_distance": 33,
+    "local_bp_distance": 33,
+    "wt_pair_count": 17,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 17,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        14,
+        71
+      ],
+      [
+        15,
+        70
+      ],
+      [
+        17,
+        68
+      ],
+      [
+        18,
+        67
+      ],
+      [
+        20,
+        65
+      ],
+      [
+        21,
+        64
+      ],
+      [
+        25,
+        63
+      ],
+      [
+        26,
+        62
+      ],
+      [
+        27,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        19
+      ],
+      [
+        2,
+        20
+      ],
+      [
+        4,
+        18
+      ],
+      [
+        5,
+        16
+      ],
+      [
+        6,
+        15
+      ],
+      [
+        7,
+        14
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ],
+      [
+        39,
+        68
+      ],
+      [
+        42,
+        66
+      ],
+      [
+        43,
+        65
+      ],
+      [
+        44,
+        64
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUGCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GGUAAUGGAUCCACAUCUACGAAUUCACACACUGCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....))).((.((.((...(((....(((((................)))))...))))).)).))",
+    "mutant_structure_window": ".((((((......))).)))................(((..(((((((.......))))....))).))).",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUGCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GGUAAUGGAUCCACAUCUACGAAUUCACACACUGCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....))).((.((.((...(((....(((((................)))))...))))).)).))",
+    "mutant_structure": ".((((((......))).)))................(((..(((((((.......))))....))).)))."
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_16",
+    "sequence_length": 71,
+    "mutation_pos0": 11,
+    "mutation_pos1": 12,
+    "mutation_from": "C",
+    "mutation_to": "U",
+    "wt_mfe": -7.7,
+    "mutant_mfe": -7.8,
+    "mfe_delta": -0.09999999999999964,
+    "bp_distance": 33,
+    "local_bp_distance": 33,
+    "wt_pair_count": 13,
+    "mutant_pair_count": 20,
+    "wt_only_pair_count": 13,
+    "mutant_only_pair_count": 20,
+    "diagnostic_wt_pairs_1": [
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ],
+      [
+        39,
+        68
+      ],
+      [
+        42,
+        62
+      ],
+      [
+        43,
+        61
+      ],
+      [
+        44,
+        60
+      ],
+      [
+        45,
+        59
+      ],
+      [
+        46,
+        58
+      ],
+      [
+        47,
+        57
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        12,
+        43
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        13,
+        42
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        8,
+        47
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        17,
+        38
+      ],
+      [
+        18,
+        37
+      ],
+      [
+        21,
+        35
+      ],
+      [
+        2,
+        52
+      ],
+      [
+        22,
+        34
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUAGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GGGAAUGGAUCUACAUCUACGAAUUCACACACUUCAAGCAAUAGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....)))........................(((..(((((((.......))))))).....))).",
+    "mutant_structure_window": "((....(((((((...((..(((.........))).))...)))))))...)).(((.(((....))))))",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUAGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GGGAAUGGAUCUACAUCUACGAAUUCACACACUUCAAGCAAUAGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....)))........................(((..(((((((.......))))))).....))).",
+    "mutant_structure": "((....(((((((...((..(((.........))).))...)))))))...)).(((.(((....))))))"
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_8",
+    "sequence_length": 71,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "G",
+    "mutation_to": "A",
+    "wt_mfe": -7.0,
+    "mutant_mfe": -6.7,
+    "mfe_delta": 0.2999999999999998,
+    "bp_distance": 32,
+    "local_bp_distance": 32,
+    "wt_pair_count": 17,
+    "mutant_pair_count": 15,
+    "wt_only_pair_count": 17,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        14,
+        71
+      ],
+      [
+        15,
+        70
+      ],
+      [
+        17,
+        68
+      ],
+      [
+        18,
+        67
+      ],
+      [
+        20,
+        65
+      ],
+      [
+        21,
+        64
+      ],
+      [
+        25,
+        63
+      ],
+      [
+        26,
+        62
+      ],
+      [
+        27,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        2,
+        18
+      ],
+      [
+        3,
+        17
+      ],
+      [
+        4,
+        16
+      ],
+      [
+        6,
+        15
+      ],
+      [
+        7,
+        14
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ],
+      [
+        39,
+        68
+      ],
+      [
+        42,
+        66
+      ],
+      [
+        43,
+        65
+      ],
+      [
+        44,
+        64
+      ],
+      [
+        45,
+        59
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUGCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GAGAAUGGAUCCACAUCUACGAAUUCACACACUGCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....))).((.((.((...(((....(((((................)))))...))))).)).))",
+    "mutant_structure_window": ".(((.((......)))))..................(((..(((((((.......))))....))).))).",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUGCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GAGAAUGGAUCCACAUCUACGAAUUCACACACUGCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....))).((.((.((...(((....(((((................)))))...))))).)).))",
+    "mutant_structure": ".(((.((......)))))..................(((..(((((((.......))))....))).)))."
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_8",
+    "sequence_length": 71,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "G",
+    "mutation_to": "C",
+    "wt_mfe": -7.0,
+    "mutant_mfe": -7.4,
+    "mfe_delta": -0.40000000000000036,
+    "bp_distance": 32,
+    "local_bp_distance": 32,
+    "wt_pair_count": 17,
+    "mutant_pair_count": 15,
+    "wt_only_pair_count": 17,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        14,
+        71
+      ],
+      [
+        15,
+        70
+      ],
+      [
+        17,
+        68
+      ],
+      [
+        18,
+        67
+      ],
+      [
+        20,
+        65
+      ],
+      [
+        21,
+        64
+      ],
+      [
+        25,
+        63
+      ],
+      [
+        26,
+        62
+      ],
+      [
+        27,
+        61
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        34
+      ],
+      [
+        2,
+        35
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        7,
+        30
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ],
+      [
+        39,
+        68
+      ],
+      [
+        42,
+        66
+      ],
+      [
+        43,
+        65
+      ],
+      [
+        44,
+        64
+      ],
+      [
+        45,
+        59
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUGCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GGCAAUGGAUCCACAUCUACGAAUUCACACACUGCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....))).((.((.((...(((....(((((................)))))...))))).)).))",
+    "mutant_structure_window": ".(((.((......................)).))).(((..(((((((.......))))....))).))).",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUGCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GGCAAUGGAUCCACAUCUACGAAUUCACACACUGCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....))).((.((.((...(((....(((((................)))))...))))).)).))",
+    "mutant_structure": ".(((.((......................)).))).(((..(((((((.......))))....))).)))."
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_19",
+    "sequence_length": 71,
+    "mutation_pos0": 5,
+    "mutation_pos1": 6,
+    "mutation_from": "U",
+    "mutation_to": "A",
+    "wt_mfe": -5.9,
+    "mutant_mfe": -6.0,
+    "mfe_delta": -0.09999999999999964,
+    "bp_distance": 32,
+    "local_bp_distance": 32,
+    "wt_pair_count": 13,
+    "mutant_pair_count": 19,
+    "wt_only_pair_count": 13,
+    "mutant_only_pair_count": 19,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ],
+      [
+        39,
+        68
+      ],
+      [
+        42,
+        66
+      ],
+      [
+        43,
+        65
+      ],
+      [
+        44,
+        64
+      ],
+      [
+        46,
+        63
+      ],
+      [
+        47,
+        62
+      ],
+      [
+        49,
+        58
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        6,
+        49
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        8,
+        47
+      ],
+      [
+        3,
+        52
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        2,
+        53
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        17,
+        38
+      ],
+      [
+        18,
+        37
+      ],
+      [
+        21,
+        35
+      ],
+      [
+        22,
+        34
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCGAUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GGGAAAGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCGAUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....)))........................(((..(((.((.((......))...))))).))).",
+    "mutant_structure_window": ".((..((((((.....((..(((.........))).)).....))))))..)).(((.(((....))))))",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCGAUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GGGAAAGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCGAUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....)))........................(((..(((.((.((......))...))))).))).",
+    "mutant_structure": ".((..((((((.....((..(((.........))).)).....))))))..)).(((.(((....))))))"
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_19",
+    "sequence_length": 71,
+    "mutation_pos0": 0,
+    "mutation_pos1": 1,
+    "mutation_from": "G",
+    "mutation_to": "C",
+    "wt_mfe": -5.9,
+    "mutant_mfe": -6.5,
+    "mfe_delta": -0.5999999999999996,
+    "bp_distance": 32,
+    "local_bp_distance": 32,
+    "wt_pair_count": 13,
+    "mutant_pair_count": 19,
+    "wt_only_pair_count": 13,
+    "mutant_only_pair_count": 19,
+    "diagnostic_wt_pairs_1": [
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ],
+      [
+        39,
+        68
+      ],
+      [
+        42,
+        66
+      ],
+      [
+        43,
+        65
+      ],
+      [
+        44,
+        64
+      ],
+      [
+        46,
+        63
+      ],
+      [
+        47,
+        62
+      ],
+      [
+        49,
+        58
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        1,
+        54
+      ],
+      [
+        2,
+        53
+      ],
+      [
+        3,
+        52
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        8,
+        47
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        17,
+        38
+      ],
+      [
+        18,
+        37
+      ],
+      [
+        21,
+        35
+      ],
+      [
+        22,
+        34
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCGAUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "CGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCGAUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....)))........................(((..(((.((.((......))...))))).))).",
+    "mutant_structure_window": "(((...(((((.....((..(((.........))).)).....)))))...)))(((.(((....))))))",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCGAUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "CGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCGAUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....)))........................(((..(((.((.((......))...))))).))).",
+    "mutant_structure": "(((...(((((.....((..(((.........))).)).....)))))...)))(((.(((....))))))"
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_12",
+    "sequence_length": 71,
+    "mutation_pos0": 0,
+    "mutation_pos1": 1,
+    "mutation_from": "G",
+    "mutation_to": "C",
+    "wt_mfe": -7.3,
+    "mutant_mfe": -7.8,
+    "mfe_delta": -0.5,
+    "bp_distance": 32,
+    "local_bp_distance": 32,
+    "wt_pair_count": 12,
+    "mutant_pair_count": 20,
+    "wt_only_pair_count": 12,
+    "mutant_only_pair_count": 20,
+    "diagnostic_wt_pairs_1": [
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        34,
+        63
+      ],
+      [
+        35,
+        62
+      ],
+      [
+        36,
+        61
+      ],
+      [
+        37,
+        60
+      ],
+      [
+        38,
+        59
+      ],
+      [
+        43,
+        54
+      ],
+      [
+        44,
+        53
+      ],
+      [
+        45,
+        52
+      ],
+      [
+        46,
+        51
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        1,
+        54
+      ],
+      [
+        2,
+        53
+      ],
+      [
+        3,
+        52
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        8,
+        47
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        16,
+        39
+      ],
+      [
+        17,
+        38
+      ],
+      [
+        18,
+        37
+      ],
+      [
+        21,
+        35
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGAAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "CGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGAAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....))).....................(((((....((((....))))....)))))........",
+    "mutant_structure_window": "(((...(((((....(((..(((.........))).)))....)))))...)))(((.(((....))))))",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGAAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "CGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGAAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....))).....................(((((....((((....))))....)))))........",
+    "mutant_structure": "(((...(((((....(((..(((.........))).)))....)))))...)))(((.(((....))))))"
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_10",
+    "sequence_length": 71,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "G",
+    "mutation_to": "C",
+    "wt_mfe": -6.4,
+    "mutant_mfe": -6.1,
+    "mfe_delta": 0.3000000000000007,
+    "bp_distance": 31,
+    "local_bp_distance": 31,
+    "wt_pair_count": 14,
+    "mutant_pair_count": 17,
+    "wt_only_pair_count": 14,
+    "mutant_only_pair_count": 17,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        32,
+        68
+      ],
+      [
+        33,
+        67
+      ],
+      [
+        34,
+        66
+      ],
+      [
+        35,
+        65
+      ],
+      [
+        39,
+        62
+      ],
+      [
+        40,
+        61
+      ],
+      [
+        44,
+        60
+      ],
+      [
+        45,
+        59
+      ],
+      [
+        46,
+        58
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        54
+      ],
+      [
+        2,
+        55
+      ],
+      [
+        4,
+        53
+      ],
+      [
+        6,
+        51
+      ],
+      [
+        7,
+        50
+      ],
+      [
+        8,
+        49
+      ],
+      [
+        9,
+        48
+      ],
+      [
+        11,
+        45
+      ],
+      [
+        12,
+        44
+      ],
+      [
+        21,
+        35
+      ],
+      [
+        22,
+        34
+      ],
+      [
+        23,
+        33
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAACAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GGCAAUGGAUCCACAUCUACGAAUUCACACACUUCAAACAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....)))...................((((...((...(((((.......)))))))..))))...",
+    "mutant_structure_window": ".(((.((((.((........(((.........)))........))..)))).)))((.(((....))))).",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAACAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GGCAAUGGAUCCACAUCUACGAAUUCACACACUUCAAACAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....)))...................((((...((...(((((.......)))))))..))))...",
+    "mutant_structure": ".(((.((((.((........(((.........)))........))..)))).)))((.(((....)))))."
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_11",
+    "sequence_length": 71,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "G",
+    "mutation_to": "C",
+    "wt_mfe": -6.4,
+    "mutant_mfe": -6.1,
+    "mfe_delta": 0.3000000000000007,
+    "bp_distance": 31,
+    "local_bp_distance": 31,
+    "wt_pair_count": 14,
+    "mutant_pair_count": 17,
+    "wt_only_pair_count": 14,
+    "mutant_only_pair_count": 17,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        32,
+        68
+      ],
+      [
+        33,
+        67
+      ],
+      [
+        34,
+        66
+      ],
+      [
+        35,
+        65
+      ],
+      [
+        39,
+        62
+      ],
+      [
+        40,
+        61
+      ],
+      [
+        44,
+        60
+      ],
+      [
+        45,
+        59
+      ],
+      [
+        46,
+        58
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        54
+      ],
+      [
+        2,
+        55
+      ],
+      [
+        4,
+        53
+      ],
+      [
+        6,
+        51
+      ],
+      [
+        7,
+        50
+      ],
+      [
+        8,
+        49
+      ],
+      [
+        9,
+        48
+      ],
+      [
+        11,
+        45
+      ],
+      [
+        12,
+        44
+      ],
+      [
+        21,
+        35
+      ],
+      [
+        22,
+        34
+      ],
+      [
+        23,
+        33
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAACCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GGCAAUGGAUCCACAUCUACGAAUUCACACACUUCAACCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....)))...................((((...((...(((((.......)))))))..))))...",
+    "mutant_structure_window": ".(((.((((.((........(((.........)))........))..)))).)))((.(((....))))).",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAACCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GGCAAUGGAUCCACAUCUACGAAUUCACACACUUCAACCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....)))...................((((...((...(((((.......)))))))..))))...",
+    "mutant_structure": ".(((.((((.((........(((.........)))........))..)))).)))((.(((....)))))."
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_19",
+    "sequence_length": 71,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "G",
+    "mutation_to": "C",
+    "wt_mfe": -5.9,
+    "mutant_mfe": -5.6,
+    "mfe_delta": 0.3000000000000007,
+    "bp_distance": 31,
+    "local_bp_distance": 31,
+    "wt_pair_count": 13,
+    "mutant_pair_count": 18,
+    "wt_only_pair_count": 13,
+    "mutant_only_pair_count": 18,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ],
+      [
+        39,
+        68
+      ],
+      [
+        42,
+        66
+      ],
+      [
+        43,
+        65
+      ],
+      [
+        44,
+        64
+      ],
+      [
+        46,
+        63
+      ],
+      [
+        47,
+        62
+      ],
+      [
+        49,
+        58
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        54
+      ],
+      [
+        2,
+        55
+      ],
+      [
+        4,
+        53
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        8,
+        47
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        17,
+        38
+      ],
+      [
+        18,
+        37
+      ],
+      [
+        21,
+        35
+      ],
+      [
+        22,
+        34
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCGAUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GGCAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCGAUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....)))........................(((..(((.((.((......))...))))).))).",
+    "mutant_structure_window": ".(((..(((((.....((..(((.........))).)).....)))))....)))((.(((....))))).",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCGAUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GGCAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCGAUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....)))........................(((..(((.((.((......))...))))).))).",
+    "mutant_structure": ".(((..(((((.....((..(((.........))).)).....)))))....)))((.(((....)))))."
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_10",
+    "sequence_length": 71,
+    "mutation_pos0": 9,
+    "mutation_pos1": 10,
+    "mutation_from": "U",
+    "mutation_to": "G",
+    "wt_mfe": -6.4,
+    "mutant_mfe": -7.1,
+    "mfe_delta": -0.6999999999999993,
+    "bp_distance": 30,
+    "local_bp_distance": 30,
+    "wt_pair_count": 14,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 14,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        32,
+        68
+      ],
+      [
+        33,
+        67
+      ],
+      [
+        34,
+        66
+      ],
+      [
+        35,
+        65
+      ],
+      [
+        39,
+        62
+      ],
+      [
+        40,
+        61
+      ],
+      [
+        44,
+        60
+      ],
+      [
+        45,
+        59
+      ],
+      [
+        46,
+        58
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        10,
+        47
+      ],
+      [
+        9,
+        48
+      ],
+      [
+        11,
+        45
+      ],
+      [
+        8,
+        49
+      ],
+      [
+        12,
+        44
+      ],
+      [
+        7,
+        50
+      ],
+      [
+        6,
+        51
+      ],
+      [
+        21,
+        35
+      ],
+      [
+        22,
+        34
+      ],
+      [
+        23,
+        33
+      ],
+      [
+        55,
+        71
+      ],
+      [
+        56,
+        70
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAACAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GGGAAUGGAGCCACAUCUACGAAUUCACACACUUCAAACAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....)))...................((((...((...(((((.......)))))))..))))...",
+    "mutant_structure_window": ".....(((((((........(((.........)))........)).)))))...(((.(((....))))))",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAACAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GGGAAUGGAGCCACAUCUACGAAUUCACACACUUCAAACAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....)))...................((((...((...(((((.......)))))))..))))...",
+    "mutant_structure": ".....(((((((........(((.........)))........)).)))))...(((.(((....))))))"
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_9",
+    "sequence_length": 71,
+    "mutation_pos0": 11,
+    "mutation_pos1": 12,
+    "mutation_from": "C",
+    "mutation_to": "G",
+    "wt_mfe": -6.8,
+    "mutant_mfe": -8.4,
+    "mfe_delta": -1.6000000000000005,
+    "bp_distance": 30,
+    "local_bp_distance": 30,
+    "wt_pair_count": 13,
+    "mutant_pair_count": 17,
+    "wt_only_pair_count": 13,
+    "mutant_only_pair_count": 17,
+    "diagnostic_wt_pairs_1": [
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ],
+      [
+        39,
+        68
+      ],
+      [
+        42,
+        66
+      ],
+      [
+        43,
+        65
+      ],
+      [
+        44,
+        64
+      ],
+      [
+        45,
+        59
+      ],
+      [
+        46,
+        58
+      ],
+      [
+        47,
+        57
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        12,
+        43
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        13,
+        42
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        8,
+        47
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        17,
+        38
+      ],
+      [
+        18,
+        37
+      ],
+      [
+        2,
+        52
+      ],
+      [
+        1,
+        53
+      ],
+      [
+        55,
+        71
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUAAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GGGAAUGGAUCGACAUCUACGAAUUCACACACUUAAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....)))........................(((..(((((((.......))))....))).))).",
+    "mutant_structure_window": "((....(((((((...((..................))...)))))))...)).(((.(((....))))))",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUAAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GGGAAUGGAUCGACAUCUACGAAUUCACACACUUAAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....)))........................(((..(((((((.......))))....))).))).",
+    "mutant_structure": "((....(((((((...((..................))...)))))))...)).(((.(((....))))))"
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_11",
+    "sequence_length": 71,
+    "mutation_pos0": 4,
+    "mutation_pos1": 5,
+    "mutation_from": "A",
+    "mutation_to": "G",
+    "wt_mfe": -6.4,
+    "mutant_mfe": -10.3,
+    "mfe_delta": -3.9000000000000004,
+    "bp_distance": 29,
+    "local_bp_distance": 29,
+    "wt_pair_count": 14,
+    "mutant_pair_count": 15,
+    "wt_only_pair_count": 14,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        32,
+        68
+      ],
+      [
+        33,
+        67
+      ],
+      [
+        34,
+        66
+      ],
+      [
+        35,
+        65
+      ],
+      [
+        39,
+        62
+      ],
+      [
+        40,
+        61
+      ],
+      [
+        44,
+        60
+      ],
+      [
+        45,
+        59
+      ],
+      [
+        46,
+        58
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        3,
+        34
+      ],
+      [
+        7,
+        30
+      ],
+      [
+        2,
+        35
+      ],
+      [
+        37,
+        46
+      ],
+      [
+        38,
+        45
+      ],
+      [
+        39,
+        44
+      ],
+      [
+        55,
+        71
+      ],
+      [
+        56,
+        70
+      ],
+      [
+        57,
+        69
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAACCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GGGAGUGGAUCCACAUCUACGAAUUCACACACUUCAACCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....)))...................((((...((...(((((.......)))))))..))))...",
+    "mutant_structure_window": ".((((((......................)))))).(((....)))........(((.(((....))))))",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAACCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GGGAGUGGAUCCACAUCUACGAAUUCACACACUUCAACCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....)))...................((((...((...(((((.......)))))))..))))...",
+    "mutant_structure": ".((((((......................)))))).(((....)))........(((.(((....))))))"
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_2",
+    "sequence_length": 71,
+    "mutation_pos0": 0,
+    "mutation_pos1": 1,
+    "mutation_from": "G",
+    "mutation_to": "C",
+    "wt_mfe": -8.0,
+    "mutant_mfe": -8.4,
+    "mfe_delta": -0.40000000000000036,
+    "bp_distance": 29,
+    "local_bp_distance": 29,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 21,
+    "wt_only_pair_count": 13,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ],
+      [
+        39,
+        68
+      ],
+      [
+        42,
+        66
+      ],
+      [
+        43,
+        65
+      ],
+      [
+        44,
+        64
+      ],
+      [
+        45,
+        59
+      ],
+      [
+        46,
+        58
+      ],
+      [
+        47,
+        57
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        1,
+        54
+      ],
+      [
+        2,
+        53
+      ],
+      [
+        3,
+        52
+      ],
+      [
+        7,
+        48
+      ],
+      [
+        8,
+        47
+      ],
+      [
+        9,
+        46
+      ],
+      [
+        10,
+        45
+      ],
+      [
+        11,
+        44
+      ],
+      [
+        17,
+        38
+      ],
+      [
+        18,
+        37
+      ],
+      [
+        55,
+        71
+      ],
+      [
+        56,
+        70
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACAAUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "CGGAAUGGAUCCACAUCUACGAAUUCACACAAUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....)))........(((((.....))))).(((..(((((((.......))))....))).))).",
+    "mutant_structure_window": "(((...(((((.....((..(((((.....))))).)).....)))))...)))(((.(((....))))))",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACAAUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "CGGAAUGGAUCCACAUCUACGAAUUCACACAAUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....)))........(((((.....))))).(((..(((((((.......))))....))).))).",
+    "mutant_structure": "(((...(((((.....((..(((((.....))))).)).....)))))...)))(((.(((....))))))"
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_2",
+    "sequence_length": 71,
+    "mutation_pos0": 4,
+    "mutation_pos1": 5,
+    "mutation_from": "A",
+    "mutation_to": "C",
+    "wt_mfe": -8.0,
+    "mutant_mfe": -8.4,
+    "mfe_delta": -0.40000000000000036,
+    "bp_distance": 28,
+    "local_bp_distance": 28,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 20,
+    "wt_only_pair_count": 13,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ],
+      [
+        39,
+        68
+      ],
+      [
+        42,
+        66
+      ],
+      [
+        43,
+        65
+      ],
+      [
+        44,
+        64
+      ],
+      [
+        45,
+        59
+      ],
+      [
+        46,
+        58
+      ],
+      [
+        47,
+        57
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        5,
+        45
+      ],
+      [
+        4,
+        46
+      ],
+      [
+        6,
+        44
+      ],
+      [
+        3,
+        47
+      ],
+      [
+        7,
+        43
+      ],
+      [
+        2,
+        48
+      ],
+      [
+        8,
+        17
+      ],
+      [
+        9,
+        16
+      ],
+      [
+        10,
+        15
+      ],
+      [
+        55,
+        71
+      ],
+      [
+        56,
+        70
+      ],
+      [
+        57,
+        69
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACAAUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GGGACUGGAUCCACAUCUACGAAUUCACACAAUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....)))........(((((.....))))).(((..(((((((.......))))....))).))).",
+    "mutant_structure_window": ".(((((((((....)))...(((((.....))))).......))))))......(((.(((....))))))",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACAAUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GGGACUGGAUCCACAUCUACGAAUUCACACAAUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....)))........(((((.....))))).(((..(((((((.......))))....))).))).",
+    "mutant_structure": ".(((((((((....)))...(((((.....))))).......))))))......(((.(((....))))))"
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_17",
+    "sequence_length": 71,
+    "mutation_pos0": 4,
+    "mutation_pos1": 5,
+    "mutation_from": "A",
+    "mutation_to": "G",
+    "wt_mfe": -8.0,
+    "mutant_mfe": -11.6,
+    "mfe_delta": -3.5999999999999996,
+    "bp_distance": 28,
+    "local_bp_distance": 28,
+    "wt_pair_count": 12,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 12,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        34,
+        63
+      ],
+      [
+        35,
+        62
+      ],
+      [
+        36,
+        61
+      ],
+      [
+        37,
+        60
+      ],
+      [
+        38,
+        59
+      ],
+      [
+        43,
+        54
+      ],
+      [
+        44,
+        53
+      ],
+      [
+        45,
+        52
+      ],
+      [
+        46,
+        51
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        3,
+        34
+      ],
+      [
+        7,
+        30
+      ],
+      [
+        2,
+        35
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ],
+      [
+        39,
+        68
+      ],
+      [
+        42,
+        63
+      ],
+      [
+        43,
+        62
+      ],
+      [
+        44,
+        61
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCAGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GGGAGUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCAGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....))).....................(((((....((((....))))....)))))........",
+    "mutant_structure_window": ".((((((......................)))))).(((..(((((((.......)))).)))....))).",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCAGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GGGAGUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCAGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....))).....................(((((....((((....))))....)))))........",
+    "mutant_structure": ".((((((......................)))))).(((..(((((((.......)))).)))....)))."
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_0",
+    "sequence_length": 71,
+    "mutation_pos0": 4,
+    "mutation_pos1": 5,
+    "mutation_from": "A",
+    "mutation_to": "G",
+    "wt_mfe": -7.3,
+    "mutant_mfe": -10.9,
+    "mfe_delta": -3.6000000000000005,
+    "bp_distance": 28,
+    "local_bp_distance": 28,
+    "wt_pair_count": 12,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 12,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        34,
+        63
+      ],
+      [
+        35,
+        62
+      ],
+      [
+        36,
+        61
+      ],
+      [
+        37,
+        60
+      ],
+      [
+        38,
+        59
+      ],
+      [
+        43,
+        54
+      ],
+      [
+        44,
+        53
+      ],
+      [
+        45,
+        52
+      ],
+      [
+        46,
+        51
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        5,
+        32
+      ],
+      [
+        4,
+        33
+      ],
+      [
+        6,
+        31
+      ],
+      [
+        3,
+        34
+      ],
+      [
+        7,
+        30
+      ],
+      [
+        2,
+        35
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ],
+      [
+        39,
+        68
+      ],
+      [
+        42,
+        66
+      ],
+      [
+        43,
+        65
+      ],
+      [
+        44,
+        64
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCAAACACUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GGGAGUGGAUCCACAUCUACGAAUUCAAACACUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....))).....................(((((....((((....))))....)))))........",
+    "mutant_structure_window": ".((((((......................)))))).(((..(((((((.......))))....))).))).",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCAAACACUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GGGAGUGGAUCCACAUCUACGAAUUCAAACACUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....))).....................(((((....((((....))))....)))))........",
+    "mutant_structure": ".((((((......................)))))).(((..(((((((.......))))....))).)))."
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_18",
+    "sequence_length": 71,
+    "mutation_pos0": 3,
+    "mutation_pos1": 4,
+    "mutation_from": "A",
+    "mutation_to": "G",
+    "wt_mfe": -7.1,
+    "mutant_mfe": -13.2,
+    "mfe_delta": -6.1,
+    "bp_distance": 28,
+    "local_bp_distance": 28,
+    "wt_pair_count": 12,
+    "mutant_pair_count": 16,
+    "wt_only_pair_count": 12,
+    "mutant_only_pair_count": 16,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ],
+      [
+        39,
+        68
+      ],
+      [
+        44,
+        65
+      ],
+      [
+        45,
+        64
+      ],
+      [
+        46,
+        63
+      ],
+      [
+        47,
+        62
+      ],
+      [
+        49,
+        58
+      ],
+      [
+        50,
+        57
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        4,
+        47
+      ],
+      [
+        3,
+        48
+      ],
+      [
+        5,
+        46
+      ],
+      [
+        2,
+        49
+      ],
+      [
+        6,
+        45
+      ],
+      [
+        1,
+        50
+      ],
+      [
+        7,
+        44
+      ],
+      [
+        8,
+        43
+      ],
+      [
+        9,
+        42
+      ],
+      [
+        10,
+        41
+      ],
+      [
+        55,
+        71
+      ],
+      [
+        56,
+        70
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCCGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GGGGAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCCGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....)))........................(((....((((.((......))...))))..))).",
+    "mutant_structure_window": "((((((((((..............................))))))))))....(((.(((....))))))",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCCGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GGGGAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCCGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....)))........................(((....((((.((......))...))))..))).",
+    "mutant_structure": "((((((((((..............................))))))))))....(((.(((....))))))"
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_2",
+    "sequence_length": 71,
+    "mutation_pos0": 2,
+    "mutation_pos1": 3,
+    "mutation_from": "G",
+    "mutation_to": "C",
+    "wt_mfe": -8.0,
+    "mutant_mfe": -8.6,
+    "mfe_delta": -0.5999999999999996,
+    "bp_distance": 27,
+    "local_bp_distance": 27,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 19,
+    "wt_only_pair_count": 13,
+    "mutant_only_pair_count": 14,
+    "diagnostic_wt_pairs_1": [
+      [
+        3,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ],
+      [
+        39,
+        68
+      ],
+      [
+        42,
+        66
+      ],
+      [
+        43,
+        65
+      ],
+      [
+        44,
+        64
+      ],
+      [
+        45,
+        59
+      ],
+      [
+        46,
+        58
+      ],
+      [
+        47,
+        57
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        3,
+        54
+      ],
+      [
+        2,
+        55
+      ],
+      [
+        4,
+        53
+      ],
+      [
+        6,
+        51
+      ],
+      [
+        7,
+        50
+      ],
+      [
+        8,
+        49
+      ],
+      [
+        9,
+        48
+      ],
+      [
+        11,
+        45
+      ],
+      [
+        12,
+        44
+      ],
+      [
+        56,
+        70
+      ],
+      [
+        57,
+        69
+      ],
+      [
+        59,
+        68
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACAAUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GGCAAUGGAUCCACAUCUACGAAUUCACACAAUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....)))........(((((.....))))).(((..(((((((.......))))....))).))).",
+    "mutant_structure_window": ".(((.((((.((........(((((.....)))))........))..)))).)))((.(((....))))).",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACAAUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GGCAAUGGAUCCACAUCUACGAAUUCACACAAUUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....)))........(((((.....))))).(((..(((((((.......))))....))).))).",
+    "mutant_structure": ".(((.((((.((........(((((.....)))))........))..)))).)))((.(((....)))))."
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_18",
+    "sequence_length": 71,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "G",
+    "mutation_to": "A",
+    "wt_mfe": -7.1,
+    "mutant_mfe": -7.8,
+    "mfe_delta": -0.7000000000000002,
+    "bp_distance": 27,
+    "local_bp_distance": 27,
+    "wt_pair_count": 12,
+    "mutant_pair_count": 15,
+    "wt_only_pair_count": 12,
+    "mutant_only_pair_count": 15,
+    "diagnostic_wt_pairs_1": [
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ],
+      [
+        39,
+        68
+      ],
+      [
+        44,
+        65
+      ],
+      [
+        45,
+        64
+      ],
+      [
+        46,
+        63
+      ],
+      [
+        47,
+        62
+      ],
+      [
+        49,
+        58
+      ],
+      [
+        50,
+        57
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        2,
+        49
+      ],
+      [
+        1,
+        50
+      ],
+      [
+        3,
+        48
+      ],
+      [
+        5,
+        46
+      ],
+      [
+        6,
+        45
+      ],
+      [
+        7,
+        44
+      ],
+      [
+        8,
+        43
+      ],
+      [
+        9,
+        42
+      ],
+      [
+        10,
+        41
+      ],
+      [
+        55,
+        71
+      ],
+      [
+        56,
+        70
+      ],
+      [
+        57,
+        69
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCCGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GAGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCCGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....)))........................(((....((((.((......))...))))..))).",
+    "mutant_structure_window": "(((.((((((..............................)))))).)))....(((.(((....))))))",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCCGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GAGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAUCCGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....)))........................(((....((((.((......))...))))..))).",
+    "mutant_structure": "(((.((((((..............................)))))).)))....(((.(((....))))))"
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_10",
+    "sequence_length": 71,
+    "mutation_pos0": 4,
+    "mutation_pos1": 5,
+    "mutation_from": "A",
+    "mutation_to": "C",
+    "wt_mfe": -6.4,
+    "mutant_mfe": -6.94,
+    "mfe_delta": -0.54,
+    "bp_distance": 26,
+    "local_bp_distance": 26,
+    "wt_pair_count": 14,
+    "mutant_pair_count": 12,
+    "wt_only_pair_count": 14,
+    "mutant_only_pair_count": 12,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        32,
+        68
+      ],
+      [
+        33,
+        67
+      ],
+      [
+        34,
+        66
+      ],
+      [
+        35,
+        65
+      ],
+      [
+        39,
+        62
+      ],
+      [
+        40,
+        61
+      ],
+      [
+        44,
+        60
+      ],
+      [
+        45,
+        59
+      ],
+      [
+        46,
+        58
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        5,
+        45
+      ],
+      [
+        4,
+        46
+      ],
+      [
+        6,
+        44
+      ],
+      [
+        3,
+        47
+      ],
+      [
+        7,
+        43
+      ],
+      [
+        2,
+        48
+      ],
+      [
+        55,
+        71
+      ],
+      [
+        56,
+        70
+      ],
+      [
+        57,
+        69
+      ],
+      [
+        59,
+        68
+      ],
+      [
+        60,
+        67
+      ],
+      [
+        61,
+        66
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAACAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GGGACUGGAUCCACAUCUACGAAUUCACACACUUCAAACAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....)))...................((((...((...(((((.......)))))))..))))...",
+    "mutant_structure_window": ".((((((...................................))))))......(((.(((....))))))",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAACAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GGGACUGGAUCCACAUCUACGAAUUCACACACUUCAAACAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....)))...................((((...((...(((((.......)))))))..))))...",
+    "mutant_structure": ".((((((...................................))))))......(((.(((....))))))"
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_6",
+    "sequence_length": 71,
+    "mutation_pos0": 4,
+    "mutation_pos1": 5,
+    "mutation_from": "A",
+    "mutation_to": "C",
+    "wt_mfe": -6.8,
+    "mutant_mfe": -6.94,
+    "mfe_delta": -0.14000000000000057,
+    "bp_distance": 25,
+    "local_bp_distance": 25,
+    "wt_pair_count": 13,
+    "mutant_pair_count": 12,
+    "wt_only_pair_count": 13,
+    "mutant_only_pair_count": 12,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ],
+      [
+        39,
+        68
+      ],
+      [
+        42,
+        66
+      ],
+      [
+        43,
+        65
+      ],
+      [
+        44,
+        64
+      ],
+      [
+        45,
+        59
+      ],
+      [
+        46,
+        58
+      ],
+      [
+        47,
+        57
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        5,
+        45
+      ],
+      [
+        4,
+        46
+      ],
+      [
+        6,
+        44
+      ],
+      [
+        3,
+        47
+      ],
+      [
+        7,
+        43
+      ],
+      [
+        2,
+        48
+      ],
+      [
+        55,
+        71
+      ],
+      [
+        56,
+        70
+      ],
+      [
+        57,
+        69
+      ],
+      [
+        59,
+        68
+      ],
+      [
+        60,
+        67
+      ],
+      [
+        61,
+        66
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUACAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GGGACUGGAUCCACAUCUACGAAUUCACACACUACAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....)))........................(((..(((((((.......))))....))).))).",
+    "mutant_structure_window": ".((((((...................................))))))......(((.(((....))))))",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUACAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GGGACUGGAUCCACAUCUACGAAUUCACACACUACAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....)))........................(((..(((((((.......))))....))).))).",
+    "mutant_structure": ".((((((...................................))))))......(((.(((....))))))"
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_9",
+    "sequence_length": 71,
+    "mutation_pos0": 4,
+    "mutation_pos1": 5,
+    "mutation_from": "A",
+    "mutation_to": "C",
+    "wt_mfe": -6.8,
+    "mutant_mfe": -6.94,
+    "mfe_delta": -0.14000000000000057,
+    "bp_distance": 25,
+    "local_bp_distance": 25,
+    "wt_pair_count": 13,
+    "mutant_pair_count": 12,
+    "wt_only_pair_count": 13,
+    "mutant_only_pair_count": 12,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ],
+      [
+        39,
+        68
+      ],
+      [
+        42,
+        66
+      ],
+      [
+        43,
+        65
+      ],
+      [
+        44,
+        64
+      ],
+      [
+        45,
+        59
+      ],
+      [
+        46,
+        58
+      ],
+      [
+        47,
+        57
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        5,
+        45
+      ],
+      [
+        4,
+        46
+      ],
+      [
+        6,
+        44
+      ],
+      [
+        3,
+        47
+      ],
+      [
+        7,
+        43
+      ],
+      [
+        2,
+        48
+      ],
+      [
+        55,
+        71
+      ],
+      [
+        56,
+        70
+      ],
+      [
+        57,
+        69
+      ],
+      [
+        59,
+        68
+      ],
+      [
+        60,
+        67
+      ],
+      [
+        61,
+        66
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUAAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GGGACUGGAUCCACAUCUACGAAUUCACACACUUAAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....)))........................(((..(((((((.......))))....))).))).",
+    "mutant_structure_window": ".((((((...................................))))))......(((.(((....))))))",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUAAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GGGACUGGAUCCACAUCUACGAAUUCACACACUUAAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....)))........................(((..(((((((.......))))....))).))).",
+    "mutant_structure": ".((((((...................................))))))......(((.(((....))))))"
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_4",
+    "sequence_length": 71,
+    "mutation_pos0": 1,
+    "mutation_pos1": 2,
+    "mutation_from": "G",
+    "mutation_to": "A",
+    "wt_mfe": -8.5,
+    "mutant_mfe": -7.5,
+    "mfe_delta": 1.0,
+    "bp_distance": 25,
+    "local_bp_distance": 25,
+    "wt_pair_count": 18,
+    "mutant_pair_count": 19,
+    "wt_only_pair_count": 12,
+    "mutant_only_pair_count": 13,
+    "diagnostic_wt_pairs_1": [
+      [
+        2,
+        32
+      ],
+      [
+        1,
+        33
+      ],
+      [
+        3,
+        30
+      ],
+      [
+        34,
+        63
+      ],
+      [
+        35,
+        62
+      ],
+      [
+        36,
+        61
+      ],
+      [
+        37,
+        60
+      ],
+      [
+        38,
+        59
+      ],
+      [
+        43,
+        54
+      ],
+      [
+        44,
+        53
+      ],
+      [
+        45,
+        52
+      ],
+      [
+        46,
+        51
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        2,
+        34
+      ],
+      [
+        1,
+        35
+      ],
+      [
+        3,
+        33
+      ],
+      [
+        37,
+        70
+      ],
+      [
+        38,
+        69
+      ],
+      [
+        39,
+        68
+      ],
+      [
+        42,
+        66
+      ],
+      [
+        43,
+        65
+      ],
+      [
+        44,
+        64
+      ],
+      [
+        45,
+        59
+      ],
+      [
+        46,
+        58
+      ],
+      [
+        47,
+        57
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACCUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GAGAAUGGAUCCACAUCUACGAAUUCACACACCUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": "(((..(((((.(........).)))))..).))(((((....((((....))))....)))))........",
+    "mutant_structure_window": "(((..(((((.(........).))))).....))).(((..(((((((.......))))....))).))).",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACCUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GAGAAUGGAUCCACAUCUACGAAUUCACACACCUCAAGCAAUCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": "(((..(((((.(........).)))))..).))(((((....((((....))))....)))))........",
+    "mutant_structure": "(((..(((((.(........).))))).....))).(((..(((((((.......))))....))).)))."
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_14",
+    "sequence_length": 71,
+    "mutation_pos0": 4,
+    "mutation_pos1": 5,
+    "mutation_from": "A",
+    "mutation_to": "C",
+    "wt_mfe": -7.3,
+    "mutant_mfe": -9.9,
+    "mfe_delta": -2.6000000000000005,
+    "bp_distance": 25,
+    "local_bp_distance": 25,
+    "wt_pair_count": 12,
+    "mutant_pair_count": 13,
+    "wt_only_pair_count": 12,
+    "mutant_only_pair_count": 13,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        34,
+        63
+      ],
+      [
+        35,
+        62
+      ],
+      [
+        36,
+        61
+      ],
+      [
+        37,
+        60
+      ],
+      [
+        38,
+        59
+      ],
+      [
+        43,
+        54
+      ],
+      [
+        44,
+        53
+      ],
+      [
+        45,
+        52
+      ],
+      [
+        46,
+        51
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        5,
+        45
+      ],
+      [
+        4,
+        46
+      ],
+      [
+        6,
+        44
+      ],
+      [
+        3,
+        47
+      ],
+      [
+        7,
+        43
+      ],
+      [
+        2,
+        48
+      ],
+      [
+        8,
+        42
+      ],
+      [
+        55,
+        71
+      ],
+      [
+        56,
+        70
+      ],
+      [
+        57,
+        69
+      ],
+      [
+        59,
+        68
+      ],
+      [
+        60,
+        67
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAACCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GGGACUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAACCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....))).....................(((((....((((....))))....)))))........",
+    "mutant_structure_window": ".(((((((.................................)))))))......(((.(((....))))))",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAACCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GGGACUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAACCGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....))).....................(((((....((((....))))....)))))........",
+    "mutant_structure": ".(((((((.................................)))))))......(((.(((....))))))"
+  },
+  {
+    "record_id": "Janzen_2022_fam1b1_ribozyme_13",
+    "sequence_length": 71,
+    "mutation_pos0": 4,
+    "mutation_pos1": 5,
+    "mutation_from": "A",
+    "mutation_to": "C",
+    "wt_mfe": -7.3,
+    "mutant_mfe": -7.94,
+    "mfe_delta": -0.6400000000000006,
+    "bp_distance": 24,
+    "local_bp_distance": 24,
+    "wt_pair_count": 12,
+    "mutant_pair_count": 12,
+    "wt_only_pair_count": 12,
+    "mutant_only_pair_count": 12,
+    "diagnostic_wt_pairs_1": [
+      [
+        4,
+        10
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        34,
+        63
+      ],
+      [
+        35,
+        62
+      ],
+      [
+        36,
+        61
+      ],
+      [
+        37,
+        60
+      ],
+      [
+        38,
+        59
+      ],
+      [
+        43,
+        54
+      ],
+      [
+        44,
+        53
+      ],
+      [
+        45,
+        52
+      ],
+      [
+        46,
+        51
+      ]
+    ],
+    "diagnostic_mutant_pairs_1": [
+      [
+        5,
+        45
+      ],
+      [
+        4,
+        46
+      ],
+      [
+        6,
+        44
+      ],
+      [
+        3,
+        47
+      ],
+      [
+        7,
+        43
+      ],
+      [
+        2,
+        48
+      ],
+      [
+        55,
+        71
+      ],
+      [
+        56,
+        70
+      ],
+      [
+        57,
+        69
+      ],
+      [
+        59,
+        68
+      ],
+      [
+        60,
+        67
+      ],
+      [
+        61,
+        66
+      ]
+    ],
+    "window_start0": 0,
+    "window_end0": 71,
+    "window_len": 71,
+    "wt_window": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAACGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_window": "GGGACUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAACGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure_window": ".(((.....))).....................(((((....((((....))))....)))))........",
+    "mutant_structure_window": ".((((((...................................))))))......(((.(((....))))))",
+    "wt_sequence": "GGGAAUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAACGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "mutant_sequence": "GGGACUGGAUCCACAUCUACGAAUUCACACACUUCAAGCAAACGGUCUUCACUGCAGACUUGACGAAGCUG",
+    "wt_structure": ".(((.....))).....................(((((....((((....))))....)))))........",
+    "mutant_structure": ".((((((...................................))))))......(((.(((....))))))"
+  }
+]

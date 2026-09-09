@@ -6,7 +6,6 @@ Responsible for loading model weights, configuration, and tokenizer from checkpo
 
 import json
 import os
-import shutil
 import sys
 from pathlib import Path
 from typing import Tuple, Optional, Any
@@ -128,15 +127,7 @@ class ModelLoader:
         if len(pt_files) == 1:
             return pt_files[0]
 
-        # With multiple .pt files, prioritize files containing specific keywords
-        priority_keywords = ['model', 'checkpoint', 'weights']
-        for keyword in priority_keywords:
-            for pt_file in pt_files:
-                if keyword in pt_file.name.lower():
-                    return pt_file
-
-        # If no keyword matches, return first file
-        return pt_files[0]
+        raise ValueError(f'Ambiguous checkpoint directory: {self.checkpoint_path}; provide model_weights.pt instead of selecting an arbitrary .pt file')
 
     def _extract_state_dict(self, weights: dict) -> dict:
         """
@@ -185,18 +176,7 @@ class ModelLoader:
         from eva.causal_lm import EvaForCausalLM
         from eva.lineage_tokenizer import LineageRNATokenizer
 
-        # Keep source-tree compatibility when eva/ is writable, but do not
-        # require installed packages to be writable at runtime.
-        tokenizer_src = self.checkpoint_path / 'tokenizer.json'
-        tokenizer_dst = self.model_code_path / 'tokenizer.json'
-        try:
-            if tokenizer_src.resolve() != tokenizer_dst.resolve() and self.model_code_path.exists():
-                if os.access(self.model_code_path, os.W_OK):
-                    shutil.copy(tokenizer_src, tokenizer_dst)
-        except OSError:
-            pass
-
-        # Load tokenizer
+        # Load the checkpoint tokenizer without modifying the installed package.
         tokenizer = LineageRNATokenizer.from_pretrained(str(self.checkpoint_path))
 
         # Load configuration

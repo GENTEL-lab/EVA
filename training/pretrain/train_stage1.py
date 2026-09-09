@@ -54,9 +54,9 @@ class LineageStage1Trainer(BaseTrainer):
 
     def _setup_model(self):
         """设置MoE模型"""
-        from model.causal_lm import create_rnagen_model
-        from model.lineage_tokenizer import get_lineage_rna_tokenizer
-        from utils.device import create_device_manager, set_device_manager
+        from eva.causal_lm import create_eva_model as create_rnagen_model
+        from eva.lineage_tokenizer import get_lineage_rna_tokenizer
+        from eva.device import create_device_manager, set_device_manager
 
         model_config_dict = self.config.get('model_config', {})
         distributed_config = self.config.get('distributed_config', {})
@@ -79,7 +79,7 @@ class LineageStage1Trainer(BaseTrainer):
                 set_device_manager(device_manager)
                 self.device_manager = device_manager
 
-        from model.config import RNAGenConfig
+        from eva.config import EvaConfig as RNAGenConfig
         model_config = RNAGenConfig(tokenizer=self.tokenizer, **model_config_dict)
         self.model = create_rnagen_model(model_config)
         logger.info(f"模型创建完成，设备: cuda:{self.local_rank}")
@@ -102,6 +102,14 @@ class LineageStage1Trainer(BaseTrainer):
                 logger.info(f"   - Expert Parallel组: {model_config_dict.get('moe_world_size', 1)} GPUs")
                 logger.info(f"   - Data Parallel组: {self.world_size // model_config_dict.get('moe_world_size', 1)} GPUs")
 
+        mask_policy = training_config.get('output_token_mask', 'legacy_generation')
+        if mask_policy not in ('none', 'legacy_generation'):
+            raise ValueError('output_token_mask must be none or legacy_generation')
+        if mask_policy == 'none':
+            self.model.output_token_mask = None
+            return
+        if data_config.get('mode', 'generation') != 'generation':
+            raise ValueError('legacy_generation output mask excludes GLM targets. Explicitly configure output_token_mask: none for mixed/completion training.')
         # 设置输出token mask
         model_to_set = self.model
         if model_config_dict.get('moe_implementation') == "megablocks" and model_config_dict.get('moe_world_size', 1) > 1:
@@ -138,7 +146,7 @@ class LineageStage1Trainer(BaseTrainer):
 def main():
     LineageStage1Trainer.main(
         description='Lineage-based Stage 1: 序列生成',
-        default_config='configs/lineage_training/lineage_stage1_16gpu.yaml',
+        default_config='config/training/pretrain_smoke.yaml',
         supports_resume=True,
     )
 
