@@ -29,7 +29,8 @@ def check_links():
     docs = [ROOT / 'README.md', ROOT / 'README_BENCHMARK_SUPPLEMENT.md', ROOT / 'CONTRIBUTING.md']
     docs += list((ROOT / 'docs').glob('*.md'))
     docs += [ROOT / 'training/pretrain/README.md', ROOT / 'finetune/aptamer/script/README.md',
-             ROOT / 'reproduction/milena_14b/expected/README.md']
+             ROOT / 'reproduction/milena_14b/expected/README.md',
+             ROOT / 'notebooks/README.md', ROOT / 'reproduction/README.md']
     for path in docs:
         text = re.sub(r'```.*?```', '', path.read_text(), flags=re.S)
         links = re.findall(r'\]\(([^\s)]+)(?:\s+[^)]*)?\)', text)
