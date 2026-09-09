@@ -875,17 +875,10 @@ Some large files are not included in this repository due to size constraints. Th
 
 ## Citation
 
-If you find EVA useful in your research, please cite:
-
-```bibtex
-@article{huang2026eva,
-  title={EVA: A Generative Foundation Model for Universal RNA Modeling and Design},
-  author={Huang, Yanjie and Lyu, Guangye and others},
-  journal={TODO},
-  year={2026},
-  url={TODO}
-}
-```
+Software citation metadata are in [CITATION.cff](CITATION.cff). Record the exact
+version and Git commit used for an experiment. This local candidate is version
+1.2.0rc1 and has not yet received an archival code DOI; the DOI and final
+manuscript citation will be added after their corresponding publications.
 
 <br>
 

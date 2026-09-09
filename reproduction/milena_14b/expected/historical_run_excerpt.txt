@@ -1,0 +1,10 @@
+Historical run log excerpt (original lines retained)
+444: START: cata.fasta
+445:   RNA type: none
+446:   Sequences: 135, Total batches: 3
+447:   Batch size: 45, GPU: 3
+448: ============================================================
+449: [38/67] Completed: Roberts_2023_hh_ribozyme.fasta
+4498: All tasks completed!
+4499: End time: 2026-03-10 20:55:15
+4500: Results saved to: /data/yanjie_huang/rna_benchmark/z_rnagym_70/scores_original_data_wotag

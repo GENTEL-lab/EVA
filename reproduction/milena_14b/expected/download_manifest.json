@@ -1,0 +1,10 @@
+{
+  "repo": "GENTEL-Lab/EVA",
+  "revision": "514db6705637c1ec963b728768fc9b34728699ee",
+  "model": "EVA_1.4B_CLM",
+  "sha256": {
+    "config.json": "a8571fcd6b88c3d4667d764d657e590cc589fc1316821bdb850d901380b15c47",
+    "tokenizer.json": "9315168d44e3d6df4cdd0c48f3ab6d5111beb13ac8b163a380c59a6fac5a021d",
+    "model_weights.pt": "323c13d571d0be87e450cb7b103bf8b28396e55e877519e2d2fb3c434875d420"
+  }
+}

@@ -7,12 +7,15 @@ Both values round to 0.84 at two decimal places. This is useful context,
 but does not explain the difference in the underlying archived score vector.
 The new vector is exactly equal to the separately recorded September 5 fresh
 run under different PyTorch/MegaBlocks versions. The versions tested therefore
-do not explain the historical mismatch. The historical prediction CLI defaults to batch size 128, while this declared
-workflow uses batch size 1. The archive records neither its actual batch size
-nor its dtype and exact command, so the defaults cannot establish the cause.
-Original archive-producing command, model binding and execution settings are
-still needed to resolve that question. No batch-size or objective search was
-performed to fit the reported value.
+do not explain the historical mismatch. A recovered March 10 run log identifies the matching output directory
+`scores_original_data_wotag`, 135 cata sequences, batch size 45 and three batches.
+The current output file is byte-identical to the archived vector. See
+`historical_run_evidence.json` and `historical_run_excerpt.txt`. A separate
+batch-32 log targets a differently named directory and is not used to bind this
+archive. This documents a batch-size difference from the declared batch-1
+workflow; it does not prove that batching caused the metric delta. The original
+log does not hash the checkpoint or executable source. No batch-size or
+objective search was performed to fit the reported value.
 
 The report's decimal-precision comparison is a diagnostic against the stored
 CSV, not a demand for scientifically meaningful agreement to 16 decimal places.
@@ -21,9 +24,12 @@ Rounding to two decimals is descriptive context only; publication remains
 pending the requested explanation of the different archived predictions.
 
 The run used a cached weight file whose SHA256 matches the public revision's
-LFS object, plus freshly retrieved public config and tokenizer files. Direct
-Hugging Face download from the validation server failed with a connection reset;
-this run is not evidence of a successful online download in that environment.
+LFS object, plus freshly retrieved public config and tokenizer files.
+The complete 3,057,231,170-byte public weight file was independently downloaded
+with the documented downloader in a new macOS Python environment; all three
+file hashes exactly match the GPU input. `download_manifest.json` records this
+check. Direct Hugging Face access from the GPU server reset the connection,
+so that server used its byte-identical cached weights.
 The label/sequence inputs are unchanged from the author-confirmed current
 submission. Outputs are supplied for transparency, not as a replacement of the
 manuscript table. GPU scoring took 11.45 seconds and peaked at 3,157,299,200

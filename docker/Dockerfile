@@ -78,7 +78,7 @@ COPY docs/ /eva/docs/
 COPY docker/ /eva/docker/
 COPY reproduction/ /eva/reproduction/
 COPY data/test_data/ /eva/data/test_data/
-COPY pyproject.toml README.md LICENSE CHANGELOG.md /eva/
+COPY pyproject.toml README.md LICENSE CHANGELOG.md CITATION.cff /eva/
 RUN pip install --no-cache-dir --no-deps -e /eva
 
 # Create output directory

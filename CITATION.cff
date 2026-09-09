@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Cite the exact software version and commit used. This candidate has no archival DOI yet."
+type: software
+title: "EVA: A Generative Foundation Model for Universal RNA Modeling and Design"
+authors:
+  - name: GENTEL Lab
+version: 1.2.0rc1
+repository-code: "https://github.com/GENTEL-Lab/EVA"
+license: Apache-2.0

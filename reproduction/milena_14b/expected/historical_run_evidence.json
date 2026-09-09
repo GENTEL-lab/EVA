@@ -1,0 +1,15 @@
+{
+  "source_log": "run_benchmark_v1.log",
+  "source_log_sha256": "e786b2641763be69cf637127fa7e6ec77591db0600e361b6b7489c3f0ab14074",
+  "recorded_run_end": "2026-03-10 20:55:15",
+  "dataset": "cata.fasta",
+  "n": 135,
+  "batch_size": 45,
+  "total_batches": 3,
+  "condition": "none",
+  "output_directory_suffix": "scores_original_data_wotag",
+  "current_output_sha256": "8d5b47937e431acbe3684884291d5b9372a67b3d3461f5ba5c4eb9085af478c1",
+  "archive_output_byte_identical": true,
+  "causal_explanation_of_score_difference": "Not established; batch-size difference is documented, not tested by changing the frozen single-sample protocol",
+  "limitation": "The run log identifies an output directory but does not hash the model or producer source. Current producer scripts may have changed since execution."
+}
