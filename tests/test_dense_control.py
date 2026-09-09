@@ -1,5 +1,6 @@
 """Checks for the recovered author single-expert dense-control architecture."""
 import json
+import importlib.util
 import tempfile
 import unittest
 from pathlib import Path
@@ -17,6 +18,8 @@ class DenseControlTests(unittest.TestCase):
         (path / 'config.json').write_text(json.dumps(cfg))
         return cfg
 
+    @unittest.skipUnless(importlib.util.find_spec('megablocks'),
+                         'Full model runtime required; exercised in the validation container')
     def test_dense_forward_update_and_exact_reload(self):
         with tempfile.TemporaryDirectory() as d:
             path = Path(d)

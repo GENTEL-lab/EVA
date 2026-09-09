@@ -23,7 +23,7 @@ The [manuscript architecture table](../examples/reproduction/dense_control/manus
 
 ## Validation
 
-The container run passed all 25 focused dense-control and software-robustness tests. [Validation record](../examples/reproduction/dense_control/validation.json) records the scope. The focused tests exercise a real single-expert forward pass, gradient update and exact saved-weight reload, and reject a multi-expert checkpoint. They validate software behavior on a tiny synthetic model; the author separately confirms running dense training and reproducing the reported results. This update does not claim a new full-scale training run.
+The full-runtime container run passed all 25 focused dense-control and software-robustness tests. The forward/update/reload test requires MegaBlocks through the existing model runtime and is explicitly skipped in a base CPU installation without it; checkpoint-type rejection is still tested there. [Validation record](../examples/reproduction/dense_control/validation.json) records the scope. The focused tests exercise a real single-expert forward pass, gradient update and exact saved-weight reload, and reject a multi-expert checkpoint. They validate software behavior on a tiny synthetic model; the author separately confirms running dense training and reproducing the reported results. This update does not claim a new full-scale training run.
 
 ```sh
 python -m unittest discover -s tests -p test_dense_control.py -v

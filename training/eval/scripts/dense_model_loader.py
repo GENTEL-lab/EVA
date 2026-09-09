@@ -38,8 +38,6 @@ _MOE_KEYS = ['num_experts', 'num_experts_per_tok', 'router_aux_loss_coef',
 
 def _create_dense_model(checkpoint_path: Path, device: str = 'cuda:0'):
     """创建 Dense 模型实例"""
-    from eva.causal_lm import EvaForCausalLM
-    from eva.config import EvaConfig
     config_file = checkpoint_path / "config.json"
     with open(config_file, 'r') as f:
         config_dict = json.load(f)
@@ -47,6 +45,9 @@ def _create_dense_model(checkpoint_path: Path, device: str = 'cuda:0'):
     # A multi-expert checkpoint must never be silently converted to dense.
     if config_dict.get('num_experts') != 1 or config_dict.get('num_experts_per_tok') != 1:
         raise ValueError('Dense-control loading requires a recorded single-expert checkpoint')
+
+    from eva.causal_lm import EvaForCausalLM
+    from eva.config import EvaConfig
 
     _, use_direction_tokens = resolve_training_config(checkpoint_path)
     if not use_direction_tokens:
