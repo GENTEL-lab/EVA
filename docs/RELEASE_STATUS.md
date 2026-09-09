@@ -1,8 +1,10 @@
 # Validation and release status
 
 **v1.2.0** packages the reproducibility repairs and repository layout updates.
-The source archive is identified by DOI
-[10.6084/m9.figshare.33487147.v1](https://doi.org/10.6084/m9.figshare.33487147.v1).
+The source archive and its checksums are available in the GitHub release assets.
+Figshare DOI `10.6084/m9.figshare.33487147` is reserved but not yet active.
+Figshare publication currently returns "Cannot publish article, please contact
+support" from both the edit page and item-list publishing controls.
 The [GitHub release](https://github.com/GENTEL-lab/EVA/releases/tag/v1.2.0)
 and `CITATION.cff` identify this software version. Models and datasets retain
 their separately documented version identifiers.

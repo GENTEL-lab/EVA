@@ -1,11 +1,10 @@
 cff-version: 1.2.0
-message: "Cite this software version using the archival DOI and record the model and data versions used."
+message: "Cite this software version and its exact Git tag or commit; record the model and data versions used."
 type: software
 title: "EVA: A Generative Foundation Model for Universal RNA Modeling and Design"
 authors:
   - name: GENTEL Lab
 version: 1.2.0
 date-released: "2026-09-09"
-doi: "10.6084/m9.figshare.33487147.v1"
 repository-code: "https://github.com/GENTEL-Lab/EVA"
 license: Apache-2.0
