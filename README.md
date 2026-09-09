@@ -142,7 +142,7 @@ paper experiment. See [dated validation records](docs/RELEASE_STATUS.md).
 ## Documentation
 
 <table>
-  <tr><th>Guide</th><th>What you will find</th></tr>
+  <tr><th width="25%" align="left">Guide</th><th align="left">What you will find</th></tr>
   <tr>
     <td><a id="condition-control"></a><a id="rna-types"></a><a id="specieslineage"></a><a id="generation"></a><a id="clm"></a><a id="unconditional-generation"></a><a id="conditional-generation"></a><a id="continuation-mode"></a><a id="glm"></a><a id="unconditional-infilling"></a><a id="conditional-infilling"></a><a id="span-parameters"></a><a id="sampling-parameters"></a><a id="scoring"></a><a id="rna-mode"></a><a id="protein-mode"></a><a id="directed-evolution"></a><a id="usage"></a><a id="key-parameters"></a><a id="batch-processing-with-yaml"></a><a id="generation-config-example"></a><a id="scoring-config-example"></a><a id="running"></a><a id="inputoutput-formats"></a><a id="input--fasta"></a><a id="output--generation-fasta"></a><a id="output--scoring-json"></a><a id="output--directed-evolution-fasta"></a><a href="docs/USAGE.md"><b>Using EVA →</b></a></td>
     <td>Scoring and generation, conditioning, batch configuration, and input/output formats.</td>
