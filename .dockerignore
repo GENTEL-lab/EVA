@@ -2,7 +2,7 @@
 checkpoint/
 
 # Output data
-data/output/
+examples/data/output/
 
 # Python cache
 __pycache__/
@@ -15,19 +15,19 @@ __pycache__/
 *_bak*
 
 # Docker files
-# NOTE: docker/ must stay in the build context: docker/Dockerfile COPYs
-# docker/requirements.txt and docker/entrypoint.sh. Excluding it breaks the
-# documented `docker build -f docker/Dockerfile -t eva:latest .` command.
+# NOTE: scripts/docker/ must stay in the build context: scripts/docker/Dockerfile COPYs
+# scripts/docker/requirements.txt and scripts/docker/entrypoint.sh. Excluding it breaks the
+# documented `docker build -f scripts/docker/Dockerfile -t eva:latest .` command.
 Dockerfile
-# Keep the published recipe available to COPY docker/ and image-internal QA.
-!docker/Dockerfile
-docker/Dockerfile_bak*
-docker/EVA.def
-docker/smoke_test.sh
+# Keep the published recipe available to COPY scripts/docker/ and image-internal QA.
+!scripts/docker/Dockerfile
+scripts/docker/Dockerfile_bak*
+scripts/docker/EVA.def
+scripts/docker/smoke_test.sh
 .dockerignore
 
 # Figures are not part of the image (34 MB of build context)
-fig/
+docs/assets/
 
 # IDE / OS
 .git/
@@ -45,4 +45,4 @@ dist/
 build/
 *.egg-info/
 .pytest_cache/
-notebooks/interpretability_analysis/sae_repro_release/outputs/
+examples/notebooks/interpretability_analysis/sae_repro_release/outputs/

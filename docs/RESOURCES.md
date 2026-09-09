@@ -2,7 +2,7 @@
 
 The model/download metadata below were read from the public APIs on
 September 9, 2026. File sizes use decimal MB/GB. The machine-readable record is
-`reproduction/release/public_resource_metadata_20260909.json`.
+`examples/reproduction/release/public_resource_metadata_20260909.json`.
 
 ## EVA checkpoints
 

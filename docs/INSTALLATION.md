@@ -19,7 +19,7 @@ from the repository root **on the host**:
 
 ```bash
 mkdir -p checkpoint results
-docker build -f docker/Dockerfile -t eva:local .
+docker build -f scripts/docker/Dockerfile -t eva:local .
 docker run --rm -it --gpus device=0 --name eva-repro \
   -v "$PWD":/eva -w /eva eva:local bash
 ```
@@ -33,7 +33,7 @@ The recipe uses Python 3.11, PyTorch 2.5.1, CUDA 12.4, Transformers 4.55.0,
 MegaBlocks 0.7.0 and grouped-GEMM 0.1.6. It compiles the required MoE extensions;
 the first build may take 30–60 minutes, depending on hardware and networking.
 Attention uses PyTorch SDPA and does not require a separate FlashAttention package.
-The exact dependency pins are in `docker/requirements.txt`; the validated image
+The exact dependency pins are in `scripts/docker/requirements.txt`; the validated image
 and base-image digest are recorded in [validation status](RELEASE_STATUS.md).
 The recipe supports CUDA build targets 7.5, 8.0 and 9.0, but that build setting
 is not a claim of runtime testing on every GPU architecture.
@@ -42,7 +42,7 @@ If the default Python package index is unreachable, explicitly select a mirror:
 
 ```bash
 docker build --build-arg PIP_INDEX_URL=https://mirrors.aliyun.com/pypi/simple \
-  -f docker/Dockerfile -t eva:local .
+  -f scripts/docker/Dockerfile -t eva:local .
 ```
 
 Package versions stay pinned. Record the chosen index with the build log.
@@ -75,9 +75,9 @@ HPC users usually cannot run Docker. Convert the image with the definition
 file on any machine that has Docker:
 
 ```bash
-docker build -f docker/Dockerfile -t eva:local .
-docker tag eva:local eva:latest  # docker/EVA.def expects this local tag
-singularity build eva_latest.sif docker/EVA.def
+docker build -f scripts/docker/Dockerfile -t eva:local .
+docker tag eva:local eva:latest  # scripts/docker/EVA.def expects this local tag
+singularity build eva_latest.sif scripts/docker/EVA.def
 ```
 
 The [legacy image deposit](RESOURCES.md#runtime-image) is not the current
@@ -128,6 +128,6 @@ The published validation record covers Docker; verify Singularity/Apptainer
 on your target cluster before relying on it:
 
 ```bash
-docker/smoke_test.sh docker eva:local
-docker/smoke_test.sh singularity eva_latest.sif
+scripts/docker/smoke_test.sh docker eva:local
+scripts/docker/smoke_test.sh singularity eva_latest.sif
 ```

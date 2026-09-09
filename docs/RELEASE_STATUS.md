@@ -13,7 +13,7 @@ scored all 135 inputs, produced metrics and plots, and exactly matched the
 saved fresh-prediction vector. Default mode returned **0**; the optional
 strict-reference mode returned **2**. Scoring took about 12 seconds per run;
 peak PyTorch-allocated GPU memory was 2.94 GiB.
-The [dated reports](../reproduction/release/usability_gpu_20260909/README.md)
+The [dated reports](../examples/reproduction/release/usability_gpu_20260909/README.md)
 record the source commit, file hashes, environment and both execution modes.
 
 The expanded suite passed **139 tests** without skips in the existing Docker
@@ -38,7 +38,7 @@ and validation records without changing runtime code or inputs.
 | Milena inference | All 135 samples scored from the pinned public checkpoint |
 | Archived calculations | Milena metric, SAE calculations and benchmark summary audit executed |
 
-`reproduction/release/clean_validation.json` records the commit and hashes.
+`examples/reproduction/release/clean_validation.json` records the commit and hashes.
 The image used PyTorch 2.5.1/CUDA 12.4, Transformers 4.55.0 and MegaBlocks 0.7.0.
 The base-image digest was
 `sha256:14611869895df612b7b07227d5925f30ec3cd6673bad58ce3d84ed107950e014`.
@@ -55,7 +55,7 @@ numbers and all predictions remain available. No input labels, scoring
 objective or paper metric have been changed to reduce the difference.
 
 [Reproduction](REPRODUCTION.md) documents normal completion and the optional
-`--strict-reference` diagnostic. [Expected outputs](../reproduction/milena_14b/expected/README.md)
+`--strict-reference` diagnostic. [Expected outputs](../examples/reproduction/milena_14b/expected/README.md)
 record the measurements. Historical batch-size observations are context, not
 a demonstrated cause of the difference.
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 # RNA sequence scoring launch script for a running EVA Docker container.
 # Usage: ./scripts/predict.sh <config.yaml> [extra args...]
-# Example: ./scripts/predict.sh config/tools_config/config_score_example.yaml
+# Example: ./scripts/predict.sh examples/config/tools_config/config_score_example.yaml
 
 set -e
 
@@ -18,8 +18,8 @@ PREDICT_SCRIPT="${PREDICT_SCRIPT:-${CONTAINER_BASE}/tools/predict.py}"
 # ===== Argument Check =====
 if [ $# -lt 1 ]; then
     echo "Usage: $0 <config.yaml> [extra args...]"
-    echo "Example: $0 config/tools_config/config_score_example.yaml"
-    echo "      $0 config/tools_config/config_score_example.yaml --device cuda:1"
+    echo "Example: $0 examples/config/tools_config/config_score_example.yaml"
+    echo "      $0 examples/config/tools_config/config_score_example.yaml --device cuda:1"
     exit 1
 fi
 

@@ -4,7 +4,7 @@ Run from the repository root in the GPU environment described in
 [the reproduction guide](../../docs/REPRODUCTION.md).
 
 ```bash
-python training/pretrain/train_stage1.py --config config/training/pretrain_smoke.yaml
+python training/pretrain/train_stage1.py --config training/configs/pretrain_smoke.yaml
 ```
 
 This is a two-step synthetic engineering test, **not** a recovered paper recipe.
@@ -20,7 +20,7 @@ python scripts/smoke_workflows.py --checkpoint checkpoint/EVA_21M --output resul
 For an explicitly configured run, use `training/midtrain/train_midtrain.py --config YOUR_CONFIG`.
 Mid-training requires `training_config.resume_from_pretrain` pointing to a DCP
 checkpoint and resets the optimizer/scheduler. Finetuning uses
-`finetune/train_finetune.py --config YOUR_CONFIG` and accepts DCP or PT weights.
+`training/finetune/train_finetune.py --config YOUR_CONFIG` and accepts DCP or PT weights.
 
 `data_config.mode` selects `generation`, `completion` or `mixed`.
 `glm_probability` only controls the mix when mode is `mixed`; zero means CLM only.

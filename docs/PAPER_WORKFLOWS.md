@@ -2,25 +2,25 @@
 
 This index uses the current submission's six main figures and the September 7
 Extended Data renumbering. It does not infer completed inference from stored
-metric tables. `reproduction/release/benchmark_result_index.csv` indexes the
+metric tables. `examples/reproduction/release/benchmark_result_index.csv` indexes the
 490 metric cells currently present in the repository's three benchmark tables;
 this is not the complete set of manuscript experiments or all plotted models.
 
 | Result or component | Source and execution entry | Artifact and validation boundary |
 |---|---|---|
-| Model training and context evaluation, Figure 1 | `training/`, `training/pretrain/README.md`, `notebooks/long_context_recall/` | Small training smoke is separate from full training. Exact manuscript training splits and some run/checkpoint links remain to be supplied. |
-| RNA fitness, Figure 2 | `scripts/reproduce_milena.py`; `notebooks/prediction/data/`; `scripts/benchmark_release.py` | The representative Milena protocol and public checkpoint are frozen. Other assays retain their existing scores and sample counts. |
-| Protein fitness, Figure 2 | `reproduction/benchmark/run_competitor.py`; `reproduction/benchmark/upstream/protein/` | Native ESM entry and archived metric calculations are included. Model-specific ensembles, codon handling and exact paper checkpoint bindings are not all recovered. |
+| Model training and context evaluation, Figure 1 | `training/`, `training/pretrain/README.md`, `training/eval/` | Small training smoke is separate from full training. Exact manuscript training splits and some run/checkpoint links remain to be supplied. |
+| RNA fitness, Figure 2 | `scripts/reproduce_milena.py`; `examples/notebooks/prediction/data/`; `scripts/benchmark_release.py` | The representative Milena protocol and public checkpoint are frozen. Other assays retain their existing scores and sample counts. |
+| Protein fitness, Figure 2 | `examples/reproduction/benchmark/run_competitor.py`; `examples/reproduction/benchmark/upstream/protein/` | Native ESM entry and archived metric calculations are included. Model-specific ensembles, codon handling and exact paper checkpoint bindings are not all recovered. |
 | Essentiality, Figure 2 | `scripts/reproduce_essentiality.py`; `ESSENTIALITY_REPRODUCTION.md` | Recomputes archived predictions and ablation groups. Main inference/data-production provenance is incomplete. |
-| Generated-sequence statistics, Figure 3 and ED6 | `notebooks/generation/`; existing deposited sequence/features | Exact final Figure 3a/b plotting inputs are not bound to a portable command in this candidate. |
-| Aptamer and tRNA analyses, Figure 4 | `finetune/`; `notebooks/design/`; accompanying Source Data | Training execution tests do not reproduce laboratory measurements or validate predicted structures. |
+| Generated-sequence statistics, Figure 3 and ED6 | `examples/notebooks/generation/`; existing deposited sequence/features | Exact final Figure 3a/b plotting inputs are not bound to a portable command in this candidate. |
+| Aptamer and tRNA analyses, Figure 4 | `training/finetune/`; `examples/notebooks/design/`; accompanying Source Data | Training execution tests do not reproduce laboratory measurements or validate predicted structures. |
 | Computational design case studies, Figure 5 | Existing design notebooks and deposited results | Archived analyses are retained; exact final configurations are not all mapped. |
 | Interpretability and steering, Figure 6 and ED8–10 | `scripts/reproduce_sae.py`; `SAE_REPRODUCTION.md` | Stored 401-case likelihood analysis and selected examples are distinct from the full generation cohort in Table S30. Current data remain as author-confirmed; full per-case S30 output is not bundled. |
 
 ## Competitor inputs and model versions
 
 The preserved original configuration is
-`reproduction/benchmark/upstream/rna/config.yaml`. Historical absolute paths
+`examples/reproduction/benchmark/upstream/rna/config.yaml`. Historical absolute paths
 identify earlier resources; do not execute that configuration unchanged.
 Use separate method environments and local checkpoint paths, or export
 predictions from an upstream scorer to the
@@ -48,7 +48,7 @@ manifest identifies a matching historical snapshot; a newly generated manifest
 identifies the checkpoint you have chosen for a new benchmark:
 
 ```bash
-python reproduction/benchmark/run_competitor.py snapshot \
+python examples/reproduction/benchmark/run_competitor.py snapshot \
   --model-dir checkpoint/rnafm --output checkpoint/rnafm-manifest.json
 ```
 
@@ -61,7 +61,7 @@ masked-LM and native ESM interfaces. The snapshot helper records identity; it
 does not determine whether a checkpoint is the one used for a paper result.
 
 The recovered Evo2 7B protein row remains a separate candidate table under
-`reproduction/benchmark_release/recovered_reference/`. It is not substituted
+`examples/reproduction/benchmark_release/recovered_reference/`. It is not substituted
 into the current submission table. Four ncRNA model comparisons have recorded
 sample-count differences of one; their original inclusion/WT rules still need
 to be documented before those comparisons can be called complete.

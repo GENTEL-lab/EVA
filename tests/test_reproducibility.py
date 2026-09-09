@@ -89,7 +89,7 @@ def test_optimization_prompt_not_double_wrapped():
 
 
 def test_mixed_glm_failure_does_not_change_objective():
-    from finetune.utils.lineage_dataset import LineageRNADataset
+    from training.finetune.utils.lineage_dataset import LineageRNADataset
     ds = object.__new__(LineageRNADataset)
     ds.samples = [('ACGU' * 8, None, 'tRNA', None)]
     ds.mode, ds.glm_probability, ds.span_config = 'mixed', 1.0, None
@@ -104,7 +104,7 @@ def test_mixed_glm_failure_does_not_change_objective():
 def test_glm_dataset_has_supervised_targets(mode):
     from pathlib import Path
     from eva.lineage_tokenizer import get_lineage_rna_tokenizer
-    from finetune.utils.lineage_dataset import LineageRNADataset
+    from training.finetune.utils.lineage_dataset import LineageRNADataset
     tok = get_lineage_rna_tokenizer()
     ds = LineageRNADataset(str(Path(__file__).parent / 'data/train_smoke.fasta'), tok,
         lineage_file=None, use_lineage_prefix=False, mode=mode, glm_probability=1.0,
@@ -122,7 +122,7 @@ def test_training_requires_checkpoint(kind):
         trainer.config = {}
         loader = trainer._load_pretrain_checkpoint
     else:
-        from finetune.train_finetune import FinetuneTrainer
+        from training.finetune.train_finetune import FinetuneTrainer
         trainer = object.__new__(FinetuneTrainer)
         trainer.training_config = {}
         loader = trainer._load_pretrain_checkpoint
@@ -133,7 +133,7 @@ def test_training_requires_checkpoint(kind):
 def test_aptamer_cli_rejects_documented_old_invalid_flag():
     import subprocess
     from pathlib import Path
-    script = Path(__file__).resolve().parents[1] / 'finetune/aptamer/script/run_aptamer_finetuning.sh'
+    script = Path(__file__).resolve().parents[1] / 'training/finetune/aptamer/script/run_aptamer_finetuning.sh'
     result = subprocess.run(['bash', str(script), '--rna-type', 'aptamer'], capture_output=True, text=True)
     assert result.returncode == 2 and 'Unknown option' in result.stderr
 

@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_analysis_dependencies_are_declared():
-    requirements = (ROOT / "docker/requirements.txt").read_text().splitlines()
+    requirements = (ROOT / "scripts/docker/requirements.txt").read_text().splitlines()
     project = (ROOT / "pyproject.toml").read_text()
     notebook = project.split("notebook = [", 1)[1].split("]", 1)[0]
     for name, version in (("pandas", "2.2.3"), ("seaborn", "0.13.2"),

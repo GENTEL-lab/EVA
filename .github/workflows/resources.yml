@@ -6,7 +6,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/check_resource_links.py'
-      - 'reproduction/release/resource_links.json'
+      - 'examples/reproduction/release/resource_links.json'
       - '.github/workflows/resources.yml'
 
 permissions:

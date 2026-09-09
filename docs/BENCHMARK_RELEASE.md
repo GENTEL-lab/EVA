@@ -16,13 +16,13 @@ python -B -m unittest discover -s tests -p test_benchmark_release.py -v
 python scripts/benchmark_release.py --help
 ```
 
-Open `notebooks/prediction/benchmark_reproduction.ipynb` to follow the same entry
+Open `examples/notebooks/prediction/benchmark_reproduction.ipynb` to follow the same entry
 points. Its three code cells have been executed both sequentially as Python and
 in an isolated Jupyter kernel. The reference-analysis section ran; the optional
 prediction-manifest section was explicitly unconfigured. This does not validate
 model inference or arbitrary user-supplied prediction files.
 The observed notebook-test dependency versions are recorded in
-`reproduction/benchmark_release/jupyter-validation-macos-py312.lock.txt`.
+`examples/reproduction/benchmark_release/jupyter-validation-macos-py312.lock.txt`.
 That lock is for the tested macOS/Python 3.12 environment, not a universal
 installation recipe or an EVA GPU environment.
 
@@ -30,8 +30,8 @@ installation recipe or an EVA GPU environment.
 
 ```bash
 python scripts/benchmark_release.py audit-reference \
-  --manifest reproduction/benchmark_release/reference_manifest.json \
-  --data-root reproduction/benchmark_release/reference \
+  --manifest examples/reproduction/benchmark_release/reference_manifest.json \
+  --data-root examples/reproduction/benchmark_release/reference \
   --output results/reference_audit --plot
 ```
 
@@ -73,8 +73,8 @@ not fresh inference or confirmation of its final manuscript/checkpoint lineage.
 
 ```bash
 python scripts/benchmark_release.py audit-reference \
-  --manifest reproduction/benchmark_release/recovered_reference_manifest.json \
-  --data-root reproduction/benchmark_release/recovered_reference \
+  --manifest examples/reproduction/benchmark_release/recovered_reference_manifest.json \
+  --data-root examples/reproduction/benchmark_release/recovered_reference \
   --output results/recovered_reference_audit --plot
 ```
 
@@ -96,7 +96,7 @@ Do not generate IDs after independently sorting files, join by row number, use
 another model to fill missing predictions, or infer experimental readouts from
 sequence names. The label and prediction ID sets must match exactly.
 
-Complete `reproduction/benchmark_release/evaluation_manifest.template.json` in a
+Complete `examples/reproduction/benchmark_release/evaluation_manifest.template.json` in a
 new file. Its null fields are deliberately unusable until real values are
 provided. Specify all intended models and assays; the required scope is their
 Cartesian product. For genuinely different model scopes, use separately labeled
@@ -155,9 +155,9 @@ The source contains these entry points; see REPRODUCTION.md for the new pinned 1
 |---|---|---|
 | EVA representative assay | `scripts/reproduce_dms.py` | Resolve original label/invocation mismatch; do not call the previous 21M run a numerical match |
 | Historical EVA archive | `scripts/reproduce_historical_benchmark.py` | Arithmetic only; unresolved label provenance stays visible |
-| Bounded RNA MLM / native ESM | `reproduction/benchmark/run_competitor.py` | Correct per-model objective, weights, runtime and assay manifest; not interchangeable with all competing methods |
-| Historical multi-model adapters | `reproduction/benchmark/upstream/rna/` | Port original verified configs and external workers; legacy absolute paths are not reader instructions |
-| Protein model adapters | `reproduction/benchmark/upstream/protein/` | Original reference/codon/domain/ensemble conventions and exact model versions; not all methods are complete |
+| Bounded RNA MLM / native ESM | `examples/reproduction/benchmark/run_competitor.py` | Correct per-model objective, weights, runtime and assay manifest; not interchangeable with all competing methods |
+| Historical multi-model adapters | `examples/reproduction/benchmark/upstream/rna/` | Port original verified configs and external workers; legacy absolute paths are not reader instructions |
+| Protein model adapters | `examples/reproduction/benchmark/upstream/protein/` | Original reference/codon/domain/ensemble conventions and exact model versions; not all methods are complete |
 
 Those files belong to the existing full-source repair, not this small overlay.
 Their presence is not a fresh execution result. This supplement performs no GPU

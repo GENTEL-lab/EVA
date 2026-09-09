@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from scripts.reproduce_historical_benchmark import read_fasta, finite_vector, align_archive, sha256, spearman
 
-MANIFEST = ROOT / 'reproduction/milena_14b/manifest.json'
+MANIFEST = ROOT / 'examples/reproduction/milena_14b/manifest.json'
 
 
 def validate_inputs(root=ROOT, manifest_path=MANIFEST):
@@ -88,8 +88,8 @@ def main():
     if args.check_only:
         print(json.dumps(report,indent=2))
         return 0
-    command = [sys.executable, str(ROOT/'reproduction/benchmark/run_historical_14b.py'),
-               '--source-dir',str(ROOT/'reproduction/benchmark/historical_14b'),
+    command = [sys.executable, str(ROOT/'examples/reproduction/benchmark/run_historical_14b.py'),
+               '--source-dir',str(ROOT/'examples/reproduction/benchmark/historical_14b'),
                '--checkpoint',str(checkpoint),'--archive',str(ROOT/manifest['archive']),
                '--output',str(args.output/'inference'),'--device',args.device,
                '--memory-limit-gib',str(args.memory_limit_gib),

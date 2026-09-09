@@ -47,7 +47,7 @@ python scripts/reproduce_milena.py \
 The download fixes Hugging Face revision
 `514db6705637c1ec963b728768fc9b34728699ee`. Before inference, the runner checks
 weights, config, tokenizer, FASTA and label hashes against
-`reproduction/milena_14b/manifest.json`.
+`examples/reproduction/milena_14b/manifest.json`.
 The protocol uses all 135 samples, the bundled historical implementation,
 BF16, batch size 1, no conditioning and summed causal log likelihood excluding
 direction/EOS targets. The prompt is `<bos>5{RNA}3<eos>`. Input order and
@@ -67,7 +67,7 @@ The clean-environment run produced **0.8394237924835843**, compared with the
 archived **0.8360456283218484**: difference **0.0033781641617359748**. This
 observation is retained and accepted for the representative example; it is
 not an execution failure. The original table and predictions are unchanged.
-[Expected outputs](../reproduction/milena_14b/expected/README.md) give the evidence.
+[Expected outputs](../examples/reproduction/milena_14b/expected/README.md) give the evidence.
 
 That run took 12.08 seconds for inference and 23.40 seconds for the runner,
 with 3,157,299,200 bytes (2.94 GiB) peak PyTorch-allocated GPU memory on an
@@ -109,19 +109,19 @@ Inspect the output report for each stage. It validates the exposed training
 machinery; it does not rerun large-scale pretraining.
 
 - [Training](../training/pretrain/README.md): stage entry points and configuration fields.
-- [Fine-tuning](../finetune/aptamer/script/README.md): checkpoint, data and container paths.
+- [Fine-tuning](../training/finetune/aptamer/script/README.md): checkpoint, data and container paths.
 - [CLI guide](USAGE.md): inputs, conditioning and task parameters.
 - [Paper workflows](PAPER_WORKFLOWS.md): result/resource mapping and omitted components.
 - [Reviewer requirements](REVIEWER_REQUIREMENTS.md): six requests and supporting evidence.
 
 ## Other analyses and historical sources
 
-[Notebooks](../notebooks/README.md) provide interactive analysis and plotting;
-[reproduction resources](../reproduction/README.md) hold fixed inputs, protocols,
+[Notebooks](../examples/notebooks/README.md) provide interactive analysis and plotting;
+[reproduction resources](../examples/reproduction/README.md) hold fixed inputs, protocols,
 reference outputs and historical implementations. They work together with the
 command-line entry points in `scripts/`. For example, the benchmark notebook
 calls `scripts/benchmark_release.py` with manifests and tables from
-`reproduction/benchmark_release/`.
+`examples/reproduction/benchmark_release/`.
 
 Third-party models can run from local checkpoints or in their own upstream
 environments. Export keyed predictions to use the common metric evaluator;
@@ -129,6 +129,6 @@ see [using your own model outputs](BENCHMARK_PROTOCOLS.md#using-your-own-model-o
 
 [Benchmark protocols](BENCHMARK_PROTOCOLS.md), [essentiality](ESSENTIALITY_REPRODUCTION.md)
 and [SAE analyses](SAE_REPRODUCTION.md) distinguish stored-result calculations
-from inference. Sources under `reproduction/benchmark/upstream/` and
-`reproduction/sae/archive/` preserve historical paths and behavior. Follow the
+from inference. Sources under `examples/reproduction/benchmark/upstream/` and
+`examples/reproduction/sae/archive/` preserve historical paths and behavior. Follow the
 documented portable entry points instead of executing these archives unchanged.

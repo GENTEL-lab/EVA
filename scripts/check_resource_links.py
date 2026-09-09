@@ -36,7 +36,7 @@ def probe(entry):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--manifest', type=Path, default=ROOT / 'reproduction/release/resource_links.json')
+    parser.add_argument('--manifest', type=Path, default=ROOT / 'examples/reproduction/release/resource_links.json')
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
     entries = json.loads(args.manifest.read_text())

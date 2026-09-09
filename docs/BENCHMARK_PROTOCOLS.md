@@ -3,12 +3,12 @@
 The representative current-submission workflow is documented in
 [REPRODUCTION.md](REPRODUCTION.md) and fixes the public EVA-1.4B model,
 all 135 Milena samples, and the original sum-score convention. Its observed
-output and numerical comparison are in `reproduction/milena_14b/expected/`.
+output and numerical comparison are in `examples/reproduction/milena_14b/expected/`.
 The current label file is retained as confirmed by the author. Historical
 FASTA header metadata is not treated as an independent assay ground truth.
 
 Historical source files and archived predictions remain unchanged with hashes
-in `reproduction/benchmark/provenance.json` and `historical_14b_manifest.json`.
+in `examples/reproduction/benchmark/provenance.json` and `historical_14b_manifest.json`.
 [September 5 validation notes](HISTORICAL_BENCHMARK_VALIDATION.md) preserve
 older findings, which must not be substituted for current validation status.
 
@@ -27,7 +27,7 @@ archive calculation from a completed model reproduction.
 
 ## Comparison-model execution, not plotting
 
-`reproduction/benchmark/run_competitor.py` accepts locally prepared checkpoints
+`examples/reproduction/benchmark/run_competitor.py` accepts locally prepared checkpoints
 for its supported scoring interfaces. Models are loaded from `--model-dir`;
 the RNA interface uses `local_files_only=True`. Prepare the model, tokenizer and
 dependencies in the chosen model's compatible environment before running it.
@@ -38,14 +38,14 @@ your results; a specific paper comparison uses that paper's protocol.
 1. Snapshot an already acquired, version-pinned local model. Keep the manifest **outside** the model directory; subsequent scoring requires the exact file set and hashes.
 
 ```bash
-python reproduction/benchmark/run_competitor.py snapshot \
+python examples/reproduction/benchmark/run_competitor.py snapshot \
   --model-dir /models/rnafm-pinned --output /models/rnafm-manifest.json
 ```
 
 2. RNA masked-LM scoring implements leave-one-token-out mean log likelihood, excluding tokenizer special tokens. It uses bounded mask batches, rejects unknown tokens/nonfinite logits, and has no fallback tokenizer. The original adapter's truncation is only reproduced when explicitly requested; the default is an error on an oversized sequence. `max-tokens` includes special tokens and must match the selected model.
 
 ```bash
-python reproduction/benchmark/run_competitor.py rna-mlm \
+python examples/reproduction/benchmark/run_competitor.py rna-mlm \
   --input data/test.fasta --model-dir /models/rnafm-pinned \
   --model-manifest /models/rnafm-manifest.json --max-tokens 1024 \
   --sequence-type rna --register-multimolecule --mask-batch-size 1 \
@@ -57,7 +57,7 @@ Remove `--dry-run` for actual scoring. `--length-policy truncate` is an explicit
 3. Protein ESM scoring uses the recovered native wt-/masked-marginal implementation, preceded by strict reference/variant validation and followed by finite/count checks. It requires one matching ProteinGym reference entry; no inferred-WT fallback or out-of-range mutation skipping is permitted.
 
 ```bash
-python reproduction/benchmark/run_competitor.py protein-esm \
+python examples/reproduction/benchmark/run_competitor.py protein-esm \
   --input /data/ProteinGym/ASSAY.csv --reference /data/ProteinGym/DMS_substitutions.csv \
   --model-dir /models/esm1v-pinned --model-manifest /models/esm1v-manifest.json \
   --weight-file esm1v_t33_650M_UR90S_1.pt --strategy wt-marginals \
@@ -69,7 +69,7 @@ The snapshot must contain companion files required by `fair-esm`. Actual ESM exe
 4. Metrics for RNA predictions require an independently verified label CSV with `variant_id,sequence,label`, not a bare positional vector:
 
 ```bash
-python reproduction/benchmark/run_competitor.py evaluate \
+python examples/reproduction/benchmark/run_competitor.py evaluate \
   --predictions outputs/rnafm_test/predictions.csv --labels data/verified_labels.csv \
   --output outputs/rnafm_metrics.json
 ```
@@ -95,12 +95,12 @@ scoring convention, model version and environment alongside the CSV. The
 evaluator calculates signed Spearman using the supplied scores.
 
 ```bash
-python reproduction/benchmark/run_competitor.py evaluate \
+python examples/reproduction/benchmark/run_competitor.py evaluate \
   --predictions results/my_model/predictions.csv \
   --labels data/verified_labels.csv --output results/my_model/metrics.json
 ```
 
-Use the [benchmark notebook](../notebooks/prediction/benchmark_reproduction.ipynb)
+Use the [benchmark notebook](../examples/notebooks/prediction/benchmark_reproduction.ipynb)
 and its evaluation manifest when comparing keyed predictions across multiple
 datasets. This gives local model deployments a common analysis entry point.
 

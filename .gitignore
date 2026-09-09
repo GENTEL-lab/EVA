@@ -1,14 +1,13 @@
 # Reproduction guides are source deliverables, not generated documentation.
 reference/
-!reproduction/benchmark_release/reference/
-!reproduction/benchmark_release/reference/**
+!examples/reproduction/benchmark_release/reference/
+!examples/reproduction/benchmark_release/reference/**
 checkpoint/*
-!checkpoint/.gitkeep
-data/output/**
+examples/data/output/**
 eva_latest.tar
 eva_latest.tar.gz
-notebooks/interpretability_analysis/intermediate_data/*.npz
-notebooks/tools/visualization/UMAP/taxid_phylum_mapping.json
+examples/notebooks/interpretability_analysis/intermediate_data/*.npz
+examples/notebooks/tools/visualization/UMAP/taxid_phylum_mapping.json
 __pycache__/
 *.py[cod]
 *.egg-info/
