@@ -1,5 +1,16 @@
 # Changelog
 
+## v1.2.1 - 2026-09-09
+
+- Repair the existing dense-control training and checkpoint-loading entries using the recovered author implementation.
+- Separate full-runtime dense validation from the required zero-skip CPU regression suite.
+- Publish checkpoint and dataset revisions, SHA256 inventories and manuscript-to-artifact mappings.
+- Index the fixed original ProGen3 scoring implementation and clarify benchmark entry roles.
+- Consolidate reviewer documentation links and report the representative benchmark correlation to two decimal places while preserving raw results.
+
+Code archive: https://doi.org/10.6084/m9.figshare.33490096.v4.
+The v1.2.0 tag and archive remain unchanged.
+
 ## v1.2.0 - 2026-09-09
 
 This release packages the reproducibility and repository improvements below.

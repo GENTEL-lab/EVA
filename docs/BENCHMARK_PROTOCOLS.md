@@ -117,7 +117,7 @@ datasets. This gives local model deployments a common analysis entry point.
 | GenerRNA | Adapter + wrapper | Its `calculate_loglikelihood_me/calculate_likelihood.py`, model and tokenizer remain external; wrapper alone is not a complete inference release. |
 | Protein EVA / RNA reverse translation | Native single/batch workers, converter/codon helpers and historical EVA model/loader code | Confirm codon strategy, species/taxonomy conditioning, checkpoint and per-assay input provenance before rerun. Do not replace this with an arbitrary codon encoding. |
 | ESM-1v/ESM-2 and ESM-C candidates | Native ESM and domain/ESM-C workers + strict ESM launcher | Exact weights, full/domain treatment and ensemble linkage; ESM-C requires its distinct runtime. No protein benchmark rerun is claimed here. |
-| ProGen3 | Archived result-to-Spearman script | Scoring producer and exact weights remain missing; metric recalculation is not model evaluation. |
+| ProGen3 | [Pinned original scoring CLI and scorer](BENCHMARK_ENTRY_INDEX.md#progen3-source-identity), plus result-to-Spearman script | Run in the upstream environment; record the checkpoint and scoring convention for the selected benchmark. |
 
 Original files under `upstream/` retain obsolete paths and historical fallback behavior for provenance. They are **not** the recommended clean-install CLI and must not be silently edited in place. The new parameterized runner avoids the HF tokenizer fallback and enforces score/variant validation. Full competitive-model numerical reproduction is still incomplete; obtaining code is not evidence of a successful run.
 

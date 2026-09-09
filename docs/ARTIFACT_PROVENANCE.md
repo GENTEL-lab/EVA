@@ -20,10 +20,10 @@ The model card distinguishes the primary 1.4B mixed-objective checkpoint (`EVA_1
 
 | Manuscript component | Exact artifact binding |
 |---|---|
-| Representative Milena benchmark (Figure 2) | [Manifest](https://github.com/GENTEL-lab/EVA/blob/v1.2.0/examples/reproduction/milena_14b/manifest.json): EVA_1.4B_CLM, 135-sequence FASTA, paired labels and archived prediction file; all are identified by hashes. |
-| ncRNA benchmark summary (Figure 2) | [ncRNA_13datasets_spearman.csv](https://github.com/GENTEL-lab/EVA/blob/v1.2.0/examples/reproduction/benchmark_release/reference/ncRNA_13datasets_spearman.csv) |
-| mRNA benchmark summary (Figure 2) | [mRNA_5datasets_spearman.csv](https://github.com/GENTEL-lab/EVA/blob/v1.2.0/examples/reproduction/benchmark_release/reference/mRNA_5datasets_spearman.csv) |
-| Protein benchmark summary (Figure 2) | [protein_20datasets_spearman.csv](https://github.com/GENTEL-lab/EVA/blob/v1.2.0/examples/reproduction/benchmark_release/reference/protein_20datasets_spearman.csv) |
+| Representative Milena benchmark (Figure 2) | [Manifest](https://github.com/GENTEL-lab/EVA/blob/v1.2.1/examples/reproduction/milena_14b/manifest.json): EVA_1.4B_CLM, 135-sequence FASTA, paired labels and archived prediction file; all are identified by hashes. |
+| ncRNA benchmark summary (Figure 2) | [ncRNA_13datasets_spearman.csv](https://github.com/GENTEL-lab/EVA/blob/v1.2.1/examples/reproduction/benchmark_release/reference/ncRNA_13datasets_spearman.csv) |
+| mRNA benchmark summary (Figure 2) | [mRNA_5datasets_spearman.csv](https://github.com/GENTEL-lab/EVA/blob/v1.2.1/examples/reproduction/benchmark_release/reference/mRNA_5datasets_spearman.csv) |
+| Protein benchmark summary (Figure 2) | [protein_20datasets_spearman.csv](https://github.com/GENTEL-lab/EVA/blob/v1.2.1/examples/reproduction/benchmark_release/reference/protein_20datasets_spearman.csv) |
 
 ## File identity and verification
 

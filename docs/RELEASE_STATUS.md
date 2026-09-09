@@ -1,5 +1,22 @@
 # Validation and release status
 
+## v1.2.1
+
+This patch release includes the repaired dense-control training and loading entries,
+public artifact provenance and manuscript mappings, and the pinned original
+ProGen3 scoring entry. Source and archive metadata are linked from the
+[GitHub release](https://github.com/GENTEL-lab/EVA/releases/tag/v1.2.1) and
+[Figshare](https://doi.org/10.6084/m9.figshare.33490096.v4).
+
+The dense repair at `0b247bc45573dce6c82dde570a1437de04625e04` passed
+[Python 3.10/3.11 CPU CI](https://github.com/GENTEL-lab/EVA/actions/runs/34408601915).
+The separate full-runtime dense check verified a parameter update, exact saved-weight
+reload and rejection of multi-expert checkpoints; see [Dense control](DENSE_CONTROL.md).
+The patch retains the frozen benchmark inputs and Hugging Face revisions.
+The release commit receives the same CPU CI before tagging.
+
+## Previous archive: v1.2.0
+
 **v1.2.0** packages the reproducibility repairs and repository layout updates.
 The source archive and its checksums are publicly available on
 [Figshare](https://doi.org/10.6084/m9.figshare.33490096.v3) and in the GitHub release

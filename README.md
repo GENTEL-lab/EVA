@@ -190,13 +190,13 @@ source checkout for training, notebooks and paper-reproduction inputs.
 Cite the paper and the exact Git commit used in your work. Software citation
 metadata are available in [CITATION.cff](CITATION.cff).
 
-The **v1.2.0** source archive is publicly archived on
-[Figshare](https://doi.org/10.6084/m9.figshare.33490096.v3) and available in the
-GitHub release assets. The source ZIP fixes commit
-`9e8d63bbe4ab4a0c5cf2646164751b52e8a71462`; its contents match the v1.2.0 tag.
-Download the [versioned release](https://github.com/GENTEL-lab/EVA/releases/tag/v1.2.0)
-and record the model and dataset versions used. See
-[validation & release status](docs/RELEASE_STATUS.md) for the current scope.
+The **v1.2.1** source archive is available from the
+[versioned GitHub release](https://github.com/GENTEL-lab/EVA/releases/tag/v1.2.1)
+and [Figshare code archive](https://doi.org/10.6084/m9.figshare.33490096.v4).
+The archive metadata identifies the exact source commit and SHA256 checksums.
+Record the model and dataset revisions listed in
+[artifact provenance](docs/ARTIFACT_PROVENANCE.md). See
+[validation & release status](docs/RELEASE_STATUS.md) for the validation records.
 
 <a id="license"></a>
 
