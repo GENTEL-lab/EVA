@@ -1,33 +1,66 @@
-# EVA: A Long-Context Generative Foundation Model for Versatile RNA Design
+<a id="eva-a-long-context-generative-foundation-model-for-versatile-rna-design"></a>
+<p align="center">
+  <img src="fig/github_logo.svg" alt="EVA — RNA foundation model" width="100%">
+</p>
 
-<div align="center">
-  <img src="fig/github_logo.svg" alt="EVA" width="800">
-</div>
+<h1 align="center">EVA</h1>
+<p align="center"><b>A Long-Context Generative Foundation Model for Versatile RNA Design</b></p>
 
-[Paper](https://www.biorxiv.org/content/10.64898/2026.03.17.712398v1) ·
-[Model weights](https://huggingface.co/GENTEL-Lab/EVA) ·
-[OpenRNA data](https://huggingface.co/datasets/GENTEL-Lab/OpenRNA-v1-114M) ·
-[Website](https://evabio.net/) · [Apache-2.0 license](LICENSE)
+<p align="center">
+  <a href="https://www.biorxiv.org/content/10.64898/2026.03.17.712398v1"><img src="https://img.shields.io/badge/Paper-bioRxiv-44789F?style=flat-square" alt="Paper on bioRxiv"></a>
+  <a href="https://huggingface.co/GENTEL-Lab/EVA"><img src="https://img.shields.io/badge/Models-Hugging_Face-B88649?style=flat-square" alt="Models on Hugging Face"></a>
+  <a href="https://huggingface.co/datasets/GENTEL-Lab/OpenRNA-v1-114M"><img src="https://img.shields.io/badge/Dataset-OpenRNA-657E76?style=flat-square" alt="OpenRNA dataset"></a>
+  <a href="https://github.com/GENTEL-lab/EVA/actions/workflows/cpu.yml"><img src="https://github.com/GENTEL-lab/EVA/actions/workflows/cpu.yml/badge.svg?branch=main" alt="CPU checks on main"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache_2.0-687585?style=flat-square" alt="Apache 2.0 license"></a>
+</p>
 
-EVA is a generative RNA foundation model for sequence scoring and conditional
-sequence modeling. The released model family includes a 1.4B-parameter
-mixture-of-experts model with an 8,192-token context window, trained on OpenRNA v1.
-This repository contains model code, command-line tools and paper reproduction
+<p align="center">
+  <a href="#start-here">Get started</a> &nbsp; · &nbsp;
+  <a href="#reproducing-the-paper">Reproduce the paper</a> &nbsp; · &nbsp;
+  <a href="#documentation">Documentation</a> &nbsp; · &nbsp;
+  <a href="https://evabio.net/">Website</a> &nbsp; · &nbsp;
+  <a href="#citation">Cite EVA</a>
+</p>
+
+EVA brings RNA sequence scoring and conditional sequence modeling into one
+framework, with public model code, checkpoints and selected paper reproduction
 workflows. Model weights and large datasets are downloaded separately.
 
-## Start here
+<a id="why-use-eva"></a>
+<p align="center">
+  <img src="fig/readme_overview.svg" alt="1.4B-parameter MoE flagship model; 8,192-token context window; trained on OpenRNA v1" width="100%">
+</p>
 
-| I want to… | Start with | Requirements |
-|---|---|---|
-| Check a bundled result without a GPU | [CPU result recalculation](docs/REPRODUCTION.md#cpu-recalculate-stored-predictions) | Python 3.10/3.11 only |
-| Run a benchmark from model weights | [135-sequence Milena example](docs/REPRODUCTION.md#gpu-run-the-complete-milena-benchmark) | Linux/NVIDIA GPU; Docker recommended |
-| Use scoring or generation | [CLI guide](docs/USAGE.md) | Compatible GPU runtime and a checkpoint |
-| Train or fine-tune | [Training workflow](docs/REPRODUCTION.md#training-and-fine-tuning) | Complete source checkout and GPU runtime |
-| Find a paper result or comparison model | [Paper workflows](docs/PAPER_WORKFLOWS.md) | Requirements vary by workflow |
+<a id="start-here"></a><a id="our-journey-with-eva-starts-here-"></a>
 
-## Quick Start
+## Get started
 
-Clone the repository and recalculate the bundled Milena benchmark metric:
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3>01 &nbsp; Explore on CPU</h3>
+      <p>Recalculate a bundled benchmark result from saved predictions.</p>
+      <p><sub>Python 3.10 / 3.11 · No model download</sub></p>
+      <a href="#quick-start"><b>Try the quick start →</b></a>
+    </td>
+    <td width="34%" valign="top">
+      <h3>02 &nbsp; Run on GPU</h3>
+      <p>Score all 135 Milena sequences from a pinned EVA checkpoint.</p>
+      <p><sub>Linux / NVIDIA GPU · Docker runtime</sub></p>
+      <a href="docs/REPRODUCTION.md#gpu-run-the-complete-milena-benchmark"><b>Run the benchmark →</b></a>
+    </td>
+    <td width="33%" valign="top">
+      <h3>03 &nbsp; Train &amp; fine-tune</h3>
+      <p>Start with a small training and checkpoint save/reload workflow.</p>
+      <p><sub>Source checkout · Compatible GPU runtime</sub></p>
+      <a href="docs/REPRODUCTION.md#training-and-fine-tuning"><b>Explore training →</b></a>
+    </td>
+  </tr>
+</table>
+
+### Quick start
+
+A first result with Python's standard library:
 
 ```bash
 git clone https://github.com/GENTEL-Lab/EVA.git
@@ -36,15 +69,25 @@ python3 scripts/reproduce_historical_benchmark.py \
   --artifact-only --output results/milena_stored
 ```
 
-This standard-library-only example writes `report.json` and
-`sequence_label_audit.csv` for all 135 stored predictions. The expected Spearman
-correlation is **0.8360456283218484**, and the command returns 0. It recalculates
-an archived result; the [GPU example](docs/REPRODUCTION.md#gpu-run-the-complete-milena-benchmark)
-performs new model inference. Use a new output directory when rerunning.
+**Expected:** 135 stored predictions, Spearman **0.8360456283218484**, exit code `0`.
+The output directory contains `report.json` and `sequence_label_audit.csv`.
+This recalculates an archived result; the GPU path below runs new inference.
+Use a new output directory when rerunning.
 
-## Installation
+<a id="reproducing-the-paper"></a>
 
-For model inference, build and enter the runtime from the repository root:
+## Reproduce the paper
+
+The representative workflow connects **pinned checkpoint → 135 input sequences
+→ new predictions → metrics & plots**. Inputs, model files and the scoring
+protocol are bound to version and checksum records.
+
+<a id="installation"></a>
+<a id="option-a-local-source-install"></a><a id="option-b-docker-runtime"></a><a id="option-c-singularity--apptainer-hpc-clusters"></a><a id="troubleshooting-triton-undefined-symbol-cumodulegetfunction"></a><a id="pre-release-smoke-test"></a>
+<details>
+<summary><b>Run the GPU example</b> · Environment setup and complete inference command</summary>
+
+From the repository root, build and enter the runtime **on the host**:
 
 ```bash
 mkdir -p checkpoint results
@@ -53,14 +96,7 @@ docker run --rm -it --gpus device=0 --name eva-repro \
   -v "$PWD":/eva -w /eva eva:local bash
 ```
 
-Then follow the GPU example below **inside the container**. Full setup, source
-installation and HPC instructions are in [Installation](docs/INSTALLATION.md).
-
-## Reproducing the paper
-
-The complete representative example downloads a pinned public checkpoint,
-checks its files, scores all 135 Milena sequences, calculates the metric and
-writes diagnostic plots:
+Then run **inside the container**:
 
 ```bash
 python scripts/download_reproduction_checkpoint.py \
@@ -69,150 +105,100 @@ python scripts/reproduce_milena.py \
   --checkpoint checkpoint/EVA_1.4B_CLM --output results/milena_fresh
 ```
 
-Observed new-inference Spearman: **0.8394237924835843**; archived reference:
-**0.8360456283218484**. The difference remains visible in the output and is not
-an execution failure. Add `--strict-reference` only to request a nonzero exit
+See [Installation](docs/INSTALLATION.md) for source installs, runtime versions
+and Singularity / Apptainer instructions.
+
+</details>
+
+<details>
+<summary><b>Expected results & measured runtime</b> · Reference comparison, exit codes and hardware</summary>
+
+| Measurement | Recorded result |
+|---|---|
+| New-inference Spearman | **0.8394237924835843** |
+| Archived reference | **0.8360456283218484** |
+| Scoring time | About **12 seconds** for all 135 sequences |
+| Peak PyTorch-allocated GPU memory | **2.94 GiB** |
+| Environment | One NVIDIA A100-SXM4-80GB; batch size 1; pinned Docker runtime |
+
+Default mode returns `0` when inference, metrics and plots complete successfully.
+The reference difference remains visible. Add `--strict-reference` to return `2`
 when comparison at the stored reference precision fails. Input, dependency,
-scoring and plotting failures always remain errors.
+scoring and plotting failures remain errors in either mode.
 
-The recorded A100 run scored the assay in about **12 seconds**, with **2.94 GiB**
-peak PyTorch-allocated GPU memory. These are measurements for this example,
-not minimum hardware requirements or estimates for other workloads; downloads,
-loading, hashing and plotting add overhead.
+These are measurements for this example, not minimum hardware requirements
+or estimates for other workloads. Downloads, loading, hashing and plotting
+add overhead. A successful example does not establish reproduction of every
+paper experiment. See [dated validation records](docs/RELEASE_STATUS.md).
 
-- [Reproduction guide](docs/REPRODUCTION.md): commands, inputs, outputs and validation scope.
-- [Reviewer requirements](docs/REVIEWER_REQUIREMENTS.md): six software requirements and supporting evidence.
-- [Paper workflow coverage](docs/PAPER_WORKFLOWS.md): supported entry points and missing resources.
-- [Validation and release status](docs/RELEASE_STATUS.md): dated evidence and publication state.
+</details>
 
-## Model and data resources
+[Protocol & outputs](docs/REPRODUCTION.md) &nbsp; · &nbsp;
+[Paper workflow coverage](docs/PAPER_WORKFLOWS.md) &nbsp; · &nbsp;
+[Reviewer requirements](docs/REVIEWER_REQUIREMENTS.md)
 
-The [resource index](docs/RESOURCES.md) links checkpoints, OpenRNA and deposited
-analysis data. The representative example fixes the model revision and SHA256
-checksums in its manifest. Historical competitor resources and available
-execution entry points are listed in [comparison models](docs/OFFICIAL_MODEL_RESOURCES.md).
+<a id="detailed-guides-and-previous-links"></a>
 
-## Repository layout
+## Documentation
+
+<table>
+  <tr><th width="25%" align="left">Guide</th><th align="left">What you will find</th></tr>
+  <tr>
+    <td><a id="condition-control"></a><a id="rna-types"></a><a id="specieslineage"></a><a id="generation"></a><a id="clm"></a><a id="unconditional-generation"></a><a id="conditional-generation"></a><a id="continuation-mode"></a><a id="glm"></a><a id="unconditional-infilling"></a><a id="conditional-infilling"></a><a id="span-parameters"></a><a id="sampling-parameters"></a><a id="scoring"></a><a id="rna-mode"></a><a id="protein-mode"></a><a id="directed-evolution"></a><a id="usage"></a><a id="key-parameters"></a><a id="batch-processing-with-yaml"></a><a id="generation-config-example"></a><a id="scoring-config-example"></a><a id="running"></a><a id="inputoutput-formats"></a><a id="input--fasta"></a><a id="output--generation-fasta"></a><a id="output--scoring-json"></a><a id="output--directed-evolution-fasta"></a><a href="docs/USAGE.md"><b>Using EVA →</b></a></td>
+    <td>Scoring and generation, conditioning, batch configuration, and input/output formats.</td>
+  </tr>
+  <tr>
+    <td><a href="docs/REPRODUCTION.md"><b>Reproduction →</b></a></td>
+    <td>CPU recalculation, GPU inference, training, and the scope of verified paper workflows.</td>
+  </tr>
+  <tr>
+    <td><a id="model-and-data-resources"></a><a id="model-download"></a><a id="data-availability"></a><a id="model--environment"></a><a id="experiment--benchmark-data"></a><a href="docs/RESOURCES.md"><b>Models &amp; data →</b></a></td>
+    <td>EVA checkpoints, OpenRNA, deposited analysis data, and historical comparison-model resources.</td>
+  </tr>
+  <tr>
+    <td><a id="development-and-support"></a><a href="CONTRIBUTING.md"><b>Development →</b></a></td>
+    <td>Installation for contributors, tests, pull requests, and reproducible bug reports.</td>
+  </tr>
+</table>
+
+<a id="repository-layout"></a><a id="repository-paths"></a><a id="key-modules"></a>
+<details>
+<summary><b>Repository map</b> · Where the code and reproduction assets live</summary>
 
 | Directory | Contents |
 |---|---|
 | `eva/`, `tools/` | Model, tokenizer and inference CLIs |
 | `training/`, `finetune/`, `config/` | Training entry points and configurations |
-| `scripts/` | Portable reproduction tools and shell entry points |
-| `notebooks/` | Analysis notebooks and benchmark inputs |
+| `scripts/`, `notebooks/` | Reproduction tools, analysis and benchmark inputs |
 | `reproduction/` | Versioned inputs, historical sources and validation records |
 | `docs/`, `tests/` | Guides and regression tests |
 
-The Python wheel contains the importable model and CLI packages. Use the full
+The wheel contains the importable model and CLI packages. Use the complete
 source checkout for training, notebooks and paper-reproduction inputs.
-Historical sources under `reproduction/` are labeled separately from supported
-entry points and may preserve old paths.
+Historical sources under `reproduction/` are labeled separately and may preserve
+old paths; use the documented entry points for current workflows.
 
-## Development and support
+</details>
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for installation, tests and contribution
-instructions. [Open an issue](https://github.com/GENTEL-lab/EVA/issues/new/choose)
-with your commit, environment, command and error log when reporting a problem.
-CPU checks run on pull requests and updates to main; GPU validation is recorded
-separately and is not implied by a CPU check.
+<a id="release-and-versioning"></a>
 
 ## Citation
 
-Software citation metadata are in [CITATION.cff](CITATION.cff). Cite the exact
-Git commit used for your work and the paper linked above. The integrated
-**1.2.0rc1** source is public on main; its formal release and archival code DOI
-are pending. Existing data DOIs identify data deposits, not this code revision.
+Cite the paper and the exact Git commit used in your work. Software citation
+metadata are available in [CITATION.cff](CITATION.cff).
 
-## License
+The **1.2.0rc1** source is public on main; its formal release and archival code
+DOI are pending. Existing data DOIs identify data deposits. See
+[validation & release status](docs/RELEASE_STATUS.md) for the current scope.
 
-Source code is released under [Apache-2.0](LICENSE). External datasets and
-third-party checkpoints retain their own upstream terms.
+<a id="license"></a>
 
-## Detailed guides and previous links
+---
 
-The detailed reference has moved into the guides below. Existing README
-section links remain available here.
-
-<a id="why-use-eva"></a> **Why Use EVA?** → [Open guide](docs/REPRODUCTION.md)
-
-<a id="key-modules"></a> **Key Modules** → [Open guide](docs/REPRODUCTION.md)
-
-<a id="our-journey-with-eva-starts-here-"></a> **Our Journey with EVA Starts Here 👋** → [Open guide](docs/REPRODUCTION.md)
-
-<a id="option-a-local-source-install"></a> **Option A: Local source install** → [Open guide](docs/REPRODUCTION.md)
-
-<a id="option-b-docker-runtime"></a> **Option B: Docker runtime** → [Open guide](docs/REPRODUCTION.md)
-
-<a id="option-c-singularity--apptainer-hpc-clusters"></a> **Option C: Singularity / Apptainer (HPC clusters)** → [Open guide](docs/REPRODUCTION.md)
-
-<a id="troubleshooting-triton-undefined-symbol-cumodulegetfunction"></a> **Troubleshooting: Triton `undefined symbol: cuModuleGetFunction`** → [Open guide](docs/INSTALLATION.md#troubleshooting-triton-undefined-symbol-cumodulegetfunction)
-
-<a id="pre-release-smoke-test"></a> **Pre-release smoke test** → [Open guide](docs/INSTALLATION.md#pre-release-smoke-test)
-
-<a id="model-download"></a> **Model download** → [Open guide](docs/REPRODUCTION.md)
-
-<a id="release-and-versioning"></a> **Release and Versioning** → [Open guide](docs/RELEASE_STATUS.md)
-
-<a id="repository-paths"></a> **Repository Paths** → [Open guide](docs/REPRODUCTION.md)
-
-<a id="condition-control"></a> **Condition Control** → [Open guide](docs/USAGE.md#condition-control)
-
-<a id="rna-types"></a> **RNA Types** → [Open guide](docs/USAGE.md#rna-types)
-
-<a id="specieslineage"></a> **Species/Lineage** → [Open guide](docs/USAGE.md#specieslineage)
-
-<a id="generation"></a> **Generation** → [Open guide](docs/USAGE.md#generation)
-
-<a id="clm"></a> **CLM** → [Open guide](docs/USAGE.md#clm)
-
-<a id="unconditional-generation"></a> **Unconditional Generation** → [Open guide](docs/USAGE.md#unconditional-generation)
-
-<a id="conditional-generation"></a> **Conditional Generation** → [Open guide](docs/USAGE.md#conditional-generation)
-
-<a id="continuation-mode"></a> **Continuation Mode** → [Open guide](docs/USAGE.md#continuation-mode)
-
-<a id="glm"></a> **GLM** → [Open guide](docs/USAGE.md#glm)
-
-<a id="unconditional-infilling"></a> **Unconditional Infilling** → [Open guide](docs/USAGE.md#unconditional-infilling)
-
-<a id="conditional-infilling"></a> **Conditional Infilling** → [Open guide](docs/USAGE.md#conditional-infilling)
-
-<a id="span-parameters"></a> **Span Parameters** → [Open guide](docs/USAGE.md#span-parameters)
-
-<a id="sampling-parameters"></a> **Sampling Parameters** → [Open guide](docs/USAGE.md#sampling-parameters)
-
-<a id="scoring"></a> **Scoring** → [Open guide](docs/USAGE.md#scoring)
-
-<a id="rna-mode"></a> **RNA Mode** → [Open guide](docs/USAGE.md#rna-mode)
-
-<a id="protein-mode"></a> **Protein Mode** → [Open guide](docs/USAGE.md#protein-mode)
-
-<a id="directed-evolution"></a> **Directed Evolution** → [Open guide](docs/USAGE.md#directed-evolution)
-
-<a id="usage"></a> **Usage** → [Open guide](docs/USAGE.md#usage)
-
-<a id="key-parameters"></a> **Key Parameters** → [Open guide](docs/USAGE.md#key-parameters)
-
-<a id="batch-processing-with-yaml"></a> **Batch Processing with YAML** → [Open guide](docs/USAGE.md#batch-processing-with-yaml)
-
-<a id="generation-config-example"></a> **Generation Config Example** → [Open guide](docs/USAGE.md#generation-config-example)
-
-<a id="scoring-config-example"></a> **Scoring Config Example** → [Open guide](docs/USAGE.md#scoring-config-example)
-
-<a id="running"></a> **Running** → [Open guide](docs/USAGE.md#running)
-
-<a id="inputoutput-formats"></a> **Input/Output Formats** → [Open guide](docs/USAGE.md#inputoutput-formats)
-
-<a id="input--fasta"></a> **Input — FASTA** → [Open guide](docs/USAGE.md#input--fasta)
-
-<a id="output--generation-fasta"></a> **Output — Generation (FASTA)** → [Open guide](docs/USAGE.md#output--generation-fasta)
-
-<a id="output--scoring-json"></a> **Output — Scoring (JSON)** → [Open guide](docs/USAGE.md#output--scoring-json)
-
-<a id="output--directed-evolution-fasta"></a> **Output — Directed Evolution (FASTA)** → [Open guide](docs/USAGE.md#output--directed-evolution-fasta)
-
-<a id="data-availability"></a> **Data Availability** → [Open guide](docs/RESOURCES.md)
-
-<a id="model--environment"></a> **Model & Environment** → [Open guide](docs/RESOURCES.md)
-
-<a id="experiment--benchmark-data"></a> **Experiment & Benchmark Data** → [Open guide](docs/RESOURCES.md)
+<p align="center">
+  <a href="LICENSE">Apache-2.0 license</a> &nbsp; · &nbsp;
+  <a href="CONTRIBUTING.md">Contribute</a> &nbsp; · &nbsp;
+  <a href="https://github.com/GENTEL-lab/EVA/issues/new/choose">Report an issue</a> &nbsp; · &nbsp;
+  <a href="https://evabio.net/">EVA website</a>
+</p>
+<p align="center"><sub>External datasets and third-party checkpoints retain their upstream terms.</sub></p>
