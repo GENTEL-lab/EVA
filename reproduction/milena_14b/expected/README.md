@@ -34,3 +34,8 @@ The label/sequence inputs are unchanged from the author-confirmed current
 submission. Outputs are supplied for transparency, not as a replacement of the
 manuscript table. GPU scoring took 11.45 seconds and peaked at 3,157,299,200
 allocated bytes on one A100. Hashing/loading/plotting are separate overheads.
+
+A second full run from the source archive in the freshly built Docker image
+produced exactly the same 135 predictions. GPU scoring took 12.08 seconds with
+the same peak allocated memory. See `clean_environment_report.json` and
+`reproduction/release/clean_validation.json` for this final execution evidence.

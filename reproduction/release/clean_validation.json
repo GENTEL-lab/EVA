@@ -1,0 +1,34 @@
+{
+  "source_commit": "70c6c4f7aff2cf12210d8b280c1d4569ca22c0a0",
+  "clean_image_id": "sha256:326ba2c34619dc6f3d2703914ed85b009f8da60b3cf4813e2a1e74da85cc8ec5",
+  "base_image_digest": "sha256:14611869895df612b7b07227d5925f30ec3cd6673bad58ce3d84ed107950e014",
+  "tests": {
+    "passed": 128,
+    "skipped": 0,
+    "failed": 0
+  },
+  "cli_checks": [
+    "eva-predict",
+    "eva-generate",
+    "eva-evolve"
+  ],
+  "notebook_code_cells_executed": 3,
+  "training_stages_steps": {
+    "pretrain": 2,
+    "midtrain": 2,
+    "finetune": 2
+  },
+  "all_training_stages_exact_weight_roundtrip": true,
+  "fresh_milena_rows": 135,
+  "fresh_scores_equal_prior_new_container_run": true,
+  "pip_check": "PASS",
+  "numerical_comparison": "DIFFERENCE_DISCLOSED",
+  "source_file_sha256": {
+    "scripts/reproduce_milena.py": "001e974bff6cdd453a343558f9c15e2c060a8324b4d75cfcbc1e3a8c38894215",
+    "reproduction/benchmark/run_historical_14b.py": "e9b9b7bae229acd4dc2ce118eb1c0a0ef051dcfc4618877630e4714468300d91",
+    "scripts/smoke_workflows.py": "c6dc0828b00a7de3f0ccd8718b77aebb04ae60fe869b353679365c9927c5975d",
+    "docker/Dockerfile": "17017e0f72aa2add3ae82d3959c0152ed44ec4cecf4dd35cc0acc50151a779d0",
+    "docker/requirements.txt": "0f8f819bf51158098aa33acb1525bd876cd7fdf1b74d1c966aea1f24805dae7e",
+    "reproduction/milena_14b/manifest.json": "bf2c3722f4e7ac201e9e9212cc9b0ed5213ef68cab0924889c4f8635fe531b8f"
+  }
+}
