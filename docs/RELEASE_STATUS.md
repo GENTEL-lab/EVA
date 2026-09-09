@@ -1,9 +1,20 @@
 # Validation and release status
 
-The integrated **1.2.0rc1** source is public on `main`. The reproducibility
-repairs were merged at `9b5d25ac7cb26de88420f56021f4c0eeb2052e9e`.
-A formal release for this revision and an archival code DOI are pending;
-the older `v1.1.1` release does not contain these repairs.
+**v1.2.0** packages the reproducibility repairs and repository layout updates.
+The source archive is identified by DOI
+[10.6084/m9.figshare.33487147.v1](https://doi.org/10.6084/m9.figshare.33487147.v1).
+The [GitHub release](https://github.com/GENTEL-lab/EVA/releases/tag/v1.2.0)
+and `CITATION.cff` identify this software version. Models and datasets retain
+their separately documented version identifiers.
+
+## Repository layout validation: September 9, 2026
+
+Commit `780f226` passed 146 regression tests and Python 3.10/3.11 CI. The
+relocated benchmark notebook, CPU example, wheel installation outside the
+checkout and container source installation passed. Both Milena modes completed
+all 135 inputs, and pretraining, mid-training and fine-tuning checks verified
+parameter updates and exact checkpoint reloads. The v1.2.0 release changes only
+version and citation metadata and release documentation relative to that commit.
 
 ## Usability update validation: September 9, 2026
 
@@ -59,7 +70,7 @@ objective or paper metric have been changed to reduce the difference.
 record the measurements. Historical batch-size observations are context, not
 a demonstrated cause of the difference.
 
-## Remaining coverage and publication work
+## Validation scope
 
 - Recovered comparison-model hashes are in the [resource index](OFFICIAL_MODEL_RESOURCES.md).
   Local checkpoints and user-generated predictions are supported. Exact paper
@@ -69,8 +80,6 @@ a demonstrated cause of the difference.
   some paper-specific training/run bindings are not available.
 - Some figure-specific input/command mappings and complete SAE generation
   outputs remain outside the bundled reproducible workflows.
-- Formal release, code DOI and the corresponding manuscript citation remain
-  separate steps. No placeholder DOI is provided.
 
 The [six reviewer requirements](REVIEWER_REQUIREMENTS.md) and
 [paper workflow table](PAPER_WORKFLOWS.md) identify the evidence and remaining

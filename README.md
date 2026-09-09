@@ -188,8 +188,10 @@ source checkout for training, notebooks and paper-reproduction inputs.
 Cite the paper and the exact Git commit used in your work. Software citation
 metadata are available in [CITATION.cff](CITATION.cff).
 
-The **1.2.0rc1** source is public on main; its formal release and archival code
-DOI are pending. Existing data DOIs identify data deposits. See
+The **v1.2.0** source archive is identified by DOI
+[10.6084/m9.figshare.33487147.v1](https://doi.org/10.6084/m9.figshare.33487147.v1).
+Download the [versioned release](https://github.com/GENTEL-lab/EVA/releases/tag/v1.2.0)
+and record the model and dataset versions used. See
 [validation & release status](docs/RELEASE_STATUS.md) for the current scope.
 
 <a id="license"></a>

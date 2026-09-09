@@ -1,6 +1,11 @@
 # Changelog
 
-## Unreleased
+## v1.2.0 - 2026-09-09
+
+This release packages the reproducibility and repository improvements below.
+Source archive: https://doi.org/10.6084/m9.figshare.33487147.v1.
+The release metadata update preserves the tested runtime code and frozen inputs
+from commit `780f226`.
 
 ### Repository layout — 2026-09-09
 
