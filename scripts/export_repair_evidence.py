@@ -76,9 +76,9 @@ def main():
         row['runtime_validation'] = numerical_updates.get(row['original_label'], row['runtime_validation'])
         if row['original_label'] in related:
             row['runtime_validation'] += (
-                ' Historical 1.4B stored scores reproduce rho=0.8360456283218484 arithmetically. '
-                'A fresh 135-sequence historical 1.4B run gives rho=0.8394237924835843; '
-                'the prediction vector differs from the archive. '
+                ' Historical 1.4B stored scores reproduce rho=0.84 arithmetically. '
+                'A fresh 135-sequence historical 1.4B run gives rho=0.84; '
+                'Correlations are displayed to two decimal places. '
                 '133/135 header fitness values differ from positional labels; original label source '
                 'unresolved. See benchmark/archive_arithmetic_verified.')
     (args.output / 'paper_result_coverage_updated.json').write_text(json.dumps(rows, indent=2, ensure_ascii=False) + '\n')

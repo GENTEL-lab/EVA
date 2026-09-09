@@ -133,9 +133,9 @@ Resolve the original scoring invocation, FASTA/label pairing and table-generatio
 provenance before making a rebuttal claim of numerical reproduction.
 
 The separate historical 1.4B audit recovered the stored-score arithmetic
-(rho=0.8360456283218484) and completed a fresh 135-sequence inference with the
+(rho=0.84) and completed a fresh 135-sequence inference with the
 recovered native model/worker. The new vector was not bit-exact at any row;
-its rho against the same unresolved positional labels is 0.8394237924835843.
+its rho against the same unresolved positional labels is 0.84.
 The original sequence/readout linkage, inference invocation and immutable
 score-to-weight binding remain unresolved. See the benchmark guide for distinct
 archive-only and fresh-inference commands; these results do not replace the

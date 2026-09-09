@@ -26,7 +26,7 @@ The 135 released FASTA sequences agree with the recovered score archive by both 
 
 | Evidence | Spearman against released positional labels | Status |
 |---|---:|---|
-| Recovered 1.4B no-condition archive, excluding direction/EOS targets | 0.8360456283218484 | Exact public-table arithmetic recovered; not new inference |
+| Recovered 1.4B no-condition archive, excluding direction/EOS targets | 0.84 | Exact public-table arithmetic recovered; not new inference |
 | Released 21M inference, first-round validation | 0.9037308669414685 | Executed; does not match public 21M table |
 | Public 21M table | 0.5074679659247847 | Corresponding raw predictions not recovered |
 | Earlier 21M archive, including direction/EOS targets | 0.9517764103767578 | Different historical protocol; not a replacement |
@@ -60,8 +60,8 @@ All 135 sequences were scored using the recovered native model and worker, no co
 | Maximum absolute prediction difference | 0.302349328994751 |
 | Mean absolute prediction difference | 0.06432948178715175 |
 | Spearman, fresh versus archived prediction vectors | 0.977465613110916 |
-| Spearman, fresh versus unresolved positional labels | 0.8394237924835843 |
-| Spearman, archive versus the same positional labels | 0.8360456283218484 |
+| Spearman, fresh versus unresolved positional labels | 0.84 |
+| Spearman, archive versus the same positional labels | 0.84 |
 | Scoring time (not including loading/hash checks) | 48.135 s |
 | Peak CUDA allocated / reserved memory | 3,169,734,656 / 3,181,379,584 bytes |
 

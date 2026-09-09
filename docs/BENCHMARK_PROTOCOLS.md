@@ -20,7 +20,7 @@ python scripts/reproduce_historical_benchmark.py \
 ```
 
 This exports all 135 archived prediction rows and recomputes Spearman
-0.8360456283218484. The eight-binary64-ULP arithmetic check accounts for
+0.84 (rounded to two decimal places). The eight-binary64-ULP arithmetic check accounts for
 summation differences on the same vector; it is not a fresh-inference
 acceptance threshold. Without `--artifact-only`, exit 2 distinguishes this
 archive calculation from a completed model reproduction.

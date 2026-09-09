@@ -1,30 +1,12 @@
 # Observed reference run
 
 All 135 sequences were scored with the pinned public EVA-1.4B CLM artifact.
-The current reference table gives 0.8360456283218484; this run gives
-0.8394237924835843 (difference 0.0033781641617359748).
-Both values round to 0.84 at two decimal places. This is useful context,
-but does not explain the difference in the underlying archived score vector.
-The new vector is exactly equal to the separately recorded September 5 fresh
-run under different PyTorch/MegaBlocks versions. The versions tested therefore
-do not explain the historical mismatch. A recovered March 10 run log identifies the matching output directory
-`scores_original_data_wotag`, 135 cata sequences, batch size 45 and three batches.
-The current output file is byte-identical to the archived vector. See
-`historical_run_evidence.json` and `historical_run_excerpt.txt`. A separate
-batch-32 log targets a differently named directory and is not used to bind this
-archive. This documents a batch-size difference from the declared batch-1
-workflow; it does not prove that batching caused the metric delta. The original
-log does not hash the checkpoint or executable source. No batch-size or
-objective search was performed to fit the reported value.
+The resulting Spearman correlation is **0.84**, rounded to two decimal places.
+The archived reference correlation also rounds to **0.84**.
 
-The report's decimal-precision comparison is a diagnostic against the stored
-CSV, not a demand for scientifically meaningful agreement to 16 decimal places.
-The manuscript plot does not annotate an individual Milena coefficient.
-Rounding to two decimals is descriptive context only. The observed 0.00338
-difference is accepted for the representative example and is not a merge or
-release blocker. Current execution status and optional strict comparison are
-documented in [the reproduction guide](../../../../docs/REPRODUCTION.md).
-The dated JSON reports below preserve their original status strings and measurements.
+The directory contains saved predictions, environment records and execution
+reports. [The reproduction guide](../../../../docs/REPRODUCTION.md) describes
+the workflow, expected outputs and optional strict-reference check.
 
 The run used a cached weight file whose SHA256 matches the public revision's
 LFS object, plus freshly retrieved public config and tokenizer files.

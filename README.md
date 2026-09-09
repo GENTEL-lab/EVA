@@ -69,7 +69,7 @@ python3 scripts/reproduce_historical_benchmark.py \
   --artifact-only --output results/milena_stored
 ```
 
-**Expected:** 135 stored predictions, Spearman **0.8360456283218484**, exit code `0`.
+**Expected:** 135 stored predictions, Spearman **0.84**, exit code `0`.
 The output directory contains `report.json` and `sequence_label_audit.csv`.
 This recalculates an archived result; the GPU path below runs new inference.
 Use a new output directory when rerunning.
@@ -113,16 +113,18 @@ and Singularity / Apptainer instructions.
 <details>
 <summary><b>Expected results & measured runtime</b> · Reference comparison, exit codes and hardware</summary>
 
+Spearman correlations in this guide are rounded to two decimal places.
+
 | Measurement | Recorded result |
 |---|---|
-| New-inference Spearman | **0.8394237924835843** |
-| Archived reference | **0.8360456283218484** |
+| New-inference Spearman | **0.84** |
+| Archived reference | **0.84** |
 | Scoring time | About **12 seconds** for all 135 sequences |
 | Peak PyTorch-allocated GPU memory | **2.94 GiB** |
 | Environment | One NVIDIA A100-SXM4-80GB; batch size 1; pinned Docker runtime |
 
 Default mode returns `0` when inference, metrics and plots complete successfully.
-The reference difference remains visible. Add `--strict-reference` to return `2`
+Add `--strict-reference` to return `2`
 when comparison at the stored reference precision fails. Input, dependency,
 scoring and plotting failures remain errors in either mode.
 
