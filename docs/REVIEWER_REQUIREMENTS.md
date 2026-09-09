@@ -22,7 +22,9 @@ not editorial acceptance.
 3. Use [Paper workflows](PAPER_WORKFLOWS.md) for method-specific requirements.
    Historical source availability is not counted as executed inference.
 
-The 128-test clean-archive record is tied to its named commit. GitHub Actions
-checks current CPU behavior separately. A passing CPU check or representative
+The 128-test clean-archive record and the later 139-test/container and two-mode
+GPU records are described in [validation status](RELEASE_STATUS.md), with their
+respective scope and source identities. GitHub Actions checks current CPU behavior
+separately. A passing CPU check or representative
 example does not establish reproduction of all manuscript experiments.
 Formal release/DOI and the submission's code citation remain separate tasks.

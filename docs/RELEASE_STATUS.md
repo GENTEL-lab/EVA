@@ -5,7 +5,25 @@ repairs were merged at `9b5d25ac7cb26de88420f56021f4c0eeb2052e9e`.
 A formal release for this revision and an archival code DOI are pending;
 the older `v1.1.1` release does not contain these repairs.
 
-## Recorded validation: September 9, 2026
+## Usability update validation: September 9, 2026
+
+The updated Milena entry point was run twice on an idle A100-SXM4-80GB,
+with the existing pinned runtime, one visible GPU and batch size 1. Each run
+scored all 135 inputs, produced metrics and plots, and exactly matched the
+saved fresh-prediction vector. Default mode returned **0**; the optional
+strict-reference mode returned **2**. Scoring took about 12 seconds per run;
+peak PyTorch-allocated GPU memory was 2.94 GiB.
+The [dated reports](../reproduction/release/usability_gpu_20260909/README.md)
+record the source commit, file hashes, environment and both execution modes.
+
+The expanded suite passed **139 tests** without skips in the existing Docker
+runtime. Current Python 3.10/3.11 CPU jobs, source-archive execution, wheel
+installation outside the checkout and CLI checks are available in
+[GitHub Actions](https://github.com/GENTEL-lab/EVA/actions/workflows/cpu.yml).
+The clean CPU environment also exposed an eager GPU-backend import in the
+fine-tuning entry point; that import now occurs only during model construction.
+
+## Earlier clean source-build validation: September 9, 2026
 
 The source archive at `70c6c4f7aff2cf12210d8b280c1d4569ca22c0a0` was built in a
 clean Docker environment. The subsequent `9b5d25a` commit added documentation

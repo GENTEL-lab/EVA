@@ -1,0 +1,39 @@
+{
+  "source_commit": "d55eecd6931ed3386b59911f9a67dde512af7fe5",
+  "source_files_verified": 744,
+  "source_sha256": {
+    "scripts/reproduce_milena.py": "7fb8bb39dcd8e29a2a94595064f77fbdd805a1819f24534e3289576f66b6b93b",
+    "reproduction/benchmark/run_historical_14b.py": "e9b9b7bae229acd4dc2ce118eb1c0a0ef051dcfc4618877630e4714468300d91",
+    "reproduction/milena_14b/manifest.json": "bf2c3722f4e7ac201e9e9212cc9b0ed5213ef68cab0924889c4f8635fe531b8f"
+  },
+  "runs": [
+    {
+      "mode": "default",
+      "exit_code": 0,
+      "n": 135,
+      "spearman": 0.8394237924835843,
+      "absolute_difference": 0.0033781641617359748,
+      "execution_status": "COMPLETED",
+      "comparison_status": "DIFFERENCE",
+      "predictions_equal_saved": true,
+      "elapsed_seconds": 26.825981240006513,
+      "peak_gpu_allocated_bytes": 3157299200
+    },
+    {
+      "mode": "strict",
+      "exit_code": 2,
+      "n": 135,
+      "spearman": 0.8394237924835843,
+      "absolute_difference": 0.0033781641617359748,
+      "execution_status": "COMPLETED",
+      "comparison_status": "DIFFERENCE",
+      "predictions_equal_saved": true,
+      "elapsed_seconds": 25.091115621995414,
+      "peak_gpu_allocated_bytes": 3157299200
+    }
+  ],
+  "validation_date_utc": "2026-09-09",
+  "runtime_image_id": "sha256:326ba2c34619dc6f3d2703914ed85b009f8da60b3cf4813e2a1e74da85cc8ec5",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "scope": "Two independent Milena runs, one visible GPU, batch size 1. Checkpoint and scoring code unchanged; not full-paper reproduction."
+}

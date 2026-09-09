@@ -76,6 +76,7 @@ file on any machine that has Docker:
 
 ```bash
 docker build -f docker/Dockerfile -t eva:local .
+docker tag eva:local eva:latest  # docker/EVA.def expects this local tag
 singularity build eva_latest.sif docker/EVA.def
 ```
 
