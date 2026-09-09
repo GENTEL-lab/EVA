@@ -57,21 +57,18 @@ currently resolves to a record with eight split archive parts, not a single
 Its files are not evidence that it contains the latest main-branch repairs.
 The checked metadata and advertised checksums are retained in the JSON record.
 
-## Comparison models and access checks
+<a id="comparison-models-and-access-checks"></a>
 
-[Official comparison-model resources](OFFICIAL_MODEL_RESOURCES.md) links the
-upstream code and records unresolved historical bindings. Run the independent
-access report from the repository root with Python 3.10 or 3.11:
+## Comparison models
 
-```bash
-python scripts/check_resource_links.py --output results/resource-access.json
-```
+Prepare third-party models in their own compatible environments. You can use
+locally downloaded or cached weights with the supported comparison-model CLI,
+or run an upstream scorer and submit its prediction CSV for metric calculation.
+Benchmark evaluation does not require a live connection to the model host.
 
-Exit 0 means the report was written. Inspect each `access` field: network
-errors and unavailable revisions are reported without changing CPU regression
-status. The tool retrieves metadata only; it neither downloads model bodies
-nor replaces missing weights. CPU CI performs offline file/hash checks.
-
-The [September 9 access report](../reproduction/release/resource_access_20260909.json)
-is a dated observation. External services and their current default branches
-can change. Each data/model resource retains its upstream license and terms.
+[Model resources](OFFICIAL_MODEL_RESOURCES.md) lists the required components;
+[benchmark protocols](BENCHMARK_PROTOCOLS.md) documents local model paths and
+the prediction format. Record the model version, scoring settings and input
+identities with each run. Matching a specific published result additionally
+requires its checkpoint and protocol. External resources retain their upstream
+license and terms.

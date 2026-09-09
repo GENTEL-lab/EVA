@@ -169,14 +169,14 @@ paper experiment. See [dated validation records](docs/RELEASE_STATUS.md).
 |---|---|
 | `eva/`, `tools/` | Model, tokenizer and inference CLIs |
 | `training/`, `finetune/`, `config/` | Training entry points and configurations |
-| `scripts/`, `notebooks/` | Reproduction tools, analysis and benchmark inputs |
-| `reproduction/` | Versioned inputs, historical sources and validation records |
+| `scripts/` | Command-line workflows and automation |
+| [`notebooks/`](notebooks/README.md) | Interactive analysis, plots and supporting data |
+| [`reproduction/`](reproduction/README.md) | Fixed inputs, protocols, reference outputs and historical code |
 | `docs/`, `tests/` | Guides and regression tests |
 
-The wheel contains the importable model and CLI packages. Use the complete
+Notebooks and command-line workflows share the reproduction resources.
+The wheel contains the importable model and CLI packages; use the complete
 source checkout for training, notebooks and paper-reproduction inputs.
-Historical sources under `reproduction/` are labeled separately and may preserve
-old paths; use the documented entry points for current workflows.
 
 </details>
 

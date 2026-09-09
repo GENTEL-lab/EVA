@@ -116,6 +116,17 @@ machinery; it does not rerun large-scale pretraining.
 
 ## Other analyses and historical sources
 
+[Notebooks](../notebooks/README.md) provide interactive analysis and plotting;
+[reproduction resources](../reproduction/README.md) hold fixed inputs, protocols,
+reference outputs and historical implementations. They work together with the
+command-line entry points in `scripts/`. For example, the benchmark notebook
+calls `scripts/benchmark_release.py` with manifests and tables from
+`reproduction/benchmark_release/`.
+
+Third-party models can run from local checkpoints or in their own upstream
+environments. Export keyed predictions to use the common metric evaluator;
+see [using your own model outputs](BENCHMARK_PROTOCOLS.md#using-your-own-model-outputs).
+
 [Benchmark protocols](BENCHMARK_PROTOCOLS.md), [essentiality](ESSENTIALITY_REPRODUCTION.md)
 and [SAE analyses](SAE_REPRODUCTION.md) distinguish stored-result calculations
 from inference. Sources under `reproduction/benchmark/upstream/` and

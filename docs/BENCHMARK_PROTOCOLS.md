@@ -27,7 +27,13 @@ archive calculation from a completed model reproduction.
 
 ## Comparison-model execution, not plotting
 
-`reproduction/benchmark/run_competitor.py` supplies fail-closed parameterized entry points. It does not download models, select checkpoints or infer original paper protocols. Dependencies must be installed in the chosen model's compatible environment; environment conflicts are not hidden by fallback implementations.
+`reproduction/benchmark/run_competitor.py` accepts locally prepared checkpoints
+for its supported scoring interfaces. Models are loaded from `--model-dir`;
+the RNA interface uses `local_files_only=True`. Prepare the model, tokenizer and
+dependencies in the chosen model's compatible environment before running it.
+For other model interfaces, use the upstream scorer and the common prediction
+evaluator described below. Record checkpoint versions and scoring settings with
+your results; a specific paper comparison uses that paper's protocol.
 
 1. Snapshot an already acquired, version-pinned local model. Keep the manifest **outside** the model directory; subsequent scoring requires the exact file set and hashes.
 
@@ -72,6 +78,32 @@ The evaluator rejects missing/duplicate IDs, mismatched sequences, nonfinite val
 
 The portable RNA scorer passed a real CPU forward/save/reload test with a randomly initialized tiny BERT and character tokenizer, including mask-batch equality and explicit length-policy checks. This tests the execution machinery only, not any released competitor's predictions.
 
+### Using your own model outputs
+
+You can run a third-party model in its own environment and evaluate its exported
+predictions without loading that model in EVA. The metric step uses Python's
+standard library and requires no network connection or model weights.
+
+| File | Required CSV columns |
+|---|---|
+| Predictions | `variant_id,sequence,score` |
+| Labels | `variant_id,sequence,label` |
+
+Supply one row per assay variant in each file. IDs and sequences must match;
+all scores and labels must be finite, and both vectors must vary. Record the
+scoring convention, model version and environment alongside the CSV. The
+evaluator calculates signed Spearman using the supplied scores.
+
+```bash
+python reproduction/benchmark/run_competitor.py evaluate \
+  --predictions results/my_model/predictions.csv \
+  --labels data/verified_labels.csv --output results/my_model/metrics.json
+```
+
+Use the [benchmark notebook](../notebooks/prediction/benchmark_reproduction.ipynb)
+and its evaluation manifest when comparing keyed predictions across multiple
+datasets. This gives local model deployments a common analysis entry point.
+
 ### Coverage and remaining external resources
 
 | Family | Recovered execution source | Remaining requirement / verification boundary |
@@ -101,6 +133,6 @@ The separately recovered `RNAVerse/checkpoint/clm` metadata supplies a fifth con
 
 The [current resource index](OFFICIAL_MODEL_RESOURCES.md#recovered-comparison-model-files-september-9-2026)
 records recovered RNA-FM/RNABERT/RNA-MSM snapshots and additional cached
-CodonFM, ERNIE-RNA, AIDO.RNA and GenerRNA file hashes. Public download/runtime
-bindings remain incomplete. These new identities supplement the historical
-requirements above; they do not imply newly executed competitor benchmarks.
+CodonFM, ERNIE-RNA, AIDO.RNA and GenerRNA file hashes. These can identify matching
+local files; the environment and scoring protocol must be recorded separately.
+The records describe recovered artifacts, not additional benchmark runs.

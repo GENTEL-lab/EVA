@@ -62,8 +62,9 @@ a demonstrated cause of the difference.
 ## Remaining coverage and publication work
 
 - Recovered comparison-model hashes are in the [resource index](OFFICIAL_MODEL_RESOURCES.md).
-  Public downloads, original runtimes or producers remain missing for some methods;
-  cached artifact identities alone do not close those gaps.
+  Local checkpoints and user-generated predictions are supported. Exact paper
+  runtimes, scoring implementations or checkpoint bindings remain unverified for
+  some methods; file identities alone do not establish those correspondences.
 - Training machinery is tested at small scale. Original dense-model code and
   some paper-specific training/run bindings are not available.
 - Some figure-specific input/command mappings and complete SAE generation
