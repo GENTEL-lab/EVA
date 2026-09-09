@@ -1,0 +1,107 @@
+data_config:
+  cache_size: 10000
+  dataset: eva145m_active_dense_openrna30m_s42
+  enable_reverse_augmentation: true
+  force_rebuild_index: false
+  glm_probability: 0.333
+  lineage_file: tools/utils/data/lineage_greengenes.tsv
+  max_samples: null
+  max_seq_length: 8192
+  mode: mixed
+  span_config:
+    allow_overlap: false
+    coverage_probs:
+    - 0.2
+    - 0.3
+    - 0.3
+    - 0.2
+    max_coverage_ratios:
+    - 0.15
+    - 0.35
+    - 0.55
+    - 0.75
+    max_num_spans: 30
+    span_distributions:
+    - - 6
+      - 3
+    - - 40
+      - 15
+    - - 60
+      - 15
+    - - 150
+      - 50
+    - - 400
+      - 100
+    - - 800
+      - 200
+  train_file: data/training/OpenRNA_30M/train_30M_sqrt_s42_50only_new.fa
+  use_chunked: true
+  use_direction_tokens: true
+  use_lineage_prefix: false
+  use_rna_type_prefix: true
+distributed_config:
+  backend: nccl
+  data_parallel_size: 8
+  expert_parallel_size: 1
+  weight_parallel_size: 1
+logging_config:
+  enable_tensorboard: true
+  enable_wandb: false
+  log_dir: results/dense_pretrain/eva145m_active_dense_openrna30m_s42_50only_8gpu/logs
+  tensorboard_log_dir: results/dense_pretrain/eva145m_active_dense_openrna30m_s42_50only_8gpu/tensorboard
+  wandb_project: rna-dense-training
+  wandb_run_name: eva145m_active_dense_openrna30m_s42_50only_8gpu
+memory_config:
+  cleanup_frequency: 100
+  enable_monitoring: true
+  gc_frequency: 50
+model_config:
+  attention_dropout: 0.0
+  dropout_ramp_steps: 0
+  dropout_schedule: linear
+  dropout_warmup_steps: 0
+  eos_loss_weight: 1.0
+  gradient_clip_norm: 0.0
+  hidden_dropout: 0.0
+  hidden_size: 448
+  initializer_range: 0.02
+  intermediate_size: 2688
+  label_smoothing: 0.0
+  max_position_embeddings: 8192
+  moe_implementation: eager
+  moe_world_size: 1
+  num_attention_heads: 7
+  num_experts: 1
+  num_experts_per_tok: 1
+  num_hidden_layers: 16
+  num_key_value_heads: 7
+  resid_dropout: 0.0
+  rms_norm_eps: 1.0e-06
+  router_aux_loss_coef: 0.0
+  use_cache: false
+  vocab_size: 114
+training_config:
+  adam_beta1: 0.9
+  adam_beta2: 0.95
+  adam_epsilon: 1.0e-08
+  bf16: true
+  dataloader_drop_last: true
+  dataloader_num_workers: 8
+  dataloader_pin_memory: true
+  fp16: false
+  gradient_accumulation_steps: 8
+  gradient_checkpointing: false
+  learning_rate: 0.0001
+  logging_steps: 30
+  max_epochs: 1
+  max_steps: 5000
+  max_wall_time_hours: 150
+  min_lr_ratio: 0.1
+  output_dir: results/dense_pretrain/eva145m_active_dense_openrna30m_s42_50only_8gpu
+  per_device_train_batch_size: 4
+  run_name: eva145m_active_dense_openrna30m_s42_50only_8gpu
+  save_steps: 500
+  scheduler_use_max_steps_if_set: true
+  seed: 42
+  warmup_steps: 500
+  weight_decay: 5.0e-06

@@ -1,0 +1,5 @@
+Arch.,Params,Active Params,Layers,d_model,Attn Heads,d_FFN,LR,WD,BSZ,WU
+Dense,6.5M,6.5M,6,256,8,1536,1e-4,5e-6,2.1M,500
+Dense,51.7M,51.7M,16,448,7,2688,1e-4,5e-6,2.1M,500
+Dense,145.0M,145.0M,20,672,12,4032,1e-4,5e-6,2.1M,500
+Dense,437.0M,437.0M,26,1024,16,6144,1e-4,5e-6,2.1M,500

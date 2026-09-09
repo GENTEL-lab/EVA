@@ -78,8 +78,9 @@ provide the saved predictions, measurements and execution records.
   Local checkpoints and user-generated predictions are supported. Exact paper
   runtimes, scoring implementations or checkpoint bindings remain unverified for
   some methods; file identities alone do not establish those correspondences.
-- Training machinery is tested at small scale. Original dense-model code and
-  some paper-specific training/run bindings are not available.
+- Training machinery is tested at small scale. The author dense-control source is now recovered and documented in
+  [Dense control](DENSE_CONTROL.md); some paper-specific training/run bindings
+  remain outside the bundled workflows.
 - Some figure-specific input/command mappings and complete SAE generation
   outputs remain outside the bundled reproducible workflows.
 

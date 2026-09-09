@@ -30,6 +30,5 @@ pretraining was exclusively CLM and mid-training exclusively GLM.
 The exact original paper training configurations are not established by this repair.
 
 Historical `scripts/lineage_training/*` and `configs/lineage_training/*` commands
-were not included in the release and must not be used. The historical
-`model_dense` architecture is missing: dense training/evaluation is not currently
-reproducible and must not be replaced by an allegedly equivalent MoE.
+were not included in the release and must not be used. The recovered author dense-control workflow uses a single eager FFN expert.
+See [Dense control](../../docs/DENSE_CONTROL.md) for its source and validation.

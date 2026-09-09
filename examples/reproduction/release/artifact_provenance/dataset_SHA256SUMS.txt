@@ -1,0 +1,2 @@
+593ec9a990d803ba11ef2556d389c696d3c603bcd24ae225595efcf09fd83df4  OpenRNA_v1_114M.fa.gz
+4b24636da1f48381e489493e8a53f7388d8d9761afda4439dec54fae10878037  eva_training_data/EVA_validation_100k.fa

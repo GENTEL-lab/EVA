@@ -56,9 +56,9 @@ class DenseTrainer(BaseTrainer):
 
     def _setup_model(self):
         """设置Dense模型"""
-        from eva.causal_lm import create_eva_model
-        from eva.config import EvaConfig
-        from eva.lineage_tokenizer import get_lineage_rna_tokenizer
+        from model.causal_lm import create_rnagen_model
+        from model.config import RNAGenConfig
+        from model.lineage_tokenizer import get_lineage_rna_tokenizer
 
         model_config_dict = self.config.get('model_config', {})
         data_config = self.config.get('data_config', {})
@@ -69,16 +69,18 @@ class DenseTrainer(BaseTrainer):
         model_config_dict['vocab_size'] = self.tokenizer.vocab_size
         logger.info(f"自动设置vocab_size={self.tokenizer.vocab_size}")
 
-        # Recovered author dense control: one eager FFN expert per layer.
-        # This is an explicit architecture choice, not a dependency fallback.
-        dense_config_params = dict(model_config_dict)
-        dense_config_params.update(
-            num_experts=1, num_experts_per_tok=1,
-            moe_implementation='eager', moe_world_size=1,
-            router_aux_loss_coef=0.0, use_cache=False,
-        )
-        model_config = EvaConfig(tokenizer=self.tokenizer, **dense_config_params)
-        self.model = create_eva_model(model_config)
+        # Dense control: reuse the EVA transformer with a single eager FFN expert.
+        # This avoids the missing legacy model_dense package while preserving
+        # checkpoint/evaluation compatibility with the existing EVA stack.
+        model_config_dict['num_experts'] = 1
+        model_config_dict['num_experts_per_tok'] = 1
+        model_config_dict['moe_implementation'] = 'eager'
+        model_config_dict['moe_world_size'] = 1
+        model_config_dict['router_aux_loss_coef'] = 0.0
+        model_config_dict['use_cache'] = False
+
+        model_config = RNAGenConfig(tokenizer=self.tokenizer, **model_config_dict)
+        self.model = create_rnagen_model(model_config)
         logger.info(f"Dense模型创建完成，设备: cuda:{self.local_rank}")
 
         # 设置数据类型
@@ -113,7 +115,7 @@ class DenseTrainer(BaseTrainer):
 def main():
     DenseTrainer.main(
         description='Dense模型训练',
-        default_config=None,
+        default_config='configs/dense_training/base_dense.yaml',
         supports_resume=True,
     )
 

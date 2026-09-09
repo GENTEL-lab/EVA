@@ -1,0 +1,296 @@
+[
+  {
+    "type": "directory",
+    "oid": "9f626c9d304f3efe7ba31bc02ade572a19d305b9",
+    "size": 0,
+    "path": "EVA_1.4B_CLM"
+  },
+  {
+    "type": "directory",
+    "oid": "73b1f70d03b058a8edf915ff208536670ec530c6",
+    "size": 0,
+    "path": "EVA_1.4B_GLM"
+  },
+  {
+    "type": "directory",
+    "oid": "f37acdc9b0611ad233e3c914ba6953ce49e12379",
+    "size": 0,
+    "path": "EVA_145M"
+  },
+  {
+    "type": "directory",
+    "oid": "9249dca2fc9029852431c7d3d940c02c08d5e909",
+    "size": 0,
+    "path": "EVA_21M"
+  },
+  {
+    "type": "directory",
+    "oid": "06e6659afcbe943a2abd5ca96d849980e86f1efe",
+    "size": 0,
+    "path": "EVA_437M"
+  },
+  {
+    "type": "directory",
+    "oid": "2ca09527469a395679b9ec6db6f73e75aedadc26",
+    "size": 0,
+    "path": "fig"
+  },
+  {
+    "type": "file",
+    "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+    "size": 1519,
+    "path": ".gitattributes"
+  },
+  {
+    "type": "file",
+    "oid": "c9055b4f9a9288f7965bb653121aa471ae09d7b1",
+    "size": 691,
+    "path": "EVA_1.4B_CLM/config.json"
+  },
+  {
+    "type": "file",
+    "oid": "b64b7be0a9706bcbd8e646a853eb682a25fb164e",
+    "size": 3057231170,
+    "lfs": {
+      "oid": "323c13d571d0be87e450cb7b103bf8b28396e55e877519e2d2fb3c434875d420",
+      "size": 3057231170,
+      "pointerSize": 135
+    },
+    "xetHash": "cf5b54d7ba461365dc86351738d962bf2be6afde8b70ea441d6cd2de680228a1",
+    "path": "EVA_1.4B_CLM/model_weights.pt"
+  },
+  {
+    "type": "file",
+    "oid": "9b5f676952dd7a457252fc5e1a1fcdcd5d247bf2",
+    "size": 98,
+    "path": "EVA_1.4B_CLM/special_tokens_map.json"
+  },
+  {
+    "type": "file",
+    "oid": "ebe9d21b4d30d14f07988955a83804fb4f3b9dfb",
+    "size": 23358,
+    "path": "EVA_1.4B_CLM/tokenizer.json"
+  },
+  {
+    "type": "file",
+    "oid": "7bd46d642986063371b9d65dccbf52ab7c0b3187",
+    "size": 1913,
+    "path": "EVA_1.4B_CLM/tokenizer_config.json"
+  },
+  {
+    "type": "file",
+    "oid": "62237fc6b9bf5bd952a03dddebab519ec12c8f95",
+    "size": 2658,
+    "path": "EVA_1.4B_CLM/training_config.yaml"
+  },
+  {
+    "type": "file",
+    "oid": "4ae97a7729443bd0b745f9953ed7dcac4d445dce",
+    "size": 1859,
+    "path": "EVA_1.4B_CLM/vocab.json"
+  },
+  {
+    "type": "file",
+    "oid": "2928c925200c9401f79883b79fe6fe8f3e3a338b",
+    "size": 691,
+    "path": "EVA_1.4B_GLM/config.json"
+  },
+  {
+    "type": "file",
+    "oid": "4219cbf4558ea2a0314efa706051e6e783fc57d5",
+    "size": 3057231170,
+    "lfs": {
+      "oid": "1ee172fe1bf68c6907590dae630b6e1d8493225dd0b5a34ecc0ead0cc51d4f0c",
+      "size": 3057231170,
+      "pointerSize": 135
+    },
+    "xetHash": "5efdc62046d487f49ccdb49961c75fb2451d370e126ce63863a6bbd107c4cfe0",
+    "path": "EVA_1.4B_GLM/model_weights.pt"
+  },
+  {
+    "type": "file",
+    "oid": "9b5f676952dd7a457252fc5e1a1fcdcd5d247bf2",
+    "size": 98,
+    "path": "EVA_1.4B_GLM/special_tokens_map.json"
+  },
+  {
+    "type": "file",
+    "oid": "ebe9d21b4d30d14f07988955a83804fb4f3b9dfb",
+    "size": 23358,
+    "path": "EVA_1.4B_GLM/tokenizer.json"
+  },
+  {
+    "type": "file",
+    "oid": "7bd46d642986063371b9d65dccbf52ab7c0b3187",
+    "size": 1913,
+    "path": "EVA_1.4B_GLM/tokenizer_config.json"
+  },
+  {
+    "type": "file",
+    "oid": "d1d36cf5dd7f917e840a89dd45fec2b3096161a0",
+    "size": 2641,
+    "path": "EVA_1.4B_GLM/training_config.yaml"
+  },
+  {
+    "type": "file",
+    "oid": "cb9a517580a11529e9f1cf24908192de9576c4a8",
+    "size": 1859,
+    "path": "EVA_1.4B_GLM/vocab.json"
+  },
+  {
+    "type": "file",
+    "oid": "b881e9b595e73d80103738c50a4ead81829d53db",
+    "size": 662,
+    "path": "EVA_145M/config.json"
+  },
+  {
+    "type": "file",
+    "oid": "ff7409c50439c84ecef9b37b1a6edd7e47382fc4",
+    "size": 361225818,
+    "lfs": {
+      "oid": "785f14ca3db031ab4a70692146cea3d5a192ceb6175271716ae52ab0c7cb5111",
+      "size": 361225818,
+      "pointerSize": 134
+    },
+    "xetHash": "63e0df3f619da63b1d0ffa6913a252103e8c96f083634f8b1329ecf02778f24b",
+    "path": "EVA_145M/model_weights.pt"
+  },
+  {
+    "type": "file",
+    "oid": "9b5f676952dd7a457252fc5e1a1fcdcd5d247bf2",
+    "size": 98,
+    "path": "EVA_145M/special_tokens_map.json"
+  },
+  {
+    "type": "file",
+    "oid": "ebe9d21b4d30d14f07988955a83804fb4f3b9dfb",
+    "size": 23358,
+    "path": "EVA_145M/tokenizer.json"
+  },
+  {
+    "type": "file",
+    "oid": "7bd46d642986063371b9d65dccbf52ab7c0b3187",
+    "size": 1913,
+    "path": "EVA_145M/tokenizer_config.json"
+  },
+  {
+    "type": "file",
+    "oid": "54f4e860b72e8deccd21d9268c9ca8c362ed612e",
+    "size": 3666,
+    "path": "EVA_145M/training_config.yaml"
+  },
+  {
+    "type": "file",
+    "oid": "d8fd3d87e1cb8ad19434baad9f7266b993a86e57",
+    "size": 1859,
+    "path": "EVA_145M/vocab.json"
+  },
+  {
+    "type": "file",
+    "oid": "80397d596c7f1a6df014a6985f36e4a947bc8001",
+    "size": 687,
+    "path": "EVA_21M/config.json"
+  },
+  {
+    "type": "file",
+    "oid": "88fb7bed8a9256a47ed1a21b16df34de39b7fe3c",
+    "size": 44860956,
+    "lfs": {
+      "oid": "45d56a7399c4936429da149edf5003bbb5999490a64ec7d793bf5ac98116eb01",
+      "size": 44860956,
+      "pointerSize": 133
+    },
+    "xetHash": "3d4135fba6d894ef1e837ccedfa299c4082772f8a678e6284a7d3c5c1bf92556",
+    "path": "EVA_21M/model_weights.pt"
+  },
+  {
+    "type": "file",
+    "oid": "9b5f676952dd7a457252fc5e1a1fcdcd5d247bf2",
+    "size": 98,
+    "path": "EVA_21M/special_tokens_map.json"
+  },
+  {
+    "type": "file",
+    "oid": "ebe9d21b4d30d14f07988955a83804fb4f3b9dfb",
+    "size": 23358,
+    "path": "EVA_21M/tokenizer.json"
+  },
+  {
+    "type": "file",
+    "oid": "7bd46d642986063371b9d65dccbf52ab7c0b3187",
+    "size": 1913,
+    "path": "EVA_21M/tokenizer_config.json"
+  },
+  {
+    "type": "file",
+    "oid": "e2fa414f9d775bc9f50ca99f6bd4af281c0b81c3",
+    "size": 2557,
+    "path": "EVA_21M/training_config.yaml"
+  },
+  {
+    "type": "file",
+    "oid": "e44114e91adbc5edb1847b10e704ecf8bd3b4a00",
+    "size": 1859,
+    "path": "EVA_21M/vocab.json"
+  },
+  {
+    "type": "file",
+    "oid": "3b2ad31b3dab13a8d60d89e17f32f631c3787519",
+    "size": 664,
+    "path": "EVA_437M/config.json"
+  },
+  {
+    "type": "file",
+    "oid": "979262b15a5f3b65f6296867520e5a06f4dd93a7",
+    "size": 1013942634,
+    "lfs": {
+      "oid": "1dec07cef32d888f9f3219cb9fb7c269cb62464e795b4f251ce800d6dde92b81",
+      "size": 1013942634,
+      "pointerSize": 135
+    },
+    "xetHash": "31db86543ab774f44a5f92890a1517e0dd16444a54f6754e13c0474ce0ef6606",
+    "path": "EVA_437M/model_weights.pt"
+  },
+  {
+    "type": "file",
+    "oid": "9b5f676952dd7a457252fc5e1a1fcdcd5d247bf2",
+    "size": 98,
+    "path": "EVA_437M/special_tokens_map.json"
+  },
+  {
+    "type": "file",
+    "oid": "ebe9d21b4d30d14f07988955a83804fb4f3b9dfb",
+    "size": 23358,
+    "path": "EVA_437M/tokenizer.json"
+  },
+  {
+    "type": "file",
+    "oid": "7bd46d642986063371b9d65dccbf52ab7c0b3187",
+    "size": 1913,
+    "path": "EVA_437M/tokenizer_config.json"
+  },
+  {
+    "type": "file",
+    "oid": "2fb19de634df8be92fd5b10b8fe24be8ad6c72d7",
+    "size": 3619,
+    "path": "EVA_437M/training_config.yaml"
+  },
+  {
+    "type": "file",
+    "oid": "20c2ae932ee088797433376c69b5d3eaab6ea642",
+    "size": 1859,
+    "path": "EVA_437M/vocab.json"
+  },
+  {
+    "type": "file",
+    "oid": "4b46f91cdcf60f2747afcaa6426555948ac0c42c",
+    "size": 4541,
+    "path": "README.md"
+  },
+  {
+    "type": "file",
+    "oid": "9e1cb369835e0c2c9221f2ae43c06756949f8606",
+    "size": 1510924,
+    "path": "fig/github_logo.svg"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "type": "directory",
+    "oid": "d5cf700409b8c09f849c8b309e6efffbb663292b",
+    "size": 0,
+    "path": "eva_training_data"
+  },
+  {
+    "type": "directory",
+    "oid": "f9fe35ce5eadbb91d51e3aed04d5c17a9915b378",
+    "size": 0,
+    "path": "imgs"
+  },
+  {
+    "type": "file",
+    "oid": "e2f2acee2630dd831a1bd6b14f6f7f37e43df277",
+    "size": 2581,
+    "path": ".gitattributes"
+  },
+  {
+    "type": "file",
+    "oid": "06ed41a0d986e8cf49773aa052517b1674c82a35",
+    "size": 45731803403,
+    "lfs": {
+      "oid": "593ec9a990d803ba11ef2556d389c696d3c603bcd24ae225595efcf09fd83df4",
+      "size": 45731803403,
+      "pointerSize": 136
+    },
+    "xetHash": "0288b06207bec515878f4d513472ae5846b9c46568ebd3d1b111525fd4548db2",
+    "path": "OpenRNA_v1_114M.fa.gz"
+  },
+  {
+    "type": "file",
+    "oid": "0a0d6526d552832c50028cf2f8691a19ba059c35",
+    "size": 7420,
+    "path": "README.md"
+  },
+  {
+    "type": "file",
+    "oid": "2139398286904e70385951bdf4069b84fa723220",
+    "size": 291475529,
+    "lfs": {
+      "oid": "4b24636da1f48381e489493e8a53f7388d8d9761afda4439dec54fae10878037",
+      "size": 291475529,
+      "pointerSize": 134
+    },
+    "xetHash": "6620ffb44df47745390a7276291c84a515d842a104e26d89826c53d2ccae421a",
+    "path": "eva_training_data/EVA_validation_100k.fa"
+  },
+  {
+    "type": "file",
+    "oid": "f36203a7fb36173c232ff74c3065f06ee12e30be",
+    "size": 923284,
+    "path": "imgs/Phylo_tree_rna_kingdom.svg"
+  },
+  {
+    "type": "file",
+    "oid": "3161e500e2fdf228f1a0ea89312e946846063fcb",
+    "size": 72562,
+    "path": "imgs/data_comparsion.svg"
+  },
+  {
+    "type": "file",
+    "oid": "61481275f7a65d78d261d70f080e5fc4c156ab17",
+    "size": 119238,
+    "path": "imgs/data_distribution.svg"
+  },
+  {
+    "type": "file",
+    "oid": "d1606bc7b26aaad4faf4b5e751b44fd70a124d07",
+    "size": 796139,
+    "path": "imgs/data_pinchart.svg"
+  }
+]

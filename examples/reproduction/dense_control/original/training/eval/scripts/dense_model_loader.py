@@ -4,8 +4,6 @@ Dense模型加载器
 支持从DCP和PyTorch格式的checkpoint加载Dense模型
 """
 
-from __future__ import annotations
-
 import os
 import sys
 import json
@@ -27,26 +25,17 @@ from training.eval.scripts.common.model_loader_base import (
     load_model_weights_from_dcp,
     load_model_weights_from_pytorch,
 )
-from eva.lineage_tokenizer import get_lineage_rna_tokenizer
+from model.causal_lm import RNAGenForCausalLM
+from model.config import RNAGenConfig
+from model.lineage_tokenizer import get_lineage_rna_tokenizer
 
 logger = logging.getLogger(__name__)
 
-# MoE 参数列表（Dense 模型不需要）
-_MOE_KEYS = ['num_experts', 'num_experts_per_tok', 'router_aux_loss_coef',
-             'moe_world_size', 'mlp_impl', 'memory_optimized_mlp']
-
-
 def _create_dense_model(checkpoint_path: Path, device: str = 'cuda:0'):
     """创建 Dense 模型实例"""
-    from eva.causal_lm import EvaForCausalLM
-    from eva.config import EvaConfig
     config_file = checkpoint_path / "config.json"
     with open(config_file, 'r') as f:
         config_dict = json.load(f)
-
-    # A multi-expert checkpoint must never be silently converted to dense.
-    if config_dict.get('num_experts') != 1 or config_dict.get('num_experts_per_tok') != 1:
-        raise ValueError('Dense-control loading requires a recorded single-expert checkpoint')
 
     _, use_direction_tokens = resolve_training_config(checkpoint_path)
     if not use_direction_tokens:
@@ -54,22 +43,25 @@ def _create_dense_model(checkpoint_path: Path, device: str = 'cuda:0'):
 
     tokenizer = get_lineage_rna_tokenizer(use_direction_tokens=use_direction_tokens)
 
-    dense_config_dict = dict(config_dict)
-    dense_config_dict.update(moe_implementation='eager', moe_world_size=1,
-                             router_aux_loss_coef=0.0, use_cache=False)
-    config = EvaConfig(tokenizer=tokenizer, **dense_config_dict)
-    model = EvaForCausalLM(config)
+    config_dict['num_experts'] = 1
+    config_dict['num_experts_per_tok'] = 1
+    config_dict['moe_implementation'] = 'eager'
+    config_dict['moe_world_size'] = 1
+    config_dict['router_aux_loss_coef'] = 0.0
+    config_dict['use_cache'] = False
+    config = RNAGenConfig(tokenizer=tokenizer, **config_dict)
+    model = RNAGenForCausalLM(config)
 
     return model, tokenizer, config
 
 
-def load_dense_model_from_dcp(checkpoint_path: str, device: str = 'cuda:0') -> Tuple[torch.nn.Module, any, EvaConfig]:
+def load_dense_model_from_dcp(checkpoint_path: str, device: str = 'cuda:0') -> Tuple[torch.nn.Module, any, RNAGenConfig]:
     model, tokenizer, config = _create_dense_model(Path(checkpoint_path), device)
     model = load_model_weights_from_dcp(model, Path(checkpoint_path), device)
     return model, tokenizer, config
 
 
-def load_dense_model_from_pytorch(checkpoint_path: str, device: str = 'cuda:0') -> Tuple[torch.nn.Module, any, EvaConfig]:
+def load_dense_model_from_pytorch(checkpoint_path: str, device: str = 'cuda:0') -> Tuple[torch.nn.Module, any, RNAGenConfig]:
     model, tokenizer, config = _create_dense_model(Path(checkpoint_path), device)
     model = load_model_weights_from_pytorch(model, Path(checkpoint_path), device)
     return model, tokenizer, config
@@ -79,7 +71,7 @@ def load_dense_model(
     checkpoint_path: str,
     device: str = 'cuda:0',
     force_format: Optional[str] = None
-) -> Tuple[torch.nn.Module, any, EvaConfig]:
+) -> Tuple[torch.nn.Module, any, RNAGenConfig]:
     """加载Dense模型（自动检测格式）"""
     checkpoint_path = Path(checkpoint_path)
 

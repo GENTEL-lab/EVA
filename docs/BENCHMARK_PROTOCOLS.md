@@ -125,7 +125,7 @@ Original files under `upstream/` retain obsolete paths and historical fallback b
 
 The recovered 21M pretrain `checkpoint-31006` and midtrain `checkpoint_86006`, and 1.4B pretrain `checkpoint_14500` and midtrain `checkpoint-25500`, all specify `mode: mixed`, `glm_probability: 0.333`, EP=4 and DP=4. These support mixed CLM/GLM and the parallelism settings for **those runs**, not automatically every released model.
 
-Both recovered 21M stage configs set `use_lineage_prefix: true`. Therefore they do not substantiate a blanket statement that pretraining used RNA-type only and lineage began solely at midtraining. The final 1.4B mid config names a v31 pretraining checkpoint for which the matching pretraining config remains unresolved. Clarify the run-to-manuscript linkage rather than changing training objectives to match prose. The native `model_dense` implementation is still missing; neither an MoE alias nor a smoke test substitutes for it. Training data paths in historical YAMLs are provenance, not evidence that the original training datasets are publicly accessible.
+Both recovered 21M stage configs set `use_lineage_prefix: true`. Therefore they do not substantiate a blanket statement that pretraining used RNA-type only and lineage began solely at midtraining. The final 1.4B mid config names a v31 pretraining checkpoint for which the matching pretraining config remains unresolved. Clarify the run-to-manuscript linkage rather than changing training objectives to match prose. The author's dense-control implementation has now been recovered: it uses a single eager FFN expert in the EVA transformer, not the historical `model_dense` API. See [Dense control](DENSE_CONTROL.md) for source identity and validation. Training data paths in historical YAMLs are provenance, not evidence that the original training datasets are publicly accessible.
 
 The separately recovered `RNAVerse/checkpoint/clm` metadata supplies a fifth concrete configuration (v4 midtraining from v24 pretrain step 15000): it also specifies mixed mode, GLM probability 0.333, EP=4, DP=4, lineage and RNA-type prefixes. It establishes another observed historical run, not a reason to conflate the v24 and v31 checkpoint families.
 
@@ -136,3 +136,5 @@ records recovered RNA-FM/RNABERT/RNA-MSM snapshots and additional cached
 CodonFM, ERNIE-RNA, AIDO.RNA and GenerRNA file hashes. These can identify matching
 local files; the environment and scoring protocol must be recorded separately.
 The records describe recovered artifacts, not additional benchmark runs.
+
+For a model-by-model list of entry files, see [Benchmark scoring entry index](BENCHMARK_ENTRY_INDEX.md).

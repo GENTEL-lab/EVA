@@ -1,0 +1,41 @@
+{
+  "source": "Author EVA2 dense-control run directory, retrieved 2026-09-09",
+  "checkpoints": [
+    {
+      "checkpoint": "results/dense_midtrain/eva145m_active_dense_mixed_balanced_s42_50only_from_openrna5000_to6500_8gpu/checkpoint-6500",
+      "config_sha256": "b28636d2d1f00296ab9d589de7ff8645512217b2892714d1210717a439ddc487",
+      "architecture": {
+        "hidden_size": 448,
+        "intermediate_size": 2688,
+        "num_hidden_layers": 16,
+        "num_attention_heads": 7,
+        "num_experts": 1,
+        "num_experts_per_tok": 1
+      }
+    },
+    {
+      "checkpoint": "results/dense_midtrain/eva21m_active_dense_mixed_balanced_s42_50only_from_openrna5000_to6500_8gpu/checkpoint-6500",
+      "config_sha256": "67b40f5b6dca28c238e48a63a8658485c64c2bb605aab7cfd3a5e8b5c955881e",
+      "architecture": {
+        "hidden_size": 256,
+        "intermediate_size": 1536,
+        "num_hidden_layers": 6,
+        "num_attention_heads": 8,
+        "num_experts": 1,
+        "num_experts_per_tok": 1
+      }
+    },
+    {
+      "checkpoint": "results/dense_midtrain/eva437m_active_dense_mixed_balanced_s42_50only_from_openrna5000_to6500_8gpu/checkpoint-6500",
+      "config_sha256": "371cee1eb2b83e764ade5a39e64a1bc8b644e786d908d22062c572bddc291722",
+      "architecture": {
+        "hidden_size": 672,
+        "intermediate_size": 4032,
+        "num_hidden_layers": 20,
+        "num_attention_heads": 12,
+        "num_experts": 1,
+        "num_experts_per_tok": 1
+      }
+    }
+  ]
+}

@@ -72,3 +72,5 @@ the prediction format. Record the model version, scoring settings and input
 identities with each run. Matching a specific published result additionally
 requires its checkpoint and protocol. External resources retain their upstream
 license and terms.
+
+For immutable model/data revisions, SHA256 values and manuscript correspondence, see [Artifact provenance](ARTIFACT_PROVENANCE.md).

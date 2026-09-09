@@ -1,0 +1,36 @@
+{
+  "source": "Author dense-control working tree on EVA2, retrieved 2026-09-09",
+  "implementation": "Single eager FFN expert in EVA transformer; not the unavailable legacy model_dense API",
+  "files": [
+    {
+      "path": "original/training/dense_pretrain/train_dense.py",
+      "sha256": "051da772344da469c84e2f773d59d504cefde251ed34203e653d08accb88665d",
+      "bytes": 4057
+    },
+    {
+      "path": "original/training/eval/scripts/dense_model_loader.py",
+      "sha256": "e9e2ae5a353262dd1df26dd38950013a889951d3f94795ddf75c273f1e562de4",
+      "bytes": 3983
+    },
+    {
+      "path": "original/training/dense_pretrain/train_dense_midtrain.py",
+      "sha256": "72c4d61c8a03e09ff9c6c49cc6f24a7961b63628a74b250fec20d291fd70b332",
+      "bytes": 4795
+    },
+    {
+      "path": "original/configs/dense_training/eva21m_active_dense_openrna30m_8gpu.yaml",
+      "sha256": "4e03f81592c5e3ff222db4667cdd9c194123be5a5238dde61536d3cd1a4dc34c",
+      "bytes": 2620
+    },
+    {
+      "path": "original/configs/dense_training/eva145m_active_dense_openrna30m_8gpu.yaml",
+      "sha256": "a51c161b0c04f3a14ee738e1a030a447052cfaeae855b0f322e3ac4e24a3e4a1",
+      "bytes": 2627
+    },
+    {
+      "path": "original/configs/dense_training/eva437m_active_dense_openrna30m_8gpu.yaml",
+      "sha256": "5d566c3b2450bedaae675cf6b8c113365a81390976fe030c99f7fd0777435d82",
+      "bytes": 2629
+    }
+  ]
+}
