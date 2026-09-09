@@ -4,7 +4,7 @@
 
 This release packages the reproducibility and repository improvements below.
 Source archive: https://github.com/GENTEL-lab/EVA/releases/tag/v1.2.0.
-Figshare DOI `10.6084/m9.figshare.33487147` is reserved; publication is pending.
+Code archive DOI: https://doi.org/10.6084/m9.figshare.33490096.v3.
 The release metadata update preserves the tested runtime code and frozen inputs
 from commit `780f226`.
 
