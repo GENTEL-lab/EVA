@@ -1,7 +1,7 @@
 {
   "purpose": "Synthetic engineering validation of recovered single-expert implementation; not a new paper-scale training run",
   "environment": "eva-rebuttal-clean:20260905 container on EVA2; CPU; network disabled",
-  "command": "python -m unittest discover -s tests -p test_dense_control.py -v",
+  "command": "python scripts/check_dense_control.py -v",
   "tests": {
     "forward_gradient_update_exact_save_reload": "passed",
     "reject_multi_expert_checkpoint": "passed"
@@ -10,6 +10,8 @@
   "regression_check": {
     "command": "python -m pytest tests/test_dense_control.py tests/test_reproducibility.py -q -p no:cacheprovider",
     "passed": 25,
-    "seconds": 8.47
-  }
+    "seconds": 8.47,
+    "note": "25 checks passed before separating full-runtime checks into scripts/check_dense_control.py; base CPU suite retains single-expert rejection and zero-skip policy."
+  },
+  "seconds": 3.445
 }
