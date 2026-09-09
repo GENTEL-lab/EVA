@@ -8,7 +8,7 @@ author-confirmed submission. Use REPRODUCTION.md for the current workflow.
 
 ## What was recovered
 
-`reproduction/benchmark/provenance.json` identifies 95 unchanged historical files by source host, original path, byte size and SHA256. These include RNA adapters and their scoring workers, protein reverse-translation/ESM workers, the historical EVA model/tokenizer/loader support code, four training configurations, released Milena inputs, archived predictions and an earlier validation report. This is a source snapshot, not a claim that every external model/environment has been released or rerun. The original server was read-only.
+`examples/reproduction/benchmark/provenance.json` identifies 95 unchanged historical files by source host, original path, byte size and SHA256. These include RNA adapters and their scoring workers, protein reverse-translation/ESM workers, the historical EVA model/tokenizer/loader support code, four training configurations, released Milena inputs, archived predictions and an earlier validation report. This is a source snapshot, not a claim that every external model/environment has been released or rerun. The original server was read-only.
 
 All three released EVA-21M files at `GENTEL-Lab/EVA`, revision `514db6705637c1ec963b728768fc9b34728699ee`, match the historical `30M_1130_midtrain/checkpoint_86006` files byte-for-byte:
 
@@ -71,10 +71,10 @@ To repeat on a single explicitly selected GPU with this compatible environment:
 
 ```bash
 CUDA_VISIBLE_DEVICES=7 PYTHONDONTWRITEBYTECODE=1 \
-python reproduction/benchmark/run_historical_14b.py \
-  --source-dir reproduction/benchmark/historical_14b \
+python examples/reproduction/benchmark/run_historical_14b.py \
+  --source-dir examples/reproduction/benchmark/historical_14b \
   --checkpoint /models/historical-rnaverse-clm \
-  --archive reproduction/benchmark/fixtures/milena/eva_1_4b_wotag_scores.json \
+  --archive examples/reproduction/benchmark/fixtures/milena/eva_1_4b_wotag_scores.json \
   --expected-weights-sha256 323c13d571d0be87e450cb7b103bf8b28396e55e877519e2d2fb3c434875d420 \
   --memory-limit-gib 4 --device cuda:0 --output outputs/milena_14b_fresh
 ```

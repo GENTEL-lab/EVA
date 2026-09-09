@@ -26,11 +26,12 @@ def anchors(text):
 
 def check_links():
     errors, count = [], 0
-    docs = [ROOT / 'README.md', ROOT / 'README_BENCHMARK_SUPPLEMENT.md', ROOT / 'CONTRIBUTING.md']
+    docs = [ROOT / 'README.md', ROOT / 'CONTRIBUTING.md']
     docs += list((ROOT / 'docs').glob('*.md'))
-    docs += [ROOT / 'training/pretrain/README.md', ROOT / 'finetune/aptamer/script/README.md',
-             ROOT / 'reproduction/milena_14b/expected/README.md',
-             ROOT / 'notebooks/README.md', ROOT / 'reproduction/README.md']
+    docs += [ROOT / 'examples/README.md', ROOT / 'training/README.md',
+             ROOT / 'training/pretrain/README.md', ROOT / 'training/finetune/aptamer/script/README.md',
+             ROOT / 'examples/reproduction/milena_14b/expected/README.md',
+             ROOT / 'examples/notebooks/README.md', ROOT / 'examples/reproduction/README.md']
     for path in docs:
         text = re.sub(r'```.*?```', '', path.read_text(), flags=re.S)
         links = re.findall(r'\]\(([^\s)]+)(?:\s+[^)]*)?\)', text)

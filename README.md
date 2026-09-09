@@ -1,6 +1,6 @@
 <a id="eva-a-long-context-generative-foundation-model-for-versatile-rna-design"></a>
 <p align="center">
-  <img src="fig/github_logo.svg" alt="EVA — RNA foundation model" width="100%">
+  <img src="docs/assets/github_logo.svg" alt="EVA — RNA foundation model" width="100%">
 </p>
 
 <h1 align="center">EVA</h1>
@@ -28,7 +28,7 @@ workflows. Model weights and large datasets are downloaded separately.
 
 <a id="why-use-eva"></a>
 <p align="center">
-  <img src="fig/readme_overview.svg" alt="1.4B-parameter MoE flagship model; 8,192-token context window; trained on OpenRNA v1" width="100%">
+  <img src="docs/assets/readme_overview.svg" alt="1.4B-parameter MoE flagship model; 8,192-token context window; trained on OpenRNA v1" width="100%">
 </p>
 
 <a id="start-here"></a><a id="our-journey-with-eva-starts-here-"></a>
@@ -91,7 +91,7 @@ From the repository root, build and enter the runtime **on the host**:
 
 ```bash
 mkdir -p checkpoint results
-docker build -f docker/Dockerfile -t eva:local .
+docker build -f scripts/docker/Dockerfile -t eva:local .
 docker run --rm -it --gpus device=0 --name eva-repro \
   -v "$PWD":/eva -w /eva eva:local bash
 ```
@@ -167,14 +167,15 @@ paper experiment. See [dated validation records](docs/RELEASE_STATUS.md).
 
 | Directory | Contents |
 |---|---|
-| `eva/`, `tools/` | Model, tokenizer and inference CLIs |
-| `training/`, `finetune/`, `config/` | Training entry points and configurations |
-| `scripts/` | Command-line workflows and automation |
-| [`notebooks/`](notebooks/README.md) | Interactive analysis, plots and supporting data |
-| [`reproduction/`](reproduction/README.md) | Fixed inputs, protocols, reference outputs and historical code |
-| `docs/`, `tests/` | Guides and regression tests |
+| `eva/` | Model and tokenizer |
+| `tools/` | Scoring, generation and evolution CLIs |
+| [`training/`](training/README.md) | Pretraining, midtraining, fine-tuning and evaluation |
+| [`examples/`](examples/README.md) | Notebooks, paper benchmarks, sample data and configurations |
+| `scripts/` | Reproduction commands, checks and container recipes |
+| `docs/` | Guides and illustrations |
+| `tests/` | Regression tests |
 
-Notebooks and command-line workflows share the reproduction resources.
+Start with [examples](examples/README.md) to choose a tutorial or benchmark.
 The wheel contains the importable model and CLI packages; use the complete
 source checkout for training, notebooks and paper-reproduction inputs.
 

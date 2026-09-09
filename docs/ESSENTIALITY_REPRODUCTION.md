@@ -19,7 +19,7 @@ python scripts/reproduce_essentiality.py \
 The original source root is currently available on `EVA_a100` at
 `/data/yanjie_huang/enzyme1_server/eva/EVA1`. It is not a public dataset URL.
 The required dataset checksum and directory layout are in
-`reproduction/essentiality/source_manifest.json`. The input contains 95,538 CDS
+`examples/reproduction/essentiality/source_manifest.json`. The input contains 95,538 CDS
 records from five species; these records must not be described as 95,538 unique
 genes without resolving transcript and duplicate-annotation identifiers.
 

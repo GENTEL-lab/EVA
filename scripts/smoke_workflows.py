@@ -30,7 +30,7 @@ def main():
     import yaml
     from training.pretrain.train_stage1 import LineageStage1Trainer
     from training.midtrain.train_midtrain import MidTrainingTrainer
-    from finetune.train_finetune import FinetuneTrainer
+    from training.finetune.train_finetune import FinetuneTrainer
     from training.eval.scripts.lineage_model_loader import load_lineage_model
     from tools.utils.model import ModelLoader
     from tools.utils.scorers.score_worker import score_in_batches
@@ -42,7 +42,7 @@ def main():
         report['workflows'][name] = result
         (args.output / 'report.json').write_text(json.dumps(report, indent=2, allow_nan=False) + '\n')
 
-    base = yaml.safe_load((ROOT / 'config/training/pretrain_smoke.yaml').read_text())
+    base = yaml.safe_load((ROOT / 'training/configs/pretrain_smoke.yaml').read_text())
     base['data_config']['train_file'] = str(ROOT / 'tests/data/train_smoke.fasta')
     lineage = args.output / 'lineage.tsv'
     lineage.write_text('taxid\tlineage\n9606\td__eukaryota;p__chordata;c__mammalia;o__primates;f__hominidae;g__homo;s__homo_sapiens\n')
@@ -94,7 +94,7 @@ def main():
                                 'max_absolute_difference': max(abs(a-b) for a,b in zip(one,two))})
     del model
     torch.cuda.empty_cache()
-    module_path = ROOT / 'notebooks/interpretability_analysis/sae_repro_release/scripts/run_training.py'
+    module_path = ROOT / 'examples/notebooks/interpretability_analysis/sae_repro_release/scripts/run_training.py'
     spec = importlib.util.spec_from_file_location('eva_sae_smoke', module_path)
     sae = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(sae)

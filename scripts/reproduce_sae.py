@@ -17,7 +17,7 @@ import shutil
 import sys
 from pathlib import Path
 
-DEFAULT_BUNDLE = Path(__file__).resolve().parents[1] / "reproduction" / "sae"
+DEFAULT_BUNDLE = Path(__file__).resolve().parents[1] / "examples" / "reproduction" / "sae"
 DATA = Path("archive/data/sae_feature_steering")
 CASES = DATA / "rnafold_cases"
 TABLE = DATA / "yanjie/figures/table"
@@ -133,7 +133,7 @@ def likelihood(bundle, output, protocol, plot=False):
         import scipy
         from scipy import stats
     except ImportError as exc:
-        raise RuntimeError("Likelihood statistics require numpy and scipy. Install reproduction/sae/requirements.txt.") from exc
+        raise RuntimeError("Likelihood statistics require numpy and scipy. Install examples/reproduction/sae/requirements.txt.") from exc
     all_selected, dataset_rows = [], []
     for item in protocol["likelihood"]["datasets"]:
         prefix = bundle / CASES / item["prefix"]
@@ -196,7 +196,7 @@ def plot_likelihood(rows, datasets, report, output):
         matplotlib.use("Agg")
         import matplotlib.pyplot as plt
     except ImportError as exc:
-        raise RuntimeError("--plot requires matplotlib; install reproduction/sae/requirements.txt") from exc
+        raise RuntimeError("--plot requires matplotlib; install examples/reproduction/sae/requirements.txt") from exc
     colors = ["#9b59b6", "#16a085", "#A23B72", "#8e44ad", "#6c5ce7", "#2E86AB", "#17a2b8", "#0984e3"]
     plt.rcParams.update({"svg.fonttype": "none", "font.size": 9})
     fig, axes = plt.subplots(2, 1, figsize=(10.8, 6.2), gridspec_kw={"height_ratios": [1.25, 1]})

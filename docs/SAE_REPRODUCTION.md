@@ -13,7 +13,7 @@ From the repository root, with Python 3.10 or 3.11:
 ```bash
 python3.11 -m venv .venv-sae-reproduction
 source .venv-sae-reproduction/bin/activate
-python -m pip install -r reproduction/sae/requirements.txt
+python -m pip install -r examples/reproduction/sae/requirements.txt
 python scripts/reproduce_sae.py --output results/sae-archive-run1 --plot
 python -m unittest discover -s tests -p test_sae_reproduction.py -v
 ```
@@ -54,7 +54,7 @@ archived CSVs. The selected result is 401/401 positive groups, W = 80,601,
 p = 9.370116963725616e-68, and d = 1.6985262810017903 (displayed as 1.70).
 The displayed statistics match the archived SVG text exactly. Per-dataset
 selected counts are 15, 16, 42, 42, 87, 85, 84 and 30, in the order stored in
-`reproduction/sae/protocol.json`.
+`examples/reproduction/sae/protocol.json`.
 
 These are **selected best-condition summaries**, not 401 independent generated
 RNAs or evidence that every prespecified intervention improved an unselected
@@ -113,7 +113,7 @@ not substituted for the paper's archived totals.
 
 ## Files and provenance
 
-`reproduction/sae/manifest.json` records the original host (`EVA_a100`), full
+`examples/reproduction/sae/manifest.json` records the original host (`EVA_a100`), full
 source paths, sizes and SHA-256 values for 110 archived files (about 24 MB).
 The `archive/` tree preserves original relative paths and original source code,
 including plotting, scoring, case finding and SAE-training metadata. Its scripts
@@ -166,7 +166,7 @@ not establish equivalence to the historical 1.4B/layer-13 paper experiment.
 
 ## Historical 1.4B/layer-13 single-case inference
 
-The additional `reproduction/sae/run_historical_smoke.py` was run against the
+The additional `examples/reproduction/sae/run_historical_smoke.py` was run against the
 actual historical checkpoint and SAE on EVA_a100, after verifying both SHA-256
 values. It uses the archived generation/scoring functions and an isolated copy
 of the original `eva/` and `tools/utils/` model code, with no source changes and
@@ -212,12 +212,12 @@ SAE_RUN_ROOT=$(mktemp -d /data/yanjie_huang/enzyme1_server/eva/sae_validation_XX
 mkdir -p "$SAE_RUN_ROOT/code/tools"
 rsync -a --include='*/' --include='*.py' --include='*.json' --exclude='*' "$SAE_ORIGINAL_ROOT/eva" "$SAE_RUN_ROOT/code/"
 rsync -a --include='*/' --include='*.py' --include='*.json' --exclude='*' "$SAE_ORIGINAL_ROOT/tools/utils" "$SAE_RUN_ROOT/code/tools/"
-cp reproduction/sae/ISOLATED_SAE_VALIDATION.txt "$SAE_RUN_ROOT/code/"
+cp examples/reproduction/sae/ISOLATED_SAE_VALIDATION.txt "$SAE_RUN_ROOT/code/"
 CUDA_VISIBLE_DEVICES=7 PYTHONDONTWRITEBYTECODE=1 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 \
 MPLCONFIGDIR="$SAE_RUN_ROOT/cache/mpl" TRITON_CACHE_DIR="$SAE_RUN_ROOT/cache/triton" \
 /data/yanjie_huang/enzyme1_server/huangyanjie/miniconda3/envs/70_RNAVerse/bin/python \
-  reproduction/sae/run_historical_smoke.py \
-  --bundle reproduction/sae \
+  examples/reproduction/sae/run_historical_smoke.py \
+  --bundle examples/reproduction/sae \
   --isolated-eva-root "$SAE_RUN_ROOT/code" \
   --checkpoint /data/yanjie_huang/enzyme1_server/eva/EVA_checkpoint/1400M_1129/checkpoint_13500 \
   --sae "$SAE_ORIGINAL_ROOT/notebooks/interpretability_analysis/sae_repro_release/outputs/sae_l1_penalty_1400M/checkpoints/checkpoint_step200000.pt" \

@@ -206,7 +206,7 @@ class BaseTrainer(ABC):
         self.device = torch.device(f'cuda:{self.local_rank}')
 
     def _setup_logging(self):
-        from finetune.utils.logging import create_logger
+        from training.finetune.utils.logging import create_logger
         logging_config = self.config.get('logging_config', {})
         experiment_name = f"{self.stage_name}_{time.strftime('%Y%m%d_%H%M%S')}"
         log_dir = logging_config.get('log_dir', self.default_log_dir)
@@ -235,8 +235,8 @@ class BaseTrainer(ABC):
 
     def _setup_datasets(self):
         """设置数据集"""
-        from finetune.utils.lineage_dataset import create_lineage_dataset
-        from finetune.utils.rna_collator import create_rna_data_collator
+        from training.finetune.utils.lineage_dataset import create_lineage_dataset
+        from training.finetune.utils.rna_collator import create_rna_data_collator
 
         data_config = self.config.get('data_config', {})
         training_config = self.config.get('training_config', {})
@@ -254,7 +254,7 @@ class BaseTrainer(ABC):
 
         span_config = None
         if mode in ['mixed', 'completion']:
-            from finetune.utils.lineage_dataset import SpanConfig
+            from training.finetune.utils.lineage_dataset import SpanConfig
             span_config_dict = data_config.get('span_config', {})
             span_config = SpanConfig(
                 max_coverage_ratios=span_config_dict.get('max_coverage_ratios', [0.15, 0.25, 0.5, 0.8]),
@@ -419,7 +419,7 @@ class BaseTrainer(ABC):
         self.current_dropout_values = {'resid': p_resid, 'hidden': p_hidden}
 
     def _setup_memory_manager(self):
-        from finetune.utils.memory import create_memory_manager
+        from training.finetune.utils.memory import create_memory_manager
         memory_config = self.config.get('memory_config', {})
         if memory_config.get('enable_monitoring', True):
             self.memory_manager = create_memory_manager(

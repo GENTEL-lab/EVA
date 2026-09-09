@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from scripts import reproduce_historical_benchmark as audit
 
-spec = importlib.util.spec_from_file_location("competitor", ROOT / "reproduction/benchmark/run_competitor.py")
+spec = importlib.util.spec_from_file_location("competitor", ROOT / "examples/reproduction/benchmark/run_competitor.py")
 competitor = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(competitor)
 
@@ -124,7 +124,7 @@ class BenchmarkProvenanceTests(unittest.TestCase):
             manifest = Path(tmp) / "manifest.json"
             manifest.write_text(json.dumps({"files": competitor.model_files(model)}))
             out = Path(tmp) / "out"
-            command = [sys.executable, str(ROOT / "reproduction/benchmark/run_competitor.py"), "rna-mlm", "--input", str(audit.BUNDLE / "fixtures/milena/Milena_2021_cata.fasta"), "--model-dir", str(model), "--model-manifest", str(manifest), "--max-tokens", "512", "--output", str(out), "--dry-run"]
+            command = [sys.executable, str(ROOT / "examples/reproduction/benchmark/run_competitor.py"), "rna-mlm", "--input", str(audit.BUNDLE / "fixtures/milena/Milena_2021_cata.fasta"), "--model-dir", str(model), "--model-manifest", str(manifest), "--max-tokens", "512", "--output", str(out), "--dry-run"]
             result = subprocess.run(command, capture_output=True)
             self.assertEqual(result.returncode, 0, result.stderr.decode())
             self.assertFalse(out.exists())

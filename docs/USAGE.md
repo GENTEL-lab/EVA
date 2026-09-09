@@ -50,11 +50,11 @@ See the paper for the evaluated datasets, metrics and comparisons.
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="../fig/RNA_landscape_modeling_comparison.svg" alt="RNA Landscape Modeling Comparison" width="100%">
+      <img src="assets/RNA_landscape_modeling_comparison.svg" alt="RNA Landscape Modeling Comparison" width="100%">
       <br><i>RNA landscape modeling comparison</i>
     </td>
     <td align="center" width="50%">
-      <img src="../fig/species_specific_RNA_landscape_modeling_comparison.svg" alt="Species-specific RNA Landscape Modeling Comparison" width="100%">
+      <img src="assets/species_specific_RNA_landscape_modeling_comparison.svg" alt="Species-specific RNA Landscape Modeling Comparison" width="100%">
       <br><i>Species-specific modeling comparison</i>
     </td>
   </tr>
@@ -81,7 +81,7 @@ eva-generate \
 EVA supports conditioning on **RNA type**, **species** (via TaxID, species name, or lineage string), or both. See [Condition Control](#condition-control) for the full list of supported RNA types and species.
 
 <div align="center">
-  <img src="../fig/rna_generation.svg" alt="RNA Type Generation" width="800">
+  <img src="assets/rna_generation.svg" alt="RNA Type Generation" width="800">
 </div>
 
 ```bash
@@ -114,7 +114,7 @@ eva-generate \
 Species can also be specified via `--species homo_sapiens` or `--lineage "D__Eukaryota;P__Chordata;..."` in Greengenes format.
 
 <div align="center">
-  <img src="../fig/species_umap.svg" alt="Species Generation" width="800">
+  <img src="assets/species_umap.svg" alt="Species Generation" width="800">
 </div>
 
 #### Continuation Mode
@@ -224,10 +224,10 @@ for paper-specific calculations.
 <table>
   <tr>
     <td align="center">
-      <img src="../fig/mrna_performance_5datasets.svg" alt="Zero-shot mRNA Fitness Prediction" width="100%">
+      <img src="assets/mrna_performance_5datasets.svg" alt="Zero-shot mRNA Fitness Prediction" width="100%">
     </td>
     <td align="center">
-      <img src="../fig/ncrna_performance.svg" alt="Zero-shot ncRNA Fitness Prediction" width="100%">
+      <img src="assets/ncrna_performance.svg" alt="Zero-shot ncRNA Fitness Prediction" width="100%">
     </td>
   </tr>
 </table>
@@ -271,18 +271,18 @@ EVA supports in-silico directed evolution — an iterative optimization pipeline
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="../fig/circRNA_illustration.svg" alt="circRNA Illustration" width="100%">
+      <img src="assets/circRNA_illustration.svg" alt="circRNA Illustration" width="100%">
     </td>
     <td align="center" width="50%">
-      <img src="../fig/mRNA_optimization_illustration.svg" alt="mRNA Optimization Illustration" width="100%">
+      <img src="assets/mRNA_optimization_illustration.svg" alt="mRNA Optimization Illustration" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="../fig/circRNA_optimization.svg" alt="circRNA Optimization" width="100%">
+      <img src="assets/circRNA_optimization.svg" alt="circRNA Optimization" width="100%">
     </td>
     <td align="center" width="50%">
-      <img src="../fig/mRNA_optimization.svg" alt="mRNA Optimization" width="100%">
+      <img src="assets/mRNA_optimization.svg" alt="mRNA Optimization" width="100%">
     </td>
   </tr>
 </table>

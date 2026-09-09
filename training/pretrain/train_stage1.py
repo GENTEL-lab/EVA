@@ -146,7 +146,7 @@ class LineageStage1Trainer(BaseTrainer):
 def main():
     LineageStage1Trainer.main(
         description='Lineage-based Stage 1: 序列生成',
-        default_config='config/training/pretrain_smoke.yaml',
+        default_config='training/configs/pretrain_smoke.yaml',
         supports_resume=True,
     )
 

@@ -25,7 +25,7 @@ Repairs in this workspace are uncommitted and have not been pushed or released.
   1.4B/layer-13 single-case inference matching the archived sample.
 
 The full-source bundle carries original files and SHA-256 manifests under
-reproduction/. These are not included in the wheel. A successful archived
+examples/reproduction/. These are not included in the wheel. A successful archived
 summary calculation is not a new model-inference run.
 
 ## Environment and installation
@@ -37,7 +37,7 @@ one GPU on a shared server. CUDA_VISIBLE_DEVICES inside Docker uses container in
 
 ```bash
 # From a complete checkout, build the published recipe when no runtime exists.
-docker build -f docker/Dockerfile -t eva-repaired:local .
+docker build -f scripts/docker/Dockerfile -t eva-repaired:local .
 mkdir -p checkpoint results
 docker run --rm -it --gpus device=0 --name eva-repro \
   -v "$PWD":/eva -w /eva eva-repaired:local bash
@@ -54,7 +54,7 @@ python -m pytest -q tests
 Editable/wheel installs include `eva` and `tools` and their CLI commands. Training,
 notebooks, configs and benchmark datasets require a **full source checkout**.
 `pip install -e .` does not install the compiled FlashAttention/MegaBlocks stack.
-Its matched CUDA build commands are in `docker/Dockerfile`; `--help` is not a
+Its matched CUDA build commands are in `scripts/docker/Dockerfile`; `--help` is not a
 GPU inference test. A working pre-existing image is not proof that a clean image
 build has completed. Record those checks separately.
 
@@ -83,13 +83,13 @@ python scripts/reproduce_dms.py \
 The downloader fixes HF model revision
 `514db6705637c1ec963b728768fc9b34728699ee` and verifies the weight SHA256:
 `45d56a7399c4936429da149edf5003bbb5999490a64ec7d793bf5ac98116eb01`.
-It writes a manifest including config/tokenizer hashes. `checkpoint/` itself is
+It writes a manifest including examples/config/tokenizer hashes. `checkpoint/` itself is
 not a valid model folder: pass the `EVA_21M` subdirectory. Loading never modifies
 the installed tokenizer; ambiguous multiple-weight directories fail explicitly.
 
 The released Milena_2021_cata bundle contains 135 sequences and 135 positional
 labels. Inputs are its FASTA and `intensities` JSON in
-`notebooks/prediction/data/ncRNA`.
+`examples/notebooks/prediction/data/ncRNA`.
 The script checks counts, unique identifiers, finite values and canonical RNA;
 it logs hashes and original row order. Hashing identifies the supplied files,
 but cannot independently prove that positional labels were originally paired correctly.
@@ -157,7 +157,7 @@ steps and exact DCP/PT weight round trips. Tiny synthetic training configs are
 not paper recipes. It also exercises both SAE trainers on released EVA-21M
 activations (layer 1, not the manuscript layer 13), saves and reloads SAE weights.
 See the [training guide](../training/pretrain/README.md) and
-[aptamer guide](../finetune/aptamer/script/README.md).
+[aptamer guide](../training/finetune/aptamer/script/README.md).
 
 Pretraining `output_token_mask: legacy_generation` retains the historical CLM
 mask; mixed/completion training must explicitly choose `output_token_mask: none`
@@ -173,7 +173,7 @@ and zero SAE optimizer steps are errors, not successful reduced workflows.
 
 Separate from these tiny training checks, the original 1.4B/layer-13 SAE and
 base checkpoint were located and hash-recorded. The historical single-case
-helper in `reproduction/sae/run_historical_smoke.py` reproduced the fixed Pepper
+helper in `examples/reproduction/sae/run_historical_smoke.py` reproduced the fixed Pepper
 case's unsteered/0x generated sequences, RNAfold structures and scores exactly,
 with the archived seed/context and 238 final state tensors checked. This does
 not establish full-cohort reproduction or correspondence to every public weight
@@ -184,15 +184,15 @@ described in [SAE_REPRODUCTION.md](SAE_REPRODUCTION.md).
 
 | Workflow | Source entry / verified evidence | Boundary |
 |---|---|---|
-| RNA DMS | `tools/predict.py`, `scripts/reproduce_dms.py`, `scripts/reproduce_historical_benchmark.py`, `reproduction/benchmark/run_historical_14b.py` | 21M full assay executed with table mismatch; 1.4B archived arithmetic recovered and full fresh inference completed with vector differences. Original labels and exact historical invocation remain unresolved. |
-| Protein DMS | `tools/predict.py --mode protein`; recovered RNA reverse-translation/ESM workers under `reproduction/benchmark/upstream/protein/`; strict `reproduction/benchmark/run_competitor.py protein-esm` launcher | EVA reverse translation is RNA surrogate scoring, not direct amino-acid likelihood. Native adapter source and strict input checks are available; exact per-assay codon/conditioning/reference and checkpoint linkage, ESM ensembles, and a full protein forward benchmark remain incomplete. |
-| Pre/mid-training and finetuning | `training/`, `finetune/`, `scripts/smoke_workflows.py`; five recovered run configurations in the benchmark bundle | Real synthetic forward/backward/save/reload checks passed. The observed mixed CLM/GLM and EP/DP configurations apply to identified runs; full training data/release lineage and the manuscript's stage-conditioning account still require reconciliation. |
+| RNA DMS | `tools/predict.py`, `scripts/reproduce_dms.py`, `scripts/reproduce_historical_benchmark.py`, `examples/reproduction/benchmark/run_historical_14b.py` | 21M full assay executed with table mismatch; 1.4B archived arithmetic recovered and full fresh inference completed with vector differences. Original labels and exact historical invocation remain unresolved. |
+| Protein DMS | `tools/predict.py --mode protein`; recovered RNA reverse-translation/ESM workers under `examples/reproduction/benchmark/upstream/protein/`; strict `examples/reproduction/benchmark/run_competitor.py protein-esm` launcher | EVA reverse translation is RNA surrogate scoring, not direct amino-acid likelihood. Native adapter source and strict input checks are available; exact per-assay codon/conditioning/reference and checkpoint linkage, ESM ensembles, and a full protein forward benchmark remain incomplete. |
+| Pre/mid-training and finetuning | `training/`, `training/finetune/`, `scripts/smoke_workflows.py`; five recovered run configurations in the benchmark bundle | Real synthetic forward/backward/save/reload checks passed. The observed mixed CLM/GLM and EP/DP configurations apply to identified runs; full training data/release lineage and the manuscript's stage-conditioning account still require reconciliation. |
 | Dense-model training | historical `model_dense` imports | Architecture source missing; explicitly unsupported |
-| Essentiality and position ablation | `scripts/reproduce_essentiality.py`, `reproduction/essentiality/source_manifest.json`; [ESSENTIALITY_REPRODUCTION.md](ESSENTIALITY_REPRODUCTION.md) | All ten stored position-ablation groups (95,538 CDS records each) recomputed on CPU; 5%/50% summary-key defect and record/sequence GC join corrected. This is not fresh model inference. Main dataset-building/inference producer, source labels and full score-to-weight bindings remain unresolved. |
+| Essentiality and position ablation | `scripts/reproduce_essentiality.py`, `examples/reproduction/essentiality/source_manifest.json`; [ESSENTIALITY_REPRODUCTION.md](ESSENTIALITY_REPRODUCTION.md) | All ten stored position-ablation groups (95,538 CDS records each) recomputed on CPU; 5%/50% summary-key defect and record/sequence GC join corrected. This is not fresh model inference. Main dataset-building/inference producer, source labels and full score-to-weight bindings remain unresolved. |
 | Generation / optimization | `tools/generate.py`, `tools/directed_evolution.py` | Engineering checks do not reproduce wet-lab or structural validation |
-| SAE archived analyses | `scripts/reproduce_sae.py`, `reproduction/sae/`; [SAE_REPRODUCTION.md](SAE_REPRODUCTION.md) | Raw stored likelihood rows reproduce the original selected 401/401 summaries/statistics; eight author-selected examples verified; Table S30 CSV-to-LaTeX reconstruction exact. Selection is not an unbiased intervention success rate, and 213/225 has not been rebuilt from a complete raw-generation cohort. |
-| Steering | `tools/sae_steering.py` for engineering use; `reproduction/sae/run_historical_smoke.py` for the recovered historical case | Tiny 21M/layer-1 smoke and one real 1.4B/layer-13 Pepper case are separately validated. Original feature/seed/context/checkpoint evidence exists for that case. Cohort-level inference, some original generation arguments, and historical-to-public tensor correspondence remain incomplete; 0x is ablation, not baseline. |
-| Competitor models | Recovered RNA/protein workers under `reproduction/benchmark/upstream/`; `reproduction/benchmark/run_competitor.py` for bounded RNA-MLM and strict native ESM execution/metrics | Real tiny random RNA-MLM machinery test and protocol/input checks passed, not released competitor-model benchmarks. Model-specific runtimes/weights and paper linkage remain required; some external producers, including ProGen3 scoring, are still missing. Plotting or archived metric recalculation is not evaluation. |
+| SAE archived analyses | `scripts/reproduce_sae.py`, `examples/reproduction/sae/`; [SAE_REPRODUCTION.md](SAE_REPRODUCTION.md) | Raw stored likelihood rows reproduce the original selected 401/401 summaries/statistics; eight author-selected examples verified; Table S30 CSV-to-LaTeX reconstruction exact. Selection is not an unbiased intervention success rate, and 213/225 has not been rebuilt from a complete raw-generation cohort. |
+| Steering | `tools/sae_steering.py` for engineering use; `examples/reproduction/sae/run_historical_smoke.py` for the recovered historical case | Tiny 21M/layer-1 smoke and one real 1.4B/layer-13 Pepper case are separately validated. Original feature/seed/context/checkpoint evidence exists for that case. Cohort-level inference, some original generation arguments, and historical-to-public tensor correspondence remain incomplete; 0x is ablation, not baseline. |
+| Competitor models | Recovered RNA/protein workers under `examples/reproduction/benchmark/upstream/`; `examples/reproduction/benchmark/run_competitor.py` for bounded RNA-MLM and strict native ESM execution/metrics | Real tiny random RNA-MLM machinery test and protocol/input checks passed, not released competitor-model benchmarks. Model-specific runtimes/weights and paper linkage remain required; some external producers, including ProGen3 scoring, are still missing. Plotting or archived metric recalculation is not evaluation. |
 
 The updated 49-label coverage inventory is maintained in the delivery evidence
 alongside this local repair; the earlier nine-candidate inventory is historical,
@@ -236,7 +236,7 @@ and outcomes, including the real analysis dependency/JSON/CSV checks.
 A new Docker image has a separate acceptance gate: confirm the completed build
 log, exact `docker image inspect` identity, installed dependency versions,
 `pip check`, required entry points and pytest results **for that final image and
-source snapshot** in the delivery's `docker/` evidence. Check the actual recorded
+source snapshot** in the delivery's `scripts/docker/` evidence. Check the actual recorded
 exit codes and image identity; this guide does not assert that those checks have
 passed. Missing or incomplete evidence means that gate is not established.
 Existing-image inference, wheel installation, source/ZIP integrity and paper

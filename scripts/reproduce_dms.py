@@ -49,9 +49,9 @@ def main():
     from tools.utils.scorers.score_worker import score_in_batches
     from tools.utils.conditions.rna_types import get_rna_token
 
-    fasta = ROOT / 'notebooks/prediction/data/ncRNA/fasta' / f'{args.dataset}.fasta'
-    label_file = ROOT / 'notebooks/prediction/data/ncRNA/label' / f'{args.dataset}_intensities.json'
-    table = ROOT / 'notebooks/prediction/data/ncRNA_13datasets_spearman.csv'
+    fasta = ROOT / 'examples/notebooks/prediction/data/ncRNA/fasta' / f'{args.dataset}.fasta'
+    label_file = ROOT / 'examples/notebooks/prediction/data/ncRNA/label' / f'{args.dataset}_intensities.json'
+    table = ROOT / 'examples/notebooks/prediction/data/ncRNA_13datasets_spearman.csv'
     labels = json.loads(label_file.read_text())
     if 'intensities' not in labels:
         raise ValueError('This assay has multiple readouts; explicitly resolve the paper readout first')

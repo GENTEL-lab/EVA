@@ -1,7 +1,7 @@
 #!/bin/bash
 # RNA sequence generation launch script for a running EVA Docker container.
 # Usage: ./scripts/generate.sh <config.yaml> [extra args...]
-# Example: ./scripts/generate.sh config/tools_config/config_clm_example.yaml
+# Example: ./scripts/generate.sh examples/config/tools_config/config_clm_example.yaml
 
 set -e
 
@@ -18,8 +18,8 @@ GENERATE_SCRIPT="${GENERATE_SCRIPT:-${CONTAINER_BASE}/tools/generate.py}"
 # ===== Argument Check =====
 if [ $# -lt 1 ]; then
     echo "Usage: $0 <config.yaml> [extra args...]"
-    echo "Example: $0 config/tools_config/config_clm_example.yaml"
-    echo "      $0 config/tools_config/config_clm_example.yaml --task human_mRNA"
+    echo "Example: $0 examples/config/tools_config/config_clm_example.yaml"
+    echo "      $0 examples/config/tools_config/config_clm_example.yaml --task human_mRNA"
     exit 1
 fi
 

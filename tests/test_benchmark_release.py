@@ -169,15 +169,15 @@ class ReleaseTests(unittest.TestCase):
             BR.read_csv(self.root / 'bad.csv', ['score'])
 
     def test_reference_coverage(self):
-        config = json.loads((ROOT / 'reproduction/benchmark_release/reference_manifest.json').read_text())
-        report = BR.audit_reference(config, ROOT / 'reproduction/benchmark_release/reference')
+        config = json.loads((ROOT / 'examples/reproduction/benchmark_release/reference_manifest.json').read_text())
+        report = BR.audit_reference(config, ROOT / 'examples/reproduction/benchmark_release/reference')
         self.assertEqual([(g['observed_pairs'], g['expected_pairs']) for g in report['groups']], [(195, 195), (75, 75), (220, 240)])
         self.assertEqual({r['model'] for r in report['groups'][2]['missing_pairs']}, {'Evo2 7B'})
         self.assertFalse(report['complete'])
 
     def test_sample_count_discrepancies_exposed(self):
-        config = json.loads((ROOT / 'reproduction/benchmark_release/reference_manifest.json').read_text())
-        report = BR.audit_reference(config, ROOT / 'reproduction/benchmark_release/reference')
+        config = json.loads((ROOT / 'examples/reproduction/benchmark_release/reference_manifest.json').read_text())
+        report = BR.audit_reference(config, ROOT / 'examples/reproduction/benchmark_release/reference')
         self.assertEqual(len(report['groups'][0]['inconsistent_sample_counts']), 4)
         self.assertTrue(report['groups'][0]['coverage_complete'])
         self.assertFalse(report['groups'][0]['sample_counts_consistent'])

@@ -6,7 +6,7 @@ Load model and score directly inside Docker container, without docker exec inter
 
 Usage examples:
     # Run RNA sequence scoring inside container
-    docker exec -it eva python /eva/tools/predict.py --config /eva/config/tools_config/config_score_example.yaml
+    docker exec -it eva python /eva/tools/predict.py --config /eva/examples/config/tools_config/config_score_example.yaml
 
     # RNA sequence scoring
     python predict.py --checkpoint /path/to/model --input sequences.fa --output scores.json

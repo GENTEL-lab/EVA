@@ -2,6 +2,18 @@
 
 ## Unreleased
 
+### Repository layout — 2026-09-09
+
+Tutorials and paper reproduction resources now share `examples/`; fine-tuning
+lives under `training/finetune/`. Example configurations and data are under
+`examples/config/` and `examples/data/`, illustrations under `docs/assets/`, and
+container recipes under `scripts/docker/`. The benchmark supplement is now
+`docs/BENCHMARK_SUPPLEMENT.md`. Create `checkpoint/` when downloading weights.
+Model imports and the `eva-predict`, `eva-generate` and `eva-evolve` commands keep
+their existing names. Updated guides show the new source-file paths.
+
+### Other improvements
+
 - Organize task guides, resource information and reviewer evidence around a concise README.
 - Separate successful Milena execution from optional strict reference comparison.
 - Add CPU regression, packaging, documentation and citation checks, with separate external-resource reporting.
