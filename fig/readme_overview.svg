@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="128" viewBox="0 0 1140 128" role="img" aria-labelledby="title desc">
+  <title id="title">EVA at a glance</title>
+  <desc id="desc">A 1.4 billion parameter mixture-of-experts flagship model, an 8,192-token context window, and OpenRNA v1 pretraining data.</desc>
+  <rect x="1" y="1" width="1138" height="126" rx="14" fill="#f7f5ef" stroke="#d9dedc"/>
+  <path d="M380 28v72M760 28v72" stroke="#d9dedc"/>
+  <g fill="#315f80" font-family="Arial, Helvetica, sans-serif">
+    <text x="38" y="31" font-size="10" font-weight="700" letter-spacing="2">MODEL</text>
+    <text x="38" y="72" font-size="34" font-weight="700">1.4B</text>
+    <text x="38" y="101" font-size="14" fill="#5c6e79">Mixture-of-experts flagship</text>
+    <text x="418" y="31" font-size="10" font-weight="700" letter-spacing="2">CONTEXT</text>
+    <text x="418" y="72" font-size="34" font-weight="700">8,192</text>
+    <text x="418" y="101" font-size="14" fill="#5c6e79">Tokens per context window</text>
+    <text x="798" y="31" font-size="10" font-weight="700" letter-spacing="2">DATA</text>
+    <text x="798" y="72" font-size="34" font-weight="700">OpenRNA</text>
+    <text x="798" y="101" font-size="14" fill="#5c6e79">Pretrained on OpenRNA v1</text>
+  </g>
+  <g fill="#b38b51"><circle cx="334" cy="28" r="4"/><circle cx="714" cy="28" r="4"/><circle cx="1094" cy="28" r="4"/></g>
+</svg>
