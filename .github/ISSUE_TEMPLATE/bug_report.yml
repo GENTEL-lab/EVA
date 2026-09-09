@@ -1,0 +1,26 @@
+name: Bug report
+description: Report an installation, execution or reproducibility problem.
+title: "[Bug] "
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: Version and environment
+      description: Git commit, Python, PyTorch, CUDA, OS, GPU if relevant, and installation method.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Command and input
+      description: Exact command and a small public or synthetic input that reproduces the problem.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Actual and expected behavior
+      description: Include the error log; remove credentials and confidential data.
+    validations:
+      required: true

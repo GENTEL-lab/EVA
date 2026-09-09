@@ -38,7 +38,6 @@ from tqdm import tqdm
 project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
-from eva.causal_lm import create_eva_model
 from eva.config import EvaConfig
 from eva.lineage_tokenizer import LineageRNATokenizer
 
@@ -333,6 +332,10 @@ class FinetuneTrainer:
         checkpoint = self.training_config.get('resume_from_pretrain')
         if not checkpoint:
             raise ValueError('Finetuning requires training_config.resume_from_pretrain')
+        # Import the compiled GPU backend only when constructing a model.
+        # Configuration checks and CLI help must remain usable on CPU hosts.
+        from eva.causal_lm import create_eva_model
+
         tokenizer_dir = Path(checkpoint) if Path(checkpoint).is_dir() else Path(checkpoint).parent
         self.tokenizer = LineageRNATokenizer.from_pretrained(str(tokenizer_dir))
 

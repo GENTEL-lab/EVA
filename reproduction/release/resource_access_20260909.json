@@ -1,0 +1,158 @@
+{
+  "checked_at": "2026-09-09T06:04:34.128006+00:00",
+  "checks": [
+    {
+      "id": "eva-checkpoint",
+      "url": "https://huggingface.co/api/models/GENTEL-Lab/EVA/revision/514db6705637c1ec963b728768fc9b34728699ee",
+      "purpose": "Pinned EVA checkpoint metadata",
+      "api_revision": true,
+      "expected_revision": "514db6705637c1ec963b728768fc9b34728699ee",
+      "http_status": 200,
+      "resolved_url": "https://huggingface.co/api/models/GENTEL-Lab/EVA/revision/514db6705637c1ec963b728768fc9b34728699ee",
+      "access": "AVAILABLE",
+      "observed_revision": "514db6705637c1ec963b728768fc9b34728699ee"
+    },
+    {
+      "id": "openrna",
+      "url": "https://huggingface.co/api/datasets/GENTEL-Lab/OpenRNA-v1-114M",
+      "purpose": "Public OpenRNA dataset listing; original training split identity is separate",
+      "api_revision": true,
+      "http_status": 200,
+      "resolved_url": "https://huggingface.co/api/datasets/GENTEL-Lab/OpenRNA-v1-114M",
+      "access": "AVAILABLE",
+      "observed_revision": "103c79aab4d625828721a25ab98be51763c326bb"
+    },
+    {
+      "id": "analysis-data",
+      "url": "https://zenodo.org/api/records/19027142",
+      "purpose": "Deposited benchmark and analysis data",
+      "http_status": 200,
+      "resolved_url": "https://zenodo.org/api/records/19027142",
+      "access": "AVAILABLE"
+    },
+    {
+      "id": "legacy-runtime",
+      "url": "https://zenodo.org/api/records/18786989",
+      "purpose": "Legacy prebuilt environment; not the current source build",
+      "http_status": 200,
+      "resolved_url": "https://zenodo.org/api/records/22093406",
+      "access": "AVAILABLE"
+    },
+    {
+      "id": "rnafm-historical",
+      "url": "https://huggingface.co/api/models/multimolecule/rnafm/revision/2a98c38e8219d666ad35d04a689218ab50a36293",
+      "purpose": "Historical port revision",
+      "api_revision": true,
+      "expected_revision": "2a98c38e8219d666ad35d04a689218ab50a36293",
+      "http_status": 404,
+      "access": "UNAVAILABLE"
+    },
+    {
+      "id": "rnabert-historical",
+      "url": "https://huggingface.co/api/models/multimolecule/rnabert/revision/7a9b5d5d5a96931ff056828c0968479098506cea",
+      "purpose": "Historical port revision",
+      "api_revision": true,
+      "expected_revision": "7a9b5d5d5a96931ff056828c0968479098506cea",
+      "http_status": 404,
+      "access": "UNAVAILABLE"
+    },
+    {
+      "id": "rnamsm-historical",
+      "url": "https://huggingface.co/api/models/multimolecule/rnamsm/revision/ad61a4915674596557b3c3c4fe4fd7162d36acc8",
+      "purpose": "Historical port revision",
+      "api_revision": true,
+      "expected_revision": "ad61a4915674596557b3c3c4fe4fd7162d36acc8",
+      "http_status": 404,
+      "access": "UNAVAILABLE"
+    },
+    {
+      "id": "gena-historical",
+      "url": "https://huggingface.co/api/models/AIRI-Institute/gena-lm-bert-base-t2t-multi/revision/4633e5a1ada905bb7afee6877d71cc12578a95a5",
+      "purpose": "Historical snapshot; model-name correspondence unresolved",
+      "api_revision": true,
+      "expected_revision": "4633e5a1ada905bb7afee6877d71cc12578a95a5",
+      "http_status": 200,
+      "resolved_url": "https://huggingface.co/api/models/AIRI-Institute/gena-lm-bert-base-t2t-multi/revision/4633e5a1ada905bb7afee6877d71cc12578a95a5",
+      "access": "AVAILABLE",
+      "observed_revision": "4633e5a1ada905bb7afee6877d71cc12578a95a5"
+    },
+    {
+      "id": "rnafm-upstream",
+      "url": "https://api.github.com/repos/ml4bio/RNA-FM",
+      "purpose": "Official source, not a replacement for the historical port",
+      "http_status": 200,
+      "resolved_url": "https://api.github.com/repos/ml4bio/RNA-FM",
+      "access": "AVAILABLE"
+    },
+    {
+      "id": "ernie",
+      "url": "https://api.github.com/repos/Bruce-ywj/ERNIE-RNA",
+      "purpose": "Official source",
+      "http_status": 200,
+      "resolved_url": "https://api.github.com/repos/Bruce-ywj/ERNIE-RNA",
+      "access": "AVAILABLE"
+    },
+    {
+      "id": "evo2",
+      "url": "https://api.github.com/repos/arcinstitute/evo2",
+      "purpose": "Official source",
+      "http_status": 200,
+      "resolved_url": "https://api.github.com/repos/arcinstitute/evo2",
+      "access": "AVAILABLE"
+    },
+    {
+      "id": "codonfm",
+      "url": "https://api.github.com/repos/NVIDIA-BioNeMo/CodonFM",
+      "purpose": "Official source",
+      "http_status": 200,
+      "resolved_url": "https://api.github.com/repos/NVIDIA-BioNeMo/CodonFM",
+      "access": "AVAILABLE"
+    },
+    {
+      "id": "aido",
+      "url": "https://api.github.com/repos/genbio-ai/ModelGenerator",
+      "purpose": "Official framework",
+      "http_status": 200,
+      "resolved_url": "https://api.github.com/repos/genbio-ai/ModelGenerator",
+      "access": "AVAILABLE"
+    },
+    {
+      "id": "generrna",
+      "url": "https://huggingface.co/api/models/pfnet/GenerRNA",
+      "purpose": "Official model listing",
+      "api_revision": true,
+      "http_status": 200,
+      "resolved_url": "https://huggingface.co/api/models/pfnet/GenerRNA",
+      "access": "AVAILABLE",
+      "observed_revision": "b2430ee6498d91998e0e37ce20c6bc1766c318a8"
+    },
+    {
+      "id": "codongpt",
+      "url": "https://api.github.com/repos/NanilTx/codonGPT_pub",
+      "purpose": "Paper-linked source",
+      "http_status": 404,
+      "access": "UNAVAILABLE"
+    },
+    {
+      "id": "esm",
+      "url": "https://api.github.com/repos/facebookresearch/esm",
+      "purpose": "Official legacy ESM source",
+      "http_status": 200,
+      "resolved_url": "https://api.github.com/repos/facebookresearch/esm",
+      "access": "AVAILABLE"
+    },
+    {
+      "id": "progen3",
+      "url": "https://api.github.com/repos/Profluent-AI/progen3",
+      "purpose": "Official source",
+      "http_status": 200,
+      "resolved_url": "https://api.github.com/repos/Profluent-AI/progen3",
+      "access": "AVAILABLE"
+    }
+  ],
+  "available": 13,
+  "total": 17,
+  "weight_downloaded": false,
+  "inference_executed": false,
+  "scope": "Resource accessibility; availability alone does not establish paper-model identity."
+}

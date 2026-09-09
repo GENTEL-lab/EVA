@@ -1,41 +1,77 @@
-# Reproducibility release candidate
+# Validation and release status
 
-This is an integrated local candidate based on public commit
-`07f4cb523ed5053f1ac11d79e4c524167b00bbdd`. It has not been published or assigned
-a code DOI. It combines the existing engineering fixes with the benchmark
-supplement and a pinned EVA-1.4B Milena entry point.
+The integrated **1.2.0rc1** source is public on `main`. The reproducibility
+repairs were merged at `9b5d25ac7cb26de88420f56021f4c0eeb2052e9e`.
+A formal release for this revision and an archival code DOI are pending;
+the older `v1.1.1` release does not contain these repairs.
 
-The current submission data are preserved as confirmed by the author. Older
-provenance reports are retained as dated evidence and do not automatically
-establish an error in replacement data.
+## Usability update validation: September 9, 2026
 
-The integrated test suite passed 128 tests. Synthetic pretraining, mid-training
-and fine-tuning each completed two optimizer steps with exact saved-weight
-reloads. The three notebook code cells executed in an independent kernel;
-its optional custom prediction section remains unconfigured. `pip check` passed.
-The complete source archive was then built from the official PyTorch
-2.5.1/CUDA 12.4 base (resolved image digest
-`sha256:14611869895df612b7b07227d5925f30ec3cd6673bad58ce3d84ed107950e014`).
-In this clean image, all 128 tests, the three installed CLI help commands,
-training/save/reload, the full 135-row inference, archived SAE recalculation,
-summary audit and independent-kernel notebook execution completed. `pip check`
-reported no broken requirements. The build used the Aliyun PyPI mirror with
-the pinned dependencies; EVA attention uses torch SDPA, so no external
-flash-attn package is installed. GPU work used one idle A100 and batch size 1.
+The updated Milena entry point was run twice on an idle A100-SXM4-80GB,
+with the existing pinned runtime, one visible GPU and batch size 1. Each run
+scored all 135 inputs, produced metrics and plots, and exactly matched the
+saved fresh-prediction vector. Default mode returned **0**; the optional
+strict-reference mode returned **2**. Scoring took about 12 seconds per run;
+peak PyTorch-allocated GPU memory was 2.94 GiB.
+The [dated reports](../reproduction/release/usability_gpu_20260909/README.md)
+record the source commit, file hashes, environment and both execution modes.
 
-The complete 135-row public-checkpoint Milena inference ran successfully:
-Spearman 0.8394237924835843 versus 0.8360456283218484 in the current table.
-All 135 new scores are identical to a separate earlier fresh run under different
-PyTorch/MegaBlocks versions. The recovered original log records batch size 45; its causal role in the
-score difference has not been established.
-See `reproduction/milena_14b/expected/README.md` for the observed result and
-successful public download and byte-identical GPU cache verification.
+The expanded suite passed **139 tests** without skips in the existing Docker
+runtime. Current Python 3.10/3.11 CPU jobs, source-archive execution, wheel
+installation outside the checkout and CLI checks are available in
+[GitHub Actions](https://github.com/GENTEL-lab/EVA/actions/workflows/cpu.yml).
+The clean CPU environment also exposed an eager GPU-backend import in the
+fine-tuning entry point; that import now occurs only during model construction.
 
-Release still requires a complete public-checkpoint example with interpretable
-numerical agreement and accurate documentation of all required workflow resources.
-A failed or unexplained benchmark comparison prevents a claim that the
-reviewer's reproducibility concerns have all been resolved.
+## Earlier clean source-build validation: September 9, 2026
 
-Exact model and input identities are in `reproduction/milena_14b/manifest.json`.
-See [PAPER_WORKFLOWS.md](PAPER_WORKFLOWS.md) for missing competitor-resource
-bindings and workflow limitations. No placeholder DOI is provided.
+The source archive at `70c6c4f7aff2cf12210d8b280c1d4569ca22c0a0` was built in a
+clean Docker environment. The subsequent `9b5d25a` commit added documentation
+and validation records without changing runtime code or inputs.
+
+| Check | Recorded result |
+|---|---|
+| Regression tests | 128 passed; none skipped or failed |
+| Installation | `pip check` and all three installed CLI help commands passed |
+| Synthetic training | Two steps per stage; pretrain/midtrain/fine-tune weights saved and reloaded exactly |
+| Notebook | Three code cells executed in an independent kernel; optional custom predictions unconfigured |
+| Milena inference | All 135 samples scored from the pinned public checkpoint |
+| Archived calculations | Milena metric, SAE calculations and benchmark summary audit executed |
+
+`reproduction/release/clean_validation.json` records the commit and hashes.
+The image used PyTorch 2.5.1/CUDA 12.4, Transformers 4.55.0 and MegaBlocks 0.7.0.
+The base-image digest was
+`sha256:14611869895df612b7b07227d5925f30ec3cd6673bad58ce3d84ed107950e014`.
+Installation used the Aliyun PyPI mirror with pinned versions. GPU validation
+used one idle A100 and batch size 1. This historical record does not automatically
+validate later changes; current CPU checks run separately in GitHub Actions.
+
+## Representative benchmark result
+
+New Milena inference gives **0.8394237924835843**, compared with the stored
+**0.8360456283218484**. The **0.0033781641617359748** difference is accepted for
+this representative example and is not a merge or release blocker. Both
+numbers and all predictions remain available. No input labels, scoring
+objective or paper metric have been changed to reduce the difference.
+
+[Reproduction](REPRODUCTION.md) documents normal completion and the optional
+`--strict-reference` diagnostic. [Expected outputs](../reproduction/milena_14b/expected/README.md)
+record the measurements. Historical batch-size observations are context, not
+a demonstrated cause of the difference.
+
+## Remaining coverage and publication work
+
+- Recovered comparison-model hashes are in the [resource index](OFFICIAL_MODEL_RESOURCES.md).
+  Public downloads, original runtimes or producers remain missing for some methods;
+  cached artifact identities alone do not close those gaps.
+- Training machinery is tested at small scale. Original dense-model code and
+  some paper-specific training/run bindings are not available.
+- Some figure-specific input/command mappings and complete SAE generation
+  outputs remain outside the bundled reproducible workflows.
+- Formal release, code DOI and the corresponding manuscript citation remain
+  separate steps. No placeholder DOI is provided.
+
+The [six reviewer requirements](REVIEWER_REQUIREMENTS.md) and
+[paper workflow table](PAPER_WORKFLOWS.md) identify the evidence and remaining
+scope. Historical notes are dated background records; use current guides
+for present software behavior.

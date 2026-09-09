@@ -1,11 +1,17 @@
-# 1.2.0rc1 Reproducibility candidate
+# Changelog
+
+## Unreleased
+
+- Organize task guides, resource information and reviewer evidence around a concise README.
+- Separate successful Milena execution from optional strict reference comparison.
+- Add CPU regression, packaging, documentation and citation checks, with separate external-resource reporting.
+
+## 1.2.0rc1 Reproducibility candidate
 
 - Integrate training/scoring robustness fixes and benchmark arithmetic tests.
 - Add a pinned public EVA-1.4B Milena inference-to-metric entry point.
 - Add a single reproduction guide and explicit paper workflow coverage.
 - Release candidate only; see docs/RELEASE_STATUS.md for validation limitations.
-
-# Changelog
 
 All notable changes to EVA are documented in this file.
 

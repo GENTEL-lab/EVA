@@ -1,0 +1,63 @@
+{
+  "status": "METRIC_DIFFERENCE",
+  "execution_status": "COMPLETED",
+  "comparison_status": "DIFFERENCE",
+  "strict_reference": true,
+  "fresh_inference": true,
+  "n": 135,
+  "checkpoint": {
+    "repo": "GENTEL-Lab/EVA",
+    "revision": "514db6705637c1ec963b728768fc9b34728699ee",
+    "subdirectory": "EVA_1.4B_CLM",
+    "sha256": {
+      "model_weights.pt": "323c13d571d0be87e450cb7b103bf8b28396e55e877519e2d2fb3c434875d420",
+      "config.json": "a8571fcd6b88c3d4667d764d657e590cc589fc1316821bdb850d901380b15c47",
+      "tokenizer.json": "9315168d44e3d6df4cdd0c48f3ab6d5111beb13ac8b163a380c59a6fac5a021d"
+    }
+  },
+  "input_sha256": {
+    "notebooks/prediction/data/ncRNA/fasta/Milena_2021_cata.fasta": "587195ca555dff13de482e88df5509065d55788dc886a285ca07a8b27f37a227",
+    "notebooks/prediction/data/ncRNA/label/Milena_2021_cata_intensities.json": "86a724affa00904e54f5d2532607fdc8d3fb1560ba385e53e8f242ab78efe9a2",
+    "notebooks/prediction/data/ncRNA_13datasets_spearman.csv": "8acfc40534b60e725aac309ba4b8990d0660b266f6ae8183f42e8e63e1334d14",
+    "reproduction/benchmark/fixtures/milena/eva_1_4b_wotag_scores.json": "8d5b47937e431acbe3684884291d5b9372a67b3d3461f5ba5c4eb9085af478c1"
+  },
+  "label_basis": "Current local submission data, confirmed by the author on 2026-09-09; positional pairing frozen by FASTA and label hashes; historical header metadata is not used as ground truth.",
+  "protocol": {
+    "source": "reproduction/benchmark/historical_14b",
+    "prompt": "<bos>5{RNA}3<eos>",
+    "conditioning": null,
+    "reduce": "sum",
+    "excluded_targets": [
+      "5",
+      "3",
+      "<eos>"
+    ],
+    "dtype": "bfloat16",
+    "batch_size": 1,
+    "moe_world_size": 1
+  },
+  "paper_result_reproduced": false,
+  "spearman": 0.8394237924835843,
+  "reference": 0.8360456283218484,
+  "absolute_difference": 0.0033781641617359748,
+  "reference_decimal": "0.8360456283218484",
+  "comparison_tolerance": 5e-17,
+  "matches_reference_precision": false,
+  "comparison_basis": "Stored reference CSV decimal precision; not a scientific acceptance tolerance",
+  "archive_spearman": 0.8360456283218484,
+  "prediction_rank_correlation": 0.977465613110916,
+  "archive_vector_exact": false,
+  "interpretation": "Execution and reference comparison are reported separately. A successful run does not establish reproduction of every paper result. The documented Milena difference is retained as a numerical observation.",
+  "inference_seconds": 11.452969689999009,
+  "peak_gpu_allocated_bytes": 3157299200,
+  "versions": {
+    "torch": "2.5.1+cu124",
+    "transformers": "4.55.0",
+    "tokenizers": "0.21.4",
+    "megablocks": "0.7.0",
+    "flash-attn": null
+  },
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "elapsed_seconds": 22.362902776992996,
+  "runner_sha256": "7fb8bb39dcd8e29a2a94595064f77fbdd805a1819f24534e3289576f66b6b93b"
+}
